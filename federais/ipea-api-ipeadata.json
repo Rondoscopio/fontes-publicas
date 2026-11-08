@@ -1,0 +1,6 @@
+{
+  "nome": "IPEA — API Ipeadata",
+  "descricao": "API OData para séries socioeconômicas, regionais e sociais, com dados JSON e metadados de períodos e territórios.",
+  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
+  "url": "https://www.ipeadata.gov.br/api/"
+}

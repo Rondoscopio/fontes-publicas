@@ -1,0 +1,6 @@
+{
+  "nome": "Anatel — Mapas Geográficos de Cobertura Móvel",
+  "descricao": "Mapas e arquivos geográficos estimados do sinal de operadoras móveis, para análise espacial de lacunas de conectividade.",
+  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
+  "url": "https://sistemas.anatel.gov.br/se/public/cmap.php"
+}
