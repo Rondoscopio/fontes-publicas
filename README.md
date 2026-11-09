@@ -8,13 +8,13 @@ Cada fonte é representada por **um arquivo JSON** dentro da pasta correspondent
 
 | Pasta | Fontes |
 | --- | ---: |
-| `agregadores/` | 59 |
-| `estaduais/` | 108 |
-| `federais/` | 300 |
-| `internacionais/` | 70 |
+| `agregadores/` | 61 |
+| `estaduais/` | 122 |
+| `federais/` | 311 |
+| `internacionais/` | 71 |
 | `jornalismo/` | 9 |
 | `municipais/` | 24 |
-| **Total** | **570** |
+| **Total** | **598** |
 
 Os nomes dos arquivos são derivados dos nomes das fontes, em minúsculas, sem acentos e separados por hífens.
 
@@ -39,6 +39,10 @@ Os nomes dos arquivos são derivados dos nomes das fontes, em minúsculas, sem a
 O catálogo não se limita a instituições sediadas em Rondônia. Fontes nacionais, internacionais e de outros territórios são relevantes quando permitem investigar acontecimentos ou decisões com possíveis efeitos no estado, como transferências de recursos, contratações, relações empresariais, clima, hidrologia, comércio e cadeias produtivas.
 
 **Importante:** inclusão no catálogo não significa que todos os links, APIs ou conjuntos de dados tenham sido testados individualmente. Nem toda fonte é uma API ou disponibiliza dados estruturados. Notícias e portais institucionais funcionam como pontos de partida para apuração, não como evidência conclusiva.
+
+## Tarefas de investigação e integração
+
+As pesquisas e integrações futuras, incluindo SDR, tráfego aéreo e a cobertura completa das folhas de pagamento, estão em [TODO.md](TODO.md).
 
 ## Contribuições
 

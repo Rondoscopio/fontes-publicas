@@ -1,0 +1,6 @@
+{
+  "nome": "ALE-RO — API de Dados Abertos de Servidores",
+  "descricao": "Documentação da API GET /api/servidores para listagem e filtros por nome, cargo e lotação, com respostas legíveis por máquina; acesso e limites devem ser testados.",
+  "abrangencia": "Estadual / Rondônia",
+  "url": "https://transparencia.al.ro.leg.br/DadosAbertos/"
+}
