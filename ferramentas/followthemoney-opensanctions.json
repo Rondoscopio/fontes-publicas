@@ -1,0 +1,8 @@
+{
+  "nome": "FollowTheMoney — OpenSanctions",
+  "descricao": "Biblioteca e modelo de dados para representar e integrar entidades, propriedades e relações entre pessoas, organizações, ativos e operações em investigações.",
+  "abrangencia": "Internacional / Modelagem de entidades e relações",
+  "url": "https://github.com/opensanctions/followthemoney",
+  "status_validacao": "referencia_catalogada_sem_auditoria_independente",
+  "nota": "Verificar atualização, cobertura, critérios de acesso e licenças. Eventuais correspondências ou vínculos não constituem prova de irregularidade."
+}
