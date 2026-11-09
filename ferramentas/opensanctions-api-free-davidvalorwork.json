@@ -1,0 +1,11 @@
+{
+  "nome": "OpenSanctions API Free — davidvalorwork",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Triagem de sanções e compliance",
+  "descricao": "Projeto de triagem de sanções a partir de dados OpenSanctions, com ingestão em MongoDB, busca de nomes e apoio de modelo de linguagem para análise de correspondências e registro de justificativas. Não é a API oficial do OpenSanctions.",
+  "abrangencia": "Internacional / Sanções, compliance e combate à lavagem de dinheiro",
+  "url": "https://github.com/davidvalorwork/opensanctions-api-free",
+  "origem": "Repositório independente de terceiros",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Verificar licença, requisitos de implantação, qualidade das correspondências, termos dos dados OpenSanctions e riscos de falsos positivos."
+}
