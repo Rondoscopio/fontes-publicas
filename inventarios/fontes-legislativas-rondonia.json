@@ -388,74 +388,443 @@
         "nome": "Agenda",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/agenda-parlamentar/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Atas de Sessões",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-de-sessoes/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Atas de Audiência de Instrução Legislativa",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-instrucao/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Atas de Audiências Públicas das Metas Fiscais",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-comissao-financas/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Expediente Recebido",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/expediente-recebido/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Emendas Impositivas",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/emendas-impositivas/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Frequência Parlamentar",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/frequencia-parlamentar/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Ordem do Dia",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/ordem-do-dia/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Pautas",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/pautas/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Pesquisa de Projetos",
         "url": "https://sapl.al.ro.leg.br/materia/pesquisar-materia",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "Proposições Recebidas",
         "url": "https://www.al.ro.leg.br/atividade-parlamentar/proposicoes-recebidas/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       },
       {
         "nome": "SAPL",
         "url": "https://sapl.al.ro.leg.br/",
         "tipo": "atividade_parlamentar",
-        "verificacao": "pagina_oficial_consultada_2026-11-09"
+        "verificacao": "destino_conferido_em_2026-11-09"
       }
+    ],
+    "menu_completo_portal": [
+      {
+        "secao": "Inicio",
+        "links": [
+          {
+            "nome": "Página inicial",
+            "url": "https://www.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Institucional",
+        "links": [
+          {
+            "nome": "História",
+            "url": "https://www.al.ro.leg.br/historia",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Galeria de Fotos",
+            "url": "https://www.al.ro.leg.br/galeria/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "App AleRO",
+            "url": "https://app.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Deputados",
+        "links": [
+          {
+            "nome": "Perfil",
+            "url": "https://www.al.ro.leg.br/deputados/perfil/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Mesa Diretora",
+            "url": "https://www.al.ro.leg.br/deputados/mesadiretora",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Comissões",
+            "url": "https://sapl.al.ro.leg.br/comissao/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Frentes Parlamentares",
+            "url": "https://sapl.al.ro.leg.br/sistema/frente/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Serviços",
+        "links": [
+          {
+            "nome": "Fala Deputado",
+            "url": "https://www.al.ro.leg.br/servicos/fala-deputado/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Elero",
+            "url": "https://www.al.ro.leg.br/servicos/elero-app/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Concursos",
+            "url": "https://transparencia.al.ro.leg.br/Concursos/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Diário Oficial ALE-RO",
+            "url": "https://transparencia.al.ro.leg.br/Diario/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Pesquisar Norma Jurídica",
+            "url": "https://sapl.al.ro.leg.br/norma/pesquisar",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "SEI - Usuários Externos",
+            "url": "https://sei.al.ro.leg.br/sei/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Transparência",
+            "url": "https://transparencia.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Licitações",
+            "url": "https://transparencia.al.ro.leg.br/LicitacoesContratos/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Ouvidoria",
+            "url": "https://sistema.ouvidorias.gov.br/publico/RO/Manifestacao/RegistrarManifestacao",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Servidor",
+        "links": [
+          {
+            "nome": "Página do Servidor",
+            "url": "https://www.al.ro.leg.br/servidor/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "SEI - Sistema Eletrônico de Informações",
+            "url": "https://sei.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Suporte GLPI",
+            "url": "https://suporte.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "ETCDF - Processo eletrônico",
+            "url": "https://etcdf.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Webmail",
+            "url": "https://gmail.com/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Portal do Servidor",
+            "url": "https://servicos.al.ro.leg.br/spweb/funcionario.jsp",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Serviços internos",
+            "url": "https://servicos.al.ro.leg.br/spweb/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "SICAVI",
+            "url": "https://sicavi.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Ordem Cronológica",
+            "url": "https://ordem.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "App ramais",
+            "url": "https://app.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Atividade Parlamentar",
+        "links": [
+          {
+            "nome": "Agenda",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/agenda-parlamentar/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Atas de Sessões",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-de-sessoes/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Atas de Audiência de Instrução Legislativa",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-instrucao/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Atas de Audiências Públicas das Metas Fiscais",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-comissao-financas/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Expediente Recebido",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/expediente-recebido/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Emendas Impositivas",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/emendas-impositivas/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Frequência Parlamentar",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/frequencia-parlamentar/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Ordem do Dia",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/ordem-do-dia/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Pautas",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/pautas/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Pesquisa de Projetos",
+            "url": "https://sapl.al.ro.leg.br/materia/pesquisar-materia",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "Proposições Recebidas",
+            "url": "https://www.al.ro.leg.br/atividade-parlamentar/proposicoes-recebidas/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          },
+          {
+            "nome": "SAPL",
+            "url": "https://sapl.al.ro.leg.br/",
+            "origem": "menu_principal_oficial",
+            "verificacao": "destino_conferido_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Legislação",
+        "links": [
+          {
+            "nome": "Constituição do Estado",
+            "url": "https://www.al.ro.leg.br/downloads/constituicao-do-estado-de-rondonia",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Regimento Interno",
+            "url": "https://www.al.ro.leg.br/downloads/regimento-interno",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Regimento Interno (Anotado)",
+            "url": "https://www.al.ro.leg.br/downloads/regimento-interno-anotado",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Legislação Compilada",
+            "url": "https://www.al.ro.leg.br/legislacao/legislacao-compilada/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Legislação Compilada PCD",
+            "url": "https://www.al.ro.leg.br/legislacao/legislacao-compilada-pcd/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Legislação Federal",
+            "url": "https://www4.planalto.gov.br/legislacao/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Pesquisar no LexML",
+            "url": "https://www.lexml.gov.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Notícias",
+        "links": [
+          {
+            "nome": "Notícias",
+            "url": "https://www.al.ro.leg.br/noticias/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Eventos",
+        "links": [
+          {
+            "nome": "Eventos",
+            "url": "https://www.al.ro.leg.br/eventos/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "TV ALERO",
+        "links": [
+          {
+            "nome": "Grade de programação",
+            "url": "https://www.al.ro.leg.br/tv/grade/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      },
+      {
+        "secao": "Outros links institucionais",
+        "links": [
+          {
+            "nome": "LGPD",
+            "url": "https://www.al.ro.leg.br/lgpd/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          },
+          {
+            "nome": "Escola do Legislativo",
+            "url": "https://escola.al.ro.leg.br/",
+            "origem": "menu_principal_ou_mapa_do_site_oficial",
+            "verificacao": "link_identificado_no_portal_em_2026-11-09"
+          }
+        ]
+      }
+    ],
+    "observacoes": [
+      "Links com autenticação (SEI, SICAVI, serviços internos e similares) estão catalogados como pontos de entrada, sem alegação de acesso público ao conteúdo.",
+      "A Ouvidoria retornou erro de consulta na ferramenta, embora esteja vinculada no portal oficial.",
+      "O destino Legislação Federal retornou acesso negado ao consultar; foi preservado como referência publicada pela ALERO.",
+      "Itens repetidos entre menu, rodapé e seções foram representados por links da mesma URL em suas seções de navegação."
     ]
   },
   "fontes_complementares": [
