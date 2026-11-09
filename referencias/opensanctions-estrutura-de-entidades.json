@@ -1,0 +1,9 @@
+{
+  "nome": "OpenSanctions — Documentação da estrutura de entidades",
+  "tipo": "documentacao_tecnica",
+  "descricao": "Documentação oficial do modelo FollowTheMoney utilizado pelo OpenSanctions para representar entidades, identificadores, propriedades, fontes, referências e relações em grafos de dados.",
+  "abrangencia": "Internacional / Modelagem de dados, sanções e pessoas politicamente expostas",
+  "url": "https://www.opensanctions.org/docs/entities/",
+  "status_validacao": "pagina_oficial_consultada",
+  "nota": "Documentação técnica, não é endpoint de consulta nem licença de reutilização. Verificar condições de uso e atualização dos conjuntos de dados."
+}
