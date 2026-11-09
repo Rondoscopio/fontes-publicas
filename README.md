@@ -27,6 +27,10 @@ As **fontes** continuam representadas por um JSON nas pastas de origem/abrangên
 
 Os novos arquivos de ferramentas e referências usam um nome normalizado e um identificador derivado da URL, preservando a origem e evitando colisões de nomes.
 
+## Fontes agrícolas, econômicas e ambientais
+
+- [Fontes originais de agricultura, commodities, câmbio e queimadas](FONTES-AGROPECUARIA-QUEIMADAS.md). Apenas serviços e instituições de origem, com indicação das fichas já presentes no catálogo; sem referências a projetos ou produtos derivados.
+
 ## Estrutura de cada fonte
 
 ```json
