@@ -923,6 +923,15 @@
       "url": "https://sapl.riocrespo.ro.leg.br/",
       "tipo": "sapl",
       "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Senado Federal — Interlegis: órgãos atendidos em Rondônia",
+      "url": "https://www12.senado.leg.br/interlegis/orgaosatendidos?uf=RO",
+      "tipo": "cadastro_institucional_legislativo",
+      "abrangencia": "Estadual — Rondônia",
+      "descricao": "Consulta de casas legislativas atendidas pelo Interlegis, com informações institucionais e referências a serviços como SAPL, Portal Modelo e acordos de cooperação quando disponíveis.",
+      "origem": "solicitacao_do_usuario",
+      "verificacao": "link_fornecido_pelo_usuario; conteudo_nao_revalidado_nesta_edicao"
     }
   ]
 }
