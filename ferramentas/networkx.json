@@ -1,0 +1,8 @@
+{
+  "nome": "NetworkX — Análise de redes",
+  "descricao": "Biblioteca Python para construção, processamento, visualização com ferramentas complementares e análise matemática de grafos e redes.",
+  "abrangencia": "Internacional / Análise de grafos",
+  "url": "https://networkx.org/",
+  "status_validacao": "referencia_catalogada_sem_auditoria_independente",
+  "nota": "Verificar atualização, cobertura, critérios de acesso e licenças. Eventuais correspondências ou vínculos não constituem prova de irregularidade."
+}
