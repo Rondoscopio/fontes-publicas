@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 450" role="img" aria-labelledby="title desc">
+<title id="title">Rondoscópio, OSINT Rondônia</title>
+<desc id="desc">Banner verde com lupa, gráficos e documentos para investigação e fiscalização pública.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#002c22"/><stop offset=".55" stop-color="#004632"/><stop offset="1" stop-color="#003829"/></linearGradient>
+ <linearGradient id="lime" x2="0" y2="1"><stop stop-color="#c6ff59"/><stop offset="1" stop-color="#62d640"/></linearGradient>
+ <linearGradient id="right" x2="0" y2="1"><stop stop-color="#39ad4d" stop-opacity=".65"/><stop offset="1" stop-color="#035039" stop-opacity=".18"/></linearGradient>
+</defs>
+<rect width="1800" height="450" fill="url(#bg)"/>
+<path d="M0 395Q500 310 950 402T1800 362V450H0Z" fill="#05663e" opacity=".42"/>
+<path d="M0 395Q500 310 950 402T1800 362" fill="none" stroke="#a0ed39" stroke-width="7"/>
+<g transform="translate(60 65)" fill="none" stroke="url(#lime)" stroke-width="17">
+ <circle cx="95" cy="95" r="90"/>
+ <path d="M30 160 -18 212" stroke-linecap="round" stroke-width="35"/>
+</g>
+<g fill="#a8ee43" transform="translate(93 119)">
+ <rect x="0" y="78" width="20" height="45" rx="2"/>
+ <rect x="37" y="49" width="20" height="74" rx="2"/>
+ <rect x="74" y="25" width="20" height="98" rx="2"/>
+ <polyline points="0,40 40,4 70,16 113,-15" fill="none" stroke="#a8ee43" stroke-width="7"/>
+ <circle cx="0" cy="40" r="10"/><circle cx="40" cy="4" r="10"/><circle cx="70" cy="16" r="10"/><circle cx="113" cy="-15" r="10"/>
+</g>
+<g font-family="Arial, Helvetica, sans-serif" fill="#fffbea">
+ <text x="320" y="159" font-size="91" font-weight="800" letter-spacing="-3">Rondoscópio</text>
+ <text x="322" y="224" font-size="49" font-weight="300">OSINT Rondônia</text>
+ <text x="323" y="289" font-size="26">Fontes, dados e ferramentas para o controle social</text>
+ <text x="323" y="325" font-size="26">e a fiscalização do poder público em Rondônia.</text>
+</g>
+<g transform="translate(1330 80)" opacity=".87">
+ <path d="M0 95 62 25 115 50 166 -25 232 7" fill="none" stroke="#43bd4c" stroke-width="5"/>
+ <g fill="#5eca50"><circle cy="95" r="13"/><circle cx="62" cy="25" r="13"/><circle cx="115" cy="50" r="13"/><circle cx="166" cy="-25" r="13"/></g>
+ <rect x="205" y="10" width="200" height="170" rx="13" stroke="#63c44f" stroke-width="4" fill="#005039"/>
+ <path d="M205 46H405" stroke="#63c44f" stroke-width="3"/>
+ <g fill="#69d74a"><circle cx="225" cy="29" r="5"/><circle cx="245" cy="29" r="5"/><circle cx="265" cy="29" r="5"/><rect x="245" y="110" width="21" height="40"/><rect x="280" y="84" width="21" height="66"/><rect x="315" y="65" width="21" height="85"/></g>
+ <circle cx="365" cy="103" r="22" stroke="#77da4e" stroke-width="10" fill="none"/>
+ <path d="M365 103v-23h23" stroke="#77da4e" stroke-width="8" fill="none"/>
+ <ellipse cx="90" cy="185" rx="95" ry="23" fill="#147e45"/>
+ <rect x="-5" y="155" width="190" height="52" rx="9" fill="#2e9e48"/>
+ <ellipse cx="90" cy="155" rx="95" ry="23" fill="#3eb859"/>
+ <path d="M128 95h109l43 43v120H128Z" fill="#d5ffb1"/>
+ <path d="M237 95v43h43" fill="#84d963"/>
+ <g fill="#32a048"><rect x="149" y="150" width="96" height="7" rx="3"/><rect x="149" y="178" width="96" height="7" rx="3"/><rect x="149" y="207" width="96" height="7" rx="3"/></g>
+ <circle cx="276" cy="230" r="44" fill="#00503c" stroke="#b3fb68" stroke-width="13"/>
+ <path d="M309 263 341 298" stroke="#b3fb68" stroke-width="14" stroke-linecap="round"/>
+</g>
+</svg>
