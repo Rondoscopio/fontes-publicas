@@ -1,0 +1,6 @@
+{
+  "nome": "Consultar Zonas Eleitorais por UF",
+  "descricao": "Lista as zonas eleitorais e unidades da Justiça Eleitoral de cada estado. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/unidades-justica-eleitoral/por-uf"
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "ANBIMA - Consulta de Pessoas Certificadas",
+  "descricao": "Consulta de profissionais certificados pela ANBIMA. Para consulta é necessário apenas o CPF. Retorna CPF, nome, certificações, status e validade. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
+  "url": "https://anbimaedu.com.br/consulta-certificado"
+}

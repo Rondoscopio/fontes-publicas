@@ -1,0 +1,6 @@
+{
+  "nome": "TST - Certidão Negativa de Débitos Trabalhistas (CNDT)",
+  "descricao": "Emissão de certidão que informa se a pessoa física ou jurídica consta no Banco Nacional de Devedores Trabalhistas. Para consulta é necessário apenas o CPF ou CNPJ. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://cndt-certidao.tst.jus.br/inicio.faces"
+}

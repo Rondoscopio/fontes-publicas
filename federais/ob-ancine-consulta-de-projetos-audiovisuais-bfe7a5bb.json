@@ -1,0 +1,6 @@
+{
+  "nome": "ANCINE - Consulta de Projetos Audiovisuais",
+  "descricao": "Consulta de projetos audiovisuais registrados na ANCINE. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://sad.ancine.gov.br/projetosaudiovisuais/ConsultaProjetosAudiovisuais.do?method=init"
+}

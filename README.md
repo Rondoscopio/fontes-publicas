@@ -8,13 +8,15 @@ Cada fonte é representada por **um arquivo JSON** dentro da pasta correspondent
 
 | Pasta | Fontes |
 | --- | ---: |
-| `agregadores/` | 62 |
-| `estaduais/` | 123 |
-| `federais/` | 324 |
-| `internacionais/` | 87 |
+| `agregadores/` | 728 |
+| `estaduais/` | 132 |
+| `federais/` | 693 |
+| `internacionais/` | 136 |
 | `jornalismo/` | 9 |
 | `municipais/` | 25 |
-| **Total** | **630** |
+| `outros-estados/` | 281 |
+| `outros-municipios/` | 19 |
+| **Total** | **2023** |
 
 Os nomes dos arquivos são derivados dos nomes das fontes, em minúsculas, sem acentos e separados por hífens.
 
@@ -197,6 +199,10 @@ Estas são **ferramentas**, não fontes oficiais. Estão listadas para pesquisa,
 | 98 | [Apache Airflow](https://airflow.apache.org/) | Pipelines agendados |
 | 99 | [Prefect](https://www.prefect.io/) | Orquestração de fluxos |
 | 100 | [SpiderFoot](https://github.com/smicallef/spiderfoot) | Correlação OSINT automatizada |
+
+## Catálogos OSINT de outros estados e países
+
+Foram incorporadas referências do [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) e do [Awesome OSINT](https://github.com/jivoi/awesome-osint). O [relatório de importação](IMPORTACOES-OSINT.md) apresenta escopo e limites, e os inventários registram **todos os links extraídos** dos dois repositórios: [Brazuca](inventarios/osint-brazuca-links.json) e [Awesome OSINT](inventarios/awesome-osint-links.json). Nem todo link é uma base: dorks, guias e ferramentas permanecem apenas no inventário e não devem ser usados para coleta de dados pessoais.
 
 ## Tarefas de investigação e integração
 

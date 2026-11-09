@@ -1,0 +1,6 @@
+{
+  "nome": "Consultar e identificar Frequências de Rádios / SISTEMA DE SERVIÇOS DE TELECOMUNICAÇÕES (STEL)",
+  "descricao": "Abrirá uma página para preenchimento, preencha da seguinte forma: 1. Em recuperação de dados: marque UF; 2. Em apresentar dados por: marque a letra J (frequência e entidade) em faixa de frequência: coloque a frequência que deseja scanear, e Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://sistemas.anatel.gov.br/stel/Consultas/RecuperacaoFrequencias/tela.asp?SISQSmodulo=9896"
+}

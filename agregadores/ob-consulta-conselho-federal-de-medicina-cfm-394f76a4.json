@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta Conselho Federal de Medicina (CFM)",
+  "descricao": "Pesquisar no Repositório do cadastro de médicos do Brasil. Mantido pelo Conselho Federal de Medicina, órgão que fiscaliza e normatiza a prática médica no Brasil. Para realizar a consulta, basta preencher o formulário e pesquisar. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
+  "url": "https://portal.cfm.org.br/busca-medicos/"
+}

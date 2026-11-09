@@ -1,0 +1,6 @@
+{
+  "nome": "ViaCEP - API de Consulta de CEP — URL Base",
+  "descricao": "API gratuita para consulta de endereços por CEP. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
+  "url": "https://viacep.com.br/ws/"
+}

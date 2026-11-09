@@ -1,0 +1,6 @@
+{
+  "nome": "CVM RAD - Consulta de Documentos de Companhias",
+  "descricao": "Sistema RAD da Comissão de Valores Mobiliários para consulta pública de documentos de companhias abertas, como fatos relevantes, formulários de referência e demonstrações financeiras. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.rad.cvm.gov.br/ENET/frmConsultaExternaCVM.aspx"
+}

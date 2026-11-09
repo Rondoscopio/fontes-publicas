@@ -1,0 +1,6 @@
+{
+  "nome": "Câmeras por Estado — Ponte Hercílio Luz 02: Santa Catarina — SC",
+  "descricao": "Câmeras de monitoramento de rodovias, segurança pública e clima por estado. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
+  "url": "https://bemtevi.segurancapublica.sc.gov.br:10346/Interface/Cameras/GetJPEGStream?Camera=FNS_CEN_160&width=1920&height=1080"
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "Busca Operadora / Linha Pré ativa por CPF",
+  "descricao": "Consultar se possui linha pré-paga ativa nas Prestadoras participantes (Algar, Claro, Oi, Sercomtel, TIM e Vivo). Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
+  "url": "https://cadastropre.com.br/#/consulta"
+}

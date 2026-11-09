@@ -1,0 +1,6 @@
+{
+  "nome": "MTE - Cadastro Nacional de Entidades Sindicais (CNES)",
+  "descricao": "Consulta pública de entidades sindicais por CNPJ, número de solicitação, processo/carta, representação ou parâmetros (como a razão social). Retorna razão social, denominação, CNPJ, grau e situação. Possui captcha. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://cnes.trabalho.gov.br/app/publico/consultas/cadastro-entidade"
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "ANM - Cadastro Mineiro (Pesquisa de Processos Minerários) — Pesquisar Processos",
+  "descricao": "Pesquisa de processos minerários por nome do titular, CPF/CNPJ do titular, NUP, município, substância, fase do processo, situação e tipo de título, entre outros filtros, com opção de exportação. Retorna processo, tipo de requerimento, fase  Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://sistemas.anm.gov.br/SCM/Extra/site/admin/pesquisarProcessos.aspx"
+}

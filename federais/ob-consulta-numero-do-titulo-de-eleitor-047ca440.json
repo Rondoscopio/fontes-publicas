@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta Número do Título de eleitor",
+  "descricao": "Localiza o número do título eleitoral a partir dos dados pessoais do eleitor, como nome, data de nascimento e nome da mãe. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/atendimento-eleitor/consultar-numero-titulo-eleitor"
+}

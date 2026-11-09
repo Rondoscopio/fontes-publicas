@@ -1,0 +1,6 @@
+{
+  "nome": "DataSUS - Transferência de Arquivos",
+  "descricao": "Portal para download de bases de dados de saúde pública, incluindo SIM, SINASC, SIH, SIA e outros sistemas. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://datasus.saude.gov.br/transferencia-de-arquivos/"
+}

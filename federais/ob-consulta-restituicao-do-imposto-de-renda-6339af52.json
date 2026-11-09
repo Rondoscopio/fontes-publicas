@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta Restituição do Imposto de Renda",
+  "descricao": "Nesta consulta serão exibidas informações (banco, agência e data de restituição) da Restituição do Imposto de Renda. Para consulta é necessário apenas o CPF e data de nascimento. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.restituicao.receita.fazenda.gov.br/"
+}

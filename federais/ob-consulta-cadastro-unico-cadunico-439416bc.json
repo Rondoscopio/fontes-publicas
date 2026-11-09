@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta - Cadastro Único (CAdunico)",
+  "descricao": "Descubra se determinada família está cadastrada no Cadastro Único, informando apenas do CPF e data de nascimento. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://cadunico.dataprev.gov.br/#/consultaCpf"
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta de Inutilização / CNPJ",
+  "descricao": "Consulta de inutilização de numeração de documentos fiscais eletrônicos e verificação de CNPJ no sistema de CT-e. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.cte.fazenda.gov.br/portal/consulta.aspx?tipoConsulta=inutilizacao&tipoConteudo=MZ1N+CQHCgA="
+}

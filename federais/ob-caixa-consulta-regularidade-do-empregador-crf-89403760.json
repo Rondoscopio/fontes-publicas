@@ -1,0 +1,6 @@
+{
+  "nome": "Caixa - Consulta Regularidade do Empregador (CRF)",
+  "descricao": "Consulta do Certificado de Regularidade do FGTS do empregador. Para consulta é necessário o CNPJ ou CEI e a UF. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
+}

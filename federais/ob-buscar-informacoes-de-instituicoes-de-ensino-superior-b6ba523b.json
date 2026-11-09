@@ -1,0 +1,6 @@
+{
+  "nome": "Buscar Informações de Instituições de Ensino Superior",
+  "descricao": "Sistema do Ministerio da Educacao (MEC) responsavel pela tramitacao dos processos de ato regulatorio das instituicoes de educacao superior do Brasil. É possível buscar cursos e outras informações das instituições direto no MEC. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://emec.mec.gov.br/"
+}

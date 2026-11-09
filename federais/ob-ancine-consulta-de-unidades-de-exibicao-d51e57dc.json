@@ -1,0 +1,6 @@
+{
+  "nome": "ANCINE - Consulta de Unidades de Exibição",
+  "descricao": "Consulta pública de salas de cinema e espaços de exibição cadastrados. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://sad.ancine.gov.br/consultapublica/telaPrincipalUE.do?method=initListar"
+}

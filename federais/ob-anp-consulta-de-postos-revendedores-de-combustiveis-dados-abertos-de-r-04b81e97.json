@@ -1,0 +1,6 @@
+{
+  "nome": "ANP - Consulta de Postos Revendedores de Combustíveis — Dados Abertos de Revendedores",
+  "descricao": "Consulta de Dados Públicos da ANP por CNPJ, nome do posto, estado, município, bandeira, combustível e tipo de posto, com exportação incluindo tancagem. Retorna CNPJ, razão social, nome fantasia, UF, município e bandeira; o detalhamento do p Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.gov.br/anp/pt-br/centrais-de-conteudo/dados-abertos/dados-cadastrais-dos-revendedores-varejistas-de-combustiveis-automotivos"
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "ANVISA - Consulta de Autorização de Funcionamento de Empresas",
+  "descricao": "Consulta por CNPJ, número da autorização ou NUVS. Retorna razão social, nome fantasia, autorização, número do processo, tipo de produto, site, SAC, data da autorização e situação. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://consultas.anvisa.gov.br/#/empresas/empresas/"
+}

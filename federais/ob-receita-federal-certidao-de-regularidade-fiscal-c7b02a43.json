@@ -1,0 +1,6 @@
+{
+  "nome": "Receita Federal - Certidão de Regularidade Fiscal",
+  "descricao": "Consulta e emissão de certidão de débitos relativos a créditos tributários federais e à dívida ativa da União, sem necessidade de login. Pessoa jurídica exige apenas o CNPJ; pessoa física exige CPF e data de nascimento. A consulta retorna a Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://servicos.receitafederal.gov.br/servico/certidoes/"
+}

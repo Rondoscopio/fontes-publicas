@@ -1,0 +1,6 @@
+{
+  "nome": "Maptimize Demo Sentiment Analysis on Tweets",
+  "descricao": "Esta página exibe os tweets e geolocalização das últimas 24 horas entregues pela API de fluxo público do Twitter. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Internacional / Global",
+  "url": "https://onemilliontweetmap.com/?center=-18.79191774423444"
+}

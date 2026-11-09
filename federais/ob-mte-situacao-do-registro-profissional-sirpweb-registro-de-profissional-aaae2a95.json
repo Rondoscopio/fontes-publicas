@@ -1,0 +1,6 @@
+{
+  "nome": "MTE - Situação do Registro Profissional (SIRPWEB) — Registro de Profissional",
+  "descricao": "Consulta da situação de registro profissional emitido pelo Ministério do Trabalho e Emprego. Pesquisa por nome, UF do registro, CPF ou número do registro. Retorna nome, registro, categoria, função, data de concessão e situação. Registros an Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://sirpweb.trabalho.gov.br/sirpweb/pages/consultas/situacaoRegistro.seam"
+}

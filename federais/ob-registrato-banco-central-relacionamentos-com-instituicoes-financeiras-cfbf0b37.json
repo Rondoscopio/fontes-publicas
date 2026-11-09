@@ -1,0 +1,6 @@
+{
+  "nome": "Registrato (Banco Central) - Relacionamentos com Instituições Financeiras",
+  "descricao": "Consulta, por CPF ou CNPJ, dos relacionamentos mantidos com instituições financeiras, como contas, empréstimos, cheques e chaves PIX, além de dívidas registradas no SSCR. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://registrato.bcb.gov.br/"
+}

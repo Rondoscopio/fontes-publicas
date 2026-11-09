@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta Etrevistador do IBGE",
+  "descricao": "Pesquisa informações sobre entrevistador do IBGE. Para consulta é necessário: número matrícula, CPF ou RG. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.ibge.gov.br/acesso-informacao/institucional/documentos-ibge/1861-novo-portal/institucional/17422-servidores.html"
+}

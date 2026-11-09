@@ -1,0 +1,6 @@
+{
+  "nome": "IBAMA - Certificado de Regularidade (CTF)",
+  "descricao": "Consulta da regularidade de pessoas físicas e jurídicas no Cadastro Técnico Federal de Atividades Potencialmente Poluidoras. Para consulta é necessário apenas o CPF ou CNPJ. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://servicos.ibama.gov.br/ctf/publico/certificado_regularidade_consulta.php"
+}

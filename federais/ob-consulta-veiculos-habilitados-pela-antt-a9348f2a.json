@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta Veículos Habilitados pela ANTT",
+  "descricao": "Permite visualizar os veículos, nacionais e estrangeiros, habilitados pela ANTT ao transporte rodoviário internacional de cargas. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://appweb1.antt.gov.br/scff/conPlaca.asp"
+}

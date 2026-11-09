@@ -1,0 +1,6 @@
+{
+  "nome": "Banco Central - Encontre uma Instituição",
+  "descricao": "Consulta de instituições reguladas ou supervisionadas pelo Banco Central, por nome, CNPJ (8 primeiros dígitos), UF e município, com opção de incluir agências e instituições em regime especial ou liquidação. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.bcb.gov.br/meubc/encontreinstituicao"
+}

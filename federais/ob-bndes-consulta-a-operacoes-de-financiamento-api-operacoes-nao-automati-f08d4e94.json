@@ -1,0 +1,6 @@
+{
+  "nome": "BNDES - Consulta a Operações de Financiamento — API: Operações Não Automáticas",
+  "descricao": "Operações contratadas com o BNDES. A API de dados abertos permite pesquisar pelo nome do cliente ou CNPJ formatado e retorna cliente, CNPJ, descrição do projeto, UF, município, número e data do contrato, valores contratado e desembolsado, j Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://dadosabertos.bndes.gov.br/api/3/action/datastore_search?resource_id=6f56b78c-510f-44b6-8274-78a5b7e931f4&q={VALOR}"
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "TCU - Plataforma de Certidões — Lista de inabilitados",
+  "descricao": "Emissão de certidões do Tribunal de Contas da União por CPF ou CNPJ (contas julgadas irregulares, inabilitados, licitantes inidôneos e processos) e listas públicas pesquisáveis por nome, CPF/CNPJ, UF e município, com download em CSV. A list Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://certidoes.apps.tcu.gov.br/lista-inabilitados"
+}

@@ -1,0 +1,6 @@
+{
+  "nome": "INPI - Busca de Patentes",
+  "descricao": "Consulta de patentes registradas no Brasil. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://busca.inpi.gov.br/pePI/jsp/patentes/PatenteSearchBasico.jsp"
+}

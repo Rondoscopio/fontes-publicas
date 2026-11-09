@@ -1,0 +1,6 @@
+{
+  "nome": "CFO - Busca de Profissionais de Odontologia",
+  "descricao": "Busca de inscritos no Conselho Federal de Odontologia por CRO/UF, categoria (cirurgião-dentista, TPD, TSB, ASB, APD), número de inscrição, especialidade, habilitação e nome completo ou palavra-chave. Retorna nome, inscrição, situação, categ Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
+  "url": "https://busca-profissionais.cfo.org.br/"
+}

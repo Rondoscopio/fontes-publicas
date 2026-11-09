@@ -1,0 +1,6 @@
+{
+  "nome": "DivulgaCand - API do TSE",
+  "descricao": "Acesso programático aos dados de candidaturas e prestação de contas eleitorais. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://divulgacandcontas.tse.jus.br/divulga/rest/v1/docs/"
+}

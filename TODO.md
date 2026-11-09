@@ -25,3 +25,9 @@ Tarefas propostas para pesquisa e desenvolvimento do Rondoscópio. **Não estão
 - [ ] Avaliar comparabilidade de servidores efetivos, comissionados, cedidos, magistrados, membros, aposentados, pensionistas, verbas indenizatórias e diárias.
 - [ ] Registrar origem, competência, vigência da tabela, gratificações e regras de publicidade; não expor identificadores pessoais protegidos.
 
+
+## Expansão nacional de fontes OSINT
+
+- [ ] Extrair com autorização e conferir os 959 links de documentação do [catálogo ChelfoIA/Manus](https://www.chelfoapi.com/). Seu quadro detalhado é carregado via JavaScript e não foi acessível nesta rodada; não afirmar que foram importados 959 registros.
+- [ ] Deduplicar por URL os links recém-importados em relação aos registros históricos do catálogo e testar acessibilidade e licenças; novos cadastros são apenas candidatos, não fontes auditadas.
+- [ ] Priorizar validação de portais de tribunais, contratos e sanções de todos os estados e municípios; manter status de processos, decisões e sanções com temporalidade e presunção de inocência.

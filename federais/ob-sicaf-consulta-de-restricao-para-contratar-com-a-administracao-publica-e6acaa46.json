@@ -1,0 +1,6 @@
+{
+  "nome": "SICAF - Consulta de Restrição para Contratar com a Administração Pública",
+  "descricao": "Consulta pública de pessoas físicas, jurídicas e estrangeiros com restrição para contratar com a Administração Pública, por CNPJ, CPF ou razão social. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www3.comprasnet.gov.br/sicaf-web/public/pages/consultas/consultarRestricaoContratarAdministracaoPublica.jsf"
+}

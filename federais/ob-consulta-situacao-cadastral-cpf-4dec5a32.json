@@ -1,0 +1,6 @@
+{
+  "nome": "Consulta Situação Cadastral CPF",
+  "descricao": "Consulta pública da situação cadastral do CPF na Receita Federal. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp"
+}

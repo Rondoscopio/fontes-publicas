@@ -1,0 +1,6 @@
+{
+  "nome": "ANCINE - Consulta de Agentes Econômicos",
+  "descricao": "Consulta detalhada de agentes econômicos do setor audiovisual por tipo. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://sad2.ancine.gov.br/agenteeconomico/consultaViaPortal/consultaExternaAE.seam"
+}

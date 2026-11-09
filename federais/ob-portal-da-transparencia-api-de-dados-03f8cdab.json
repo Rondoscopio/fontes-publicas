@@ -1,0 +1,6 @@
+{
+  "nome": "Portal da Transparência - API de Dados",
+  "descricao": "Interface REST oficial permitindo consultas automatizadas a despesas, convênios, favorecidos e dados de pessoal. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://portaldatransparencia.gov.br/api-de-dados"
+}

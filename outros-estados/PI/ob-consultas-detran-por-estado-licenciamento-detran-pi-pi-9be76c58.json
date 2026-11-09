@@ -1,0 +1,6 @@
+{
+  "nome": "Consultas DETRAN por Estado — Licenciamento DETRAN-PI — PI",
+  "descricao": "Consultas veiculares, CNH, pontuação e outros serviços dos DETRANs estaduais. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Estadual / PI, fora de Rondônia",
+  "url": "http://taxas.detran.pi.gov.br/licenciamento/index.jsf"
+}

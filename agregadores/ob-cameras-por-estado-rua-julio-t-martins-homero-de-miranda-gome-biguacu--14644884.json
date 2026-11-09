@@ -1,0 +1,6 @@
+{
+  "nome": "Câmeras por Estado — Rua Júlio T. Martins/Homero de Miranda Gome: Biguaçú — SC",
+  "descricao": "Câmeras de monitoramento de rodovias, segurança pública e clima por estado. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
+  "url": "https://bemtevi.segurancapublica.sc.gov.br:10311/Interface/Cameras/GetJPEGStream?Camera=BGC_CEN_020&width=1920&height=1080"
+}
