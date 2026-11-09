@@ -1,6 +1,6 @@
 {
   "nome": "O Madeira",
-  "descricao": "Veículo de notícias e informações de Porto Velho, Rondônia, relacionado no diretório Atlas da Imprensa. A linha editorial, atividade atual e independência de outros veículos ainda exigem verificação.",
+  "descricao": "Veículo de notícias e informações relacionado ao município de Porto Velho, Rondônia, referenciado pelo Atlas da Imprensa. A atividade atual e os vínculos editoriais requerem validação complementar.",
   "abrangencia": "Municipal / Porto Velho, Rondônia, Brasil",
   "municipio": "Porto Velho",
   "uf": "RO",
@@ -10,5 +10,5 @@
   "origem": "https://atlasdaimprensa.com.br/rondonia-jornais/",
   "status_validacao": "dominio_identificado_em_diretorio_atividade_nao_confirmada",
   "data_referencia": "2026-11-09",
-  "nota": "Endereço informado em diretório de imprensa. Cadastro não comprova que o domínio esteja acessível nem que o veículo publique atualmente. Não replicar conteúdo sem verificar termos, autoria e direitos."
+  "nota": "Link publicado em diretório de imprensa; funcionamento, atualidade e independência editorial não foram confirmados."
 }

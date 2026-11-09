@@ -1,0 +1,14 @@
+{
+  "nome": "Alô Rondônia",
+  "descricao": "Veículo de notícias e informações relacionado ao município de Ariquemes, Rondônia, referenciado pelo Atlas da Imprensa. A atividade atual e os vínculos editoriais requerem validação complementar.",
+  "abrangencia": "Municipal / Ariquemes, Rondônia, Brasil",
+  "municipio": "Ariquemes",
+  "uf": "RO",
+  "pais": "Brasil",
+  "tipo": "portal_de_noticias",
+  "url": "https://www.alorondonia.com.br/",
+  "origem": "https://atlasdaimprensa.com.br/rondonia-jornais/",
+  "status_validacao": "dominio_identificado_em_diretorio_atividade_nao_confirmada",
+  "data_referencia": "2026-11-09",
+  "nota": "Link publicado em diretório de imprensa; funcionamento, atualidade e independência editorial não foram confirmados."
+}

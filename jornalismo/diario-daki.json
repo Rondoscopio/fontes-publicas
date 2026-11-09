@@ -1,0 +1,14 @@
+{
+  "nome": "Diário Daki",
+  "descricao": "Veículo de notícias e informações relacionado ao município de Cacaulândia, Rondônia, referenciado pelo Atlas da Imprensa. A atividade atual e os vínculos editoriais requerem validação complementar.",
+  "abrangencia": "Municipal / Cacaulândia, Rondônia, Brasil",
+  "municipio": "Cacaulândia",
+  "uf": "RO",
+  "pais": "Brasil",
+  "tipo": "portal_de_noticias",
+  "url": "https://diariodaki.com.br/",
+  "origem": "https://atlasdaimprensa.com.br/rondonia-jornais/",
+  "status_validacao": "dominio_identificado_em_diretorio_atividade_nao_confirmada",
+  "data_referencia": "2026-11-09",
+  "nota": "Link publicado em diretório de imprensa; funcionamento, atualidade e independência editorial não foram confirmados."
+}
