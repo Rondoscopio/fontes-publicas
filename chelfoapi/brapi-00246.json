@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00246",
+  "nome": "API Diário de Bordo Eletrônico (eDB)",
+  "orgao_responsavel": "Agência Nacional de Aviação Civil (ANAC)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Aviação Civil / Regulação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://homologacao-api-diariodebordo.anac.gov.br/api/docs/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

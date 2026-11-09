@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00862",
+  "nome": "API de Dados Abertos de Santarém",
+  "orgao_responsavel": "Prefeitura Municipal de Santarém / NTI",
+  "esfera": "Municipal",
+  "uf": "PA",
+  "categoria": "Transparência, Receitas, Despesas, Servidores, Licitações",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.santarem.pa.gov.br/base-de-dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

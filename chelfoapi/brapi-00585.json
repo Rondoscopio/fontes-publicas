@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00585",
+  "nome": "SICONFI API",
+  "orgao_responsavel": "Secretaria do Tesouro Nacional (STN)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Finanças Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://apidatalake.tesouro.gov.br/docs/siconfi/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

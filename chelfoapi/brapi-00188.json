@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00188",
+  "nome": "API de Dados Abertos do TCE-MG",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Minas Gerais (TCE-MG)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência, controle, orçamento, contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.tce.mg.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

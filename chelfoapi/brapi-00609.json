@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00609",
+  "nome": "API do Tesauro da Justiça Militar da União (TesJMU)",
+  "orgao_responsavel": "Superior Tribunal Militar (STM)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Jurisprudência",
+  "tecnologia": "SPARQL/RDF",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://tesjmu.stm.jus.br/tesjmu/vocab/sobre.php",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

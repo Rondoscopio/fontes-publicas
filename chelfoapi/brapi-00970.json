@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00970",
+  "nome": "API Diario Oficial",
+  "orgao_responsavel": "Prefeitura de São Paulo / IMESP",
+  "esfera": "Municipal",
+  "uf": "SP",
+  "categoria": "Diário Oficial",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://apilib.prefeitura.sp.gov.br/store/apis/info?name=Diario_Oficial&version=v1&provider=admin",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

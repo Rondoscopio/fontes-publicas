@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00373",
+  "nome": "ComunicaAPI PJe",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ) / TRF5",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://comunicaapi.pje.jus.br/swagger-ui/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

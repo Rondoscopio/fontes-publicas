@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00197",
+  "nome": "API de Cobranças eproc (Integração Banco do Brasil)",
+  "orgao_responsavel": "Tribunal de Justiça do Acre",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Finanças, Dados Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00252",
+  "nome": "API de Dados do CKAN (Portal de Dados Abertos ANEEL)",
+  "orgao_responsavel": "Agência Nacional de Energia Elétrica (ANEEL)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Energia Elétrica",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://dadosabertos.aneel.gov.br/pt_BR/api/1/util/snippet/api_info.html?resource_id=3710b245-88f0-4aa6-8cfb-8b1426e9021d",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

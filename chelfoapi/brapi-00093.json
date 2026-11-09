@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00093",
+  "nome": "API Consignado RS",
+  "orgao_responsavel": "Banrisul",
+  "esfera": "Estadual",
+  "uf": "RS",
+  "categoria": "Finanças e Crédito",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://developers.banrisul.com.br/pages/docs/parceiros-banrisul/consignado-rs-v1.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

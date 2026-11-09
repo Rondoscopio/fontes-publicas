@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00302",
+  "nome": "API SIFEC (Sistema de Financiamento e Empréstimo Centralizado)",
+  "orgao_responsavel": "Caixa Econômica Federal",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://sifec.caixa.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

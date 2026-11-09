@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00044",
+  "nome": "CKAN Data API - Dados Abertos MG",
+  "orgao_responsavel": "Governo do Estado de Minas Gerais (SEPLAG/PRODEMGE)",
+  "esfera": "Estadual",
+  "uf": "MG",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://dados.mg.gov.br/api/1/util/snippet/api_info.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

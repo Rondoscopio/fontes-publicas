@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00072",
+  "nome": "API do Login Gov.pi Cidadão",
+  "orgao_responsavel": "ETIPI - Empresa de Tecnologia da Informação do Piauí",
+  "esfera": "Estadual",
+  "uf": "PI",
+  "categoria": "Serviços ao Cidadão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://govpiconecta.pi.gov.br/docs/login-govpi/intro",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

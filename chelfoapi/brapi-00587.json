@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00587",
+  "nome": "API de Dados Abertos Administrativos do Senado Federal",
+  "orgao_responsavel": "Senado Federal",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Administração, Pessoal, Contratos, Senadores (CEAPS)",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://adm.senado.gov.br/adm-dadosabertos/swagger-ui/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

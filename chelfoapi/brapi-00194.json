@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00194",
+  "nome": "API de Dados Abertos - Contratos TCE-SE",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Sergipe",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.tce.se.gov.br/visualizadorRelatorios/swagger/ui/index",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

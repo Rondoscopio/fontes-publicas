@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00845",
+  "nome": "API de Dados Abertos de Munhoz",
+  "orgao_responsavel": "Prefeitura Municipal de Munhoz",
+  "esfera": "Municipal",
+  "uf": "MG",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://munhoz.mg.gov.br/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

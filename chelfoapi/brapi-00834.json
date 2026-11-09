@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00834",
+  "nome": "API de Dados Abertos - Prefeitura Municipal de Caxias",
+  "orgao_responsavel": "Prefeitura Municipal de Caxias",
+  "esfera": "Municipal",
+  "uf": "MA",
+  "categoria": "Transparência, LRF, Decretos, Portarias, Convênios",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://transparencia.caxias.ma.gov.br/transparencia/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00467",
+  "nome": "ICMBio IPT (GBIF/SiBBr)",
+  "orgao_responsavel": "Instituto Chico Mendes de Conservação da Biodiversidade - ICMBio",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Biodiversidade, Espécies Ameaçadas, Ocorrências",
+  "tecnologia": "Feed estruturado",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://ipt.gbif.org/manual/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00719",
+  "nome": "API de Dados Abertos - Betha Sistemas",
+  "orgao_responsavel": "Betha Sistemas / Prefeitura Municipal de Cruzeiro do Sul",
+  "esfera": "Municipal",
+  "uf": "AC",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.plataforma.betha.cloud/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

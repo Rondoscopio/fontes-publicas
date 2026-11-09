@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00221",
+  "nome": "API Datacor Transparência TJPI",
+  "orgao_responsavel": "Tribunal de Justiça do Estado do Piauí (TJPI)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e Dados Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.tjpi.jus.br/datacor-api/swagger-ui/index.html?urls.primaryName=Transpar%C3%AAncia",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

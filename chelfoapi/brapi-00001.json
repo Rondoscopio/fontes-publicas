@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00001",
+  "nome": "Serviços Geográficos CAESB",
+  "orgao_responsavel": "Companhia de Saneamento Ambiental do Distrito Federal (CAESB)",
+  "esfera": "Estadual",
+  "uf": "DF",
+  "categoria": "Saneamento",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://atlas.caesb.df.gov.br/portal/portalhelp/en/rest/router.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

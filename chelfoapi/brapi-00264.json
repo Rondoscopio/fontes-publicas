@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00264",
+  "nome": "SISPAT - API de Bens Patrimoniais",
+  "orgao_responsavel": "Agência Nacional de Transportes Aquaviários (ANTAQ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Patrimônio",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://antaq.github.io/sispat-api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

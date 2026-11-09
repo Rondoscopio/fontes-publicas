@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00163",
+  "nome": "DPE API",
+  "orgao_responsavel": "Defensoria Pública do Rio Grande do Norte",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência (Notícias, Sanções, Terceirizados)",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://www.defensoria.rn.def.br/api/docs",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

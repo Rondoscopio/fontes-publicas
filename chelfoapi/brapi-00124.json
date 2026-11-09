@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00124",
+  "nome": "API Dados Abertos ALBA",
+  "orgao_responsavel": "Assembleia Legislativa da Bahia (ALBA)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Legislativos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://albalegis.nopapercloud.com.br/dados-abertos.aspx",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

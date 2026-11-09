@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00529",
+  "nome": "API de Qualificação de Endereços",
+  "orgao_responsavel": "Ministério da Gestão e da Inovação em Serviços Públicos (MGI) com uso restrito ao MTE e outros órgãos",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Benefícios Sociais / Qualificação de Dados",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://www.gov.br/conecta/catalogo/apis/api-de-qualificacao-de-enderecos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

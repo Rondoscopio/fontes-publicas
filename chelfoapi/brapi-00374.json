@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00374",
+  "nome": "Processo Judicial Eletrônico (PJe) - MNI",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ) / Tribunal Regional Federal da 1ª Região",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://docs.pje.jus.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

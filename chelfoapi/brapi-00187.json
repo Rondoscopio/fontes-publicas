@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00187",
+  "nome": "APIs do SIAFIC-MT (Sistema Único e Integrado de Execução Orçamentária)",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Mato Grosso (TCE-MT)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Orçamento, Transparência, Gestão Pública",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://apimgt-siafic.tce.mt.gov.br/devportal/apis",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

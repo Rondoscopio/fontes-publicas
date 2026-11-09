@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00360",
+  "nome": "Integra-SNGB (Sistema Nacional de Gestão de Bens)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Bens Apreendidos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.pdpj.jus.br/servicos-negociais/sngb/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00033",
+  "nome": "API Dados Abertos ES (CKAN)",
+  "orgao_responsavel": "SECONT / PRODEST",
+  "esfera": "Estadual",
+  "uf": "ES",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dados.es.gov.br/about",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

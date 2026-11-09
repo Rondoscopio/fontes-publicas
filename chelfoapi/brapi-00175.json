@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00175",
+  "nome": "API CKAN - Dados Abertos MPPE",
+  "orgao_responsavel": "Ministério Público de Pernambuco (MPPE)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Receitas, Despesas, Licitações, Contratos e Convênios",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

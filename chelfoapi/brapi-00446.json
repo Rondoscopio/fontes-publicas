@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00446",
+  "nome": "Loja de APIs da Fiocruz",
+  "orgao_responsavel": "Fundação Oswaldo Cruz (Fiocruz)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Saúde",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://apim2.fiocruz.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

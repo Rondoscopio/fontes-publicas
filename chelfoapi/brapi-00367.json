@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00367",
+  "nome": "API do SISBAJUD (Sistema de Busca de Ativos do Poder Judiciário)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Ordens Judiciais de Bloqueio e Penhora",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.pdpj.jus.br/servicos-negociais/sisbajud/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

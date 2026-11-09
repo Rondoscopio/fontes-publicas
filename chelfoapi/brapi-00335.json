@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00335",
+  "nome": "WSRECEITA",
+  "orgao_responsavel": "Conselho da Justiça Federal (CJF)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Integração / Cadastro",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://cjfweb.cjf.jus.br/wsReceitaApp/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

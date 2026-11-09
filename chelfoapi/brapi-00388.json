@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00388",
+  "nome": "API do Fala.BR",
+  "orgao_responsavel": "Controladoria-Geral da União (CGU)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Ouvidoria e Acesso à Informação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://falabr.cgu.gov.br/help",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

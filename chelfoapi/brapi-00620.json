@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00620",
+  "nome": "Balcão Virtual MNI",
+  "orgao_responsavel": "Tribunal Regional Federal da 2ª Região (TRF2)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de processo eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.trf2.jus.br/trf2/artigo/coport/balcao-jus",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

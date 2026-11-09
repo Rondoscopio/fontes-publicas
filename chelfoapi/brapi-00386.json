@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00386",
+  "nome": "API do Sistema de Gestão Estratégica da Justiça do Trabalho (SIGEST)",
+  "orgao_responsavel": "Conselho Superior da Justiça do Trabalho (CSJT) / TST",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Gestão Estratégica",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.postman.com/actio-software/actio-software/collection/j1f03zb/actio-software-api-documentation",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

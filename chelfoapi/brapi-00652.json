@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00652",
+  "nome": "Modelo Nacional de Interoperabilidade (MNI) - PJe TRT2",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 2ª Região (TRT2)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://ww2.trt2.jus.br/fileadmin/licitacoes/Termos_contratuais/2024/CT2024015.pdf",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

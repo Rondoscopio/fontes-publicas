@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00682",
+  "nome": "API CKAN Dados Abertos UNIFEI",
+  "orgao_responsavel": "Universidade Federal de Itajubá (UNIFEI)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos/Institucional",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.unifei.edu.br/api/3/action/help_show?name=site_read",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

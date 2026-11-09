@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00513",
+  "nome": "CadÚnico Serviços (Consulta Situação Cadastral)",
+  "orgao_responsavel": "Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Assistência Social / Cadastro Único",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.gov.br/conecta/catalogo/apis/cadunico-servicos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

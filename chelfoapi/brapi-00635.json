@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00635",
+  "nome": "API do Portal de Dados Abertos do TRT14 (CKAN)",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 14ª Região (TRT14)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

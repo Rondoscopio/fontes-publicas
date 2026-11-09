@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00879",
+  "nome": "API REST do Guia de Serviços",
+  "orgao_responsavel": "Instituto das Cidades Inteligentes (ICI) / Prefeitura de Curitiba",
+  "esfera": "Municipal",
+  "uf": "PR",
+  "categoria": "Atendimento ao Cidadão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api-guiaservicos.curitiba.pr.gov.br/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

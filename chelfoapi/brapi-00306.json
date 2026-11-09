@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00306",
+  "nome": "Painel do Fogo API",
+  "orgao_responsavel": "CENSIPAM (Centro Gestor e Operacional do Sistema de Proteção da Amazônia)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Meio Ambiente / Monitoramento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://panorama.sipam.gov.br/painel-do-fogo/api/swagger",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

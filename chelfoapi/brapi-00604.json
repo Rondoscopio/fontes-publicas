@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00604",
+  "nome": "IDJOVEM - Consulta de situação cadastral",
+  "orgao_responsavel": "SNJ - Secretaria Nacional da Juventude da Secretaria-Geral da Presidência da República",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Informações do Cidadão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://app.swaggerhub.com/apis/join_tecnologia/idjovem/1.0.0",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00642",
+  "nome": "API Evy TRT19",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 19ª Região (TRT19)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Jurisprudência e Inteligência Artificial",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://evy.trt19.jus.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

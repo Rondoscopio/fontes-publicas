@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00184",
+  "nome": "API CKAN do Portal de Dados Abertos do TCE-GO",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Goiás (TCE-GO)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência, Políticas Públicas",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

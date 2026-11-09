@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00282",
+  "nome": "API Extratos (v1)",
+  "orgao_responsavel": "Banco do Brasil S.A.",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Financeiro",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://bb.com.br/site/developers/api-extratos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

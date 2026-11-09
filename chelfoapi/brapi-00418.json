@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00418",
+  "nome": "REST API do Portal Ginga",
+  "orgao_responsavel": "Ministério das Comunicações",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "TV Digital / Tecnologia",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "http://www.telemidia.puc-rio.br/~rafaeldiniz/public_files/normas/SBTVD/pt_BR/OTA/Especificac%CC%A7a%CC%83o%20da%20REST%20API%20do%20Portal%20Ginga_v1.1.pdf",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

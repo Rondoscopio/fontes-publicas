@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00240",
+  "nome": "Agência Nacional de Águas e Saneamento Básico Search API",
+  "orgao_responsavel": "Agência Nacional de Águas e Saneamento Básico (ANA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos / Catálogo",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://dadosabertos.ana.gov.br/api/search/definition/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

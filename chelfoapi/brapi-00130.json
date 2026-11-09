@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00130",
+  "nome": "API Assembleia Legislativa do Estado de Mato Grosso",
+  "orgao_responsavel": "Assembleia Legislativa do Estado de Mato Grosso (ALMT)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Legislativos, Pessoal, Institucional",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.al.mt.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

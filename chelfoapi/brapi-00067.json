@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00067",
+  "nome": "Portal de Dados Abertos de Pernambuco - CKAN API",
+  "orgao_responsavel": "Governo do Estado de Pernambuco",
+  "esfera": "Estadual",
+  "uf": "PE",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://dados.pe.gov.br/about",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

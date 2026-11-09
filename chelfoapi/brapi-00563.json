@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00563",
+  "nome": "API de Dados Abertos ONTL (Infra S.A.)",
+  "orgao_responsavel": "Observatório Nacional de Transporte e Logística (ONTL) / Infra S.A.",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transporte e Logística",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://ontl.infrasa.gov.br/dados/consulta-a-base-de-dados/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

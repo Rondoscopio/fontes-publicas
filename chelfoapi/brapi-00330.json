@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00330",
+  "nome": "Consultar Ato de Concentração",
+  "orgao_responsavel": "Conselho Administrativo de Defesa Econômica (CADE)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Defesa Econômica",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.gov.br/conecta/catalogo/apis/consultar-ato-de-concentracao",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

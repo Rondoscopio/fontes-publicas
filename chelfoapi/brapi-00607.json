@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00607",
+  "nome": "API do Portal de Dados Abertos do STJ (CKAN)",
+  "orgao_responsavel": "Superior Tribunal de Justiça (STJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência / Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://docs.ckan.org/en/2.10/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

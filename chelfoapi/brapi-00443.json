@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00443",
+  "nome": "API de Agentes (Mapas Culturais)",
+  "orgao_responsavel": "Fundação Nacional de Artes (Funarte)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Cultura",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://manual.rededasartes.funarte.gov.br/docs/devs/reference/api/agents",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

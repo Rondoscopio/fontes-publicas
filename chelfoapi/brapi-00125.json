@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00125",
+  "nome": "API de Dados Abertos - ALES",
+  "orgao_responsavel": "Assembleia Legislativa do Espírito Santo",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Legislativos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www3.al.es.gov.br/dados-abertos.aspx",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

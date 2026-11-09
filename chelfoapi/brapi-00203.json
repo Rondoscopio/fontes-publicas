@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00203",
+  "nome": "API de Transparência do TJBA",
+  "orgao_responsavel": "Tribunal de Justiça da Bahia (TJBA)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e Gestão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.tjba.jus.br/portal/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

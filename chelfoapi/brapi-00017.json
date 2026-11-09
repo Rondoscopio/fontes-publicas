@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00017",
+  "nome": "API Contratos - Sistema de Gestão de Contratos (SGC)",
+  "orgao_responsavel": "Secretaria de Estado da Fazenda do Amazonas (SEFAZ-AM)",
+  "esfera": "Estadual",
+  "uf": "AM",
+  "categoria": "Finanças e Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://sistemas.sefaz.am.gov.br/sgc-am/api/v1/contrato.do",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00490",
+  "nome": "TerraBrasilis Analytics API",
+  "orgao_responsavel": "Instituto Nacional de Pesquisas Espaciais (INPE) - DPI",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geociências e Meio Ambiente",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://terrabrasilis.dpi.inpe.br/en/available-services/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

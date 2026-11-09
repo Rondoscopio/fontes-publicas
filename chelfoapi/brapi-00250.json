@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00250",
+  "nome": "Web Service do Sistema de Controle de Bilheteria (SCB)",
+  "orgao_responsavel": "Agência Nacional do Cinema (Ancine)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Controle e Fiscalização",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://sad.ancine.gov.br/consultapublica/manterDocumentoMDAction.do?method=detalhe&idNorma=86",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

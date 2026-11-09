@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00459",
+  "nome": "API de Dados do INMET (Instituto Nacional de Meteorologia)",
+  "orgao_responsavel": "INMET (Instituto Nacional de Meteorologia) - Órgão vinculado ao MAPA",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Meteorologia / Clima",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://portal.inmet.gov.br/manual/manual-de-uso-da-api-esta%C3%A7%C3%B5es",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

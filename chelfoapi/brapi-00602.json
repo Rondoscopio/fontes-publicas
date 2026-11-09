@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00602",
+  "nome": "Servidor de OGC-API do SGB/CPRM",
+  "orgao_responsavel": "Serviço Geológico do Brasil (SGB/CPRM) - Divisão de Geoprocessamento",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geologia, Geociências, Ocorrências Minerais, Geocronologia, Litoestratigrafia, Geoquímica",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://geoservicos.sgb.gov.br/ogcapi/openapi?f=html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

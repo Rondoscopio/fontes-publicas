@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00206",
+  "nome": "API de Gestão de Contratações (SICOMP)",
+  "orgao_responsavel": "Tribunal de Justiça do Distrito Federal e dos Territórios",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Contratos, Licitações",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos/documentos/documentacao-dos-dados-abertos.pdf",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

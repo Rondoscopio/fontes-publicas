@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00297",
+  "nome": "API Cobrança Bancária CAIXA",
+  "orgao_responsavel": "Caixa Econômica Federal",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Finanças",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://desenvolvedores.caixa.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

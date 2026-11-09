@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00817",
+  "nome": "API de Dados Abertos (NucleoGov)",
+  "orgao_responsavel": "Consórcio Intermunicipal de Resíduos Sólidos (CIGIRS)",
+  "esfera": "Municipal",
+  "uf": "GO",
+  "categoria": "Transparência e Ouvidoria",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://acessoainformacao.cigirs.go.gov.br/cidadao/outras_informacoes/acesso_automatizado",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

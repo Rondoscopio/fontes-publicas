@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00088",
+  "nome": "API RESTful Dados Abertos - Alto Alegre",
+  "orgao_responsavel": "Prefeitura Municipal de Alto Alegre",
+  "esfera": "Estadual",
+  "uf": "RR",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.altoalegre.rr.gov.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

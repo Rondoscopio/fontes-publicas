@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00313",
+  "nome": "API-REDEMET",
+  "orgao_responsavel": "Comando da Aeronáutica (DECEA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Meteorologia",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://ajuda.decea.mil.br/base-de-conhecimento/api-redemet-o-que-e/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

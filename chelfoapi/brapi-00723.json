@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00723",
+  "nome": "Acesso Automatizado aos Dados Abertos (NucleoGov) - Previdência Inhapi",
+  "orgao_responsavel": "Instituto de Previdência de Inhapi",
+  "esfera": "Municipal",
+  "uf": "AL",
+  "categoria": "Transparência e Estrutura Organizacional",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://acessoainformacao.inhapiprev.al.gov.br/cidadao/outras_informacoes/acesso_automatizado",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

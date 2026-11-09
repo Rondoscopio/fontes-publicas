@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00361",
+  "nome": "APIs Legadas - Automatizando o Judiciário (CNACL, CNA, SNBA, ConciliaJud)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas Nacionais Diversos",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.cnj.jus.br/sistemas/api-cnj-automatizando-o-judiciario/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

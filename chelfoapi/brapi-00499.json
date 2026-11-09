@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00499",
+  "nome": "API do CKAN - Dados Abertos JBRJ",
+  "orgao_responsavel": "Instituto de Pesquisas Jardim Botânico do Rio de Janeiro",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Meio Ambiente / Biodiversidade",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://ckan.jbrj.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

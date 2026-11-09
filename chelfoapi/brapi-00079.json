@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00079",
+  "nome": "API CKAN do Portal de Dados Abertos do Estado do Rio de Janeiro",
+  "orgao_responsavel": "PRODERJ",
+  "esfera": "Estadual",
+  "uf": "RJ",
+  "categoria": "Dados Abertos e Transparência",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.rj.gov.br/api/3",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00948",
+  "nome": "ArcGIS REST API - Itajaí",
+  "orgao_responsavel": "Prefeitura Municipal de Itajaí",
+  "esfera": "Municipal",
+  "uf": "SC",
+  "categoria": "Geoinformação, Mapas e Cadastro",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://arcgis.itajai.sc.gov.br/server/sdk/rest/02ss/02ss00000057000000.htm",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

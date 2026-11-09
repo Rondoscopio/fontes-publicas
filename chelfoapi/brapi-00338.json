@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00338",
+  "nome": "API do BNMP 3.0 (Banco Nacional de Medidas Penais e Prisões)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistema Carcerário e Execução Penal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://docs.pdpj.jus.br/servicos-negociais/bnmp3/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

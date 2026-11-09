@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00759",
+  "nome": "API de Dados Abertos - Portal do Cidadão de Itamarati",
+  "orgao_responsavel": "Prefeitura Municipal de Itamarati",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "Desconhecido",
+  "acesso_declarado": "Não informado",
+  "url": "https://acessoainformacao.itamarati.am.gov.br/cidadao/outras_informacoes/acesso_automatizado",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

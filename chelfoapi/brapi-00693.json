@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00693",
+  "nome": "CKAN API de Dados Abertos - UFPI",
+  "orgao_responsavel": "Universidade Federal do Piauí",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://dados.ufpi.br/api/3/action/help_show",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00749",
+  "nome": "API Dados Abertos - Câmara de Presidente Figueiredo",
+  "orgao_responsavel": "Câmara Municipal de Presidente Figueiredo",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "Desconhecido",
+  "acesso_declarado": "Não informado",
+  "url": "https://cmpfg.am.gov.br/category/gestao-publica/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

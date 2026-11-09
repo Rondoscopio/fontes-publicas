@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00074",
+  "nome": "Web Services do Portal da Transparência do Paraná",
+  "orgao_responsavel": "Controladoria Geral do Estado (CGE/PR)",
+  "esfera": "Estadual",
+  "uf": "PR",
+  "categoria": "Transparência / Finanças Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.transparencia.pr.gov.br/pte/assunto/8/118",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

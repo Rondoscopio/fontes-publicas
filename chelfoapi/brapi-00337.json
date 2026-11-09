@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00337",
+  "nome": "API LattesData (Repositório de Dados de Pesquisa)",
+  "orgao_responsavel": "Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Ciência e Tecnologia / Dados de Pesquisa",
+  "tecnologia": "Dataverse REST",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://lattesdata.cnpq.br/guides/en/latest/api/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

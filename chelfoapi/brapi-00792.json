@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00792",
+  "nome": "API de Dados Abertos - Câmara Municipal de Guarapari",
+  "orgao_responsavel": "Câmara Municipal de Guarapari",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://cmg.es.gov.br/dados_abertos/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

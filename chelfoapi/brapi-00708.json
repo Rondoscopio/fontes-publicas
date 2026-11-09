@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00708",
+  "nome": "API de Dados Abertos da UFPA",
+  "orgao_responsavel": "Universidade Federal do Pará (UFPA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos e Transparência",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dados.ufpa.br/pt_BR/api/1/util/snippet/api_info.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00058",
+  "nome": "Webservices Sefaz MT (NF-e/NFC-e/CT-e)",
+  "orgao_responsavel": "Secretaria de Estado de Fazenda (SEFAZ-MT)",
+  "esfera": "Estadual",
+  "uf": "MT",
+  "categoria": "Fazenda e Tributação",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.nfe.fazenda.gov.br/portal/webservices.aspx",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -8,10 +8,10 @@
     "estadual_incluindo_df": 232,
     "municipal_incluindo_consorcios": 261
   },
-  "fichas_individualizadas": 15,
-  "fichas_nao_obtidas": 944,
-  "cobertura": "parcial",
-  "nota": "A listagem completa depende de carregamento dinâmico. Os 959 registros e as classes de evidência são declarações do mantenedor, não foram extraídos nem validados individualmente.",
+  "fichas_individualizadas": 959,
+  "fichas_nao_obtidas": 0,
+  "cobertura": "integral_no_extrato_fornecido",
+  "nota": "As 959 entradas foram extraídas do JavaScript CATALOGO_APIS fornecido pelo usuário em 2026-11-09. Fichas individuais em chelfoapi/ e índice inventarios/chelfoapi-apis.json. Os serviços não foram verificados.",
   "familias_documentadas": [
     {
       "nome": "Portal Brasileiro de Dados Abertos",

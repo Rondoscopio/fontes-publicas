@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00081",
+  "nome": "API de Consulta de Veículos e Multas (Detran-RN)",
+  "orgao_responsavel": "Departamento Estadual de Trânsito do RN (DETRAN/RN)",
+  "esfera": "Estadual",
+  "uf": "RN",
+  "categoria": "Trânsito, Veículos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "Não localizada publicamente",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

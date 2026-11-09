@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00502",
+  "nome": "API de Serviços Públicos (Portal gov.br)",
+  "orgao_responsavel": "MGI/SGD (hospedado pelo Serpro)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Serviços Públicos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.gov.br/conecta/catalogo/apis/api-de-servicos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

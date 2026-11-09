@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00843",
+  "nome": "CKAN Action API - Portal de Dados Abertos PBH",
+  "orgao_responsavel": "Prefeitura de Belo Horizonte (Prodabel)",
+  "esfera": "Municipal",
+  "uf": "MG",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://databh.pbh.gov.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

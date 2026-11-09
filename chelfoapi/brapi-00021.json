@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00021",
+  "nome": "API de Integração ao Guia de Serviços",
+  "orgao_responsavel": "Secretaria da Administração do Estado da Bahia (SAEB)",
+  "esfera": "Estadual",
+  "uf": "BA",
+  "categoria": "Serviços ao Cidadão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://servicos.ba.gov.br/servicos/dados/abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

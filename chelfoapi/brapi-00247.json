@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00247",
+  "nome": "API de Sistemas Corporativos da ANAC",
+  "orgao_responsavel": "Agência Nacional de Aviação Civil (ANAC)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas Internos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "Não disponível publicamente",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

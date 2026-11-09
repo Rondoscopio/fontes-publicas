@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00938",
+  "nome": "GeoSMF Porto Alegre (ArcGIS REST)",
+  "orgao_responsavel": "Prefeitura Municipal de Porto Alegre (SMF)",
+  "esfera": "Municipal",
+  "uf": "RS",
+  "categoria": "Geoprocessamento e Mapas",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://geo-smf.portoalegre.rs.gov.br/server/sdk/rest/02ss/02ss00000057000000.htm",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

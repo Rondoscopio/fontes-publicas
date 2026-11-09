@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00272",
+  "nome": "API de Consultas Externas - Consulta Produtos de Saúde",
+  "orgao_responsavel": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Saúde / Regulação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.anvisa.gov.br/consultas-externas/consulta-produtos-saude",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

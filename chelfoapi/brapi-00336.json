@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00336",
+  "nome": "API do Extrator Lattes",
+  "orgao_responsavel": "Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Ciência e Tecnologia / Currículos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://memoria.cnpq.br/web/portal-lattes/extracoes-de-dados",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

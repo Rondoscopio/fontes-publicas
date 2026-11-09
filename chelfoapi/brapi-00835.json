@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00835",
+  "nome": "API de Dados Abertos de São José de Ribamar",
+  "orgao_responsavel": "Prefeitura Municipal de São José de Ribamar",
+  "esfera": "Municipal",
+  "uf": "MA",
+  "categoria": "Transparência, Execução Orçamentária, Despesas, Receitas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos-portalfacil.azurewebsites.net/97",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

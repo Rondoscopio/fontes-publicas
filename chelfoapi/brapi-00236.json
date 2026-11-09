@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00236",
+  "nome": "API Aberta CNJ (Datajud) - TJSE",
+  "orgao_responsavel": "Tribunal de Justiça de Sergipe / Conselho Nacional de Justiça",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://datajud-wiki.cnj.jus.br/api-publica/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

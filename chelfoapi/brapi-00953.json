@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00953",
+  "nome": "API de Dados - Conscensul",
+  "orgao_responsavel": "Consórcio Público de Resíduos Sólidos e Saneamento Básico do Sul e Centro Sul Sergipano (Conscensul)",
+  "esfera": "Municipal",
+  "uf": "SE",
+  "categoria": "Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://conscensul.se.gov.br/transparencia/portal/?alias=conscensul&p=api_de_dados",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

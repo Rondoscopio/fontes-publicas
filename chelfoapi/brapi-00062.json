@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00062",
+  "nome": "API de consulta ao Domicílio Eletrônico do Contribuinte (DEC)",
+  "orgao_responsavel": "Secretaria de Estado da Fazenda do Pará (SEFA/PA)",
+  "esfera": "Estadual",
+  "uf": "PA",
+  "categoria": "Fazenda e Tributação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://apis.sefa.pa.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

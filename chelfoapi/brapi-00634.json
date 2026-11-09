@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00634",
+  "nome": "Transparência API TRT12",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 12ª Região (TRT12)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência, Planejamento Estratégico, Dados Processuais, Pessoal, Orçamento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://portal.trt12.jus.br/dados-abertos/swagger-ui/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

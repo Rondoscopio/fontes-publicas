@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00002",
+  "nome": "API do Portal de Dados Abertos do Distrito Federal",
+  "orgao_responsavel": "Governo do Distrito Federal (CGDF / SEPLAG)",
+  "esfera": "Estadual",
+  "uf": "DF",
+  "categoria": "Dados Abertos e Transparência",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://docs.ckan.org/en/latest/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

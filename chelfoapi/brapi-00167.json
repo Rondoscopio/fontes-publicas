@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00167",
+  "nome": "API do Portal de Dados Abertos do MPAP",
+  "orgao_responsavel": "Ministério Público do Amapá (MPAP)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Compras, Contracheques, Licitações, Contratos, Execução Orçamentária e Atividade fim",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.mpap.mp.br/dadosabertos/documentacao",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

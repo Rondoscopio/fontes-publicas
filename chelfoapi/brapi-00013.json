@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00013",
+  "nome": "API Economiza Alagoas",
+  "orgao_responsavel": "Secretaria da Fazenda de Alagoas (SEFAZ/AL)",
+  "esfera": "Estadual",
+  "uf": "AL",
+  "categoria": "Fazenda e Defesa do Consumidor",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

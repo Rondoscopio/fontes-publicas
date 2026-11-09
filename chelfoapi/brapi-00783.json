@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00783",
+  "nome": "API de Dados Abertos - IntGest (São Luís do Curu)",
+  "orgao_responsavel": "Prefeitura de São Luís do Curu",
+  "esfera": "Municipal",
+  "uf": "CE",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://saoluisdocuru.ce.gov.br/transparencia/dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

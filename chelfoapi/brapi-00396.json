@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00396",
+  "nome": "API Mobile - Chamados (catibffservicosmobile)",
+  "orgao_responsavel": "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (Capes)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Suporte / TI",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://catibffservicosmobile.capes.gov.br/swagger-ui.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00161",
+  "nome": "API de Dados Abertos (DPE-RO)",
+  "orgao_responsavel": "Defensoria Pública do Estado de Rondônia",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e Pessoal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.defensoria.ro.def.br/dados-abertos/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

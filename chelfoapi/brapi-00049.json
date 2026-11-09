@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00049",
+  "nome": "SISREV 2.0 API",
+  "orgao_responsavel": "Instituto de Meio Ambiente de Mato Grosso do Sul (IMASUL)",
+  "esfera": "Estadual",
+  "uf": "MS",
+  "categoria": "Meio Ambiente e Sustentabilidade",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://sisrev.imasul.ms.gov.br/api/documentation",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

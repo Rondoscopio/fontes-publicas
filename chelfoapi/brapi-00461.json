@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00461",
+  "nome": "APIs de Dados Geodésicos (BDG, ProGriD, hgeoHNOR, PPP, RBMC, RMPG)",
+  "orgao_responsavel": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geociências e Geodésia",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://servicodados.ibge.gov.br/api/docs/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

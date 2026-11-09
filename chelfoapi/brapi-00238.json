@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00238",
+  "nome": "DÍVIDA ATIVA - Gestão de Créditos",
+  "orgao_responsavel": "Advocacia-Geral da União (AGU)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Gestão Financeira da União",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://www.gov.br/conecta/catalogo/apis/gestao-de-creditos-divida-ativa",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00034",
+  "nome": "Serviços WMS e WFS Geobases",
+  "orgao_responsavel": "Secretaria de Economia e Planejamento (SEP) / PRODEST",
+  "esfera": "Estadual",
+  "uf": "ES",
+  "categoria": "Geoinformação",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://geobases.es.gov.br/tutoriais-ide-como-acessar-os-servicos-wms-e-wfs",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00159",
+  "nome": "Portal de Dados Abertos da DPPE (CKAN)",
+  "orgao_responsavel": "Defensoria Pública do Estado de Pernambuco (DPPE)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência, Licitações, Contratos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.defensoria.pe.def.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00204",
+  "nome": "Web Services PJe (1º e 2º Graus) - TJBA",
+  "orgao_responsavel": "Tribunal de Justiça da Bahia (TJBA)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Processo Eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.tjba.jus.br/portal/web-service/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

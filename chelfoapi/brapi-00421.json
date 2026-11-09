@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00421",
+  "nome": "API Prazo",
+  "orgao_responsavel": "Empresa Brasileira de Correios e Telégrafos",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Logística e Prazos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.correios.com.br/atendimento/developers/manuais/manual-api-prazo",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

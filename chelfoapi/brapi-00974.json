@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00974",
+  "nome": "API Pública — Transparência (Araguaína)",
+  "orgao_responsavel": "Prefeitura Municipal de Araguaína",
+  "esfera": "Municipal",
+  "uf": "TO",
+  "categoria": "Transparência e Gestão Pública",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.araguaina.to.gov.br/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

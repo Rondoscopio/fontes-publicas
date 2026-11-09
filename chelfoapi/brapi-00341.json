@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00341",
+  "nome": "API Pública Datajud (CNJ)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.cnj.jus.br/sistemas/datajud/api-publica/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

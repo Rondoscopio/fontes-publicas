@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00254",
+  "nome": "Polímero - Composição Societária dos Agentes do Setor Elétrico (Conecta Gov)",
+  "orgao_responsavel": "Agência Nacional de Energia Elétrica (ANEEL)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Econômico-Financeira",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://www.gov.br/conecta/catalogo/apis/polimero",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

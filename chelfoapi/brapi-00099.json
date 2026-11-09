@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00099",
+  "nome": "Login Cidadão Gov.br API",
+  "orgao_responsavel": "Procergs",
+  "esfera": "Estadual",
+  "uf": "RS",
+  "categoria": "Identidade e Autenticação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://github.com/PROCERGS/login-cidadao/blob/master/doc/api.md",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

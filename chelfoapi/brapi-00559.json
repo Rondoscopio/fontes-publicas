@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00559",
+  "nome": "API de Dados Abertos do Ministério do Turismo (CKAN)",
+  "orgao_responsavel": "Ministério do Turismo",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Turismo/Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.turismo.gov.br/ (Documentação CKAN padrão)",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

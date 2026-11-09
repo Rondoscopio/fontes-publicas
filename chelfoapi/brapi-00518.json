@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00518",
+  "nome": "Integração MNI - Processo Eletrônico",
+  "orgao_responsavel": "Ministério Público do Distrito Federal e Territórios (MPDFT)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "sistemas de processo eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/modelo-nacional-de-interoperabilidade-mni/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

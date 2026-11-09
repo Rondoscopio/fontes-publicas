@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00107",
+  "nome": "API de Dados Abertos do Portal da Transparência",
+  "orgao_responsavel": "Controladoria Geral do Estado de Sergipe (CGE)",
+  "esfera": "Estadual",
+  "uf": "SE",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.se.gov.br/DadosAbertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

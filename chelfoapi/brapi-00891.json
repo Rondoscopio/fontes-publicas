@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00891",
+  "nome": "APIs da Prefeitura do Rio (Escritório de Dados)",
+  "orgao_responsavel": "Prefeitura da Cidade do Rio de Janeiro / IplanRio",
+  "esfera": "Municipal",
+  "uf": "RJ",
+  "categoria": "Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://docs.dados.rio/api-reference/overview",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

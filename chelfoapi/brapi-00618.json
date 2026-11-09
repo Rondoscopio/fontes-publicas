@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00618",
+  "nome": "Webservice Termos contratuais do TCU",
+  "orgao_responsavel": "Tribunal de Contas da União (TCU)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#termos-contratuais-do-tcu",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

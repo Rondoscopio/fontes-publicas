@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00874",
+  "nome": "API Inthegra - STRANS Teresina",
+  "orgao_responsavel": "Superintendência Municipal de Transportes e Trânsito (STRANS)",
+  "esfera": "Municipal",
+  "uf": "PI",
+  "categoria": "Mobilidade / Transporte / GTFS",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://inthegra.strans.teresina.pi.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

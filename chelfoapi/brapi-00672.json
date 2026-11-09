@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00672",
+  "nome": "API DSpace - Repositório Institucional da UNIFAP",
+  "orgao_responsavel": "Universidade Federal do Amapá (UNIFAP)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Educação e Pesquisa",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://wiki.lyrasis.org/display/DSDOC7x/REST+API",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

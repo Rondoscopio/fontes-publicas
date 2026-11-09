@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00937",
+  "nome": "Portal de Dados Abertos POA (CKAN)",
+  "orgao_responsavel": "Prefeitura Municipal de Porto Alegre (Procempa)",
+  "esfera": "Municipal",
+  "uf": "RS",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dadosabertos.poa.br/api/3/action/help_show",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

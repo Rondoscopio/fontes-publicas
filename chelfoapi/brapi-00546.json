@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00546",
+  "nome": "Integração Tramita.GOV.BR (Processo Eletrônico Nacional)",
+  "orgao_responsavel": "Ministério Público Militar / Ministério da Gestão e da Inovação",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Processo Eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://manuais.processoeletronico.gov.br/pt-br/latest/TRAMITA.GOV.BR/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

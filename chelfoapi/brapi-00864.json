@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00864",
+  "nome": "Portal de Dados Abertos API",
+  "orgao_responsavel": "Governo do Estado da Paraíba / CODATA",
+  "esfera": "Municipal",
+  "uf": "PB",
+  "categoria": "Transparência, Despesas, Receitas, Convênios, Licitações, Remuneração",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://api.dadosabertos.codata.pb.gov.br/swagger/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00053",
+  "nome": "Webservice DETRAN MT (Credenciados)",
+  "orgao_responsavel": "Departamento Estadual de Trânsito (DETRAN-MT)",
+  "esfera": "Estadual",
+  "uf": "MT",
+  "categoria": "Trânsito e Mobilidade",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.detrannet.mt.gov.br/TaxasVeiculo/swagger/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

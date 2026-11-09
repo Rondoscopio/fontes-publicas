@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00019",
+  "nome": "API de Dados Abertos do Estado do Amapá (Siafe, Servidores, Benefícios)",
+  "orgao_responsavel": "PRODAP - Centro de Gestão da Tecnologia da Informação",
+  "esfera": "Estadual",
+  "uf": "AP",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "http://api.transparencia.ap.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

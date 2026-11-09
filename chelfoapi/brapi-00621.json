@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00621",
+  "nome": "API do e-Proc (TRF2)",
+  "orgao_responsavel": "Tribunal Regional Federal da 2ª Região (TRF2)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de processo eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://github.com/trf2-jus-br/eproc-api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00463",
+  "nome": "API de Serviço de Dados (Agregados, Metadados, Localidades, Malhas, Nomes, etc.)",
+  "orgao_responsavel": "Instituto Brasileiro de Geografia e Estatística (IBGE)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Estatística, Geografia e Demografia",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://servicodados.ibge.gov.br/api/docs/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

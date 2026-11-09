@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00334",
+  "nome": "API de Dados Abertos do CFP",
+  "orgao_responsavel": "Conselho Federal de Psicologia (CFP)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.cfp.org.br/dados-abertos/colecoes-disponiveis/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

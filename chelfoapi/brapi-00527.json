@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00527",
+  "nome": "API Contratos.gov.br",
+  "orgao_responsavel": "Ministério da Gestão e da Inovação em Serviços Públicos (MGI)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Compras Públicas e Contratações",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://contratos.comprasnet.gov.br/api/docs",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00364",
+  "nome": "API do Portal de Serviços (Jus.br)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Portal Único de Serviços",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://docs.pdpj.jus.br/portal-servicos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

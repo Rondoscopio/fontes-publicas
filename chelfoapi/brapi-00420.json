@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00420",
+  "nome": "API Coleta Interativa Externo",
+  "orgao_responsavel": "Empresa Brasileira de Correios e Telégrafos",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Logística e Coleta",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.correios.com.br/atendimento/developers/apicoleta",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

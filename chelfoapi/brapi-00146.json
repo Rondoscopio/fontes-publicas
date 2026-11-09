@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00146",
+  "nome": "API Pública do DataJud - MPMT / CNJ",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ) / Ministério Público de Mato Grosso (MPMT) referência",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Judiciais, Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.cnj.jus.br/sistemas/datajud/api-publica/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

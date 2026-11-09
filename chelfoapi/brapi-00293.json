@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00293",
+  "nome": "API Pix",
+  "orgao_responsavel": "Banco do Nordeste do Brasil S.A.",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Finanças / Pagamentos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://portal.dev.bnb.gov.br/product",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

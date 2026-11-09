@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00564",
+  "nome": "APIs Open Insurance Brasil (Fase 1 - Dados Abertos)",
+  "orgao_responsavel": "Open Insurance Brasil / Susep",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Seguros (Open Insurance)",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://opinbrasil.atlassian.net/wiki/spaces/RDD/pages/753678",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

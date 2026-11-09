@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00507",
+  "nome": "API Mapas Culturais",
+  "orgao_responsavel": "Ministério da Cultura",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Cultura",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.mapasculturais.org/mc_config_api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

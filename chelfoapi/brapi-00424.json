@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00424",
+  "nome": "API Rastro",
+  "orgao_responsavel": "Empresa Brasileira de Correios e Telégrafos",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Logística e Rastreamento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.correios.com.br/atendimento/developers/arquivos/manual-para-integracao-correios-api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

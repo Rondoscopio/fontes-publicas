@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00857",
+  "nome": "SIGGEO Rondonópolis - ArcGIS REST Services",
+  "orgao_responsavel": "Prefeitura Municipal de Rondonópolis",
+  "esfera": "Municipal",
+  "uf": "MT",
+  "categoria": "Geoprocessamento e Planejamento Urbano",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.rondonopolis.mt.gov.br/projetos/rondonopolis-mais-inteligente/siggeo/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

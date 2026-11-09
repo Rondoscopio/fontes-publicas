@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00268",
+  "nome": "Serviço de Informações Rodoviárias (SIR)",
+  "orgao_responsavel": "Agência Nacional de Transportes Terrestres (ANTT)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Infraestrutura Rodoviária",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://portaldodesenvolvedor.antt.gov.br/page/documentacao-sir",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

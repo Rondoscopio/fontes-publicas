@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00069",
+  "nome": "API do DETRAN-PI",
+  "orgao_responsavel": "DETRAN-PI - Departamento Estadual de Trânsito do Piauí",
+  "esfera": "Estadual",
+  "uf": "PI",
+  "categoria": "Transporte e Mobilidade",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://govpiconecta.pi.gov.br/docs/Apis/API%20do%20DETRAN/api-detran-pi",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

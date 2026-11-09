@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00530",
+  "nome": "API de Dados Abertos Obrasgov.br",
+  "orgao_responsavel": "Ministério da Gestão e da Inovação em Serviços Públicos (MGI) / Ministério da Integração e do Desenvolvimento Regional (MIDR)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Infraestrutura e Projetos de Investimento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.obrasgov.gestao.gov.br/obrasgov/api/swagger-ui/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

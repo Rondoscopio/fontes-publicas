@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00852",
+  "nome": "SIT Ponta Porã (Sistema de Informação Territorial)",
+  "orgao_responsavel": "Prefeitura Municipal de Ponta Porã",
+  "esfera": "Municipal",
+  "uf": "MS",
+  "categoria": "Geoprocessamento / Cadastral / Imobiliário",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://sit.pontapora.ms.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

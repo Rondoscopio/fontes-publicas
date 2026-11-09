@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00605",
+  "nome": "API de Consulta a Corretores",
+  "orgao_responsavel": "Superintendência de Seguros Privados (Susep)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Seguros e Corretores",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.gov.br/susep/pt-br/assuntos/corretor-de-seguros/instrucoes-para-extracao-da-base-de-corretoras-por-seguradoras",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

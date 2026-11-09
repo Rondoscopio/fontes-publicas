@@ -4,7 +4,7 @@ Catálogo de **fontes, ferramentas, serviços, consultas e referências OSINT** 
 
 ## Organização
 
-As **fontes** continuam representadas por um JSON nas pastas de origem/abrangência. Ferramentas, consultas e referências editoriais agora têm fichas separadas para não serem confundidas com dados oficiais:
+As **fontes** continuam representadas por um JSON nas pastas de origem/abrangência. Os registros importados da ChelfoAPI estão separados em `chelfoapi/`, mantendo identificadores originais e os nove campos de origem; não são contabilizados novamente na tabela histórica abaixo. Ferramentas, consultas e referências editoriais agora têm fichas separadas para não serem confundidas com dados oficiais:
 
 | Pasta | Fontes |
 | --- | ---: |
@@ -49,10 +49,11 @@ Os novos arquivos de ferramentas e referências usam um nome normalizado e um id
 - [**Referências e consultas**](REFERENCIAS-DIRETORIOS-OSINT.md): guias, consultas pré-definidas e materiais que não são bases governamentais.
 - [**Inventário OSINT Brazuca**](inventarios/osint-brazuca-links.json): **1275 de 1275 links** vinculados a uma ficha.
 - [**Inventário Awesome OSINT**](inventarios/awesome-osint-links.json): **1394 de 1394 links** vinculados a uma ficha.
-- [**Inventário parcial da ChelfoIA**](inventarios/chelfoapi-familias-documentadas.json): **15 famílias federais identificadas** e **959 APIs declaradas pelo painel**, das quais a listagem completa ainda não foi extraída.
+- [**Inventário completo da ChelfoAPI**](inventarios/chelfoapi-apis.json): **959 de 959 registros** transcritos do JavaScript do painel; [fichas individuais](chelfoapi/) com metadados originais. URLs e endpoints ainda não verificados.
+- [**Famílias federais documentadas da ChelfoIA**](inventarios/chelfoapi-familias-documentadas.json): 15 famílias previamente identificadas; arquivo histórico complementar.
 - [**Auditoria de cobertura**](COBERTURA-OSINT.md): critérios, números e limitações da importação.
 
-**Cobertura integral aqui significa que cada referência dos dois inventários do GitHub tem caminho de ficha. Não significa que a URL tenha sido testada. A cobertura individual das 959 APIs da ChelfoIA permanece incompleta.**
+**Cobertura de catálogo:** 1275 referências do OSINT Brazuca, 1394 do Awesome OSINT e 959 registros da ChelfoAPI possuem referências individualizadas. A existência e acessibilidade dos serviços não foram verificadas.
 
 ## Escopo
 

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00445",
+  "nome": "GeoServer da Funai (WMS/WFS/WCS/WMTS)",
+  "orgao_responsavel": "Fundação Nacional dos Povos Indígenas (FUNAI)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geoprocessamento / Terras Indígenas",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

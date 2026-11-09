@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00822",
+  "nome": "API do Portal do Cidadão - Estrutura Organizacional Aparecida do Rio Doce",
+  "orgao_responsavel": "Prefeitura Municipal de Aparecida do Rio Doce",
+  "esfera": "Municipal",
+  "uf": "GO",
+  "categoria": "Transparência / Estrutura",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://acessoainformacao.aparecidadoriodoce.go.gov.br/cidadao/outras_informacoes/acesso_automatizado",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

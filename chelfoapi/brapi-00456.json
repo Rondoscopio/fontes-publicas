@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00456",
+  "nome": "Siscom GeoServer OGC Services (WMS/WFS)",
+  "orgao_responsavel": "Ibama (CENIMA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geosserviços e Monitoramento Ambiental",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://www.opengeospatial.org/standards/wfs",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

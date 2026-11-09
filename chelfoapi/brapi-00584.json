@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00584",
+  "nome": "SADIPEM API",
+  "orgao_responsavel": "Secretaria do Tesouro Nacional (STN)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dívida Pública",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://apidatalake.tesouro.gov.br/docs/sadipem/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00798",
+  "nome": "API de Dados Abertos - Consórcio ProdNorte",
+  "orgao_responsavel": "Consórcio ProdNorte",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.prodnorte.es.gov.br/dados_abertos/api/webservice",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00779",
+  "nome": "Portal de Dados Abertos de Fortaleza (CKAN API)",
+  "orgao_responsavel": "Prefeitura de Fortaleza / CITINOVA",
+  "esfera": "Municipal",
+  "uf": "CE",
+  "categoria": "Dados Abertos / Geral",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://dados.fortaleza.ce.gov.br/docs-api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

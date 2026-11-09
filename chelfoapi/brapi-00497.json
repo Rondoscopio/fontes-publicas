@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00497",
+  "nome": "Repositório do Conhecimento do Ipea (RCIpea) - OAI-PMH",
+  "orgao_responsavel": "Instituto de Pesquisa Econômica Aplicada (Ipea)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Pesquisa e Desenvolvimento / Produção Científica",
+  "tecnologia": "XML/HTTP",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://repositorio.ipea.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

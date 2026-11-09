@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00915",
+  "nome": "API de Protocolo Digital",
+  "orgao_responsavel": "Prefeitura Municipal de Porto Velho",
+  "esfera": "Municipal",
+  "uf": "RO",
+  "categoria": "Atendimento ao Cidadão / Processos Administrativos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api-protocolo-digital.portovelho.ro.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

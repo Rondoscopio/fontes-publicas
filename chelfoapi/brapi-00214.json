@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00214",
+  "nome": "API Consulta Processual TJMT",
+  "orgao_responsavel": "Tribunal de Justiça do Estado de Mato Grosso (TJMT)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Judiciais, Processos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://wikicti.tjmt.jus.br/index.php?title=API_-_Consulta_Processual",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

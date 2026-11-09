@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00139",
+  "nome": "API de Dados Abertos da Alepe",
+  "orgao_responsavel": "Assembleia Legislativa de Pernambuco (Alepe)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Legislativos, Transparência, Pessoal, Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.alepe.pe.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

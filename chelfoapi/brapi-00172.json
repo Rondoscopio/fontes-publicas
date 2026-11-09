@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00172",
+  "nome": "API de Contratos - MPMA",
+  "orgao_responsavel": "Ministério Público do Estado do Maranhão",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://documenter.getpostman.com/view/21689689/2sAYk8viMK",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

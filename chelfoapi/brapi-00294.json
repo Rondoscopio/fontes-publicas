@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00294",
+  "nome": "API do CKAN (Portal de Dados Abertos)",
+  "orgao_responsavel": "BNDES",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://dadosabertos.bndes.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

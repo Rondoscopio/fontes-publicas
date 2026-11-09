@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00846",
+  "nome": "API Dados Abertos de Ouro Preto",
+  "orgao_responsavel": "Prefeitura Municipal de Ouro Preto",
+  "esfera": "Municipal",
+  "uf": "MG",
+  "categoria": "Transparência",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.ouropreto.mg.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00754",
+  "nome": "API de Dados Abertos - COARIPREV",
+  "orgao_responsavel": "Instituto de Previdência de Coari (COARIPREV)",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Previdência, Transparência e Servidores",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://coariprev.am.gov.br/api-dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

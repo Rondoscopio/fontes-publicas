@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00863",
+  "nome": "Transparência Elmar Tecnologia API",
+  "orgao_responsavel": "Elmar Tecnologia (Fornecedor) / Municípios Diversos (incluindo Consórcios e Câmaras)",
+  "esfera": "Municipal",
+  "uf": "PB",
+  "categoria": "Transparência, Folha de Pagamento, Licitações",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia-api.elmartecnologia.com.br/swagger",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

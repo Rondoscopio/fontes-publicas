@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00135",
+  "nome": "API SAPL (ALE-RO)",
+  "orgao_responsavel": "Assembleia Legislativa do Estado de Rondônia",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Processo Legislativo",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://sapl.al.ro.leg.br/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

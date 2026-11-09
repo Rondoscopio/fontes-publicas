@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00051",
+  "nome": "Web Services da Nota Fiscal Eletrônica (NF-e) e Conhecimento de Transporte Eletrônico (CT-e)",
+  "orgao_responsavel": "Secretaria de Estado de Fazenda (SEFAZ-MS)",
+  "esfera": "Estadual",
+  "uf": "MS",
+  "categoria": "Fazenda e Tributação",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.sefaz.ms.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00897",
+  "nome": "API de Dados Abertos da Câmara Municipal de Mossoró",
+  "orgao_responsavel": "Câmara Municipal de Mossoró",
+  "esfera": "Municipal",
+  "uf": "RN",
+  "categoria": "Transparência Legislativa",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.mossoro.rn.leg.br/inutilizados/open-data",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

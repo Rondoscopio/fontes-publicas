@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00911",
+  "nome": "API de Dados Abertos - Portal da Transparência de Ji-Paraná",
+  "orgao_responsavel": "Prefeitura Municipal de Ji-Paraná",
+  "esfera": "Municipal",
+  "uf": "RO",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.ji-parana.ro.gov.br/api/doc",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

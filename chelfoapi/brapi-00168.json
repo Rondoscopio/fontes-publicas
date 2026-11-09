@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00168",
+  "nome": "API Transparência MPAL",
+  "orgao_responsavel": "Ministério Público do Estado de Alagoas (MPAL)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência, Dados Abertos, Execução Orçamentária, Gestão de Pessoas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://transparencia.mpal.mp.br/principal/dadosAbertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

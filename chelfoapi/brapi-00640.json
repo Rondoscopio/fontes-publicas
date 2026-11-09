@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00640",
+  "nome": "PJe Certidões Trabalhistas API",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 16ª Região (TRT16)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "certidões",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://pje.trt16.jus.br/pje-certidoes-api/api/certidoes/trabalhistas/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

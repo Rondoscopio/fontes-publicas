@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00296",
+  "nome": "Open Banking - Discovery",
+  "orgao_responsavel": "BNDES",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Open Banking",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://apis.bndes.gov.br/store/apis/info?name=Open%20Banking%20-%20Discovery&version=v1&provider=s-wso2-01",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00810",
+  "nome": "API Web - Transparência Vitória",
+  "orgao_responsavel": "Prefeitura Municipal de Vitória",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://wstransparencia.vitoria.es.gov.br/Help",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

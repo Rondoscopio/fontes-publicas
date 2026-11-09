@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00025",
+  "nome": "API de Dados Abertos (Ceará Transparente)",
+  "orgao_responsavel": "Governo do Estado do Ceará / Controladoria e Ouvidoria Geral do Estado (CGE)",
+  "esfera": "Estadual",
+  "uf": "CE",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.cearatransparente.ce.gov.br/portal-da-transparencia/dados-abertos/conjuntos-de-dados",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

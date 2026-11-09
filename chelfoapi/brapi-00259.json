@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00259",
+  "nome": "API Rest OAuth 2.0 (Portal Operadoras)",
+  "orgao_responsavel": "Agência Nacional de Saúde Suplementar (ANS)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Saúde Suplementar / Administração",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.ans.gov.br/apis/oauth2/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

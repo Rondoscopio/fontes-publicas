@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00392",
+  "nome": "e-Agendas API",
+  "orgao_responsavel": "Controladoria-Geral da União (CGU) / Utilizada por toda a Administração Direta, incluindo SECOM",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Agendas Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://eagendas.cgu.gov.br/api/docs",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

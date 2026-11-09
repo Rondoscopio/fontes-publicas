@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00262",
+  "nome": "Webservice do Módulo de Peticionamento Eletrônico do SEI",
+  "orgao_responsavel": "Agência Nacional de Telecomunicações (Anatel)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Processo Eletrônico e Peticionamento",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://github.com/anatelgovbr/mod-sei-peticionamento",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

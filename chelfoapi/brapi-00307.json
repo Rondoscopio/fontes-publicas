@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00307",
+  "nome": "API CKAN Dados Abertos CEFET-RJ",
+  "orgao_responsavel": "Centro Federal de Educação Tecnológica Celso Suckow da Fonseca (CEFET-RJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos/Institucional",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.cefet-rj.br/api/3/action/help_show?name=site_read",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

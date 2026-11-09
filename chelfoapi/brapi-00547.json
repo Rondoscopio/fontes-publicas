@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00547",
+  "nome": "CKAN Data API - Portal de Dados Abertos MME",
+  "orgao_responsavel": "Ministério de Minas e Energia (MME)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos / Energia / Mineração",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.mme.gov.br/km/api/1/util/snippet/api_info.html?resource_id=846f0690-fa44-4854-9d7c-a4010a256f04",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

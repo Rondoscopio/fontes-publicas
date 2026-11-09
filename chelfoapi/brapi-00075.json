@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00075",
+  "nome": "API Catálogo Padronizado de Itens (SEAP/DECON)",
+  "orgao_responsavel": "SEAP - Secretaria da Administração e da Previdência",
+  "esfera": "Estadual",
+  "uf": "PR",
+  "categoria": "Compras Públicas / Licitações",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.administracao.pr.gov.br/Compras/Cartilha-API-Catalogo",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

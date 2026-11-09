@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00531",
+  "nome": "API de Gestão - Autoriza",
+  "orgao_responsavel": "Ministério da Gestão e da Inovação em Serviços Públicos (MGI) / Serpro",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Gestão de Acessos e Perfis",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.autorizagov.estaleiro.serpro.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

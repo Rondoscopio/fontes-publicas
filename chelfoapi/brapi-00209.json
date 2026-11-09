@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00209",
+  "nome": "API de Dados Abertos TJCE",
+  "orgao_responsavel": "Tribunal de Justiça do Estado do Ceará",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e Orçamento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.tjce.jus.br/transparencia/dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00510",
+  "nome": "CAF - Cadastro Nacional da Agricultura Familiar – Consulta Organização Produtiva",
+  "orgao_responsavel": "Ministério do Desenvolvimento Agrário e Agricultura Familiar - Diretoria do CAF (MDA/DCAF)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Agricultura e Governança Fundiária",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.gov.br/conecta/catalogo/apis/cadastro-nacional-da-agricultura-familiar-consulta-organizacao-produtiva",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

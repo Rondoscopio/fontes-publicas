@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00976",
+  "nome": "Acesso Automatizado aos Dados Abertos (API) da Prefeitura de Palmas",
+  "orgao_responsavel": "Prefeitura Municipal de Palmas",
+  "esfera": "Municipal",
+  "uf": "TO",
+  "categoria": "Estrutura Organizacional e Administração",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://acessoainformacao.palmas.to.gov.br/cidadao/outras_informacoes/acesso_automatizado",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

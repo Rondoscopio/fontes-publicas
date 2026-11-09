@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00237",
+  "nome": "FG 2-API",
+  "orgao_responsavel": "ADIG/DEPOG (BNDES)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Fundos Garantidores",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://apis.bndes.gov.br/store/apis/info?name=FG2-API&version=v1&provider=BNDES%2Fargol",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

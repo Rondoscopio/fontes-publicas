@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00550",
+  "nome": "API CKAN de Dados Abertos do Setor de Transportes",
+  "orgao_responsavel": "Ministério de Portos e Aeroportos (MPOR)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos / Infraestrutura / Transportes",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://docs.ckan.org/en/2.11/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00965",
+  "nome": "GTFS EMTU - Transporte Metropolitano",
+  "orgao_responsavel": "Empresa Metropolitana de Transportes Urbanos (EMTU)",
+  "esfera": "Municipal",
+  "uf": "SP",
+  "categoria": "Transporte e Mobilidade",
+  "tecnologia": "Feed estruturado",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.emtu.sp.gov.br/emtu/dados-abertos/dados-abertos-principal/gtfs.fss",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

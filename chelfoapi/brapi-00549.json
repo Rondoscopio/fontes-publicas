@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00549",
+  "nome": "API do Sistema Integrado de Planejamento e Orçamento (SIOP)",
+  "orgao_responsavel": "Ministério do Planejamento e Orçamento (MPO) / Secretaria de Orçamento Federal (SOF)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Orçamento e Finanças Públicas",
+  "tecnologia": "GraphQL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www1.siop.planejamento.gov.br/siopdoc/doku.php/orientacoes_de_acesso",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

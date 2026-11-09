@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00557",
+  "nome": "API de Registro de Geradoras (DT-e)",
+  "orgao_responsavel": "Ministério dos Transportes",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transporte de Cargas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.gov.br/transportes/pt-br/assuntos/dt-e/dte_avisos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

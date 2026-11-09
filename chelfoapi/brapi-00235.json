@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00235",
+  "nome": "API do Portal do TJRN",
+  "orgao_responsavel": "Tribunal de Justiça do Rio Grande do Norte",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Notícias e Unidades",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://tjrn.jus.br/area-do-desenvolvedor/diretorio-de-apis/api-do-portal-do-tjrn/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

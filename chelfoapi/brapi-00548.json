@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00548",
+  "nome": "OAI-PMH Biblioteca Digital - MME/EPE",
+  "orgao_responsavel": "Ministério de Minas e Energia (MME) / Empresa de Pesquisa Energética (EPE)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Pesquisa e Publicações",
+  "tecnologia": "OAI-PMH 2.0",
+  "acesso_declarado": "Não informado",
+  "url": "https://bibliotecadigital.dth.api.gov.br/oai/request?verb=Identify",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

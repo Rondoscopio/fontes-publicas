@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00391",
+  "nome": "API do Portal Brasileiro de Dados Abertos",
+  "orgao_responsavel": "Controladoria Geral da União (CGU) / Ministério da Gestão e da Inovação em Serviços Públicos (MGI)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.gov.br/conecta/catalogo/apis/api-portal-de-dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

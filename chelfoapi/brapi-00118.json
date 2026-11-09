@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00118",
+  "nome": "API de Transparência do TCE-SP",
+  "orgao_responsavel": "Tribunal de Contas do Estado de São Paulo (TCE-SP)",
+  "esfera": "Estadual",
+  "uf": "SP",
+  "categoria": "Transparência e Contas Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.tce.sp.gov.br/apis",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00065",
+  "nome": "Webservices NF-e SEFAZ/PB",
+  "orgao_responsavel": "Secretaria de Estado da Fazenda (SEFAZ-PB)",
+  "esfera": "Estadual",
+  "uf": "PB",
+  "categoria": "Tributário e Fiscal",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.sefaz.pb.gov.br/info/notas-fiscais/nf-e",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00893",
+  "nome": "API de Dados Abertos - Duque de Caxias",
+  "orgao_responsavel": "Prefeitura de Duque de Caxias",
+  "esfera": "Municipal",
+  "uf": "RJ",
+  "categoria": "Transparência, Licitações, Receitas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://transparencia.duquedecaxias.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=500000361",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

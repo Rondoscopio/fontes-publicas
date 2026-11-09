@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00532",
+  "nome": "API do Compras.gov.br (Dados Abertos)",
+  "orgao_responsavel": "Ministério da Gestão e da Inovação em Serviços Públicos - Secretaria de Gestão e Inovação (MGI/SEGES)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Compras Públicas e Contratações",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.gov.br/compras/pt-br/acesso-a-informacao/manuais/manual-dados-abertos/manual-api-compras.pdf/@@download/file",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

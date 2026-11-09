@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00586",
+  "nome": "API do SISGRU",
+  "orgao_responsavel": "Secretaria do Tesouro Nacional (STN)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Arrecadação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://webservice.sisgru.tesouro.gov.br/sisgru/services/v1/docs/sisgru_ws_specs.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

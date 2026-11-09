@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00325",
+  "nome": "ArcGIS REST Service - Armazéns e Silos (CONAB)",
+  "orgao_responsavel": "Companhia Nacional de Abastecimento (Conab) / SINFRA-MT",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Infraestrutura Geoespacial",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://mapas.sinfra.mt.gov.br/server/rest/services/gisdb_centralinfra_armazens_conab/FeatureServer",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

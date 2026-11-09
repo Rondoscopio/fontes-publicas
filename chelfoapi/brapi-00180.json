@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00180",
+  "nome": "API Diário Oficial Eletrônico TCE-AL",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Alagoas (TCE-AL)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Publicações Oficiais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "Não localizada",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00292",
+  "nome": "Open Finance Brasil - BNB",
+  "orgao_responsavel": "Banco do Nordeste do Brasil S.A.",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Finanças / Open Banking",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://openfinance.dev.br/provider/BNB?id=6370a748-6bda-4a37-9e88-5e68cc4cf100",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

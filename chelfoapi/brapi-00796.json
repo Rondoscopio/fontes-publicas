@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00796",
+  "nome": "API de Dados Abertos - Câmara Municipal de Vitória",
+  "orgao_responsavel": "Câmara Municipal de Vitória",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.cmv.es.gov.br/dados_abertos/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00220",
+  "nome": "Serviço de Consulta às Movimentações Processuais Públicas Automatizado (SCMPP)",
+  "orgao_responsavel": "Tribunal de Justiça do Estado do Paraná (TJPR)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Judiciais",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.tjpr.jus.br/acesso-automatizado-por-sistemas-externos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

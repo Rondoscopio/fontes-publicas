@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00359",
+  "nome": "API Pública do DJEN",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Jurisprudência / Diário Eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://comunicaapi.pje.jus.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

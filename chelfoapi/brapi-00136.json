@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00136",
+  "nome": "API do Catálogo de Dados Abertos da ALESP",
+  "orgao_responsavel": "Assembleia Legislativa do Estado de São Paulo",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Legislativos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.al.sp.gov.br/dados-abertos/catalogo",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

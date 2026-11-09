@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00570",
+  "nome": "API de Dados Abertos do Portal Modelo (Interlegis)",
+  "orgao_responsavel": "Programa Interlegis (Senado Federal)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Dados Legislativos Municipais/Estaduais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://portalmodelo.interlegis.leg.br/transparencia/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

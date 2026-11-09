@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00090",
+  "nome": "API Dados Abertos - Rorainópolis",
+  "orgao_responsavel": "Prefeitura Municipal de Rorainópolis",
+  "esfera": "Estadual",
+  "uf": "RR",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://rorainopolis.rr.gov.br/dados-abertos/publicacoes/doc",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

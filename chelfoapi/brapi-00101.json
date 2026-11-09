@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00101",
+  "nome": "API de Dados Abertos CKAN - Dados RS",
+  "orgao_responsavel": "SPGG / DEE",
+  "esfera": "Estadual",
+  "uf": "RS",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.rs.gov.br/api/3/action/site_read",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

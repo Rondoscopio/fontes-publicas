@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00870",
+  "nome": "API de Licitações - Prefeitura de Petrolina",
+  "orgao_responsavel": "Prefeitura Municipal de Petrolina",
+  "esfera": "Municipal",
+  "uf": "PE",
+  "categoria": "Licitações e Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://petrolina.pe.gov.br/dados-abertos-1/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

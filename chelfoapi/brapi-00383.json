@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00383",
+  "nome": "API Pública CRP-23",
+  "orgao_responsavel": "Conselho Regional de Psicologia 23ª Região (CRP-23)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.crp23.org.br/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

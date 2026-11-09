@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00627",
+  "nome": "API Transparência TRF5",
+  "orgao_responsavel": "Tribunal Regional Federal da 5ª Região (TRF5)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://govti.trf5.jus.br/dados-abertos/59-acesso-automatizado-por-sistemas-externos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

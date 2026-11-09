@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00935",
+  "nome": "Transparência Caxias do Sul (Swagger)",
+  "orgao_responsavel": "Prefeitura Municipal de Caxias do Sul",
+  "esfera": "Municipal",
+  "uf": "RS",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://grp.caxias.rs.gov.br/transparencia/dados-abertos/swagger-ui.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

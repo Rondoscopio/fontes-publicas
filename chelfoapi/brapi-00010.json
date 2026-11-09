@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00010",
+  "nome": "API Transparência Alagoas",
+  "orgao_responsavel": "Controladoria-Geral do Estado de Alagoas (CGE/AL)",
+  "esfera": "Estadual",
+  "uf": "AL",
+  "categoria": "Transparência e Finanças Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.al.gov.br/portal/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

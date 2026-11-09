@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00695",
+  "nome": "API DSpace - Repositório Institucional da UNIR",
+  "orgao_responsavel": "Universidade Federal de Rondônia (UNIR)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Educação e Pesquisa",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://wiki.lyrasis.org/display/DSDOC7x/REST+API",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

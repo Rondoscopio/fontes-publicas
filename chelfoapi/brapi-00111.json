@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00111",
+  "nome": "ArcGIS REST Services - CETESB",
+  "orgao_responsavel": "Companhia Ambiental do Estado de São Paulo (CETESB)",
+  "esfera": "Estadual",
+  "uf": "SP",
+  "categoria": "Meio Ambiente",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://servicos.cetesb.sp.gov.br/arcgis/sdk/rest/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

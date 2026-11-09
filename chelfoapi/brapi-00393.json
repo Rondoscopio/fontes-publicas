@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00393",
+  "nome": "CKAN Data API - Dados Abertos CAPES",
+  "orgao_responsavel": "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (Capes)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos / Educação",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.capes.gov.br/en/api/1/util/snippet/api_info.html?resource_id=b871db42-a86e-43d3-bf21-2ea2e85d0acd",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00003",
+  "nome": "Serviços Geográficos IBRAM",
+  "orgao_responsavel": "Instituto Brasília Ambiental (IBRAM)",
+  "esfera": "Estadual",
+  "uf": "DF",
+  "categoria": "Meio Ambiente",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://onda.ibram.df.gov.br/server/help/en/rest/router.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

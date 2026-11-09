@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00908",
+  "nome": "API de Dados Abertos - Portal da Transparência de Buritis",
+  "orgao_responsavel": "Prefeitura Municipal de Buritis",
+  "esfera": "Municipal",
+  "uf": "RO",
+  "categoria": "Transparência e Finanças Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://transparencia.buritis.ro.gov.br/api/doc",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

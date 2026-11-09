@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00509",
+  "nome": "CKAN API - Portal de Dados da Cultura",
+  "orgao_responsavel": "Ministério da Cultura / Fundação Cultural Palmares",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Cultura e Comunidades Quilombolas",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.cultura.gov.br/api/3/action/help_show?name=package_search",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

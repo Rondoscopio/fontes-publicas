@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00575",
+  "nome": "API SDA Digital (MAPA Labs / Autocontrole)",
+  "orgao_responsavel": "Secretaria de Defesa Agropecuária (SDA) - MAPA",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Defesa Agropecuária / Análises Laboratoriais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://autocontrole.agricultura.gov.br/GuiaUtilizacaoAutocontrolev142.pdf",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

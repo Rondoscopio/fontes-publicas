@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00643",
+  "nome": "API do Processo Judicial Eletrônico (PJe) - TRT19",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 19ª Região (TRT19)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://pje.trt19.jus.br/consultaprocessual/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

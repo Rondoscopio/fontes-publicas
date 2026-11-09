@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00950",
+  "nome": "API de Dados Abertos do TCE/SC",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Santa Catarina",
+  "esfera": "Municipal",
+  "uf": "SC",
+  "categoria": "Transparência Pública e Fiscalização",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "http://www.tcesc.tc.br/apis-dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

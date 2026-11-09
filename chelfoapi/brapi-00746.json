@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00746",
+  "nome": "API Dados Abertos - Câmara de Manaquiri",
+  "orgao_responsavel": "Câmara Municipal de Manaquiri",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "Desconhecido",
+  "acesso_declarado": "Não informado",
+  "url": "https://camarademanaquiri.am.gov.br/vereadores/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00269",
+  "nome": "ArcGIS REST Services - Infra S.A. / ANTT",
+  "orgao_responsavel": "Agência Nacional de Transportes Terrestres (ANTT) / Infra S.A.",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Geoespaciais",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://geo.infrasa.gov.br/server/rest/services",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

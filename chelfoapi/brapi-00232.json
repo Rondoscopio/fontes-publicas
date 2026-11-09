@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00232",
+  "nome": "API Pública do DataJud - TJMG",
+  "orgao_responsavel": "Tribunal de Justiça de Minas Gerais (TJMG) / Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados judiciais, processo eletrônico, jurisprudência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.cnj.jus.br/sistemas/datajud/api-publica/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

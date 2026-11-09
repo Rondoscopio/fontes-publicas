@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00476",
+  "nome": "API do CKAN - IFRR",
+  "orgao_responsavel": "Instituto Federal de Roraima (IFRR)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://docs.ckan.org/en/2.10/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00775",
+  "nome": "API de Dados Abertos - Câmara de Brejo Santo",
+  "orgao_responsavel": "Câmara Municipal de Brejo Santo",
+  "esfera": "Municipal",
+  "uf": "CE",
+  "categoria": "Legislativo e Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.camarabrejosanto.ce.gov.br/dadosabertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00675",
+  "nome": "CKAN API de Dados Abertos - UFBA",
+  "orgao_responsavel": "Universidade Federal da Bahia",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://docs.ckan.org/en/2.7/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

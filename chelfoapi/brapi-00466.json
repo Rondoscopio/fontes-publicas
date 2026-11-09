@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00466",
+  "nome": "Geoserviços ICMBio (INDE)",
+  "orgao_responsavel": "Instituto Chico Mendes de Conservação da Biodiversidade - ICMBio",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Geoespaciais, Meio Ambiente, Unidades de Conservação",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.gov.br/icmbio/pt-br/dados-icmbio/dados_geoespaciais",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

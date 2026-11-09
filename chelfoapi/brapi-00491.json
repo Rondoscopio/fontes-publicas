@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00491",
+  "nome": "API de Dados Abertos - Queimadas INPE",
+  "orgao_responsavel": "Instituto Nacional de Pesquisas Espaciais (INPE) - Programa Queimadas",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Meio Ambiente e Monitoramento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://data.inpe.br/queimadas/dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

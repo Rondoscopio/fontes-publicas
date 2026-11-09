@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00590",
+  "nome": "Datavalid",
+  "orgao_responsavel": "Serpro",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Identidade / Antifraude",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://store.serpro.gov.br/datavalid/product/datavalid-en",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

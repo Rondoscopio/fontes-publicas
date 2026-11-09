@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00134",
+  "nome": "API de Dados Abertos (ALE-RO)",
+  "orgao_responsavel": "Assembleia Legislativa do Estado de Rondônia",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e Pessoal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.al.ro.leg.br/DadosAbertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

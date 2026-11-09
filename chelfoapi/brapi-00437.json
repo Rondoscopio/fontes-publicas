@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00437",
+  "nome": "Ações de Aprendizagem (Conecta gov.br)",
+  "orgao_responsavel": "Escola Nacional de Administração Pública (Enap)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Educação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://www.gov.br/conecta/catalogo/apis/acoes-de-aprendizagem",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00541",
+  "nome": "Instalações Portuárias ANTAQ 2019 (MapServer)",
+  "orgao_responsavel": "Ministério da Infraestrutura / Infra S.A. (Dados da ANTAQ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geoespacial / Transportes",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://geo.infrasa.gov.br/server/rest/services/SUMAD/INSTALACOES_PORTUARIAS_ANTAQ_2019/MapServer",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

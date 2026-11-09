@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00158",
+  "nome": "API de Dados Abertos - DPE-PR",
+  "orgao_responsavel": "Defensoria Pública do Estado do Paraná (DPE-PR)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e Pessoal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.defensoria.pr.def.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

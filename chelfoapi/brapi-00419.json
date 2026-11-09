@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00419",
+  "nome": "API Busca CEP",
+  "orgao_responsavel": "Empresa Brasileira de Correios e Telégrafos",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Endereçamento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.correios.com.br/atendimento/developers/manuais/manual-api-busca-cep",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

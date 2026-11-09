@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00030",
+  "nome": "API do Acesso Cidadão",
+  "orgao_responsavel": "PRODEST",
+  "esfera": "Estadual",
+  "uf": "ES",
+  "categoria": "Identidade e Acesso",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.developer.acessocidadao.es.gov.br/Api/ApiAcessoCidadao/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

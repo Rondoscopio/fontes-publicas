@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00660",
+  "nome": "API de Contratos (SacWeb)",
+  "orgao_responsavel": "Tribunal Superior do Trabalho (TST)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://aplicacao7.tst.jus.br/sacwebcp/api-docs/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

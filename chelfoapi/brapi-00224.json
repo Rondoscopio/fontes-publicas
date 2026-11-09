@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00224",
+  "nome": "API de Comarcas e Órgãos do TJRJ",
+  "orgao_responsavel": "Tribunal de Justiça do Estado do Rio de Janeiro",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Judiciais, Estrutura Institucional",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://portaltj.tjrj.jus.br/documents/d/guest/orgaoservicepub-guia_2",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

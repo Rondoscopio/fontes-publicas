@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00782",
+  "nome": "API de Dados Abertos - IntGest (Jaguaribara)",
+  "orgao_responsavel": "Prefeitura Municipal de Jaguaribara",
+  "esfera": "Municipal",
+  "uf": "CE",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.jaguaribara.ce.gov.br/transparencia/dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

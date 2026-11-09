@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00668",
+  "nome": "API do SIGEST (Sistema de Gestão Estratégica)",
+  "orgao_responsavel": "TST / Conselho Superior da Justiça do Trabalho (CSJT)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Orçamento, Gestão e Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.postman.com/actio-software/actio-software/collection/j1f03zb/actio-software-api-documentation",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

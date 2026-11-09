@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00839",
+  "nome": "API de Dados Abertos CISAP",
+  "orgao_responsavel": "Consórcio Intermunicipal de Saúde do Alto Paraopeba e Vale do Piranga (CISAP)",
+  "esfera": "Municipal",
+  "uf": "MG",
+  "categoria": "Transparência, Saúde",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.cisap.mg.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

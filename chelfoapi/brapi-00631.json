@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00631",
+  "nome": "API de Processos Aptos a Julgamento",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 11ª Região (TRT11)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Judiciais, Processos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://portal.trt11.jus.br/index.php/transparencia/dados-abertos-e-api-s-publicas",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

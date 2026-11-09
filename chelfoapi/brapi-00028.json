@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00028",
+  "nome": "API IntegraSUS (Casos Coronavírus)",
+  "orgao_responsavel": "Secretaria da Saúde do Estado do Ceará (SESA)",
+  "esfera": "Estadual",
+  "uf": "CE",
+  "categoria": "Saúde",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://github.com/integrasus/api-covid-ce",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

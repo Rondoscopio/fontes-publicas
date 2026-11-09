@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00909",
+  "nome": "API de Dados Abertos - Portal da Transparência de Cacoal",
+  "orgao_responsavel": "Prefeitura Municipal de Cacoal",
+  "esfera": "Municipal",
+  "uf": "RO",
+  "categoria": "Transparência e Finanças Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://transparencia.cacoal.ro.gov.br/portaltransparencia-api/swagger-ui.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

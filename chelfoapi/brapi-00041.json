@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00041",
+  "nome": "Webservices NF-e / NFC-e / MDF-e SEFAZ-GO",
+  "orgao_responsavel": "Secretaria da Economia de Goiás (SEFAZ-GO)",
+  "esfera": "Estadual",
+  "uf": "GO",
+  "categoria": "Fazenda e Tributação",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "http://www.economia.go.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

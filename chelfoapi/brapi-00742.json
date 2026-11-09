@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00742",
+  "nome": "API de Dados Abertos - União dos Palmares",
+  "orgao_responsavel": "Prefeitura Municipal de União dos Palmares",
+  "esfera": "Municipal",
+  "uf": "AL",
+  "categoria": "Transparência (Emendas Parlamentares, Atos Normativos, Licitações, Contratos, Convênios, Obras Públicas)",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://transparencia.uniaodospalmares.al.gov.br/dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

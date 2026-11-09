@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00024",
+  "nome": "API de Dados Meteorológicos (FUNCEME)",
+  "orgao_responsavel": "Fundação Cearense de Meteorologia e Recursos Hídricos (FUNCEME)",
+  "esfera": "Estadual",
+  "uf": "CE",
+  "categoria": "Meteorologia e Meio Ambiente",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://api.funceme.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

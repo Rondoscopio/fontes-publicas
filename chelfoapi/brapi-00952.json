@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00952",
+  "nome": "API de Dados Abertos - Conivales",
+  "orgao_responsavel": "Consórcio Intermunicipal do Vale do São Francisco (Conivales)",
+  "esfera": "Municipal",
+  "uf": "SE",
+  "categoria": "Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.conivales.se.gov.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

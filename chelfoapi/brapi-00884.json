@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00884",
+  "nome": "API de Dados Abertos - Londrina",
+  "orgao_responsavel": "Prefeitura Municipal de Londrina",
+  "esfera": "Municipal",
+  "uf": "PR",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://portal.londrina.pr.gov.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

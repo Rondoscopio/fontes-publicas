@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00245",
+  "nome": "NOAA - Consulta Testes de Campo",
+  "orgao_responsavel": "Agência Nacional de Águas e Saneamento Básico (ANA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Monitoramento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://www.ana.gov.br/fieldtest/swagger-ui/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

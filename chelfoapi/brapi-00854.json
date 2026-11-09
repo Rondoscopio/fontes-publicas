@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00854",
+  "nome": "ÁGILIBlue Transparência API",
+  "orgao_responsavel": "Ágili Software Brasil / Prefeituras Municipais (ex: Sorriso, Lambari D'Oeste)",
+  "esfera": "Municipal",
+  "uf": "MT",
+  "categoria": "Transparência e Finanças Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://transparencia.agilicloud.com.br/docs/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

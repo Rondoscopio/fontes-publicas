@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00554",
+  "nome": "API Concórdia - Consultas ao Acervo de Atos Internacionais do Brasil",
+  "orgao_responsavel": "Ministério das Relações Exteriores (MRE)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Atos Internacionais, Acordos e Tratados",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://aplicacao.itamaraty.gov.br/ApiConcordia/swagger/ui/index",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

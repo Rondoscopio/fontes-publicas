@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00922",
+  "nome": "Dados Abertos (Portal Modelo/Interlegis) - Câmara Municipal de Mucajaí",
+  "orgao_responsavel": "Câmara Municipal de Mucajaí",
+  "esfera": "Municipal",
+  "uf": "RR",
+  "categoria": "Legislativo e Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.mucajai.rr.leg.br/transparencia/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

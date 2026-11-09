@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00665",
+  "nome": "API de Sessões de Julgamento",
+  "orgao_responsavel": "TRT4",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Pautas e Sessões",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.trt4.jus.br/portais/trt4/dados-abertos-documentacao-api-sessoes-julgamento",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

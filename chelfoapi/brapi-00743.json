@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00743",
+  "nome": "API Dados Abertos - Câmara de Alvarães",
+  "orgao_responsavel": "Câmara Municipal de Alvarães",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "Desconhecido",
+  "acesso_declarado": "Não informado",
+  "url": "https://camaradealvaraes.am.gov.br/category/legislativo-municipal/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

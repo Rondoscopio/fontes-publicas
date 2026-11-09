@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00378",
+  "nome": "MNI Client (PJe)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ) / TRT5",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://docs.pje.jus.br/servicos-auxiliares/servico-mni-client/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

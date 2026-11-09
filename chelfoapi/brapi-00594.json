@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00594",
+  "nome": "API Integra Contador",
+  "orgao_responsavel": "Serpro / Receita Federal do Brasil",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Tributário / Fiscal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://loja.serpro.gov.br/integra-contador/product/integracontador",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

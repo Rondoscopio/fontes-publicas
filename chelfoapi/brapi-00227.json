@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00227",
+  "nome": "Web Service de Consulta para Mediadores e Conciliadores do TJPA",
+  "orgao_responsavel": "Tribunal de Justiça do Estado do Pará (TJPA)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Serviços Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.tjpa.jus.br/PortalExterno/institucional/Secretaria-de-Tecnologia-da-Informacao-e-Comunicacao-do-TJPA/834285-dados-abertos.xhtml",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00572",
+  "nome": "API Portal Único Siscomex - Receita Federal",
+  "orgao_responsavel": "Receita Federal do Brasil (RFB)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Comércio Exterior",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "http://docs.portalunico.siscomex.gov.br/api/dimp/receita/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

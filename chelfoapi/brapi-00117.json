@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00117",
+  "nome": "GeoNetwork REST API (Datageo SP)",
+  "orgao_responsavel": "Secretaria de Meio Ambiente, Infraestrutura e Logística (SEMIL) / Casa Militar",
+  "esfera": "Estadual",
+  "uf": "SP",
+  "categoria": "Geoinformação e Meio Ambiente",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://datageo.casamilitar.sp.gov.br/geonetworkgrd/doc/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

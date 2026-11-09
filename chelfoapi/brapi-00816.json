@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00816",
+  "nome": "API do Portal do Cidadão - Ouvidoria CIDERSP",
+  "orgao_responsavel": "Consórcio Intermunicipal de Desenvolvimento da Região São Patrício (CIDERSP)",
+  "esfera": "Municipal",
+  "uf": "GO",
+  "categoria": "Ouvidoria / Atendimento ao Cidadão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://acessoainformacao.cidersp.go.gov.br/cidadao/outras_informacoes/acesso_automatizado",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

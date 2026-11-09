@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00048",
+  "nome": "IDE-Sisema GeoServer (WMS/WFS/WCS/WMTS)",
+  "orgao_responsavel": "Sistema Estadual de Meio Ambiente e Recursos Hídricos (SISEMA)",
+  "esfera": "Estadual",
+  "uf": "MG",
+  "categoria": "Meio Ambiente / Geoinformação",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://idesisema.meioambiente.mg.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

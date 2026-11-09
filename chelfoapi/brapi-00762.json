@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00762",
+  "nome": "API Dados Abertos - Urucará",
+  "orgao_responsavel": "Prefeitura Municipal de Urucará",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "Desconhecido",
+  "acesso_declarado": "Não informado",
+  "url": "https://urucara.am.gov.br/mapa-do-site/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

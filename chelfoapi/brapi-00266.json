@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00266",
+  "nome": "Portal de Dados Abertos ANTT - CKAN API",
+  "orgao_responsavel": "Agência Nacional de Transportes Terrestres (ANTT)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://docs.ckan.org/en/latest/api/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

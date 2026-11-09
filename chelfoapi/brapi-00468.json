@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00468",
+  "nome": "API HAL Browser (Saúde Indígena)",
+  "orgao_responsavel": "Instituto de Comunicação e Informação Científica e Tecnológica em Saúde (ICICT) / Fiocruz",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Saúde / Repositório Institucional",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://api.treinamento.saudeindigena.icict.fiocruz.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

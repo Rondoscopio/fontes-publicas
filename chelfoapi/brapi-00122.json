@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00122",
+  "nome": "API de Dados Abertos - ALEAC",
+  "orgao_responsavel": "Assembleia Legislativa do Acre",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência, Finanças, Recursos Humanos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://app.al.ac.leg.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00663",
+  "nome": "PJe Acervo Digital API",
+  "orgao_responsavel": "TRT3",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://pje.trt3.jus.br/pje-acervodigital-api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

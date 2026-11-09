@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00071",
+  "nome": "API de CEP",
+  "orgao_responsavel": "ETIPI - Empresa de Tecnologia da Informação do Piauí",
+  "esfera": "Estadual",
+  "uf": "PI",
+  "categoria": "Serviços ao Cidadão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://govpiconecta.pi.gov.br/docs/Apis/API%20de%20CEP/buscar-informacoes-de-um-cep",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

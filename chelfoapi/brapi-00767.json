@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00767",
+  "nome": "API de Dados Abertos - Portal da Transparência (Padrão IMAP)",
+  "orgao_responsavel": "Instituto Municipal de Administração Pública (IMAP) / Prefeituras Diversas",
+  "esfera": "Municipal",
+  "uf": "BA",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://api.imap.org.br/swagger/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

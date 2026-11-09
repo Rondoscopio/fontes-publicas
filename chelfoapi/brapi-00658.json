@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00658",
+  "nome": "API PJe Acervo Digital",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 9ª Região (TRT9)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://pje.trt9.jus.br/pje-acervodigital-api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

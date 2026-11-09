@@ -6,7 +6,7 @@ Data de referência: **9 de novembro de 2026**. Repositório: [Rondoscopio/osint
 | --- | ---: | ---: | --- |
 | [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) | 1275 | 1275 | Índice estruturado original |
 | [Awesome OSINT](https://github.com/jivoi/awesome-osint) | 1394 | 1394 | Links extraídos do README, excluídas imagens |
-| [ChelfoIA / Manus AI](https://www.chelfoapi.com/) | 959 declaradas | 15 famílias documentadas | A listagem integral não pôde ser recuperada; cobertura parcial |
+| [ChelfoIA / Manus AI](https://www.chelfoapi.com/) | 959 | 959 fichas individuais | Catálogo JavaScript fornecido pelo usuário; endpoints não verificados |
 
 ## Critérios
 
@@ -30,6 +30,6 @@ As fichas de fontes importadas anteriormente permanecem preservadas. As listagen
 
 ## ChelfoIA e direitos de uso
 
-O [painel ChelfoIA](https://www.chelfoapi.com/) declara 959 APIs pesquisadas com Manus AI em 3 de setembro de 2026, distribuídas em 466 federais, 232 estaduais e 261 municipais/intermunicipais. **Somente quinze famílias federais são individualizadas aqui** a partir dos links diretos exibidos na apresentação pública. Esses quinze itens **não são necessariamente quinze APIs inéditas**, pois parte já aparecia no catálogo histórico. Não se assumem os demais 944 nomes e URLs.
+O [painel ChelfoIA](https://www.chelfoapi.com/) declara 959 APIs pesquisadas com Manus AI em 3 de setembro de 2026, distribuídas em 466 federais, 232 estaduais e 261 municipais/intermunicipais. **Os 959 registros foram transcritos do array `CATALOGO_APIS` fornecido pelo usuário**, sem omissão de entradas repetidas, na pasta [`chelfoapi/`](chelfoapi/) e no [inventário estruturado](inventarios/chelfoapi-apis.json). As quinze famílias previamente documentadas permanecem como referência histórica. Não foi feita validação de funcionamento, autenticidade ou condições de uso dos endpoints.
 
 Os links dos diretórios são de terceiros. Preservar a atribuição e as licenças originais: [OSINT Brazuca — MIT](https://github.com/osintbrazuca/osint-brazuca/blob/main/LICENSE) e [Awesome OSINT — CC BY-SA 4.0](https://github.com/jivoi/awesome-osint/blob/master/LICENSE.txt). As licenças não concedem direito automático de coletar dados de sites terceiros.

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00914",
+  "nome": "API de Dados Abertos da Prefeitura de Porto Velho",
+  "orgao_responsavel": "Prefeitura Municipal de Porto Velho",
+  "esfera": "Municipal",
+  "uf": "RO",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.portovelho.ro.gov.br/docs/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

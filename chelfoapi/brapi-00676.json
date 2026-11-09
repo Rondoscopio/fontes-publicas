@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00676",
+  "nome": "API de Dados Abertos da UFCSPA (CKAN)",
+  "orgao_responsavel": "Universidade Federal de Ciências da Saúde de Porto Alegre (UFCSPA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Institucionais e Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "http://docs.ckan.org/en/latest/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

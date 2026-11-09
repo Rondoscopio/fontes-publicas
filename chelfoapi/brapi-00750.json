@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00750",
+  "nome": "API de Dados Abertos - Câmara de Tabatinga",
+  "orgao_responsavel": "Câmara Municipal de Tabatinga",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://camaradetabatinga.am.gov.br/api-dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

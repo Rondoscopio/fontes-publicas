@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00106",
+  "nome": "Web Services SEFAZ/SC - Documentos Fiscais Eletrônicos",
+  "orgao_responsavel": "Secretaria de Estado da Fazenda (SEFAZ-SC)",
+  "esfera": "Estadual",
+  "uf": "SC",
+  "categoria": "Fazenda e Tributação",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.sef.sc.gov.br/api-portal/Documento/Ver/6351",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

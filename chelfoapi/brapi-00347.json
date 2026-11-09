@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00347",
+  "nome": "API Pública do Datajud (TRF3)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

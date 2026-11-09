@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00859",
+  "nome": "Portal de Dados Abertos do Estado de Mato Grosso (CKAN API)",
+  "orgao_responsavel": "Secretaria de Estado de Planejamento e Gestão (SEPLAG - MT)",
+  "esfera": "Municipal",
+  "uf": "MT",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.mt.gov.br/api/1/util/snippet/api_info.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

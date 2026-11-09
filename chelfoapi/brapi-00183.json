@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00183",
+  "nome": "API de Dados Abertos - TCE-ES",
+  "orgao_responsavel": "Tribunal de Contas do Estado do Espírito Santo",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência / Controle",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://paineldecontrole.tcees.tc.br/dadosAbertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00506",
+  "nome": "API CKAN Portal de Dados da Cultura",
+  "orgao_responsavel": "Ministério da Cultura",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Cultura",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

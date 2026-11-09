@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00593",
+  "nome": "API Consulta NF-e",
+  "orgao_responsavel": "Serpro / Receita Federal do Brasil",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Tributário / Fiscal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://loja.serpro.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

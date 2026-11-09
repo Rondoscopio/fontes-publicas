@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00481",
+  "nome": "Acervo Fundiário INCRA - i3geo OGC Services",
+  "orgao_responsavel": "Instituto Nacional de Colonização e Reforma Agrária (INCRA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geoespacial",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://acervofundiario.incra.gov.br/i3geo/documentacao/files/wscliente-js.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

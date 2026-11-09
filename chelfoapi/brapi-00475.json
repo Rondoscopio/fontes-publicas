@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00475",
+  "nome": "DSpace OAI-PMH Data Provider do IFRS",
+  "orgao_responsavel": "Instituto Federal do Rio Grande do Sul (IFRS)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Repositório Institucional",
+  "tecnologia": "OAI-PMH",
+  "acesso_declarado": "Não informado",
+  "url": "https://dspace.ifrs.edu.br/oai/request?verb=Identify",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

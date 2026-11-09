@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00504",
+  "nome": "API do Portal de Dados Abertos do MAPA (CKAN)",
+  "orgao_responsavel": "Ministério da Agricultura e Pecuária (MAPA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos Governamentais",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "http://docs.ckan.org/en/2.6/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

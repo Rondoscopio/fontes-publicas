@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00496",
+  "nome": "Ipeadata API",
+  "orgao_responsavel": "Instituto de Pesquisa Econômica Aplicada (Ipea)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Pesquisa e Desenvolvimento / Economia",
+  "tecnologia": "OData",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://www.ipeadata.gov.br/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

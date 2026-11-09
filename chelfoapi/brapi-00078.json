@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00078",
+  "nome": "API CEPERJ (Disseminação de Dados)",
+  "orgao_responsavel": "Fundação CEPERJ",
+  "esfera": "Estadual",
+  "uf": "RJ",
+  "categoria": "Estatísticas e Pesquisas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://www.rj.gov.br/ceperj/disseminacaodedados",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

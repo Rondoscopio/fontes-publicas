@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00906",
+  "nome": "API de Dados Abertos - CIMCERO",
+  "orgao_responsavel": "Consórcio Intermunicipal da Região Centro Leste do Estado de Rondônia (CIMCERO)",
+  "esfera": "Municipal",
+  "uf": "RO",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.consorciopublico.ro.gov.br/api/doc",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

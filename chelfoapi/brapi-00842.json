@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00842",
+  "nome": "IDE-BHGEO - WMS/WFS",
+  "orgao_responsavel": "Prefeitura de Belo Horizonte",
+  "esfera": "Municipal",
+  "uf": "MG",
+  "categoria": "Geoserviços",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://prefeitura.pbh.gov.br/bhgeo/acesso-aos-dados",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

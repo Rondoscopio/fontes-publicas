@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00641",
+  "nome": "PJe - Modelo Nacional de Interoperabilidade (MNI)",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 17ª Região (TRT17) / CSJT",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Processo Eletrônico e Dados Judiciais",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/modelo-nacional-de-interoperabilidade-mni/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

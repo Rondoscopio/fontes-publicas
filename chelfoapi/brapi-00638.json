@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00638",
+  "nome": "Contratos abertos",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 16ª Região (TRT16)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "contratos",
+  "tecnologia": "XML/HTTP",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.trt16.jus.br/transparencia/dados-abertos/api/contrato",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

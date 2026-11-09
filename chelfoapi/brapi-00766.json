@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00766",
+  "nome": "API de Dados Abertos - Câmara Municipal de Lauro de Freitas",
+  "orgao_responsavel": "Câmara Municipal de Lauro de Freitas",
+  "esfera": "Municipal",
+  "uf": "BA",
+  "categoria": "Transparência e Legislação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://cmlf.ba.gov.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

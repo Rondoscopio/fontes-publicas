@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00233",
+  "nome": "API de Dados Abertos do TJPB",
+  "orgao_responsavel": "Tribunal de Justiça da Paraíba",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Processos, Dados Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://tjpb.stoplight.io/docs/tjpb---dados-abertos/branches/main/2cd8f42cd093c-api-de-consulta-de-dados-abertos-do-tjpb",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

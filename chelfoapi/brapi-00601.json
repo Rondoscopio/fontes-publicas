@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00601",
+  "nome": "SGB/CPRM ArcGIS REST Services Directory",
+  "orgao_responsavel": "Serviço Geológico do Brasil (SGB/CPRM)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geociências, Hidrologia, Geologia Marinha, Geoquímica, Gestão Territorial",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://geoportal.sgb.gov.br/server/rest/services",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

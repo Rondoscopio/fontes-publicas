@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00031",
+  "nome": "E-Docs API",
+  "orgao_responsavel": "PRODEST",
+  "esfera": "Estadual",
+  "uf": "ES",
+  "categoria": "Gestão Documental",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.e-docs.es.gov.br/swagger/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

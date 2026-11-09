@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00409",
+  "nome": "API de Dados Abertos do DNIT (CKAN)",
+  "orgao_responsavel": "Departamento Nacional de Infraestrutura de Transportes (DNIT)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Infraestrutura de Transportes, Rodovias, Obras",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://servicos.dnit.gov.br/dadosabertos/ / https://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

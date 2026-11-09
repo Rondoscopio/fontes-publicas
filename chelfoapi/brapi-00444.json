@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00444",
+  "nome": "API de Espaços (Mapas Culturais)",
+  "orgao_responsavel": "Fundação Nacional de Artes (Funarte)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Cultura",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://manual.rededasartes.funarte.gov.br/docs/devs/reference/api/spaces",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

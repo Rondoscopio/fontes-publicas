@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00777",
+  "nome": "Portal de Dados Abertos - CGIRSRMS",
+  "orgao_responsavel": "Consórcio de Gestão Integrada de Resíduos Sólidos da Região Metropolitana de Sobral",
+  "esfera": "Municipal",
+  "uf": "CE",
+  "categoria": "Transparência e Gestão Pública",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.cgirsrms.ce.gov.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

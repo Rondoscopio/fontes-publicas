@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00809",
+  "nome": "HubGeoweb MapServer API",
+  "orgao_responsavel": "Prefeitura Municipal de Vitória",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Geolocalização e Mapas",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://gis.vitoria.es.gov.br/arcgis/rest/services/Opendata/HubGeoweb/MapServer",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00112",
+  "nome": "Web Service SIGOR-MTR",
+  "orgao_responsavel": "Companhia Ambiental do Estado de São Paulo (CETESB)",
+  "esfera": "Estadual",
+  "uf": "SP",
+  "categoria": "Meio Ambiente e Resíduos Sólidos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.cetesb.sp.gov.br/dx/api/dam/v1/collections/595c7dcb-ed54-4072-aa01-fe37f6684bcb/items/b42df79d-bc5a-43d6-a729-a3fd9909e0d9/renditions/b6c672aa-a742-49dc-8557-89c86fb4f20c?binary=true",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

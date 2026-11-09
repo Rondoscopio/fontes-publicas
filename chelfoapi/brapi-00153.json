@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00153",
+  "nome": "API de Consultas do Portal da Transparência do Governo de Roraima (utilizada pela DPE-RR)",
+  "orgao_responsavel": "Controladoria Geral do Estado de Roraima (CGE-RR)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api2.transparencia.rr.gov.br/transparencia/swagger-ui/#/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

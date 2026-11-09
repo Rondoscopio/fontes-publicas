@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00039",
+  "nome": "Webservices DETRAN-GO",
+  "orgao_responsavel": "Departamento Estadual de Trânsito de Goiás (DETRAN-GO)",
+  "esfera": "Estadual",
+  "uf": "GO",
+  "categoria": "Trânsito e Mobilidade",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://servicos.detran.go.gov.br/sca/rest/documentos/docflow/anexo/281136378",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

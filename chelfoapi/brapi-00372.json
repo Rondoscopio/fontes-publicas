@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00372",
+  "nome": "Comunica API (DJEN)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ) / PJe",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Comunicações Processuais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://app.swaggerhub.com/apis-docs/cnj/pcp/1.0.0",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

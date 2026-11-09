@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00526",
+  "nome": "API REST do Portal Brasileiro de Dados Abertos (CKAN) - Dados Anatel",
+  "orgao_responsavel": "Ministério da Gestão e da Inovação em Serviços Públicos / Anatel",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Telecomunicações e Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://dados.gov.br/swagger-ui/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

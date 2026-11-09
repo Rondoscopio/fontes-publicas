@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00132",
+  "nome": "API Transparência ALEPI",
+  "orgao_responsavel": "Assembleia Legislativa do Estado do Piauí (ALEPI)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.al.pi.leg.br/api/documentation",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

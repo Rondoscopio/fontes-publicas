@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00574",
+  "nome": "API CKAN do Portal de Dados Abertos da Presidência da República",
+  "orgao_responsavel": "Secretaria de Comunicação Social (SECOM)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://dadosabertos.presidencia.gov.br/api/3/action/help_show?name=help_show (padrão CKAN)",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

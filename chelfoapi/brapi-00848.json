@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00848",
+  "nome": "API BHISS Digital / NFS-e Nacional",
+  "orgao_responsavel": "Secretaria Municipal de Fazenda (PBH)",
+  "esfera": "Municipal",
+  "uf": "MG",
+  "categoria": "Fazenda/Tributação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://prefeitura.pbh.gov.br/fazenda/bhiss",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

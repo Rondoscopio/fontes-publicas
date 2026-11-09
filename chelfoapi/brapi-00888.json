@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00888",
+  "nome": "API de Dados Abertos CISNOVO",
+  "orgao_responsavel": "Consórcio Público Intermunicipal de Saúde da Região Norte e Noroeste Fluminense (CISNOVO)",
+  "esfera": "Municipal",
+  "uf": "RJ",
+  "categoria": "Transparência, Saúde",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.cisnovo.rj.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

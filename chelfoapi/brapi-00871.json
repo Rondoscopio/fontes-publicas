@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00871",
+  "nome": "API de Dados Abertos do TCE/PE",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Pernambuco (TCE-PE)",
+  "esfera": "Municipal",
+  "uf": "PE",
+  "categoria": "Transparência, Finanças, Licitações, Contratos, Pessoal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://sistemas.tce.pe.gov.br/DadosAbertos/Exemplo!listar",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

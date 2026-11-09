@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00186",
+  "nome": "API de Jurisprudência - TCE-MS",
+  "orgao_responsavel": "Tribunal de Contas do Estado de Mato Grosso do Sul (TCE-MS)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Jurisprudência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "Não documentada publicamente",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

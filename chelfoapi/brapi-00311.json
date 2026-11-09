@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00311",
+  "nome": "API PREVJUD (Serviços Previdenciários do Judiciário)",
+  "orgao_responsavel": "CNJ / Dataprev / INSS",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Justiça e Previdência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://docs.pdpj.jus.br/servicos-negociais/previdenciario/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00579",
+  "nome": "API Consumidor.gov.br",
+  "orgao_responsavel": "Secretaria Nacional do Consumidor (Senacon)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Defesa do Consumidor",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://consumidor.gov.br/pages/principal/documentacao-api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

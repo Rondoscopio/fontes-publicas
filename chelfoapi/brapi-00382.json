@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00382",
+  "nome": "API REST de Dados Abertos CRO-RO",
+  "orgao_responsavel": "Conselho Regional de Odontologia de Rondônia (CRO-RO)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://cro-ro.org.br/noticias?page=6",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

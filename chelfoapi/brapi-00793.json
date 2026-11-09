@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00793",
+  "nome": "WebService Dados Abertos da Câmara Municipal de Linhares",
+  "orgao_responsavel": "Câmara Municipal de Linhares",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Transparência e Orçamento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://www.camaralinhares.es.gov.br/transparencia/contrato/dadosabertos/webservice",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

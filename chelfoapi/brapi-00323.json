@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00323",
+  "nome": "Portal de Informações da CONAB - API SICARM",
+  "orgao_responsavel": "Companhia Nacional de Abastecimento (Conab)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Armazenagem",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://portaldeinformacoes.conab.gov.br/produtos-360.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

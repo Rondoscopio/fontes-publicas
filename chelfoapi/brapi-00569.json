@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00569",
+  "nome": "API de Despesas com Diárias e Passagens",
+  "orgao_responsavel": "PortosRio (Companhia Docas do Rio de Janeiro)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência e Administração",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://portosrio.gov.br/pt-br/acesso-a-informacao/acesso-automatizado-por-sistemas-externos/api-diarias-e-passagens",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

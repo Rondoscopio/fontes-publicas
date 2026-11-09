@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00243",
+  "nome": "Catálogo de Metadados da ANA (GeoNetwork)",
+  "orgao_responsavel": "Agência Nacional de Águas e Saneamento Básico (ANA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Metadados Espaciais",
+  "tecnologia": "GeoNetwork API / CSW",
+  "acesso_declarado": "Não informado",
+  "url": "https://metadados.snirh.gov.br/geonetwork",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

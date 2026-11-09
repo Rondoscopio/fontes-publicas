@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00202",
+  "nome": "API Pública do Datajud (CNJ) - TJBA",
+  "orgao_responsavel": "Tribunal de Justiça da Bahia (TJBA)",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Dados Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.tjba.jus.br/estrategia/api-publica-do-datajud-cnj/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

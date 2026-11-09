@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00295",
+  "nome": "Moedas Contratuais",
+  "orgao_responsavel": "BNDES",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Financeiro",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://apis.bndes.gov.br/store/apis/info?name=MoedasContratuais&version=v1&provider=BNDES%2Fjrx",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

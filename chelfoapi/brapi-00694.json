@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00694",
+  "nome": "OAI-PMH Repositório Institucional - UFRN",
+  "orgao_responsavel": "Universidade Federal do Rio Grande do Norte",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Produção Acadêmica",
+  "tecnologia": "OAI-PMH",
+  "acesso_declarado": "Não informado",
+  "url": "https://repositorio.ufrn.br/server/oai/request?verb=Identify",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

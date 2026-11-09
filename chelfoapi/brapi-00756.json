@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00756",
+  "nome": "API Dados Abertos - Barreirinha",
+  "orgao_responsavel": "Prefeitura Municipal de Barreirinha",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://barreirinha.am.gov.br/mapa-do-site/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

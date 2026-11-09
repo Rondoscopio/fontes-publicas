@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00614",
+  "nome": "Webservice Licitações e compras diretas do TCU",
+  "orgao_responsavel": "Tribunal de Contas da União (TCU)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Contratos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#licitacoes-e-compras-diretas-do-tcu",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

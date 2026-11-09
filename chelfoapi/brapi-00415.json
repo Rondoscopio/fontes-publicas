@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00415",
+  "nome": "Alice OAI-PMH",
+  "orgao_responsavel": "Embrapa Agricultura Digital",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Publicações Científicas e Tecnológicas",
+  "tecnologia": "OAI-PMH",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.alice.cnptia.embrapa.br/alice/interoperabilidade.jsp",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

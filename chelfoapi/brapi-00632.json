@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00632",
+  "nome": "API Pública de Transparência (Resolução 102)",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 11ª Região (TRT11)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência, Gestão Orçamentária e de Pessoas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://portal.trt11.jus.br/index.php/transparencia/dados-abertos-e-api-s-publicas",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

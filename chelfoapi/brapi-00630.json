@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00630",
+  "nome": "API do PJe (Processo Judicial Eletrônico)",
+  "orgao_responsavel": "Tribunal Regional do Trabalho da 10ª Região (TRT10)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://pje.trt10.jus.br/consultaprocessual/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

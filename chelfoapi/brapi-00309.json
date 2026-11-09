@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00309",
+  "nome": "API Plataforma de Dados Desidentificados (PDD)",
+  "orgao_responsavel": "Centro de Integração de Dados e Conhecimentos para Saúde (Cidacs) / Fiocruz Bahia",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Saúde / Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://cidacs.bahia.fiocruz.br/pdd/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

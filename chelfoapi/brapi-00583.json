@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00583",
+  "nome": "API do PagTesouro",
+  "orgao_responsavel": "Secretaria do Tesouro Nacional (STN)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Arrecadação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://pagtesouro.tesouro.gov.br/docs/orgao",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

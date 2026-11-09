@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00732",
+  "nome": "API CKAN Dados Abertos de Maceió",
+  "orgao_responsavel": "Prefeitura Municipal de Maceió",
+  "esfera": "Municipal",
+  "uf": "AL",
+  "categoria": "Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://kd.dadosabertos.maceio.al.gov.br/api/3/action/help_show?name=package_list",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

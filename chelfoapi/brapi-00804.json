@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00804",
+  "nome": "API de Dados Abertos de Itapemirim",
+  "orgao_responsavel": "Prefeitura Municipal de Itapemirim",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Transparência e Orçamento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://www.itapemirim.es.gov.br/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

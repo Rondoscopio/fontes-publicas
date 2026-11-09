@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00083",
+  "nome": "API CKAN do Portal de Dados Abertos do RN",
+  "orgao_responsavel": "Governo do Estado do Rio Grande do Norte (COTIC/SEAD)",
+  "esfera": "Estadual",
+  "uf": "RN",
+  "categoria": "Dados Abertos Governamentais, Administração Pública",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "http://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

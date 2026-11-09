@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00493",
+  "nome": "API Relação Trabalhista",
+  "orgao_responsavel": "Instituto Nacional do Seguro Social - INSS, Receita Federal - RFB e Ministério do Trabalho e Emprego",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Trabalho e Previdência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://www.gov.br/conecta/catalogo/apis/relacao-trabalhista",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

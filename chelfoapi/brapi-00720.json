@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00720",
+  "nome": "API de Dados Abertos - Câmara Municipal de Rio Branco",
+  "orgao_responsavel": "Câmara Municipal de Rio Branco",
+  "esfera": "Municipal",
+  "uf": "AC",
+  "categoria": "Transparência e Legislação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.riobranco.ac.leg.br/open-data",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

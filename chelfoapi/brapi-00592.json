@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00592",
+  "nome": "API Consulta CPF",
+  "orgao_responsavel": "Serpro / Receita Federal do Brasil",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Cadastro / Identificação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://loja.serpro.gov.br/consulta-cpf/product/consultacpf",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00438",
+  "nome": "API da Enap",
+  "orgao_responsavel": "Escola Nacional de Administração Pública (Enap)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Educação e Gestão Pública",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://api.enap.gov.br/v1/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

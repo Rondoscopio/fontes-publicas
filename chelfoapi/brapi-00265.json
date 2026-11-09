@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00265",
+  "nome": "API de Passageiros - MONITRIIP",
+  "orgao_responsavel": "Agência Nacional de Transportes Terrestres (ANTT)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transporte de Passageiros",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://portaldodesenvolvedor.antt.gov.br/page/documentacao-monitriip",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

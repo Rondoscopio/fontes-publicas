@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00064",
+  "nome": "API de Dados Abertos do Estado da Paraíba",
+  "orgao_responsavel": "Companhia de Processamento de Dados da Paraíba (CODATA)",
+  "esfera": "Estadual",
+  "uf": "PB",
+  "categoria": "Transparência, Finanças, Saúde e Administração Pública",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://api.dadosabertos.codata.pb.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

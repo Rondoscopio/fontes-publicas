@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00849",
+  "nome": "BHTRANS GTFS e GTFS-RT",
+  "orgao_responsavel": "Superintendência de Mobilidade (BHTRANS)",
+  "esfera": "Municipal",
+  "uf": "MG",
+  "categoria": "Mobilidade/Transporte",
+  "tecnologia": "Feed estruturado",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.pbh.gov.br/dataset/gtfs; https://dados.pbh.gov.br/dataset/gtfs-rt",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

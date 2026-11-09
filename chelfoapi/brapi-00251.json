@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00251",
+  "nome": "Agência Nacional de Energia Elétrica Search API (ArcGIS Hub)",
+  "orgao_responsavel": "Agência Nacional de Energia Elétrica (ANEEL)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geospatial/Energia Elétrica",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://dadosabertos-aneel.opendata.arcgis.com/api/search/definition/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

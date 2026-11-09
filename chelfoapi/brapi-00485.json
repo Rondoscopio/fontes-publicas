@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00485",
+  "nome": "API Dados Abertos INEP",
+  "orgao_responsavel": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Educação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://github.com/inepdadosabertos/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

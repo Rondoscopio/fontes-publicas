@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00304",
+  "nome": "WebServices Dados Abertos - Legislativo (Legado)",
+  "orgao_responsavel": "Câmara dos Deputados",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados legislativos",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www2.camara.leg.br/transparencia/dados-abertos/dados-abertos-legislativo/dados-abertos-legislativo",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

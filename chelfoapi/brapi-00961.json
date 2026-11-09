@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00961",
+  "nome": "API de Licitações - Câmara Municipal de São José dos Campos",
+  "orgao_responsavel": "Câmara Municipal de São José dos Campos",
+  "esfera": "Municipal",
+  "uf": "SP",
+  "categoria": "Transparência e Compras",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://portal.camarasjc.sp.gov.br/portal-transparencia/api-docs",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

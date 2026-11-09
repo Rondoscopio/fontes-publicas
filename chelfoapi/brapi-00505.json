@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00505",
+  "nome": "API do Portal de Dados Abertos do Ministério das Cidades (CKAN)",
+  "orgao_responsavel": "Ministério das Cidades",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos / Saneamento, Habitação, Mobilidade",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

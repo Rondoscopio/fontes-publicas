@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00944",
+  "nome": "API CKAN CIGA Dados",
+  "orgao_responsavel": "Consórcio de Informática na Gestão Pública Municipal - CIGA",
+  "esfera": "Municipal",
+  "uf": "SC",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "http://docs.ckan.org/en/2.9/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

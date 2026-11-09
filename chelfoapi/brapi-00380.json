@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00380",
+  "nome": "WebService - Sistema de Cadastro de Feminicídio",
+  "orgao_responsavel": "Conselho Nacional do Ministério Público (CNMP) - NGS/STI",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Criminais / Feminicídio",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://sistemafeminicidio.cnmp.mp.br/resources/pdf/ManualTecnico-Feminicidio.pdf",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

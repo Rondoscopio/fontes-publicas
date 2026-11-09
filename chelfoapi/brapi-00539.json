@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00539",
+  "nome": "WSDenatran - Veículos, Condutores e Infrações",
+  "orgao_responsavel": "Ministério da Infraestrutura – Denatran (atual Senatran/Ministério dos Transportes)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Trânsito",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.gov.br/conecta/catalogo/apis/wsdenatran",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

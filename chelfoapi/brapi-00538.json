@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00538",
+  "nome": "SINAPIR - Consulta de Dados de Adesão",
+  "orgao_responsavel": "Ministério da Igualdade Racial (SENAPIR)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Adesões",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.gov.br/conecta/catalogo/apis/dados-de-adesao-ao-sinapir",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

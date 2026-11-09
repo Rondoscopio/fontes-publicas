@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00927",
+  "nome": "Dados Abertos (Portal Fácil) - Prefeitura de Caracaraí",
+  "orgao_responsavel": "Prefeitura Municipal de Caracaraí",
+  "esfera": "Municipal",
+  "uf": "RR",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos-portalfacil.azurewebsites.net/623",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

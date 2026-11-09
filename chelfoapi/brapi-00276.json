@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00276",
+  "nome": "API do Sistema Nacional de Controle de Receituários (SNCR)",
+  "orgao_responsavel": "Agência Nacional de Vigilância Sanitária (Anvisa)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Saúde / Regulação",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/sncr/documentos-do-sncr/manual-api-sncr-1ed/view",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

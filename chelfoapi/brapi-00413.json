@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00413",
+  "nome": "Redape API (Dataverse)",
+  "orgao_responsavel": "Embrapa",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados de Pesquisa Científica",
+  "tecnologia": "Dataverse REST",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://guides.dataverse.org/en/latest/api/native-api.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

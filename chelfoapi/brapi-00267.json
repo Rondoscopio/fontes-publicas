@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00267",
+  "nome": "API RNTRC On Demand",
+  "orgao_responsavel": "Agência Nacional de Transportes Terrestres (ANTT)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transporte de Cargas",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://portaldodesenvolvedor.antt.gov.br/page/documentacao-RNTRC",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

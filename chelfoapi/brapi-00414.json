@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00414",
+  "nome": "AgroAPI",
+  "orgao_responsavel": "Embrapa Agricultura Digital",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Agricultura e Pecuária",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.portal.agroapi.cnptia.embrapa.br/catalogo-de-apis",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

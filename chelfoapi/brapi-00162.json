@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00162",
+  "nome": "API Portal da Transparência DPE/SE",
+  "orgao_responsavel": "Defensoria Pública do Estado de Sergipe",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.defensoria.se.def.br/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

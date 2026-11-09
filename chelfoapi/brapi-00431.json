@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00431",
+  "nome": "API Emgea - Juridico",
+  "orgao_responsavel": "Empresa Gestora de Ativos (EMGEA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Jurídico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.emgea.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

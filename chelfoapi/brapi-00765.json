@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00765",
+  "nome": "API de Dados Abertos do TJAP",
+  "orgao_responsavel": "Tribunal de Justiça do Estado do Amapá (TJAP)",
+  "esfera": "Municipal",
+  "uf": "AP",
+  "categoria": "Transparência / Judiciário",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://dados-publicos.tjap.jus.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

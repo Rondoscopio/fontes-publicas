@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00838",
+  "nome": "API de Dados Abertos - Portal da Transparência do Maranhão",
+  "orgao_responsavel": "Secretaria de Estado da Transparência e Controle",
+  "esfera": "Municipal",
+  "uf": "MA",
+  "categoria": "Despesas Públicas, Notas de Empenho, Unidades Gestoras",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.transparencia.ma.gov.br/wp/apiportaldatransparncia",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

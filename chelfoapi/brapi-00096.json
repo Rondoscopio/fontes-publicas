@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00096",
+  "nome": "GECON Web Services",
+  "orgao_responsavel": "Departamento Estadual de Trânsito (Detran RS)",
+  "esfera": "Estadual",
+  "uf": "RS",
+  "categoria": "Trânsito e Mobilidade",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.detran.rs.gov.br/reconet-infs",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00114",
+  "nome": "API de Dados Abertos CKAN SP",
+  "orgao_responsavel": "Controladoria Geral do Estado de São Paulo (CGE-SP)",
+  "esfera": "Estadual",
+  "uf": "SP",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://dadosabertos.sp.gov.br/manual",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00213",
+  "nome": "Modelo Nacional de Interoperabilidade (MNI) - TJMA",
+  "orgao_responsavel": "Tribunal de Justiça do Estado do Maranhão",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Processo Eletrônico (PJe 1º e 2º Grau)",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.tjma.jus.br/midia/tecnologia/pagina/hotsite/509870/consulta-de-processos-judiciais",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

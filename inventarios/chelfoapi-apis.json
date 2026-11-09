@@ -1,0 +1,4822 @@
+{
+  "origem": "https://www.chelfoapi.com/",
+  "fonte_do_extrato": "Código JavaScript CATALOGO_APIS enviado pelo usuário em 2026-11-09",
+  "data_importacao": "2026-11-09",
+  "total_registros": 959,
+  "urls_distintas": 845,
+  "distribuicao_por_esfera": {
+    "Federal": 466,
+    "Estadual": 232,
+    "Municipal": 261
+  },
+  "registros_uf_ro": 17,
+  "nota": "Registro transcrito do catálogo ChelfoAPI; disponibilidade, condições de uso e conteúdo ainda não verificados.",
+  "campos": [
+    "id",
+    "nome",
+    "orgao_responsavel",
+    "esfera",
+    "uf",
+    "categoria",
+    "tecnologia",
+    "acesso_declarado",
+    "url"
+  ],
+  "registros": [
+    {
+      "id": "BRAPI-00001",
+      "arquivo": "chelfoapi/brapi-00001.json",
+      "url": "https://atlas.caesb.df.gov.br/portal/portalhelp/en/rest/router.html"
+    },
+    {
+      "id": "BRAPI-00002",
+      "arquivo": "chelfoapi/brapi-00002.json",
+      "url": "https://docs.ckan.org/en/latest/api/"
+    },
+    {
+      "id": "BRAPI-00003",
+      "arquivo": "chelfoapi/brapi-00003.json",
+      "url": "https://onda.ibram.df.gov.br/server/help/en/rest/router.html"
+    },
+    {
+      "id": "BRAPI-00004",
+      "arquivo": "chelfoapi/brapi-00004.json",
+      "url": "https://www.geoservicos.ide.df.gov.br/arcgis/sdk/rest/index.html"
+    },
+    {
+      "id": "BRAPI-00005",
+      "arquivo": "chelfoapi/brapi-00005.json",
+      "url": "https://back-ceafdigital.saude.df.gov.br/q/swagger-ui/"
+    },
+    {
+      "id": "BRAPI-00006",
+      "arquivo": "chelfoapi/brapi-00006.json",
+      "url": "https://api-sorteio-relator.tc.df.gov.br/"
+    },
+    {
+      "id": "BRAPI-00007",
+      "arquivo": "chelfoapi/brapi-00007.json",
+      "url": "https://www.ac.gov.br/catalogo-de-api"
+    },
+    {
+      "id": "BRAPI-00008",
+      "arquivo": "chelfoapi/brapi-00008.json",
+      "url": "http://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00009",
+      "arquivo": "chelfoapi/brapi-00009.json",
+      "url": "https://sefaz.ac.gov.br/"
+    },
+    {
+      "id": "BRAPI-00010",
+      "arquivo": "chelfoapi/brapi-00010.json",
+      "url": "https://transparencia.al.gov.br/portal/api"
+    },
+    {
+      "id": "BRAPI-00011",
+      "arquivo": "chelfoapi/brapi-00011.json",
+      "url": "https://alagoasdigital.al.gov.br/api"
+    },
+    {
+      "id": "BRAPI-00012",
+      "arquivo": "chelfoapi/brapi-00012.json",
+      "url": "https://rgdigital-api.institutodeidentificacao.al.gov.br/index.html"
+    },
+    {
+      "id": "BRAPI-00013",
+      "arquivo": "chelfoapi/brapi-00013.json",
+      "url": "https://economizaalagoas.sefaz.al.gov.br/desenvolvedor.htm"
+    },
+    {
+      "id": "BRAPI-00014",
+      "arquivo": "chelfoapi/brapi-00014.json",
+      "url": "https://www.sefaz.al.gov.br/api/"
+    },
+    {
+      "id": "BRAPI-00015",
+      "arquivo": "chelfoapi/brapi-00015.json",
+      "url": "https://www.transparencia.am.gov.br/dados-abertos-2/"
+    },
+    {
+      "id": "BRAPI-00016",
+      "arquivo": "chelfoapi/brapi-00016.json",
+      "url": "https://configurador-geo-homologacao-sistemas.ipaam.am.gov.br/geoserver/web/"
+    },
+    {
+      "id": "BRAPI-00017",
+      "arquivo": "chelfoapi/brapi-00017.json",
+      "url": "https://sistemas.sefaz.am.gov.br/sgc-am/api/v1/contrato.do"
+    },
+    {
+      "id": "BRAPI-00018",
+      "arquivo": "chelfoapi/brapi-00018.json",
+      "url": "https://sistemas.sefaz.am.gov.br/dfe-api/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00019",
+      "arquivo": "chelfoapi/brapi-00019.json",
+      "url": "http://api.transparencia.ap.gov.br/"
+    },
+    {
+      "id": "BRAPI-00020",
+      "arquivo": "chelfoapi/brapi-00020.json",
+      "url": "https://dados.ba.gov.br/base/files/guiausoapickan.pdf"
+    },
+    {
+      "id": "BRAPI-00021",
+      "arquivo": "chelfoapi/brapi-00021.json",
+      "url": "https://servicos.ba.gov.br/servicos/dados/abertos"
+    },
+    {
+      "id": "BRAPI-00022",
+      "arquivo": "chelfoapi/brapi-00022.json",
+      "url": "https://www.portalseibahia.saeb.ba.gov.br/faq/integracoes-com-o-sei-bahia-sistemas"
+    },
+    {
+      "id": "BRAPI-00023",
+      "arquivo": "chelfoapi/brapi-00023.json",
+      "url": "https://www.sefaz.ba.gov.br"
+    },
+    {
+      "id": "BRAPI-00024",
+      "arquivo": "chelfoapi/brapi-00024.json",
+      "url": "http://api.funceme.br/"
+    },
+    {
+      "id": "BRAPI-00025",
+      "arquivo": "chelfoapi/brapi-00025.json",
+      "url": "https://www.cearatransparente.ce.gov.br/portal-da-transparencia/dados-abertos/conjuntos-de-dados"
+    },
+    {
+      "id": "BRAPI-00026",
+      "arquivo": "chelfoapi/brapi-00026.json",
+      "url": "https://api.sefaz.ce.gov.br/service-transportadora-sitram/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00027",
+      "arquivo": "chelfoapi/brapi-00027.json",
+      "url": "http://nfe.sefaz.ce.gov.br/pages/informacoes/web_services.jsf"
+    },
+    {
+      "id": "BRAPI-00028",
+      "arquivo": "chelfoapi/brapi-00028.json",
+      "url": "https://github.com/integrasus/api-covid-ce"
+    },
+    {
+      "id": "BRAPI-00029",
+      "arquivo": "chelfoapi/brapi-00029.json",
+      "url": "https://api.detran.es.gov.br/ApiIntegracaoPatio/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00030",
+      "arquivo": "chelfoapi/brapi-00030.json",
+      "url": "https://docs.developer.acessocidadao.es.gov.br/Api/ApiAcessoCidadao/"
+    },
+    {
+      "id": "BRAPI-00031",
+      "arquivo": "chelfoapi/brapi-00031.json",
+      "url": "https://api.e-docs.es.gov.br/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00032",
+      "arquivo": "chelfoapi/brapi-00032.json",
+      "url": "https://api.organograma.es.gov.br/index.html"
+    },
+    {
+      "id": "BRAPI-00033",
+      "arquivo": "chelfoapi/brapi-00033.json",
+      "url": "https://dados.es.gov.br/about"
+    },
+    {
+      "id": "BRAPI-00034",
+      "arquivo": "chelfoapi/brapi-00034.json",
+      "url": "https://geobases.es.gov.br/tutoriais-ide-como-acessar-os-servicos-wms-e-wfs"
+    },
+    {
+      "id": "BRAPI-00035",
+      "arquivo": "chelfoapi/brapi-00035.json",
+      "url": "https://sefaz.es.gov.br/url-dos-web-services"
+    },
+    {
+      "id": "BRAPI-00036",
+      "arquivo": "chelfoapi/brapi-00036.json",
+      "url": "https://apisistemas.saude.es.gov.br/"
+    },
+    {
+      "id": "BRAPI-00037",
+      "arquivo": "chelfoapi/brapi-00037.json",
+      "url": "https://swagger.agrodefesa.go.gov.br/"
+    },
+    {
+      "id": "BRAPI-00038",
+      "arquivo": "chelfoapi/brapi-00038.json",
+      "url": "https://transparencia.go.gov.br/api-de-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00039",
+      "arquivo": "chelfoapi/brapi-00039.json",
+      "url": "https://servicos.detran.go.gov.br/sca/rest/documentos/docflow/anexo/281136378"
+    },
+    {
+      "id": "BRAPI-00040",
+      "arquivo": "chelfoapi/brapi-00040.json",
+      "url": "https://goias.gov.br/imb/geoservicos/"
+    },
+    {
+      "id": "BRAPI-00041",
+      "arquivo": "chelfoapi/brapi-00041.json",
+      "url": "http://www.economia.go.gov.br/"
+    },
+    {
+      "id": "BRAPI-00042",
+      "arquivo": "chelfoapi/brapi-00042.json",
+      "url": "https://apigoiasbiometrico.ssp.go.gov.br/swagger/ui/index"
+    },
+    {
+      "id": "BRAPI-00043",
+      "arquivo": "chelfoapi/brapi-00043.json",
+      "url": "https://infosimples.com/consultas/detran-ma-licenciamento/"
+    },
+    {
+      "id": "BRAPI-00044",
+      "arquivo": "chelfoapi/brapi-00044.json",
+      "url": "https://dados.mg.gov.br/api/1/util/snippet/api_info.html"
+    },
+    {
+      "id": "BRAPI-00045",
+      "arquivo": "chelfoapi/brapi-00045.json",
+      "url": "https://api.prodemge.gov.br/"
+    },
+    {
+      "id": "BRAPI-00046",
+      "arquivo": "chelfoapi/brapi-00046.json",
+      "url": "https://portalsped.fazenda.mg.gov.br/spedmg/cte/webservice/"
+    },
+    {
+      "id": "BRAPI-00047",
+      "arquivo": "chelfoapi/brapi-00047.json",
+      "url": "https://portalsped.fazenda.mg.gov.br/spedmg/nfe/webservices/"
+    },
+    {
+      "id": "BRAPI-00048",
+      "arquivo": "chelfoapi/brapi-00048.json",
+      "url": "https://idesisema.meioambiente.mg.gov.br/"
+    },
+    {
+      "id": "BRAPI-00049",
+      "arquivo": "chelfoapi/brapi-00049.json",
+      "url": "https://sisrev.imasul.ms.gov.br/api/documentation"
+    },
+    {
+      "id": "BRAPI-00050",
+      "arquivo": "chelfoapi/brapi-00050.json",
+      "url": "https://servicos.efazenda.ms.gov.br/wsefazenda/Util.asmx"
+    },
+    {
+      "id": "BRAPI-00051",
+      "arquivo": "chelfoapi/brapi-00051.json",
+      "url": "https://www.sefaz.ms.gov.br/"
+    },
+    {
+      "id": "BRAPI-00052",
+      "arquivo": "chelfoapi/brapi-00052.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00053",
+      "arquivo": "chelfoapi/brapi-00053.json",
+      "url": "https://api.detrannet.mt.gov.br/TaxasVeiculo/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00054",
+      "arquivo": "chelfoapi/brapi-00054.json",
+      "url": "https://documentacao-mti.app.cloud.mti.mt.gov.br/"
+    },
+    {
+      "id": "BRAPI-00055",
+      "arquivo": "chelfoapi/brapi-00055.json",
+      "url": "https://geodados.mt.gov.br/server/help/en/rest/router.html?f=rest/services"
+    },
+    {
+      "id": "BRAPI-00056",
+      "arquivo": "chelfoapi/brapi-00056.json",
+      "url": "https://api.iomat.mt.gov.br/"
+    },
+    {
+      "id": "BRAPI-00057",
+      "arquivo": "chelfoapi/brapi-00057.json",
+      "url": "https://sites.google.com/indea.mt.gov.br/manual-webservice"
+    },
+    {
+      "id": "BRAPI-00058",
+      "arquivo": "chelfoapi/brapi-00058.json",
+      "url": "https://www.nfe.fazenda.gov.br/portal/webservices.aspx"
+    },
+    {
+      "id": "BRAPI-00059",
+      "arquivo": "chelfoapi/brapi-00059.json",
+      "url": "https://mapas.sinfra.mt.gov.br/server/help/en/rest/router.html?f=rest/services"
+    },
+    {
+      "id": "BRAPI-00060",
+      "arquivo": "chelfoapi/brapi-00060.json",
+      "url": "http://docs.ckan.org/en/2.11/api/"
+    },
+    {
+      "id": "BRAPI-00062",
+      "arquivo": "chelfoapi/brapi-00062.json",
+      "url": "https://apis.sefa.pa.gov.br/"
+    },
+    {
+      "id": "BRAPI-00064",
+      "arquivo": "chelfoapi/brapi-00064.json",
+      "url": "https://api.dadosabertos.codata.pb.gov.br/"
+    },
+    {
+      "id": "BRAPI-00065",
+      "arquivo": "chelfoapi/brapi-00065.json",
+      "url": "https://www.sefaz.pb.gov.br/info/notas-fiscais/nf-e"
+    },
+    {
+      "id": "BRAPI-00066",
+      "arquivo": "chelfoapi/brapi-00066.json",
+      "url": "https://geoportal.apac.pe.gov.br/portal/sharing/rest/portals/info"
+    },
+    {
+      "id": "BRAPI-00067",
+      "arquivo": "chelfoapi/brapi-00067.json",
+      "url": "https://dados.pe.gov.br/about"
+    },
+    {
+      "id": "BRAPI-00068",
+      "arquivo": "chelfoapi/brapi-00068.json",
+      "url": "https://www.sefaz.pe.gov.br/Servicos/nota-fiscal-eletronica/Paginas/url-web-services-prod-homolog.aspx"
+    },
+    {
+      "id": "BRAPI-00069",
+      "arquivo": "chelfoapi/brapi-00069.json",
+      "url": "https://govpiconecta.pi.gov.br/docs/Apis/API%20do%20DETRAN/api-detran-pi"
+    },
+    {
+      "id": "BRAPI-00070",
+      "arquivo": "chelfoapi/brapi-00070.json",
+      "url": "https://govpiconecta.pi.gov.br/docs/Apis/API%20de%20Assinador%20Digital/api-de-assinatura-de-documento"
+    },
+    {
+      "id": "BRAPI-00071",
+      "arquivo": "chelfoapi/brapi-00071.json",
+      "url": "https://govpiconecta.pi.gov.br/docs/Apis/API%20de%20CEP/buscar-informacoes-de-um-cep"
+    },
+    {
+      "id": "BRAPI-00072",
+      "arquivo": "chelfoapi/brapi-00072.json",
+      "url": "https://govpiconecta.pi.gov.br/docs/login-govpi/intro"
+    },
+    {
+      "id": "BRAPI-00073",
+      "arquivo": "chelfoapi/brapi-00073.json",
+      "url": "https://treinamento.api.eprotocolo.pr.gov.br/spi-servicos/inicial.html"
+    },
+    {
+      "id": "BRAPI-00074",
+      "arquivo": "chelfoapi/brapi-00074.json",
+      "url": "https://www.transparencia.pr.gov.br/pte/assunto/8/118"
+    },
+    {
+      "id": "BRAPI-00075",
+      "arquivo": "chelfoapi/brapi-00075.json",
+      "url": "https://www.administracao.pr.gov.br/Compras/Cartilha-API-Catalogo"
+    },
+    {
+      "id": "BRAPI-00076",
+      "arquivo": "chelfoapi/brapi-00076.json",
+      "url": "https://api.saude.pr.gov.br/governo-digital/farmacia/consulta"
+    },
+    {
+      "id": "BRAPI-00077",
+      "arquivo": "chelfoapi/brapi-00077.json",
+      "url": "https://homolog-sipi-api.saude.pr.gov.br/api/schema/swagger-ui/"
+    },
+    {
+      "id": "BRAPI-00078",
+      "arquivo": "chelfoapi/brapi-00078.json",
+      "url": "http://www.rj.gov.br/ceperj/disseminacaodedados"
+    },
+    {
+      "id": "BRAPI-00079",
+      "arquivo": "chelfoapi/brapi-00079.json",
+      "url": "https://dadosabertos.rj.gov.br/api/3"
+    },
+    {
+      "id": "BRAPI-00080",
+      "arquivo": "chelfoapi/brapi-00080.json",
+      "url": "http://www.rj.gov.br/digital/Integra_Dados_RJ"
+    },
+    {
+      "id": "BRAPI-00081",
+      "arquivo": "chelfoapi/brapi-00081.json",
+      "url": "Não localizada publicamente"
+    },
+    {
+      "id": "BRAPI-00082",
+      "arquivo": "chelfoapi/brapi-00082.json",
+      "url": "http://api.sipac.rn.gov.br/transparencia/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00083",
+      "arquivo": "chelfoapi/brapi-00083.json",
+      "url": "http://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00084",
+      "arquivo": "chelfoapi/brapi-00084.json",
+      "url": "http://docs.ckan.org/en/2.1/api/"
+    },
+    {
+      "id": "BRAPI-00085",
+      "arquivo": "chelfoapi/brapi-00085.json",
+      "url": "https://transparencia.api.ro.gov.br/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00086",
+      "arquivo": "chelfoapi/brapi-00086.json",
+      "url": "https://geoportal.sedam.ro.gov.br/documentacao/docs/geoservicos"
+    },
+    {
+      "id": "BRAPI-00087",
+      "arquivo": "chelfoapi/brapi-00087.json",
+      "url": "https://api2.transparencia.rr.gov.br/transparencia/redoc.html"
+    },
+    {
+      "id": "BRAPI-00088",
+      "arquivo": "chelfoapi/brapi-00088.json",
+      "url": "https://www.altoalegre.rr.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00089",
+      "arquivo": "chelfoapi/brapi-00089.json",
+      "url": "https://transparencia.normandia.rr.gov.br/dados-abertos-api/"
+    },
+    {
+      "id": "BRAPI-00090",
+      "arquivo": "chelfoapi/brapi-00090.json",
+      "url": "https://rorainopolis.rr.gov.br/dados-abertos/publicacoes/doc"
+    },
+    {
+      "id": "BRAPI-00091",
+      "arquivo": "chelfoapi/brapi-00091.json",
+      "url": "https://developers.banrisul.com.br/bpi/link/api-cobranca-titulos.html"
+    },
+    {
+      "id": "BRAPI-00093",
+      "arquivo": "chelfoapi/brapi-00093.json",
+      "url": "https://developers.banrisul.com.br/pages/docs/parceiros-banrisul/consignado-rs-v1.html"
+    },
+    {
+      "id": "BRAPI-00094",
+      "arquivo": "chelfoapi/brapi-00094.json",
+      "url": "https://developers.banrisul.com.br/pages/docs/parceiros-banrisul/pagamentos-v1.html"
+    },
+    {
+      "id": "BRAPI-00095",
+      "arquivo": "chelfoapi/brapi-00095.json",
+      "url": "https://developers.banrisul.com.br/pages/docs/clientes-banrisul/api-pix-v2.8.1.html"
+    },
+    {
+      "id": "BRAPI-00096",
+      "arquivo": "chelfoapi/brapi-00096.json",
+      "url": "https://www.detran.rs.gov.br/reconet-infs"
+    },
+    {
+      "id": "BRAPI-00097",
+      "arquivo": "chelfoapi/brapi-00097.json",
+      "url": "https://www.detran.rs.gov.br/tdv"
+    },
+    {
+      "id": "BRAPI-00098",
+      "arquivo": "chelfoapi/brapi-00098.json",
+      "url": "https://ww3.fepam.rs.gov.br/mtr/RetornaManifestoManifesto.pdf"
+    },
+    {
+      "id": "BRAPI-00099",
+      "arquivo": "chelfoapi/brapi-00099.json",
+      "url": "https://github.com/PROCERGS/login-cidadao/blob/master/doc/api.md"
+    },
+    {
+      "id": "BRAPI-00100",
+      "arquivo": "chelfoapi/brapi-00100.json",
+      "url": "https://dfe-portal.svrs.rs.gov.br/Nfe"
+    },
+    {
+      "id": "BRAPI-00101",
+      "arquivo": "chelfoapi/brapi-00101.json",
+      "url": "https://dados.rs.gov.br/api/3/action/site_read"
+    },
+    {
+      "id": "BRAPI-00102",
+      "arquivo": "chelfoapi/brapi-00102.json",
+      "url": "https://integra.ped.rs.gov.br/apis"
+    },
+    {
+      "id": "BRAPI-00103",
+      "arquivo": "chelfoapi/brapi-00103.json",
+      "url": "https://conhecimento.ciga.sc.gov.br/books/dom---di%C3%A1rio-oficial-dos-munic%C3%ADpios/page/api-domsc"
+    },
+    {
+      "id": "BRAPI-00104",
+      "arquivo": "chelfoapi/brapi-00104.json",
+      "url": "https://controladoria-geral-do-estado-de.gitbook.io/portal-de-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00105",
+      "arquivo": "chelfoapi/brapi-00105.json",
+      "url": "https://participa.sc/api/docs"
+    },
+    {
+      "id": "BRAPI-00106",
+      "arquivo": "chelfoapi/brapi-00106.json",
+      "url": "https://www.sef.sc.gov.br/api-portal/Documento/Ver/6351"
+    },
+    {
+      "id": "BRAPI-00107",
+      "arquivo": "chelfoapi/brapi-00107.json",
+      "url": "https://transparencia.se.gov.br/DadosAbertos"
+    },
+    {
+      "id": "BRAPI-00108",
+      "arquivo": "chelfoapi/brapi-00108.json",
+      "url": "https://desaparecidos.policiacivil.rn.gov.br/"
+    },
+    {
+      "id": "BRAPI-00109",
+      "arquivo": "chelfoapi/brapi-00109.json",
+      "url": "https://nfce.sefaz.se.gov.br/portal/portalNoticias.jsp"
+    },
+    {
+      "id": "BRAPI-00110",
+      "arquivo": "chelfoapi/brapi-00110.json",
+      "url": "https://sergipeprevidencia.github.io/API_SERPREV/"
+    },
+    {
+      "id": "BRAPI-00111",
+      "arquivo": "chelfoapi/brapi-00111.json",
+      "url": "https://servicos.cetesb.sp.gov.br/arcgis/sdk/rest/"
+    },
+    {
+      "id": "BRAPI-00112",
+      "arquivo": "chelfoapi/brapi-00112.json",
+      "url": "https://www.cetesb.sp.gov.br/dx/api/dam/v1/collections/595c7dcb-ed54-4072-aa01-fe37f6684bcb/items/b42df79d-bc5a-43d6-a729-a3fd9909e0d9/renditions/b6c672aa-a742-49dc-8557-89c86fb4f20c?binary=true"
+    },
+    {
+      "id": "BRAPI-00113",
+      "arquivo": "chelfoapi/brapi-00113.json",
+      "url": "https://integrador.sp.gov.br/wps/portal/integrador/catalogoApis"
+    },
+    {
+      "id": "BRAPI-00114",
+      "arquivo": "chelfoapi/brapi-00114.json",
+      "url": "https://dadosabertos.sp.gov.br/manual"
+    },
+    {
+      "id": "BRAPI-00115",
+      "arquivo": "chelfoapi/brapi-00115.json",
+      "url": "https://sistemas.procon.sp.gov.br/wsprocon/swagger-ui/"
+    },
+    {
+      "id": "BRAPI-00116",
+      "arquivo": "chelfoapi/brapi-00116.json",
+      "url": "http://sivisa.saude.sp.gov.br/sivisa-api/ws/IntegracaoVRE"
+    },
+    {
+      "id": "BRAPI-00117",
+      "arquivo": "chelfoapi/brapi-00117.json",
+      "url": "http://datageo.casamilitar.sp.gov.br/geonetworkgrd/doc/api"
+    },
+    {
+      "id": "BRAPI-00118",
+      "arquivo": "chelfoapi/brapi-00118.json",
+      "url": "https://transparencia.tce.sp.gov.br/apis"
+    },
+    {
+      "id": "BRAPI-00119",
+      "arquivo": "chelfoapi/brapi-00119.json",
+      "url": "https://inovacao.lab63.to.gov.br/projetos"
+    },
+    {
+      "id": "BRAPI-00120",
+      "arquivo": "chelfoapi/brapi-00120.json",
+      "url": "https://www.to.gov.br/sefaz/documentacao/4zw4v3wp9rrc"
+    },
+    {
+      "id": "BRAPI-00121",
+      "arquivo": "chelfoapi/brapi-00121.json",
+      "url": "https://geoportal.to.gov.br/gvsigonline/sistema/"
+    },
+    {
+      "id": "BRAPI-00122",
+      "arquivo": "chelfoapi/brapi-00122.json",
+      "url": "https://app.al.ac.leg.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00123",
+      "arquivo": "chelfoapi/brapi-00123.json",
+      "url": "https://sapl.al.ac.leg.br/api/schema/swagger-ui/"
+    },
+    {
+      "id": "BRAPI-00124",
+      "arquivo": "chelfoapi/brapi-00124.json",
+      "url": "https://albalegis.nopapercloud.com.br/dados-abertos.aspx"
+    },
+    {
+      "id": "BRAPI-00125",
+      "arquivo": "chelfoapi/brapi-00125.json",
+      "url": "https://www3.al.es.gov.br/dados-abertos.aspx"
+    },
+    {
+      "id": "BRAPI-00126",
+      "arquivo": "chelfoapi/brapi-00126.json",
+      "url": "https://sapl.al.al.leg.br/api/schema/swagger-ui/"
+    },
+    {
+      "id": "BRAPI-00127",
+      "arquivo": "chelfoapi/brapi-00127.json",
+      "url": "https://bancodeleis.alepa.pa.gov.br/api.php"
+    },
+    {
+      "id": "BRAPI-00128",
+      "arquivo": "chelfoapi/brapi-00128.json",
+      "url": "https://transparencia.al.ce.gov.br/docs?api-docs.json"
+    },
+    {
+      "id": "BRAPI-00129",
+      "arquivo": "chelfoapi/brapi-00129.json",
+      "url": "https://transparencia.al.go.leg.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00130",
+      "arquivo": "chelfoapi/brapi-00130.json",
+      "url": "https://api.al.mt.gov.br/"
+    },
+    {
+      "id": "BRAPI-00131",
+      "arquivo": "chelfoapi/brapi-00131.json",
+      "url": "https://transparencia.assembleia.pr.leg.br/servicos/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00132",
+      "arquivo": "chelfoapi/brapi-00132.json",
+      "url": "https://transparencia.al.pi.leg.br/api/documentation"
+    },
+    {
+      "id": "BRAPI-00133",
+      "arquivo": "chelfoapi/brapi-00133.json",
+      "url": "https://transparencia.al.rs.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00134",
+      "arquivo": "chelfoapi/brapi-00134.json",
+      "url": "https://transparencia.al.ro.leg.br/DadosAbertos/"
+    },
+    {
+      "id": "BRAPI-00135",
+      "arquivo": "chelfoapi/brapi-00135.json",
+      "url": "https://sapl.al.ro.leg.br/api/"
+    },
+    {
+      "id": "BRAPI-00136",
+      "arquivo": "chelfoapi/brapi-00136.json",
+      "url": "https://www.al.sp.gov.br/dados-abertos/catalogo"
+    },
+    {
+      "id": "BRAPI-00137",
+      "arquivo": "chelfoapi/brapi-00137.json",
+      "url": "https://dadosabertos.almg.gov.br/documentacao/index"
+    },
+    {
+      "id": "BRAPI-00138",
+      "arquivo": "chelfoapi/brapi-00138.json",
+      "url": "https://sapl.al.pb.leg.br/api/schema/swagger-ui/"
+    },
+    {
+      "id": "BRAPI-00139",
+      "arquivo": "chelfoapi/brapi-00139.json",
+      "url": "https://dadosabertos.alepe.pe.gov.br/"
+    },
+    {
+      "id": "BRAPI-00140",
+      "arquivo": "chelfoapi/brapi-00140.json",
+      "url": "http://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00141",
+      "arquivo": "chelfoapi/brapi-00141.json",
+      "url": "https://dados.cl.df.gov.br/dataset/normas"
+    },
+    {
+      "id": "BRAPI-00142",
+      "arquivo": "chelfoapi/brapi-00142.json",
+      "url": "https://dados.cl.df.gov.br/dataset/proposicoes"
+    },
+    {
+      "id": "BRAPI-00143",
+      "arquivo": "chelfoapi/brapi-00143.json",
+      "url": "https://portal.tjpe.jus.br/web/transparencia/estat%C3%ADstica-em-dados-abertos (via portal nacional do CNJ)"
+    },
+    {
+      "id": "BRAPI-00144",
+      "arquivo": "chelfoapi/brapi-00144.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00145",
+      "arquivo": "chelfoapi/brapi-00145.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/"
+    },
+    {
+      "id": "BRAPI-00146",
+      "arquivo": "chelfoapi/brapi-00146.json",
+      "url": "https://www.cnj.jus.br/sistemas/datajud/api-publica/"
+    },
+    {
+      "id": "BRAPI-00147",
+      "arquivo": "chelfoapi/brapi-00147.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00148",
+      "arquivo": "chelfoapi/brapi-00148.json",
+      "url": "https://api-publica.datajud.cnj.jus.br/api_docs/"
+    },
+    {
+      "id": "BRAPI-00149",
+      "arquivo": "chelfoapi/brapi-00149.json",
+      "url": "https://transparencia.tjgo.jus.br/ti-comunicacoes/consulta-publica-de-processos-numeracao-unica-api-datajud"
+    },
+    {
+      "id": "BRAPI-00150",
+      "arquivo": "chelfoapi/brapi-00150.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00151",
+      "arquivo": "chelfoapi/brapi-00151.json",
+      "url": "https://datajud-wiki.cnj.jus.br/"
+    },
+    {
+      "id": "BRAPI-00152",
+      "arquivo": "chelfoapi/brapi-00152.json",
+      "url": "https://www.tjmsp.jus.br/governanca-institucional/gestao-judiciaria/api-publica-datajud/"
+    },
+    {
+      "id": "BRAPI-00153",
+      "arquivo": "chelfoapi/brapi-00153.json",
+      "url": "https://api2.transparencia.rr.gov.br/transparencia/swagger-ui/#/"
+    },
+    {
+      "id": "BRAPI-00154",
+      "arquivo": "chelfoapi/brapi-00154.json",
+      "url": "https://transparencia.defensoria.am.def.br/api/swagger/"
+    },
+    {
+      "id": "BRAPI-00155",
+      "arquivo": "chelfoapi/brapi-00155.json",
+      "url": "https://defensoria.pa.def.br/transparencia/web-services/transparencia-api"
+    },
+    {
+      "id": "BRAPI-00156",
+      "arquivo": "chelfoapi/brapi-00156.json",
+      "url": "https://www.transparencia.defensoria.go.def.br/dados-abertos/index.html"
+    },
+    {
+      "id": "BRAPI-00157",
+      "arquivo": "chelfoapi/brapi-00157.json",
+      "url": "https://defensoria.ma.def.br/newtransparencia/governo_digital"
+    },
+    {
+      "id": "BRAPI-00158",
+      "arquivo": "chelfoapi/brapi-00158.json",
+      "url": "https://transparencia.defensoria.pr.def.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00159",
+      "arquivo": "chelfoapi/brapi-00159.json",
+      "url": "https://dadosabertos.defensoria.pe.def.br/"
+    },
+    {
+      "id": "BRAPI-00160",
+      "arquivo": "chelfoapi/brapi-00160.json",
+      "url": "https://sicad.testesdpers.com.br/"
+    },
+    {
+      "id": "BRAPI-00161",
+      "arquivo": "chelfoapi/brapi-00161.json",
+      "url": "https://transparencia.defensoria.ro.def.br/dados-abertos/api"
+    },
+    {
+      "id": "BRAPI-00162",
+      "arquivo": "chelfoapi/brapi-00162.json",
+      "url": "https://transparencia.defensoria.se.def.br/api"
+    },
+    {
+      "id": "BRAPI-00163",
+      "arquivo": "chelfoapi/brapi-00163.json",
+      "url": "https://www.defensoria.rn.def.br/api/docs"
+    },
+    {
+      "id": "BRAPI-00164",
+      "arquivo": "chelfoapi/brapi-00164.json",
+      "url": "https://www.dados.ms.gov.br/api/3/action/help_show?name=datastore_search"
+    },
+    {
+      "id": "BRAPI-00165",
+      "arquivo": "chelfoapi/brapi-00165.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00166",
+      "arquivo": "chelfoapi/brapi-00166.json",
+      "url": "Não encontrada localmente no MPMT"
+    },
+    {
+      "id": "BRAPI-00167",
+      "arquivo": "chelfoapi/brapi-00167.json",
+      "url": "https://www.mpap.mp.br/dadosabertos/documentacao"
+    },
+    {
+      "id": "BRAPI-00168",
+      "arquivo": "chelfoapi/brapi-00168.json",
+      "url": "https://transparencia.mpal.mp.br/principal/dadosAbertos"
+    },
+    {
+      "id": "BRAPI-00169",
+      "arquivo": "chelfoapi/brapi-00169.json",
+      "url": "https://mpap.mp.br/dadosabertos/docs/api-docs.json"
+    },
+    {
+      "id": "BRAPI-00170",
+      "arquivo": "chelfoapi/brapi-00170.json",
+      "url": "https://www.mpam.mp.br/transparencia-pessoas/transparencia-quadroservidores/api-do-quadro-de-servidores"
+    },
+    {
+      "id": "BRAPI-00171",
+      "arquivo": "chelfoapi/brapi-00171.json",
+      "url": "https://www.mpgo.mp.br/portal/pagina/governo-digital"
+    },
+    {
+      "id": "BRAPI-00172",
+      "arquivo": "chelfoapi/brapi-00172.json",
+      "url": "https://documenter.getpostman.com/view/21689689/2sAYk8viMK"
+    },
+    {
+      "id": "BRAPI-00173",
+      "arquivo": "chelfoapi/brapi-00173.json",
+      "url": "https://documenter.getpostman.com/view/29123889/2s9Xy5Nqwt"
+    },
+    {
+      "id": "BRAPI-00174",
+      "arquivo": "chelfoapi/brapi-00174.json",
+      "url": "http://dados.mprs.mp.br/"
+    },
+    {
+      "id": "BRAPI-00175",
+      "arquivo": "chelfoapi/brapi-00175.json",
+      "url": "http://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00176",
+      "arquivo": "chelfoapi/brapi-00176.json",
+      "url": "https://dados.mppe.mp.br/ (Portal CKAN); http://docs.ckan.org/en/2.9/api/ (Documentação CKAN)"
+    },
+    {
+      "id": "BRAPI-00177",
+      "arquivo": "chelfoapi/brapi-00177.json",
+      "url": "https://api-sorteio-relator.tc.df.gov.br/api/docs?format=json"
+    },
+    {
+      "id": "BRAPI-00179",
+      "arquivo": "chelfoapi/brapi-00179.json",
+      "url": "https://transparencia.tceal.tc.br/"
+    },
+    {
+      "id": "BRAPI-00180",
+      "arquivo": "chelfoapi/brapi-00180.json",
+      "url": "Não localizada"
+    },
+    {
+      "id": "BRAPI-00181",
+      "arquivo": "chelfoapi/brapi-00181.json",
+      "url": "https://webapp1-tceamapa.cidade360.cloud/DADOSABERTOS/swagger"
+    },
+    {
+      "id": "BRAPI-00182",
+      "arquivo": "chelfoapi/brapi-00182.json",
+      "url": "https://econtasapi.tce.am.gov.br/swagger-ui.html"
+    },
+    {
+      "id": "BRAPI-00183",
+      "arquivo": "chelfoapi/brapi-00183.json",
+      "url": "https://paineldecontrole.tcees.tc.br/dadosAbertos"
+    },
+    {
+      "id": "BRAPI-00184",
+      "arquivo": "chelfoapi/brapi-00184.json",
+      "url": "http://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00185",
+      "arquivo": "chelfoapi/brapi-00185.json",
+      "url": "https://app.tcema.tc.br/sinccontrata/api/arquivo/download/documentacao-api"
+    },
+    {
+      "id": "BRAPI-00186",
+      "arquivo": "chelfoapi/brapi-00186.json",
+      "url": "Não documentada publicamente"
+    },
+    {
+      "id": "BRAPI-00187",
+      "arquivo": "chelfoapi/brapi-00187.json",
+      "url": "https://apimgt-siafic.tce.mt.gov.br/devportal/apis"
+    },
+    {
+      "id": "BRAPI-00188",
+      "arquivo": "chelfoapi/brapi-00188.json",
+      "url": "https://dadosabertos.tce.mg.gov.br/"
+    },
+    {
+      "id": "BRAPI-00189",
+      "arquivo": "chelfoapi/brapi-00189.json",
+      "url": "https://sagres.gitlab.tce.pb.gov.br/se/se_documentacao/docs/"
+    },
+    {
+      "id": "BRAPI-00190",
+      "arquivo": "chelfoapi/brapi-00190.json",
+      "url": "https://apidadosabertos.tce.rn.gov.br/swagger/ui/index"
+    },
+    {
+      "id": "BRAPI-00191",
+      "arquivo": "chelfoapi/brapi-00191.json",
+      "url": "https://dados.tce.rs.gov.br/api/3/action/"
+    },
+    {
+      "id": "BRAPI-00192",
+      "arquivo": "chelfoapi/brapi-00192.json",
+      "url": "https://portal.tce.rs.gov.br/api/obras/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00193",
+      "arquivo": "chelfoapi/brapi-00193.json",
+      "url": "https://transparencia.tcero.tc.br/DadosAbertos/APis"
+    },
+    {
+      "id": "BRAPI-00194",
+      "arquivo": "chelfoapi/brapi-00194.json",
+      "url": "https://www.tce.se.gov.br/visualizadorRelatorios/swagger/ui/index"
+    },
+    {
+      "id": "BRAPI-00195",
+      "arquivo": "chelfoapi/brapi-00195.json",
+      "url": "https://transparencia.tceto.tc.br/lgpd/dadosAbertos"
+    },
+    {
+      "id": "BRAPI-00196",
+      "arquivo": "chelfoapi/brapi-00196.json",
+      "url": "https://www.tcm.ba.gov.br/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00197",
+      "arquivo": "chelfoapi/brapi-00197.json",
+      "url": ""
+    },
+    {
+      "id": "BRAPI-00198",
+      "arquivo": "chelfoapi/brapi-00198.json",
+      "url": "https://www.tjac.jus.br/servicos/consulta-web-service/documentacao-api/"
+    },
+    {
+      "id": "BRAPI-00199",
+      "arquivo": "chelfoapi/brapi-00199.json",
+      "url": "https://developer.wordpress.org/rest-api/"
+    },
+    {
+      "id": "BRAPI-00200",
+      "arquivo": "chelfoapi/brapi-00200.json",
+      "url": "https://www.tjam.jus.br/index.php/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00201",
+      "arquivo": "chelfoapi/brapi-00201.json",
+      "url": "https://www.tjam.jus.br/index.php/transparencia/tecnologia-da-informacao-e-comunicacao/relatorios-dinamicos/numeracao-unica-e-consulta-via-api-do-datajud"
+    },
+    {
+      "id": "BRAPI-00202",
+      "arquivo": "chelfoapi/brapi-00202.json",
+      "url": "https://www.tjba.jus.br/estrategia/api-publica-do-datajud-cnj/"
+    },
+    {
+      "id": "BRAPI-00203",
+      "arquivo": "chelfoapi/brapi-00203.json",
+      "url": "https://www.tjba.jus.br/portal/api/"
+    },
+    {
+      "id": "BRAPI-00204",
+      "arquivo": "chelfoapi/brapi-00204.json",
+      "url": "https://www.tjba.jus.br/portal/web-service/"
+    },
+    {
+      "id": "BRAPI-00205",
+      "arquivo": "chelfoapi/brapi-00205.json",
+      "url": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos/documentos/documentacao_api_seti_transparencia.pdf"
+    },
+    {
+      "id": "BRAPI-00206",
+      "arquivo": "chelfoapi/brapi-00206.json",
+      "url": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos/documentos/documentacao-dos-dados-abertos.pdf"
+    },
+    {
+      "id": "BRAPI-00207",
+      "arquivo": "chelfoapi/brapi-00207.json",
+      "url": "https://www.tjdft.jus.br/transparencia/tecnologia-da-informacao-e-comunicacao/dados-abertos/documentos"
+    },
+    {
+      "id": "BRAPI-00208",
+      "arquivo": "chelfoapi/brapi-00208.json",
+      "url": "https://www.tjes.jus.br/portal-transparencia/tecnologia-da-informacao-e-comunicacao/acesso-automatizado-por-sistemas-externos/"
+    },
+    {
+      "id": "BRAPI-00209",
+      "arquivo": "chelfoapi/brapi-00209.json",
+      "url": "https://www.tjce.jus.br/transparencia/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00210",
+      "arquivo": "chelfoapi/brapi-00210.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00211",
+      "arquivo": "chelfoapi/brapi-00211.json",
+      "url": "https://transparencia.tjgo.jus.br/lgpd-governo-digital/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00212",
+      "arquivo": "chelfoapi/brapi-00212.json",
+      "url": "https://www.tjma.jus.br/midia/tecnologia/pagina/hotsite/509869/acesso-automatizado"
+    },
+    {
+      "id": "BRAPI-00213",
+      "arquivo": "chelfoapi/brapi-00213.json",
+      "url": "https://www.tjma.jus.br/midia/tecnologia/pagina/hotsite/509870/consulta-de-processos-judiciais"
+    },
+    {
+      "id": "BRAPI-00214",
+      "arquivo": "chelfoapi/brapi-00214.json",
+      "url": "https://wikicti.tjmt.jus.br/index.php?title=API_-_Consulta_Processual"
+    },
+    {
+      "id": "BRAPI-00215",
+      "arquivo": "chelfoapi/brapi-00215.json",
+      "url": "https://wikicti.tjmt.jus.br/index.php?title=API_-_Folha_de_Pagamento_Transpar%C3%AAncia"
+    },
+    {
+      "id": "BRAPI-00216",
+      "arquivo": "chelfoapi/brapi-00216.json",
+      "url": "https://wikicti.tjmt.jus.br/index.php?title=API_-_Precat%C3%B3rios"
+    },
+    {
+      "id": "BRAPI-00217",
+      "arquivo": "chelfoapi/brapi-00217.json",
+      "url": "https://www.tjpr.jus.br/acesso-automatizado-por-sistemas-externos"
+    },
+    {
+      "id": "BRAPI-00218",
+      "arquivo": "chelfoapi/brapi-00218.json",
+      "url": "https://www.tjpr.jus.br/acesso-automatizado-por-sistemas-externos"
+    },
+    {
+      "id": "BRAPI-00219",
+      "arquivo": "chelfoapi/brapi-00219.json",
+      "url": "https://www.tjpr.jus.br/acesso-automatizado-por-sistemas-externos"
+    },
+    {
+      "id": "BRAPI-00220",
+      "arquivo": "chelfoapi/brapi-00220.json",
+      "url": "https://www.tjpr.jus.br/acesso-automatizado-por-sistemas-externos"
+    },
+    {
+      "id": "BRAPI-00221",
+      "arquivo": "chelfoapi/brapi-00221.json",
+      "url": "https://www.tjpi.jus.br/datacor-api/swagger-ui/index.html?urls.primaryName=Transpar%C3%AAncia"
+    },
+    {
+      "id": "BRAPI-00222",
+      "arquivo": "chelfoapi/brapi-00222.json",
+      "url": "https://www.tjrs.jus.br/novo/api-de-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00223",
+      "arquivo": "chelfoapi/brapi-00223.json",
+      "url": "https://www.tjrs.jus.br/novo/sistemas/"
+    },
+    {
+      "id": "BRAPI-00224",
+      "arquivo": "chelfoapi/brapi-00224.json",
+      "url": "https://portaltj.tjrj.jus.br/documents/d/guest/orgaoservicepub-guia_2"
+    },
+    {
+      "id": "BRAPI-00225",
+      "arquivo": "chelfoapi/brapi-00225.json",
+      "url": "https://www.tjrj.jus.br/intrav2/manuais/manuais/manuais-e-videos-publicos/mni-modelo-nacional-de-interoperabilidade"
+    },
+    {
+      "id": "BRAPI-00226",
+      "arquivo": "chelfoapi/brapi-00226.json",
+      "url": "https://etransparente.tjro.jus.br/categoria/item/90/ciclo-item/193/"
+    },
+    {
+      "id": "BRAPI-00227",
+      "arquivo": "chelfoapi/brapi-00227.json",
+      "url": "https://www.tjpa.jus.br/PortalExterno/institucional/Secretaria-de-Tecnologia-da-Informacao-e-Comunicacao-do-TJPA/834285-dados-abertos.xhtml"
+    },
+    {
+      "id": "BRAPI-00228",
+      "arquivo": "chelfoapi/brapi-00228.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/"
+    },
+    {
+      "id": "BRAPI-00229",
+      "arquivo": "chelfoapi/brapi-00229.json",
+      "url": "Não documentada publicamente de forma centralizada"
+    },
+    {
+      "id": "BRAPI-00230",
+      "arquivo": "chelfoapi/brapi-00230.json",
+      "url": "https://www.tjmrs.jus.br/setores/tic/webservices"
+    },
+    {
+      "id": "BRAPI-00231",
+      "arquivo": "chelfoapi/brapi-00231.json",
+      "url": "https://transparencia.tjmmg.jus.br/?page_id=6480"
+    },
+    {
+      "id": "BRAPI-00232",
+      "arquivo": "chelfoapi/brapi-00232.json",
+      "url": "https://www.cnj.jus.br/sistemas/datajud/api-publica/"
+    },
+    {
+      "id": "BRAPI-00233",
+      "arquivo": "chelfoapi/brapi-00233.json",
+      "url": "https://tjpb.stoplight.io/docs/tjpb---dados-abertos/branches/main/2cd8f42cd093c-api-de-consulta-de-dados-abertos-do-tjpb"
+    },
+    {
+      "id": "BRAPI-00234",
+      "arquivo": "chelfoapi/brapi-00234.json",
+      "url": "https://portal.tjpe.jus.br/web/transparencia/tic/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00235",
+      "arquivo": "chelfoapi/brapi-00235.json",
+      "url": "https://tjrn.jus.br/area-do-desenvolvedor/diretorio-de-apis/api-do-portal-do-tjrn/"
+    },
+    {
+      "id": "BRAPI-00236",
+      "arquivo": "chelfoapi/brapi-00236.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00237",
+      "arquivo": "chelfoapi/brapi-00237.json",
+      "url": "https://apis.bndes.gov.br/store/apis/info?name=FG2-API&version=v1&provider=BNDES%2Fargol"
+    },
+    {
+      "id": "BRAPI-00238",
+      "arquivo": "chelfoapi/brapi-00238.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/gestao-de-creditos-divida-ativa"
+    },
+    {
+      "id": "BRAPI-00239",
+      "arquivo": "chelfoapi/brapi-00239.json",
+      "url": "https://dados.gov.br/dados/busca?termo=Agencia%20espacial%20brasileira"
+    },
+    {
+      "id": "BRAPI-00240",
+      "arquivo": "chelfoapi/brapi-00240.json",
+      "url": "https://dadosabertos.ana.gov.br/api/search/definition/"
+    },
+    {
+      "id": "BRAPI-00241",
+      "arquivo": "chelfoapi/brapi-00241.json",
+      "url": "https://www.snirh.gov.br/arcgis/rest/services"
+    },
+    {
+      "id": "BRAPI-00242",
+      "arquivo": "chelfoapi/brapi-00242.json",
+      "url": "https://telemetria.snirh.gov.br/api/v1.0/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00243",
+      "arquivo": "chelfoapi/brapi-00243.json",
+      "url": "https://metadados.snirh.gov.br/geonetwork"
+    },
+    {
+      "id": "BRAPI-00244",
+      "arquivo": "chelfoapi/brapi-00244.json",
+      "url": "https://www.gov.br/ana/pt-br/assuntos/monitoramento-e-eventos-criticos/monitoramento-hidrologico/orientacoes-manuais/manuais/manual-hidrowebservice_publica.pdf"
+    },
+    {
+      "id": "BRAPI-00245",
+      "arquivo": "chelfoapi/brapi-00245.json",
+      "url": "https://www.ana.gov.br/fieldtest/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00246",
+      "arquivo": "chelfoapi/brapi-00246.json",
+      "url": "https://homologacao-api-diariodebordo.anac.gov.br/api/docs/index.html"
+    },
+    {
+      "id": "BRAPI-00247",
+      "arquivo": "chelfoapi/brapi-00247.json",
+      "url": "Não disponível publicamente"
+    },
+    {
+      "id": "BRAPI-00248",
+      "arquivo": "chelfoapi/brapi-00248.json",
+      "url": "https://www.gov.br/ancine/pt-br/assuntos/noticias/consulta-publica-para-desenvolvimento-de-servico-de-consulta-a-base-de-crts-de-obras-publicitarias-via-api"
+    },
+    {
+      "id": "BRAPI-00249",
+      "arquivo": "chelfoapi/brapi-00249.json",
+      "url": "https://www.gov.br/ancine/pt-br/acesso-a-informacao/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00250",
+      "arquivo": "chelfoapi/brapi-00250.json",
+      "url": "https://sad.ancine.gov.br/consultapublica/manterDocumentoMDAction.do?method=detalhe&idNorma=86"
+    },
+    {
+      "id": "BRAPI-00251",
+      "arquivo": "chelfoapi/brapi-00251.json",
+      "url": "https://dadosabertos-aneel.opendata.arcgis.com/api/search/definition/"
+    },
+    {
+      "id": "BRAPI-00252",
+      "arquivo": "chelfoapi/brapi-00252.json",
+      "url": "https://dadosabertos.aneel.gov.br/pt_BR/api/1/util/snippet/api_info.html?resource_id=3710b245-88f0-4aa6-8cfb-8b1426e9021d"
+    },
+    {
+      "id": "BRAPI-00253",
+      "arquivo": "chelfoapi/brapi-00253.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/outorga"
+    },
+    {
+      "id": "BRAPI-00254",
+      "arquivo": "chelfoapi/brapi-00254.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/polimero"
+    },
+    {
+      "id": "BRAPI-00255",
+      "arquivo": "chelfoapi/brapi-00255.json",
+      "url": "https://www.ad33.com.br/post/sigel-aneel-como-consultar-mapas-e-dados-do-setor-el%C3%A9trico"
+    },
+    {
+      "id": "BRAPI-00256",
+      "arquivo": "chelfoapi/brapi-00256.json",
+      "url": "https://inde.gov.br/CatalogoGeoservicos"
+    },
+    {
+      "id": "BRAPI-00257",
+      "arquivo": "chelfoapi/brapi-00257.json",
+      "url": "https://revendedoresapi.anp.gov.br/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00258",
+      "arquivo": "chelfoapi/brapi-00258.json",
+      "url": "https://gishub.anp.gov.br/"
+    },
+    {
+      "id": "BRAPI-00259",
+      "arquivo": "chelfoapi/brapi-00259.json",
+      "url": "https://www.ans.gov.br/apis/oauth2/"
+    },
+    {
+      "id": "BRAPI-00260",
+      "arquivo": "chelfoapi/brapi-00260.json",
+      "url": "https://consulta-ocl.apps.sa-1a.mendixcloud.com/rest-doc/rest/oclservice#/"
+    },
+    {
+      "id": "BRAPI-00261",
+      "arquivo": "chelfoapi/brapi-00261.json",
+      "url": "https://sistemas.anatel.gov.br/geoserver"
+    },
+    {
+      "id": "BRAPI-00262",
+      "arquivo": "chelfoapi/brapi-00262.json",
+      "url": "https://github.com/anatelgovbr/mod-sei-peticionamento"
+    },
+    {
+      "id": "BRAPI-00263",
+      "arquivo": "chelfoapi/brapi-00263.json",
+      "url": "http://dadosabertos.antaq.gov.br/api/3/action/package_list"
+    },
+    {
+      "id": "BRAPI-00264",
+      "arquivo": "chelfoapi/brapi-00264.json",
+      "url": "https://antaq.github.io/sispat-api/"
+    },
+    {
+      "id": "BRAPI-00265",
+      "arquivo": "chelfoapi/brapi-00265.json",
+      "url": "https://portaldodesenvolvedor.antt.gov.br/page/documentacao-monitriip"
+    },
+    {
+      "id": "BRAPI-00266",
+      "arquivo": "chelfoapi/brapi-00266.json",
+      "url": "https://docs.ckan.org/en/latest/api/index.html"
+    },
+    {
+      "id": "BRAPI-00267",
+      "arquivo": "chelfoapi/brapi-00267.json",
+      "url": "https://portaldodesenvolvedor.antt.gov.br/page/documentacao-RNTRC"
+    },
+    {
+      "id": "BRAPI-00268",
+      "arquivo": "chelfoapi/brapi-00268.json",
+      "url": "https://portaldodesenvolvedor.antt.gov.br/page/documentacao-sir"
+    },
+    {
+      "id": "BRAPI-00269",
+      "arquivo": "chelfoapi/brapi-00269.json",
+      "url": "https://geo.infrasa.gov.br/server/rest/services"
+    },
+    {
+      "id": "BRAPI-00270",
+      "arquivo": "chelfoapi/brapi-00270.json",
+      "url": "https://api.anvisa.gov.br/consultas-externas/certificados-doc"
+    },
+    {
+      "id": "BRAPI-00271",
+      "arquivo": "chelfoapi/brapi-00271.json",
+      "url": "https://api.anvisa.gov.br/consultas-externas/consulta-alimentos"
+    },
+    {
+      "id": "BRAPI-00272",
+      "arquivo": "chelfoapi/brapi-00272.json",
+      "url": "https://api.anvisa.gov.br/consultas-externas/consulta-produtos-saude"
+    },
+    {
+      "id": "BRAPI-00273",
+      "arquivo": "chelfoapi/brapi-00273.json",
+      "url": "https://api.anvisa.gov.br/consultas-externas/dossie-doc"
+    },
+    {
+      "id": "BRAPI-00274",
+      "arquivo": "chelfoapi/brapi-00274.json",
+      "url": "https://api.anvisa.gov.br/consultas-externas/funcionamento-empresa-internacional"
+    },
+    {
+      "id": "BRAPI-00275",
+      "arquivo": "chelfoapi/brapi-00275.json",
+      "url": "https://api.anvisa.gov.br/consultas-externas/funcionamento-empresa-nacional"
+    },
+    {
+      "id": "BRAPI-00276",
+      "arquivo": "chelfoapi/brapi-00276.json",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/sncr/documentos-do-sncr/manual-api-sncr-1ed/view"
+    },
+    {
+      "id": "BRAPI-00277",
+      "arquivo": "chelfoapi/brapi-00277.json",
+      "url": "https://sngpc-api.anvisa.gov.br/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00278",
+      "arquivo": "chelfoapi/brapi-00278.json",
+      "url": "https://apis.bndes.gov.br/store/apis/info?name=Consulta%20Opera%C3%A7%C3%B5es&version=1.0&provider=s-wso2-01"
+    },
+    {
+      "id": "BRAPI-00279",
+      "arquivo": "chelfoapi/brapi-00279.json",
+      "url": "https://apis.bndes.gov.br/store/apis/info?name=CanalMPME&version=1.4&provider=BNDES%2Fjrx"
+    },
+    {
+      "id": "BRAPI-00280",
+      "arquivo": "chelfoapi/brapi-00280.json",
+      "url": "https://apis.bndes.gov.br/store/apis/info?name=CFIcatalogo&version=v1&provider=s-wso2-01"
+    },
+    {
+      "id": "BRAPI-00281",
+      "arquivo": "chelfoapi/brapi-00281.json",
+      "url": "https://bb.com.br/site/developers/api-cobranca/"
+    },
+    {
+      "id": "BRAPI-00282",
+      "arquivo": "chelfoapi/brapi-00282.json",
+      "url": "https://bb.com.br/site/developers/api-extratos/"
+    },
+    {
+      "id": "BRAPI-00285",
+      "arquivo": "chelfoapi/brapi-00285.json",
+      "url": "https://apoio.developers.bb.com.br/apis/28"
+    },
+    {
+      "id": "BRAPI-00286",
+      "arquivo": "chelfoapi/brapi-00286.json",
+      "url": "https://www.bcb.gov.br/estabilidadefinanceira/dadosabertossfn"
+    },
+    {
+      "id": "BRAPI-00287",
+      "arquivo": "chelfoapi/brapi-00287.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00288",
+      "arquivo": "chelfoapi/brapi-00288.json",
+      "url": "https://olinda.bcb.gov.br/olinda/servico/BcBase/versao/v2/swagger-ui3#/"
+    },
+    {
+      "id": "BRAPI-00289",
+      "arquivo": "chelfoapi/brapi-00289.json",
+      "url": "https://revistapgbc.bcb.gov.br/revista/oai?verb=Identify"
+    },
+    {
+      "id": "BRAPI-00290",
+      "arquivo": "chelfoapi/brapi-00290.json",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/11-taxa-de-juros---selic/resource/b73edc07-bbac-430c-a2cb-b1639e605fa8"
+    },
+    {
+      "id": "BRAPI-00291",
+      "arquivo": "chelfoapi/brapi-00291.json",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/11-taxa-de-juros---selic/resource/10683b90-7805-44b2-a83a-b4175883c932"
+    },
+    {
+      "id": "BRAPI-00292",
+      "arquivo": "chelfoapi/brapi-00292.json",
+      "url": "https://openfinance.dev.br/provider/BNB?id=6370a748-6bda-4a37-9e88-5e68cc4cf100"
+    },
+    {
+      "id": "BRAPI-00293",
+      "arquivo": "chelfoapi/brapi-00293.json",
+      "url": "https://portal.dev.bnb.gov.br/product"
+    },
+    {
+      "id": "BRAPI-00294",
+      "arquivo": "chelfoapi/brapi-00294.json",
+      "url": "https://dadosabertos.bndes.gov.br/"
+    },
+    {
+      "id": "BRAPI-00295",
+      "arquivo": "chelfoapi/brapi-00295.json",
+      "url": "https://apis.bndes.gov.br/store/apis/info?name=MoedasContratuais&version=v1&provider=BNDES%2Fjrx"
+    },
+    {
+      "id": "BRAPI-00296",
+      "arquivo": "chelfoapi/brapi-00296.json",
+      "url": "https://apis.bndes.gov.br/store/apis/info?name=Open%20Banking%20-%20Discovery&version=v1&provider=s-wso2-01"
+    },
+    {
+      "id": "BRAPI-00297",
+      "arquivo": "chelfoapi/brapi-00297.json",
+      "url": "https://desenvolvedores.caixa.gov.br/"
+    },
+    {
+      "id": "BRAPI-00298",
+      "arquivo": "chelfoapi/brapi-00298.json",
+      "url": "https://faqdesenrola.fin.org.br/"
+    },
+    {
+      "id": "BRAPI-00299",
+      "arquivo": "chelfoapi/brapi-00299.json",
+      "url": "https://servicebus2.caixa.gov.br/portaldeloterias/api/"
+    },
+    {
+      "id": "BRAPI-00300",
+      "arquivo": "chelfoapi/brapi-00300.json",
+      "url": "https://desenvolvedores.caixa.gov.br/documentation"
+    },
+    {
+      "id": "BRAPI-00301",
+      "arquivo": "chelfoapi/brapi-00301.json",
+      "url": "https://desenvolvedores.caixa.gov.br/"
+    },
+    {
+      "id": "BRAPI-00302",
+      "arquivo": "chelfoapi/brapi-00302.json",
+      "url": "https://sifec.caixa.gov.br/"
+    },
+    {
+      "id": "BRAPI-00303",
+      "arquivo": "chelfoapi/brapi-00303.json",
+      "url": "https://dadosabertos.camara.leg.br/swagger/api.html"
+    },
+    {
+      "id": "BRAPI-00304",
+      "arquivo": "chelfoapi/brapi-00304.json",
+      "url": "https://www2.camara.leg.br/transparencia/dados-abertos/dados-abertos-legislativo/dados-abertos-legislativo"
+    },
+    {
+      "id": "BRAPI-00305",
+      "arquivo": "chelfoapi/brapi-00305.json",
+      "url": "https://github.com/eDemocracia/edemocracia"
+    },
+    {
+      "id": "BRAPI-00306",
+      "arquivo": "chelfoapi/brapi-00306.json",
+      "url": "https://panorama.sipam.gov.br/painel-do-fogo/api/swagger"
+    },
+    {
+      "id": "BRAPI-00307",
+      "arquivo": "chelfoapi/brapi-00307.json",
+      "url": "https://dados.cefet-rj.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00308",
+      "arquivo": "chelfoapi/brapi-00308.json",
+      "url": "https://panorama.sipam.gov.br/geonetwork/"
+    },
+    {
+      "id": "BRAPI-00309",
+      "arquivo": "chelfoapi/brapi-00309.json",
+      "url": "https://cidacs.bahia.fiocruz.br/pdd/"
+    },
+    {
+      "id": "BRAPI-00310",
+      "arquivo": "chelfoapi/brapi-00310.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00311",
+      "arquivo": "chelfoapi/brapi-00311.json",
+      "url": "https://docs.pdpj.jus.br/servicos-negociais/previdenciario/"
+    },
+    {
+      "id": "BRAPI-00312",
+      "arquivo": "chelfoapi/brapi-00312.json",
+      "url": "http://www.cnpq.br/web/guest/view/-/journal_content/56_INSTANCE_0oED/10157/21350241"
+    },
+    {
+      "id": "BRAPI-00313",
+      "arquivo": "chelfoapi/brapi-00313.json",
+      "url": "https://ajuda.decea.mil.br/base-de-conhecimento/api-redemet-o-que-e/"
+    },
+    {
+      "id": "BRAPI-00314",
+      "arquivo": "chelfoapi/brapi-00314.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/situacao-militar"
+    },
+    {
+      "id": "BRAPI-00315",
+      "arquivo": "chelfoapi/brapi-00315.json",
+      "url": "http://docs.ckan.org/en/2.11/api/"
+    },
+    {
+      "id": "BRAPI-00316",
+      "arquivo": "chelfoapi/brapi-00316.json",
+      "url": "http://sistemas.cvm.gov.br/webservices/Sistemas/SCW/CDocs/WsDownloadInfs.asmx?WSDL"
+    },
+    {
+      "id": "BRAPI-00317",
+      "arquivo": "chelfoapi/brapi-00317.json",
+      "url": "https://geoportal.codevasf.gov.br/portal/portalhelp/en/rest/router.html"
+    },
+    {
+      "id": "BRAPI-00318",
+      "arquivo": "chelfoapi/brapi-00318.json",
+      "url": "https://geohubcodevasf1sr-tpfe.hub.arcgis.com/api/search/definition/"
+    },
+    {
+      "id": "BRAPI-00319",
+      "arquivo": "chelfoapi/brapi-00319.json",
+      "url": "https://geoportal.codevasf.gov.br/server/rest/services"
+    },
+    {
+      "id": "BRAPI-00320",
+      "arquivo": "chelfoapi/brapi-00320.json",
+      "url": "https://sistemas.conab.gov.br/conab_parque_cafe/en/methodology/"
+    },
+    {
+      "id": "BRAPI-00321",
+      "arquivo": "chelfoapi/brapi-00321.json",
+      "url": "https://portaldeinformacoes.conab.gov.br/mercado-atacadista-hortigranjeiro.html"
+    },
+    {
+      "id": "BRAPI-00322",
+      "arquivo": "chelfoapi/brapi-00322.json",
+      "url": "https://portaldeinformacoes.conab.gov.br/produtos-360.html"
+    },
+    {
+      "id": "BRAPI-00323",
+      "arquivo": "chelfoapi/brapi-00323.json",
+      "url": "https://portaldeinformacoes.conab.gov.br/produtos-360.html"
+    },
+    {
+      "id": "BRAPI-00324",
+      "arquivo": "chelfoapi/brapi-00324.json",
+      "url": "https://portaldeinformacoes.conab.gov.br/"
+    },
+    {
+      "id": "BRAPI-00325",
+      "arquivo": "chelfoapi/brapi-00325.json",
+      "url": "https://mapas.sinfra.mt.gov.br/server/rest/services/gisdb_centralinfra_armazens_conab/FeatureServer"
+    },
+    {
+      "id": "BRAPI-00326",
+      "arquivo": "chelfoapi/brapi-00326.json",
+      "url": "https://dadosabertos.ch.ufrj.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00327",
+      "arquivo": "chelfoapi/brapi-00327.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/consulta-ao-tribunal"
+    },
+    {
+      "id": "BRAPI-00328",
+      "arquivo": "chelfoapi/brapi-00328.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/consulta-de-condutas-anticompetitivas"
+    },
+    {
+      "id": "BRAPI-00329",
+      "arquivo": "chelfoapi/brapi-00329.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/consultar-acordo-em-apuracao-de-ato-de-concentracao"
+    },
+    {
+      "id": "BRAPI-00330",
+      "arquivo": "chelfoapi/brapi-00330.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/consultar-ato-de-concentracao"
+    },
+    {
+      "id": "BRAPI-00331",
+      "arquivo": "chelfoapi/brapi-00331.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/termo-de-compromisso-de-cessacao-tcc"
+    },
+    {
+      "id": "BRAPI-00333",
+      "arquivo": "chelfoapi/brapi-00333.json",
+      "url": "https://siem-servicos-api.cfm.org.br/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00334",
+      "arquivo": "chelfoapi/brapi-00334.json",
+      "url": "https://transparencia.cfp.org.br/dados-abertos/colecoes-disponiveis/"
+    },
+    {
+      "id": "BRAPI-00335",
+      "arquivo": "chelfoapi/brapi-00335.json",
+      "url": "https://cjfweb.cjf.jus.br/wsReceitaApp/"
+    },
+    {
+      "id": "BRAPI-00336",
+      "arquivo": "chelfoapi/brapi-00336.json",
+      "url": "https://memoria.cnpq.br/web/portal-lattes/extracoes-de-dados"
+    },
+    {
+      "id": "BRAPI-00337",
+      "arquivo": "chelfoapi/brapi-00337.json",
+      "url": "https://lattesdata.cnpq.br/guides/en/latest/api/index.html"
+    },
+    {
+      "id": "BRAPI-00338",
+      "arquivo": "chelfoapi/brapi-00338.json",
+      "url": "https://docs.pdpj.jus.br/servicos-negociais/bnmp3/"
+    },
+    {
+      "id": "BRAPI-00339",
+      "arquivo": "chelfoapi/brapi-00339.json",
+      "url": "https://comunicaapi.pje.jus.br/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00340",
+      "arquivo": "chelfoapi/brapi-00340.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00341",
+      "arquivo": "chelfoapi/brapi-00341.json",
+      "url": "https://www.cnj.jus.br/sistemas/datajud/api-publica/"
+    },
+    {
+      "id": "BRAPI-00342",
+      "arquivo": "chelfoapi/brapi-00342.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00343",
+      "arquivo": "chelfoapi/brapi-00343.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00344",
+      "arquivo": "chelfoapi/brapi-00344.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/"
+    },
+    {
+      "id": "BRAPI-00345",
+      "arquivo": "chelfoapi/brapi-00345.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00346",
+      "arquivo": "chelfoapi/brapi-00346.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00347",
+      "arquivo": "chelfoapi/brapi-00347.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/"
+    },
+    {
+      "id": "BRAPI-00348",
+      "arquivo": "chelfoapi/brapi-00348.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00349",
+      "arquivo": "chelfoapi/brapi-00349.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/"
+    },
+    {
+      "id": "BRAPI-00350",
+      "arquivo": "chelfoapi/brapi-00350.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/"
+    },
+    {
+      "id": "BRAPI-00351",
+      "arquivo": "chelfoapi/brapi-00351.json",
+      "url": "https://datajud-wiki.cnj.jus.br/"
+    },
+    {
+      "id": "BRAPI-00352",
+      "arquivo": "chelfoapi/brapi-00352.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00353",
+      "arquivo": "chelfoapi/brapi-00353.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00354",
+      "arquivo": "chelfoapi/brapi-00354.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/endpoints/"
+    },
+    {
+      "id": "BRAPI-00355",
+      "arquivo": "chelfoapi/brapi-00355.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00356",
+      "arquivo": "chelfoapi/brapi-00356.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00357",
+      "arquivo": "chelfoapi/brapi-00357.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/acesso"
+    },
+    {
+      "id": "BRAPI-00358",
+      "arquivo": "chelfoapi/brapi-00358.json",
+      "url": "https://portal.trt3.jus.br/internet/transparencia/tecnologia-da-informacao/dados-api/datajud"
+    },
+    {
+      "id": "BRAPI-00359",
+      "arquivo": "chelfoapi/brapi-00359.json",
+      "url": "https://comunicaapi.pje.jus.br/"
+    },
+    {
+      "id": "BRAPI-00360",
+      "arquivo": "chelfoapi/brapi-00360.json",
+      "url": "https://docs.pdpj.jus.br/servicos-negociais/sngb/"
+    },
+    {
+      "id": "BRAPI-00361",
+      "arquivo": "chelfoapi/brapi-00361.json",
+      "url": "https://www.cnj.jus.br/sistemas/api-cnj-automatizando-o-judiciario/"
+    },
+    {
+      "id": "BRAPI-00362",
+      "arquivo": "chelfoapi/brapi-00362.json",
+      "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/comite-nacional-de-gestao-de-tecnologia-da-informacao-e-comunicacao-do-poder-judiciario/modelo-nacional-de-interoperabilidade/"
+    },
+    {
+      "id": "BRAPI-00363",
+      "arquivo": "chelfoapi/brapi-00363.json",
+      "url": "https://docs.pdpj.jus.br/servicos-estruturantes/organizacional/"
+    },
+    {
+      "id": "BRAPI-00364",
+      "arquivo": "chelfoapi/brapi-00364.json",
+      "url": "https://docs.pdpj.jus.br/portal-servicos/"
+    },
+    {
+      "id": "BRAPI-00365",
+      "arquivo": "chelfoapi/brapi-00365.json",
+      "url": "https://docs.pje.jus.br/servicos-negociais/servico-criminal/"
+    },
+    {
+      "id": "BRAPI-00366",
+      "arquivo": "chelfoapi/brapi-00366.json",
+      "url": "https://docs.pje.jus.br/servicos-auxiliares/servico-mni-client/"
+    },
+    {
+      "id": "BRAPI-00367",
+      "arquivo": "chelfoapi/brapi-00367.json",
+      "url": "https://docs.pdpj.jus.br/servicos-negociais/sisbajud/"
+    },
+    {
+      "id": "BRAPI-00368",
+      "arquivo": "chelfoapi/brapi-00368.json",
+      "url": "https://docs.pdpj.jus.br/servicos-estruturantes/tpu/"
+    },
+    {
+      "id": "BRAPI-00369",
+      "arquivo": "chelfoapi/brapi-00369.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00370",
+      "arquivo": "chelfoapi/brapi-00370.json",
+      "url": "https://comunica.pje.jus.br/api"
+    },
+    {
+      "id": "BRAPI-00371",
+      "arquivo": "chelfoapi/brapi-00371.json",
+      "url": "https://docs.pje.jus.br/servicos-auxiliares/servico-mni-client/"
+    },
+    {
+      "id": "BRAPI-00372",
+      "arquivo": "chelfoapi/brapi-00372.json",
+      "url": "https://app.swaggerhub.com/apis-docs/cnj/pcp/1.0.0"
+    },
+    {
+      "id": "BRAPI-00373",
+      "arquivo": "chelfoapi/brapi-00373.json",
+      "url": "https://comunicaapi.pje.jus.br/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00374",
+      "arquivo": "chelfoapi/brapi-00374.json",
+      "url": "https://docs.pje.jus.br/"
+    },
+    {
+      "id": "BRAPI-00375",
+      "arquivo": "chelfoapi/brapi-00375.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00376",
+      "arquivo": "chelfoapi/brapi-00376.json",
+      "url": "https://justica-em-numeros.cnj.jus.br/painel-estatisticas/"
+    },
+    {
+      "id": "BRAPI-00377",
+      "arquivo": "chelfoapi/brapi-00377.json",
+      "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/justica-aberta/modelo-nacional-de-interoperabilidade/"
+    },
+    {
+      "id": "BRAPI-00378",
+      "arquivo": "chelfoapi/brapi-00378.json",
+      "url": "https://docs.pje.jus.br/servicos-auxiliares/servico-mni-client/"
+    },
+    {
+      "id": "BRAPI-00379",
+      "arquivo": "chelfoapi/brapi-00379.json",
+      "url": "https://sgt.cnmp.mp.br/infWebService.php"
+    },
+    {
+      "id": "BRAPI-00380",
+      "arquivo": "chelfoapi/brapi-00380.json",
+      "url": "https://sistemafeminicidio.cnmp.mp.br/resources/pdf/ManualTecnico-Feminicidio.pdf"
+    },
+    {
+      "id": "BRAPI-00381",
+      "arquivo": "chelfoapi/brapi-00381.json",
+      "url": "https://destcovid.cnmp.mp.br/destinacoes-covid/resources/pdf/ManualTecnico.pdf"
+    },
+    {
+      "id": "BRAPI-00382",
+      "arquivo": "chelfoapi/brapi-00382.json",
+      "url": "http://cro-ro.org.br/noticias?page=6"
+    },
+    {
+      "id": "BRAPI-00383",
+      "arquivo": "chelfoapi/brapi-00383.json",
+      "url": "https://www.crp23.org.br/api"
+    },
+    {
+      "id": "BRAPI-00384",
+      "arquivo": "chelfoapi/brapi-00384.json",
+      "url": "https://docs.pje.jus.br/manuais-basicos/padroes-de-api-do-pje/ ; https://docs.pje.jus.br/servicos-auxiliares/servico-mni-client/"
+    },
+    {
+      "id": "BRAPI-00385",
+      "arquivo": "chelfoapi/brapi-00385.json",
+      "url": "https://docs.pje.jus.br/manuais-basicos/padroes-de-api-do-pje/"
+    },
+    {
+      "id": "BRAPI-00386",
+      "arquivo": "chelfoapi/brapi-00386.json",
+      "url": "https://www.postman.com/actio-software/actio-software/collection/j1f03zb/actio-software-api-documentation"
+    },
+    {
+      "id": "BRAPI-00387",
+      "arquivo": "chelfoapi/brapi-00387.json",
+      "url": "https://api.portaldatransparencia.gov.br/"
+    },
+    {
+      "id": "BRAPI-00388",
+      "arquivo": "chelfoapi/brapi-00388.json",
+      "url": "https://falabr.cgu.gov.br/help"
+    },
+    {
+      "id": "BRAPI-00389",
+      "arquivo": "chelfoapi/brapi-00389.json",
+      "url": "https://dados.gov.br/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00390",
+      "arquivo": "chelfoapi/brapi-00390.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/sistema-e-aud-de-auditorias-da-cgu"
+    },
+    {
+      "id": "BRAPI-00391",
+      "arquivo": "chelfoapi/brapi-00391.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/api-portal-de-dados-abertos"
+    },
+    {
+      "id": "BRAPI-00392",
+      "arquivo": "chelfoapi/brapi-00392.json",
+      "url": "https://eagendas.cgu.gov.br/api/docs"
+    },
+    {
+      "id": "BRAPI-00393",
+      "arquivo": "chelfoapi/brapi-00393.json",
+      "url": "https://dadosabertos.capes.gov.br/en/api/1/util/snippet/api_info.html?resource_id=b871db42-a86e-43d3-bf21-2ea2e85d0acd"
+    },
+    {
+      "id": "BRAPI-00394",
+      "arquivo": "chelfoapi/brapi-00394.json",
+      "url": "https://dadosabertos.capes.gov.br/pt_BR/api/1/util/snippet/api_info.html"
+    },
+    {
+      "id": "BRAPI-00395",
+      "arquivo": "chelfoapi/brapi-00395.json",
+      "url": "https://bolsistabffservicosmobile.capes.gov.br/swagger-ui.html"
+    },
+    {
+      "id": "BRAPI-00396",
+      "arquivo": "chelfoapi/brapi-00396.json",
+      "url": "https://catibffservicosmobile.capes.gov.br/swagger-ui.html"
+    },
+    {
+      "id": "BRAPI-00397",
+      "arquivo": "chelfoapi/brapi-00397.json",
+      "url": "https://educapes.capes.gov.br/"
+    },
+    {
+      "id": "BRAPI-00398",
+      "arquivo": "chelfoapi/brapi-00398.json",
+      "url": "https://servicosies.capes.gov.br/"
+    },
+    {
+      "id": "BRAPI-00399",
+      "arquivo": "chelfoapi/brapi-00399.json",
+      "url": "https://apigw-proxy.capes.gov.br/observatorio/documentacao"
+    },
+    {
+      "id": "BRAPI-00400",
+      "arquivo": "chelfoapi/brapi-00400.json",
+      "url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas"
+    },
+    {
+      "id": "BRAPI-00401",
+      "arquivo": "chelfoapi/brapi-00401.json",
+      "url": "https://www.trt17.jus.br/web/transparencia/w/acesso-automatizado-api"
+    },
+    {
+      "id": "BRAPI-00402",
+      "arquivo": "chelfoapi/brapi-00402.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/cadunico-servicos-dados-familiares"
+    },
+    {
+      "id": "BRAPI-00403",
+      "arquivo": "chelfoapi/brapi-00403.json",
+      "url": "http://api.dataprev.gov.br"
+    },
+    {
+      "id": "BRAPI-00404",
+      "arquivo": "chelfoapi/brapi-00404.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/api-beneficios-previdenciarios"
+    },
+    {
+      "id": "BRAPI-00405",
+      "arquivo": "chelfoapi/brapi-00405.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/relacao-trabalhista"
+    },
+    {
+      "id": "BRAPI-00406",
+      "arquivo": "chelfoapi/brapi-00406.json",
+      "url": "https://www.gov.br/previdencia/pt-br/assuntos/rpps/sistemas/comprev/api-comprev/arquivos/guia-para-acesso-a-api-comprev-v1-0.pdf"
+    },
+    {
+      "id": "BRAPI-00407",
+      "arquivo": "chelfoapi/brapi-00407.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/wsdenatran"
+    },
+    {
+      "id": "BRAPI-00408",
+      "arquivo": "chelfoapi/brapi-00408.json",
+      "url": "https://cnuc-backend.mma.gov.br/api/v1/"
+    },
+    {
+      "id": "BRAPI-00409",
+      "arquivo": "chelfoapi/brapi-00409.json",
+      "url": "https://servicos.dnit.gov.br/dadosabertos/ / https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00410",
+      "arquivo": "chelfoapi/brapi-00410.json",
+      "url": "https://inde.gov.br/CatalogoGeoservicos"
+    },
+    {
+      "id": "BRAPI-00411",
+      "arquivo": "chelfoapi/brapi-00411.json",
+      "url": "https://dateno.io/registry/catalog/cdi00002323/"
+    },
+    {
+      "id": "BRAPI-00412",
+      "arquivo": "chelfoapi/brapi-00412.json",
+      "url": "https://geoinfo.dados.embrapa.br/developer/"
+    },
+    {
+      "id": "BRAPI-00413",
+      "arquivo": "chelfoapi/brapi-00413.json",
+      "url": "https://guides.dataverse.org/en/latest/api/native-api.html"
+    },
+    {
+      "id": "BRAPI-00414",
+      "arquivo": "chelfoapi/brapi-00414.json",
+      "url": "https://www.portal.agroapi.cnptia.embrapa.br/catalogo-de-apis"
+    },
+    {
+      "id": "BRAPI-00415",
+      "arquivo": "chelfoapi/brapi-00415.json",
+      "url": "https://www.alice.cnptia.embrapa.br/alice/interoperabilidade.jsp"
+    },
+    {
+      "id": "BRAPI-00417",
+      "arquivo": "chelfoapi/brapi-00417.json",
+      "url": "https://agenciabrasil.ebc.com.br"
+    },
+    {
+      "id": "BRAPI-00418",
+      "arquivo": "chelfoapi/brapi-00418.json",
+      "url": "http://www.telemidia.puc-rio.br/~rafaeldiniz/public_files/normas/SBTVD/pt_BR/OTA/Especificac%CC%A7a%CC%83o%20da%20REST%20API%20do%20Portal%20Ginga_v1.1.pdf"
+    },
+    {
+      "id": "BRAPI-00419",
+      "arquivo": "chelfoapi/brapi-00419.json",
+      "url": "https://www.correios.com.br/atendimento/developers/manuais/manual-api-busca-cep"
+    },
+    {
+      "id": "BRAPI-00420",
+      "arquivo": "chelfoapi/brapi-00420.json",
+      "url": "https://www.correios.com.br/atendimento/developers/apicoleta"
+    },
+    {
+      "id": "BRAPI-00421",
+      "arquivo": "chelfoapi/brapi-00421.json",
+      "url": "https://www.correios.com.br/atendimento/developers/manuais/manual-api-prazo"
+    },
+    {
+      "id": "BRAPI-00422",
+      "arquivo": "chelfoapi/brapi-00422.json",
+      "url": "https://www.correios.com.br/atendimento/developers/arquivos/manual-para-integracao-correios-api"
+    },
+    {
+      "id": "BRAPI-00423",
+      "arquivo": "chelfoapi/brapi-00423.json",
+      "url": "https://www.correios.com.br/atendimento/developers/manuais/manual-api-preco-1"
+    },
+    {
+      "id": "BRAPI-00424",
+      "arquivo": "chelfoapi/brapi-00424.json",
+      "url": "https://www.correios.com.br/atendimento/developers/arquivos/manual-para-integracao-correios-api"
+    },
+    {
+      "id": "BRAPI-00425",
+      "arquivo": "chelfoapi/brapi-00425.json",
+      "url": "https://www.correios.com.br/atendimento/developers/manuais/manual-uso-da-api-token"
+    },
+    {
+      "id": "BRAPI-00426",
+      "arquivo": "chelfoapi/brapi-00426.json",
+      "url": "https://api.emgea.gov.br/"
+    },
+    {
+      "id": "BRAPI-00427",
+      "arquivo": "chelfoapi/brapi-00427.json",
+      "url": "https://api.emgea.gov.br/"
+    },
+    {
+      "id": "BRAPI-00428",
+      "arquivo": "chelfoapi/brapi-00428.json",
+      "url": "https://api.emgea.gov.br/"
+    },
+    {
+      "id": "BRAPI-00429",
+      "arquivo": "chelfoapi/brapi-00429.json",
+      "url": "https://api.emgea.gov.br/"
+    },
+    {
+      "id": "BRAPI-00430",
+      "arquivo": "chelfoapi/brapi-00430.json",
+      "url": "https://api.emgea.gov.br/"
+    },
+    {
+      "id": "BRAPI-00431",
+      "arquivo": "chelfoapi/brapi-00431.json",
+      "url": "https://api.emgea.gov.br/"
+    },
+    {
+      "id": "BRAPI-00432",
+      "arquivo": "chelfoapi/brapi-00432.json",
+      "url": "https://gisepeprd2.epe.gov.br/arcgis/sdk/rest/02ss/02ss00000057000000.htm"
+    },
+    {
+      "id": "BRAPI-00433",
+      "arquivo": "chelfoapi/brapi-00433.json",
+      "url": "https://gisepeprd2.epe.gov.br/arcgis/rest/services/SMA/WMS_Webmap_EPE/MapServer"
+    },
+    {
+      "id": "BRAPI-00434",
+      "arquivo": "chelfoapi/brapi-00434.json",
+      "url": "https://gisepeprd2.epe.gov.br/arcgis/rest/services/WMS_Webmap_EPE_Data/MapServer"
+    },
+    {
+      "id": "BRAPI-00435",
+      "arquivo": "chelfoapi/brapi-00435.json",
+      "url": "https://inde.gov.br/CatalogoGeoservicos"
+    },
+    {
+      "id": "BRAPI-00436",
+      "arquivo": "chelfoapi/brapi-00436.json",
+      "url": "https://inde.gov.br/CatalogoGeoservicos"
+    },
+    {
+      "id": "BRAPI-00437",
+      "arquivo": "chelfoapi/brapi-00437.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/acoes-de-aprendizagem"
+    },
+    {
+      "id": "BRAPI-00438",
+      "arquivo": "chelfoapi/brapi-00438.json",
+      "url": "https://api.enap.gov.br/v1/"
+    },
+    {
+      "id": "BRAPI-00439",
+      "arquivo": "chelfoapi/brapi-00439.json",
+      "url": "https://idpcafe.finep.gov.br/idp/shibboleth"
+    },
+    {
+      "id": "BRAPI-00440",
+      "arquivo": "chelfoapi/brapi-00440.json",
+      "url": "https://bndigital.bn.gov.br/sobre-a-bndigital/normas-e-padroes/"
+    },
+    {
+      "id": "BRAPI-00441",
+      "arquivo": "chelfoapi/brapi-00441.json",
+      "url": "https://brasilianafotografica.bn.gov.br/brasiliana/"
+    },
+    {
+      "id": "BRAPI-00442",
+      "arquivo": "chelfoapi/brapi-00442.json",
+      "url": "N/A"
+    },
+    {
+      "id": "BRAPI-00443",
+      "arquivo": "chelfoapi/brapi-00443.json",
+      "url": "https://manual.rededasartes.funarte.gov.br/docs/devs/reference/api/agents"
+    },
+    {
+      "id": "BRAPI-00444",
+      "arquivo": "chelfoapi/brapi-00444.json",
+      "url": "https://manual.rededasartes.funarte.gov.br/docs/devs/reference/api/spaces"
+    },
+    {
+      "id": "BRAPI-00445",
+      "arquivo": "chelfoapi/brapi-00445.json",
+      "url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas"
+    },
+    {
+      "id": "BRAPI-00446",
+      "arquivo": "chelfoapi/brapi-00446.json",
+      "url": "https://apim2.fiocruz.br/"
+    },
+    {
+      "id": "BRAPI-00447",
+      "arquivo": "chelfoapi/brapi-00447.json",
+      "url": "https://arca.fiocruz.br/"
+    },
+    {
+      "id": "BRAPI-00448",
+      "arquivo": "chelfoapi/brapi-00448.json",
+      "url": "https://portal.trt3.jus.br/internet/transparencia/tecnologia-da-informacao/dados-api/classes_processuais"
+    },
+    {
+      "id": "BRAPI-00449",
+      "arquivo": "chelfoapi/brapi-00449.json",
+      "url": "https://portal.trt3.jus.br/internet/transparencia/tecnologia-da-informacao/dados-api/contratos"
+    },
+    {
+      "id": "BRAPI-00450",
+      "arquivo": "chelfoapi/brapi-00450.json",
+      "url": "https://portal.trt3.jus.br/internet/transparencia/tecnologia-da-informacao/dados-api/diarias"
+    },
+    {
+      "id": "BRAPI-00451",
+      "arquivo": "chelfoapi/brapi-00451.json",
+      "url": "https://portal.trt3.jus.br/internet/transparencia/tecnologia-da-informacao/dados-api/processos_aptos_julgamento_2_grau"
+    },
+    {
+      "id": "BRAPI-00452",
+      "arquivo": "chelfoapi/brapi-00452.json",
+      "url": "https://portal.trt3.jus.br/internet/transparencia/tecnologia-da-informacao/dados-api/contatos_unidades_judiciarias"
+    },
+    {
+      "id": "BRAPI-00453",
+      "arquivo": "chelfoapi/brapi-00453.json",
+      "url": "https://github.com/DCOMP-UFS/coffee_rep_gds_docs"
+    },
+    {
+      "id": "BRAPI-00454",
+      "arquivo": "chelfoapi/brapi-00454.json",
+      "url": "http://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00455",
+      "arquivo": "chelfoapi/brapi-00455.json",
+      "url": "https://pamgia.ibama.gov.br/server/help/en/rest/router.html?f=rest/services"
+    },
+    {
+      "id": "BRAPI-00456",
+      "arquivo": "chelfoapi/brapi-00456.json",
+      "url": "https://www.opengeospatial.org/standards/wfs"
+    },
+    {
+      "id": "BRAPI-00457",
+      "arquivo": "chelfoapi/brapi-00457.json",
+      "url": "https://inde.gov.br/CatalogoGeoservicos"
+    },
+    {
+      "id": "BRAPI-00458",
+      "arquivo": "chelfoapi/brapi-00458.json",
+      "url": "https://inde.gov.br/api/"
+    },
+    {
+      "id": "BRAPI-00459",
+      "arquivo": "chelfoapi/brapi-00459.json",
+      "url": "https://portal.inmet.gov.br/manual/manual-de-uso-da-api-esta%C3%A7%C3%B5es"
+    },
+    {
+      "id": "BRAPI-00460",
+      "arquivo": "chelfoapi/brapi-00460.json",
+      "url": "https://dadosabertos.inss.gov.br/sl/dataset/"
+    },
+    {
+      "id": "BRAPI-00461",
+      "arquivo": "chelfoapi/brapi-00461.json",
+      "url": "https://servicodados.ibge.gov.br/api/docs/"
+    },
+    {
+      "id": "BRAPI-00462",
+      "arquivo": "chelfoapi/brapi-00462.json",
+      "url": "https://geoservicos.ibge.gov.br/geoserver/web/"
+    },
+    {
+      "id": "BRAPI-00463",
+      "arquivo": "chelfoapi/brapi-00463.json",
+      "url": "https://servicodados.ibge.gov.br/api/docs/"
+    },
+    {
+      "id": "BRAPI-00464",
+      "arquivo": "chelfoapi/brapi-00464.json",
+      "url": "https://servicodados.ibge.gov.br/api/docs"
+    },
+    {
+      "id": "BRAPI-00465",
+      "arquivo": "chelfoapi/brapi-00465.json",
+      "url": "https://tainacan.github.io/tainacan-wiki/"
+    },
+    {
+      "id": "BRAPI-00466",
+      "arquivo": "chelfoapi/brapi-00466.json",
+      "url": "https://www.gov.br/icmbio/pt-br/dados-icmbio/dados_geoespaciais"
+    },
+    {
+      "id": "BRAPI-00467",
+      "arquivo": "chelfoapi/brapi-00467.json",
+      "url": "https://ipt.gbif.org/manual/"
+    },
+    {
+      "id": "BRAPI-00468",
+      "arquivo": "chelfoapi/brapi-00468.json",
+      "url": "https://api.treinamento.saudeindigena.icict.fiocruz.br/"
+    },
+    {
+      "id": "BRAPI-00469",
+      "arquivo": "chelfoapi/brapi-00469.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00470",
+      "arquivo": "chelfoapi/brapi-00470.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00471",
+      "arquivo": "chelfoapi/brapi-00471.json",
+      "url": "https://dadosabertos.ifmg.edu.br/api/3/"
+    },
+    {
+      "id": "BRAPI-00472",
+      "arquivo": "chelfoapi/brapi-00472.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00473",
+      "arquivo": "chelfoapi/brapi-00473.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00474",
+      "arquivo": "chelfoapi/brapi-00474.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00475",
+      "arquivo": "chelfoapi/brapi-00475.json",
+      "url": "https://dspace.ifrs.edu.br/oai/request?verb=Identify"
+    },
+    {
+      "id": "BRAPI-00476",
+      "arquivo": "chelfoapi/brapi-00476.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00477",
+      "arquivo": "chelfoapi/brapi-00477.json",
+      "url": "https://suap.ifrr.edu.br/api/"
+    },
+    {
+      "id": "BRAPI-00478",
+      "arquivo": "chelfoapi/brapi-00478.json",
+      "url": "https://dados.ifsc.edu.br/api/3/"
+    },
+    {
+      "id": "BRAPI-00479",
+      "arquivo": "chelfoapi/brapi-00479.json",
+      "url": "https://dados.ifsp.edu.br/api/3/"
+    },
+    {
+      "id": "BRAPI-00480",
+      "arquivo": "chelfoapi/brapi-00480.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00481",
+      "arquivo": "chelfoapi/brapi-00481.json",
+      "url": "https://acervofundiario.incra.gov.br/i3geo/documentacao/files/wscliente-js.html"
+    },
+    {
+      "id": "BRAPI-00482",
+      "arquivo": "chelfoapi/brapi-00482.json",
+      "url": "https://geoportal.incra.gov.br/developer/"
+    },
+    {
+      "id": "BRAPI-00483",
+      "arquivo": "chelfoapi/brapi-00483.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/sigef-geo"
+    },
+    {
+      "id": "BRAPI-00484",
+      "arquivo": "chelfoapi/brapi-00484.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/sipra-reforma-agraria"
+    },
+    {
+      "id": "BRAPI-00485",
+      "arquivo": "chelfoapi/brapi-00485.json",
+      "url": "https://github.com/inepdadosabertos/api"
+    },
+    {
+      "id": "BRAPI-00486",
+      "arquivo": "chelfoapi/brapi-00486.json",
+      "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados"
+    },
+    {
+      "id": "BRAPI-00487",
+      "arquivo": "chelfoapi/brapi-00487.json",
+      "url": "https://wiki.lyrasis.org/display/DSDOC7x/REST+API"
+    },
+    {
+      "id": "BRAPI-00489",
+      "arquivo": "chelfoapi/brapi-00489.json",
+      "url": "https://servicos.cptec.inpe.br/XML/"
+    },
+    {
+      "id": "BRAPI-00490",
+      "arquivo": "chelfoapi/brapi-00490.json",
+      "url": "https://terrabrasilis.dpi.inpe.br/en/available-services/"
+    },
+    {
+      "id": "BRAPI-00491",
+      "arquivo": "chelfoapi/brapi-00491.json",
+      "url": "https://data.inpe.br/queimadas/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00492",
+      "arquivo": "chelfoapi/brapi-00492.json",
+      "url": "https://meu.inpi.gov.br/pag/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00493",
+      "arquivo": "chelfoapi/brapi-00493.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/relacao-trabalhista"
+    },
+    {
+      "id": "BRAPI-00494",
+      "arquivo": "chelfoapi/brapi-00494.json",
+      "url": "https://bibliotecadigital-web.iphan.gov.br/"
+    },
+    {
+      "id": "BRAPI-00495",
+      "arquivo": "chelfoapi/brapi-00495.json",
+      "url": "http://portal.iphan.gov.br/geoserver/web/"
+    },
+    {
+      "id": "BRAPI-00496",
+      "arquivo": "chelfoapi/brapi-00496.json",
+      "url": "http://www.ipeadata.gov.br/api/"
+    },
+    {
+      "id": "BRAPI-00497",
+      "arquivo": "chelfoapi/brapi-00497.json",
+      "url": "https://repositorio.ipea.gov.br/"
+    },
+    {
+      "id": "BRAPI-00498",
+      "arquivo": "chelfoapi/brapi-00498.json",
+      "url": "https://www.ipea.gov.br/atlasestado/api"
+    },
+    {
+      "id": "BRAPI-00499",
+      "arquivo": "chelfoapi/brapi-00499.json",
+      "url": "https://ckan.jbrj.gov.br/"
+    },
+    {
+      "id": "BRAPI-00501",
+      "arquivo": "chelfoapi/brapi-00501.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/api-de-qualificacao-de-enderecos"
+    },
+    {
+      "id": "BRAPI-00502",
+      "arquivo": "chelfoapi/brapi-00502.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/api-de-servicos"
+    },
+    {
+      "id": "BRAPI-00503",
+      "arquivo": "chelfoapi/brapi-00503.json",
+      "url": "https://manual-api-treinamento-sisbov.agricultura.gov.br/"
+    },
+    {
+      "id": "BRAPI-00504",
+      "arquivo": "chelfoapi/brapi-00504.json",
+      "url": "http://docs.ckan.org/en/2.6/api/"
+    },
+    {
+      "id": "BRAPI-00505",
+      "arquivo": "chelfoapi/brapi-00505.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00506",
+      "arquivo": "chelfoapi/brapi-00506.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00507",
+      "arquivo": "chelfoapi/brapi-00507.json",
+      "url": "https://docs.mapasculturais.org/mc_config_api/"
+    },
+    {
+      "id": "BRAPI-00508",
+      "arquivo": "chelfoapi/brapi-00508.json",
+      "url": "http://api.salic.cultura.gov.br/doc/ ou https://salic-api.readthedocs.io/pt/latest/overview.html"
+    },
+    {
+      "id": "BRAPI-00509",
+      "arquivo": "chelfoapi/brapi-00509.json",
+      "url": "https://dados.cultura.gov.br/api/3/action/help_show?name=package_search"
+    },
+    {
+      "id": "BRAPI-00510",
+      "arquivo": "chelfoapi/brapi-00510.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/cadastro-nacional-da-agricultura-familiar-consulta-organizacao-produtiva"
+    },
+    {
+      "id": "BRAPI-00511",
+      "arquivo": "chelfoapi/brapi-00511.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/cadastro-nacional-da-agricultura-familiar"
+    },
+    {
+      "id": "BRAPI-00512",
+      "arquivo": "chelfoapi/brapi-00512.json",
+      "url": "https://terrasdobrasil.mda.gov.br/sinarf/swagger"
+    },
+    {
+      "id": "BRAPI-00513",
+      "arquivo": "chelfoapi/brapi-00513.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/cadunico-servicos"
+    },
+    {
+      "id": "BRAPI-00514",
+      "arquivo": "chelfoapi/brapi-00514.json",
+      "url": "https://api-comexstat.mdic.gov.br/docs"
+    },
+    {
+      "id": "BRAPI-00515",
+      "arquivo": "chelfoapi/brapi-00515.json",
+      "url": "Não localizada"
+    },
+    {
+      "id": "BRAPI-00516",
+      "arquivo": "chelfoapi/brapi-00516.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/pessoa-com-deficiencia"
+    },
+    {
+      "id": "BRAPI-00517",
+      "arquivo": "chelfoapi/brapi-00517.json",
+      "url": "https://www.mpdft.mp.br/eprotocolo/"
+    },
+    {
+      "id": "BRAPI-00518",
+      "arquivo": "chelfoapi/brapi-00518.json",
+      "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/modelo-nacional-de-interoperabilidade-mni/"
+    },
+    {
+      "id": "BRAPI-00519",
+      "arquivo": "chelfoapi/brapi-00519.json",
+      "url": "https://dadosabertos.mec.gov.br/api/3/action/help_show?name=package_list"
+    },
+    {
+      "id": "BRAPI-00520",
+      "arquivo": "chelfoapi/brapi-00520.json",
+      "url": "Não localizada"
+    },
+    {
+      "id": "BRAPI-00521",
+      "arquivo": "chelfoapi/brapi-00521.json",
+      "url": "https://www.gov.br/mec/pt-br/mec-gestao-presente/documentos/cartilhausoapimecgestaopresente.pdf"
+    },
+    {
+      "id": "BRAPI-00522",
+      "arquivo": "chelfoapi/brapi-00522.json",
+      "url": "https://credmei.portaldoempreendedor.gov.br/solicitacao-service/swagger-html"
+    },
+    {
+      "id": "BRAPI-00523",
+      "arquivo": "chelfoapi/brapi-00523.json",
+      "url": "http://www.transparencia.mpf.mp.br/"
+    },
+    {
+      "id": "BRAPI-00524",
+      "arquivo": "chelfoapi/brapi-00524.json",
+      "url": "https://github.com/mcp-dir/mpf_certidao-mcp"
+    },
+    {
+      "id": "BRAPI-00526",
+      "arquivo": "chelfoapi/brapi-00526.json",
+      "url": "https://dados.gov.br/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00527",
+      "arquivo": "chelfoapi/brapi-00527.json",
+      "url": "https://contratos.comprasnet.gov.br/api/docs"
+    },
+    {
+      "id": "BRAPI-00528",
+      "arquivo": "chelfoapi/brapi-00528.json",
+      "url": "https://api-publica.obrasgov.gestao.gov.br/obras"
+    },
+    {
+      "id": "BRAPI-00529",
+      "arquivo": "chelfoapi/brapi-00529.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/api-de-qualificacao-de-enderecos"
+    },
+    {
+      "id": "BRAPI-00530",
+      "arquivo": "chelfoapi/brapi-00530.json",
+      "url": "https://api.obrasgov.gestao.gov.br/obrasgov/api/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00531",
+      "arquivo": "chelfoapi/brapi-00531.json",
+      "url": "https://docs.autorizagov.estaleiro.serpro.gov.br/"
+    },
+    {
+      "id": "BRAPI-00532",
+      "arquivo": "chelfoapi/brapi-00532.json",
+      "url": "https://www.gov.br/compras/pt-br/acesso-a-informacao/manuais/manual-dados-abertos/manual-api-compras.pdf/@@download/file"
+    },
+    {
+      "id": "BRAPI-00533",
+      "arquivo": "chelfoapi/brapi-00533.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/acompanhamento-de-servico-publico-digital"
+    },
+    {
+      "id": "BRAPI-00534",
+      "arquivo": "chelfoapi/brapi-00534.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/avaliacao-de-servicos-publicos-digitais"
+    },
+    {
+      "id": "BRAPI-00535",
+      "arquivo": "chelfoapi/brapi-00535.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/api-de-servicos"
+    },
+    {
+      "id": "BRAPI-00536",
+      "arquivo": "chelfoapi/brapi-00536.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/api-dos-servicos-estaduais"
+    },
+    {
+      "id": "BRAPI-00537",
+      "arquivo": "chelfoapi/brapi-00537.json",
+      "url": "https://api.obrasgov.gestao.gov.br/obrasgov/api/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00538",
+      "arquivo": "chelfoapi/brapi-00538.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/dados-de-adesao-ao-sinapir"
+    },
+    {
+      "id": "BRAPI-00539",
+      "arquivo": "chelfoapi/brapi-00539.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/wsdenatran"
+    },
+    {
+      "id": "BRAPI-00540",
+      "arquivo": "chelfoapi/brapi-00540.json",
+      "url": "https://geo.infrasa.gov.br/server/rest/services/Hidrovias/MapServer"
+    },
+    {
+      "id": "BRAPI-00541",
+      "arquivo": "chelfoapi/brapi-00541.json",
+      "url": "https://geo.infrasa.gov.br/server/rest/services/SUMAD/INSTALACOES_PORTUARIAS_ANTAQ_2019/MapServer"
+    },
+    {
+      "id": "BRAPI-00542",
+      "arquivo": "chelfoapi/brapi-00542.json",
+      "url": "https://geo.infrasa.gov.br/server/rest/services/Hidrovias_Banco/FeatureServer"
+    },
+    {
+      "id": "BRAPI-00543",
+      "arquivo": "chelfoapi/brapi-00543.json",
+      "url": "https://dados.mma.gov.br/api/3/action/help_show?name=package_list"
+    },
+    {
+      "id": "BRAPI-00544",
+      "arquivo": "chelfoapi/brapi-00544.json",
+      "url": "https://portal-api.sinir.gov.br/wp-content/uploads/2025/07/mtr-termo-de-uso-e-politica-de-privacidade-V4_24.05.2024.pdf"
+    },
+    {
+      "id": "BRAPI-00545",
+      "arquivo": "chelfoapi/brapi-00545.json",
+      "url": "https://simba.mpm.mp.br/"
+    },
+    {
+      "id": "BRAPI-00546",
+      "arquivo": "chelfoapi/brapi-00546.json",
+      "url": "https://manuais.processoeletronico.gov.br/pt-br/latest/TRAMITA.GOV.BR/index.html"
+    },
+    {
+      "id": "BRAPI-00547",
+      "arquivo": "chelfoapi/brapi-00547.json",
+      "url": "https://dadosabertos.mme.gov.br/km/api/1/util/snippet/api_info.html?resource_id=846f0690-fa44-4854-9d7c-a4010a256f04"
+    },
+    {
+      "id": "BRAPI-00548",
+      "arquivo": "chelfoapi/brapi-00548.json",
+      "url": "https://bibliotecadigital.dth.api.gov.br/oai/request?verb=Identify"
+    },
+    {
+      "id": "BRAPI-00549",
+      "arquivo": "chelfoapi/brapi-00549.json",
+      "url": "https://www1.siop.planejamento.gov.br/siopdoc/doku.php/orientacoes_de_acesso"
+    },
+    {
+      "id": "BRAPI-00550",
+      "arquivo": "chelfoapi/brapi-00550.json",
+      "url": "https://docs.ckan.org/en/2.11/api/"
+    },
+    {
+      "id": "BRAPI-00551",
+      "arquivo": "chelfoapi/brapi-00551.json",
+      "url": "https://docs.portosempapel.gov.br/webservices/"
+    },
+    {
+      "id": "BRAPI-00552",
+      "arquivo": "chelfoapi/brapi-00552.json",
+      "url": "https://docs.dataprev.gov.br/docs/comprev/"
+    },
+    {
+      "id": "BRAPI-00553",
+      "arquivo": "chelfoapi/brapi-00553.json",
+      "url": "https://apicadprev.trabalho.gov.br/api-docs"
+    },
+    {
+      "id": "BRAPI-00554",
+      "arquivo": "chelfoapi/brapi-00554.json",
+      "url": "https://aplicacao.itamaraty.gov.br/ApiConcordia/swagger/ui/index"
+    },
+    {
+      "id": "BRAPI-00555",
+      "arquivo": "chelfoapi/brapi-00555.json",
+      "url": "https://servicos-datasus.saude.gov.br/"
+    },
+    {
+      "id": "BRAPI-00556",
+      "arquivo": "chelfoapi/brapi-00556.json",
+      "url": "https://apidadosabertos.saude.gov.br/"
+    },
+    {
+      "id": "BRAPI-00557",
+      "arquivo": "chelfoapi/brapi-00557.json",
+      "url": "https://www.gov.br/transportes/pt-br/assuntos/dt-e/dte_avisos"
+    },
+    {
+      "id": "BRAPI-00558",
+      "arquivo": "chelfoapi/brapi-00558.json",
+      "url": "https://dados.gov.br/dados/conjuntos-dados/registros-no-ws-emplaca2"
+    },
+    {
+      "id": "BRAPI-00559",
+      "arquivo": "chelfoapi/brapi-00559.json",
+      "url": "https://dados.turismo.gov.br/ (Documentação CKAN padrão)"
+    },
+    {
+      "id": "BRAPI-00560",
+      "arquivo": "chelfoapi/brapi-00560.json",
+      "url": "https://www.gov.br/turismo/pt-br/acesso-a-informacao/acoes-e-programas/programas-projetos-acoes-obras-e-atividades/ficha-nacional-de-registro-de-hospedes/modulo-meio-de-hospedagem/meios-de-hospedagem-com-pms"
+    },
+    {
+      "id": "BRAPI-00561",
+      "arquivo": "chelfoapi/brapi-00561.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/cadastur-cadastro-de-prestadores-de-servicos-turisticos"
+    },
+    {
+      "id": "BRAPI-00562",
+      "arquivo": "chelfoapi/brapi-00562.json",
+      "url": "https://adm.trt24.jus.br/transparencia-api/v3/api-docs"
+    },
+    {
+      "id": "BRAPI-00563",
+      "arquivo": "chelfoapi/brapi-00563.json",
+      "url": "https://ontl.infrasa.gov.br/dados/consulta-a-base-de-dados/"
+    },
+    {
+      "id": "BRAPI-00564",
+      "arquivo": "chelfoapi/brapi-00564.json",
+      "url": "https://opinbrasil.atlassian.net/wiki/spaces/RDD/pages/753678"
+    },
+    {
+      "id": "BRAPI-00565",
+      "arquivo": "chelfoapi/brapi-00565.json",
+      "url": "https://opinbrasil.atlassian.net/wiki/spaces/RDD/pages/786475"
+    },
+    {
+      "id": "BRAPI-00566",
+      "arquivo": "chelfoapi/brapi-00566.json",
+      "url": "https://opinbrasil.atlassian.net/wiki/spaces/RDD/pages/4391146"
+    },
+    {
+      "id": "BRAPI-00567",
+      "arquivo": "chelfoapi/brapi-00567.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/antecedentes-criminais"
+    },
+    {
+      "id": "BRAPI-00568",
+      "arquivo": "chelfoapi/brapi-00568.json",
+      "url": "https://identidadenacionaldocs.mj.gov.br/policia-federal.html"
+    },
+    {
+      "id": "BRAPI-00569",
+      "arquivo": "chelfoapi/brapi-00569.json",
+      "url": "https://portosrio.gov.br/pt-br/acesso-a-informacao/acesso-automatizado-por-sistemas-externos/api-diarias-e-passagens"
+    },
+    {
+      "id": "BRAPI-00570",
+      "arquivo": "chelfoapi/brapi-00570.json",
+      "url": "https://portalmodelo.interlegis.leg.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00571",
+      "arquivo": "chelfoapi/brapi-00571.json",
+      "url": "https://apis.bndes.gov.br/store/apis/info?name=Cobran%C3%A7a&version=v1&provider=s-wso2-01"
+    },
+    {
+      "id": "BRAPI-00572",
+      "arquivo": "chelfoapi/brapi-00572.json",
+      "url": "http://docs.portalunico.siscomex.gov.br/api/dimp/receita/"
+    },
+    {
+      "id": "BRAPI-00573",
+      "arquivo": "chelfoapi/brapi-00573.json",
+      "url": "http://docs.portalunico.siscomex.gov.br/"
+    },
+    {
+      "id": "BRAPI-00574",
+      "arquivo": "chelfoapi/brapi-00574.json",
+      "url": "https://dadosabertos.presidencia.gov.br/api/3/action/help_show?name=help_show (padrão CKAN)"
+    },
+    {
+      "id": "BRAPI-00575",
+      "arquivo": "chelfoapi/brapi-00575.json",
+      "url": "https://autocontrole.agricultura.gov.br/GuiaUtilizacaoAutocontrolev142.pdf"
+    },
+    {
+      "id": "BRAPI-00576",
+      "arquivo": "chelfoapi/brapi-00576.json",
+      "url": "https://portal.stf.jus.br/textos/verTexto.asp?servico=processoIntegracaoEntesAssociados&pagina=stf_tribunais"
+    },
+    {
+      "id": "BRAPI-00577",
+      "arquivo": "chelfoapi/brapi-00577.json",
+      "url": "https://portal.stf.jus.br/textos/verTexto.asp?servico=processoIntegracaoInformacaoGeral&pagina=mni"
+    },
+    {
+      "id": "BRAPI-00578",
+      "arquivo": "chelfoapi/brapi-00578.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/carteira-de-documentos-gov-br-wallet"
+    },
+    {
+      "id": "BRAPI-00579",
+      "arquivo": "chelfoapi/brapi-00579.json",
+      "url": "https://consumidor.gov.br/pages/principal/documentacao-api"
+    },
+    {
+      "id": "BRAPI-00580",
+      "arquivo": "chelfoapi/brapi-00580.json",
+      "url": "https://www.trt8.jus.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00581",
+      "arquivo": "chelfoapi/brapi-00581.json",
+      "url": "https://www.trt8.jus.br/servicos/api-publica-do-trt8"
+    },
+    {
+      "id": "BRAPI-00582",
+      "arquivo": "chelfoapi/brapi-00582.json",
+      "url": "https://apidatalake.tesouro.gov.br/docs/custos/"
+    },
+    {
+      "id": "BRAPI-00583",
+      "arquivo": "chelfoapi/brapi-00583.json",
+      "url": "https://pagtesouro.tesouro.gov.br/docs/orgao"
+    },
+    {
+      "id": "BRAPI-00584",
+      "arquivo": "chelfoapi/brapi-00584.json",
+      "url": "https://apidatalake.tesouro.gov.br/docs/sadipem/"
+    },
+    {
+      "id": "BRAPI-00585",
+      "arquivo": "chelfoapi/brapi-00585.json",
+      "url": "https://apidatalake.tesouro.gov.br/docs/siconfi/"
+    },
+    {
+      "id": "BRAPI-00586",
+      "arquivo": "chelfoapi/brapi-00586.json",
+      "url": "https://webservice.sisgru.tesouro.gov.br/sisgru/services/v1/docs/sisgru_ws_specs.html"
+    },
+    {
+      "id": "BRAPI-00587",
+      "arquivo": "chelfoapi/brapi-00587.json",
+      "url": "https://adm.senado.gov.br/adm-dadosabertos/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00588",
+      "arquivo": "chelfoapi/brapi-00588.json",
+      "url": "https://legis.senado.leg.br/dadosabertos/api-docs/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00589",
+      "arquivo": "chelfoapi/brapi-00589.json",
+      "url": "https://www12.senado.leg.br/dados-abertos/legislativo/legislacao/acervo-do-portal-lexml"
+    },
+    {
+      "id": "BRAPI-00590",
+      "arquivo": "chelfoapi/brapi-00590.json",
+      "url": "https://store.serpro.gov.br/datavalid/product/datavalid-en"
+    },
+    {
+      "id": "BRAPI-00591",
+      "arquivo": "chelfoapi/brapi-00591.json",
+      "url": "https://www.gov.br/conecta/catalogo/apis/consulta-cnpj"
+    },
+    {
+      "id": "BRAPI-00592",
+      "arquivo": "chelfoapi/brapi-00592.json",
+      "url": "https://loja.serpro.gov.br/consulta-cpf/product/consultacpf"
+    },
+    {
+      "id": "BRAPI-00593",
+      "arquivo": "chelfoapi/brapi-00593.json",
+      "url": "https://loja.serpro.gov.br/"
+    },
+    {
+      "id": "BRAPI-00594",
+      "arquivo": "chelfoapi/brapi-00594.json",
+      "url": "https://loja.serpro.gov.br/integra-contador/product/integracontador"
+    },
+    {
+      "id": "BRAPI-00595",
+      "arquivo": "chelfoapi/brapi-00595.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00596",
+      "arquivo": "chelfoapi/brapi-00596.json",
+      "url": "https://geoserver.car.gov.br/geoserver/web/"
+    },
+    {
+      "id": "BRAPI-00597",
+      "arquivo": "chelfoapi/brapi-00597.json",
+      "url": "https://opendata.sgb.gov.br/pages/servicos-ogc/"
+    },
+    {
+      "id": "BRAPI-00598",
+      "arquivo": "chelfoapi/brapi-00598.json",
+      "url": "https://opendata.sgb.gov.br/"
+    },
+    {
+      "id": "BRAPI-00599",
+      "arquivo": "chelfoapi/brapi-00599.json",
+      "url": "https://rigeo.sgb.gov.br/server/"
+    },
+    {
+      "id": "BRAPI-00600",
+      "arquivo": "chelfoapi/brapi-00600.json",
+      "url": "https://opendata.sgb.gov.br/pages/servicos-ogc/"
+    },
+    {
+      "id": "BRAPI-00601",
+      "arquivo": "chelfoapi/brapi-00601.json",
+      "url": "https://geoportal.sgb.gov.br/server/rest/services"
+    },
+    {
+      "id": "BRAPI-00602",
+      "arquivo": "chelfoapi/brapi-00602.json",
+      "url": "https://geoservicos.sgb.gov.br/ogcapi/openapi?f=html"
+    },
+    {
+      "id": "BRAPI-00603",
+      "arquivo": "chelfoapi/brapi-00603.json",
+      "url": "https://api-servicos.trt7.jus.br/barramento-egestao/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00604",
+      "arquivo": "chelfoapi/brapi-00604.json",
+      "url": "https://app.swaggerhub.com/apis/join_tecnologia/idjovem/1.0.0"
+    },
+    {
+      "id": "BRAPI-00605",
+      "arquivo": "chelfoapi/brapi-00605.json",
+      "url": "https://www.gov.br/susep/pt-br/assuntos/corretor-de-seguros/instrucoes-para-extracao-da-base-de-corretoras-por-seguradoras"
+    },
+    {
+      "id": "BRAPI-00606",
+      "arquivo": "chelfoapi/brapi-00606.json",
+      "url": "http://www.gov.br/susep/pt-br/arquivos/arquivos-sro/registradoras/anexo_iv-3_v2.pdf/@@display-file/file"
+    },
+    {
+      "id": "BRAPI-00607",
+      "arquivo": "chelfoapi/brapi-00607.json",
+      "url": "http://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00608",
+      "arquivo": "chelfoapi/brapi-00608.json",
+      "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
+    },
+    {
+      "id": "BRAPI-00609",
+      "arquivo": "chelfoapi/brapi-00609.json",
+      "url": "https://tesjmu.stm.jus.br/tesjmu/vocab/sobre.php"
+    },
+    {
+      "id": "BRAPI-00610",
+      "arquivo": "chelfoapi/brapi-00610.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#calculo-de-debito"
+    },
+    {
+      "id": "BRAPI-00611",
+      "arquivo": "chelfoapi/brapi-00611.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#consultar-consolidada-de-pessoa-juridica"
+    },
+    {
+      "id": "BRAPI-00612",
+      "arquivo": "chelfoapi/brapi-00612.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#consultar-acordaos"
+    },
+    {
+      "id": "BRAPI-00613",
+      "arquivo": "chelfoapi/brapi-00613.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#consultar-atos-normativos-do-tcu"
+    },
+    {
+      "id": "BRAPI-00614",
+      "arquivo": "chelfoapi/brapi-00614.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#licitacoes-e-compras-diretas-do-tcu"
+    },
+    {
+      "id": "BRAPI-00615",
+      "arquivo": "chelfoapi/brapi-00615.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#pauta-das-sessoes"
+    },
+    {
+      "id": "BRAPI-00616",
+      "arquivo": "chelfoapi/brapi-00616.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#sancoes-e-condenacoes"
+    },
+    {
+      "id": "BRAPI-00617",
+      "arquivo": "chelfoapi/brapi-00617.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#solicitacoes-do-congresso-nacional"
+    },
+    {
+      "id": "BRAPI-00618",
+      "arquivo": "chelfoapi/brapi-00618.json",
+      "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#termos-contratuais-do-tcu"
+    },
+    {
+      "id": "BRAPI-00619",
+      "arquivo": "chelfoapi/brapi-00619.json",
+      "url": "https://www.trf1.jus.br/trf1/api-noticias-institucionais"
+    },
+    {
+      "id": "BRAPI-00620",
+      "arquivo": "chelfoapi/brapi-00620.json",
+      "url": "https://www.trf2.jus.br/trf2/artigo/coport/balcao-jus"
+    },
+    {
+      "id": "BRAPI-00621",
+      "arquivo": "chelfoapi/brapi-00621.json",
+      "url": "https://github.com/trf2-jus-br/eproc-api"
+    },
+    {
+      "id": "BRAPI-00622",
+      "arquivo": "chelfoapi/brapi-00622.json",
+      "url": "https://fabrica-de-calculos.app.trf3.jus.br/docs/introducao.html"
+    },
+    {
+      "id": "BRAPI-00623",
+      "arquivo": "chelfoapi/brapi-00623.json",
+      "url": "https://status.trf3.jus.br/"
+    },
+    {
+      "id": "BRAPI-00624",
+      "arquivo": "chelfoapi/brapi-00624.json",
+      "url": "https://www.trf4.jus.br/trf4/controlador.php?acao=pagina_visualizar&id_pagina=5274"
+    },
+    {
+      "id": "BRAPI-00625",
+      "arquivo": "chelfoapi/brapi-00625.json",
+      "url": "https://certidaoprecatorio-api.trf5.jus.br/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00626",
+      "arquivo": "chelfoapi/brapi-00626.json",
+      "url": "https://juliapesquisa.trf5.jus.br/julia-pesquisa/pesquisa"
+    },
+    {
+      "id": "BRAPI-00627",
+      "arquivo": "chelfoapi/brapi-00627.json",
+      "url": "https://govti.trf5.jus.br/dados-abertos/59-acesso-automatizado-por-sistemas-externos"
+    },
+    {
+      "id": "BRAPI-00628",
+      "arquivo": "chelfoapi/brapi-00628.json",
+      "url": "https://portal.trf6.jus.br/portal-da-transparencia/tecnologia-da-informacao-e-comunicacao-2/dadosabertos/"
+    },
+    {
+      "id": "BRAPI-00629",
+      "arquivo": "chelfoapi/brapi-00629.json",
+      "url": "https://atosnormativos.trt10.jus.br/"
+    },
+    {
+      "id": "BRAPI-00630",
+      "arquivo": "chelfoapi/brapi-00630.json",
+      "url": "https://pje.trt10.jus.br/consultaprocessual/"
+    },
+    {
+      "id": "BRAPI-00631",
+      "arquivo": "chelfoapi/brapi-00631.json",
+      "url": "https://portal.trt11.jus.br/index.php/transparencia/dados-abertos-e-api-s-publicas"
+    },
+    {
+      "id": "BRAPI-00632",
+      "arquivo": "chelfoapi/brapi-00632.json",
+      "url": "https://portal.trt11.jus.br/index.php/transparencia/dados-abertos-e-api-s-publicas"
+    },
+    {
+      "id": "BRAPI-00633",
+      "arquivo": "chelfoapi/brapi-00633.json",
+      "url": "https://portal.trt12.jus.br/solucoes-implementadas/acervo-digital"
+    },
+    {
+      "id": "BRAPI-00634",
+      "arquivo": "chelfoapi/brapi-00634.json",
+      "url": "https://portal.trt12.jus.br/dados-abertos/swagger-ui/index.html"
+    },
+    {
+      "id": "BRAPI-00635",
+      "arquivo": "chelfoapi/brapi-00635.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00636",
+      "arquivo": "chelfoapi/brapi-00636.json",
+      "url": "https://trt15.jus.br/transparencia/dados-abertos-documentacao-webservice"
+    },
+    {
+      "id": "BRAPI-00637",
+      "arquivo": "chelfoapi/brapi-00637.json",
+      "url": "https://www.cnj.jus.br/arquivos-do-modelo-nacional-de-interoperabilidade/"
+    },
+    {
+      "id": "BRAPI-00638",
+      "arquivo": "chelfoapi/brapi-00638.json",
+      "url": "https://www.trt16.jus.br/transparencia/dados-abertos/api/contrato"
+    },
+    {
+      "id": "BRAPI-00639",
+      "arquivo": "chelfoapi/brapi-00639.json",
+      "url": "https://www.trt16.jus.br/transparencia/dados-abertos/api/licitacao"
+    },
+    {
+      "id": "BRAPI-00640",
+      "arquivo": "chelfoapi/brapi-00640.json",
+      "url": "https://pje.trt16.jus.br/pje-certidoes-api/api/certidoes/trabalhistas/"
+    },
+    {
+      "id": "BRAPI-00641",
+      "arquivo": "chelfoapi/brapi-00641.json",
+      "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/modelo-nacional-de-interoperabilidade-mni/"
+    },
+    {
+      "id": "BRAPI-00642",
+      "arquivo": "chelfoapi/brapi-00642.json",
+      "url": "https://evy.trt19.jus.br/"
+    },
+    {
+      "id": "BRAPI-00643",
+      "arquivo": "chelfoapi/brapi-00643.json",
+      "url": "https://pje.trt19.jus.br/consultaprocessual/"
+    },
+    {
+      "id": "BRAPI-00644",
+      "arquivo": "chelfoapi/brapi-00644.json",
+      "url": "https://www.trt1.jus.br/documents/d/scr-gab/manual-berna"
+    },
+    {
+      "id": "BRAPI-00645",
+      "arquivo": "chelfoapi/brapi-00645.json",
+      "url": "https://www.trt1.jus.br/acesso-automatizado-por-sistemas-externos"
+    },
+    {
+      "id": "BRAPI-00646",
+      "arquivo": "chelfoapi/brapi-00646.json",
+      "url": "https://www.trt20.jus.br/transparencia/tecnologia-da-informacao/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00647",
+      "arquivo": "chelfoapi/brapi-00647.json",
+      "url": "https://www.trt20.jus.br/transparencia/tecnologia-da-informacao/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00648",
+      "arquivo": "chelfoapi/brapi-00648.json",
+      "url": "https://www.trt21.jus.br/transparencia/acesso-informacao/acesso-automatizado-por-sistemas-externos"
+    },
+    {
+      "id": "BRAPI-00649",
+      "arquivo": "chelfoapi/brapi-00649.json",
+      "url": "https://www.trt22.jus.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00651",
+      "arquivo": "chelfoapi/brapi-00651.json",
+      "url": "https://portal.trt23.jus.br/portal/reports"
+    },
+    {
+      "id": "BRAPI-00652",
+      "arquivo": "chelfoapi/brapi-00652.json",
+      "url": "https://ww2.trt2.jus.br/fileadmin/licitacoes/Termos_contratuais/2024/CT2024015.pdf"
+    },
+    {
+      "id": "BRAPI-00653",
+      "arquivo": "chelfoapi/brapi-00653.json",
+      "url": "https://ww2.trt2.jus.br/transparencia/transparencia-e-prestacao-de-contas/tecnologia-de-informacao-e-comunicacao/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00654",
+      "arquivo": "chelfoapi/brapi-00654.json",
+      "url": "https://www.trt5.jus.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00655",
+      "arquivo": "chelfoapi/brapi-00655.json",
+      "url": "https://www.trt6.jus.br/portal/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00656",
+      "arquivo": "chelfoapi/brapi-00656.json",
+      "url": "https://www.trt6.jus.br/portal/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00657",
+      "arquivo": "chelfoapi/brapi-00657.json",
+      "url": "https://www.trt9.jus.br/portal/pagina.xhtml?secao=168&pagina=FALCAO"
+    },
+    {
+      "id": "BRAPI-00658",
+      "arquivo": "chelfoapi/brapi-00658.json",
+      "url": "https://pje.trt9.jus.br/pje-acervodigital-api/"
+    },
+    {
+      "id": "BRAPI-00659",
+      "arquivo": "chelfoapi/brapi-00659.json",
+      "url": "https://www.trt9.jus.br/transparencia/api.xhtml"
+    },
+    {
+      "id": "BRAPI-00660",
+      "arquivo": "chelfoapi/brapi-00660.json",
+      "url": "https://aplicacao7.tst.jus.br/sacwebcp/api-docs/index.html"
+    },
+    {
+      "id": "BRAPI-00661",
+      "arquivo": "chelfoapi/brapi-00661.json",
+      "url": "https://github.com/matematicsolutions/br-eli-mcp/blob/main/SOURCES.md"
+    },
+    {
+      "id": "BRAPI-00662",
+      "arquivo": "chelfoapi/brapi-00662.json",
+      "url": "https://github.com/tst-labs/esocial"
+    },
+    {
+      "id": "BRAPI-00663",
+      "arquivo": "chelfoapi/brapi-00663.json",
+      "url": "https://pje.trt3.jus.br/pje-acervodigital-api/"
+    },
+    {
+      "id": "BRAPI-00664",
+      "arquivo": "chelfoapi/brapi-00664.json",
+      "url": "https://www.trt4.jus.br/portais/trt4/dados-abertos-documentacao-api-licitacoes-contratos"
+    },
+    {
+      "id": "BRAPI-00665",
+      "arquivo": "chelfoapi/brapi-00665.json",
+      "url": "https://www.trt4.jus.br/portais/trt4/dados-abertos-documentacao-api-sessoes-julgamento"
+    },
+    {
+      "id": "BRAPI-00666",
+      "arquivo": "chelfoapi/brapi-00666.json",
+      "url": "https://www.trt4.jus.br/portais/trt4/dados-abertos-documentacao-api-unidades-judiciarias"
+    },
+    {
+      "id": "BRAPI-00668",
+      "arquivo": "chelfoapi/brapi-00668.json",
+      "url": "https://www.postman.com/actio-software/actio-software/collection/j1f03zb/actio-software-api-documentation"
+    },
+    {
+      "id": "BRAPI-00669",
+      "arquivo": "chelfoapi/brapi-00669.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00670",
+      "arquivo": "chelfoapi/brapi-00670.json",
+      "url": "https://docs.pkp.sfu.ca/dev/api/"
+    },
+    {
+      "id": "BRAPI-00671",
+      "arquivo": "chelfoapi/brapi-00671.json",
+      "url": "https://www.repositorio.ufal.br/oai/request?verb=Identify"
+    },
+    {
+      "id": "BRAPI-00672",
+      "arquivo": "chelfoapi/brapi-00672.json",
+      "url": "https://wiki.lyrasis.org/display/DSDOC7x/REST+API"
+    },
+    {
+      "id": "BRAPI-00673",
+      "arquivo": "chelfoapi/brapi-00673.json",
+      "url": "https://docs.pkp.sfu.ca/dev/api/"
+    },
+    {
+      "id": "BRAPI-00674",
+      "arquivo": "chelfoapi/brapi-00674.json",
+      "url": "https://docs.pkp.sfu.ca/dev/api/"
+    },
+    {
+      "id": "BRAPI-00675",
+      "arquivo": "chelfoapi/brapi-00675.json",
+      "url": "https://docs.ckan.org/en/2.7/api/"
+    },
+    {
+      "id": "BRAPI-00676",
+      "arquivo": "chelfoapi/brapi-00676.json",
+      "url": "http://docs.ckan.org/en/latest/api/"
+    },
+    {
+      "id": "BRAPI-00677",
+      "arquivo": "chelfoapi/brapi-00677.json",
+      "url": "https://dados.uff.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00678",
+      "arquivo": "chelfoapi/brapi-00678.json",
+      "url": "http://docs.ckan.org/en/latest/api/"
+    },
+    {
+      "id": "BRAPI-00679",
+      "arquivo": "chelfoapi/brapi-00679.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00680",
+      "arquivo": "chelfoapi/brapi-00680.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00681",
+      "arquivo": "chelfoapi/brapi-00681.json",
+      "url": "https://docs.ckan.org/en/latest/api/"
+    },
+    {
+      "id": "BRAPI-00682",
+      "arquivo": "chelfoapi/brapi-00682.json",
+      "url": "https://dados.unifei.edu.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00683",
+      "arquivo": "chelfoapi/brapi-00683.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00684",
+      "arquivo": "chelfoapi/brapi-00684.json",
+      "url": "https://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00685",
+      "arquivo": "chelfoapi/brapi-00685.json",
+      "url": "https://dados.ufmg.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00686",
+      "arquivo": "chelfoapi/brapi-00686.json",
+      "url": "http://docs.ckan.org/en/2.11/api/"
+    },
+    {
+      "id": "BRAPI-00687",
+      "arquivo": "chelfoapi/brapi-00687.json",
+      "url": "https://dadosabertos.ufpb.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00688",
+      "arquivo": "chelfoapi/brapi-00688.json",
+      "url": "https://repositorio.ufpb.br/oai/request?verb=Identify"
+    },
+    {
+      "id": "BRAPI-00689",
+      "arquivo": "chelfoapi/brapi-00689.json",
+      "url": "https://dados.ufpel.tche.br/api/3"
+    },
+    {
+      "id": "BRAPI-00690",
+      "arquivo": "chelfoapi/brapi-00690.json",
+      "url": "https://dados.ufpe.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00691",
+      "arquivo": "chelfoapi/brapi-00691.json",
+      "url": "https://attena.ufpe.br/oai/request?verb=Identify"
+    },
+    {
+      "id": "BRAPI-00693",
+      "arquivo": "chelfoapi/brapi-00693.json",
+      "url": "https://dados.ufpi.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00694",
+      "arquivo": "chelfoapi/brapi-00694.json",
+      "url": "https://repositorio.ufrn.br/server/oai/request?verb=Identify"
+    },
+    {
+      "id": "BRAPI-00695",
+      "arquivo": "chelfoapi/brapi-00695.json",
+      "url": "https://wiki.lyrasis.org/display/DSDOC7x/REST+API"
+    },
+    {
+      "id": "BRAPI-00696",
+      "arquivo": "chelfoapi/brapi-00696.json",
+      "url": "https://docs.pkp.sfu.ca/dev/api/"
+    },
+    {
+      "id": "BRAPI-00697",
+      "arquivo": "chelfoapi/brapi-00697.json",
+      "url": "https://docs.ckan.org/en/2.1/api/"
+    },
+    {
+      "id": "BRAPI-00698",
+      "arquivo": "chelfoapi/brapi-00698.json",
+      "url": "https://wiki.lyrasis.org/display/DSDOC7x/REST+API"
+    },
+    {
+      "id": "BRAPI-00699",
+      "arquivo": "chelfoapi/brapi-00699.json",
+      "url": "https://docs.pkp.sfu.ca/dev/api/"
+    },
+    {
+      "id": "BRAPI-00700",
+      "arquivo": "chelfoapi/brapi-00700.json",
+      "url": "https://dadosabertos.ufersa.edu.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00701",
+      "arquivo": "chelfoapi/brapi-00701.json",
+      "url": "https://dados.ufsm.br/api/3"
+    },
+    {
+      "id": "BRAPI-00702",
+      "arquivo": "chelfoapi/brapi-00702.json",
+      "url": "https://dados.ufscar.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00705",
+      "arquivo": "chelfoapi/brapi-00705.json",
+      "url": "https://wiki.lyrasis.org/display/DSDOC6x/REST+API"
+    },
+    {
+      "id": "BRAPI-00706",
+      "arquivo": "chelfoapi/brapi-00706.json",
+      "url": "https://docs.pkp.sfu.ca/dev/api/"
+    },
+    {
+      "id": "BRAPI-00707",
+      "arquivo": "chelfoapi/brapi-00707.json",
+      "url": "https://dados.ufu.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00708",
+      "arquivo": "chelfoapi/brapi-00708.json",
+      "url": "https://dados.ufpa.br/pt_BR/api/1/util/snippet/api_info.html"
+    },
+    {
+      "id": "BRAPI-00709",
+      "arquivo": "chelfoapi/brapi-00709.json",
+      "url": "https://wiki.lyrasis.org/display/DSDOC7x/REST+API"
+    },
+    {
+      "id": "BRAPI-00710",
+      "arquivo": "chelfoapi/brapi-00710.json",
+      "url": "https://docs.pkp.sfu.ca/dev/api/"
+    },
+    {
+      "id": "BRAPI-00711",
+      "arquivo": "chelfoapi/brapi-00711.json",
+      "url": "https://dados.univasf.edu.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00712",
+      "arquivo": "chelfoapi/brapi-00712.json",
+      "url": "https://dados.ufv.br/api/3/action/help_show?name=site_read"
+    },
+    {
+      "id": "BRAPI-00713",
+      "arquivo": "chelfoapi/brapi-00713.json",
+      "url": "http://docs.ckan.org/en/2.6/api/"
+    },
+    {
+      "id": "BRAPI-00714",
+      "arquivo": "chelfoapi/brapi-00714.json",
+      "url": "http://docs.ckan.org/en/2.11/api/"
+    },
+    {
+      "id": "BRAPI-00715",
+      "arquivo": "chelfoapi/brapi-00715.json",
+      "url": "https://www.cuitegi.pb.leg.br/open-data"
+    },
+    {
+      "id": "BRAPI-00716",
+      "arquivo": "chelfoapi/brapi-00716.json",
+      "url": "https://camaradeitatuba.pb.gov.br/portal-de-dados-abertos/dados-abertos-licitacoes/"
+    },
+    {
+      "id": "BRAPI-00717",
+      "arquivo": "chelfoapi/brapi-00717.json",
+      "url": "https://portal.tcm.sp.gov.br/Pagina/67782"
+    },
+    {
+      "id": "BRAPI-00718",
+      "arquivo": "chelfoapi/brapi-00718.json",
+      "url": "https://www.tcmgo.tc.br/site/portal/acesso-automatizado-aos-dados-abertos-api/"
+    },
+    {
+      "id": "BRAPI-00719",
+      "arquivo": "chelfoapi/brapi-00719.json",
+      "url": "https://docs.plataforma.betha.cloud/"
+    },
+    {
+      "id": "BRAPI-00720",
+      "arquivo": "chelfoapi/brapi-00720.json",
+      "url": "https://www.riobranco.ac.leg.br/open-data"
+    },
+    {
+      "id": "BRAPI-00721",
+      "arquivo": "chelfoapi/brapi-00721.json",
+      "url": "https://docs.plataforma.betha.cloud/docs/aplicacoes/studio/api/"
+    },
+    {
+      "id": "BRAPI-00722",
+      "arquivo": "chelfoapi/brapi-00722.json",
+      "url": "https://www.acessoinformacao.com.br/transparencia/entidades/al/conagreste/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00723",
+      "arquivo": "chelfoapi/brapi-00723.json",
+      "url": "https://acessoainformacao.inhapiprev.al.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00724",
+      "arquivo": "chelfoapi/brapi-00724.json",
+      "url": "https://transparencia.arapiraca.al.gov.br/lgpd/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00725",
+      "arquivo": "chelfoapi/brapi-00725.json",
+      "url": "https://transparencia.belem.al.leg.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00726",
+      "arquivo": "chelfoapi/brapi-00726.json",
+      "url": "https://transparencia.coitedonoia.al.gov.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00727",
+      "arquivo": "chelfoapi/brapi-00727.json",
+      "url": "https://transparencia.delmirogouveia.al.gov.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00728",
+      "arquivo": "chelfoapi/brapi-00728.json",
+      "url": "https://pntp.jacaredoshomens.al.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00729",
+      "arquivo": "chelfoapi/brapi-00729.json",
+      "url": "https://transparencia.junqueiro.al.gov.br/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00730",
+      "arquivo": "chelfoapi/brapi-00730.json",
+      "url": "https://transparencia.lagoadacanoa.al.gov.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00731",
+      "arquivo": "chelfoapi/brapi-00731.json",
+      "url": "https://acessoinformacao.com.br/transparencia/entidades/al/limoeirodeanadia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00732",
+      "arquivo": "chelfoapi/brapi-00732.json",
+      "url": "https://kd.dadosabertos.maceio.al.gov.br/api/3/action/help_show?name=package_list"
+    },
+    {
+      "id": "BRAPI-00733",
+      "arquivo": "chelfoapi/brapi-00733.json",
+      "url": "https://transparencia.maravilha.al.gov.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00734",
+      "arquivo": "chelfoapi/brapi-00734.json",
+      "url": "https://transparencia.pariconha.al.gov.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00735",
+      "arquivo": "chelfoapi/brapi-00735.json",
+      "url": "https://transparencia.penedo.al.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00736",
+      "arquivo": "chelfoapi/brapi-00736.json",
+      "url": "https://api.imap.org.br/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00737",
+      "arquivo": "chelfoapi/brapi-00737.json",
+      "url": "https://transparencia.quebrangulo.al.gov.br/lgpd/api"
+    },
+    {
+      "id": "BRAPI-00738",
+      "arquivo": "chelfoapi/brapi-00738.json",
+      "url": "https://saoluisdoquitunde.al.gov.br/api-de-dados-abertos"
+    },
+    {
+      "id": "BRAPI-00739",
+      "arquivo": "chelfoapi/brapi-00739.json",
+      "url": "https://transparencia.saomigueldoscampos.al.gov.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00740",
+      "arquivo": "chelfoapi/brapi-00740.json",
+      "url": "https://transparencia.saomigueldoscampos.al.gov.br/lgpd/api.php"
+    },
+    {
+      "id": "BRAPI-00742",
+      "arquivo": "chelfoapi/brapi-00742.json",
+      "url": "https://transparencia.uniaodospalmares.al.gov.br/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00743",
+      "arquivo": "chelfoapi/brapi-00743.json",
+      "url": "https://camaradealvaraes.am.gov.br/category/legislativo-municipal/"
+    },
+    {
+      "id": "BRAPI-00744",
+      "arquivo": "chelfoapi/brapi-00744.json",
+      "url": "https://camaraamatura.am.gov.br/api-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00745",
+      "arquivo": "chelfoapi/brapi-00745.json",
+      "url": "https://www.camaramanacapuru.am.gov.br/api/documentation"
+    },
+    {
+      "id": "BRAPI-00746",
+      "arquivo": "chelfoapi/brapi-00746.json",
+      "url": "https://camarademanaquiri.am.gov.br/vereadores/"
+    },
+    {
+      "id": "BRAPI-00747",
+      "arquivo": "chelfoapi/brapi-00747.json",
+      "url": "https://www.cmm.am.gov.br/rest-api/docs/"
+    },
+    {
+      "id": "BRAPI-00748",
+      "arquivo": "chelfoapi/brapi-00748.json",
+      "url": "https://camaranhamunda.am.gov.br/api-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00749",
+      "arquivo": "chelfoapi/brapi-00749.json",
+      "url": "https://cmpfg.am.gov.br/category/gestao-publica/"
+    },
+    {
+      "id": "BRAPI-00750",
+      "arquivo": "chelfoapi/brapi-00750.json",
+      "url": "https://camaradetabatinga.am.gov.br/api-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00751",
+      "arquivo": "chelfoapi/brapi-00751.json",
+      "url": "https://www.consorcioamazonialegal.gov.br/dados-abertos/api-dados-abertos-json"
+    },
+    {
+      "id": "BRAPI-00752",
+      "arquivo": "chelfoapi/brapi-00752.json",
+      "url": "https://gestao.cegep.inf.br:29920/transparencia/versaoJson/DadosAbertos/"
+    },
+    {
+      "id": "BRAPI-00753",
+      "arquivo": "chelfoapi/brapi-00753.json",
+      "url": "https://www.transparencia.am.gov.br/dados-abertos-2/"
+    },
+    {
+      "id": "BRAPI-00754",
+      "arquivo": "chelfoapi/brapi-00754.json",
+      "url": "https://coariprev.am.gov.br/api-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00755",
+      "arquivo": "chelfoapi/brapi-00755.json",
+      "url": "https://geoti.manaus.am.gov.br/arcgis/rest/services"
+    },
+    {
+      "id": "BRAPI-00756",
+      "arquivo": "chelfoapi/brapi-00756.json",
+      "url": "https://barreirinha.am.gov.br/mapa-do-site/"
+    },
+    {
+      "id": "BRAPI-00757",
+      "arquivo": "chelfoapi/brapi-00757.json",
+      "url": "https://www.carauari.am.gov.br/mapa-do-site/"
+    },
+    {
+      "id": "BRAPI-00758",
+      "arquivo": "chelfoapi/brapi-00758.json",
+      "url": "https://transparencia.coari.am.gov.br/index.php?class=Docs&method=onShow"
+    },
+    {
+      "id": "BRAPI-00759",
+      "arquivo": "chelfoapi/brapi-00759.json",
+      "url": "https://acessoainformacao.itamarati.am.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00760",
+      "arquivo": "chelfoapi/brapi-00760.json",
+      "url": "https://tabatinga.am.gov.br/api-dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00761",
+      "arquivo": "chelfoapi/brapi-00761.json",
+      "url": "https://transparencia.tefe.am.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00762",
+      "arquivo": "chelfoapi/brapi-00762.json",
+      "url": "https://urucara.am.gov.br/mapa-do-site/"
+    },
+    {
+      "id": "BRAPI-00764",
+      "arquivo": "chelfoapi/brapi-00764.json",
+      "url": "https://macapa.ap.gov.br/secretaria-de-financas-adota-novo-sistema-de-emissao-de-nota-fiscal-eletronica-e-gestao-de-tributos/"
+    },
+    {
+      "id": "BRAPI-00765",
+      "arquivo": "chelfoapi/brapi-00765.json",
+      "url": "https://dados-publicos.tjap.jus.br/"
+    },
+    {
+      "id": "BRAPI-00766",
+      "arquivo": "chelfoapi/brapi-00766.json",
+      "url": "https://cmlf.ba.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00767",
+      "arquivo": "chelfoapi/brapi-00767.json",
+      "url": "https://api.imap.org.br/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00768",
+      "arquivo": "chelfoapi/brapi-00768.json",
+      "url": "https://transparencias.hubinovacoes.com.br/api"
+    },
+    {
+      "id": "BRAPI-00769",
+      "arquivo": "chelfoapi/brapi-00769.json",
+      "url": "https://aguafria.ba.gov.br/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00770",
+      "arquivo": "chelfoapi/brapi-00770.json",
+      "url": "https://geo.salvador.ba.gov.br/arcgis/help/en/rest/router.html"
+    },
+    {
+      "id": "BRAPI-00771",
+      "arquivo": "chelfoapi/brapi-00771.json",
+      "url": "http://vitoriadaconquista-ba.portaltp.com.br/api/orcamento/api-orcamentoreceitas.aspx"
+    },
+    {
+      "id": "BRAPI-00772",
+      "arquivo": "chelfoapi/brapi-00772.json",
+      "url": "https://transparencia.saofranciscodoconde.ba.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00773",
+      "arquivo": "chelfoapi/brapi-00773.json",
+      "url": "https://nfse.sefaz.salvador.ba.gov.br/OnLine/Institucional/FaqTecnologia.aspx"
+    },
+    {
+      "id": "BRAPI-00774",
+      "arquivo": "chelfoapi/brapi-00774.json",
+      "url": "https://www.cmaracati.ce.gov.br/dadosabertos"
+    },
+    {
+      "id": "BRAPI-00775",
+      "arquivo": "chelfoapi/brapi-00775.json",
+      "url": "https://www.camarabrejosanto.ce.gov.br/dadosabertos"
+    },
+    {
+      "id": "BRAPI-00776",
+      "arquivo": "chelfoapi/brapi-00776.json",
+      "url": "https://api.cmfor.ce.gov.br/transparencia/api-docs/"
+    },
+    {
+      "id": "BRAPI-00777",
+      "arquivo": "chelfoapi/brapi-00777.json",
+      "url": "https://www.cgirsrms.ce.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00778",
+      "arquivo": "chelfoapi/brapi-00778.json",
+      "url": "https://cpsmquixada.ce.gov.br/dadosabertos.php"
+    },
+    {
+      "id": "BRAPI-00779",
+      "arquivo": "chelfoapi/brapi-00779.json",
+      "url": "https://dados.fortaleza.ce.gov.br/docs-api"
+    },
+    {
+      "id": "BRAPI-00780",
+      "arquivo": "chelfoapi/brapi-00780.json",
+      "url": "https://ararenda.ce.gov.br/transparencia/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00781",
+      "arquivo": "chelfoapi/brapi-00781.json",
+      "url": "https://catunda.ce.gov.br/transparencia/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00782",
+      "arquivo": "chelfoapi/brapi-00782.json",
+      "url": "https://www.jaguaribara.ce.gov.br/transparencia/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00783",
+      "arquivo": "chelfoapi/brapi-00783.json",
+      "url": "https://saoluisdocuru.ce.gov.br/transparencia/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00784",
+      "arquivo": "chelfoapi/brapi-00784.json",
+      "url": "https://ide.sefin.fortaleza.ce.gov.br/geoservicos"
+    },
+    {
+      "id": "BRAPI-00785",
+      "arquivo": "chelfoapi/brapi-00785.json",
+      "url": "https://api-dados-abertos.tce.ce.gov.br/sim/"
+    },
+    {
+      "id": "BRAPI-00786",
+      "arquivo": "chelfoapi/brapi-00786.json",
+      "url": "https://api-dados-abertos.tce.ce.gov.br/docs/"
+    },
+    {
+      "id": "BRAPI-00787",
+      "arquivo": "chelfoapi/brapi-00787.json",
+      "url": "https://docs.ckan.org/en/2.10/api/"
+    },
+    {
+      "id": "BRAPI-00788",
+      "arquivo": "chelfoapi/brapi-00788.json",
+      "url": "https://www.camaracariacica.es.gov.br/dados_abertos/api/webservice"
+    },
+    {
+      "id": "BRAPI-00789",
+      "arquivo": "chelfoapi/brapi-00789.json",
+      "url": "https://www.camaracariacica.es.gov.br/dados_abertos/api/webservice"
+    },
+    {
+      "id": "BRAPI-00790",
+      "arquivo": "chelfoapi/brapi-00790.json",
+      "url": "https://camaradrpreto.es.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00791",
+      "arquivo": "chelfoapi/brapi-00791.json",
+      "url": "https://www.camaraecoporanga.es.gov.br/transparencia/api"
+    },
+    {
+      "id": "BRAPI-00792",
+      "arquivo": "chelfoapi/brapi-00792.json",
+      "url": "https://cmg.es.gov.br/dados_abertos/api"
+    },
+    {
+      "id": "BRAPI-00793",
+      "arquivo": "chelfoapi/brapi-00793.json",
+      "url": "https://www.camaralinhares.es.gov.br/transparencia/contrato/dadosabertos/webservice"
+    },
+    {
+      "id": "BRAPI-00794",
+      "arquivo": "chelfoapi/brapi-00794.json",
+      "url": "https://www.cmva.es.gov.br/dados_abertos/api/webservice"
+    },
+    {
+      "id": "BRAPI-00795",
+      "arquivo": "chelfoapi/brapi-00795.json",
+      "url": "https://www.camaravilapavao.es.gov.br/transparencia/api/webservice"
+    },
+    {
+      "id": "BRAPI-00796",
+      "arquivo": "chelfoapi/brapi-00796.json",
+      "url": "https://www.cmv.es.gov.br/dados_abertos/api"
+    },
+    {
+      "id": "BRAPI-00797",
+      "arquivo": "chelfoapi/brapi-00797.json",
+      "url": "https://codeg.guarapari.es.gov.br/transparencia/api"
+    },
+    {
+      "id": "BRAPI-00798",
+      "arquivo": "chelfoapi/brapi-00798.json",
+      "url": "https://www.prodnorte.es.gov.br/dados_abertos/api/webservice"
+    },
+    {
+      "id": "BRAPI-00799",
+      "arquivo": "chelfoapi/brapi-00799.json",
+      "url": "https://www.prodnorte.es.gov.br/dados_abertos/api/webservice"
+    },
+    {
+      "id": "BRAPI-00800",
+      "arquivo": "chelfoapi/brapi-00800.json",
+      "url": "https://transparencia.cariacica.es.gov.br/DadosAbertos.Lista.aspx"
+    },
+    {
+      "id": "BRAPI-00801",
+      "arquivo": "chelfoapi/brapi-00801.json",
+      "url": "https://fundao.es.gov.br/dados_abertos/api"
+    },
+    {
+      "id": "BRAPI-00802",
+      "arquivo": "chelfoapi/brapi-00802.json",
+      "url": "https://guacui.es.gov.br/api.html"
+    },
+    {
+      "id": "BRAPI-00803",
+      "arquivo": "chelfoapi/brapi-00803.json",
+      "url": "https://www.guarapari.es.gov.br/dados_abertos/api/webservice"
+    },
+    {
+      "id": "BRAPI-00804",
+      "arquivo": "chelfoapi/brapi-00804.json",
+      "url": "https://www.itapemirim.es.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00805",
+      "arquivo": "chelfoapi/brapi-00805.json",
+      "url": "https://iuna.es.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00806",
+      "arquivo": "chelfoapi/brapi-00806.json",
+      "url": "https://www.saodomingosdonorte.es.gov.br/transparencia/api/webservice"
+    },
+    {
+      "id": "BRAPI-00807",
+      "arquivo": "chelfoapi/brapi-00807.json",
+      "url": "https://viana.es.gov.br/dados_abertos/api"
+    },
+    {
+      "id": "BRAPI-00808",
+      "arquivo": "chelfoapi/brapi-00808.json",
+      "url": "https://geoweb.vitoria.es.gov.br/api/search/definition/"
+    },
+    {
+      "id": "BRAPI-00809",
+      "arquivo": "chelfoapi/brapi-00809.json",
+      "url": "https://gis.vitoria.es.gov.br/arcgis/rest/services/Opendata/HubGeoweb/MapServer"
+    },
+    {
+      "id": "BRAPI-00810",
+      "arquivo": "chelfoapi/brapi-00810.json",
+      "url": "https://wstransparencia.vitoria.es.gov.br/Help"
+    },
+    {
+      "id": "BRAPI-00811",
+      "arquivo": "chelfoapi/brapi-00811.json",
+      "url": "https://acessoainformacao.aparecidadegoiania.go.leg.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00812",
+      "arquivo": "chelfoapi/brapi-00812.json",
+      "url": "https://acessoainformacao.rioverde.go.leg.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00813",
+      "arquivo": "chelfoapi/brapi-00813.json",
+      "url": "https://acessoainformacao.santabarbaradegoias.go.leg.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00814",
+      "arquivo": "chelfoapi/brapi-00814.json",
+      "url": "https://acessoainformacao.cisceno.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00815",
+      "arquivo": "chelfoapi/brapi-00815.json",
+      "url": "https://acessoainformacao.cidersp.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00816",
+      "arquivo": "chelfoapi/brapi-00816.json",
+      "url": "https://acessoainformacao.cidersp.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00817",
+      "arquivo": "chelfoapi/brapi-00817.json",
+      "url": "https://acessoainformacao.cigirs.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00818",
+      "arquivo": "chelfoapi/brapi-00818.json",
+      "url": "https://acessoainformacao.cisceno.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00819",
+      "arquivo": "chelfoapi/brapi-00819.json",
+      "url": "https://acessoainformacao.cisceno.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00820",
+      "arquivo": "chelfoapi/brapi-00820.json",
+      "url": "https://acessoainformacao.anapolis.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00821",
+      "arquivo": "chelfoapi/brapi-00821.json",
+      "url": "https://acessoainformacao.anapolis.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00822",
+      "arquivo": "chelfoapi/brapi-00822.json",
+      "url": "https://acessoainformacao.aparecidadoriodoce.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00823",
+      "arquivo": "chelfoapi/brapi-00823.json",
+      "url": "https://acessoainformacao.aparecidadoriodoce.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00824",
+      "arquivo": "chelfoapi/brapi-00824.json",
+      "url": "https://dadosabertos.goiania.go.gov.br/"
+    },
+    {
+      "id": "BRAPI-00825",
+      "arquivo": "chelfoapi/brapi-00825.json",
+      "url": "https://goiania.nucleogov.com.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00826",
+      "arquivo": "chelfoapi/brapi-00826.json",
+      "url": "https://acessoainformacao.santacruzdegoias.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00827",
+      "arquivo": "chelfoapi/brapi-00827.json",
+      "url": "https://acessoainformacao.trindade.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00828",
+      "arquivo": "chelfoapi/brapi-00828.json",
+      "url": "https://acessoainformacao.valparaisodegoias.go.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00829",
+      "arquivo": "chelfoapi/brapi-00829.json",
+      "url": "https://www.camaraimperatriz.ma.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00830",
+      "arquivo": "chelfoapi/brapi-00830.json",
+      "url": "https://webservice.giap.com.br/siafic/q/swagger-ui/#/"
+    },
+    {
+      "id": "BRAPI-00831",
+      "arquivo": "chelfoapi/brapi-00831.json",
+      "url": "https://consulmar.com.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00832",
+      "arquivo": "chelfoapi/brapi-00832.json",
+      "url": "https://caxiasprev.ma.gov.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00833",
+      "arquivo": "chelfoapi/brapi-00833.json",
+      "url": "https://www.acailandia.ma.gov.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00834",
+      "arquivo": "chelfoapi/brapi-00834.json",
+      "url": "https://transparencia.caxias.ma.gov.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00835",
+      "arquivo": "chelfoapi/brapi-00835.json",
+      "url": "https://dadosabertos-portalfacil.azurewebsites.net/97"
+    },
+    {
+      "id": "BRAPI-00836",
+      "arquivo": "chelfoapi/brapi-00836.json",
+      "url": "https://www.saoluis.ma.gov.br/portal/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00837",
+      "arquivo": "chelfoapi/brapi-00837.json",
+      "url": "https://transparencia.timon.ma.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00838",
+      "arquivo": "chelfoapi/brapi-00838.json",
+      "url": "https://www.transparencia.ma.gov.br/wp/apiportaldatransparncia"
+    },
+    {
+      "id": "BRAPI-00839",
+      "arquivo": "chelfoapi/brapi-00839.json",
+      "url": "https://transparencia.cisap.mg.gov.br/"
+    },
+    {
+      "id": "BRAPI-00840",
+      "arquivo": "chelfoapi/brapi-00840.json",
+      "url": "http://transparencia.cisleste.mg.gov.br/"
+    },
+    {
+      "id": "BRAPI-00841",
+      "arquivo": "chelfoapi/brapi-00841.json",
+      "url": "https://pt.cisver.mg.gov.br/"
+    },
+    {
+      "id": "BRAPI-00842",
+      "arquivo": "chelfoapi/brapi-00842.json",
+      "url": "https://prefeitura.pbh.gov.br/bhgeo/acesso-aos-dados"
+    },
+    {
+      "id": "BRAPI-00843",
+      "arquivo": "chelfoapi/brapi-00843.json",
+      "url": "https://databh.pbh.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00844",
+      "arquivo": "chelfoapi/brapi-00844.json",
+      "url": "https://domsilverio.mg.gov.br/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00845",
+      "arquivo": "chelfoapi/brapi-00845.json",
+      "url": "https://munhoz.mg.gov.br/api"
+    },
+    {
+      "id": "BRAPI-00846",
+      "arquivo": "chelfoapi/brapi-00846.json",
+      "url": "https://dados.ouropreto.mg.gov.br/"
+    },
+    {
+      "id": "BRAPI-00847",
+      "arquivo": "chelfoapi/brapi-00847.json",
+      "url": "https://servicos.pocosdecaldas.mg.gov.br/guia_dados_abertos"
+    },
+    {
+      "id": "BRAPI-00848",
+      "arquivo": "chelfoapi/brapi-00848.json",
+      "url": "https://prefeitura.pbh.gov.br/fazenda/bhiss"
+    },
+    {
+      "id": "BRAPI-00849",
+      "arquivo": "chelfoapi/brapi-00849.json",
+      "url": "https://dados.pbh.gov.br/dataset/gtfs; https://dados.pbh.gov.br/dataset/gtfs-rt"
+    },
+    {
+      "id": "BRAPI-00850",
+      "arquivo": "chelfoapi/brapi-00850.json",
+      "url": "https://www.dourados.ms.leg.br/open-data"
+    },
+    {
+      "id": "BRAPI-00851",
+      "arquivo": "chelfoapi/brapi-00851.json",
+      "url": "https://www.campogrande.ms.gov.br/acesso-automatizado-api/"
+    },
+    {
+      "id": "BRAPI-00852",
+      "arquivo": "chelfoapi/brapi-00852.json",
+      "url": "http://sit.pontapora.ms.gov.br/"
+    },
+    {
+      "id": "BRAPI-00853",
+      "arquivo": "chelfoapi/brapi-00853.json",
+      "url": "https://esfinge-online.tce.ms.gov.br/swagger-ui.html"
+    },
+    {
+      "id": "BRAPI-00854",
+      "arquivo": "chelfoapi/brapi-00854.json",
+      "url": "https://transparencia.agilicloud.com.br/docs/index.html"
+    },
+    {
+      "id": "BRAPI-00855",
+      "arquivo": "chelfoapi/brapi-00855.json",
+      "url": "https://docs.ckan.org/en/latest/api/ ou documentação interna do portal"
+    },
+    {
+      "id": "BRAPI-00856",
+      "arquivo": "chelfoapi/brapi-00856.json",
+      "url": "https://metadados.geo.mt.gov.br/geonetwork/doc/api/index.html"
+    },
+    {
+      "id": "BRAPI-00857",
+      "arquivo": "chelfoapi/brapi-00857.json",
+      "url": "https://www.rondonopolis.mt.gov.br/projetos/rondonopolis-mais-inteligente/siggeo/"
+    },
+    {
+      "id": "BRAPI-00858",
+      "arquivo": "chelfoapi/brapi-00858.json",
+      "url": "https://www.sema.mt.gov.br/transparencia/index.php/sistemas/simgeo"
+    },
+    {
+      "id": "BRAPI-00859",
+      "arquivo": "chelfoapi/brapi-00859.json",
+      "url": "https://dadosabertos.mt.gov.br/api/1/util/snippet/api_info.html"
+    },
+    {
+      "id": "BRAPI-00860",
+      "arquivo": "chelfoapi/brapi-00860.json",
+      "url": "https://cma.pa.gov.br/transparencia/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00861",
+      "arquivo": "chelfoapi/brapi-00861.json",
+      "url": "https://transparencia.parauapebas.pa.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00862",
+      "arquivo": "chelfoapi/brapi-00862.json",
+      "url": "https://transparencia.santarem.pa.gov.br/base-de-dados-abertos"
+    },
+    {
+      "id": "BRAPI-00863",
+      "arquivo": "chelfoapi/brapi-00863.json",
+      "url": "https://transparencia-api.elmartecnologia.com.br/swagger"
+    },
+    {
+      "id": "BRAPI-00864",
+      "arquivo": "chelfoapi/brapi-00864.json",
+      "url": "https://api.dadosabertos.codata.pb.gov.br/swagger/"
+    },
+    {
+      "id": "BRAPI-00865",
+      "arquivo": "chelfoapi/brapi-00865.json",
+      "url": "https://cabedelo.pb.gov.br/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00866",
+      "arquivo": "chelfoapi/brapi-00866.json",
+      "url": "https://campinagrande.pb.gov.br/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00867",
+      "arquivo": "chelfoapi/brapi-00867.json",
+      "url": "https://www.sousa.pb.gov.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00868",
+      "arquivo": "chelfoapi/brapi-00868.json",
+      "url": "https://dados.recife.pe.gov.br/en/api/1/util/snippet/api_info.html"
+    },
+    {
+      "id": "BRAPI-00869",
+      "arquivo": "chelfoapi/brapi-00869.json",
+      "url": "https://www.gespubliconline.com.br/pe/jaboatao-dos-guararapes/portal-transparencia-api-integracao/"
+    },
+    {
+      "id": "BRAPI-00870",
+      "arquivo": "chelfoapi/brapi-00870.json",
+      "url": "https://petrolina.pe.gov.br/dados-abertos-1/"
+    },
+    {
+      "id": "BRAPI-00871",
+      "arquivo": "chelfoapi/brapi-00871.json",
+      "url": "https://sistemas.tce.pe.gov.br/DadosAbertos/Exemplo!listar"
+    },
+    {
+      "id": "BRAPI-00872",
+      "arquivo": "chelfoapi/brapi-00872.json",
+      "url": "https://transparencia.pi.gov.br/"
+    },
+    {
+      "id": "BRAPI-00873",
+      "arquivo": "chelfoapi/brapi-00873.json",
+      "url": "https://servicos-semf.pmt.pi.gov.br/"
+    },
+    {
+      "id": "BRAPI-00874",
+      "arquivo": "chelfoapi/brapi-00874.json",
+      "url": "https://inthegra.strans.teresina.pi.gov.br/"
+    },
+    {
+      "id": "BRAPI-00875",
+      "arquivo": "chelfoapi/brapi-00875.json",
+      "url": "https://sistemas.tce.pi.gov.br/api/portaldacidadania/docs/"
+    },
+    {
+      "id": "BRAPI-00876",
+      "arquivo": "chelfoapi/brapi-00876.json",
+      "url": "https://api-equipamentourbano.curitiba.pr.gov.br/index.html"
+    },
+    {
+      "id": "BRAPI-00877",
+      "arquivo": "chelfoapi/brapi-00877.json",
+      "url": "https://api-reservadeespaco.curitiba.pr.gov.br/index.html"
+    },
+    {
+      "id": "BRAPI-00878",
+      "arquivo": "chelfoapi/brapi-00878.json",
+      "url": "https://api-portal-sima.curitiba.pr.gov.br/index.html"
+    },
+    {
+      "id": "BRAPI-00879",
+      "arquivo": "chelfoapi/brapi-00879.json",
+      "url": "https://api-guiaservicos.curitiba.pr.gov.br/index.html"
+    },
+    {
+      "id": "BRAPI-00880",
+      "arquivo": "chelfoapi/brapi-00880.json",
+      "url": "https://www.campolargo.pr.gov.br/transparencia/item/api-de-dados-abertos-suprimentos"
+    },
+    {
+      "id": "BRAPI-00881",
+      "arquivo": "chelfoapi/brapi-00881.json",
+      "url": "https://diario.ciasop.pr.gov.br/swagger"
+    },
+    {
+      "id": "BRAPI-00882",
+      "arquivo": "chelfoapi/brapi-00882.json",
+      "url": "https://lp.curitiba.pr.gov.br/notanacional/"
+    },
+    {
+      "id": "BRAPI-00883",
+      "arquivo": "chelfoapi/brapi-00883.json",
+      "url": "https://diario.cidadegaucha.pr.gov.br/swagger"
+    },
+    {
+      "id": "BRAPI-00884",
+      "arquivo": "chelfoapi/brapi-00884.json",
+      "url": "https://portal.londrina.pr.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00886",
+      "arquivo": "chelfoapi/brapi-00886.json",
+      "url": "https://transporteservico.urbs.curitiba.pr.gov.br/"
+    },
+    {
+      "id": "BRAPI-00887",
+      "arquivo": "chelfoapi/brapi-00887.json",
+      "url": "https://transparencia.ciscs.rj.gov.br/"
+    },
+    {
+      "id": "BRAPI-00888",
+      "arquivo": "chelfoapi/brapi-00888.json",
+      "url": "https://transparencia.cisnovo.rj.gov.br/"
+    },
+    {
+      "id": "BRAPI-00889",
+      "arquivo": "chelfoapi/brapi-00889.json",
+      "url": "https://dadosabertos.rj.gov.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00890",
+      "arquivo": "chelfoapi/brapi-00890.json",
+      "url": "https://docs.dados.rio/api-reference/overview"
+    },
+    {
+      "id": "BRAPI-00891",
+      "arquivo": "chelfoapi/brapi-00891.json",
+      "url": "https://docs.dados.rio/api-reference/overview"
+    },
+    {
+      "id": "BRAPI-00892",
+      "arquivo": "chelfoapi/brapi-00892.json",
+      "url": "https://www.data.rio/api/search/definition/"
+    },
+    {
+      "id": "BRAPI-00893",
+      "arquivo": "chelfoapi/brapi-00893.json",
+      "url": "https://transparencia.duquedecaxias.rj.gov.br/webrun/form.jsp?sys=LAI&action=openform&formID=500000361"
+    },
+    {
+      "id": "BRAPI-00894",
+      "arquivo": "chelfoapi/brapi-00894.json",
+      "url": "https://www.sigeo.niteroi.rj.gov.br/api/search/definition/"
+    },
+    {
+      "id": "BRAPI-00895",
+      "arquivo": "chelfoapi/brapi-00895.json",
+      "url": "https://github.com/RJ-SMTR/mobilidade-rio-api"
+    },
+    {
+      "id": "BRAPI-00897",
+      "arquivo": "chelfoapi/brapi-00897.json",
+      "url": "https://www.mossoro.rn.leg.br/inutilizados/open-data"
+    },
+    {
+      "id": "BRAPI-00898",
+      "arquivo": "chelfoapi/brapi-00898.json",
+      "url": "https://dadosabertos.topsolutionsrn.com.br/cmparnamirimrn/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00899",
+      "arquivo": "chelfoapi/brapi-00899.json",
+      "url": "https://www.saogoncalodoamarante.rn.leg.br/open-data"
+    },
+    {
+      "id": "BRAPI-00900",
+      "arquivo": "chelfoapi/brapi-00900.json",
+      "url": "https://cimop.com.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00901",
+      "arquivo": "chelfoapi/brapi-00901.json",
+      "url": "https://dadosabertos.topsolutionsrn.com.br/cimpotiguar/swagger/index.html"
+    },
+    {
+      "id": "BRAPI-00902",
+      "arquivo": "chelfoapi/brapi-00902.json",
+      "url": "https://www.prefeiturademossoro.com.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00903",
+      "arquivo": "chelfoapi/brapi-00903.json",
+      "url": "http://www.dadosabertos.natal.br/"
+    },
+    {
+      "id": "BRAPI-00904",
+      "arquivo": "chelfoapi/brapi-00904.json",
+      "url": "https://natal.rn.gov.br/sefin/documentos/rps/ManualDeIntegracao_Natal_v02.1_20251224.pdf"
+    },
+    {
+      "id": "BRAPI-00905",
+      "arquivo": "chelfoapi/brapi-00905.json",
+      "url": "https://transparencia.cinderondonia.ro.gov.br/mapa/"
+    },
+    {
+      "id": "BRAPI-00906",
+      "arquivo": "chelfoapi/brapi-00906.json",
+      "url": "https://transparencia.consorciopublico.ro.gov.br/api/doc"
+    },
+    {
+      "id": "BRAPI-00907",
+      "arquivo": "chelfoapi/brapi-00907.json",
+      "url": "https://transparencia.ariquemes.ro.gov.br/api/doc"
+    },
+    {
+      "id": "BRAPI-00908",
+      "arquivo": "chelfoapi/brapi-00908.json",
+      "url": "https://transparencia.buritis.ro.gov.br/api/doc"
+    },
+    {
+      "id": "BRAPI-00909",
+      "arquivo": "chelfoapi/brapi-00909.json",
+      "url": "https://transparencia.cacoal.ro.gov.br/portaltransparencia-api/swagger-ui.html"
+    },
+    {
+      "id": "BRAPI-00910",
+      "arquivo": "chelfoapi/brapi-00910.json",
+      "url": "https://transparencia.guajaramirim.ro.gov.br/api/doc"
+    },
+    {
+      "id": "BRAPI-00911",
+      "arquivo": "chelfoapi/brapi-00911.json",
+      "url": "https://transparencia.ji-parana.ro.gov.br/api/doc"
+    },
+    {
+      "id": "BRAPI-00912",
+      "arquivo": "chelfoapi/brapi-00912.json",
+      "url": "https://transparencia.ouropretodooeste.ro.gov.br/transparencia/versaoJson/DadosAbertos/"
+    },
+    {
+      "id": "BRAPI-00913",
+      "arquivo": "chelfoapi/brapi-00913.json",
+      "url": "https://transparencia.pimentabueno.ro.gov.br/api/doc"
+    },
+    {
+      "id": "BRAPI-00914",
+      "arquivo": "chelfoapi/brapi-00914.json",
+      "url": "https://api.portovelho.ro.gov.br/docs/api"
+    },
+    {
+      "id": "BRAPI-00915",
+      "arquivo": "chelfoapi/brapi-00915.json",
+      "url": "https://api-protocolo-digital.portovelho.ro.gov.br/"
+    },
+    {
+      "id": "BRAPI-00916",
+      "arquivo": "chelfoapi/brapi-00916.json",
+      "url": "https://transparencia.rolimdemoura.ro.gov.br/portaltransparencia-api/swagger-ui.html"
+    },
+    {
+      "id": "BRAPI-00917",
+      "arquivo": "chelfoapi/brapi-00917.json",
+      "url": "https://www.valedoanari.ro.gov.br/2026/05/15/regras-de-utilizacao/"
+    },
+    {
+      "id": "BRAPI-00918",
+      "arquivo": "chelfoapi/brapi-00918.json",
+      "url": "https://vilhena.ro.gov.br/wp-content/uploads/2026/05/Dados_Abertos_Vilhena.pdf"
+    },
+    {
+      "id": "BRAPI-00919",
+      "arquivo": "chelfoapi/brapi-00919.json",
+      "url": "https://www.boavista.rr.leg.br/open-data"
+    },
+    {
+      "id": "BRAPI-00920",
+      "arquivo": "chelfoapi/brapi-00920.json",
+      "url": "https://sapl.boavista.rr.leg.br/api/"
+    },
+    {
+      "id": "BRAPI-00921",
+      "arquivo": "chelfoapi/brapi-00921.json",
+      "url": "https://www.canta.rr.leg.br/transparencia/dados-abertos-1"
+    },
+    {
+      "id": "BRAPI-00922",
+      "arquivo": "chelfoapi/brapi-00922.json",
+      "url": "https://www.mucajai.rr.leg.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00923",
+      "arquivo": "chelfoapi/brapi-00923.json",
+      "url": "https://www.normandia.rr.leg.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00924",
+      "arquivo": "chelfoapi/brapi-00924.json",
+      "url": "https://www.legisrorainopolis.com.br/transparencia/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00925",
+      "arquivo": "chelfoapi/brapi-00925.json",
+      "url": "https://www.saojoaodabaliza.rr.leg.br/open-data"
+    },
+    {
+      "id": "BRAPI-00926",
+      "arquivo": "chelfoapi/brapi-00926.json",
+      "url": "https://www.portalcr2.com.br/dados-abertos/dados-abertos-boa-vista"
+    },
+    {
+      "id": "BRAPI-00927",
+      "arquivo": "chelfoapi/brapi-00927.json",
+      "url": "https://dadosabertos-portalfacil.azurewebsites.net/623"
+    },
+    {
+      "id": "BRAPI-00928",
+      "arquivo": "chelfoapi/brapi-00928.json",
+      "url": "https://rorainopolis.rr.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00929",
+      "arquivo": "chelfoapi/brapi-00929.json",
+      "url": "https://grd.defesacivil.rs.gov.br/server/sdk/rest/02ss/02ss00000057000000.htm"
+    },
+    {
+      "id": "BRAPI-00930",
+      "arquivo": "chelfoapi/brapi-00930.json",
+      "url": "https://dados.rs.gov.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00931",
+      "arquivo": "chelfoapi/brapi-00931.json",
+      "url": "https://www.farroupilha.rs.gov.br/transparencia/item/api-de-dados-abertos-contabilidade"
+    },
+    {
+      "id": "BRAPI-00932",
+      "arquivo": "chelfoapi/brapi-00932.json",
+      "url": "https://www.gramado.rs.gov.br/transparencia/item/api-de-dados-abertos-de-pessoal"
+    },
+    {
+      "id": "BRAPI-00933",
+      "arquivo": "chelfoapi/brapi-00933.json",
+      "url": "https://dadosabertos.caxias.rs.gov.br/api/search/definition/"
+    },
+    {
+      "id": "BRAPI-00934",
+      "arquivo": "chelfoapi/brapi-00934.json",
+      "url": "https://www.campinasdosul.rs.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00935",
+      "arquivo": "chelfoapi/brapi-00935.json",
+      "url": "https://grp.caxias.rs.gov.br/transparencia/dados-abertos/swagger-ui.html"
+    },
+    {
+      "id": "BRAPI-00936",
+      "arquivo": "chelfoapi/brapi-00936.json",
+      "url": "http://www.ilopolis.rs.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00937",
+      "arquivo": "chelfoapi/brapi-00937.json",
+      "url": "https://dadosabertos.poa.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00938",
+      "arquivo": "chelfoapi/brapi-00938.json",
+      "url": "https://geo-smf.portoalegre.rs.gov.br/server/sdk/rest/02ss/02ss00000057000000.htm"
+    },
+    {
+      "id": "BRAPI-00939",
+      "arquivo": "chelfoapi/brapi-00939.json",
+      "url": "https://gestaodepessoal.santamaria.rs.gov.br/DADOSABERTOS/swagger"
+    },
+    {
+      "id": "BRAPI-00940",
+      "arquivo": "chelfoapi/brapi-00940.json",
+      "url": "http://dados.tce.rs.gov.br/api/3/action/help_show"
+    },
+    {
+      "id": "BRAPI-00941",
+      "arquivo": "chelfoapi/brapi-00941.json",
+      "url": "https://cmchapeco.cittatec.com.br/webjars/swagger-ui/index.html?urls.primaryName=open-data-leg"
+    },
+    {
+      "id": "BRAPI-00942",
+      "arquivo": "chelfoapi/brapi-00942.json",
+      "url": "https://www.cmf.sc.gov.br/dadosabertos"
+    },
+    {
+      "id": "BRAPI-00943",
+      "arquivo": "chelfoapi/brapi-00943.json",
+      "url": "https://diariomunicipal.sc.gov.br/?r=site/page&view=integracao"
+    },
+    {
+      "id": "BRAPI-00944",
+      "arquivo": "chelfoapi/brapi-00944.json",
+      "url": "http://docs.ckan.org/en/2.9/api/"
+    },
+    {
+      "id": "BRAPI-00945",
+      "arquivo": "chelfoapi/brapi-00945.json",
+      "url": "https://dados.ciga.sc.gov.br/api/3/action/help_show?name=package_list"
+    },
+    {
+      "id": "BRAPI-00946",
+      "arquivo": "chelfoapi/brapi-00946.json",
+      "url": "https://conhecimento.ciga.sc.gov.br/books/dom---di%C3%A1rio-oficial-dos-munic%C3%ADpios/page/api-domsc"
+    },
+    {
+      "id": "BRAPI-00947",
+      "arquivo": "chelfoapi/brapi-00947.json",
+      "url": "https://geo.blumenau.sc.gov.br/server/sdk/rest/02ss/02ss00000057000000.htm"
+    },
+    {
+      "id": "BRAPI-00948",
+      "arquivo": "chelfoapi/brapi-00948.json",
+      "url": "https://arcgis.itajai.sc.gov.br/server/sdk/rest/02ss/02ss00000057000000.htm"
+    },
+    {
+      "id": "BRAPI-00949",
+      "arquivo": "chelfoapi/brapi-00949.json",
+      "url": "https://geo.joinville.sc.gov.br/server/sdk/rest/02ss/02ss00000057000000.htm"
+    },
+    {
+      "id": "BRAPI-00950",
+      "arquivo": "chelfoapi/brapi-00950.json",
+      "url": "http://www.tcesc.tc.br/apis-dados-abertos"
+    },
+    {
+      "id": "BRAPI-00951",
+      "arquivo": "chelfoapi/brapi-00951.json",
+      "url": "https://consorcioagreste.se.gov.br/doc"
+    },
+    {
+      "id": "BRAPI-00952",
+      "arquivo": "chelfoapi/brapi-00952.json",
+      "url": "https://www.conivales.se.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00953",
+      "arquivo": "chelfoapi/brapi-00953.json",
+      "url": "https://conscensul.se.gov.br/transparencia/portal/?alias=conscensul&p=api_de_dados"
+    },
+    {
+      "id": "BRAPI-00954",
+      "arquivo": "chelfoapi/brapi-00954.json",
+      "url": "https://consorciograndearacaju.se.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00955",
+      "arquivo": "chelfoapi/brapi-00955.json",
+      "url": "https://transparencia.aracaju.se.gov.br/prefeitura/dados-abertos/"
+    },
+    {
+      "id": "BRAPI-00956",
+      "arquivo": "chelfoapi/brapi-00956.json",
+      "url": "https://conscensul.se.gov.br/transparencia/portal/?alias=conscensul&p=api_de_dados"
+    },
+    {
+      "id": "BRAPI-00957",
+      "arquivo": "chelfoapi/brapi-00957.json",
+      "url": "https://gracchocardoso.se.gov.br/doc"
+    },
+    {
+      "id": "BRAPI-00958",
+      "arquivo": "chelfoapi/brapi-00958.json",
+      "url": "https://malhador.se.gov.br/texto/api-de-dados/84"
+    },
+    {
+      "id": "BRAPI-00959",
+      "arquivo": "chelfoapi/brapi-00959.json",
+      "url": "https://gloria.se.gov.br/doc"
+    },
+    {
+      "id": "BRAPI-00960",
+      "arquivo": "chelfoapi/brapi-00960.json",
+      "url": "https://www.pacatuba.se.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00961",
+      "arquivo": "chelfoapi/brapi-00961.json",
+      "url": "https://portal.camarasjc.sp.gov.br/portal-transparencia/api-docs"
+    },
+    {
+      "id": "BRAPI-00962",
+      "arquivo": "chelfoapi/brapi-00962.json",
+      "url": "https://cimps.sp.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00963",
+      "arquivo": "chelfoapi/brapi-00963.json",
+      "url": "https://cimps.sp.gov.br/dados-abertos"
+    },
+    {
+      "id": "BRAPI-00964",
+      "arquivo": "chelfoapi/brapi-00964.json",
+      "url": "https://consorciotieteparana.com.br/dadosabertos"
+    },
+    {
+      "id": "BRAPI-00965",
+      "arquivo": "chelfoapi/brapi-00965.json",
+      "url": "https://www.emtu.sp.gov.br/emtu/dados-abertos/dados-abertos-principal/gtfs.fss"
+    },
+    {
+      "id": "BRAPI-00966",
+      "arquivo": "chelfoapi/brapi-00966.json",
+      "url": "https://focusnfe.com.br/guides/nfse/municipios-integrados/campinas-sp/ (Guia de Integração)"
+    },
+    {
+      "id": "BRAPI-00967",
+      "arquivo": "chelfoapi/brapi-00967.json",
+      "url": "https://egov.santos.sp.gov.br/dadosabertos/"
+    },
+    {
+      "id": "BRAPI-00968",
+      "arquivo": "chelfoapi/brapi-00968.json",
+      "url": "https://geoinfo-smdu.github.io/tutorial-GeoSampa/"
+    },
+    {
+      "id": "BRAPI-00969",
+      "arquivo": "chelfoapi/brapi-00969.json",
+      "url": "https://dados.prefeitura.sp.gov.br"
+    },
+    {
+      "id": "BRAPI-00970",
+      "arquivo": "chelfoapi/brapi-00970.json",
+      "url": "https://apilib.prefeitura.sp.gov.br/store/apis/info?name=Diario_Oficial&version=v1&provider=admin"
+    },
+    {
+      "id": "BRAPI-00971",
+      "arquivo": "chelfoapi/brapi-00971.json",
+      "url": "https://notadomilhao.sf.prefeitura.sp.gov.br/desenvolvedor/"
+    },
+    {
+      "id": "BRAPI-00972",
+      "arquivo": "chelfoapi/brapi-00972.json",
+      "url": "https://www.sptrans.com.br/desenvolvedores/api-do-olho-vivo-guia-de-referencia/documentacao-api/"
+    },
+    {
+      "id": "BRAPI-00973",
+      "arquivo": "chelfoapi/brapi-00973.json",
+      "url": "https://diario.buritidotocantins.to.gov.br/swagger"
+    },
+    {
+      "id": "BRAPI-00974",
+      "arquivo": "chelfoapi/brapi-00974.json",
+      "url": "https://transparencia.araguaina.to.gov.br/api"
+    },
+    {
+      "id": "BRAPI-00975",
+      "arquivo": "chelfoapi/brapi-00975.json",
+      "url": "https://www.bomjesus.to.gov.br/swagger"
+    },
+    {
+      "id": "BRAPI-00976",
+      "arquivo": "chelfoapi/brapi-00976.json",
+      "url": "https://acessoainformacao.palmas.to.gov.br/cidadao/outras_informacoes/acesso_automatizado"
+    },
+    {
+      "id": "BRAPI-00977",
+      "arquivo": "chelfoapi/brapi-00977.json",
+      "url": "http://portaldatransparencia.palmas.to.gov.br/webservices/"
+    },
+    {
+      "id": "BRAPI-00978",
+      "arquivo": "chelfoapi/brapi-00978.json",
+      "url": "https://diario.pium.to.gov.br/swagger"
+    },
+    {
+      "id": "BRAPI-00979",
+      "arquivo": "chelfoapi/brapi-00979.json",
+      "url": "https://pontealtadotocantins.to.gov.br/api"
+    }
+  ]
+}

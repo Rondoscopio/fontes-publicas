@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00580",
+  "nome": "Endpoints de Transparência do TRT8 (XML)",
+  "orgao_responsavel": "Secretaria de Tecnologia da Informação (SETIN) / TRT8",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.trt8.jus.br/transparencia/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

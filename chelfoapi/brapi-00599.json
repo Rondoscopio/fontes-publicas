@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00599",
+  "nome": "Repositório Institucional de Geociências (RIGeo) - DSpace API",
+  "orgao_responsavel": "Serviço Geológico do Brasil (SGB/CPRM)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Produção científica, publicações geocientíficas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://rigeo.sgb.gov.br/server/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

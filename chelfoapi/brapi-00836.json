@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00836",
+  "nome": "API de Dados Abertos - Prefeitura Municipal de São Luís",
+  "orgao_responsavel": "Prefeitura Municipal de São Luís",
+  "esfera": "Municipal",
+  "uf": "MA",
+  "categoria": "Transparência, Finanças, Licitações, Legislação, Obras",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.saoluis.ma.gov.br/portal/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

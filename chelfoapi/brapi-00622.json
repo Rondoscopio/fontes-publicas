@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00622",
+  "nome": "API Fábrica de Cálculos",
+  "orgao_responsavel": "Tribunal Regional Federal da 3ª Região (TRF3)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Cálculos Judiciais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://fabrica-de-calculos.app.trf3.jus.br/docs/introducao.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00229",
+  "nome": "API de Automação de Consulta - e-SAJ (TJMS)",
+  "orgao_responsavel": "Tribunal de Justiça de Mato Grosso do Sul (TJMS) / Softplan",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Processos, Certidões",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "Não documentada publicamente de forma centralizada",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

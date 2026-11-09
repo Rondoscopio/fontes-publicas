@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00091",
+  "nome": "API Cobrança de Títulos Banrisul",
+  "orgao_responsavel": "Banrisul",
+  "esfera": "Estadual",
+  "uf": "RS",
+  "categoria": "Finanças e Pagamentos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://developers.banrisul.com.br/bpi/link/api-cobranca-titulos.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

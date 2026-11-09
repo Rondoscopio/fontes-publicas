@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00921",
+  "nome": "Dados Abertos - Câmara Municipal de Cantá",
+  "orgao_responsavel": "Câmara Municipal de Cantá",
+  "esfera": "Municipal",
+  "uf": "RR",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.canta.rr.leg.br/transparencia/dados-abertos-1",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

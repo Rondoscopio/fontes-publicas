@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00376",
+  "nome": "API do painel de estatísticas do Poder Judiciário",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ) / TRT1",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Estatística",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://justica-em-numeros.cnj.jus.br/painel-estatisticas/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

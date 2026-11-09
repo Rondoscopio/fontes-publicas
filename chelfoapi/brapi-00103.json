@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00103",
+  "nome": "API DOM/SC (Diário Oficial dos Municípios)",
+  "orgao_responsavel": "Consórcio de Inovação na Gestão Pública (CIGA) / Governo SC",
+  "esfera": "Estadual",
+  "uf": "SC",
+  "categoria": "Administração e Diário Oficial",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://conhecimento.ciga.sc.gov.br/books/dom---di%C3%A1rio-oficial-dos-munic%C3%ADpios/page/api-domsc",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

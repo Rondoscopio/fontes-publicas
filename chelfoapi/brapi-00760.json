@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00760",
+  "nome": "API Dados Abertos - Tabatinga",
+  "orgao_responsavel": "Prefeitura Municipal de Tabatinga",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://tabatinga.am.gov.br/api-dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

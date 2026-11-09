@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00288",
+  "nome": "API Olinda (Plataforma Ágil de Serviços de Dados do BCB)",
+  "orgao_responsavel": "Banco Central do Brasil (BCB)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Economia e Finanças",
+  "tecnologia": "OData",
+  "acesso_declarado": "Não informado",
+  "url": "https://olinda.bcb.gov.br/olinda/servico/BcBase/versao/v2/swagger-ui3#/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

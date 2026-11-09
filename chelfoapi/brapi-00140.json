@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00140",
+  "nome": "API de Dados Abertos da CLDF (CKAN)",
+  "orgao_responsavel": "Câmara Legislativa do Distrito Federal",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência, Licitações, Contratos, Gestão de Pessoas, Orçamento",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "http://docs.ckan.org/en/2.10/api/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

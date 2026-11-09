@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00536",
+  "nome": "API dos Serviços Estaduais",
+  "orgao_responsavel": "Ministério da Gestão e da Inovação em Serviços Públicos - Secretaria de Governo Digital (MGI/SGD)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Serviços Públicos Digitais",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.gov.br/conecta/catalogo/apis/api-dos-servicos-estaduais",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

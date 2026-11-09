@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00833",
+  "nome": "API de Dados Abertos de Açailândia",
+  "orgao_responsavel": "Prefeitura Municipal de Açailândia",
+  "esfera": "Municipal",
+  "uf": "MA",
+  "categoria": "Transparência, Licitações, Contratos, Leis Municipais, Seletivos, Diário Oficial",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.acailandia.ma.gov.br/transparencia/dados-abertos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

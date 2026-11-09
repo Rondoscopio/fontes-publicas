@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00317",
+  "nome": "Codevasf Sharing API",
+  "orgao_responsavel": "Companhia de Desenvolvimento dos Vales do São Francisco e do Parnaíba (Codevasf)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Autenticação e Compartilhamento (ArcGIS)",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://geoportal.codevasf.gov.br/portal/portalhelp/en/rest/router.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

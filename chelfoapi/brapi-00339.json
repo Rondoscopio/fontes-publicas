@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00339",
+  "nome": "Comunica API (DJEN - Diário de Justiça Eletrônico Nacional)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Comunicações Processuais e Intimações",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://comunicaapi.pje.jus.br/swagger/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

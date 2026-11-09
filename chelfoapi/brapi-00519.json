@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00519",
+  "nome": "API de Dados Abertos do MEC (CKAN)",
+  "orgao_responsavel": "Ministério da Educação (MEC)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos/Educação",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://dadosabertos.mec.gov.br/api/3/action/help_show?name=package_list",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

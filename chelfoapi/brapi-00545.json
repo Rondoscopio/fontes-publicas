@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00545",
+  "nome": "SIMBA (Sistema de Investigação de Movimentações Bancárias)",
+  "orgao_responsavel": "Ministério Público Militar / CPADSI",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Investigação e Dados Bancários",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://simba.mpm.mp.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00377",
+  "nome": "PJe - Modelo Nacional de Interoperabilidade (MNI)",
+  "orgao_responsavel": "Conselho Nacional de Justiça (CNJ) / TRT13",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Processo Eletrônico",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.cnj.jus.br/tecnologia-da-informacao-e-comunicacao/justica-aberta/modelo-nacional-de-interoperabilidade/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

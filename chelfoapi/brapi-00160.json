@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00160",
+  "nome": "API SGS (Sistema Integrado de Cálculos da Defensoria)",
+  "orgao_responsavel": "Defensoria Pública do Estado do Rio Grande do Sul",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Cálculos judiciais e financeiros",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://sicad.testesdpers.com.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00791",
+  "nome": "WebService Dados Abertos da Câmara Municipal de Ecoporanga",
+  "orgao_responsavel": "Câmara Municipal de Ecoporanga",
+  "esfera": "Municipal",
+  "uf": "ES",
+  "categoria": "Transparência e Orçamento",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://www.camaraecoporanga.es.gov.br/transparencia/api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

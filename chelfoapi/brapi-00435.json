@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00435",
+  "nome": "INDE GeoServer WFS - EPE",
+  "orgao_responsavel": "Empresa de Pesquisa Energética (EPE) / INDE",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Energia e Geoinformação",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Não informado",
+  "url": "https://inde.gov.br/CatalogoGeoservicos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

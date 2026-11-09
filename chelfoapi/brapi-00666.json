@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00666",
+  "nome": "API de Unidades Judiciárias",
+  "orgao_responsavel": "TRT4",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Endereços e Jurisdições",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.trt4.jus.br/portais/trt4/dados-abertos-documentacao-api-unidades-judiciarias",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

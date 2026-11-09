@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00977",
+  "nome": "API / WebService - Portal da Transparência de Palmas",
+  "orgao_responsavel": "Prefeitura Municipal de Palmas",
+  "esfera": "Municipal",
+  "uf": "TO",
+  "categoria": "Transparência, Finanças, Licitações, RH",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "http://portaldatransparencia.palmas.to.gov.br/webservices/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

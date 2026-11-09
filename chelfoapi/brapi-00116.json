@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00116",
+  "nome": "Web Services SIVISA (Integração VRE)",
+  "orgao_responsavel": "Secretaria de Estado da Saúde de São Paulo (SES-SP)",
+  "esfera": "Estadual",
+  "uf": "SP",
+  "categoria": "Saúde e Vigilância Sanitária",
+  "tecnologia": "SOAP/WSDL",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://sivisa.saude.sp.gov.br/sivisa-api/ws/IntegracaoVRE",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

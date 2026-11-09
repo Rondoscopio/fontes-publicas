@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00483",
+  "nome": "SIGEF GEO - Consulta de Georreferenciamento Fundiário",
+  "orgao_responsavel": "Instituto Nacional de Colonização e Reforma Agrária (INCRA)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Governança Fundiária",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Restrito institucional",
+  "url": "https://www.gov.br/conecta/catalogo/apis/sigef-geo",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

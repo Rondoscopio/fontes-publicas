@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00174",
+  "nome": "Dados Abertos MPRS",
+  "orgao_responsavel": "Ministério Público do Estado do Rio Grande do Sul",
+  "esfera": "Estadual",
+  "uf": "",
+  "categoria": "Transparência e atuação institucional",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "http://dados.mprs.mp.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

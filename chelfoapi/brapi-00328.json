@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00328",
+  "nome": "Consulta de Condutas Anticompetitivas",
+  "orgao_responsavel": "Conselho Administrativo de Defesa Econômica (CADE)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Defesa Econômica",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://www.gov.br/conecta/catalogo/apis/consulta-de-condutas-anticompetitivas",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

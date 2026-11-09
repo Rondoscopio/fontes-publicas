@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00248",
+  "nome": "API de Consulta à Base de CRTs de Obras Publicitárias",
+  "orgao_responsavel": "Agência Nacional do Cinema (Ancine)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Consulta Pública",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.gov.br/ancine/pt-br/assuntos/noticias/consulta-publica-para-desenvolvimento-de-servico-de-consulta-a-base-de-crts-de-obras-publicitarias-via-api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

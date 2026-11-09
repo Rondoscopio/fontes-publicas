@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00385",
+  "nome": "API do PJe (Processo Judicial Eletrônico)",
+  "orgao_responsavel": "Conselho Superior da Justiça do Trabalho (CSJT) / TRT14",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Sistemas de Processo Eletrônico",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.pje.jus.br/manuais-basicos/padroes-de-api-do-pje/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

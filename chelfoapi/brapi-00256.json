@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00256",
+  "nome": "Sistema de Informações Geográficas da Mineração (SIGMINE) - GeoServer OWS (WMS/WFS/WCS)",
+  "orgao_responsavel": "Agência Nacional de Mineração (ANM)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geoinformação Mineral e Processos Minerários",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://inde.gov.br/CatalogoGeoservicos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

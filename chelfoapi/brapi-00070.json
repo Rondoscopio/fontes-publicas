@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00070",
+  "nome": "API do Assinador Digital",
+  "orgao_responsavel": "ETIPI - Empresa de Tecnologia da Informação do Piauí",
+  "esfera": "Estadual",
+  "uf": "PI",
+  "categoria": "Serviços ao Cidadão",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://govpiconecta.pi.gov.br/docs/Apis/API%20de%20Assinador%20Digital/api-de-assinatura-de-documento",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

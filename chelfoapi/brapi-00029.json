@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00029",
+  "nome": "Integração do DETRAN com os Pátios",
+  "orgao_responsavel": "DETRAN/ES",
+  "esfera": "Estadual",
+  "uf": "ES",
+  "categoria": "Trânsito e Mobilidade",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://api.detran.es.gov.br/ApiIntegracaoPatio/swagger/index.html",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00780",
+  "nome": "API de Dados Abertos - IntGest (Ararendá)",
+  "orgao_responsavel": "Prefeitura Municipal de Ararendá",
+  "esfera": "Municipal",
+  "uf": "CE",
+  "categoria": "Transparência e Finanças",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://ararenda.ce.gov.br/transparencia/dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

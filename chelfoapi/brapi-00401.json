@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00401",
+  "nome": "API de Dados Abertos - TRT17",
+  "orgao_responsavel": "Coordenadoria de Planejamento e Apoio à Gestão de TIC (COGTIC) / TRT17",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Transparência, Pessoal e Estrutura Organizacional",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.trt17.jus.br/web/transparencia/w/acesso-automatizado-api",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

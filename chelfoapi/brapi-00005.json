@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00005",
+  "nome": "API CEAF Digital (Saúde DF)",
+  "orgao_responsavel": "Secretaria de Saúde do Distrito Federal (SES-DF)",
+  "esfera": "Estadual",
+  "uf": "DF",
+  "categoria": "Saúde",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://back-ceafdigital.saude.df.gov.br/q/swagger-ui/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

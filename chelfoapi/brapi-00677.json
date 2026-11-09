@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00677",
+  "nome": "API CKAN Dados Abertos UFF",
+  "orgao_responsavel": "Universidade Federal Fluminense (UFF)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos/Institucional",
+  "tecnologia": "CKAN REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://dados.uff.br/api/3/action/help_show?name=site_read",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

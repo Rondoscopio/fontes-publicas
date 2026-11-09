@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00932",
+  "nome": "API de Dados Abertos de Pessoal - Gramado",
+  "orgao_responsavel": "Município de Gramado",
+  "esfera": "Municipal",
+  "uf": "RS",
+  "categoria": "Transparência e Pessoal",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://www.gramado.rs.gov.br/transparencia/item/api-de-dados-abertos-de-pessoal",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

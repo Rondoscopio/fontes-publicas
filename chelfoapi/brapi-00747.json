@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00747",
+  "nome": "Câmara Municipal de Manaus API",
+  "orgao_responsavel": "Câmara Municipal de Manaus",
+  "esfera": "Municipal",
+  "uf": "AM",
+  "categoria": "Transparência e Legislativo",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.cmm.am.gov.br/rest-api/docs/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

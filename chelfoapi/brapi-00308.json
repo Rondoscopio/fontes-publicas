@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00308",
+  "nome": "Catálogo de Metadados Geoespaciais do CENSIPAM (GeoNetwork)",
+  "orgao_responsavel": "Centro Gestor e Operacional do Sistema de Proteção da Amazônia (CENSIPAM)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Geospatial",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://panorama.sipam.gov.br/geonetwork/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

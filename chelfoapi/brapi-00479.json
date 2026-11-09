@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00479",
+  "nome": "API CKAN do Portal de Dados Abertos do IFSP",
+  "orgao_responsavel": "Instituto Federal de São Paulo (IFSP)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Não informado",
+  "url": "https://dados.ifsp.edu.br/api/3/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

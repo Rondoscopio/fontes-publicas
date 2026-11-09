@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00858",
+  "nome": "WMS Geoportal SEMA MT",
+  "orgao_responsavel": "Secretaria de Estado de Meio Ambiente (SEMA-MT)",
+  "esfera": "Municipal",
+  "uf": "MT",
+  "categoria": "Meio Ambiente",
+  "tecnologia": "Geoespacial OGC/GIS",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://www.sema.mt.gov.br/transparencia/index.php/sistemas/simgeo",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

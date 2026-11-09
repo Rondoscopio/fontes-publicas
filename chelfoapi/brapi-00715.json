@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00715",
+  "nome": "API de Dados Abertos - Câmara Municipal de Cuitegi",
+  "orgao_responsavel": "Câmara Municipal de Cuitegi-PB",
+  "esfera": "Municipal",
+  "uf": "",
+  "categoria": "Transparência, Processo Legislativo",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://www.cuitegi.pb.leg.br/open-data",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

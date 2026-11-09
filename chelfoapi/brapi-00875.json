@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00875",
+  "nome": "API Portal da Cidadania TCE-PI",
+  "orgao_responsavel": "Tribunal de Contas do Estado do Piauí (TCE-PI)",
+  "esfera": "Municipal",
+  "uf": "PI",
+  "categoria": "Transparência / Contas Públicas",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://sistemas.tce.pi.gov.br/api/portaldacidadania/docs/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

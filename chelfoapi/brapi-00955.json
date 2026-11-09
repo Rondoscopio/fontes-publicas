@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00955",
+  "nome": "API de Dados Abertos - Prefeitura de Aracaju",
+  "orgao_responsavel": "Prefeitura de Aracaju",
+  "esfera": "Municipal",
+  "uf": "SE",
+  "categoria": "Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Requisitos específicos",
+  "url": "https://transparencia.aracaju.se.gov.br/prefeitura/dados-abertos/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

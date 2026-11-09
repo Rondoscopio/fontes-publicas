@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00551",
+  "nome": "API dos Web services do Porto sem Papel (PSP)",
+  "orgao_responsavel": "Ministério de Portos e Aeroportos (MPOR)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Logística Portuária / Comércio Exterior",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Cadastro, chave ou token",
+  "url": "https://docs.portosempapel.gov.br/webservices/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

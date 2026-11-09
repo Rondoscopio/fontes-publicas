@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00612",
+  "nome": "Webservice Consultar Acórdãos",
+  "orgao_responsavel": "Tribunal de Contas da União (TCU)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Jurisprudência",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/#consultar-acordaos",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}

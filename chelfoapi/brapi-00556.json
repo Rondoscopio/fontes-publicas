@@ -1,0 +1,13 @@
+{
+  "id": "BRAPI-00556",
+  "nome": "DEMAS - API de Dados Abertos",
+  "orgao_responsavel": "Ministério da Saúde (DEMAS)",
+  "esfera": "Federal",
+  "uf": "",
+  "categoria": "Saúde, Dados Abertos",
+  "tecnologia": "REST/JSON",
+  "acesso_declarado": "Público sem autenticação",
+  "url": "https://apidadosabertos.saude.gov.br/",
+  "origem": "https://www.chelfoapi.com/",
+  "status_validacao": "nao_verificado"
+}
