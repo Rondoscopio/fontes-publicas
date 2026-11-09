@@ -1,0 +1,10 @@
+{
+  "nome": "Instaloader",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_curadoria": "Redes sociais",
+  "descricao": "Extração de conteúdo e metadados do Instagram conforme permissões e condições aplicáveis.",
+  "url": "https://github.com/instaloader/instaloader",
+  "origem_cadastro": "lista indicada pelo usuário",
+  "status_validacao": "repositorio_publico_encontrado;funcionamento_nao_testado",
+  "nota": "Uso condicionado à legislação, privacidade, termos e autorizações aplicáveis."
+}

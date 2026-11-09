@@ -50,6 +50,7 @@ Os novos arquivos de ferramentas e referências usam um nome normalizado e um id
 ## Catálogo ampliado e cobertura das três origens
 
 - [**Ferramentas e serviços**](FERRAMENTAS-DIRETORIOS-OSINT.md): fichas individuais organizadas por categoria.
+- [**Onze ferramentas OSINT selecionadas**](FERRAMENTAS-OSINT-SELECIONADAS.md): acesso direto aos repositórios e às fichas, com reaproveitamento dos cadastros existentes.
 - [**Referências e consultas**](REFERENCIAS-DIRETORIOS-OSINT.md): guias, consultas pré-definidas e materiais que não são bases governamentais.
 - [**Inventário OSINT Brazuca**](inventarios/osint-brazuca-links.json): **1275 de 1275 links** vinculados a uma ficha.
 - [**Inventário Awesome OSINT**](inventarios/awesome-osint-links.json): **1394 de 1394 links** vinculados a uma ficha.

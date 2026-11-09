@@ -1,0 +1,10 @@
+{
+  "nome": "theHarvester",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_curadoria": "Pesquisa de domínios e infraestrutura",
+  "descricao": "Reconhecimento passivo de domínios, endereços e ativos expostos em fontes públicas.",
+  "url": "https://github.com/laramies/theHarvester",
+  "origem_cadastro": "lista indicada pelo usuário",
+  "status_validacao": "repositorio_publico_encontrado;funcionamento_nao_testado",
+  "nota": "Uso condicionado à legislação, privacidade, termos e autorizações aplicáveis."
+}
