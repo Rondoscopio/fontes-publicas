@@ -1,0 +1,14 @@
+{
+  "nome": "Rota Policial News",
+  "descricao": "Veículo de notícias e informações de Vilhena, Rondônia, relacionado no Atlas da Imprensa. A classificação não implica independência editorial nem confirmação de continuidade das atividades.",
+  "abrangencia": "Municipal / Vilhena, Rondônia, Brasil",
+  "municipio": "Vilhena",
+  "uf": "RO",
+  "pais": "Brasil",
+  "tipo": "portal_de_noticias",
+  "url": "https://rotapolicialnews.com.br/",
+  "origem": "https://atlasdaimprensa.com.br/rondonia-jornais/",
+  "status_validacao": "dominio_identificado_em_diretorio_atividade_nao_confirmada",
+  "data_referencia": "2026-11-09",
+  "nota": "Nome e domínio presentes em diretório de imprensa. Funcionamento, atualização e independência editorial ainda não confirmados."
+}
