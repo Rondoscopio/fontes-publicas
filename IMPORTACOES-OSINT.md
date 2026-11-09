@@ -17,7 +17,7 @@ Os inventários incluem também dorks, buscas por nomes e serviços de consulta 
 
 - Anteriores: 630
 - Adicionados: 1393
-- Total após importação: 2023
+- Total após importação: 2027
 
 - agregadores: 666
 - estaduais: 9
@@ -34,3 +34,7 @@ Um processo ou denúncia não comprova culpa. Vínculos societários e familiare
 
 - OSINT Brazuca: [licença MIT](https://github.com/osintbrazuca/osint-brazuca/blob/main/LICENSE).
 - Awesome OSINT: [licença CC BY-SA 4.0](https://github.com/jivoi/awesome-osint/blob/master/LICENSE.txt). As condições de atribuição e compartilhamento na mesma licença podem se aplicar aos inventários derivados.
+
+## Complemento documentado a partir do catálogo ChelfoIA/Manus
+
+Foram cadastradas individualmente quatro famílias federais citadas pelo painel: Plataforma Olinda (BCB), série Selic 11 do SGS (BCB), API INDE/DBDG e Integra Contador (Serpro). **Isso não constitui importação completa das 959 fichas.**

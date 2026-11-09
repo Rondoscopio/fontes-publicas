@@ -10,13 +10,13 @@ Cada fonte é representada por **um arquivo JSON** dentro da pasta correspondent
 | --- | ---: |
 | `agregadores/` | 728 |
 | `estaduais/` | 132 |
-| `federais/` | 693 |
+| `federais/` | 697 |
 | `internacionais/` | 136 |
 | `jornalismo/` | 9 |
 | `municipais/` | 25 |
 | `outros-estados/` | 281 |
 | `outros-municipios/` | 19 |
-| **Total** | **2023** |
+| **Total** | **2027** |
 
 Os nomes dos arquivos são derivados dos nomes das fontes, em minúsculas, sem acentos e separados por hífens.
 
@@ -203,6 +203,13 @@ Estas são **ferramentas**, não fontes oficiais. Estão listadas para pesquisa,
 ## Catálogos OSINT de outros estados e países
 
 Foram incorporadas referências do [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) e do [Awesome OSINT](https://github.com/jivoi/awesome-osint). O [relatório de importação](IMPORTACOES-OSINT.md) apresenta escopo e limites, e os inventários registram **todos os links extraídos** dos dois repositórios: [Brazuca](inventarios/osint-brazuca-links.json) e [Awesome OSINT](inventarios/awesome-osint-links.json). Nem todo link é uma base: dorks, guias e ferramentas permanecem apenas no inventário e não devem ser usados para coleta de dados pessoais.
+
+## Navegação por estado e ferramentas adicionais
+
+- [Fontes cadastradas de outros estados e municípios](FONTES-OUTROS-ESTADOS.md)
+- [Ferramentas e referências adicionais do Awesome OSINT](FERRAMENTAS-DIRETORIOS-OSINT.md)
+
+O README mantém a seleção inicial de 100 ferramentas. A lista extensa do diretório fica em documento separado para não dificultar a leitura da página inicial.
 
 ## Tarefas de investigação e integração
 
