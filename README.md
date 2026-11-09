@@ -1,65 +1,34 @@
-# OSINT Rondônia | Rondoscópio
+# OSINT Rondônia
 
-Catálogo estruturado de **fontes de dados, ferramentas, serviços, consultas e referências de OSINT** para pesquisa, jornalismo, fiscalização cidadã e análise documental, com foco inicial em Rondônia e abrangência nacional e internacional.
+Catálogo público de fontes de dados, ferramentas e referências para pesquisa, jornalismo, investigação e fiscalização cidadã em Rondônia, com fontes brasileiras e internacionais. Parte do [Rondoscópio](https://github.com/Rondoscopio).
 
-**Os registros estão em JSON. Este README é o único documento Markdown do repositório.** Os índices e registros auxiliares também são JSON, incluindo a migração dos links antes distribuídos por documentos Markdown.
+[![JSON](https://img.shields.io/badge/dados-JSON-2563eb?style=for-the-badge&labelColor=0b1120&logo=json&logoColor=white)](inventarios/)
+[![Licença](https://img.shields.io/badge/licen%C3%A7a-n%C3%A3o%20definida-64748b?style=for-the-badge&labelColor=0b1120)](#licença)
 
-## Estrutura e quantidade
+[![Último commit](https://img.shields.io/github/last-commit/Rondoscopio/osint-rondonia/main?label=último%20commit&style=flat-square&labelColor=0b1120&color=b45309&logo=git&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/commits/main)
+[![Commits por mês](https://img.shields.io/github/commit-activity/m/Rondoscopio/osint-rondonia?label=commits%2Fmês&style=flat-square&labelColor=0b1120&color=b45309&logo=git&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/graphs/commit-activity)
+[![PRs abertas](https://img.shields.io/github/issues-pr/Rondoscopio/osint-rondonia?label=PRs%20abertas&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/pulls)
+[![Issues abertas](https://img.shields.io/github/issues/Rondoscopio/osint-rondonia?label=issues%20abertas&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/issues)
+[![Forks](https://img.shields.io/github/forks/Rondoscopio/osint-rondonia?style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/forks)
+[![Feito no Brasil](https://img.shields.io/badge/feito_no-Brasil-009440?style=flat-square&labelColor=0b1120)](https://pt.wikipedia.org/wiki/Brasil)
 
-O catálogo reúne **3.021 cadastros de fontes**, dos quais 2.062 pertencem ao inventário principal e 959 correspondem às APIs da ChelfoAPI, importadas separadamente. Há também **1.063 ferramentas e serviços**, **162 consultas predefinidas** e **66 referências e documentos**, totalizando 1.291 registros complementares.
+## Fontes e ferramentas
 
-As fontes principais estão distribuídas entre [fontes federais brasileiras](federais/) (716), [fontes estaduais de Rondônia](estaduais/) (132), [fontes municipais de Rondônia](municipais/) (25), [fontes de outros estados](outros-estados/) (281), [fontes de outros municípios](outros-municipios/) (19), [fontes internacionais](internacionais/) (142), [agregadores e portais de consulta](agregadores/) (733) e [jornalismo e investigação](jornalismo/) (14).
+- [Fontes de Rondônia](estaduais/) e [fontes municipais](municipais/)
+- [Fontes federais](federais/), [outros estados](outros-estados/) e [outros municípios](outros-municipios/)
+- [Fontes internacionais](internacionais/) e [agregadores](agregadores/)
+- [Jornalismo e investigação](jornalismo/)
+- [Ferramentas](ferramentas/), [consultas](consultas/) e [referências](referencias/)
+- [APIs da ChelfoAPI](chelfoapi/) e [inventários](inventarios/)
 
-Os demais registros estão organizados nas pastas [chelfoapi](chelfoapi/), [ferramentas](ferramentas/), [consultas](consultas/) e [referencias](referencias/).
+## Inventários
 
-Os números contam **fichas**, não URLs únicas. Há sobreposição de serviços entre pastas e inventários, e múltiplos registros podem apontar para uma mesma fonte. As 959 fichas da ChelfoAPI foram preservadas com seus metadados originais.
+- [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json), incluindo SAPLs, ALERO e Interlegis
+- [Migração de links](inventarios/migracao-links-markdown.json) e [pendências históricas](inventarios/pendencias-historicas.json)
+- [Seleção de fontes e ferramentas](inventarios/selecao-100-fontes-e-ferramentas.json)
+- [OSINT Brazuca](inventarios/osint-brazuca-links.json) e [Awesome OSINT](inventarios/awesome-osint-links.json)
+- [ChelfoAPI](inventarios/chelfoapi-apis.json) e [famílias documentadas](inventarios/chelfoapi-familias-documentadas.json)
 
-## Inventários JSON e rastreabilidade
+## Licença
 
-- [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json): 41 endereços SAPL de Câmaras municipais transcritos de captura fornecida pelo usuário, links dos menus da ALERO e fontes complementares sobre atas, gravações, sessões, votações e o Interlegis. Os links obtidos de capturas aguardam validação individual.
-
-- [Migração de links Markdown](inventarios/migracao-links-markdown.json): **1.630 URLs externas distintas**, cada uma com indicação da ficha JSON que a representa e dos documentos de origem. Os arquivos Markdown antigos foram removidos somente depois dessa preservação.
-- [Seleção de 100 fontes e 100 ferramentas](inventarios/selecao-100-fontes-e-ferramentas.json): listas estruturadas com a ordem, os nomes e os respectivos registros JSON.
-- [Pendências históricas](inventarios/pendencias-historicas.json): tarefas do antigo TODO, com status **histórico**, que pode estar desatualizado.
-- [Links do OSINT Brazuca](inventarios/osint-brazuca-links.json): 1.275 referências classificadas e vinculadas a fichas.
-- [Links do Awesome OSINT](inventarios/awesome-osint-links.json): 1.394 referências classificadas e vinculadas a fichas.
-- [Inventário completo da ChelfoAPI](inventarios/chelfoapi-apis.json): 959 registros, sendo 845 URLs distintas **dentro dessa origem**.
-- [Famílias históricas da ChelfoAPI](inventarios/chelfoapi-familias-documentadas.json): documentação auxiliar de 15 famílias anteriormente identificadas.
-
-Os diretórios OSINT utilizados como referências são [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) e [Awesome OSINT](https://github.com/jivoi/awesome-osint). Consulte suas respectivas licenças antes de redistribuir conteúdos derivados; a licença do catálogo não autoriza coleta indiscriminada em serviços de terceiros.
-
-## Exemplos de recortes temáticos
-
-- **Agricultura, economia e queimadas:** IBGE/SIDRA, Banco Central/SGS, CONAB, INPE, USDA, CEPEA/ESALQ, ABIOVE e mercado de commodities. As fontes estão representadas em fichas próprias nas pastas federais, internacionais e de agregadores.
-- **Educação e produção científica:** IDEB, ENEM, Saeb, Enamed, Censo Escolar, e-MEC, Enade, IDD, CPC, IGC, CAPES, CNPq, SciELO, OpenAlex, Crossref, MCTI e INPI.
-- **Clima e fenômenos oceânicos:** [Diagnóstico ENSO](internacionais/noaa-diagnostico-enso.json), [Monitoramento ENSO](internacionais/noaa-cpc-monitoramento-enso.json) e [DOS ENSO Platform](internacionais/noaa-dos-plataforma-enso.json) da NOAA.
-- **Fiscalização pública e vínculos documentados:** transparência, orçamento, transferências, contratos, licitações, sanções, justiça e registros institucionais, conforme disponibilidade e limitações legais.
-
-## Estrutura de uma ficha
-
-Uma fonte pode ter este formato simplificado:
-
-```json
-{
-  "nome": "INEP: Resultados do IDEB",
-  "descricao": "Resultados por escola, município, rede e ano.",
-  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
-  "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados"
-}
-```
-
-Fichas de ferramentas e inventários podem apresentar outros campos, como categoria, origem, tecnologia, restrições, status de validação e identificação interna. Os identificadores e nomes dos arquivos são estáveis, sem garantia de disponibilidade atual da página externa.
-
-## Política de cadastro de portais
-
-Quando uma URL é enviada apenas como exemplo de um serviço, a ficha deve apontar para a **página inicial ou entrada geral da plataforma**, não para perfis de pessoas, candidaturas, doadores, empresas, pesquisas por documento ou reportagens isoladas. Remover parâmetros de rastreamento e não armazenar identificadores de alvos na ficha da fonte. Investigações específicas devem documentar separadamente finalidade, relevância pública, evidências e direito de resposta. O cadastro de um portal jornalístico não implica endosso de sua linha editorial.
-
-## Limites e uso responsável
-
-- **Referência não é validação.** A inclusão não comprova confiabilidade, funcionamento, licenciamento, autenticidade ou atualização de dados e endpoints.
-- **Acesso público não significa coleta irrestrita.** Respeitar legislação, LGPD, termos, limitações técnicas, direitos autorais e proteção de dados pessoais.
-- **Correlação não é culpa.** Relações societárias, vínculos familiares, geolocalização e coincidências estatísticas exigem interpretação, contexto e evidências adicionais.
-- **Comparações devem respeitar método e tempo.** Indicadores científicos, educacionais, econômicos e ambientais não são intercambiáveis, e a ausência de dado não equivale a zero.
-- **Status de fontes varia.** Algumas fichas derivam de diretórios de terceiros ou de material fornecido por colaboradores e ainda dependem de auditoria.
-
-A catalogação não concede autoridade policial, judicial ou permissão para investigar pessoas por meios ilegais.
+Este repositório ainda não possui um arquivo de licença. A disponibilidade pública dos registros não autoriza automaticamente sua redistribuição irrestrita. As fontes externas conservam suas próprias condições de uso e direitos.
