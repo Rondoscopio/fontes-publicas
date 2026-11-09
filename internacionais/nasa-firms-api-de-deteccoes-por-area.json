@@ -1,0 +1,6 @@
+{
+  "nome": "NASA FIRMS — API de Detecções por Área",
+  "descricao": "API que retorna em CSV focos detectados por sensor, data e área geográfica; requer MAP_KEY gratuita e possui limites de transações.",
+  "abrangencia": "Internacional / Global, com recorte para Rondônia",
+  "url": "https://firms.modaps.eosdis.nasa.gov/api/area/"
+}

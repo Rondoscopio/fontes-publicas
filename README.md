@@ -8,13 +8,13 @@ Cada fonte é representada por **um arquivo JSON** dentro da pasta correspondent
 
 | Pasta | Fontes |
 | --- | ---: |
-| `agregadores/` | 33 |
+| `agregadores/` | 36 |
 | `estaduais/` | 76 |
-| `federais/` | 169 |
-| `internacionais/` | 28 |
+| `federais/` | 174 |
+| `internacionais/` | 56 |
 | `jornalismo/` | 9 |
 | `municipais/` | 23 |
-| **Total** | **338** |
+| **Total** | **374** |
 
 Os nomes dos arquivos são derivados dos nomes das fontes, em minúsculas, sem acentos e separados por hífens.
 

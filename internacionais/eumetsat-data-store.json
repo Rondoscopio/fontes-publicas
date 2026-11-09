@@ -1,0 +1,6 @@
+{
+  "nome": "EUMETSAT — Data Store",
+  "descricao": "Portal de descoberta e obtenção de coleções meteorológicas e observações de satélite europeias, com mecanismos de download e API.",
+  "abrangencia": "Internacional / Global, com recorte para Rondônia",
+  "url": "https://data.eumetsat.int/search"
+}

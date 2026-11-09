@@ -1,0 +1,6 @@
+{
+  "nome": "INPE — Área Queimada AQ1km",
+  "descricao": "Mapas e séries de cicatrizes de áreas queimadas baseados em MODIS/Terra e Aqua, com resolução de um quilômetro e histórico desde 2002.",
+  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
+  "url": "https://data.inpe.br/queimadas/aq1km/"
+}

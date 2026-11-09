@@ -1,0 +1,6 @@
+{
+  "nome": "INPE — Eventos de Fogo",
+  "descricao": "Integra focos em eventos espaço-temporais, oferecendo estimativas de extensão e duração, frentes de fogo e arquivos KML/GPKG; produto provisório em validação.",
+  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
+  "url": "https://data.inpe.br/queimadas/portal/evento-fogo/"
+}
