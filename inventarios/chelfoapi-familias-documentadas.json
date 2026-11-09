@@ -1,0 +1,137 @@
+{
+  "origem": "https://www.chelfoapi.com/",
+  "atribuição": "Pesquisa Manus AI, curadoria ChelfoIA",
+  "referencia_temporal": "2026-09-03",
+  "total_declarado": 959,
+  "distribuicao_declarada": {
+    "federal": 466,
+    "estadual_incluindo_df": 232,
+    "municipal_incluindo_consorcios": 261
+  },
+  "fichas_individualizadas": 15,
+  "fichas_nao_obtidas": 944,
+  "cobertura": "parcial",
+  "nota": "A listagem completa depende de carregamento dinâmico. Os 959 registros e as classes de evidência são declarações do mantenedor, não foram extraídos nem validados individualmente.",
+  "familias_documentadas": [
+    {
+      "nome": "Portal Brasileiro de Dados Abertos",
+      "mantenedor": "CGU / MGI",
+      "esfera": "Federal",
+      "acesso_declarado": "Público sem autenticação",
+      "url_documentacao": "https://dados.gov.br/swagger-ui/index.html",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "Portal da Transparência — API",
+      "mantenedor": "CGU",
+      "esfera": "Federal",
+      "acesso_declarado": "Cadastro, chave ou token",
+      "url_documentacao": "https://api.portaldatransparencia.gov.br/swagger-ui/index.html",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "Serviço de Dados do IBGE",
+      "mantenedor": "IBGE",
+      "esfera": "Federal",
+      "acesso_declarado": "Predominantemente público",
+      "url_documentacao": "https://servicodados.ibge.gov.br/api/docs/",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "CNPJ — Consulta de Empresas",
+      "mantenedor": "RFB / Conecta / Serpro",
+      "esfera": "Federal",
+      "acesso_declarado": "Restrito a órgãos habilitados",
+      "url_documentacao": "https://www.gov.br/conecta/catalogo/apis/consulta-cnpj",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "Compras.gov.br — Dados Abertos",
+      "mantenedor": "MGI / SEGES",
+      "esfera": "Federal",
+      "acesso_declarado": "Misto",
+      "url_documentacao": "https://dadosabertos.compras.gov.br/swagger-ui/index.html",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "SICONFI — API",
+      "mantenedor": "Tesouro Nacional",
+      "esfera": "Federal",
+      "acesso_declarado": "Público com limites técnicos",
+      "url_documentacao": "https://apidatalake.tesouro.gov.br/docs/siconfi/",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "Plataforma Olinda",
+      "mantenedor": "Banco Central",
+      "esfera": "Federal",
+      "acesso_declarado": "Público conforme serviço",
+      "url_documentacao": "https://olinda.bcb.gov.br/olinda/",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "SGS / Selic — série 11",
+      "mantenedor": "Banco Central",
+      "esfera": "Federal",
+      "acesso_declarado": "Público, com filtros",
+      "url_documentacao": "https://dadosabertos.bcb.gov.br/dataset/11-taxa-de-juros---selic",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "API Pública do DataJud",
+      "mantenedor": "CNJ",
+      "esfera": "Federal",
+      "acesso_declarado": "Chave/API",
+      "url_documentacao": "https://datajud-wiki.cnj.jus.br/api-publica/",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "DEMAS — Dados Abertos da Saúde",
+      "mantenedor": "Ministério da Saúde",
+      "esfera": "Federal",
+      "acesso_declarado": "Público sem autenticação em parte dos endpoints",
+      "url_documentacao": "https://apidadosabertos.saude.gov.br/",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "CadÚnico — Serviços",
+      "mantenedor": "MDS / Conecta / Dataprev",
+      "esfera": "Federal",
+      "acesso_declarado": "Restrito a órgãos habilitados",
+      "url_documentacao": "https://www.gov.br/conecta/catalogo/apis/cadunico-servicos",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "Integra Contador",
+      "mantenedor": "Serpro / Receita Federal",
+      "esfera": "Federal",
+      "acesso_declarado": "Contratação e credenciais",
+      "url_documentacao": "https://loja.serpro.gov.br/integra-contador/product/integracontador",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "Dados Abertos da Câmara dos Deputados",
+      "mantenedor": "Câmara dos Deputados",
+      "esfera": "Federal",
+      "acesso_declarado": "Público",
+      "url_documentacao": "https://dadosabertos.camara.leg.br/swagger/api.html",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "Dados Abertos do Senado Federal",
+      "mantenedor": "Senado Federal",
+      "esfera": "Federal",
+      "acesso_declarado": "Público, com limites técnicos",
+      "url_documentacao": "https://legis.senado.leg.br/dadosabertos/api-docs/swagger-ui/index.html",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    },
+    {
+      "nome": "INDE / DBDG",
+      "mantenedor": "INDE / IBGE",
+      "esfera": "Federal",
+      "acesso_declarado": "Varia por serviço",
+      "url_documentacao": "https://inde.gov.br/api/",
+      "estado_validacao": "familia_identificada_no_site; sem teste de endpoint"
+    }
+  ]
+}

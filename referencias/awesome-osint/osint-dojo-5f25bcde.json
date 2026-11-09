@@ -1,0 +1,10 @@
+{
+  "nome": "OSINT Dojo",
+  "tipo": "referencia_editorial",
+  "categoria_original": "Other Resources",
+  "descricao": "Material ou diretório citado na seção \"Other Resources\" do Awesome OSINT. Não é necessariamente um software ou fonte de dados.",
+  "url": "https://www.osintdojo.com/resources/",
+  "origem": "https://github.com/jivoi/awesome-osint",
+  "status_validacao": "referencia_importada_nao_validada",
+  "nota": "Metadados apenas. Não implica licença para coleta automatizada, reutilização de dados pessoais ou violação de termos do serviço."
+}

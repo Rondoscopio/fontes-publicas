@@ -31,3 +31,11 @@ Tarefas propostas para pesquisa e desenvolvimento do Rondoscópio. **Não estão
 - [ ] Extrair com autorização e conferir os 959 links de documentação do [catálogo ChelfoIA/Manus](https://www.chelfoapi.com/). Seu quadro detalhado é carregado via JavaScript e não foi acessível nesta rodada; não afirmar que foram importados 959 registros.
 - [ ] Deduplicar por URL os links recém-importados em relação aos registros históricos do catálogo e testar acessibilidade e licenças; novos cadastros são apenas candidatos, não fontes auditadas.
 - [ ] Priorizar validação de portais de tribunais, contratos e sanções de todos os estados e municípios; manter status de processos, decisões e sanções com temporalidade e presunção de inocência.
+
+## Diretório OSINT ampliado — acompanhamento
+
+- [x] Adotar o nome `osint-rondonia` e documentar que o catálogo abrange fontes, ferramentas, serviços e consultas.
+- [x] Criar fichas para cada um dos 1275 links do inventário OSINT Brazuca e 1394 links do Awesome OSINT, preservando as fichas já existentes.
+- [ ] Obter uma exportação licenciada ou mecanismo autorizado de acesso às 959 fichas da ChelfoIA (pesquisa Manus AI), para completar os registros individuais sem fabricar URLs.
+- [ ] Validar disponibilidade, regras de coleta, licenças, precisão, classificação de ferramenta versus fonte e duplicidades históricas entre as fichas existentes.
+- [ ] Construir um gerador que derive automaticamente README e relatórios de cobertura dos catálogos tipados.

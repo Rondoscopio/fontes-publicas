@@ -1,0 +1,10 @@
+{
+  "nome": "grep.app",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_original": "Code Search",
+  "descricao": "Ferramenta, serviço ou plataforma citada na seção \"Code Search\" do Awesome OSINT. Disponibilidade, finalidade e permissões exigem validação individual.",
+  "url": "https://grep.app/",
+  "origem": "https://github.com/jivoi/awesome-osint",
+  "status_validacao": "referencia_importada_nao_validada",
+  "nota": "Metadados apenas. Não implica licença para coleta automatizada, reutilização de dados pessoais ou violação de termos do serviço."
+}

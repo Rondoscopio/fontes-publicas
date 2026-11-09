@@ -1,10 +1,10 @@
-# Fontes públicas — Rondoscópio
+# OSINT Rondônia — Rondoscópio
 
-Catálogo de fontes de informação relevantes para a investigação, a fiscalização cidadã e o acompanhamento de Rondônia e de seus municípios. Inclui órgãos públicos, bases de dados, instituições privadas e internacionais, agregadores e veículos jornalísticos.
+Catálogo de **fontes, ferramentas, serviços, consultas e referências OSINT** relevantes para pesquisa, fiscalização cidadã e investigação documental. Rondônia é o território inicial de interesse, mas a cobertura abrange Brasil e exterior. A inclusão de um recurso não comprova confiabilidade, acesso ou autorização para coleta automatizada.
 
 ## Organização
 
-Cada fonte é representada por **um arquivo JSON** dentro da pasta correspondente à categoria principal de sua `abrangencia`:
+As **fontes** continuam representadas por um JSON nas pastas de origem/abrangência. Ferramentas, consultas e referências editoriais agora têm fichas separadas para não serem confundidas com dados oficiais:
 
 | Pasta | Fontes |
 | --- | ---: |
@@ -18,7 +18,14 @@ Cada fonte é representada por **um arquivo JSON** dentro da pasta correspondent
 | `outros-municipios/` | 19 |
 | **Total** | **2027** |
 
-Os nomes dos arquivos são derivados dos nomes das fontes, em minúsculas, sem acentos e separados por hífens.
+| Outros recursos catalogados | Novas fichas |
+| --- | ---: |
+| `ferramentas/` | 979 |
+| `consultas/` | 162 |
+| `referencias/` | 60 |
+| **Novos registros tipados** | **1201** |
+
+Os novos arquivos de ferramentas e referências usam um nome normalizado e um identificador derivado da URL, preservando a origem e evitando colisões de nomes.
 
 ## Estrutura de cada fonte
 
@@ -36,9 +43,20 @@ Os nomes dos arquivos são derivados dos nomes das fontes, em minúsculas, sem a
 - `abrangencia`: categoria principal e recorte geográfico ou institucional.
 - `url`: endereço de referência.
 
+## Catálogo ampliado e cobertura das três origens
+
+- [**Ferramentas e serviços**](FERRAMENTAS-DIRETORIOS-OSINT.md): fichas individuais organizadas por categoria.
+- [**Referências e consultas**](REFERENCIAS-DIRETORIOS-OSINT.md): guias, consultas pré-definidas e materiais que não são bases governamentais.
+- [**Inventário OSINT Brazuca**](inventarios/osint-brazuca-links.json): **1275 de 1275 links** vinculados a uma ficha.
+- [**Inventário Awesome OSINT**](inventarios/awesome-osint-links.json): **1394 de 1394 links** vinculados a uma ficha.
+- [**Inventário parcial da ChelfoIA**](inventarios/chelfoapi-familias-documentadas.json): **15 famílias federais identificadas** e **959 APIs declaradas pelo painel**, das quais a listagem completa ainda não foi extraída.
+- [**Auditoria de cobertura**](COBERTURA-OSINT.md): critérios, números e limitações da importação.
+
+**Cobertura integral aqui significa que cada referência dos dois inventários do GitHub tem caminho de ficha. Não significa que a URL tenha sido testada. A cobertura individual das 959 APIs da ChelfoIA permanece incompleta.**
+
 ## Escopo
 
-O catálogo não se limita a instituições sediadas em Rondônia. Fontes nacionais, internacionais e de outros territórios são relevantes quando permitem investigar acontecimentos ou decisões com possíveis efeitos no estado, como transferências de recursos, contratações, relações empresariais, clima, hidrologia, comércio e cadeias produtivas.
+O catálogo também abrange ferramentas e serviços que não são fontes públicas, bem como instituições fora de Rondônia. A pesquisa não se limita a instituições sediadas em Rondônia. Fontes nacionais, internacionais e de outros territórios são relevantes quando permitem investigar acontecimentos ou decisões com possíveis efeitos no estado, como transferências de recursos, contratações, relações empresariais, clima, hidrologia, comércio e cadeias produtivas.
 
 **Importante:** inclusão no catálogo não significa que todos os links, APIs ou conjuntos de dados tenham sido testados individualmente. Nem toda fonte é uma API ou disponibiliza dados estruturados. Notícias e portais institucionais funcionam como pontos de partida para apuração, não como evidência conclusiva.
 

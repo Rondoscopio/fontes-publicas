@@ -1,0 +1,10 @@
+{
+  "nome": "Google Hacking: Diários Oficiais Estaduais por Região",
+  "tipo": "consulta_predefinida",
+  "categoria_original": "Motores de Busca Contexto Brasil",
+  "descricao": "Consulta de pesquisa descrita pelo OSINT Brazuca; registrada apenas para referência, sem execução automática, varredura de credenciais ou coleta de dados pessoais.",
+  "url": "https://www.google.com/search?q=%22SEU_ALVO%22+site%3Adodf.df.gov.br+%7C+site%3Adiariooficial.go.gov.br+%7C+site%3Aiomat.mt.gov.br+%7C+site%3Aimprensaoficial.ms.gov.br",
+  "origem": "https://github.com/osintbrazuca/osint-brazuca",
+  "status_validacao": "referencia_importada_nao_validada",
+  "nota": "Metadados apenas. Não implica licença para coleta automatizada, reutilização de dados pessoais ou violação de termos do serviço."
+}

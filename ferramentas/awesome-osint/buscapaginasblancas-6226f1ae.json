@@ -1,0 +1,10 @@
+{
+  "nome": "BuscaPaginasBlancas",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_original": "People Investigations",
+  "descricao": "Ferramenta, serviço ou plataforma citada na seção \"People Investigations\" do Awesome OSINT. Disponibilidade, finalidade e permissões exigem validação individual.",
+  "url": "https://github.com/GeiserX/BuscaPaginasBlancas",
+  "origem": "https://github.com/jivoi/awesome-osint",
+  "status_validacao": "referencia_importada_nao_validada",
+  "nota": "Metadados apenas. Não implica licença para coleta automatizada, reutilização de dados pessoais ou violação de termos do serviço."
+}

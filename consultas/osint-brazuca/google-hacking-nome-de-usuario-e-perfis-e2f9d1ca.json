@@ -1,0 +1,10 @@
+{
+  "nome": "Google Hacking: Nome de Usuário e Perfis",
+  "tipo": "consulta_predefinida",
+  "categoria_original": "Motores de Busca Contexto Brasil",
+  "descricao": "Consulta de pesquisa descrita pelo OSINT Brazuca; registrada apenas para referência, sem execução automática, varredura de credenciais ou coleta de dados pessoais.",
+  "url": "https://www.google.com/search?q=%22SEU_ALVO%22+site%3Alattes.cnpq.br+%7C+site%3Aescavador.com%2Fsobre",
+  "origem": "https://github.com/osintbrazuca/osint-brazuca",
+  "status_validacao": "referencia_importada_nao_validada",
+  "nota": "Metadados apenas. Não implica licença para coleta automatizada, reutilização de dados pessoais ou violação de termos do serviço."
+}
