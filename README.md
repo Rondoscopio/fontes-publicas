@@ -11,12 +11,12 @@ As **fontes** continuam representadas por um JSON nas pastas de origem/abrangên
 | `agregadores/` | 728 |
 | `estaduais/` | 132 |
 | `federais/` | 697 |
-| `internacionais/` | 136 |
+| `internacionais/` | 138 |
 | `jornalismo/` | 9 |
 | `municipais/` | 25 |
 | `outros-estados/` | 281 |
 | `outros-municipios/` | 19 |
-| **Total** | **2027** |
+| **Total** | **2029** |
 
 | Outros recursos catalogados | Novas fichas |
 | --- | ---: |
@@ -30,6 +30,14 @@ Os novos arquivos de ferramentas e referências usam um nome normalizado e um id
 ## Fontes agrícolas, econômicas e ambientais
 
 - [Fontes originais de agricultura, commodities, câmbio e queimadas](FONTES-AGROPECUARIA-QUEIMADAS.md). Apenas serviços e instituições de origem, com indicação das fichas já presentes no catálogo; sem referências a projetos ou produtos derivados.
+
+## Monitoramento climático ENSO — NOAA/CPC
+
+- [Diagnóstico ENSO: boletim oficial de El Niño e La Niña](internacionais/noaa-diagnostico-enso.json), já catalogado.
+- [Monitoramento ENSO: condições atuais, previsões, séries históricas e materiais técnicos](internacionais/noaa-cpc-monitoramento-enso.json).
+- [DOS ENSO Platform: painel de monitoramento e impactos climáticos](internacionais/noaa-dos-plataforma-enso.json).
+
+As três fontes pertencem ao Climate Prediction Center da NOAA. Prognósticos e probabilidades são temporais e não asseguram impactos locais específicos em Rondônia. O antigo endereço do painel DOS ENSO retornou erro 404 e foi substituído pelo endereço oficial encontrado.
 
 ## Estrutura de cada fonte
 
