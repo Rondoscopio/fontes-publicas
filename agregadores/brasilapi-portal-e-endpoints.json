@@ -1,0 +1,6 @@
+{
+  "nome": "BrasilAPI — Portal e Endpoints",
+  "descricao": "Agregador comunitário de APIs JSON para CNPJ, CEP, IBGE, bancos, Pix, DDD, feriados, câmbio e outros cadastros; não substitui a fonte primária e a disponibilidade varia por endpoint.",
+  "abrangencia": "Agregador / Brasil, com recorte para Rondônia",
+  "url": "https://brasilapi.com.br/"
+}
