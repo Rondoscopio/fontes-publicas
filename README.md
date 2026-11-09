@@ -3,7 +3,7 @@
 Catálogo público de fontes de dados, ferramentas e referências para pesquisa, jornalismo, investigação e fiscalização cidadã em Rondônia, com fontes brasileiras e internacionais. Parte do [Rondoscópio](https://github.com/Rondoscopio).
 
 [![JSON](https://img.shields.io/badge/dados-JSON-2563eb?style=for-the-badge&labelColor=0b1120&logo=json&logoColor=white)](inventarios/)
-[![Licença](https://img.shields.io/github/license/Rondoscopio/osint-rondonia?style=for-the-badge&labelColor=0b1120&logo=gnu&logoColor=white)](LICENSE)
+[![Licença](https://img.shields.io/badge/license-AGPL--3.0--or--later-2563eb?style=for-the-badge&labelColor=0b1120&logo=gnu&logoColor=white)](LICENSE)
 
 [![Último commit](https://img.shields.io/github/last-commit/Rondoscopio/osint-rondonia/main?label=último%20commit&style=flat-square&labelColor=0b1120&color=b45309&logo=git&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/commits/main)
 [![Commits por mês](https://img.shields.io/github/commit-activity/m/Rondoscopio/osint-rondonia?label=commits%2Fmês&style=flat-square&labelColor=0b1120&color=b45309&logo=git&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/graphs/commit-activity)
@@ -30,6 +30,8 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 - [ChelfoAPI](inventarios/chelfoapi-apis.json) e [famílias documentadas](inventarios/chelfoapi-familias-documentadas.json)
 
 ## License
+
+**SPDX-License-Identifier:** `AGPL-3.0-or-later`
 
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
 
