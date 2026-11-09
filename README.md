@@ -18,18 +18,17 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 
 - [Fontes de Rondônia](estaduais/) e [fontes municipais](municipais/)
 - [Fontes federais](federais/), [outros estados](outros-estados/) e [outros municípios](outros-municipios/)
-- [Fontes internacionais](internacionais/) e [agregadores](agregadores/)
+- [Fontes internacionais](internacionais/) e [fontes agregadoras](agregadores/)
 - [Jornalismo e investigação](jornalismo/)
 - [Ferramentas](ferramentas/), [consultas](consultas/) e [referências](referencias/)
-- [APIs da ChelfoAPI](chelfoapi/) e [inventários](inventarios/)
+- [APIs catalogadas](chelfoapi/) e [inventários](inventarios/)
 
 ## Inventários
 
 - [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json), incluindo SAPLs, ALERO e Interlegis
 - [Migração de links](inventarios/migracao-links-markdown.json) e [pendências históricas](inventarios/pendencias-historicas.json)
 - [Seleção de fontes e ferramentas](inventarios/selecao-100-fontes-e-ferramentas.json)
-- [OSINT Brazuca](inventarios/osint-brazuca-links.json) e [Awesome OSINT](inventarios/awesome-osint-links.json)
-- [ChelfoAPI](inventarios/chelfoapi-apis.json) e [famílias documentadas](inventarios/chelfoapi-familias-documentadas.json)
+- [Inventários de links e origens](inventarios/) e [famílias documentadas de APIs](inventarios/chelfoapi-familias-documentadas.json)
 
 ## License
 
