@@ -29,6 +29,16 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 - [OSINT Brazuca](inventarios/osint-brazuca-links.json) e [Awesome OSINT](inventarios/awesome-osint-links.json)
 - [ChelfoAPI](inventarios/chelfoapi-apis.json) e [famílias documentadas](inventarios/chelfoapi-familias-documentadas.json)
 
-## Licença
+## License
 
-O conteúdo original deste repositório é disponibilizado sob a [GNU Affero General Public License v3.0 (AGPL-3.0-only)](LICENSE). Materiais e dados provenientes de terceiros permanecem sujeitos às respectivas licenças, aos direitos de seus titulares e às condições de uso das fontes.
+[![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
+
+This project is Free Software: You can use, study, share and improve it at your
+will. Specifically, you can redistribute and/or modify it under the terms of the
+[GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.html) as
+published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Third-party sources and materials remain subject to their respective licenses and terms of use.
+
+---
