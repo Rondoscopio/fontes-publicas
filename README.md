@@ -10,13 +10,13 @@ As **fontes** continuam representadas por um JSON nas pastas de origem/abrangên
 | --- | ---: |
 | `agregadores/` | 728 |
 | `estaduais/` | 132 |
-| `federais/` | 697 |
+| `federais/` | 713 |
 | `internacionais/` | 138 |
 | `jornalismo/` | 9 |
 | `municipais/` | 25 |
 | `outros-estados/` | 281 |
 | `outros-municipios/` | 19 |
-| **Total** | **2029** |
+| **Total** | **2045** |
 
 | Outros recursos catalogados | Novas fichas |
 | --- | ---: |
@@ -38,6 +38,10 @@ Os novos arquivos de ferramentas e referências usam um nome normalizado e um id
 - [DOS ENSO Platform: painel de monitoramento e impactos climáticos](internacionais/noaa-dos-plataforma-enso.json).
 
 As três fontes pertencem ao Climate Prediction Center da NOAA. Prognósticos e probabilidades são temporais e não asseguram impactos locais específicos em Rondônia. O antigo endereço do painel DOS ENSO retornou erro 404 e foi substituído pelo endereço oficial encontrado.
+
+## Educação, ciência e tecnologia
+
+- [Fontes detalhadas de IDEB, ENEM, Enamed, e-MEC, conceitos do Inep, CAPES, CNPq, artigos científicos e inovação](FONTES-EDUCACAO-CIENCIA-TECNOLOGIA.md). Organizadas por área e com referência às fichas preexistentes, sem duplicações.
 
 ## Estrutura de cada fonte
 
