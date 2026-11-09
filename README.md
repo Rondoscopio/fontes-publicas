@@ -28,6 +28,8 @@ Os números contam **fichas**, não URLs únicas. Há sobreposição de serviço
 
 ## Inventários JSON e rastreabilidade
 
+- [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json): 41 endereços SAPL de Câmaras municipais transcritos de tabela fornecida pelo usuário, 12 links do menu Atividade Parlamentar da ALERO e 16 fontes complementares sobre atas, gravações, sessões e votações. Os links obtidos de capturas aguardam validação individual.
+
 - [Migração de links Markdown](inventarios/migracao-links-markdown.json): **1.630 URLs externas distintas**, cada uma com indicação da ficha JSON que a representa e dos documentos de origem. Os arquivos Markdown antigos foram removidos somente depois dessa preservação.
 - [Seleção de 100 fontes e 100 ferramentas](inventarios/selecao-100-fontes-e-ferramentas.json): listas estruturadas com a ordem, os nomes e os respectivos registros JSON.
 - [Pendências históricas](inventarios/pendencias-historicas.json): tarefas do antigo TODO, com status **histórico**, que pode estar desatualizado.
