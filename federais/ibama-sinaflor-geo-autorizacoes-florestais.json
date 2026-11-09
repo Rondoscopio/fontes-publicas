@@ -1,0 +1,6 @@
+{
+  "nome": "Ibama — Sinaflor Geo Autorizações Florestais",
+  "descricao": "Painel de polígonos das autorizações florestais registradas no Sinaflor, com possibilidade de download em Shapefile para cruzamento com desmatamento detectado.",
+  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
+  "url": "https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/flora-e-madeira/sistema-nacional-de-controle-da-origem-dos-produtos-florestais-sinaflor"
+}
