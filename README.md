@@ -1,3 +1,5 @@
+![Rondoscópio: OSINT Rondônia](assets/banner.svg)
+
 # OSINT Rondônia
 
 Catálogo público de fontes de dados, ferramentas e referências para pesquisa, jornalismo, investigação e fiscalização cidadã em Rondônia, com fontes brasileiras e internacionais. Parte do [Rondoscópio](https://github.com/Rondoscopio).
