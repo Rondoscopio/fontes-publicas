@@ -1,0 +1,9 @@
+{
+  "nome": "Rondoscopio/osint-rondonia",
+  "tipo": "referencia_de_proveniencia",
+  "descricao": "Repositório de origem, documento de licença ou atribuição da curadoria anterior do catálogo.",
+  "url": "https://github.com/Rondoscopio/osint-rondonia",
+  "origem_cadastro": "documentos de cobertura e importação OSINT",
+  "status_validacao": "link_migrado_nao_auditado",
+  "nota": "Direitos sobre o diretório original não significam autorização para coleta de dados de terceiros."
+}

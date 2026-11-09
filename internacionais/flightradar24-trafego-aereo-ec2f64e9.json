@@ -1,0 +1,9 @@
+{
+  "nome": "Flightradar24 — Tráfego aéreo",
+  "tipo": "fonte_de_dados_comercial",
+  "descricao": "Plataforma de consulta de voos e tráfego aéreo. Integração e armazenamento de dados condicionados à licença, disponibilidade e regras de privacidade.",
+  "abrangencia": "Internacional / Tráfego aéreo, com possível recorte para Rondônia",
+  "url": "https://www.flightradar24.com/",
+  "origem_cadastro": "pendências históricas do catálogo",
+  "status_validacao": "link_migrado_nao_auditado"
+}

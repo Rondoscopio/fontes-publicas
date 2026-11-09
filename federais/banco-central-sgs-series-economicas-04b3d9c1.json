@@ -1,0 +1,10 @@
+{
+  "nome": "Banco Central — SGS (séries econômicas)",
+  "tipo": "fonte_de_dados_ou_referencia_setorial",
+  "descricao": "Séries 1 (câmbio utilizado no projeto) e 7456 (índice de fertilizantes); conferir metadados e metodologia de cada série.",
+  "abrangencia": "Federal / Brasil, com recorte possível para Rondônia",
+  "url": "https://www3.bcb.gov.br/sgspub/",
+  "origem_cadastro": "curadoria de fontes de agricultura e queimadas",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Distinguir fonte oficial, projeções e preços comerciais. Confirmar período, metodologia e condições de uso."
+}

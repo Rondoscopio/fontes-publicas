@@ -1,0 +1,10 @@
+{
+  "nome": "CEPEA/ESALQ-USP — Indicadores de preços",
+  "tipo": "fonte_de_dados_ou_referencia_setorial",
+  "descricao": "Indicadores agropecuários e referências de mercado para soja e milho.",
+  "abrangencia": "Brasil / Setor produtivo, mercado e pesquisa",
+  "url": "https://www.cepea.esalq.usp.br/",
+  "origem_cadastro": "curadoria de fontes de agricultura e queimadas",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Distinguir fonte oficial, projeções e preços comerciais. Confirmar período, metodologia e condições de uso."
+}

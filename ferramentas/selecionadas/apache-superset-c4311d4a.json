@@ -1,0 +1,10 @@
+{
+  "nome": "Apache Superset",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_curadoria": "Vínculos e visualização",
+  "descricao": "Business Intelligence",
+  "url": "https://superset.apache.org/",
+  "origem_cadastro": "curadoria original de ferramentas do README",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Cadastro não autoriza coleta automatizada ou acesso a dados restritos. Verificar disponibilidade, licença e termos de uso."
+}

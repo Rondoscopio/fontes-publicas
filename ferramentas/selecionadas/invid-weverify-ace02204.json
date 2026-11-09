@@ -1,0 +1,10 @@
+{
+  "nome": "InVID-WeVerify",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_curadoria": "Imagens, vídeo e autenticidade",
+  "descricao": "Verificação de imagens e vídeos",
+  "url": "https://www.invid-project.eu/",
+  "origem_cadastro": "curadoria original de ferramentas do README",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Cadastro não autoriza coleta automatizada ou acesso a dados restritos. Verificar disponibilidade, licença e termos de uso."
+}

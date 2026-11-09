@@ -1,0 +1,10 @@
+{
+  "nome": "Copernicus Browser",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_curadoria": "Geolocalização e satélites",
+  "descricao": "Visualização Sentinel",
+  "url": "https://dataspace.copernicus.eu/browser/",
+  "origem_cadastro": "curadoria original de ferramentas do README",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Cadastro não autoriza coleta automatizada ou acesso a dados restritos. Verificar disponibilidade, licença e termos de uso."
+}

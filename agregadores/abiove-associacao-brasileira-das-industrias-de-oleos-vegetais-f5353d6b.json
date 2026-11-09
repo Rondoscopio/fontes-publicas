@@ -1,0 +1,10 @@
+{
+  "nome": "ABIOVE — Associação Brasileira das Indústrias de Óleos Vegetais",
+  "tipo": "fonte_de_dados_ou_referencia_setorial",
+  "descricao": "Estatísticas e boletins do complexo soja usados como referências setoriais.",
+  "abrangencia": "Brasil / Setor produtivo, mercado e pesquisa",
+  "url": "https://abiove.org.br/",
+  "origem_cadastro": "curadoria de fontes de agricultura e queimadas",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Distinguir fonte oficial, projeções e preços comerciais. Confirmar período, metodologia e condições de uso."
+}

@@ -1,0 +1,10 @@
+{
+  "nome": "Yahoo Finance — futuros agrícolas CBOT",
+  "tipo": "fonte_de_dados_ou_referencia_setorial",
+  "descricao": "Fonte não oficial de cotações dos contratos de soja e milho utilizada na coleta de mercado; condições de acesso variáveis.",
+  "abrangencia": "Internacional / Mercado e estatísticas agrícolas",
+  "url": "https://finance.yahoo.com/",
+  "origem_cadastro": "curadoria de fontes de agricultura e queimadas",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Distinguir fonte oficial, projeções e preços comerciais. Confirmar período, metodologia e condições de uso."
+}

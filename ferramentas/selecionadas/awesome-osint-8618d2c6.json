@@ -1,0 +1,10 @@
+{
+  "nome": "Awesome OSINT",
+  "tipo": "ferramenta_ou_servico",
+  "categoria_curadoria": "Catálogos OSINT de outros estados e países",
+  "descricao": "Foram incorporadas referências do [OSINT Brazuca](https://github.com/osintbrazuca/osint-brazuca) e do [Awesome OSINT](https://github.com/jivoi/awesome-osint). O [relatório de importação](IMPORTACOES-OSINT.md) apresenta escopo e limites, e os inventários registram **todos os links extraídos** dos dois repositórios: [Brazuca](inventarios/osint-brazuca-links.json) e [Awesome OSINT](inventarios/awesome-osint-links.json). Nem todo link é uma base: dorks, guias e ferramentas permanecem apenas no inventário e não devem ser usados para coleta de dados pessoais.",
+  "url": "https://github.com/jivoi/awesome-osint",
+  "origem_cadastro": "curadoria original de ferramentas do README",
+  "status_validacao": "registro_migrado_nao_auditado",
+  "nota": "Cadastro não autoriza coleta automatizada ou acesso a dados restritos. Verificar disponibilidade, licença e termos de uso."
+}
