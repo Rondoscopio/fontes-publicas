@@ -1,4 +1,4 @@
-# OSINT Rondônia — Rondoscópio
+# OSINT Rondônia | Rondoscópio
 
 Catálogo estruturado de **fontes de dados, ferramentas, serviços, consultas e referências de OSINT** para pesquisa, jornalismo, fiscalização cidadã e análise documental, com foco inicial em Rondônia e abrangência nacional e internacional.
 
@@ -6,29 +6,17 @@ Catálogo estruturado de **fontes de dados, ferramentas, serviços, consultas e 
 
 ## Estrutura e quantidade
 
-| Categoria | Pasta | Registros |
-| --- | --- | ---: |
-| Fontes federais brasileiras | [federais/](federais/) | 716 |
-| Fontes estaduais de Rondônia | [estaduais/](estaduais/) | 132 |
-| Fontes municipais de Rondônia | [municipais/](municipais/) | 25 |
-| Fontes de outros estados | [outros-estados/](outros-estados/) | 281 |
-| Fontes de outros municípios | [outros-municipios/](outros-municipios/) | 19 |
-| Fontes internacionais | [internacionais/](internacionais/) | 142 |
-| Agregadores e portais de consulta | [agregadores/](agregadores/) | 733 |
-| Jornalismo e investigação | [jornalismo/](jornalismo/) | 14 |
-| **Subtotal de fontes principais** | | **2.062** |
-| APIs do catálogo ChelfoAPI, importadas separadamente | [chelfoapi/](chelfoapi/) | 959 |
-| **Total de cadastros de fontes** | | **3.021** |
-| Ferramentas e serviços | [ferramentas/](ferramentas/) | 1.063 |
-| Consultas predefinidas | [consultas/](consultas/) | 162 |
-| Referências e documentação | [referencias/](referencias/) | 66 |
-| **Total de ferramentas, consultas e referências** | | **1.291** |
+O catálogo reúne **3.021 cadastros de fontes**, dos quais 2.062 pertencem ao inventário principal e 959 correspondem às APIs da ChelfoAPI, importadas separadamente. Há também **1.063 ferramentas e serviços**, **162 consultas predefinidas** e **66 referências e documentos**, totalizando 1.291 registros complementares.
+
+As fontes principais estão distribuídas entre [fontes federais brasileiras](federais/) (716), [fontes estaduais de Rondônia](estaduais/) (132), [fontes municipais de Rondônia](municipais/) (25), [fontes de outros estados](outros-estados/) (281), [fontes de outros municípios](outros-municipios/) (19), [fontes internacionais](internacionais/) (142), [agregadores e portais de consulta](agregadores/) (733) e [jornalismo e investigação](jornalismo/) (14).
+
+Os demais registros estão organizados nas pastas [chelfoapi](chelfoapi/), [ferramentas](ferramentas/), [consultas](consultas/) e [referencias](referencias/).
 
 Os números contam **fichas**, não URLs únicas. Há sobreposição de serviços entre pastas e inventários, e múltiplos registros podem apontar para uma mesma fonte. As 959 fichas da ChelfoAPI foram preservadas com seus metadados originais.
 
 ## Inventários JSON e rastreabilidade
 
-- [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json): 41 endereços SAPL de Câmaras municipais transcritos de tabela fornecida pelo usuário, 12 links do menu Atividade Parlamentar da ALERO e 16 fontes complementares sobre atas, gravações, sessões e votações. Os links obtidos de capturas aguardam validação individual.
+- [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json): 41 endereços SAPL de Câmaras municipais transcritos de captura fornecida pelo usuário, links dos menus da ALERO e fontes complementares sobre atas, gravações, sessões, votações e o Interlegis. Os links obtidos de capturas aguardam validação individual.
 
 - [Migração de links Markdown](inventarios/migracao-links-markdown.json): **1.630 URLs externas distintas**, cada uma com indicação da ficha JSON que a representa e dos documentos de origem. Os arquivos Markdown antigos foram removidos somente depois dessa preservação.
 - [Seleção de 100 fontes e 100 ferramentas](inventarios/selecao-100-fontes-e-ferramentas.json): listas estruturadas com a ordem, os nomes e os respectivos registros JSON.
@@ -53,7 +41,7 @@ Uma fonte pode ter este formato simplificado:
 
 ```json
 {
-  "nome": "INEP — Resultados do IDEB",
+  "nome": "INEP: Resultados do IDEB",
   "descricao": "Resultados por escola, município, rede e ano.",
   "abrangencia": "Federal / Brasil, com recorte para Rondônia",
   "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/ideb/resultados"
