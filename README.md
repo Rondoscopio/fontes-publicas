@@ -11,7 +11,7 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 [![Commits por Mês](https://img.shields.io/github/commit-activity/m/Rondoscopio/osint-rondonia?label=Commits%20por%20M%C3%AAs&style=flat-square&labelColor=0b1120&color=b45309&logo=git&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/graphs/commit-activity)
 [![PRs Abertas](https://img.shields.io/github/issues-pr/Rondoscopio/osint-rondonia?label=PRs%20Abertas&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/pulls)
 [![Issues Abertas](https://img.shields.io/github/issues/Rondoscopio/osint-rondonia?label=Issues%20Abertas&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/issues)
-[![Forks](https://img.shields.io/github/forks/Rondoscopio/osint-rondonia?style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/forks)
+[![Forks](https://img.shields.io/github/forks/Rondoscopio/osint-rondonia?label=Forks&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/forks)
 [![Feito no 🇧🇷 Brasil](https://img.shields.io/badge/Feito%20no-%F0%9F%87%A7%F0%9F%87%B7%20Brasil-009440?style=flat-square&labelColor=0b1120)](https://pt.wikipedia.org/wiki/Brasil)
 
 ## Fontes e ferramentas
