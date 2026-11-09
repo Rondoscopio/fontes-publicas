@@ -1,0 +1,6 @@
+{
+  "nome": "Our World in Data — API de Dados Grapher",
+  "descricao": "Documentação da API de dados por gráfico, com exportações CSV, JSON de metadados e ZIP; útil para contextualização internacional e cruzamentos com indicadores brasileiros.",
+  "abrangencia": "Agregador / Brasil, com recorte para Rondônia",
+  "url": "https://docs.owid.io/projects/etl/api/chart-api/"
+}
