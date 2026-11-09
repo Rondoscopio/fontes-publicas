@@ -1,0 +1,559 @@
+{
+  "titulo": "Fontes legislativas de Rondônia: SAPL, atas, pautas, votações e gravações",
+  "atualizado_em": "2026-11-09",
+  "escopo": "ALERO e Câmaras Municipais de Rondônia",
+  "observacoes": [
+    "Os 41 endereços SAPL foram transcritos de captura de tela fornecida pelo usuário e não foram testados individualmente.",
+    "A lista retrata 41 dos 52 municípios e não constitui cadastro completo de todas as Câmaras.",
+    "A ausência de canal YouTube na tabela original não comprova ausência de gravações.",
+    "Links de acervos complementares identificados anteriormente devem ser revalidados periodicamente.",
+    "O SAPL da ALERO usa sapl.al.ro.leg.br, distinto do endereço da Câmara Municipal de Porto Velho, sapl.portovelho.ro.leg.br, identificado em levantamento anterior. A captura associa sapl.al.ro.leg.br a Porto Velho; ambos foram preservados com observação para evitar confusão de instituições."
+  ],
+  "camaras_sapl_captura": [
+    {
+      "municipio": "Porto Velho",
+      "uf": "RO",
+      "url": "https://sapl.al.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Alta Floresta D'Oeste",
+      "uf": "RO",
+      "url": "https://sapl.altaflorestadoeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Alto Alegre dos Parecis",
+      "uf": "RO",
+      "url": "https://sapl.altoalegredosparecis.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Cabixi",
+      "uf": "RO",
+      "url": "https://sapl.cabixi.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Cacaulândia",
+      "uf": "RO",
+      "url": "https://sapl.cacaulandia.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Cacoal",
+      "uf": "RO",
+      "url": "https://sapl.cacoal.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Campo Novo de Rondônia",
+      "uf": "RO",
+      "url": "https://sapl.camponovoderondonia.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Castanheiras",
+      "uf": "RO",
+      "url": "https://sapl.castanheiras.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Chupinguaia",
+      "uf": "RO",
+      "url": "https://sapl.chupinguaia.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Colorado do Oeste",
+      "uf": "RO",
+      "url": "https://sapl.coloradodooeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Corumbiara",
+      "uf": "RO",
+      "url": "https://sapl.corumbiara.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Costa Marques",
+      "uf": "RO",
+      "url": "https://sapl.costamarques.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Cujubim",
+      "uf": "RO",
+      "url": "https://sapl.cujubim.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Espigão D'Oeste",
+      "uf": "RO",
+      "url": "https://sapl.espigaodoeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Guajará-Mirim",
+      "uf": "RO",
+      "url": "https://sapl.guajaramirim.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Itapuã do Oeste",
+      "uf": "RO",
+      "url": "https://sapl.itapuadooeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Jaru",
+      "uf": "RO",
+      "url": "https://sapl.jaru.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Ji-Paraná",
+      "uf": "RO",
+      "url": "https://sapl.jiparana.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Ministro Andreazza",
+      "uf": "RO",
+      "url": "https://sapl.ministroandreazza.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Mirante da Serra",
+      "uf": "RO",
+      "url": "https://sapl.mirantedaserra.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Nova Brasilândia D'Oeste",
+      "uf": "RO",
+      "url": "https://sapl.novabrasilandiadoeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Nova Mamoré",
+      "uf": "RO",
+      "url": "https://sapl.novamamore.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Nova União",
+      "uf": "RO",
+      "url": "https://sapl.novauniao.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Novo Horizonte do Oeste",
+      "uf": "RO",
+      "url": "https://sapl.novohorizontedooeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Ouro Preto do Oeste",
+      "uf": "RO",
+      "url": "https://sapl.ouropretodooeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Parecis",
+      "uf": "RO",
+      "url": "https://sapl.parecis.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Pimenta Bueno",
+      "uf": "RO",
+      "url": "https://sapl.pimentabueno.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Pimenteiras do Oeste",
+      "uf": "RO",
+      "url": "https://sapl.pimenteirasdooeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Presidente Médici",
+      "uf": "RO",
+      "url": "https://sapl.presidentemedici.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Primavera de Rondônia",
+      "uf": "RO",
+      "url": "https://sapl.primaveraderondonia.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Rio Crespo",
+      "uf": "RO",
+      "url": "https://sapl.riocrespo.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Rolim de Moura",
+      "uf": "RO",
+      "url": "https://sapl.rolimdemoura.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Santa Luzia D'Oeste",
+      "uf": "RO",
+      "url": "https://sapl.santaluziadoeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "São Felipe D'Oeste",
+      "uf": "RO",
+      "url": "https://sapl.saofelipedoeste.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "São Francisco do Guaporé",
+      "uf": "RO",
+      "url": "https://sapl.saofranciscodoguapore.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "São Miguel do Guaporé",
+      "uf": "RO",
+      "url": "https://sapl.saomigueldoguapore.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Seringueiras",
+      "uf": "RO",
+      "url": "https://sapl.seringueiras.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Theobroma",
+      "uf": "RO",
+      "url": "https://sapl.theobroma.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Urupá",
+      "uf": "RO",
+      "url": "https://sapl.urupa.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Vale do Paraíso",
+      "uf": "RO",
+      "url": "https://sapl.valedoparaiso.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    },
+    {
+      "municipio": "Vilhena",
+      "uf": "RO",
+      "url": "https://sapl.vilhena.ro.leg.br/",
+      "tipo": "sapl",
+      "origem": "captura_de_tela_enviada_pelo_usuario",
+      "verificacao": "nao_testado_individualmente",
+      "canal_youtube": null
+    }
+  ],
+  "alero": {
+    "instituicao": "Assembleia Legislativa do Estado de Rondônia",
+    "portal": "https://www.al.ro.leg.br/",
+    "menu_atividade_parlamentar": [
+      {
+        "nome": "Agenda",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/agenda-parlamentar/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Atas de Sessões",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-de-sessoes/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Atas de Audiência de Instrução Legislativa",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-instrucao/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Atas de Audiências Públicas das Metas Fiscais",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/atas-comissao-financas/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Expediente Recebido",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/expediente-recebido/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Emendas Impositivas",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/emendas-impositivas/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Frequência Parlamentar",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/frequencia-parlamentar/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Ordem do Dia",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/ordem-do-dia/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Pautas",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/pautas/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Pesquisa de Projetos",
+        "url": "https://sapl.al.ro.leg.br/materia/pesquisar-materia",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "Proposições Recebidas",
+        "url": "https://www.al.ro.leg.br/atividade-parlamentar/proposicoes-recebidas/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      },
+      {
+        "nome": "SAPL",
+        "url": "https://sapl.al.ro.leg.br/",
+        "tipo": "atividade_parlamentar",
+        "verificacao": "pagina_oficial_consultada_2026-11-09"
+      }
+    ]
+  },
+  "fontes_complementares": [
+    {
+      "nome": "Canal oficial de vídeos da ALERO",
+      "url": "https://www.youtube.com/@ALE.RONDONIA",
+      "tipo": "video",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Acompanhamento digital",
+      "url": "https://transparencia.al.ro.leg.br/AtividadeParlamentar/Acompanhamentodigital/",
+      "tipo": "atividade_parlamentar",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Relatórios de atas de Porto Velho",
+      "url": "https://sapl.portovelho.ro.leg.br/sistema/relatorios/atas",
+      "tipo": "atas",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Pesquisa de sessões de Cacoal",
+      "url": "https://sapl.cacoal.ro.leg.br/sessao/pesquisar-sessao",
+      "tipo": "sessoes",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Acervo de sessões de Jaru",
+      "url": "https://sapl.jaru.ro.leg.br/sessao/pesquisar-sessao",
+      "tipo": "sessoes",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Pesquisa de sessões de Rolim de Moura",
+      "url": "https://sapl.rolimdemoura.ro.leg.br/sessao/pesquisar-sessao",
+      "tipo": "sessoes",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Pesquisa de sessões de Vilhena",
+      "url": "https://sapl.vilhena.ro.leg.br/sessao/pesquisar-sessao",
+      "tipo": "sessoes",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Documentos das sessões de Seringueiras",
+      "url": "https://www.seringueiras.ro.leg.br/documentos-sessoes",
+      "tipo": "atas_pautas",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Portal da Câmara de Campo Novo de Rondônia",
+      "url": "https://www.camponovoderondonia.ro.leg.br/",
+      "tipo": "portal",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Mapa do site da Câmara de Espigão d'Oeste",
+      "url": "https://www.espigaodoeste.ro.leg.br/sitemap",
+      "tipo": "arquivo",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Gravações e atas em Ji-Paraná",
+      "url": "https://www.jiparana.ro.leg.br/perguntas-frequentes",
+      "tipo": "orientacoes",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Gravações e SAPL de Nova Mamoré",
+      "url": "https://www.novamamore.ro.leg.br/carta-de-servicos-ao-usuario",
+      "tipo": "orientacoes",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Relatórios legislativos de Primavera de Rondônia",
+      "url": "https://sapl.primaveraderondonia.ro.leg.br/sistema/relatorios/",
+      "tipo": "relatorios",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Portal SAPL de Buritis",
+      "url": "https://sapl.buritis.ro.leg.br/",
+      "tipo": "sapl",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Portal SAPL de Guajará-Mirim",
+      "url": "https://sapl.guajaramirim.ro.leg.br/",
+      "tipo": "sapl",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    },
+    {
+      "nome": "Portal SAPL de Rio Crespo",
+      "url": "https://sapl.riocrespo.ro.leg.br/",
+      "tipo": "sapl",
+      "verificacao": "fonte_identificada_em_levantamento_anterior_nao_revalidada_individualmente"
+    }
+  ]
+}
