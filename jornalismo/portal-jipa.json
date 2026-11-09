@@ -1,0 +1,11 @@
+{
+  "nome": "Portal Jipa",
+  "tipo": "portal_de_noticias",
+  "categoria": "Jornalismo local",
+  "descricao": "Portal de notícias e informações sobre Ji-Paraná e outras localidades de Rondônia, incluindo serviços públicos e acontecimentos regionais.",
+  "abrangencia": "Ji-Paraná / Rondônia",
+  "url": "https://portaljipa.com.br/",
+  "origem_cadastro": "Fonte indicada por endereço de exemplo; cadastrada somente a página inicial do serviço, sem perfis, páginas de empresas, reportagens específicas ou rastreadores.",
+  "status_validacao": "pagina_inicial_identificada_em_2026-11-09;disponibilidade_e_condicoes_de_uso_nao_auditadas",
+  "nota": "Página inicial identificada em mecanismo de busca; o acesso automatizado pode ser restrito."
+}

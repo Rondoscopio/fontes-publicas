@@ -1,0 +1,10 @@
+{
+  "nome": "Política & Apuração",
+  "tipo": "plataforma_de_consulta_eleitoral",
+  "categoria": "Dados eleitorais e atividade política",
+  "descricao": "Portal de consulta e comparação de resultados eleitorais e atividade política, incluindo candidaturas, votações e transparência. Conferir metodologias e fontes oficiais antes de inferir irregularidades.",
+  "abrangencia": "Brasil / Estados e municípios, inclusive Rondônia",
+  "url": "https://www.apuracaopolitica.com.br/",
+  "origem_cadastro": "Fonte indicada por endereço de exemplo; cadastrada somente a página inicial do serviço, sem perfis, páginas de empresas, reportagens específicas ou rastreadores.",
+  "status_validacao": "pagina_inicial_identificada_em_2026-11-09;disponibilidade_e_condicoes_de_uso_nao_auditadas"
+}

@@ -1,0 +1,10 @@
+{
+  "nome": "Rondônia Dinâmica",
+  "tipo": "portal_de_noticias",
+  "categoria": "Jornalismo regional",
+  "descricao": "Notícias e análises de Rondônia sobre política, administração pública, economia, cidades, meio ambiente e temas regionais. Verificar informações com fontes primárias quando necessário.",
+  "abrangencia": "Rondônia / Brasil",
+  "url": "https://www.rondoniadinamica.com/",
+  "origem_cadastro": "Fonte indicada por endereço de exemplo; cadastrada somente a página inicial do serviço, sem perfis, páginas de empresas, reportagens específicas ou rastreadores.",
+  "status_validacao": "pagina_inicial_identificada_em_2026-11-09;disponibilidade_e_condicoes_de_uso_nao_auditadas"
+}

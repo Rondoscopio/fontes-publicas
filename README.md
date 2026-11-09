@@ -14,11 +14,11 @@ Catálogo estruturado de **fontes de dados, ferramentas, serviços, consultas e 
 | Fontes de outros estados | [outros-estados/](outros-estados/) | 281 |
 | Fontes de outros municípios | [outros-municipios/](outros-municipios/) | 19 |
 | Fontes internacionais | [internacionais/](internacionais/) | 142 |
-| Agregadores e portais de consulta | [agregadores/](agregadores/) | 730 |
-| Jornalismo e investigação | [jornalismo/](jornalismo/) | 9 |
-| **Subtotal de fontes principais** | | **2.054** |
+| Agregadores e portais de consulta | [agregadores/](agregadores/) | 733 |
+| Jornalismo e investigação | [jornalismo/](jornalismo/) | 14 |
+| **Subtotal de fontes principais** | | **2.062** |
 | APIs do catálogo ChelfoAPI, importadas separadamente | [chelfoapi/](chelfoapi/) | 959 |
-| **Total de cadastros de fontes** | | **3.013** |
+| **Total de cadastros de fontes** | | **3.021** |
 | Ferramentas e serviços | [ferramentas/](ferramentas/) | 1.063 |
 | Consultas predefinidas | [consultas/](consultas/) | 162 |
 | Referências e documentação | [referencias/](referencias/) | 66 |
@@ -59,6 +59,10 @@ Uma fonte pode ter este formato simplificado:
 ```
 
 Fichas de ferramentas e inventários podem apresentar outros campos, como categoria, origem, tecnologia, restrições, status de validação e identificação interna. Os identificadores e nomes dos arquivos são estáveis, sem garantia de disponibilidade atual da página externa.
+
+## Política de cadastro de portais
+
+Quando uma URL é enviada apenas como exemplo de um serviço, a ficha deve apontar para a **página inicial ou entrada geral da plataforma**, não para perfis de pessoas, candidaturas, doadores, empresas, pesquisas por documento ou reportagens isoladas. Remover parâmetros de rastreamento e não armazenar identificadores de alvos na ficha da fonte. Investigações específicas devem documentar separadamente finalidade, relevância pública, evidências e direito de resposta. O cadastro de um portal jornalístico não implica endosso de sua linha editorial.
 
 ## Limites e uso responsável
 

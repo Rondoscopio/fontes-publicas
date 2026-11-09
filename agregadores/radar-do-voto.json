@@ -1,0 +1,10 @@
+{
+  "nome": "Radar do Voto",
+  "tipo": "plataforma_de_consulta_eleitoral",
+  "categoria": "Dados eleitorais e financiamento de campanhas",
+  "descricao": "Consulta e comparação de eleições, distribuição territorial de votos, receitas e despesas de campanhas, doações eleitorais e emendas parlamentares. Fonte secundária; conferir os resultados junto aos órgãos oficiais, especialmente o TSE.",
+  "abrangencia": "Brasil / Estados e municípios, inclusive Rondônia",
+  "url": "https://radardovoto.com/",
+  "origem_cadastro": "Fonte indicada por endereço de exemplo; cadastrada somente a página inicial do serviço, sem perfis, páginas de empresas, reportagens específicas ou rastreadores.",
+  "status_validacao": "pagina_inicial_identificada_em_2026-11-09;disponibilidade_e_condicoes_de_uso_nao_auditadas"
+}
