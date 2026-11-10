@@ -1,0 +1,192 @@
+{
+  "titulo": "Páginas nacionais e federais de emissão, validação e consulta de certidões e registros",
+  "atualizado_em": "2026-11-10",
+  "quantidade_servicos": 22,
+  "observacoes": [
+    "Os serviços podem requerer CAPTCHA, login, autenticação do solicitante ou dados pessoais próprios, e isso não autoriza consultas em massa sem base legal.",
+    "Uma certidão negativa pode atestar apenas determinada base e intervalo e não a ausência de processos ou fatos em todo o país.",
+    "Os serviços repetidos sob tipos distintos de certidão usam a mesma página central, em vez de URLs fictícias.",
+    "Certidão de Justiça Federal unificada e certidões regionais não devem ser confundidas.",
+    "O TRF6 informa necessidade de certidões PJe e eproc para cobrir seus acervos conforme a situação do processo.",
+    "A certidão do CNJ de improbidade e as listas do TCU possuem natureza distinta das certidões de antecedentes criminais.",
+    "Links com fluxo de JavaScript, CAPTCHA ou autenticação tiveram serviço identificado institucionalmente, mas nenhuma emissão real com dados pessoais foi realizada."
+  ],
+  "servicos": [
+    {
+      "orgao": "CJF",
+      "nome": "Certidão judicial federal unificada",
+      "tipo": "Cível, criminal e outras classes conforme sistema",
+      "url": "https://certidao-unificada.cjf.jus.br/",
+      "fonte": "https://www.cjf.jus.br/cjf/certidao-negativa/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TRF1",
+      "nome": "Certidão judicial da 1ª Região",
+      "tipo": "Cível e criminal",
+      "url": "https://sistemas.trf1.jus.br/certidao/",
+      "fonte": "https://www.cjf.jus.br/cjf/certidao-negativa/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TRF2",
+      "nome": "Certidão judicial da 2ª Região",
+      "tipo": "Cível e criminal",
+      "url": "https://certidoes.trf2.jus.br/certidoes/",
+      "fonte": "https://www.cjf.jus.br/cjf/certidao-negativa/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TRF3",
+      "nome": "Certidão judicial da 3ª Região",
+      "tipo": "Cível e criminal",
+      "url": "https://web.trf3.jus.br/certidao-regional/",
+      "fonte": "https://www.cjf.jus.br/cjf/certidao-negativa/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TRF4",
+      "nome": "Certidão judicial da 4ª Região",
+      "tipo": "Cível, criminal e eleitoral",
+      "url": "https://www2.trf4.jus.br/trf4/processos/certidao/index.php",
+      "fonte": "https://www.cjf.jus.br/cjf/certidao-negativa/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TRF5",
+      "nome": "Certidão judicial da 5ª Região",
+      "tipo": "Cível e criminal",
+      "url": "https://certidoes.trf5.jus.br/certidoes2022/",
+      "fonte": "https://www.cjf.jus.br/cjf/certidao-negativa/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TRF6",
+      "nome": "Certidões da 6ª Região, orientações PJe e eproc",
+      "tipo": "Certidões de dois sistemas processuais",
+      "url": "https://portal.trf6.jus.br/certidao-online7/",
+      "fonte": "https://portal.trf6.jus.br/certidao-online7/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TSE",
+      "nome": "Central de certidões eleitorais",
+      "tipo": "Quitação, crimes eleitorais, filiação e alistamento",
+      "url": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "fonte": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TSE",
+      "nome": "Certidão de crimes eleitorais",
+      "tipo": "Crimes eleitorais",
+      "url": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "fonte": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TSE",
+      "nome": "Certidão de quitação eleitoral",
+      "tipo": "Quitação eleitoral",
+      "url": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "fonte": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TSE",
+      "nome": "Certidão de filiação partidária",
+      "tipo": "Filiação partidária",
+      "url": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "fonte": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TSE",
+      "nome": "Certidão negativa de alistamento eleitoral",
+      "tipo": "Alistamento eleitoral",
+      "url": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "fonte": "https://www.tse.jus.br/servicos-eleitorais/certidoes",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TST",
+      "nome": "Certidão Negativa de Débitos Trabalhistas - CNDT",
+      "tipo": "Débitos trabalhistas, emissão e validação",
+      "url": "https://cndt-certidao.tst.jus.br/",
+      "fonte": "https://cndt-certidao.tst.jus.br/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "STM",
+      "nome": "Certidão negativa da Justiça Militar da União",
+      "tipo": "Registros da Justiça Militar da União",
+      "url": "https://www.stm.jus.br/servicos-stm/certidao-negativa/emitir-certidao-negativa",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TCU",
+      "nome": "Plataforma de certidões do TCU",
+      "tipo": "Irregularidade de contas, inabilitação, licitante inidôneo, processos e situação de pessoa jurídica",
+      "url": "https://certidoes.apps.tcu.gov.br/",
+      "fonte": "https://portal.tcu.gov.br/carta-de-servicos/certidoes",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "TCU",
+      "nome": "Validação de certidão emitida pelo TCU",
+      "tipo": "Autenticidade e verificação",
+      "url": "https://certidoes.apps.tcu.gov.br/verificar-certidao",
+      "fonte": "https://certidoes.apps.tcu.gov.br/verificar-certidao",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "PF",
+      "nome": "Certidão de Antecedentes Criminais SINIC",
+      "tipo": "Antecedentes criminais federais, não abrange necessariamente todos os registros",
+      "url": "https://servicos.pf.gov.br/epol-sinic-publico/",
+      "fonte": "https://servicos.pf.gov.br/epol-sinic-publico/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "RFB/PGFN",
+      "nome": "Certidão de regularidade fiscal federal",
+      "tipo": "Tributos federais e dívida ativa da União",
+      "url": "https://servicos.receita.fazenda.gov.br/Servicos/certidao/",
+      "fonte": "https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal?id=24045&origem=servico",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "CAIXA/FGTS",
+      "nome": "Certificado de Regularidade do FGTS - CRF",
+      "tipo": "Regularidade do empregador perante FGTS",
+      "url": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf",
+      "fonte": "https://www.fgts.gov.br/Paginas/empregador/perguntas-frequentes-empregador.aspx",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "CNJ",
+      "nome": "Cadastro Nacional de Condenações Cíveis por Improbidade",
+      "tipo": "Consulta de condenações cíveis e decisões relacionadas à inelegibilidade",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_requerido.php?validar=form",
+      "fonte": "https://www.cnj.jus.br/programas-e-acoes/combate-a-corrupcao-enccla/cadastro-nacional-de-condenados-por-crimes-de-improbidade-administrativa/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "CNJ",
+      "nome": "Consulta de processos por improbidade",
+      "tipo": "Pesquisa por número de processo na base do CNJ",
+      "url": "https://www.cnj.jus.br/improbidade_adm/consultar_processo.php",
+      "fonte": "https://www.cnj.jus.br/corregedoriacnj/sistemas-consulta-publica/",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    },
+    {
+      "orgao": "CGU",
+      "nome": "Consultas públicas a sanções administrativas",
+      "tipo": "CEIS, CNEP e outros cadastros, não equivalem a condenações criminais",
+      "url": "https://portaldatransparencia.gov.br/sancoes",
+      "fonte": "https://portaldatransparencia.gov.br/sancoes",
+      "verificacao": "página ou documentação institucional localizada; emissão não testada"
+    }
+  ]
+}
