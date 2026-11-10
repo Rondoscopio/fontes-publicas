@@ -1,0 +1,8 @@
+{
+  "nome": "TSE — PesqEle, Consulta de Pesquisas Eleitorais Registradas",
+  "descricao": "Sistema oficial do Tribunal Superior Eleitoral para consultar pesquisas eleitorais registradas por eleição, cargo, município, UF e número de identificação. Permite conferir contratante, empresa, responsáveis e metodologia conforme os documentos publicados. Registro não constitui certificação da exatidão dos resultados nem implica publicação dos resultados completos.",
+  "abrangencia": "Federal / Brasil, com filtros para Rondônia",
+  "url": "https://pesqele-divulgacao.tse.jus.br/app/pesquisa/listar.xhtml",
+  "categoria": "registro_oficial_de_pesquisa",
+  "observacoes": "Consulta por site com sessão e filtros. Respeitar autenticação e limites do serviço. Preservar ficha técnica e versões dos relatórios."
+}
