@@ -27,6 +27,10 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 
 - [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json), incluindo SAPLs, ALERO e Interlegis
 - [Fontes judiciais e de responsabilização](inventarios/fontes-judiciais-e-sancoes-pessoas-empresas.json), com consultas, sanções e APIs para avaliação
+- [Diretório nacional de tribunais](inventarios/tribunais-brasileiros-diretorio-nacional.json), 92 tribunais judiciais e 33 tribunais de contas
+- [Certidões federais e nacionais](inventarios/certidoes-federais-e-nacionais.json), emissão, consultas e validação
+- [Certidões judiciais estaduais das 27 UFs](inventarios/certidoes-judiciais-estaduais-27-ufs.json), com links de serviço e status de funcionamento
+- [Certidões municipais de Rondônia](inventarios/certidoes-municipais-rondonia-52-municipios.json), com inventário dos 52 municípios e lacunas de cobertura
 - [Migração de links](inventarios/migracao-links-markdown.json) e [pendências históricas](inventarios/pendencias-historicas.json)
 - [Seleção de fontes e ferramentas](inventarios/selecao-100-fontes-e-ferramentas.json)
 - [Inventários de links e origens](inventarios/) e [famílias documentadas de APIs](inventarios/chelfoapi-familias-documentadas.json)
