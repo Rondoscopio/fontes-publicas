@@ -1,0 +1,205 @@
+{
+  "titulo": "Certidões de regularidade fiscal estadual por unidade federativa",
+  "atualizado_em": "2026-11-10",
+  "total_ufs": 27,
+  "servicos_localizados": 3,
+  "pendentes": 24,
+  "observacoes": [
+    "Há secretarias estaduais da Fazenda e Procuradorias que emitem certidões de débito tributário, dívida ativa e certidões positivas com efeitos de negativa. Os escopos variam por UF.",
+    "Este inventário registra todas as 27 UFs, mas apenas três URLs foram identificadas em fontes públicas institucionais nesta rodada.",
+    "Os outros 24 endereços permanecem explicitamente nulos. Não substituir o portal de emissão por domínio provável do governo estadual.",
+    "Certidão fiscal não significa certidão judicial ou certidão de antecedentes criminais.",
+    "Quando houver mais de uma certidão por UF, cadastrar serviços específicos separadamente e indicar a cobertura da dívida ativa."
+  ],
+  "por_uf": [
+    {
+      "uf": "AC",
+      "estado": "Acre",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "AL",
+      "estado": "Alagoas",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "AP",
+      "estado": "Amapá",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "AM",
+      "estado": "Amazonas",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "BA",
+      "estado": "Bahia",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "CE",
+      "estado": "Ceará",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "DF",
+      "estado": "Distrito Federal",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "ES",
+      "estado": "Espírito Santo",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "GO",
+      "estado": "Goiás",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "MA",
+      "estado": "Maranhão",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "MT",
+      "estado": "Mato Grosso",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "MS",
+      "estado": "Mato Grosso do Sul",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "MG",
+      "estado": "Minas Gerais",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "PA",
+      "estado": "Pará",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "PB",
+      "estado": "Paraíba",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "PR",
+      "estado": "Paraná",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "PE",
+      "estado": "Pernambuco",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "PI",
+      "estado": "Piauí",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "RJ",
+      "estado": "Rio de Janeiro",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "RN",
+      "estado": "Rio Grande do Norte",
+      "url_emissao": "https://uvt2.set.rn.gov.br/#/services/certidao-negativa/emitir",
+      "fonte": "https://saopaulodopotengi.rn.gov.br/index.php/certidoes",
+      "situacao": "link de CND estadual indicado no portal oficial municipal de São Paulo do Potengi (RN), não testado integralmente"
+    },
+    {
+      "uf": "RS",
+      "estado": "Rio Grande do Sul",
+      "url_emissao": "https://www.sefaz.rs.gov.br/sat/CertidaoSitFiscalSolic.aspx",
+      "fonte": "https://www.crissiumal.rs.gov.br/pagina/37/emitir-negativas",
+      "situacao": "link CND estadual indicado pelo portal oficial municipal de Crissiumal (RS), não testado integralmente"
+    },
+    {
+      "uf": "RO",
+      "estado": "Rondônia",
+      "url_emissao": "https://portalcontribuinte.sefin.ro.gov.br/Publico/certidaoNegativa.jsp",
+      "fonte": "https://www.sefin.ro.gov.br/certidaonegativa/",
+      "situacao": "serviço de CND estadual confirmado em portal da SEFIN-RO"
+    },
+    {
+      "uf": "RR",
+      "estado": "Roraima",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "SC",
+      "estado": "Santa Catarina",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "SP",
+      "estado": "São Paulo",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "SE",
+      "estado": "Sergipe",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    },
+    {
+      "uf": "TO",
+      "estado": "Tocantins",
+      "url_emissao": null,
+      "fonte": null,
+      "situacao": "pendente de confirmação da página oficial de emissão de certidões fiscais estaduais"
+    }
+  ]
+}
