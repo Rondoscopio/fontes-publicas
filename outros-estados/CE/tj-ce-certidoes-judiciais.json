@@ -1,0 +1,8 @@
+{
+  "nome": "TJCE — Certidões Judiciais",
+  "descricao": "Página de consulta, emissão ou orientação de certidões judiciais da unidade federativa CE. SIRECE do TJCE acessado em 2026, requerimento por tipo de solicitante. A existência de ação ou certidão positiva não equivale a condenação.",
+  "abrangencia": "Estadual / CE",
+  "url": "https://sirece.tjce.jus.br/sirece-web/nova/solicitacao.jsf",
+  "referencia_institucional": "https://www.gov.br/pf/pt-br/assuntos/imigracao/declaracoes-e-formularios/certidoes-criminais",
+  "situacao_url": "SIRECE do TJCE acessado em 2026, requerimento por tipo de solicitante."
+}
