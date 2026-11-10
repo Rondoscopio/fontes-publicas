@@ -1,0 +1,68 @@
+{
+  "titulo": "Cobertura nacional de emissão e consulta de certidões municipais",
+  "atualizado_em": "2026-11-10",
+  "abrangencia": "Municípios de todas as unidades federativas do Brasil",
+  "cobertura": "Parcial. Este documento NÃO lista todas as páginas de emissão municipais brasileiras; aponta fontes verificadas e uma API oficial para levantar a lista de localidades.",
+  "api_oficial_municipios_ibge": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios",
+  "referencia_ibge": "https://www.ibge.gov.br/explica/codigos-dos-municipios.php",
+  "tipos_de_certidao": [
+    "CND de tributos municipais",
+    "Certidão positiva com efeitos de negativa",
+    "Certidões de IPTU e ISS",
+    "Dívida ativa municipal",
+    "Regularidade de imóveis e inscrição imobiliária",
+    "Certidões de alvará e licenciamento",
+    "Certidões de valor venal"
+  ],
+  "municipios_catalogados": [
+    {
+      "municipio": "Porto Velho",
+      "uf": "RO",
+      "arquivo": "municipais/porto-velho-emissao-certidoes-negativas-municipais.json",
+      "tipo": "emissao_cnd"
+    },
+    {
+      "municipio": "Cacoal",
+      "uf": "RO",
+      "arquivo": "municipais/cacoal-certidao-negativa-de-debitos-municipais.json",
+      "tipo": "emissao_cnd"
+    },
+    {
+      "municipio": "Ji-Paraná",
+      "uf": "RO",
+      "arquivo": "inventarios/certidoes-municipais-rondonia-52-municipios.json",
+      "tipo": "orientacao_emissao_sem_endpoint_direto"
+    },
+    {
+      "municipio": "Jaru",
+      "uf": "RO",
+      "arquivo": "inventarios/certidoes-municipais-rondonia-52-municipios.json",
+      "tipo": "endereco_historico_nao_validado"
+    },
+    {
+      "municipio": "São Paulo do Potengi",
+      "uf": "RN",
+      "arquivo": "outros-municipios/RN/sao-paulo-do-potengi-certidoes-fiscais-municipais.json",
+      "tipo": "diretorio_municipal_de_certidoes"
+    },
+    {
+      "municipio": "Crissiumal",
+      "uf": "RS",
+      "arquivo": "outros-municipios/RS/crissiumal-emissao-certidoes-negativas.json",
+      "tipo": "diretorio_municipal_de_certidoes"
+    },
+    {
+      "municipio": "Igaracy",
+      "uf": "PB",
+      "arquivo": "outros-municipios/PB/igaracy-diretorio-certidoes.json",
+      "tipo": "diretorio_municipal_de_certidoes"
+    }
+  ],
+  "observacoes": [
+    "O Brasil possui milhares de prefeituras com plataformas independentes. Não existe endereço único conhecido que substitua a identificação e confirmação de todas as páginas municipais de emissão.",
+    "A API oficial do IBGE identifica municípios, mas não fornece página de certidão tributária de cada prefeitura.",
+    "A listagem dos 52 municípios de Rondônia está em inventário próprio. A maioria ainda não tem portal de certidão confirmado.",
+    "Alguns links indicam um diretório de serviços e não um endpoint direto de emissão; outros são históricos e requerem validação.",
+    "É proibido supor URL de emissão a partir de domínio institucional sem confirmação. Captchas, autenticação e restrições legais devem ser respeitados."
+  ]
+}
