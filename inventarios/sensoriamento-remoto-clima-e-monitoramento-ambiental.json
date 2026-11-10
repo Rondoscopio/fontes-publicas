@@ -1,0 +1,233 @@
+{
+  "titulo": "Fontes de imagens de satélite, sensoriamento remoto, clima e monitoramento ambiental",
+  "atualizado_em": "2026-11-10",
+  "escopo": "OSINT Rondônia: imagens orbitais, catálogos, APIs geoespaciais, meteorologia, queimadas, desmatamento, agricultura e adaptação climática.",
+  "criterios": [
+    "URLs fornecidas pelo solicitante; presença no catálogo não comprova disponibilidade, licença aberta, precisão ou atualização.",
+    "Entradas idênticas repetidas foram consolidadas. Fragmentos #da-focos e #da-rf identificam seções distintas da mesma página.",
+    "O status indica apenas testes pontuais ou pendências, não monitoramento contínuo.",
+    "Verificar licenciamento e regras de acesso antes da coleta automatizada.",
+    "Preservar data de aquisição da imagem, sensor, resolução, cobertura de nuvens, processamento e procedência."
+  ],
+  "total_fontes": 31,
+  "fontes": [
+    {
+      "nome": "Copernicus Browser",
+      "url": "https://browser.dataspace.copernicus.eu/",
+      "abrangencia": "internacional",
+      "categoria": "imagens_satelite",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "USGS EarthExplorer",
+      "url": "https://earthexplorer.usgs.gov/",
+      "abrangencia": "internacional",
+      "categoria": "imagens_satelite",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "NASA Worldview",
+      "url": "https://worldview.earthdata.nasa.gov/",
+      "abrangencia": "internacional",
+      "categoria": "monitoramento_satelital",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — Catálogo CBERS e Amazonia-1",
+      "url": "https://www.obt.inpe.br/OBT/assuntos/catalogo-cbers-amz-1",
+      "abrangencia": "federal",
+      "categoria": "imagens_satelite",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE BIG — Dados Geoespaciais",
+      "url": "https://data.inpe.br/dados/",
+      "abrangencia": "federal",
+      "categoria": "catalogo_dados",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE STAC Server",
+      "url": "https://data.inpe.br/stac/browser/?.language=en",
+      "abrangencia": "federal",
+      "categoria": "catalogo_api",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "Brazil Data Cube Explorer",
+      "url": "https://data.inpe.br/bdc/explorer/explore",
+      "abrangencia": "federal",
+      "categoria": "analise_geoespacial",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — Catálogo de Imagens DGI",
+      "url": "https://www.dgi.inpe.br/catalogo/explore",
+      "abrangencia": "federal",
+      "categoria": "imagens_satelite",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "CPTEC/INPE — DSAT GOES-19",
+      "url": "https://www.cptec.inpe.br/dsat/",
+      "abrangencia": "federal",
+      "categoria": "meteorologia_satelital",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "CPTEC/INPE — Previsão Numérica MONAN",
+      "url": "https://previsaonumerica.cptec.inpe.br/monan/t_2m/ams/2026-11-10-00z/",
+      "abrangencia": "federal",
+      "categoria": "previsao_meteorologica",
+      "status_verificacao": "nao_verificado_individualmente",
+      "observacao": "URL de execução datada; confirmar novas rodadas no portal de previsão."
+    },
+    {
+      "nome": "CPTEC/INPE — Previsão Sazonal",
+      "url": "https://sazonal.cptec.inpe.br/",
+      "abrangencia": "federal",
+      "categoria": "previsao_meteorologica",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "CPTEC/INPE — Previsão Subsazonal",
+      "url": "https://subsazonal.cptec.inpe.br/",
+      "abrangencia": "federal",
+      "categoria": "previsao_meteorologica",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — Rede SONDA",
+      "url": "https://sonda.ccst.inpe.br/",
+      "abrangencia": "federal",
+      "categoria": "dados_ambientais",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "CPTEC/INPE — Sigma",
+      "url": "https://sigma.cptec.inpe.br/",
+      "abrangencia": "federal",
+      "categoria": "meteorologia",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "MCTI — AdaptaBrasil",
+      "url": "https://adaptabrasil.mcti.gov.br/",
+      "abrangencia": "federal",
+      "categoria": "riscos_climaticos",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — Programa Queimadas",
+      "url": "https://data.inpe.br/queimadas/",
+      "abrangencia": "federal",
+      "categoria": "queimadas",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — Queimadas Dados Abertos (Focos)",
+      "url": "https://data.inpe.br/queimadas/dados-abertos/#da-focos",
+      "abrangencia": "federal",
+      "categoria": "queimadas_dados_abertos",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — Área Queimada 1 km",
+      "url": "https://data.inpe.br/queimadas/aq1km/",
+      "abrangencia": "federal",
+      "categoria": "area_queimada",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — Queimadas Dados Abertos (Risco de Fogo)",
+      "url": "https://data.inpe.br/queimadas/dados-abertos/#da-rf",
+      "abrangencia": "federal",
+      "categoria": "queimadas_dados_abertos",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — SISAM (PM2,5)",
+      "url": "https://data.inpe.br/queimadas/sisam/",
+      "abrangencia": "federal",
+      "categoria": "qualidade_ar",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — BDQueimadas",
+      "url": "https://data.inpe.br/queimadas/bdqueimadas/",
+      "abrangencia": "federal",
+      "categoria": "queimadas",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE BIG — BiomasBR",
+      "url": "https://data.inpe.br/biomasbr/",
+      "abrangencia": "federal",
+      "categoria": "biomas",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE BIG — Mapaquali",
+      "url": "https://data.inpe.br/mapaquali/",
+      "abrangencia": "federal",
+      "categoria": "qualidade_ambiental",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "TerraBrasilis — Desmatamento",
+      "url": "https://terrabrasilis.dpi.inpe.br/app/map/deforestation",
+      "abrangencia": "federal",
+      "categoria": "desmatamento",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE BIG — MapaAgri",
+      "url": "https://data.inpe.br/mapaagri/",
+      "abrangencia": "federal",
+      "categoria": "agricultura",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "TerraBrasilis — Alertas",
+      "url": "https://terrabrasilis.dpi.inpe.br/app/map/alerts",
+      "abrangencia": "federal",
+      "categoria": "alertas_desmatamento",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "TerraBrasilis — Sala de Situação",
+      "url": "https://terrabrasilis.dpi.inpe.br/ams/",
+      "abrangencia": "federal",
+      "categoria": "monitoramento_ambiental",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE — GeoNetwork",
+      "url": "https://data.inpe.br/geonetwork/",
+      "abrangencia": "federal",
+      "categoria": "catalogo_metadados",
+      "status_verificacao": "indisponibilidade_temporaria_a_revalidar"
+    },
+    {
+      "nome": "Brazil Data Cube Lab",
+      "url": "https://data.inpe.br/bdc/lab/",
+      "abrangencia": "federal",
+      "categoria": "laboratorio_dados",
+      "status_verificacao": "acesso_restrito_403_observado"
+    },
+    {
+      "nome": "Brazil Data Cube — TerraCollect",
+      "url": "https://data.inpe.br/bdc/terracollect/home",
+      "abrangencia": "federal",
+      "categoria": "coleta_geoespacial",
+      "status_verificacao": "nao_verificado_individualmente"
+    },
+    {
+      "nome": "INPE BIG — Brazil Data Cube",
+      "url": "https://data.inpe.br/bdc/",
+      "abrangencia": "federal",
+      "categoria": "analise_geoespacial",
+      "status_verificacao": "nao_verificado_individualmente"
+    }
+  ]
+}
