@@ -1,0 +1,8 @@
+{
+  "nome": "Real Time Big Data — Acervo de Pesquisas",
+  "descricao": "Publicações e relatórios de pesquisas eleitorais e de opinião por estado, quando disponíveis. Registrar metodologia, contratante e identificação do PesqEle.",
+  "abrangencia": "Privado / Brasil",
+  "url": "https://realtimebigdata.com.br/pesquisas/",
+  "categoria": "pesquisa_de_opiniao",
+  "observacoes": "Para pesquisas eleitorais, confrontar o estudo com registro no PesqEle do TSE e preservar fichas técnicas, amostra, coleta, patrocinador e data."
+}
