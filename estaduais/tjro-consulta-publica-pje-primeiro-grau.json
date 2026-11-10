@@ -1,0 +1,6 @@
+{
+  "nome": "TJRO — Consulta Pública PJe 1º Grau",
+  "descricao": "Consulta pública de processos cíveis e criminais da Justiça estadual de Rondônia, por número, nome da parte e outros campos. Não exibe processos sob segredo de justiça. Processo encontrado não comprova condenação.",
+  "abrangencia": "Estadual / Rondônia",
+  "url": "https://pjepg-consulta.tjro.jus.br/consulta/ConsultaPublica/listView.seam"
+}
