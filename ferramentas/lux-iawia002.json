@@ -1,0 +1,12 @@
+{
+  "nome": "Lux",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Download e processamento de mídia",
+  "descricao": "Biblioteca e ferramenta de linha de comando em Go para baixar vídeos de serviços compatíveis.",
+  "abrangencia": "Internacional / Download e processamento de mídia",
+  "url": "https://github.com/iawia002/lux",
+  "origem": "Repositório open source de terceiros no GitHub",
+  "licenca_spdx": "MIT",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Verificar licenças, direitos autorais e termos dos serviços antes do download. Documentação de download: https://github.com/iawia002/lux#download-a-video."
+}

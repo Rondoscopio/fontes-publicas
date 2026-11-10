@@ -1,0 +1,12 @@
+{
+  "nome": "CrawlerGo",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Crawler com navegador automatizado",
+  "descricao": "Crawler orientado a navegador, utilizado para descobrir caminhos e endpoints em aplicações web e apoiar scanners de segurança.",
+  "abrangencia": "Internacional / Crawler com navegador automatizado",
+  "url": "https://github.com/Qianlitp/crawlergo",
+  "origem": "Repositório open source de terceiros no GitHub",
+  "licenca_spdx": "GPL-3.0",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Evitar varredura não autorizada e respeitar limitações, privacidade e disponibilidade dos sistemas acessados."
+}

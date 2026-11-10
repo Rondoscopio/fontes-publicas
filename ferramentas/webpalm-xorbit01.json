@@ -1,0 +1,12 @@
+{
+  "nome": "WebPalm",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Crawler e exploração de links",
+  "descricao": "Projeto de rastreamento de conteúdo e ligações na web, conforme descrição do repositório original.",
+  "abrangencia": "Internacional / Crawler e exploração de links",
+  "url": "https://github.com/XORbit01/webpalm",
+  "origem": "Repositório open source de terceiros no GitHub",
+  "licenca_spdx": "GPL-3.0",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Funcionalidade e manutenção devem ser verificadas antes da adoção; evitar cargas excessivas e acesso não autorizado."
+}

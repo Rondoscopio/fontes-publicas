@@ -1,0 +1,12 @@
+{
+  "nome": "Scrapling",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Extração de dados e web scraping",
+  "descricao": "Framework Python para extração de dados de páginas web, com mecanismos de navegação e rastreamento em maior escala.",
+  "abrangencia": "Internacional / Extração de dados e web scraping",
+  "url": "https://github.com/D4Vinci/Scrapling",
+  "origem": "Repositório open source de terceiros no GitHub",
+  "licenca_spdx": "BSD-3-Clause",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Avaliar funcionalidades e dependências antes de implantação. Respeitar condições de uso, privacidade e restrições técnicas e legais dos sites."
+}

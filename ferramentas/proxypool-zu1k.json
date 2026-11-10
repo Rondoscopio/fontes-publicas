@@ -1,0 +1,12 @@
+{
+  "nome": "ProxyPool",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Descoberta e verificação de proxies",
+  "descricao": "Projeto que coleta endereços de proxies publicamente anunciados, remove duplicados, verifica disponibilidade e disponibiliza a lista resultante.",
+  "abrangencia": "Internacional / Descoberta e verificação de proxies",
+  "url": "https://github.com/zu1k/proxypool",
+  "origem": "Repositório open source de terceiros no GitHub",
+  "licenca_spdx": "GPL-3.0",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Proxies públicos não são necessariamente confiáveis: podem registrar ou modificar tráfego. Avaliar origem, segurança, legalidade e privacidade antes de utilizar."
+}

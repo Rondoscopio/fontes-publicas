@@ -1,0 +1,12 @@
+{
+  "nome": "GoSpider",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Crawler e descoberta de URLs",
+  "descricao": "Crawler rápido desenvolvido em Go para rastrear páginas e identificar links e recursos web.",
+  "abrangencia": "Internacional / Crawler e descoberta de URLs",
+  "url": "https://github.com/jaeles-project/gospider",
+  "origem": "Repositório open source de terceiros no GitHub",
+  "licenca_spdx": "MIT",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Respeitar políticas de acesso, limites de requisições e autorização para eventuais testes ativos."
+}

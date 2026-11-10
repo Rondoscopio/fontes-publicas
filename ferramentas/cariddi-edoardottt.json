@@ -1,0 +1,12 @@
+{
+  "nome": "Cariddi",
+  "tipo": "ferramenta_ou_servico",
+  "categoria": "Crawler e análise de exposição",
+  "descricao": "Ferramenta para rastrear URLs e identificar caminhos, extensões, endpoints e possíveis exposições de segredos ou chaves em conteúdos acessíveis.",
+  "abrangencia": "Internacional / Crawler e análise de exposição",
+  "url": "https://github.com/edoardottt/cariddi",
+  "origem": "Repositório open source de terceiros no GitHub",
+  "licenca_spdx": "GPL-3.0",
+  "status_validacao": "metadados_verificados_funcionamento_nao_auditado",
+  "nota": "Empregar testes ativos apenas em sistemas próprios ou mediante autorização. Potenciais segredos detectados são informação sensível e não devem ser publicados."
+}
