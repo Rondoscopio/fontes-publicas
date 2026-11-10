@@ -1,0 +1,6 @@
+{
+  "nome": "TJRO — Emissão de Certidão Judicial Estadual",
+  "descricao": "Página de emissão de certidão judicial estadual pelo sistema do Tribunal de Justiça de Rondônia, documentada em diretório oficial da Polícia Federal. O endpoint precisa ser revalidado antes de integração automática.",
+  "abrangencia": "Estadual / Rondônia",
+  "url": "https://webapp.tjro.jus.br/certidaoonline/pages/cnpg.xhtml"
+}
