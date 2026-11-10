@@ -1,0 +1,17 @@
+{
+  "nome": "CGU — Informa.BR: busca pública",
+  "tipo": "consulta_publica",
+  "categoria": "Acesso à informação e transparência federal",
+  "descricao": "Interface de pesquisa do Informa.BR, plataforma federal para localizar informações públicas de órgãos do Poder Executivo, reunindo conteúdos de fontes oficiais como Portal da Transparência, Dados.gov.br e Busca LAI, com apoio de recursos de inteligência artificial.",
+  "abrangencia": "Federal / Brasil, inclusive pesquisas relativas a Rondônia",
+  "url": "https://informabr.cgu.gov.br/busca",
+  "orgao_responsavel": "Controladoria-Geral da União",
+  "status_validacao": "portal_oficial_identificado_conteudo_dependente_de_javascript",
+  "links_relacionados": [
+    {
+      "nome": "Descrição oficial do serviço Informa.BR",
+      "url": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
+    }
+  ],
+  "nota": "A interface depende de JavaScript e não foi possível inspecionar todas as funcionalidades. Resultados de IA devem ser conferidos na fonte primária; pedidos de LAI podem exigir autenticação gov.br."
+}

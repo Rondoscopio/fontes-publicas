@@ -1,0 +1,17 @@
+{
+  "nome": "CGU — Informa.BR: Mapa Brasil Transparente",
+  "tipo": "painel_transparencia",
+  "categoria": "Transparência pública estadual e municipal",
+  "descricao": "Seção do Informa.BR associada ao Mapa Brasil Transparente (MBT), instrumento da CGU para acompanhamento e avaliação de transparência e acesso à informação em estados e municípios, distinguindo autoavaliações de gestores e avaliações independentes.",
+  "abrangencia": "Federal / Brasil, com avaliação de estados e municípios, inclusive Rondônia",
+  "url": "https://informabr.cgu.gov.br/mapa-brasil-transparente",
+  "orgao_responsavel": "Controladoria-Geral da União",
+  "status_validacao": "endereco_oficial_responde_conteudo_dependente_de_javascript",
+  "links_relacionados": [
+    {
+      "nome": "Guia oficial do Mapa Brasil Transparente",
+      "url": "https://www.gov.br/acessoainformacao/pt-br/lai-para-estados-e-municipios/autoavaliacao-de-transparencia-e-acesso-a-informacao/arquivos/guia-gestor-autoavaliacao.pdf"
+    }
+  ],
+  "nota": "A interface depende de JavaScript. Autoavaliações refletem respostas do próprio ente e não equivalem às avaliações independentes da CGU. Confirmar datas e metodologia antes de comparar rankings ou notas."
+}

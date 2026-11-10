@@ -1,0 +1,11 @@
+{
+  "nome": "Presidência da República — Governa: painel público",
+  "tipo": "painel_publico",
+  "categoria": "Gestão governamental e monitoramento de políticas públicas",
+  "descricao": "Endereço de um painel público do sistema Governa, ambiente associado à gestão e ao acompanhamento de políticas e projetos federais. O conteúdo específico do painel indicado deve ser confirmado por navegação com JavaScript.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://governa.presidencia.gov.br/painel_publico/#/98b55d08-0983-4287-8f0d-dbdbdabb76d3/53192575-47d7-48ec-b8e9-b0a04c4ee1e2",
+  "orgao_responsavel": "Presidência da República / Casa Civil",
+  "status_validacao": "endereco_publico_responde_painel_especifico_nao_inspecionado",
+  "nota": "A consulta não retornou dados legíveis do painel e o fragmento após # é parte da rota interna da aplicação. Não inferir indicadores, período, dados ou atualização sem inspecionar a interface."
+}
