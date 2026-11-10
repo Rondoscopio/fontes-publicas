@@ -20,12 +20,14 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 - [Fontes federais](federais/), [outros estados](outros-estados/) e [outros municípios](outros-municipios/)
 - [Fontes internacionais](internacionais/) e [fontes agregadoras](agregadores/)
 - [Jornalismo e investigação](jornalismo/)
+- [Institutos e centros de pesquisa](institutos-pesquisa/), incluindo opinião pública, economia, saúde, segurança e meio ambiente
 - [Ferramentas](ferramentas/), [consultas](consultas/) e [referências](referencias/)
 - [APIs catalogadas](chelfoapi/) e [inventários](inventarios/)
 
 ## Inventários
 
 - [Fontes legislativas de Rondônia](inventarios/fontes-legislativas-rondonia.json), incluindo SAPLs, ALERO e Interlegis
+- [Institutos e fontes de pesquisa](inventarios/institutos-e-fontes-de-pesquisa.json), com 53 referências e metodologia de validação
 - [Fontes judiciais e de responsabilização](inventarios/fontes-judiciais-e-sancoes-pessoas-empresas.json), com consultas, sanções e APIs para avaliação
 - [Diretório nacional de tribunais](inventarios/tribunais-brasileiros-diretorio-nacional.json), 92 tribunais judiciais e 33 tribunais de contas
 - [Certidões federais e nacionais](inventarios/certidoes-federais-e-nacionais.json), emissão, consultas e validação
