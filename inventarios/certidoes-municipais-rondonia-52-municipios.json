@@ -1,0 +1,441 @@
+{
+  "titulo": "Certidões e serviços municipais de Rondônia, diretório de cobertura das 52 prefeituras",
+  "atualizado_em": "2026-11-10",
+  "escopo": "Todos os 52 municípios de Rondônia. O inventário de municípios está completo; a confirmação de páginas de certidão municipal ainda é parcial.",
+  "fonte_municipios": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx",
+  "fonte_alternativa": "https://www.ibge.gov.br/explica/codigos-dos-municipios.php",
+  "tipos_prioritarios": [
+    "certidão negativa de débitos municipais",
+    "certidão positiva com efeitos de negativa",
+    "certidão de regularidade de ISS e IPTU",
+    "certidão de cadastro imobiliário",
+    "certidão de dívida ativa e situação fiscal",
+    "certidão de valor venal e informações imobiliárias",
+    "certidão de alvará e licenciamento"
+  ],
+  "observacoes": [
+    "Municipal não significa judicial: municípios brasileiros não possuem tribunais judiciais próprios. TCMs dos municípios e dos estados são órgãos de contas, não varas judiciais.",
+    "Uma URL municipal de certidão é preenchida somente quando localizada em página oficial ou publicação oficial; ausências estão marcadas null.",
+    "Em Ji-Paraná, a fonte oficial encontrada descreve o serviço mas não fornece um link direto individualizado de emissão.",
+    "Em Jaru, o endereço consta de publicação institucional histórica, sem validação atual da disponibilidade.",
+    "Não há cobertura nacional de cada certidão municipal. Para expandir às milhares de prefeituras, usar a API oficial de localidades do IBGE e validar manual ou automaticamente os portais de serviços de cada município sem contornar autenticação."
+  ],
+  "municipios": [
+    {
+      "municipio": "Alta Floresta D'Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Alto Alegre dos Parecis",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Alto Paraíso",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Alvorada D'Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Ariquemes",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Buritis",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Cabixi",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Cacaulândia",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Cacoal",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": "https://tributos.cacoal.ro.gov.br/portal-contribuinte/emissao-certidoes",
+      "situacao": "página municipal de certidão localizada em 2026",
+      "fonte": "https://tributos.cacoal.ro.gov.br/portal-contribuinte/emissao-certidoes"
+    },
+    {
+      "municipio": "Campo Novo de Rondônia",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Candeias do Jamari",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Castanheiras",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Cerejeiras",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Chupinguaia",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Colorado do Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Corumbiara",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Costa Marques",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Cujubim",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Espigão D'Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Governador Jorge Teixeira",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Guajará-Mirim",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Itapuã do Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Jaru",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": "http://servicos.jaru.ro.gov.br:5660/servicosweb/home.jsf",
+      "situacao": "endereço histórico informado em documento público de 2024; revalidar antes de uso",
+      "fonte": "https://doe.jaru.ro.gov.br/portal/edicoes/download/981"
+    },
+    {
+      "municipio": "Ji-Paraná",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": "https://ji-parana.ro.gov.br/faq/",
+      "situacao": "página oficial orienta emissão pela SEMFAZ, mas a URL de emissão direta não foi confirmada",
+      "fonte": "https://ji-parana.ro.gov.br/faq/"
+    },
+    {
+      "municipio": "Machadinho D'Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Ministro Andreazza",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Mirante da Serra",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Monte Negro",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Nova Brasilândia D'Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Nova Mamoré",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Nova União",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Novo Horizonte do Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Ouro Preto do Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Parecis",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Pimenta Bueno",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Pimenteiras do Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Porto Velho",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": "https://semecdigital.portovelho.ro.gov.br/acesso/emissoes-doc",
+      "situacao": "página municipal de certidão localizada em 2026",
+      "fonte": "https://semecdigital.portovelho.ro.gov.br/acesso/emissoes-doc"
+    },
+    {
+      "municipio": "Presidente Médici",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Primavera de Rondônia",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Rio Crespo",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Rolim de Moura",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Santa Luzia D'Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "São Felipe D'Oeste",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "São Francisco do Guaporé",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "São Miguel do Guaporé",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Seringueiras",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Teixeirópolis",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Theobroma",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Urupá",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Vale do Anari",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Vale do Paraíso",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    },
+    {
+      "municipio": "Vilhena",
+      "uf": "RO",
+      "tipo": "certidao_municipal",
+      "url_referencia": null,
+      "situacao": "pendente de localização e verificação da página oficial da prefeitura",
+      "fonte": "https://cinderondonia.ro.gov.br/municipios_consorciados.aspx"
+    }
+  ]
+}
