@@ -1,0 +1,6 @@
+{
+  "nome": "MJSP — Sinesp, Ocorrências Criminais em Dados Abertos",
+  "descricao": "Dados estatísticos agregados de ocorrências criminais informadas pelas unidades federativas, com origem em registros de boletins de ocorrência das polícias civis. Possibilita estudos por natureza de ocorrência, vítimas e recortes divulgados. Não fornece acesso nominal a boletins ou inquéritos individuais.",
+  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
+  "url": "https://www.gov.br/mj/pt-br/acesso-a-informacao/dados-abertos/ocorrencias-criminais-sinesp"
+}
