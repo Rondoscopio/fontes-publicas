@@ -1,0 +1,6 @@
+{
+  "nome": "CVM — Processos Sancionadores Julgados",
+  "descricao": "Pesquisa de processos administrativos sancionadores julgados pela Comissão de Valores Mobiliários, com decisões, penalidades e despachos. A existência de acusação não equivale a condenação.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://conteudo.cvm.gov.br/sancionadores/index.html"
+}
