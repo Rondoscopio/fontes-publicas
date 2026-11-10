@@ -1,0 +1,181 @@
+{
+  "titulo": "Fontes judiciais, responsabilização civil, antecedentes e sanções aplicáveis a pessoas físicas e jurídicas",
+  "atualizado_em": "2026-11-10",
+  "escopo": "Brasil, com prioridade aos órgãos e serviços de Rondônia",
+  "observacoes": [
+    "Este inventário referencia registros JSON do catálogo e não reproduz nem armazena histórico criminal ou judicial de pessoas.",
+    "Um processo em andamento, uma investigação ou uma denúncia não demonstram culpa ou condenação.",
+    "Uma sanção administrativa, decisão de Tribunal de Contas e condenação criminal são categorias juridicamente distintas.",
+    "Consultar sempre a íntegra da decisão, recursos, eventual trânsito em julgado, suspensão, anulação e atualizações relevantes antes de publicações.",
+    "Não inferir antecedentes criminais de certidões de distribuição cível, registros administrativos ou simples ocorrência de nome homônimo.",
+    "Identificação por CPF/CNPJ e demais dados pessoais exige base legal, finalidade, minimização e proteção de dados. Segredo de justiça e limitações de acesso devem ser respeitados.",
+    "DataJud fornece metadados processuais públicos, não um cadastro completo pesquisável por identificação pessoal.",
+    "APIs de certidões criminais do Conecta gov.br têm acesso restrito a órgãos habilitados, não são fontes abertas para varredura indiscriminada.",
+    "Os links foram conferidos por documentação pública e páginas institucionais para parte dos novos registros. Registros históricos de terceiros devem passar por revalidação individual."
+  ],
+  "grupos": [
+    {
+      "categoria": "Decisões judiciais, consultas processuais e certidões",
+      "fontes": [
+        {
+          "nome": "CNJ - cadastro de condenações cíveis por improbidade",
+          "arquivo": "federais/ob-cnj-consulta-de-requeridos-por-improbidade-31e0a950.json"
+        },
+        {
+          "nome": "CNJ - consulta de processos de improbidade",
+          "arquivo": "federais/ob-cnj-consulta-de-processos-de-improbidade-administrativa-84155a9c.json"
+        },
+        {
+          "nome": "STJ - pesquisa processual",
+          "arquivo": "federais/ob-stj-superior-tribunal-de-justica-pesquisa-de-processos-12b9e1f0.json"
+        },
+        {
+          "nome": "STJ - pesquisa de jurisprudência",
+          "arquivo": "federais/stj-pesquisa-de-jurisprudencia.json"
+        },
+        {
+          "nome": "STF - consulta processual",
+          "arquivo": "federais/stf-consulta-processual.json"
+        },
+        {
+          "nome": "STF - pesquisa de jurisprudência",
+          "arquivo": "federais/stf-pesquisa-de-jurisprudencia.json"
+        },
+        {
+          "nome": "TRF1 - consulta processual, inclusive outros sistemas",
+          "arquivo": "federais/trf1-consulta-processual-judicial.json"
+        },
+        {
+          "nome": "TRF1 - consulta PJe 1º grau",
+          "arquivo": "federais/ob-pje-processo-judicial-eletronico-por-tribunal-trf1-1-regiao-df-go-to-m-55de294a.json"
+        },
+        {
+          "nome": "TJRO - PJe 1º grau",
+          "arquivo": "estaduais/tjro-consulta-publica-pje-primeiro-grau.json"
+        },
+        {
+          "nome": "TJRO - PJe 2º grau",
+          "arquivo": "estaduais/tjro-consulta-publica-pje-segundo-grau.json"
+        },
+        {
+          "nome": "TJRO - certidões cíveis e criminais",
+          "arquivo": "estaduais/tjro-certidoes-judiciais-civeis-e-criminais.json"
+        },
+        {
+          "nome": "TRT14 - consulta processual trabalhista",
+          "arquivo": "estaduais/trt14-pje-e-consulta-processual.json"
+        },
+        {
+          "nome": "TST - PJe",
+          "arquivo": "federais/ob-pje-processo-judicial-eletronico-por-tribunal-tst-tribunal-superior-do-26fa113b.json"
+        },
+        {
+          "nome": "TRE-RO - consulta PJe eleitoral",
+          "arquivo": "estaduais/tre-ro-pje-consulta-publica-processual.json"
+        },
+        {
+          "nome": "TSE - DivulgaCandContas",
+          "arquivo": "federais/ob-tse-divulgacao-de-candidaturas-e-contas-eleitorais-92bc26af.json"
+        },
+        {
+          "nome": "PF - certidão de antecedentes criminais SINIC",
+          "arquivo": "federais/pf-sinic-certidao-de-antecedentes-criminais.json"
+        },
+        {
+          "nome": "CNJ - BNMP (banco de medidas penais e prisões)",
+          "arquivo": "federais/ob-cnmp-bnmp-banco-nacional-de-medidas-penais-e-prisoes-cnj-8eb40000.json"
+        }
+      ]
+    },
+    {
+      "categoria": "Sanções administrativas, responsabilização e contas públicas",
+      "fontes": [
+        {
+          "nome": "CGU - Portal de Sanções",
+          "arquivo": "federais/portal-da-transparencia-sancoes.json"
+        },
+        {
+          "nome": "CGU - Banco de Sanções CEIS e CNEP",
+          "arquivo": "federais/cgu-banco-de-sancoes-ceis-cnep.json"
+        },
+        {
+          "nome": "CGU - CNEP",
+          "arquivo": "federais/ob-cnep-cadastro-nacional-de-empresas-punidas-7a99e1c5.json"
+        },
+        {
+          "nome": "CGU - CEPIM",
+          "arquivo": "federais/cgu-cadastro-de-entidades-privadas-sem-fins-lucrativos-impedidas-cepim.json"
+        },
+        {
+          "nome": "CGU - CEAF",
+          "arquivo": "federais/cgu-ceaf-cadastro-de-expulsoes-administracao-federal.json"
+        },
+        {
+          "nome": "TCU - emissão de certidões e listas",
+          "arquivo": "federais/ob-tcu-plataforma-de-certidoes-lista-de-contas-julgadas-irregulares-46ca8927.json"
+        },
+        {
+          "nome": "TCU - consulta consolidada de pessoa jurídica",
+          "arquivo": "federais/tcu-consulta-consolidada-de-pessoa-juridica.json"
+        },
+        {
+          "nome": "TCE-RO - responsáveis com contas julgadas irregulares",
+          "arquivo": "estaduais/tce-ro-responsaveis-com-contas-julgadas-irregulares.json"
+        },
+        {
+          "nome": "TCE-RO - transparência institucional",
+          "arquivo": "estaduais/tce-ro-transparencia-institucional.json"
+        },
+        {
+          "nome": "CVM - processos sancionadores julgados",
+          "arquivo": "federais/cvm-processos-administrativos-sancionadores-julgados.json"
+        },
+        {
+          "nome": "BCB - processos e sanções administrativas",
+          "arquivo": "federais/banco-central-processos-e-sancoes-administrativas.json"
+        },
+        {
+          "nome": "Ibama - autos de infração e embargos",
+          "arquivo": "federais/ibama-autuacoes-ambientais-e-embargos.json"
+        }
+      ]
+    },
+    {
+      "categoria": "APIs e dados abertos para integrações",
+      "fontes": [
+        {
+          "nome": "CNJ - DataJud API pública",
+          "arquivo": "federais/cnj-api-publica-datajud.json"
+        },
+        {
+          "nome": "CNJ - lista de endpoints DataJud",
+          "arquivo": "federais/cnj-datajud-endpoints.json"
+        },
+        {
+          "nome": "CGU - API Portal da Transparência",
+          "arquivo": "federais/portal-da-transparencia-api.json"
+        },
+        {
+          "nome": "CGU - dados abertos de responsabilização de pessoas jurídicas",
+          "arquivo": "federais/cgu-pj-dados-abertos-responsabilizacao-de-empresas.json"
+        },
+        {
+          "nome": "CVM - processos sancionadores em dados abertos",
+          "arquivo": "federais/cvm-processos-sancionadores-dados-abertos.json"
+        },
+        {
+          "nome": "TCU - webservice CADIRREG",
+          "arquivo": "federais/tcu-webservices-cadirreg-contas-julgadas-irregulares.json"
+        },
+        {
+          "nome": "TCU - dados abertos de irregulares, inabilitados e inidôneos",
+          "arquivo": "federais/tcu-dados-abertos-inidoneos-inabilitados-e-contas-irregulares.json"
+        },
+        {
+          "nome": "PF - API SINIC via Conecta gov.br, acesso condicionado",
+          "arquivo": "federais/conecta-gov-api-antecedentes-criminais-sinic.json"
+        }
+      ]
+    }
+  ]
+}
