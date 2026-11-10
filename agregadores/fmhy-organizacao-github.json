@@ -1,0 +1,16 @@
+{
+  "nome": "FMHY — Organização de projetos no GitHub",
+  "tipo": "referencia_de_origem",
+  "categoria": "Comunidades, código-fonte e manutenção de diretórios",
+  "descricao": "Organização do GitHub associada ao ecossistema comunitário FMHY; referência para consultar seus repositórios e projetos relacionados ao diretório.",
+  "abrangencia": "Internacional / Global",
+  "url": "https://github.com/fmhy/",
+  "links_relacionados": [
+    {
+      "nome": "Diretório público FMHY",
+      "url": "https://fmhy.net/"
+    }
+  ],
+  "status_validacao": "organizacao_github_publica_identificada",
+  "nota": "A existência de um repositório ou organização pública não constitui auditoria de código, conteúdo, direitos autorais ou funcionamento. Evitar confundir a organização no GitHub com uma fonte primária governamental."
+}

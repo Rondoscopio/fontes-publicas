@@ -1,0 +1,16 @@
+{
+  "nome": "Arquivo Nacional — Biblioteca Digital (BDAN)",
+  "tipo": "acervo_digital",
+  "categoria": "Arquivos públicos, memória institucional e publicações",
+  "descricao": "Biblioteca Digital do Arquivo Nacional, destinada à indexação, preservação e acesso a publicações e objetos informacionais digitais produzidos pela instituição ou relacionados à sua memória.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://bdan.an.gov.br/home",
+  "links_relacionados": [
+    {
+      "nome": "Apresentação institucional da BDAN no gov.br",
+      "url": "https://www.gov.br/arquivonacional/pt-br/servicos/biblioteca-maria-beatriz-nascimento/bdan-biblioteca-digital-do-arquivo-nacional"
+    }
+  ],
+  "status_validacao": "origem_institucional_confirmada_protecao_antibot_no_acesso",
+  "nota": "A plataforma apresentou desafio de verificação humana ao acesso automatizado. Não contornar mecanismos de proteção; verificar licenças e acesso aos documentos individualmente."
+}

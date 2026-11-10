@@ -1,0 +1,16 @@
+{
+  "nome": "Banco Central do Brasil — Atas do Copom",
+  "tipo": "fonte_oficial",
+  "categoria": "Economia, inflação e política monetária",
+  "descricao": "Publicação oficial das atas das reuniões do Comitê de Política Monetária (Copom), com decisões sobre juros, avaliação da conjuntura econômica, projeções e fundamentos da política monetária brasileira.",
+  "abrangencia": "Federal / Brasil",
+  "url": "https://www.bcb.gov.br/publicacoes/atascopom",
+  "links_relacionados": [
+    {
+      "nome": "Conjunto de dados e acesso estruturado a documentos do Copom",
+      "url": "https://dadosabertos.bcb.gov.br/dataset/atas-comunicados-copom"
+    }
+  ],
+  "status_validacao": "origem_institucional_confirmada_acesso_automatizado_limitado",
+  "nota": "O site principal utiliza JavaScript. O conjunto de dados do Banco Central inclui recursos de consulta estruturada; conferir a documentação e as condições de acesso antes de automatizar a coleta."
+}

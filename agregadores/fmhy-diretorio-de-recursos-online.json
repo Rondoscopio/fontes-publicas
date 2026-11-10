@@ -1,0 +1,16 @@
+{
+  "nome": "FMHY — Diretório comunitário de recursos online",
+  "tipo": "agregador_terceiros",
+  "categoria": "Ferramentas digitais, privacidade, software e mídia",
+  "descricao": "Diretório mantido por comunidade com listas de softwares, ferramentas, serviços online, materiais educacionais, recursos de privacidade e também páginas de acesso a mídia.",
+  "abrangencia": "Internacional / Global",
+  "url": "https://fmhy.net/",
+  "links_relacionados": [
+    {
+      "nome": "Organização FMHY no GitHub",
+      "url": "https://github.com/fmhy/"
+    }
+  ],
+  "status_validacao": "pagina_publica_consultada_terceiros_nao_auditados",
+  "nota": "O diretório contém links para recursos heterogêneos, inclusive alguns relacionados a mídia de distribuição não autorizada. O cadastro não endossa legalidade, segurança ou qualidade dos destinos. Conferir termos, licenças e riscos de cada link."
+}

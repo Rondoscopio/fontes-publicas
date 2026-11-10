@@ -1,0 +1,16 @@
+{
+  "nome": "Biblioteca Nacional — Hemeroteca Digital Brasileira: periódicos",
+  "tipo": "acervo_historico",
+  "categoria": "Jornais, revistas e periódicos históricos",
+  "descricao": "Consulta à coleção digital de jornais e revistas preservados pela Fundação Biblioteca Nacional, com documentos úteis à pesquisa histórica e ao jornalismo documental.",
+  "abrangencia": "Federal / Brasil, inclusive periódicos de Rondônia",
+  "url": "https://memoria.bn.gov.br/hdb/periodico.aspx",
+  "links_relacionados": [
+    {
+      "nome": "Busca da Hemeroteca Digital Brasileira",
+      "url": "https://memoria.bn.gov.br/hdb/DefaultNew.aspx"
+    }
+  ],
+  "status_validacao": "referencia_institucional_confirmada_acesso_direto_restrito_no_teste",
+  "nota": "A URL informada não permitiu leitura automatizada na verificação; a busca oficial da Hemeroteca foi localizada. Conferir legibilidade dos documentos, metadados, erros de OCR e direitos autorais antes de reproduzir materiais."
+}
