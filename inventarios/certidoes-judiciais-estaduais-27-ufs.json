@@ -1,0 +1,264 @@
+{
+  "titulo": "Portais de emissão e consulta de certidões judiciais estaduais por unidade federativa",
+  "atualizado_em": "2026-11-10",
+  "total_ufs": 27,
+  "criterio": "Cada UF inclui seu TJ. Página de certidão é distinta da consulta processual; quando não confirmada, URL permanece nula. URLs históricas vieram de publicação oficial da Polícia Federal, sem comprovação de que continuam ativas.",
+  "fontes": [
+    "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+    "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+    "https://portal.tjpe.jus.br/certidoes",
+    "https://www.tjsp.jus.br/Certidoes"
+  ],
+  "observacoes": [
+    "Os sistemas judiciais podem exigir diferentes certidões de primeira e segunda instância, cíveis, criminais, execuções, falência e de sistemas antigos e novos.",
+    "No TJSP, a transição SAJ/eproc exige múltiplas certidões para alguns tipos de distribuição, conforme orientações do tribunal.",
+    "No TJPE, o portal central define modalidades de certidões unificadas e exceções.",
+    "Não usar URLs registradas em fonte histórica como se fossem confirmadas operacionalmente em novembro de 2026.",
+    "Certidões de distribuição não são listas de pessoas condenadas. Confirmar decisão e situação processual no tribunal."
+  ],
+  "por_uf": [
+    {
+      "uf": "AC",
+      "tribunal": "TJAC",
+      "url_certidao": "https://esaj.tjac.jus.br/sco/abrirCadastro.do",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "AL",
+      "tribunal": "TJAL",
+      "url_certidao": "https://www2.tjal.jus.br/esaj/portal.do?servico=810100",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "AP",
+      "tribunal": "TJAP",
+      "url_certidao": "https://tucujuris.tjap.jus.br/tucujuris/pages/certidao-publica/certidao-publica.html",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "AM",
+      "tribunal": "TJAM",
+      "url_certidao": "https://consultasaj.tjam.jus.br/sco/abrirCadastro.do",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "BA",
+      "tribunal": "TJBA",
+      "url_certidao": "http://www5.tjba.jus.br/portal/certidoes/",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga HTTP, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "CE",
+      "tribunal": "TJCE",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "DF",
+      "tribunal": "TJDFT",
+      "url_certidao": "https://procart.tjdft.jus.br/sistjinternet/sistj?visaoId=tjdf.sistj.internet.certidao.apresentacao.VisaoGerarCertidao",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "ES",
+      "tribunal": "TJES",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "GO",
+      "tribunal": "TJGO",
+      "url_certidao": "https://projudi.tjgo.jus.br/CertidaoNegativaPositivaPublica?PaginaAtual=1&TipoArea=2&InteressePessoal=S",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "MA",
+      "tribunal": "TJMA",
+      "url_certidao": "http://jurisconsult.tjma.jus.br/#/certidao-generate-state-certificate-form",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga HTTP, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "MT",
+      "tribunal": "TJMT",
+      "url_certidao": "https://cidadao.tjmt.jus.br/Servicos/CertidaoNegativa/",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "MS",
+      "tribunal": "TJMS",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "MG",
+      "tribunal": "TJMG",
+      "url_certidao": "http://rupe.tjmg.jus.br/rupe/justica/publico/certidoes/criarSolicitacaoCertidao.rupe?solicitacaoPublica=true",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga HTTP, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "PA",
+      "tribunal": "TJPA",
+      "url_certidao": "https://consultas.tjpa.jus.br/certidao/pages/pesquisaGeralCentralCertidao.action",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "PB",
+      "tribunal": "TJPB",
+      "url_certidao": "https://www.tjpb.jus.br/servicos/solicitar-certidao",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página de serviço histórica, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "PR",
+      "tribunal": "TJPR",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "PE",
+      "tribunal": "TJPE",
+      "url_certidao": "https://portal.tjpe.jus.br/certidoes",
+      "fonte": "https://portal.tjpe.jus.br/certidoes",
+      "origem_url": "TJPE, portal oficial",
+      "situacao_url": "página oficial localizada em 2026",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "PI",
+      "tribunal": "TJPI",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "RJ",
+      "tribunal": "TJRJ",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "RN",
+      "tribunal": "TJRN",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "RS",
+      "tribunal": "TJRS",
+      "url_certidao": null,
+      "fonte": "https://www.cnj.jus.br/poder-judiciario/tribunais/",
+      "origem_url": "CNJ, diretório de tribunais",
+      "situacao_url": "endereço exato de certidão pendente",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "RO",
+      "tribunal": "TJRO",
+      "url_certidao": "https://webapp.tjro.jus.br/certidaoonline/pages/cnpg.xhtml",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "RR",
+      "tribunal": "TJRR",
+      "url_certidao": "http://www.tjrr.jus.br/index.php/servicos/certidao-negativa",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga HTTP, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "SC",
+      "tribunal": "TJSC",
+      "url_certidao": "http://www.tjsc.jus.br/web/judicial/certidoes",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga HTTP, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "SP",
+      "tribunal": "TJSP",
+      "url_certidao": "https://www.tjsp.jus.br/Certidoes",
+      "fonte": "https://www.tjsp.jus.br/Certidoes",
+      "origem_url": "TJSP, portal oficial",
+      "situacao_url": "página oficial localizada em 2026; verificar exigência de certidões SAJ e eproc",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "SE",
+      "tribunal": "TJSE",
+      "url_certidao": "https://www.tjse.jus.br/portal/servicos/judiciais/certidao-online/solicitacao-de-certidao-negativa",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    },
+    {
+      "uf": "TO",
+      "tribunal": "TJTO",
+      "url_certidao": "https://eproc1.tjto.jus.br/eprocV2_prod_1grau/externo_controlador.php?acao=cj_online&acao_origem=&acao_retorno=cj_online",
+      "fonte": "https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas",
+      "origem_url": "PF, listagem histórica",
+      "situacao_url": "página antiga, revalidar",
+      "url_indice_oficial": "https://www.cnj.jus.br/poder-judiciario/tribunais/"
+    }
+  ]
+}
