@@ -1,0 +1,17 @@
+{
+  "nome": "O Poder — Notícias de Rondônia",
+  "tipo": "portal_de_noticias",
+  "categoria": "Jornalismo político e institucional",
+  "descricao": "Editoria de Rondônia do portal O Poder, da rede NC News, com cobertura regional de temas políticos, poderes Executivo, Legislativo e Judiciário e assuntos institucionais.",
+  "abrangencia": "Estadual / Rondônia, Brasil",
+  "url": "https://opoder.ncnews.com.br/topico/rondonia/",
+  "links_relacionados": [
+    {
+      "nome": "Página inicial do veículo",
+      "url": "https://opoder.ncnews.com.br/"
+    }
+  ],
+  "status_validacao": "editoria_regional_consultada",
+  "data_referencia": "2026-11-11",
+  "nota": "A URL é da editoria geral de Rondônia, não de um artigo. A publicação de denúncias ou investigações não substitui documentos primários nem comprova responsabilidade individual."
+}

@@ -1,6 +1,9 @@
 {
   "nome": "CGU - Notícias e Informações",
-  "descricao": "Portal de notícias da CGU com informações sobre ações de controle, transparência e combate à corrupção. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
+  "descricao": "Listagem oficial de notícias e comunicados da Controladoria-Geral da União (CGU) sobre controle interno, auditorias, integridade, transparência e operações.",
   "abrangencia": "Federal / Brasil",
-  "url": "https://www.gov.br/cgu/pt-br/assuntos/noticias"
+  "url": "https://www.gov.br/cgu/pt-br/assuntos/noticias",
+  "status_validacao": "listagem_oficial_consultada",
+  "data_referencia": "2026-11-11",
+  "nota": "Comunicados institucionais sobre suspeitas ou investigações não comprovam ilícitos ou culpabilidade. Confirmar desfechos em documentos oficiais e decisões judiciais."
 }

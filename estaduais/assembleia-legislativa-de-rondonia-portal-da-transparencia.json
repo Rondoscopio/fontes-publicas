@@ -2,5 +2,14 @@
   "nome": "Assembleia Legislativa de Rondônia — Portal da Transparência",
   "descricao": "Portal de transparência da Assembleia Legislativa de Rondônia, com dados de pessoal, remuneração, cargos, licitações e despesas.",
   "abrangencia": "Estadual / Rondônia",
-  "url": "https://transparencia.al.ro.leg.br/"
+  "url": "https://transparencia.al.ro.leg.br/",
+  "links_relacionados": [
+    {
+      "nome": "Diário Oficial Eletrônico — listagem e busca por edições",
+      "url": "https://transparencia.al.ro.leg.br/Diario/"
+    }
+  ],
+  "status_validacao": "portal_oficial_consultado",
+  "data_referencia": "2026-11-11",
+  "nota": "Portal geral de transparência; consultar o endereço relacionado para a listagem de edições do Diário Oficial Eletrônico."
 }

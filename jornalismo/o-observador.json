@@ -1,6 +1,6 @@
 {
   "nome": "O Observador",
-  "descricao": "Veículo de notícias e informações de Porto Velho, Rondônia, relacionado no diretório Atlas da Imprensa. A linha editorial, atividade atual e independência de outros veículos ainda exigem verificação.",
+  "descricao": "Portal de jornalismo e notícias de Rondônia, com página inicial de postagens recentes e editorias como política, polícia, economia e assuntos locais.",
   "abrangencia": "Municipal / Porto Velho, Rondônia, Brasil",
   "municipio": "Porto Velho",
   "uf": "RO",
@@ -8,7 +8,7 @@
   "tipo": "portal_de_noticias",
   "url": "https://www.oobservador.com/",
   "origem": "https://atlasdaimprensa.com.br/rondonia-jornais/",
-  "status_validacao": "dominio_identificado_em_diretorio_atividade_nao_confirmada",
-  "data_referencia": "2026-11-09",
-  "nota": "Endereço informado em diretório de imprensa. Cadastro não comprova que o domínio esteja acessível nem que o veículo publique atualmente. Não replicar conteúdo sem verificar termos, autoria e direitos."
+  "status_validacao": "pagina_inicial_e_publicacoes_recentes_consultadas",
+  "data_referencia": "2026-11-11",
+  "nota": "A página inicial reúne o fluxo de notícias e foi consultada em novembro de 2026. Não confundir conteúdo jornalístico ou opinião com documento oficial, e verificar alegações na fonte primária."
 }
