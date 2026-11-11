@@ -30,6 +30,7 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 - [Institutos e fontes de pesquisa](inventarios/institutos-e-fontes-de-pesquisa.json), com 53 referências e metodologia de validação
 - [Sensoriamento remoto, clima e monitoramento ambiental](inventarios/sensoriamento-remoto-clima-e-monitoramento-ambiental.json), com 31 fontes e serviços
 - [Fontes astronômicas, catálogos celestes e dados orbitais](inventarios/fontes-astronomicas-catalogos-celestes-e-dados-orbitais.json), com 25 fontes e condições de reutilização
+- [Sismologia, clima espacial e índices oceânico-atmosféricos](inventarios/sismologia-clima-espacial-e-indices-oceanico-atmosfericos.json), com 15 fontes e status de verificação
 - [Fontes judiciais e de responsabilização](inventarios/fontes-judiciais-e-sancoes-pessoas-empresas.json), com consultas, sanções e APIs para avaliação
 - [Diretório nacional de tribunais](inventarios/tribunais-brasileiros-diretorio-nacional.json), 92 tribunais judiciais e 33 tribunais de contas
 - [Certidões federais e nacionais](inventarios/certidoes-federais-e-nacionais.json), emissão, consultas e validação
