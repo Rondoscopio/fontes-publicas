@@ -1,6 +1,0 @@
-{
-  "nome": "Visualização de dados públicos de CNPJ",
-  "descricao": "Ferramenta para observar o relacionamento entre empresas e sócios, a partir dos dados públicos disponibilizados pela Receita Federal. Pode ser executado localmente, baixando o código do Github ou executado online diretamente no site do proj Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
-  "url": "https://www.redecnpj.com.br/rede/"
-}

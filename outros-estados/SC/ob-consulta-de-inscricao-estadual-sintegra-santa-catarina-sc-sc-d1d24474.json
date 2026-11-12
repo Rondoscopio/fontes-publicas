@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta de Inscrição Estadual (SINTEGRA) — Santa Catarina (SC) — SC",
-  "descricao": "Consulta ao cadastro de contribuintes de ICMS (Inscrição Estadual) nos sistemas SINTEGRA estaduais. Permite verificar a situação cadastral de empresas junto às Secretarias de Fazenda dos estados. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Estadual / SC, fora de Rondônia",
-  "url": "https://sat.sef.sc.gov.br/tax.NET/Sat.Cadastro.Web/ComprovanteIE/Consulta.aspx"
-}

@@ -1,8 +1,0 @@
-{
-  "nome": "Apache AGE — Graph Extension",
-  "descricao": "Extensão de grafos para PostgreSQL, com suporte a consultas e processamento de relações em modelos de grafos.",
-  "abrangencia": "Internacional / Bancos de dados e grafos",
-  "url": "https://age.apache.org/",
-  "status_validacao": "referencia_catalogada_sem_auditoria_independente",
-  "nota": "Verificar atualização, cobertura, critérios de acesso e licenças. Eventuais correspondências ou vínculos não constituem prova de irregularidade."
-}

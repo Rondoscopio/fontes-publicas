@@ -1,6 +1,0 @@
-{
-  "nome": "ANATEL - Consulta de Radiofrequências por Sistema",
-  "descricao": "Consulta de sistemas de radiofrequência autorizados pela ANATEL. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://sistemas.anatel.gov.br/srd/TelaListagem.asp?PagSRD=DescSistema&NumServico=231&op=5&SISQSmodulo=9830"
-}

@@ -1,0 +1,1051 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+  "name": "osint-rondonia-catalogo-relacional",
+  "title": "Catálogo OSINT Rondônia — tabelas relacionais",
+  "description": "Catálogo de fichas OSINT de Rondônia em CSV relacionais. Dados de terceiros mantêm as condições e licenças declaradas em suas fontes; a licença AGPL do repositório aplica-se ao código. O token \\N representa valor nulo; strings vazias permanecem distintas.",
+  "homepage": "https://github.com/Rondoscopio/osint-rondonia",
+  "version": "1.0.0",
+  "profile": "data-package",
+  "resources": [
+    {
+      "name": "fonte",
+      "type": "table",
+      "path": "data/fonte.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente da ficha",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "id_externo",
+            "type": "string",
+            "description": "Identificador externo legado, quando existente"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Nome literal da ficha",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "description": "Descrição literal da ficha"
+          },
+          {
+            "name": "nota",
+            "type": "string",
+            "description": "nota"
+          },
+          {
+            "name": "observacao",
+            "type": "string",
+            "description": "observacao"
+          },
+          {
+            "name": "observacoes",
+            "type": "string",
+            "description": "observacoes"
+          },
+          {
+            "name": "orgao_responsavel",
+            "type": "string",
+            "description": "orgao_responsavel"
+          },
+          {
+            "name": "entidade_responsavel",
+            "type": "string",
+            "description": "entidade_responsavel"
+          },
+          {
+            "name": "esfera",
+            "type": "string",
+            "description": "esfera"
+          },
+          {
+            "name": "tecnologia",
+            "type": "string",
+            "description": "tecnologia"
+          },
+          {
+            "name": "acesso_declarado",
+            "type": "string",
+            "description": "acesso_declarado"
+          },
+          {
+            "name": "data_referencia",
+            "type": "string",
+            "description": "data_referencia"
+          },
+          {
+            "name": "referencia_institucional",
+            "type": "string",
+            "description": "referencia_institucional"
+          },
+          {
+            "name": "repositorio_oficial",
+            "type": "string",
+            "description": "repositorio_oficial"
+          },
+          {
+            "name": "licenca_spdx",
+            "type": "string",
+            "description": "licenca_spdx"
+          },
+          {
+            "name": "situacao_url",
+            "type": "string",
+            "description": "situacao_url"
+          },
+          {
+            "name": "tipo_id",
+            "type": "string",
+            "description": "tipo_id"
+          },
+          {
+            "name": "status_triagem",
+            "type": "string",
+            "description": "Triagem editorial; null significa não informado"
+          },
+          {
+            "name": "status_validacao_id",
+            "type": "string",
+            "description": "Status legado de validação, sem interpretação adicional"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "tipo_id"
+            ],
+            "reference": {
+              "resource": "tipo",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "status_validacao_id"
+            ],
+            "reference": {
+              "resource": "status_validacao",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tipo",
+      "type": "table",
+      "path": "data/tipo.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Rótulo original de tipo",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "status_validacao",
+      "type": "table",
+      "path": "data/status_validacao.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Texto original do status",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "categoria",
+      "type": "table",
+      "path": "data/categoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente da categoria",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Rótulo temático ou expressão de sentido próprio",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_classificacao",
+            "type": "string",
+            "description": "Campo de classificação de origem: principal, original ou curadoria",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "principal",
+              "original",
+              "curadoria"
+            ]
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "fonte_categoria",
+      "type": "table",
+      "path": "data/fonte_categoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha relacionada",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "categoria_id",
+            "type": "string",
+            "description": "Categoria associada à ficha, com papel declarado no recurso categoria",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "categoria_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "categoria_id"
+            ],
+            "reference": {
+              "resource": "categoria",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "lista",
+      "type": "table",
+      "path": "data/lista.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Identificador persistente da lista histórica",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Nome da lista",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "lista_categoria",
+      "type": "table",
+      "path": "data/lista_categoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "lista_id",
+            "type": "string",
+            "description": "Lista de fontes",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "categoria_id",
+            "type": "string",
+            "description": "Tema associado à lista",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "lista_id",
+          "categoria_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "lista_id"
+            ],
+            "reference": {
+              "resource": "lista",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "categoria_id"
+            ],
+            "reference": {
+              "resource": "categoria",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "uf",
+      "type": "table",
+      "path": "data/uf.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "codigo_ibge",
+            "type": "string",
+            "description": "Código oficial de dois dígitos",
+            "constraints": {
+              "required": true,
+              "pattern": "^[0-9]{2}$"
+            }
+          },
+          {
+            "name": "sigla",
+            "type": "string",
+            "description": "Sigla oficial da UF",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Nome da UF na DTB",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "codigo_ibge"
+        ]
+      },
+      "sources": [
+        {
+          "title": "IBGE — Divisão Territorial Brasileira 2025",
+          "path": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2025/DTB_2025.zip"
+        }
+      ]
+    },
+    {
+      "name": "municipio",
+      "type": "table",
+      "path": "data/municipio.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "codigo_ibge",
+            "type": "string",
+            "description": "Código oficial de sete dígitos",
+            "constraints": {
+              "required": true,
+              "pattern": "^[0-9]{7}$"
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Nome na DTB",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "uf_codigo_ibge",
+            "type": "string",
+            "description": "UF da unidade municipal",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "codigo_ibge"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "uf_codigo_ibge"
+            ],
+            "reference": {
+              "resource": "uf",
+              "fields": [
+                "codigo_ibge"
+              ]
+            }
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "IBGE — Divisão Territorial Brasileira 2025",
+          "path": "https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2025/DTB_2025.zip"
+        }
+      ]
+    },
+    {
+      "name": "abrangencia",
+      "type": "table",
+      "path": "data/abrangencia.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Identificador calculado a partir das flags e códigos IBGE",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nacional",
+            "type": "boolean",
+            "description": "Cobertura nacional declarada",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "internacional",
+            "type": "boolean",
+            "description": "Cobertura internacional declarada",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "abrangencia_uf",
+      "type": "table",
+      "path": "data/abrangencia_uf.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "abrangencia_id",
+            "type": "string",
+            "description": "Conjunto de abrangência",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "uf_codigo_ibge",
+            "type": "string",
+            "description": "UF declarada",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "abrangencia_id",
+          "uf_codigo_ibge"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "abrangencia_id"
+            ],
+            "reference": {
+              "resource": "abrangencia",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "uf_codigo_ibge"
+            ],
+            "reference": {
+              "resource": "uf",
+              "fields": [
+                "codigo_ibge"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "abrangencia_municipio",
+      "type": "table",
+      "path": "data/abrangencia_municipio.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "abrangencia_id",
+            "type": "string",
+            "description": "Conjunto de abrangência",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "municipio_codigo_ibge",
+            "type": "string",
+            "description": "Unidade municipal declarada",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "abrangencia_id",
+          "municipio_codigo_ibge"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "abrangencia_id"
+            ],
+            "reference": {
+              "resource": "abrangencia",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "municipio_codigo_ibge"
+            ],
+            "reference": {
+              "resource": "municipio",
+              "fields": [
+                "codigo_ibge"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fonte_abrangencia",
+      "type": "table",
+      "path": "data/fonte_abrangencia.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "abrangencia_id",
+            "type": "string",
+            "description": "Conjunto de abrangência",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "papel",
+            "type": "string",
+            "description": "Cobertura ou localidade declarada",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "cobertura",
+              "localidade_declarada"
+            ]
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "papel"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "abrangencia_id"
+            ],
+            "reference": {
+              "resource": "abrangencia",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "origem",
+      "type": "table",
+      "path": "data/origem.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente da origem",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Texto ou URL literal do registro de proveniência",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "fonte_referenciada_id",
+            "type": "string",
+            "description": "Ficha da origem documental, quando identificada"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_referenciada_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fonte_origem",
+      "type": "table",
+      "path": "data/fonte_origem.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha cuja proveniência é registrada",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_origem",
+            "type": "string",
+            "description": "Campo de proveniência da ficha",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "origem",
+              "origem_cadastro",
+              "secao_todo"
+            ]
+          },
+          {
+            "name": "origem_id",
+            "type": "string",
+            "description": "Origem registrada para esse campo da ficha",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "tipo_origem"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "origem_id"
+            ],
+            "reference": {
+              "resource": "origem",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fonte_url",
+      "type": "table",
+      "path": "data/fonte_url.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente da declaração de URL",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha que declarou o endereço",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "papel",
+            "type": "string",
+            "description": "URL principal ou relacionada",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "principal",
+              "relacionada"
+            ]
+          },
+          {
+            "name": "ordem",
+            "type": "integer",
+            "description": "Posição no documento original"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Rótulo original do link relacionado"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "URL literal, sem normalização",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

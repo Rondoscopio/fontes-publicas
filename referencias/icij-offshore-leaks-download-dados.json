@@ -1,9 +1,0 @@
-{
-  "nome": "ICIJ — Offshore Leaks: download e estrutura de dados",
-  "tipo": "documentacao_e_download",
-  "descricao": "Página oficial de download da base Offshore Leaks do ICIJ, com arquivos CSV, relações entre entidades e exportações para Neo4j, abrangendo investigações como Panama Papers, Paradise Papers e Pandora Papers.",
-  "abrangencia": "Internacional / Empresas offshore e relações societárias",
-  "url": "https://offshoreleaks.icij.org/pages/database",
-  "status_validacao": "pagina_oficial_consultada",
-  "nota": "Complementa a ficha internacionais/icij-offshore-leaks-database.json. A presença de pessoa ou empresa na base não constitui prova de irregularidade; observar atribuição e licenças de dados."
-}

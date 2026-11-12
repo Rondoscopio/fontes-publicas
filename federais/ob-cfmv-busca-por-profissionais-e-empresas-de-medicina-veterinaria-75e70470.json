@@ -1,6 +1,0 @@
-{
-  "nome": "CFMV - Busca por Profissionais e Empresas de Medicina Veterinária",
-  "descricao": "Busca de pessoa física (por nome, nome social ou inscrição) ou jurídica (por razão social, registro ou CNPJ) registrada no sistema CFMV/CRMVs, com filtro de UF. Retorna nome ou razão social, nome fantasia, CRMV, situação, UF, área e data de Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://app.cfmv.gov.br/paginas/busca"
-}

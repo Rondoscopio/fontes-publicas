@@ -1,0 +1,13 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Metadados do Git e saídas descartáveis das ferramentas"
+paths = ['''(^|/)(\.git|\.cache|\.local|__pycache__)(/|$)''', '''(^|/)data/exports/catalog\.sqlite$''']
+
+[[allowlists]]
+description = "Referência de visualização Power BI, payload público k/t"
+condition = "AND"
+targetRules = ["grafana-api-key"]
+paths = ['''^data/fonte_url\.csv$''']
+regexes = ['''^eyJrIjoi[A-Za-z0-9_-]{108}$''']

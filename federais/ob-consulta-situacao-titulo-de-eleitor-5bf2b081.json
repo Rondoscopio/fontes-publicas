@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta Situação Título de eleitor",
-  "descricao": "Verifica a situação cadastral do título eleitoral, indicando se está regular, cancelado, suspenso ou com restrições. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/atendimento-eleitor/consultar-situacao-titulo-eleitor"
-}

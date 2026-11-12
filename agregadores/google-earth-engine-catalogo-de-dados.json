@@ -1,6 +1,0 @@
-{
-  "nome": "Google Earth Engine — Catálogo de Dados",
-  "descricao": "Catálogo de coleções geoespaciais e imagens de satélite, incluindo Landsat, Sentinel, MODIS, clima, incêndios, relevo e séries históricas para análise por API.",
-  "abrangencia": "Agregador / Global, com recorte para Rondônia",
-  "url": "https://developers.google.com/earth-engine/datasets/catalog"
-}

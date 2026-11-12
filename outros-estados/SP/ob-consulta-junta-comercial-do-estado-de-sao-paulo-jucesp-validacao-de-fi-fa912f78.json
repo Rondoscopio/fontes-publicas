@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta Junta Comercial do Estado de São Paulo (Jucesp) — Validação de Ficha — SP",
-  "descricao": "Pesquisa no banco de dados da Junta Comercial do Estado de São Paulo. Para consulta é necessário apenas o Nome da empresa, CNPJ, Razão social ou NIRE. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Estadual / SP, fora de Rondônia",
-  "url": "https://www.jucesponline.sp.gov.br/Valida_Ficha.aspx"
-}

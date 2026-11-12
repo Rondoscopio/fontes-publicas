@@ -1,8 +1,0 @@
-{
-  "nome": "PoderData — Pesquisas de Opinião",
-  "descricao": "Instituto vinculado ao Poder360 com pesquisas de intenção de voto, avaliação de governo e opinião pública, divulgadas em matérias e levantamentos públicos. Link editorial, não API.",
-  "abrangencia": "Privado / Brasil",
-  "url": "https://www.poder360.com.br/poderdata/",
-  "categoria": "pesquisa_de_opiniao",
-  "observacoes": "Para pesquisas eleitorais, confrontar o estudo com registro no PesqEle do TSE e preservar fichas técnicas, amostra, coleta, patrocinador e data."
-}

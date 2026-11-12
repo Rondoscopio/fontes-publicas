@@ -1,6 +1,0 @@
-{
-  "nome": "COFEN - Consulta de Profissionais de Enfermagem",
-  "descricao": "Consulta pública de inscritos no sistema Cofen/Conselhos Regionais de Enfermagem. Para consulta é necessário informar um ou mais critérios: nome completo, CPF ou número de inscrição. Retorna nome do profissional, inscrição, categoria, Coren Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://sigen.cofen.gov.br/profissional/consultar"
-}

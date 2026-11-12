@@ -1,6 +1,0 @@
-{
-  "nome": "Fogocruzado",
-  "descricao": "O maior banco de dados sobre violência armada da América Latina. Pesquisar ocorrências. É possivel pesquisar dados por estado, cidades, datas e tipo de ocorrência. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
-  "url": "https://api.fogocruzado.org.br/search"
-}

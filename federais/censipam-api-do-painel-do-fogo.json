@@ -1,6 +1,0 @@
-{
-  "nome": "Censipam — API do Painel do Fogo",
-  "descricao": "Documentação OpenAPI com endpoints de eventos, detecções VIIRS, FIRMS e GOES, evolução espacial e interseções com o CAR; respostas incluem geometrias GeoJSON.",
-  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
-  "url": "https://panorama.sipam.gov.br/painel-do-fogo/api/redoc"
-}

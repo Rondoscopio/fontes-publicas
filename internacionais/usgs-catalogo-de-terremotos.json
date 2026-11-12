@@ -1,6 +1,0 @@
-{
-  "nome": "USGS — Catálogo de Terremotos",
-  "descricao": "API internacional de sismos para estudos de eventos geofísicos e impactos indiretos.",
-  "abrangencia": "Internacional / Riscos geofísicos",
-  "url": "https://earthquake.usgs.gov/fdsnws/event/1/"
-}

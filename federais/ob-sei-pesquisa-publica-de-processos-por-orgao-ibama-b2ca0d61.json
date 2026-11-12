@@ -1,6 +1,0 @@
-{
-  "nome": "SEI - Pesquisa Pública de Processos por Órgão — IBAMA",
-  "descricao": "O Sistema Eletrônico de Informações (SEI) é o sistema de processos de 500+ órgãos federais, com o mesmo formulário de pesquisa pública em todos (número SEI, texto, interessado, unidade geradora e tipo de processo). Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://sei.ibama.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0"
-}

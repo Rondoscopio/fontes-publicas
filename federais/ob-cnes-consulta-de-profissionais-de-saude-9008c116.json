@@ -1,6 +1,0 @@
-{
-  "nome": "CNES - Consulta de Profissionais de Saúde",
-  "descricao": "Consulta de profissionais no Cadastro Nacional de Estabelecimentos de Saúde. Campo único que aceita nome do profissional, CPF ou CNS, com filtro de vínculo (geral, mais de 2 vínculos públicos ou carga horária superior a 168 horas). Retorna  Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://cnes.datasus.gov.br/pages/profissionais/consulta.jsp"
-}

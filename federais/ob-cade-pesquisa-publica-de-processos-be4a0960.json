@@ -1,6 +1,0 @@
-{
-  "nome": "CADE - Pesquisa Pública de Processos",
-  "descricao": "Pesquisa pública de processos e documentos do Conselho Administrativo de Defesa Econômica por número SEI, texto, interessado, unidade geradora e tipo de processo. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://sei.cade.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0"
-}

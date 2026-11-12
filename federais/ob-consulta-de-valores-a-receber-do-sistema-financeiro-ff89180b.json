@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta de Valores a Receber do Sistema Financeiro",
-  "descricao": "Consulta para saber se a Pessoa Física ou Jurídica possuem valores a receber no Sistema Financeiro. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://valoresareceber.bcb.gov.br/publico/"
-}

@@ -1,6 +1,0 @@
-{
-  "nome": "RIPEstat — API de Roteamento e Endereçamento",
-  "descricao": "Documentação da API pública de dados de roteamento, histórico de prefixos, ASN e registros de endereçamento IP, com respostas JSON.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://stat.ripe.net/docs/data-api/ripestat-data-api"
-}

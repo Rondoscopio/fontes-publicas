@@ -1,6 +1,0 @@
-{
-  "nome": "NASA — SWOT Medições de Rios",
-  "descricao": "Serviço geográfico do produto RiverSP, com estimativas de elevação da água, largura, superfície e vazão em trechos fluviais observados por radar espacial.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://gis.earthdata.nasa.gov/portal/rest/services/C3233944997_POCLOUD/SWOT_L2_HR_RiverSP_reach_vD_BASIC/FeatureServer"
-}

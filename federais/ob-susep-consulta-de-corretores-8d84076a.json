@@ -1,6 +1,0 @@
-{
-  "nome": "SUSEP - Consulta de Corretores",
-  "descricao": "Pesquisa pública de corretores de seguros habilitados pela Superintendência de Seguros Privados, pessoa natural ou jurídica. Permite filtrar por tipo de pessoa, CNPJ (pessoa jurídica), nome, produto e situação do registro (ativo ou cancelad Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://www2.susep.gov.br/safe/Corretores/pesquisa"
-}

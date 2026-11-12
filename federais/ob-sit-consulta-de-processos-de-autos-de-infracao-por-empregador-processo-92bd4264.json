@@ -1,6 +1,0 @@
-{
-  "nome": "SIT - Consulta de Processos de Autos de Infração por Empregador — Processos Eletrônicos",
-  "descricao": "Consulta da Secretaria de Inspeção do Trabalho. Para consulta é necessário apenas o CNPJ raiz do empregador. Retorna UF, inscrição da filial autuada, número do processo, tipo, situação e último movimento. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://eprocesso.sit.trabalho.gov.br/ProcessoEletronico/Consultar/ProcessosPorEmpregador"
-}

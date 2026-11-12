@@ -1,6 +1,0 @@
-{
-  "nome": "OpenSky Network — Dados de Tráfego Aéreo",
-  "descricao": "API e conjuntos de dados de posições de aeronaves ADS-B, arquivos históricos e consultas de pesquisa; cobertura e permissões dependem de receptores e credenciamento.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://dev.opensky-network.org/data"
-}

@@ -1,6 +1,0 @@
-{
-  "nome": "MDS - Cadastro Nacional de Entidades de Assistência Social (CNEAS)",
-  "descricao": "Consulta pública de entidades privadas de assistência social. Pesquisa por nome da entidade ou CNPJ, com UF e município obrigatórios. Retorna CNPJ, nome da entidade, UF, município, endereço, e-mail e status do cadastro. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://aplicacoes.mds.gov.br/cneas/publico/xhtml/consultapublica/pesquisar.jsf"
-}

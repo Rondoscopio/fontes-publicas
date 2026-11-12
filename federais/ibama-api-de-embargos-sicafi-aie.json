@@ -1,6 +1,0 @@
-{
-  "nome": "Ibama — API de Embargos SICAFI-AIE",
-  "descricao": "Documentação de integração governamental para dados de embargos vigentes e lavrados; acesso sujeito a condições.",
-  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
-  "url": "https://www.gov.br/conecta/catalogo/apis/sicafi-conecta-consulta-embargos-vigente-e-lavrados-ibama"
-}

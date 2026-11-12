@@ -1,8 +1,0 @@
-{
-  "nome": "TJES — Certidões Judiciais",
-  "descricao": "Página de consulta, emissão ou orientação de certidões judiciais da unidade federativa ES. Página indicada pelo diretório oficial da PF, retorno 403 à ferramenta; validar no navegador. A existência de ação ou certidão positiva não equivale a condenação.",
-  "abrangencia": "Estadual / ES",
-  "url": "https://sistemas.tjes.jus.br/certidaonegativa/sistemas/certidao/CERTIDAOPESQUISA.cfm",
-  "referencia_institucional": "https://www.gov.br/pf/pt-br/assuntos/imigracao/declaracoes-e-formularios/certidoes-criminais",
-  "situacao_url": "Página indicada pelo diretório oficial da PF, retorno 403 à ferramenta; validar no navegador."
-}

@@ -1,0 +1,37 @@
+name: Solicitar correção documental
+description: Aponte erro verificável em documento ou informação pública do projeto.
+title: "[Correção]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Este formulário é público. Não publique dados pessoais desnecessários,
+        documentos confidenciais nem acusações sem fundamentação.
+        Para informações sensíveis, não utilize Issues.
+  - type: input
+    id: documento
+    attributes:
+      label: Documento ou página
+      description: Informe um link para o conteúdo que precisa ser revisto.
+    validations:
+      required: true
+  - type: textarea
+    id: trecho
+    attributes:
+      label: Trecho e problema identificado
+      description: Diferencie erro factual de divergência de interpretação.
+    validations:
+      required: true
+  - type: textarea
+    id: fontes
+    attributes:
+      label: Fontes e evidências
+      description: Informe documentos verificáveis e explique sua relação com a correção.
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Correção proposta
+    validations:
+      required: false

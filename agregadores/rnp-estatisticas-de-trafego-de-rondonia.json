@@ -1,6 +1,0 @@
-{
-  "nome": "RNP — Estatísticas de Tráfego de Rondônia",
-  "descricao": "Gráficos de ocupação de enlaces da Rede Ipê em Rondônia, incluindo ligações com Acre e Mato Grosso, com amostragens de cinco minutos; capacidade indicada não equivale a tráfego observado.",
-  "abrangencia": "Agregador / Brasil, com recorte para Rondônia",
-  "url": "https://redeipe.rnp.br/trafego?origem=RO&tipo_arquivo=1"
-}
