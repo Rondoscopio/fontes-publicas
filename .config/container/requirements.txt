@@ -10,7 +10,7 @@ certifi==2026.10.23
 chardet==7.7.0
 charset-normalizer==3.5.2
 frictionless[sql]==5.21.0
-humanize==4.17.0
+humanize==4.16.0
 idna==3.20
 isodate==0.7.2
 jsonschema-specifications==2025.9.1
