@@ -25,8 +25,8 @@ class CatalogPackageTests(unittest.TestCase):
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
         self.assertEqual(result["rows_fonte"], 4970)
-        self.assertEqual(result["rows"], 30823)
-        self.assertEqual(result["resources"], 14)
+        self.assertEqual(result["rows"], 28074)
+        self.assertEqual(result["resources"], 16)
         self.assertEqual(result["rows_uf"], 27)
         self.assertEqual(result["rows_municipio"], 5571)
         self.assertEqual(result["rows_abrangencia"], 94)
@@ -34,8 +34,10 @@ class CatalogPackageTests(unittest.TestCase):
         self.assertNotIn("rows_localidade", result)
         self.assertNotIn("rows_fonte_localidade", result)
         self.assertNotIn("rows_registro_original", result)
-        self.assertEqual(result["rows_categoria"], 678)
-        self.assertEqual(result["rows_fonte_categoria"], 8199)
+        self.assertEqual(result["rows_categoria"], 646)
+        self.assertEqual(result["rows_fonte_categoria"], 5428)
+        self.assertEqual(result["rows_lista"], 19)
+        self.assertEqual(result["rows_lista_categoria"], 35)
         self.assertEqual(result["rows_fonte_url"], 4964)
         self.assertEqual(result["rows_origem"], 48)
         self.assertEqual(result["rows_fonte_origem"], 3031)
@@ -152,13 +154,13 @@ class CatalogPackageTests(unittest.TestCase):
                 kind: sum(row["tipo_classificacao"] == kind for row in categories)
                 for kind in ("principal", "original", "curadoria")
             },
-            {"principal": 587, "original": 56, "curadoria": 35},
+            {"principal": 501, "original": 65, "curadoria": 80},
         )
         associations = self.read_table("fonte_categoria")
-        self.assertEqual(len(associations), 8199)
+        self.assertEqual(len(associations), 5428)
         self.assertEqual(
             len({(row["fonte_id"], row["categoria_id"]) for row in associations}),
-            8199,
+            5428,
         )
         category_role = {row["id"]: row["tipo_classificacao"] for row in categories}
         self.assertEqual(
@@ -168,8 +170,47 @@ class CatalogPackageTests(unittest.TestCase):
                 )
                 for role in ("principal", "original", "curadoria")
             },
-            {"principal": 1039, "original": 1201, "curadoria": 5959},
+            {"principal": 1920, "original": 1414, "curadoria": 2094},
         )
+
+    def test_categories_are_split_and_historical_lists_reference_themes(self):
+        categories = {row["id"]: row["nome"] for row in self.read_table("categoria")}
+        self.assertNotIn("cat-265cfc7cce07bd", categories)
+        self.assertEqual(
+            categories["cat-06bbe4bf665e47"], "Processo Eletrônico (PJe 1º e 2º Grau)"
+        )
+        lists = {row["id"]: row["nome"] for row in self.read_table("lista")}
+        self.assertEqual(len(lists), 19)
+        self.assertTrue(lists.keys().isdisjoint(categories))
+        astronomy = "cat-3c4f58baa45f43"
+        self.assertEqual(
+            lists[astronomy], "Astronomia, catálogos celestes e dados orbitais"
+        )
+        list_links = self.read_table("lista_categoria")
+        self.assertEqual(set(lists), {row["lista_id"] for row in list_links})
+        self.assertEqual(
+            {
+                categories[row["categoria_id"]]
+                for row in list_links
+                if row["lista_id"] == astronomy
+            },
+            {"Astronomia", "Catálogos celestes", "Dados orbitais"},
+        )
+        associations = self.read_table("fonte_categoria")
+
+        def themes(source_id):
+            return {
+                categories[row["categoria_id"]]
+                for row in associations
+                if row["fonte_id"] == source_id
+            }
+
+        self.assertTrue(
+            {"Contratos", "licitações"}.issubset(themes("src-a8751163d00861"))
+        )
+        space_track = themes("src-14d8cce32ecb43")
+        self.assertIn("Dados orbitais", space_track)
+        self.assertNotIn("Catálogos celestes", space_track)
 
     def test_inventory_tables_are_removed_and_source_provenance_is_preserved(self):
         descriptor = json.loads((ROOT / "datapackage.json").read_text())
@@ -190,17 +231,6 @@ class CatalogPackageTests(unittest.TestCase):
             if row["tipo_origem"] == "origem_cadastro" and row["origem_id"] in origins
         }
         self.assertEqual(len(migrated), 391)
-        curated = {
-            row["id"]
-            for row in self.read_table("categoria")
-            if row["tipo_classificacao"] == "curadoria"
-        }
-        classified = {
-            row["fonte_id"]
-            for row in self.read_table("fonte_categoria")
-            if row["categoria_id"] in curated
-        }
-        self.assertTrue(migrated.issubset(classified))
         self.assertEqual(
             {
                 row["status_triagem"]
@@ -235,7 +265,7 @@ class CatalogPackageTests(unittest.TestCase):
                     [],
                 )
 
-                category_id = "cat-fbea146eec84eb"
+                category_id = "cat-4277bec2d88789"
                 matches = connection.execute(
                     "SELECT f.id FROM fonte AS f "
                     "JOIN fonte_categoria AS fc ON fc.fonte_id = f.id "
@@ -248,7 +278,7 @@ class CatalogPackageTests(unittest.TestCase):
                     if row["categoria_id"] == category_id
                 ]
                 self.assertCountEqual(matches, expected)
-                self.assertEqual(len(matches), 200)
+                self.assertIn(("src-a8751163d00861",), matches)
                 self.assertEqual(len(matches), len(set(matches)))
                 source = connection.execute(
                     "SELECT f.nome, f.status_triagem, COUNT(u.id) "

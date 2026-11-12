@@ -1,679 +1,647 @@
 id,nome,tipo_classificacao
-cat-00f56481c9cd59,Finanças / Pagamentos,principal
+cat-000587dd59dfa2,Tribunais judiciais,curadoria
+cat-00b91adf484632,Institutos de pesquisa,curadoria
 cat-0120adfdf60cd1,Unidades de Conservação e Áreas Protegidas,principal
-cat-014d2a3eebb748,"Processos, IEGM e Dados Abertos",principal
 cat-016763901b3340,Trabalho,principal
-cat-01841fa8ddc239,"Receitas, Despesas, Licitações, Contratos e Convênios",principal
+cat-0176033c3993fa,Ocorrências Minerais,principal
+cat-01acc4d721543a,Meteorologia,curadoria
+cat-01ea39e90b762e,Recursos Hídricos,principal
 cat-021bff2bca9910,Related Awesome Lists,original
-cat-021feba15d063c,"Previdência, Transparência e Servidores",principal
+cat-022908121be1fe,Qualificação de Dados,principal
 cat-0238e0427fdde0,Arrecadação,principal
-cat-024eca459ac61c,Educação / Microdados,principal
-cat-0290f7079e9443,"Fontes judiciais, antecedentes e sanções",curadoria
-cat-02aa1b7f9783fb,Transparência e Contas Públicas,principal
-cat-02d60e2ccb7dd1,Extração e processamento de dados,curadoria
-cat-032c01a43acda9,"Geoprocessamento, Cadastro Multifinalitário, Transporte e Hidrantes",principal
-cat-034e4c554a4293,Defesa e Segurança Pública,principal
-cat-036cf434669202,"Transparência, Despesas, Receitas, Convênios, Licitações, Remuneração",principal
-cat-03f74fd3220579,Finanças e Contratos,principal
-cat-04039c959c2c25,Certidões judiciais estaduais,curadoria
-cat-040acd8a2f0f94,"Estatística, Geografia e Demografia",principal
-cat-046d6e9d2f2a65,Registro Profissional e Financeiro,principal
-cat-04bb2730de47dc,"Transparência, Contratos, Convênios, Orçamento",principal
+cat-02452888ce46cb,Dados Bancários,principal
+cat-02eeceb7856a99,Participação popular,principal
+cat-045c8d4be88f1e,Rastreamento,principal
 cat-04fb32ed164b8d,Web Monitoring,original
 cat-051bf881bae8e2,Dados Legislativos,principal
-cat-0589469b72ee8f,Geoespacial / Transportes,principal
-cat-058b2ea38d65ef,"Transparência (Notícias, Sanções, Terceirizados)",principal
 cat-06038ab54cf497,Data Breach Search Engines,original
+cat-06301a553ba0cc,Busca via CRM,original
 cat-063cbe9f1302bc,Sistemas de Processo Eletrônico,principal
-cat-066589df1ff807,Administração Pública / Gestão de Documentos,principal
+cat-064c7b5cd1f224,Fiscalização,principal
+cat-0656023da5237c,Integração,principal
+cat-0663e5d34cc8a5,RNDS,principal
+cat-0681bfddd882a3,Servidores,principal
+cat-068a823fcb6716,Manutenção de diretórios,principal
+cat-06a38b8c308629,Sustentabilidade,principal
 cat-06bbe4bf665e47,Processo Eletrônico (PJe 1º e 2º Grau),principal
-cat-06d4920f8fe9c8,"Transparência (Despesas, Receitas, Contratos, Licitações, Servidores)",principal
-cat-06ed2be78abc2b,"Dados judiciais, processo eletrônico, jurisprudência",principal
 cat-0717cc0d7e4ce6,Segurança Pública,principal
 cat-071ad698c2cd90,Metadados geoespaciais,principal
 cat-073d813182dbee,Social Network Analysis,original
-cat-077ac33c9babb4,Logística Portuária / Comércio Exterior,principal
 cat-077e84de45914a,OSINT Blogs,original
-cat-086eab28bde816,TV Digital / Tecnologia,principal
-cat-086f490be734a1,Transparência e Legislativo,principal
-cat-08efc82b8dca61,Saúde / Dados Abertos,principal
-cat-09636f1bbf8e4d,Dados Judiciais e Estatísticas,principal
-cat-097aed338317ab,Infraestrutura e Projetos de Investimento,principal
-cat-0af2a1bfa3654a,Jornalismo regional e notícias,principal
+cat-081d2e4ca28a6c,Publicações,principal
+cat-0862339ec68f3a,Controle Externo,principal
+cat-087ecd23ff9633,Cadastro,principal
+cat-0af59e7b12080e,Transporte,principal
 cat-0b0b03d7d2748a,Transparência pública estadual e municipal,principal
-cat-0b90f3075d7894,Agricultura e Governança Fundiária,principal
-cat-0b96c8b6563e51,Contabilidade e Transparência,principal
-cat-0bd75910a62222,Educação / Pesquisa,principal
-cat-0c2b430515ff0f,saude_ambiente_infraestrutura,principal
-cat-0c5fc85e106e02,Bolsas / Educação Superior,principal
-cat-0d3f6669c61ef2,"Transparência, Pessoal e Licitações",principal
+cat-0b3c27d91f03f6,Processos,principal
+cat-0bf8bbc8b8767e,Aduana,principal
+cat-0c181535ac0445,COVID-19,principal
+cat-0c91fe717239af,Tecnologia,principal
+cat-0d32beed631604,Hidrantes,principal
+cat-0dd3a595524d89,Pesquisa,principal
+cat-0ded8133132325,Notas de Empenho,principal
 cat-0e51e3f73eb881,Saúde,principal
-cat-0e6b4d63d1d4bb,Preservação e arquivamento,curadoria
-cat-0e714782d340b8,"Transparência, Finanças, Licitações, Contratos, Pessoal",principal
 cat-0e7fda7c1144ca,Processo Eletrônico (Interoperabilidade),principal
 cat-0f61c383264803,Participação Social,principal
-cat-0fa2424efed658,Estatística e Economia,principal
-cat-0ffb9aa59fa4c3,Transparência/Administrativo,principal
-cat-1051386a0a1f56,Geointeligência e visualização geoespacial,curadoria
-cat-10cb4a8de499ae,"Processo Eletrônico, Integração Judiciária",principal
+cat-0f9c0c1afb0571,Políticas Públicas,principal
+cat-10d8e075332894,Planejamento Urbano,principal
+cat-10df59f5ce69ee,Veículos,principal
+cat-112cc825e9dbf0,Registro Financeiro,principal
+cat-113fe7d1872959,Registro Profissional,principal
 cat-11ae84acb0c245,Pastebins,original
 cat-12009166a27122,Dados Geoespaciais,principal
 cat-1268fc9d4192b3,License,original
-cat-12b6fdfdec2dd8,"Processos Militares, Dados Judiciais",principal
-cat-132e2a4b0a0993,Vínculos e visualização,curadoria
-cat-13545be68cb2c5,Comunicação e Notícias,principal
 cat-13d7f4fc17a6f0,Econômico-Financeira,principal
-cat-142a71f9a1b9e5,Transparência / Dados Abertos,principal
+cat-140f6456be5f12,Geociências,principal
 cat-14623690a3bbfc,Transparência,principal
-cat-14633e06e9bfce,Geoinformação Mineral e Processos Minerários,principal
-cat-1485fb3d5df939,"Dados Judiciais, Processo Eletrônico",principal
 cat-14b4dda2c62c8a,ciencias_sociais,principal
-cat-14fc137ad54703,Geociências e Cartografia,principal
-cat-150996036878be,Legislativo e Transparência,principal
-cat-15a181f33c5e54,"Transparência, Licitações, Contratos",principal
-cat-160124299ecd9f,"Jornalismo, análise e pesquisa",principal
+cat-14d6a274323e8e,Certidões judiciais estaduais,curadoria
+cat-15fc27910adce9,Turismo,principal
 cat-163e5109b85c03,Sistema Carcerário e Execução Penal,principal
-cat-163edb643a0a3e,Controle e Transparência,principal
 cat-16fc842a1a2329,Speciality Search Engines,original
+cat-17a8dc5c203902,Automação,curadoria
 cat-17d0cdf473c9d0,Informações do Cidadão,principal
 cat-17d2d07b5adccb,Adesões,principal
-cat-1a3ec29e439959,"Dados Abertos, Ensino, Administração",principal
+cat-18eaef7ba8f2bc,Unidades Gestoras,principal
+cat-18f7657dd30adb,Processos Militares,principal
+cat-19638aa5790443,Análise investigativa,principal
+cat-199cd3f1b425b4,Desigualdade,principal
 cat-1a4e733940332b,Portais Institucionais,principal
-cat-1b4a083733493c,Dados Abertos / Múltiplos Temas,principal
-cat-1bc7799f19b72a,Transparência / Controle,principal
-cat-1c0fc4e9f21aee,"Dados Legislativos, Transparência, Pessoal, Contratos",principal
-cat-1c89766fb4a669,Dados eleitorais e atividade política,principal
-cat-1cdcdc9a8f4d73,Transparência / Legislativo,principal
-cat-1d18e7b689b46a,"Produção científica, publicações geocientíficas",principal
-cat-1d7b40c70e7e05,Administração e Diário Oficial,principal
-cat-1ded85fb1c6e56,"Geoprocessamento, Saúde, Planejamento Urbano",principal
+cat-1aa3c08a071e85,Sistemas,principal
+cat-1ab6276109205a,Infraestrutura,principal
+cat-1ab73e1548c5fb,Atos Oficiais,principal
+cat-1b8eaf9be7c123,Direitos,principal
+cat-1c7e78fed6681f,Geolocalização,curadoria
+cat-1cbe6b70ac5b66,Diário Oficial,curadoria
+cat-1d81cae2396dad,Obras digitais,principal
+cat-1db3af5b3fe3fb,Acordos,principal
+cat-1dbc5cb4b591d6,Remuneração,principal
 cat-1e63952ff8479b,Geoserviços,principal
-cat-1e8255d16ef7b2,"Comunidades, código-fonte e manutenção de diretórios",principal
-cat-1ec53460bdaa00,"Publicações oficiais, atos administrativos e legislativos",principal
-cat-1f7bc1bf26e89e,"Geoinformação, Mapas e Cadastro",principal
-cat-211a88095f780b,Meteorologia / Clima,principal
+cat-1ee79ad1c2778b,Hospedagem,principal
+cat-20283afa3e18ec,Exploração de links,principal
+cat-20b900288cc63d,Vacinação,principal
 cat-2138e11473e16c,Q&A Sites,original
-cat-225c251fe65eb4,Investigação e Dados Bancários,principal
-cat-22617c95493165,"Controle Externo, Processos, Transparência",principal
-cat-22ef13242d86eb,"Pessoal, Transparência",principal
-cat-232db80d2448cf,Transparência e Dados Legislativos,principal
-cat-263738695c9fd9,Saúde / Ciência Aberta,principal
-cat-263b401997d5d7,"Transparência, contas públicas, orçamento e licitações",principal
-cat-263f59c99364c4,"Transparência, Dados Abertos",principal
+cat-21d6a49aa3b57c,CEAPS,principal
+cat-21dc26abe157dd,Normas,principal
+cat-22267656269a48,Concursos,principal
+cat-2312131cbf7a41,Memória nacional,principal
+cat-2343840bf38e39,Dados Abertos geocientíficos,principal
+cat-24b6d4327dbd44,Exames,principal
+cat-25e1e18a8f7752,IDE,principal
 cat-2654c8f1317cec,Gestão de Resíduos Sólidos,principal
 cat-265c3bf98a7e1a,Produção científica e pesquisa acadêmica,principal
-cat-265cfc7cce07bd,Contratos e Licitações,principal
+cat-27dab8cf405ff1,Estrutura Organizacional,principal
+cat-280c49b20bc695,Busca via CPF,original
 cat-2874aeae33236e,Loterias,principal
-cat-287a7d94a917d6,Crawler e exploração de links,principal
-cat-28c05eea31d7f3,Dados eleitorais e financiamento de campanhas,principal
-cat-28dd30b9641fbf,Transparência e Contratações,principal
 cat-29cf13f3f66e83,Sistema Financeiro,principal
-cat-2b4cb8d1f9d9c9,"Dados Geoespaciais, Meio Ambiente, Unidades de Conservação",principal
-cat-2b59aaa31506c3,"Arquivos públicos, memória institucional e publicações",principal
-cat-2b6a1dbcba5d4b,"Transparência, Processo Legislativo, Institucional",principal
-cat-2be1e2a26b3ff4,Transparência e Orçamento,principal
-cat-2c27fea4c991bf,"Dados Abertos (Saúde, Mobilidade, Finanças, Transporte, Urbanismo)",principal
-cat-2cab66908bc616,Serviços ao Cidadão / Tecnologia,principal
+cat-29dd327ac5753f,Sensoriamento remoto,curadoria
+cat-29ef45913e8e81,Execução Orçamentária,principal
+cat-2a9681bfbdb10f,Normas Jurídicas,principal
+cat-2af3c9bf26d367,Jornais históricos,principal
+cat-2bdf3b83dbbe4d,Gestão Parlamentar,principal
+cat-2c29739d354814,Certidões municipais,curadoria
+cat-2c8654edb3a6e3,Privacidade,principal
 cat-2cdcfc3f73d972,Social Media Tools,original
-cat-2d818bc6f01cc4,Identidades e perfis públicos,curadoria
+cat-2d24c09bd70e9d,Dados Legislativos,curadoria
+cat-2d2dc491b1f306,Cadastro Único,principal
 cat-2df8be93e04e93,Image Analysis,original
+cat-2e468cfbd08833,Triagem de sanções,principal
 cat-2e745407733559,Username Check,original
-cat-2f6225ee472529,Saúde / Regulação,principal
-cat-2f7ff7d874c07a,Dados Abertos / Energia / Mineração,principal
+cat-2eb6dbf945d328,Mercado de Capitais,principal
+cat-2f0c2b84eeaff3,Dados estratégicos,principal
 cat-2fae00ecb33967,Assistência Social,principal
 cat-2fb6c83aab225c,Educação Básica,principal
-cat-3022339e8c178b,"Dados legislativos, proposições, deputados, votações, orçamentos e despesas",principal
-cat-302d01f0112efb,Repositório Institucional / Educação,principal
-cat-304a753cf11eaa,Tributário / NFS-e,principal
-cat-30e9b6b7b1bd72,Transparência / Orçamento,principal
-cat-30f501980681ec,Geoinformação / IDE,principal
-cat-3116c99d8402af,Geoinformação / Mapas,principal
-cat-3138039a725b17,Compras Públicas / Licitações,principal
-cat-31b6fbe4c945d7,Segurança e Autenticação,principal
+cat-2fd7b511739c9d,Documentos digitalizados,principal
+cat-30a40b4a8cf769,Credenciamento,principal
+cat-30d0211d166f43,Plenário,principal
 cat-31e9586d12ed0e,Image Search,original
+cat-3200b61d39724a,Prazos,principal
+cat-322c33a70781ec,Despesas,principal
+cat-3246181143ef35,Arquivamento,curadoria
+cat-324a489758cd80,Comunicação,principal
 cat-3286b73ad339b6,Serviços Públicos,principal
-cat-32e0af08e4e345,"Legislação, Atos Normativos, Notícias",principal
+cat-32af45005222c3,Dados Institucionais,principal
 cat-330713250491d8,Main National Search Engines,original
+cat-3310006b4e126a,Endereços,principal
+cat-3337b4c53305e5,Gestão de Demandas,principal
 cat-3375a81d0e1961,contratos,principal
-cat-338aff24d8511f,"Acervos históricos, documentos digitalizados e memória nacional",principal
-cat-33b6a202444ced,Pesquisa de domínios e infraestrutura,curadoria
-cat-33f71751cb017f,Dados Abertos e Audiovisual,principal
 cat-340907318eef1c,Meta Search,original
 cat-342212df7d5f8a,Tributário e Fiscal,principal
 cat-34609194160ed8,Pesquisa e Desenvolvimento / Currículos,principal
-cat-34e15c55401844,Logística e Postagem,principal
-cat-352373a87c1d24,APIs e documentação de dados públicos,curadoria
+cat-351505a36cc331,Defesa,principal
 cat-35bcc48509a06d,Registro de Operações de Seguros,principal
-cat-365f77b03ec269,Meio Ambiente / Geoinformação,principal
-cat-3692714294b9e1,"Geociências, Hidrologia, Geologia Marinha, Geoquímica, Gestão Territorial",principal
-cat-375eab6604fa98,Transparência e Controle,principal
-cat-3874576bbeef30,Gestão Institucional e Acesso,principal
-cat-38a5e62bc09a80,"Compras, Contracheques, Licitações, Contratos, Execução Orçamentária e Atividade fim",principal
-cat-38b2f742455659,Financeiro e Cobrança,principal
+cat-35c343b154ee12,Documentos,principal
+cat-35d68eedcb9521,Logística Portuária,principal
+cat-35fa0e3ee013b4,Atividade política,principal
+cat-364eb998c32f27,Rodovias,principal
+cat-37d729d9bc3346,Conectividade,principal
+cat-383851987f88eb,Aviação Civil,principal
+cat-386ef7ef860466,Infraestrutura,curadoria
 cat-38f6d4582aef3b,Patrimônio,principal
-cat-39534505545a77,Geospatial/Energia Elétrica,principal
-cat-39b6151c6aa3c4,"Transparência (Contratos, Atos Normativos)",principal
-cat-3a5052f3be40c7,desigualdade_e_politicas_publicas,principal
-cat-3a6cf442d66a4d,"Processos, Decisões, Pautas e Contatos",principal
-cat-3a947af1e8bf7c,Institucional / Transparência,principal
-cat-3a9bcfe96f80d2,Descoberta e verificação de proxies,principal
-cat-3af0f9f814a459,Informações do Cidadão / Assistência Social,principal
-cat-3b398237f5e512,Mercado de Capitais / Dados Abertos,principal
+cat-3942e61c3d754f,Emendas,principal
+cat-396f340d6fe10c,Video Search,original
+cat-39808c255ff344,Fontes judiciais,curadoria
+cat-3a7748314b01b8,Notícias,principal
 cat-3b5481f9b40d31,Comunicações Processuais,principal
-cat-3b6e495597b96c,Legislação e Atos Oficiais,principal
-cat-3b780b449ae76e,Processo Eletrônico e Dados Judiciais,principal
-cat-3b92b6909d8171,Cálculos judiciais e financeiros,principal
-cat-3c4f58baa45f43,"Astronomia, catálogos celestes e dados orbitais",curadoria
+cat-3bf15e85499ad1,Monitoramento Ambiental,principal
+cat-3c74077927f36a,Imagens,curadoria
 cat-3c8c6dac5e29cf,Institucional,principal
-cat-3de9e15f36b2a3,Saúde e Vigilância Sanitária,principal
+cat-3d48559fa8b17d,Investigação,curadoria
+cat-3e64887601e39e,Atos Internacionais,principal
 cat-3ea32f47239655,Major Social Networks,original
-cat-3ebe3417c6961d,Saúde/Dados Abertos,principal
-cat-3f70009e763935,"Orçamento, Gestão e Transparência",principal
-cat-3fa0cbc958b6fc,clima_politicas_publicas,principal
+cat-3f48e2a748f7b7,Catálogos celestes,curadoria
 cat-3fa35a90399430,Crawler com navegador automatizado,principal
-cat-4075f71ad32ecb,Transparência e Administração,principal
+cat-3fdf34ea1bfb37,Estrutura Institucional,principal
+cat-400a90f8bb1d6e,Financiamentos,principal
 cat-40aa411ec75e22,Open Banking,principal
-cat-4163f75782639f,"Dados Judiciais, Processos",principal
-cat-41714ffde6a678,meio_ambiente_e_direitos,principal
+cat-4171b3fdcf96cf,Gateway,principal
 cat-41db6dd549b5ff,Transparência Pública,principal
-cat-422bf97a767d8d,Fazenda e Tributação,principal
-cat-423896cdcba2b9,"Segurança pública, operações e comunicados institucionais",principal
+cat-421af8e09afd67,Compliance,principal
+cat-4261e913c128c3,Proposições,principal
 cat-42751f4d1c7afb,Other Tools,original
 cat-4277bec2d88789,Contratos,principal
 cat-427a71188cc474,Publicações Oficiais,principal
-cat-42aaf061b35aca,"Participação popular, audiências interativas, wikilegis",principal
 cat-42b1518054d00d,saude_publica,principal
+cat-42ec65310edf64,Dados públicos,principal
 cat-4336a003a8130d,Finanças,principal
-cat-4346dd85c0d544,"Finanças, Dados Judiciais",principal
-cat-434784eae67ca2,Governo Digital e Integração,principal
-cat-43e12ccc7b5ea9,Transparência e Finanças Públicas,principal
-cat-444d933c3d59e5,Meio Ambiente e Geoinformação,principal
-cat-449c363d123763,desenvolvimento_economia,principal
+cat-4340b826eb0e76,Dados eleitorais,principal
+cat-43b6a36888af8d,RH,principal
+cat-43fd6bc3404571,Comunicados institucionais,principal
 cat-44b7f1c3295715,Threat Intelligence,original
-cat-4509beff955957,clima_dados,principal
+cat-44decce9003890,Ciência e Tecnologia,principal
 cat-453c5039c90149,Privacy Focused Search Engines,original
-cat-4589f69c3ce240,"Transparência, Processos Judiciais, Licitações, Contratos, Orçamento e Pessoal",principal
-cat-461e3666ea1532,Recursos Hídricos / Telemetria,principal
+cat-457d633f10ccfd,Atuação institucional,principal
+cat-45deb637f7221a,Ciência,principal
+cat-4627221e3783c9,Operações de segurança,principal
 cat-468ee764d522a6,Integração Governamental,principal
-cat-476244cf0062a3,"Internet, conectividade e tráfego de rede",principal
+cat-4690cc26c7a4ff,Serviços municipais,curadoria
+cat-46928d73a73d23,TI,principal
+cat-46ed65fc48d67c,Legislação,principal
 cat-479fe75b773bf3,Meteorologia,principal
-cat-4819e2bf72da2d,"Jornais, revistas e periódicos históricos",principal
+cat-47c05334edd86e,Periódicos históricos,principal
 cat-484d9e5cf0b7c5,Dados Judiciais,principal
-cat-48bd9f5059e58f,"Transparência, Processo Legislativo",principal
-cat-48e39877e4e7b0,"Trânsito, Veículos",principal
-cat-494da0777a47aa,"Ferramentas digitais, privacidade, software e mídia",principal
-cat-4972dec797753b,"Real-Time Search, Social Media Search, and General Social Media Tools",original
-cat-49e03781a54efd,"Sensoriamento remoto, clima e monitoramento ambiental",curadoria
-cat-4acfe6a1432d53,Transparência e Administração Pública,principal
-cat-4ae6786d145319,"Transparência, Pessoal, Orçamento, Contratos e Gestão Parlamentar",principal
-cat-4b52883dc294f9,"Processos, Certidões",principal
+cat-4941b6450183c0,Deputados,principal
+cat-49cf4b8d9cb197,Pesquisa de domínios,curadoria
+cat-4a75320f59ac43,Transparência Previdenciária,principal
+cat-4a8e465125945d,Mapas geoespaciais,principal
+cat-4ac16aab8c4c09,ISS,principal
+cat-4b8429e4b9ff68,Peticionamento,principal
 cat-4bb183e09ae1ac,Transporte de Cargas,principal
 cat-4bb7f615c013e5,Threat Actor Search,original
-cat-4bca3e5716b6af,Aviação Civil / Regulação,principal
-cat-4c06c4fa3100d2,Geoprocessamento e Desastres,principal
-cat-4c31afcd4eb111,"Transparência, Pessoal, Contratos e Orçamento",principal
-cat-4c48bd2f880ff4,Fazenda e Defesa do Consumidor,principal
-cat-4c74cecbd5ee60,Logística e Prazos,principal
-cat-4c8473350f2381,Estrutura Organizacional e Administração,principal
-cat-4c8d61dda5952f,Diretórios de bibliotecas e acervos digitais,principal
+cat-4cc8b6a642c902,Transportes,principal
+cat-4cf0c118cd5387,Dados Criminais,principal
 cat-4d34e87313d55d,Pesquisa e Desenvolvimento / Produção Científica,principal
+cat-4d354334a10d5a,Software,principal
 cat-4dbf7c20639298,Publicações Científicas e Tecnológicas,principal
-cat-4de15d5500db8e,Video Search and Other Video Tools,original
-cat-4dfc5ca668d51b,Mobilidade / Transporte / GTFS,principal
-cat-4e5a9a34237800,Transparência e Institucional,principal
-cat-4e6753c6861b5d,Credenciamento e Catálogo,principal
 cat-4e9ecc188dd6e2,Jurídico,principal
-cat-4ea3c17a9d317d,Institutos e fontes de pesquisa,curadoria
-cat-4ee24a78575d90,Estatísticas e Pesquisas,principal
 cat-4fe7f30337c101,Jornalismo amazônico,principal
+cat-506c940d32f504,Patrimônio Arqueológico,principal
 cat-518b1af660dfb4,registro_oficial_de_pesquisa,principal
 cat-51bd856573c1b2,Gestão,principal
-cat-52159ec587b777,Meteorologia e Meio Ambiente,principal
-cat-52af71468431ee,Acesso à informação e transparência federal,principal
 cat-530fb96a45e08b,Dados Espaciais e Geoespaciais,principal
+cat-53590a50b83dbb,Acesso à informação,principal
+cat-53bd40ef966945,Inteligência Artificial,principal
 cat-541ac11e19adde,Dívida Pública,principal
-cat-54429c5f11d8a1,Espacial e Ciência,principal
+cat-544b00f7d78ece,Mineração,principal
 cat-544ec7759e119e,Transparência Legislativa,principal
 cat-54b36fbfeeb4b6,Comércio Exterior,principal
-cat-550c358376f8e2,"Transparência, Licitações, Contratos, Legislação, Concursos",principal
+cat-552a737ade3297,Publicações Oficiais (DOM/SC),principal
 cat-553162cbdbfb7c,Pesquisa e Desenvolvimento / Economia,principal
-cat-5549bf5cfaba30,Meio Ambiente / Biodiversidade,principal
-cat-554f271b95e3b8,Transparência e Gestão Pública,principal
 cat-5670c036b9dca8,File Search,original
-cat-574e2aa1e99561,"Transparência, Licitações, Contratos, Diárias, LRF",principal
-cat-576e34b8f7f60f,agropecuaria_e_rondonia,principal
-cat-577cdb5c98adc8,"Geodados, Planejamento Urbano, Meio Ambiente",principal
-cat-57e33c5f9cbb07,Transparência e Legislação,principal
-cat-57e9ee40689b7b,Geoinformação e Meio Ambiente,principal
+cat-56c8f813be8c83,Astronomia,curadoria
+cat-57b7a58ed37a45,Geologia,principal
+cat-58d7fd55ce7d84,Inflação,principal
+cat-59381eda43beb4,Video Tools,original
 cat-5984174d8867b0,Metadados Espaciais,principal
-cat-5ac2f755a08c89,"Processos, Dados Judiciais",principal
+cat-598e1094eb0565,Fontes de pesquisa,curadoria
+cat-59db39069072ef,Busca via CNA,original
+cat-5ad5a5f5df0919,Suporte,principal
 cat-5b694a305ded47,Fazenda,principal
 cat-5b82835281ff3e,certidões,principal
-cat-5be5a7171002f0,"Administração, Pessoal, Contratos, Senadores (CEAPS)",principal
+cat-5bf41cef1ce4a1,Catálogo,principal
 cat-5c106530139c8d,sistemas de processo eletrônico,principal
 cat-5c453778788972,Estatística,principal
-cat-5c77fa2c93c64b,Dados Abertos/Institucional,principal
+cat-5cfe82c30f0f8f,Terras Indígenas,principal
+cat-5d38bb64b201eb,Email Search,original
+cat-5d7ff57920cba8,Transparência Administrativa,principal
+cat-5dae9cd735b2c6,Download de mídia,principal
 cat-5db54e8041eae2,Produção Acadêmica,principal
-cat-5e7a1269182bad,"Transparência (Contratos, Licitações, Servidores, Legislação, Convênios)",principal
-cat-5e9e0964367a23,Pesquisa e Publicações,principal
+cat-5dc0287c6dcfad,Extração de dados,curadoria
+cat-5dcf806f7a1cf5,Jornalismo institucional,principal
+cat-5dd50bd3741f26,IEGM,principal
+cat-5e0076a5332802,Dados Legislativos Municipais,principal
 cat-5ee6db5d5c49ac,Cálculos Judiciais,principal
-cat-5f037a34405a50,"Orçamento, Transparência, Gestão Pública",principal
-cat-5f46e6a3874a86,Documentação e análise investigativa,principal
+cat-5f97802b158cc7,Padronização,principal
+cat-5f9ec40d371f50,Gestão Territorial,principal
+cat-5fb2c917aa97a4,Controle de Contas,principal
 cat-5fcf89733b32fd,Dados legislativos,principal
-cat-604b0060b88610,Fazenda / Tributário,principal
+cat-608a2d394e24ba,Setor Elétrico,principal
+cat-6097b29e2e7bab,Memória institucional,principal
 cat-60c025a5347d3a,Browsers,original
-cat-60f7da1cb11055,Crédito e Financiamento,principal
 cat-612b9e2f7256c2,Identidade e Autenticação,principal
 cat-6135b8470d92a5,Mapeamento Agrícola,principal
-cat-627a5c7da47cd5,Pautas e Sessões,principal
+cat-61d978f2d15ff0,Rádio,principal
 cat-628aaa81bbad53,Reforma Agrária,principal
-cat-628ef1dda9bfe2,Transparência e Dados Legislativos Municipais/Estaduais,principal
 cat-62bdd8b7415656,Privacy and Encryption Tools,original
 cat-6317de076d1055,Integração de Sistemas,principal
-cat-63444a8869c64a,"Atos Internacionais, Acordos e Tratados",principal
+cat-6341ddb0984e11,Outorgas,principal
+cat-636288eeaccadb,Convênios,principal
+cat-63655e3d94a138,Pesquisas,principal
+cat-6373cf44a1a3ae,Acesso,principal
 cat-63ace2cc6497d0,Other Resources,original
-cat-63cf59e0e8c381,"Comunicações, Intimações e Diário Oficial",principal
 cat-64adde788c2d1b,Bens Apreendidos,principal
-cat-64fa4d78bc45d7,"Processo Legislativo, Proposições",principal
+cat-6576468eec604c,Código-fonte,principal
+cat-66468ad987db9e,Cadastro de Empresas,curadoria
+cat-66a1ba7aa59616,Atividade-fim,principal
+cat-6760a061c035d2,Clima espacial,curadoria
 cat-67ab2dd9e194c7,Processo Legislativo,principal
+cat-686c289907fb8b,PDFs,curadoria
 cat-6880ff9859a65b,Agricultura e Pecuária,principal
-cat-68b3a2b4cc14f5,Infraestrutura e Logística,principal
-cat-693e81c1a58aff,"Transparência, Gestão Orçamentária e de Pessoas",principal
-cat-6a25adff25b16c,Geoprocessamento e Planejamento Urbano,principal
-cat-6ab7666d00d9d6,Documentos enviados por usuários e obras digitais,principal
-cat-6af9e109c09fba,"Processo Legislativo, Normas",principal
-cat-6b0b0d18e3ed8b,"Transparência, Licitações, Contratos, Gestão de Pessoas, Orçamento",principal
-cat-6b18c98ff8790c,"Transparência (Licitações, Legislação, Contratos, etc.)",principal
-cat-6c19249a66b138,Finanças e Pagamentos,principal
-cat-6c299d1fcb9556,agropecuaria_e_ambiente,principal
+cat-68d2841df18727,Bolsas,principal
+cat-690b77cbeedd96,Operações,principal
+cat-696259b9867d0f,Intimações,principal
+cat-69871d040c40f2,Processo Eletrônico,curadoria
+cat-6a1f3c32065131,Geoquímica,principal
+cat-6adb49541cc5db,Desenvolvimento,principal
+cat-6b03f914411986,Terceirização,principal
+cat-6b4b0c2e9f393d,Clima,curadoria
+cat-6b6a3bb75e0490,Documentação,principal
+cat-6c17f22415ddc5,Sismologia,curadoria
+cat-6c54f34957ce7b,Social Media Search,original
+cat-6c6ba3df1258e1,Diário Eletrônico,principal
 cat-6c75de65122bc5,Similar Sites Search,original
-cat-6dd36b9dba225a,Justiça e Previdência,principal
+cat-6d048872614937,Análise de exposição,principal
+cat-6d99538996f7a4,Document Search,original
+cat-6dabccac9f28c9,Clima,principal
 cat-6df542109c7010,Dados Judiciais / Processuais,principal
-cat-6e1e813c3f3c7e,"Transparência, Planejamento Estratégico, Dados Processuais, Pessoal, Orçamento",principal
-cat-6ea1dc52f0bba1,Transporte e Mobilidade,principal
-cat-6eb36505bd1e9a,Processo Eletrônico e Integração,principal
-cat-6ec2a11f4fd4b7,"Transparência, Finanças e Despesas",principal
+cat-6e81a64125e8e9,Tribunais de contas,curadoria
 cat-6ee40aeb123299,economia_agroambiental,principal
-cat-6f56fa97419170,Mercado de Capitais / Sistemas,principal
-cat-6f61897c96a93c,Pessoal/Transparência,principal
-cat-6f639e732e7ba9,Certidões municipais no Brasil,curadoria
-cat-6fab72eff70edc,"Economia, inflação e política monetária",principal
+cat-6f624224d26eed,Acervo Digital,principal
+cat-6f6e31b6e83da2,Acervos digitais,principal
+cat-6f7d788a3edbf7,Desastres,principal
 cat-6fbe9ebf83582a,VPN Services,original
 cat-703422458e9777,OSINT RSS Feeds,original
 cat-704e54f2ff4f33,Finanças Públicas,principal
 cat-7061712425a1fe,Motores de Busca Contexto Brasil,original
-cat-706e8a28b462e3,"Dados Legislativos, Pessoal, Institucional",principal
+cat-7083c20a9f4827,Certidões,curadoria
+cat-71241b1139e886,Ensino,principal
+cat-71cca68bea3687,Dados Abertos,curadoria
 cat-720a1da7f105ad,Propriedade Industrial,principal
-cat-7224d1dedaf3b4,Abastecimento / Combustíveis,principal
 cat-72396ab50c83cc,Geográfico,principal
+cat-72ca97567fce20,RMI,principal
 cat-72d7912bcb232d,Meio Ambiente e Resíduos Sólidos,principal
-cat-732df48e6a9721,Geoprocessamento / Cadastral / Imobiliário,principal
-cat-7450e67cb51fec,Transparência / Estrutura,principal
-cat-745192c645a159,Turismo/Hospedagem,principal
-cat-746dd35085f811,Governo Digital / Transparência,principal
+cat-73420e3d1b8737,Identificação,principal
+cat-73bc1493bbf858,Gestão de Documentos,principal
+cat-749a140323facc,Perfis públicos,curadoria
 cat-74cc6b34e49e7f,Cadastro empresarial e consulta de CNPJ,principal
-cat-75583ce58a7555,Fazenda / Tributação,principal
+cat-7577cd3881fd2c,Geosserviços,principal
 cat-759e94472fd8db,Preços de Hortigranjeiros no Atacado,principal
 cat-75c6a305575be2,Defesa do Consumidor,principal
-cat-75c8bd99dd3f78,Geografia e Hidrografia,principal
+cat-7624d5b16beebd,Arquivos públicos,principal
+cat-767f060e729eba,Imóveis,principal
+cat-76beb159a6d23e,Infraestrutura Geoespacial,curadoria
+cat-76c115376b85e6,Diretórios de bibliotecas,principal
 cat-7707725a56fd03,Agricultura Familiar,principal
 cat-77cf0346956597,Comunicações Processuais e Intimações,principal
-cat-78344ad06e04bc,trabalho_e_desigualdade,principal
-cat-78bc88cad41633,Transparência e Estrutura Organizacional,principal
-cat-796dee59342c26,Transparência / Orçamento / Contratos / Pessoal,principal
-cat-799cf8dc59b14d,Transparência e Serviços,principal
+cat-782d9014ee4e40,Leis Municipais,principal
+cat-798a276e5eaf3c,Auditoria,principal
 cat-7a5277a3525102,Sistemas Nacionais Diversos,principal
 cat-7a639cbe6532b8,Gestão de Acessos e Perfis,principal
 cat-7a6e0b741d14c7,Compras Públicas e Contratações,principal
-cat-7b00644d2b2cf6,tecnologia_e_conectividade,principal
-cat-7b13c712dc7fcf,Transparência e Compras,principal
-cat-7b9b3f83de0f5e,"Transparência, Saúde, Educação, ODS",principal
-cat-7c3414d5f1c2dc,"Dados Judiciais, Transparência",principal
-cat-7d4b3a6a436985,"Processo Eletrônico, Dados Judiciais",principal
+cat-7b00e06e0cd769,Geoinformação Mineral,principal
+cat-7c1258c3416024,Habitação,principal
+cat-7c1639c4e43bc6,Cartografia,principal
+cat-7db7b6643af6e0,Serviços,principal
+cat-7e2d8eaf77260b,Projetos de Investimento,principal
 cat-7e3d2f9887a21c,Job Search Resources,original
-cat-7e5bfe70b41503,geociencias_e_riscos,principal
 cat-7e73b9862361df,Language Tools,original
-cat-7f272cbf84fb35,Domain and IP Research,original
-cat-7f3ee26c9d7381,Dados Abertos / Infraestrutura / Transportes,principal
-cat-7f953be13e357a,Extração de dados e web scraping,principal
+cat-7f595a1f8fb108,Temperatura,curadoria
+cat-7f8a22c2494bd0,Ciência Aberta,principal
 cat-7fc5e76abd5e4a,Repositório Institucional,principal
-cat-7fc802251f5496,"Transparência, Licitações, Contratos, Despesas, Pessoal, Obras",principal
+cat-8009bb744a07ef,Pautas,principal
 cat-800ee914b5193a,Transporte de Passageiros,principal
-cat-80522988ae9d01,Transparência e Despesas,principal
-cat-806e57b9a8c37b,Transparência e Notícias,principal
+cat-80145a9ea7ed95,Combustíveis,principal
 cat-80735f13419437,Hidrologia,principal
+cat-80e8bc7a9cc1a7,Consulta Processual,principal
+cat-814477b381c428,Contracheques,principal
 cat-814d6a0135e7b2,Administração,principal
+cat-8217bcc6dcfa8f,Geoprocessamento,principal
 cat-821a91b7719a75,Dados de Pesquisa Científica,principal
 cat-821fa121fa528c,Ciência e Tecnologia / Currículos,principal
 cat-825ae7f115cde3,Serviços Judiciais,principal
-cat-82f735c8e8f60a,Download e processamento de mídia,principal
-cat-8329d0c9a5ffc3,Controle Externo / Finanças Públicas,principal
-cat-8350f5b53fc16b,"Processo Legislativo, Parlamentares, Sessões, Normas Jurídicas",principal
+cat-83e565b6349062,IP Research,original
 cat-83fafc89baf7b5,Phone Number Research,original
-cat-84e27654b25a18,Geolocalização e Mapas,principal
-cat-851ac0a49e1606,"Orçamento, Finanças, Licitações, Controle Externo",principal
-cat-85388754d54d4a,"Transparência, Finanças, Licitações, RH",principal
-cat-853fde3cb98382,Transparência e Pessoal,principal
-cat-854125db3c6f17,Transparência e Dados Judiciais,principal
-cat-8580195bc76db6,Orçamento e Finanças Públicas,principal
+cat-85053dd89022b8,Atos Administrativos,principal
+cat-856c150f3b7960,Crawler,principal
+cat-85b552b4da178a,Postagem,principal
+cat-85d1f3b6bca4ba,Comissões,curadoria
 cat-861ca8af29db5d,Saúde Suplementar,principal
-cat-8670cd26ae63e8,"Transparência, Finanças, Saúde e Administração Pública",principal
+cat-864e4e654c0d73,Dados de Pesquisa,principal
+cat-8690aab13e522f,Ferramentas digitais,principal
 cat-869abd82e1a281,Automação de navegadores,principal
-cat-86b585ad1876d5,"Transparência, Folha de Pagamento, Licitações",principal
-cat-86de6b4aa125b0,OSINT Brazuca — lista de fontes,curadoria
-cat-8705171c0e1650,Transparência e Gestão,principal
-cat-87920ba0673271,"Infraestrutura de Transportes, Rodovias, Obras",principal
-cat-87ac0647ec547d,Jornalismo político e institucional,principal
+cat-86c8b4d27fc14a,Identidades,curadoria
+cat-86eab1a5304a3a,Biodiversidade,principal
+cat-872cbd21ffff5b,Decretos,principal
+cat-8799d0753666b6,Financiamento de campanhas,principal
 cat-87c64157510ad9,pesquisa_de_opiniao,principal
-cat-889fb3ee013ba1,Financiamentos e Operações,principal
-cat-88af359f5a08c5,Transparência e Dados Abertos,principal
+cat-87fddc41ae0ff6,Processos Minerários,principal
+cat-880d5f164d9268,Jornalismo político,principal
+cat-8823b2f3bf516f,Energia,principal
 cat-891a393f65e4fe,Infographics and Data Visualization,original
-cat-892067f9232da6,Dados Judiciais / Consulta Processual,principal
+cat-898a5262fe2295,Tributário,principal
 cat-89d34faf749c37,Forums and Discussion Boards Search,original
-cat-8a1cb31c9c1e3c,Document and Slides Search,original
 cat-8aa3030f83a53b,Educação Superior / Pós-graduação,principal
 cat-8acf80933079fb,Cadastro de Agentes,principal
-cat-8b23fd5b72a5bb,"Transparência, Finanças, Recursos Humanos",principal
+cat-8b0dbd68195339,Domínios,curadoria
 cat-8b801094176206,Jornalismo regional,principal
-cat-8bb0d090f086bd,Notícias e Arquivos Públicos,principal
-cat-8bffff1c5e2855,Email Search / Email Check,original
-cat-8c643f93d3ec29,Identidade Digital / Aviação Civil,principal
-cat-8c8c75cb70de56,opiniao_e_politicas_publicas,principal
-cat-8cebcc29d5cb17,Geoprocessamento / Terras Indígenas,principal
-cat-8d154ca014cced,"Transparência, Licitações",principal
-cat-8d687381163066,Atendimento ao Cidadão / Processos Administrativos,principal
-cat-8e2cc4841669ea,Transparência / Contas Públicas,principal
-cat-8e4b21e8e2ba5e,Dados Abertos/Educação,principal
+cat-8bb7d08b9da641,NFS-e,principal
+cat-8cc1be5468d9c0,Dados Legislativos Estaduais,principal
+cat-8d533a96768768,Visualização,curadoria
 cat-8ea9bcf66be186,Acervos Museológicos,principal
-cat-8eb03eb7879071,"Transparência, LRF, Decretos, Portarias, Convênios",principal
 cat-8eb6b950a50812,Outorgas de Geração,principal
-cat-8ecf7cdd35d84a,Tabelas Processuais / Dados Judiciais,principal
-cat-8edbc40ab81327,Dados Abertos / Geral,principal
-cat-8f49e9e856b6eb,"Transparência, Dados Abertos, Orçamento, Contratos, Despesas",principal
-cat-8f52c74972be6b,Controle e Fiscalização,principal
-cat-8f848aacee33ba,Dados Abertos e Publicações Oficiais (DOM/SC),principal
-cat-8fc18918e9087d,Transparência / Finanças / Contratos,principal
-cat-91750fd0176fad,Crawler e descoberta de URLs,principal
+cat-901a3ca67abeb7,Notícias,curadoria
+cat-902311708057d9,Hidrografia,principal
 cat-91780f1b0407af,Processos Judiciais,principal
 cat-919985745d7d91,Geolocalização,principal
-cat-91baf0dd59b72c,Logística e Tarifas,principal
-cat-924550a58c19f3,Catálogo de Dados e Busca,principal
 cat-927cccf173f92f,Seguros (Open Insurance),principal
-cat-92b5aaf0340a3b,Geoespacial / Meio Ambiente,principal
+cat-92abed6c77c4fd,Diárias,principal
+cat-92b9375b11f902,Dados,principal
+cat-92c488de3470ac,Agropecuária,principal
 cat-9342a2277f2a0e,Seguridade Social,principal
-cat-937243000284fd,Dados Abertos / Catálogo,principal
-cat-937e412959f11a,"Geologia, Geociências, Ocorrências Minerais, Geocronologia, Litoestratigrafia, Geoquímica",principal
-cat-9417a7fc33c1e2,Licitações e Obras Públicas,principal
-cat-9469996b08b927,Domínios e infraestrutura,curadoria
-cat-947fc1b602402e,Certidões e registros federais e nacionais,curadoria
-cat-94a0d0cd1535d8,Dados judiciais e Transparência,principal
+cat-9389124fdce2d9,Corretores,principal
+cat-93ccfa28926f9c,Compras Públicas,principal
+cat-93ef1a074e133a,Monitoramento,curadoria
 cat-94a22a1273afa5,Controle,principal
+cat-94e05a6123e819,Integração Judiciária,principal
 cat-953362bdc28a3b,Defesa Agropecuária / Análises Laboratoriais,principal
 cat-9567e853ab69c1,Pessoal,principal
-cat-95a6523c25468e,"Documentos, arquivos republicados e pesquisa histórica",principal
-cat-9634bead031ac2,"Dados Pessoais, Inclusão",principal
+cat-9577730a56f073,Crédito,principal
 cat-96b0aeee7cd6d3,Mobilidade e Transportes,principal
-cat-97b8b4c9aa1a54,Saúde / Transparência / COVID-19,principal
+cat-9734bc4ae0171f,Revistas históricas,principal
+cat-97a85be2564673,Transparência,curadoria
 cat-97ba90cc3c6150,Endereçamento,principal
-cat-982302e3dd4ed9,Cadastro / Identificação,principal
-cat-984ba04990092c,"Transparência, Contratos",principal
-cat-98acbc45e229c8,Dados Institucionais e Abertos,principal
-cat-98c8bb873c40c0,Jurisprudência / Diário Eletrônico,principal
-cat-99013ebf4267c8,Transparência e Ouvidoria,principal
-cat-99d03feca7c37e,Auditoria e Fiscalização,principal
-cat-9b2a42c01b3ebb,"Transparência, Licitações, Despesas, Receitas",principal
+cat-9904f781387adf,Gestão de Salas,principal
+cat-996fe7379c5b26,Rondônia,principal
+cat-9ace8ef3e04b9e,Wikilegis,principal
+cat-9af60b9d42c313,Visualização geoespacial,curadoria
 cat-9b5296a5fcbd89,Credits,original
-cat-9c264c6f127818,Geoprocessamento e Mapas,principal
+cat-9bd46b23a11169,Mapas geológicos,principal
+cat-9c10c5c7fd9dc4,Notícias institucionais,principal
 cat-9c42a3bb7af389,Serviços ao Cidadão,principal
-cat-9c62ebd4c072d3,Geociências e Meio Ambiente,principal
+cat-9c5faad84841f1,Climatologia,curadoria
+cat-9c6a949ff7f0b8,Verificação de proxies,principal
+cat-9c80af5ed90273,Certidões de regularidade fiscal estadual,curadoria
+cat-9c88677e265076,Comissões,principal
+cat-9ca097f8cf9709,Espacial,principal
 cat-9cc7ff9d4dfb7f,Gestão Pública,principal
-cat-9cd33f0aefec83,Turismo/Cadastro,principal
+cat-9cfd0787526986,Ferramentas OSINT,curadoria
+cat-9d9fe365c79953,Abastecimento,principal
 cat-9de095f58b6322,Autenticação e Compartilhamento (ArcGIS),principal
-cat-9ded2254df81cd,Trânsito e Transporte,principal
-cat-9e10e7abb648fe,Transparência e Comunicação,principal
-cat-9fa4fb12af7b48,Seguros e Corretores,principal
-cat-9fc58a79c15023,Coleta e automação,curadoria
-cat-9fe076c981a0d9,"Dados abertos geocientíficos, SACE (Sistemas de Alerta Hidrológico)",principal
+cat-9e1271960c4665,Telemetria,principal
+cat-9eb0dcd4d86e3c,Unidades de Conservação,principal
 cat-a00a9329da8c39,Processo Eletrônico,principal
 cat-a054fa3c0c57f1,licitações,principal
 cat-a059c3305a3eec,Administração Pública,principal
-cat-a0a49967e8da6b,Climatologia e anomalias de temperatura,curadoria
-cat-a0b1dc40f21c6b,Geospatial/Setor Elétrico,principal
+cat-a098d359083f36,Microdados,principal
 cat-a1259d2f29ee21,Jurisprudência,principal
-cat-a169aead7578e7,Geoinformação/IDE,principal
-cat-a1aa708b8f528b,Educação e Gestão Pública,principal
-cat-a3079bb8143b38,Transparência Legislativa e Administrativa,principal
-cat-a389d57abc8595,Finanças / Open Banking,principal
-cat-a4072b78c1fdd2,"Transparência, controle, orçamento, contratos",principal
-cat-a40c577da28d98,Saúde / Repositório Institucional,principal
+cat-a1c392a06cadad,Autenticação,principal
+cat-a24a55d9c1f6fd,APIs públicas,curadoria
+cat-a2c7c2ea5f3dce,Licitações,curadoria
+cat-a2cc756197b6c4,Cobrança,principal
+cat-a342baa3227127,Gestão governamental,principal
+cat-a3611ae0a9de04,General Social Media Tools,original
 cat-a439433f9ecf2c,Rastreabilidade Animal (Bovinos e Bubalinos),principal
-cat-a4acbe3f8b510a,Links das referências Markdown,curadoria
+cat-a48f5540b41f9f,Logística,principal
 cat-a4bf9383ec7b93,Ordens Judiciais de Bloqueio e Penhora,principal
-cat-a588e9217df1ac,"Transparência, Execução Orçamentária, Despesas, Receitas",principal
-cat-a661a4899cddba,Geografia / Estatística,principal
-cat-a676b61e4a84a7,Identidade e Acesso,principal
-cat-a687e7c970a88b,"Transparência (Convênios, Licitações, Contratos, Obras Públicas, Servidores Públicos, Diárias, Emendas)",principal
+cat-a55f53b0b87b3a,Infraestrutura de Transportes,principal
+cat-a5d3a6b13b8df6,Financiamento,principal
+cat-a5f44053623f33,Obras Públicas,principal
+cat-a6497ed31658f4,Governo Digital,principal
+cat-a6636313de85fd,Modelos Digitais de Elevação,curadoria
+cat-a66f0d0ced63bc,Acervos históricos,principal
 cat-a691239c89e0e5,Armazenagem,principal
+cat-a6ad688d4d5774,Petróleo e Gás,principal
 cat-a6df99bbcc9153,OSINT Videos,original
-cat-a73f8b4f624ac9,Fazenda / ISS / Nota Fiscal,principal
+cat-a6fafe53c37545,Benefícios Sociais,principal
 cat-a74910a45ea236,Saneamento,principal
-cat-a74f24e6bb3bdc,Identidade / Antifraude,principal
-cat-a7cc886ee02fee,"Transparência, Licitações, Contratos, Obras, Pessoal",principal
-cat-a88aca2ed424eb,Jurisprudência e Inteligência Artificial,principal
-cat-a8a49a15526ad5,"Transparência Previdenciária, LRF, Decretos",principal
-cat-a9511680293d65,Meio Ambiente / Monitoramento,principal
+cat-a77722a0a01820,Arquivos republicados,principal
+cat-a80ff09d0416bf,Suprimentos,principal
+cat-a8a0e8cc66a903,Slide Search,original
+cat-a8e72b4735739d,Sanções,principal
 cat-aa122e35ecf9ac,DNS,original
-cat-aab52b90caf8e8,Transparência / Judiciário,principal
-cat-aad75e05946eb0,Benefícios Sociais / Qualificação de Dados,principal
-cat-ab2362632a0409,"Despesas Públicas, Notas de Empenho, Unidades Gestoras",principal
+cat-ab4866865b4d0f,Contatos,principal
 cat-ab74b5e1e03d4a,Monitoramento,principal
-cat-accdf85cb5539f,"Indicadores de atendimentos, arquivos públicos (orçamento, receita, pessoal, contratos, licitações, etc.)",principal
+cat-acec3c87fe1b4d,Obras,principal
 cat-ad1580c51be8f2,Análise de riscos com computação multipartidária segura,principal
-cat-ae8d0da92e1235,Geociências e Geodésia,principal
+cat-ae52b75774a1e1,Análise,principal
+cat-ae77d56c66c011,Emendas Parlamentares,principal
 cat-aec3f6a1be0594,Energia Elétrica,principal
 cat-aee743fbd5776d,Diário Oficial,principal
-cat-af329e0f8f49da,PDFs e documentos,curadoria
-cat-b088bc4fabffb5,Integração / Cadastro,principal
+cat-af064a2d2fd5df,Planejamento Estratégico,principal
+cat-af53817fceb799,Portarias,principal
+cat-af64fac28f5e9f,Anomalias de temperatura,curadoria
+cat-af8e4d802bcaf8,Vínculos,curadoria
+cat-b0819b93282456,Concursos,curadoria
+cat-b10f38d35d5664,Satélites,curadoria
+cat-b18253c014cf80,Ouvidoria,principal
+cat-b1c896f7f86459,ODS,principal
 cat-b1d1176a7cfd06,Trânsito e Mobilidade,principal
 cat-b1ecfee5eb5c01,Gestão Estratégica,principal
-cat-b1fcf621447ca9,"Múltiplos (Saúde, Educação, Transportes, Fazenda, RMI, Busca)",principal
-cat-b20ee9795d893e,Dados legislativos e transparência,principal
+cat-b22dad86fcd934,Preservação,curadoria
+cat-b2e396a9849409,Sessões,principal
 cat-b2ec27fa7768ce,Defesa Econômica,principal
-cat-b354c0187e897e,Economia e Finanças,principal
-cat-b4197f6f3f1d7d,Awesome OSINT — lista de fontes,curadoria
-cat-b4443505add28c,"Transparência, Pessoal e Estrutura Organizacional",principal
-cat-b45e151f6a1d90,Saúde Suplementar / Administração,principal
+cat-b3fccab289ef54,Identidade Digital,principal
 cat-b475412a2ed9e2,Serviços Governamentais,principal
-cat-b493b3cb669fc2,Transparência / Finanças Públicas,principal
-cat-b584b236b2e0cc,Web scraping e crawler,principal
+cat-b5295138f59c8a,Sanções,curadoria
 cat-b5a79ea1d240cd,Serviços Públicos Digitais,principal
-cat-b5c8d8c355e649,Infraestrutura/Gateway,principal
-cat-b65f992d969f2a,Licitações e Contratos,principal
-cat-b71e3ea597a0c0,Transporte e Logística,principal
-cat-b7811dec745d17,cidades_e_desigualdade,principal
+cat-b5d682fef3a2d2,Processo Judicial Eletrônico,principal
 cat-b7dfb2fa25b2b2,Autenticação/SSO,principal
-cat-b7f5a8fc61c80a,Geoespacial / Petróleo e Gás,principal
-cat-b848e5b264f5cd,Fontes legislativas de Rondônia,curadoria
-cat-b863b00ac8baff,ciencia_tecnologia,principal
-cat-b8d489c0b18b19,Cadastro / Empresas,principal
+cat-b7edaef7ba54bb,Pagamentos,principal
+cat-b805d10a1a2482,Real-Time Search,original
 cat-b8fc996bfb4965,Mobilidade,principal
-cat-b90743c21a9ee5,Transparência e Finanças,principal
-cat-b91c510263604d,Dados públicos e acesso à informação,principal
-cat-b944906665c0f6,Chelfo API — lista de APIs,curadoria
 cat-b9a6954322da66,Google Dorks Tools,original
-cat-bb62accf80edf5,Geoserviços / Outorgas,principal
+cat-bab613246bdfda,Integração em Saúde,principal
+cat-baf12d5cabd488,Descoberta de URLs,principal
+cat-baf72da1fe1311,Contas Públicas,principal
+cat-bafd6709237db2,Ouvidoria,curadoria
 cat-bbbf7c2de887d2,Portal Único de Serviços,principal
+cat-bbc91140a3e3a0,Compras,principal
+cat-bc113f3df8bc3b,Vigilância Sanitária,principal
+cat-bc1f1c35bf99d3,Riscos,principal
 cat-bc68e835fd72d9,Memória institucional e patrimônio documental,principal
-cat-bd2c4f650da0d9,Transparência e Agendas Públicas,principal
-cat-bd50eb3c8f0e85,Meio Ambiente e Monitoramento,principal
-cat-bdd072bbfcbbba,Ciência e Tecnologia / Dados de Pesquisa,principal
-cat-be617254e2695e,Transparência e Controle de Contas,principal
-cat-c06f3f4997e093,Gestão governamental e monitoramento de políticas públicas,principal
-cat-c0a586abf362c9,Ouvidoria / Atendimento ao Cidadão,principal
+cat-bc86b25951f02b,Amazônia,principal
+cat-bd03569933a56d,Litoestratigrafia,principal
+cat-bd9089013ed64f,Transparência federal,principal
+cat-be12d31ff4aaad,Cadastro Único,curadoria
+cat-be3eec99bc34e0,Empreendedorismo,principal
+cat-bea7cfae3f36ab,Indicadores de atendimento,principal
+cat-bf1ebd136a10ab,Produção científica,principal
+cat-bf4ca40fa68444,Cadastro Imobiliário,principal
+cat-bf6e3643008677,Agricultura,principal
+cat-c03c0ade0de366,Acompanhamento,curadoria
 cat-c0aeac2936952c,Sistemas de processo eletrônico,principal
-cat-c11163b94c076d,Dados Legislativos e Transparência,principal
-cat-c2973776677653,"Dados Judiciais, Orçamento",principal
-cat-c2ded2f73111ef,"Saúde, Dados Abertos",principal
+cat-c142163627fa77,Tabelas Processuais,principal
+cat-c16f0e20e26e78,Jurisdições,principal
+cat-c191f19b836245,Despesas Públicas,principal
+cat-c1b39e87153ba6,Gestão Institucional,principal
+cat-c216e5e138008f,Audiovisual,principal
+cat-c298f645d974c6,Indicadores oceânico-atmosféricos,curadoria
+cat-c30cbb449405fd,Monitoramento de políticas públicas,principal
 cat-c31fab7490df9e,Educação Superior,principal
-cat-c3827c1e9ecfdf,Assistência Social / Cadastro Único,principal
-cat-c38d961bd87e3f,"Transparência, Saúde",principal
-cat-c3901b04bc7679,Dados Judiciais / Processo Eletrônico,principal
+cat-c36ddd8be06d8f,Votações,principal
+cat-c3930a34e34ed0,Jornalismo,principal
 cat-c3d57ea96a29dd,Processo Eletrônico Criminal,principal
-cat-c448c116e4e208,Dados Abertos / Educação,principal
-cat-c47a6a434c651c,"Transparência, Licitações, Contratos, Leis Municipais, Seletivos, Diário Oficial",principal
+cat-c421986583318a,Servidores,curadoria
+cat-c43ec199779b2b,Domain Research,original
+cat-c46a3ffa5f1c4b,GTFS,principal
+cat-c4792a1b293ccd,Legislativo,principal
 cat-c48300042295ed,Redes sociais,curadoria
-cat-c5a95ffe1073d9,Compras e Suprimentos,principal
+cat-c53736fefc4308,Indicadores,principal
 cat-c5df6305edef72,Consulta Pública,principal
-cat-c63d015e8cce9d,"Transparência, Pessoal, Orçamento e Estatísticas",principal
-cat-c67c4f0e3c744c,Pessoal/Processos,principal
+cat-c64bd6e5d02ec5,Publicações geocientíficas,principal
+cat-c6c72a7fa4a2c5,Processamento de dados,curadoria
 cat-c6e3c90dfcad75,Infraestrutura Rodoviária,principal
-cat-c6eaed53654f42,Segurança Pública e Identificação,principal
 cat-c71e60d6e11b57,Geospatial,principal
-cat-c7419c2e1ae832,Monitoramento e inteligência situacional,curadoria
-cat-c766f8f6dca450,"Mapas geológicos, geoespaciais, geociências",principal
-cat-c76fd4cf4ca5aa,Telecomunicações e Dados Abertos,principal
-cat-c775714580d6da,Geoserviços e Mapas,principal
-cat-c8270602e06897,Endereços e Jurisdições,principal
-cat-c86d65c764c629,Transparência / Orçamento / Pessoal,principal
 cat-c86e1c566bc212,Geoprocessamento e Mapas de Terras Indígenas,principal
-cat-c956276162a633,Serviços ao Cidadão / Urbanismo,principal
-cat-c960314fdd04d2,Dados Abertos / Meio Ambiente,principal
 cat-c9c72a94c78c33,Mobilidade/Transporte,principal
-cat-c9ce438ecd89e6,Clima / Meteorologia,principal
-cat-ca8fcd27687bef,"Legislação, Jurisprudência, Doutrina",principal
+cat-ca205548bad6f6,Suporte técnico,curadoria
 cat-ca91c62170d476,Segurança,principal
-cat-cac446982f8b5a,Geolocalização e satélites,curadoria
 cat-cae7945bcc084d,Pesquisa de e-mails,curadoria
-cat-cb0b3bfc3f56cb,Geoprocessamento / Finanças / Cadastro Imobiliário,principal
+cat-caec43cc053a43,Referências documentais,curadoria
 cat-cba8ed01341a79,Mobilidade e Transporte,principal
 cat-ccf2271aa7a3bc,Trânsito,principal
 cat-ccf9ede776f06c,Rede Social,original
-cat-cd4388f5384f11,Dados Abertos e Transparência,principal
-cat-cd7842235e45ee,Notícias e Unidades,principal
+cat-cd0be83a116b85,Comunicações,principal
+cat-cd6bc63ce91a20,Identidade,principal
+cat-cd88024c284bbc,Demografia,principal
 cat-cd98469da72272,Dados Abertos Governamentais,principal
-cat-ce9dd1622038fd,Meio Ambiente e Dados Abertos,principal
-cat-cec0572da14b93,"Jornalismo local, rádio e notícias",principal
+cat-ce2133124a27ef,Busca via CNPJ,original
 cat-cf4524716bdfd6,Financeiro,principal
 cat-cf60975ea764bb,Code Search,original
-cat-cfa7217a0b3b6d,"Transparência, Dados Abertos, Execução Orçamentária, Gestão de Pessoas",principal
-cat-cfc6e26291c504,Pesquisa e Desenvolvimento / Administração Pública,principal
-cat-d001be810301ec,"Transparência (Contratos, Licitações, Servidores, Legislação)",principal
 cat-d00e5f18038ca6,Infraestrutura Geoespacial,principal
-cat-d03f79c5aafbb6,"Transparência, Saúde, Educação, Contratos",principal
+cat-d0345c4d3e8fb2,Dados Processuais,principal
+cat-d0de4f0122c496,Audiências interativas,principal
+cat-d123bcbc08c47c,Geocronologia,principal
 cat-d130f269afd82d,Blog Search,original
-cat-d192fbe59c2060,Processo Eletrônico e Peticionamento,principal
 cat-d1cc5ff901c1d5,Tributação,principal
-cat-d33e4a5f963b6e,Transparência e Controle Social,principal
-cat-d36f2a1b156b61,Cultura e Comunidades Quilombolas,principal
-cat-d410140da5f133,"Transparência, dados institucionais",principal
-cat-d4bf810b05b77e,Diário Oficial / Publicações,principal
-cat-d5090b5cdb8653,"Dados Abertos / Saneamento, Habitação, Mobilidade",principal
-cat-d560fa2ee698e0,Pesquisa e acompanhamento,curadoria
-cat-d585c4351aae02,Tecnologia e Serviços ao Cidadão,principal
+cat-d20dca75aadc9d,E-mail,curadoria
+cat-d23e3cc94363a3,Web scraping,principal
+cat-d29ecae554b79f,Orçamento,principal
+cat-d2e61a7478e096,Judiciário,principal
+cat-d343e55eb32e9d,Seguros,principal
+cat-d3862a630ab3d3,Contabilidade,principal
+cat-d4847990f4b583,Regulação,principal
+cat-d57751d1d9f355,Processamento de mídia,principal
+cat-d67bfb73615782,Pesquisa histórica,principal
+cat-d6e62b605e969b,Antifraude,principal
 cat-d758e5a85b58e3,Keywords Discovery and Research,original
-cat-d762837af53619,Dados judiciais e transparência,principal
 cat-d8064bf0d29855,Gestão de Pessoas,principal
-cat-d87825a33f693d,"Dados Legislativos, Parlamentares, Plenário, Comissões, Orçamento",principal
-cat-d8b5a5d958ecf4,Saúde / Assistência Social,principal
-cat-d8cca78f426381,Turismo/Dados Abertos,principal
-cat-d939247d356d35,"Transparência, Licitações, Receitas",principal
-cat-d94e5a83ea95c2,Abastecimento e Preços Agrícolas,principal
-cat-da6b2193dd413b,Transparência Pública e Fiscalização,principal
-cat-db18d1248bdbf1,"Geospatial, Infraestrutura de Transportes, Rodovias",principal
+cat-d85777f0e2eb24,Eventos,curadoria
+cat-d87c4ffcc22134,Comunidades Quilombolas,principal
+cat-d888aa742cbff3,Cadastro Multifinalitário,principal
+cat-d98d3ee82b2774,Tráfego de rede,principal
+cat-da0b018dcb9eb4,Documentação de dados públicos,curadoria
+cat-da58abe6466692,Dados Pessoais,principal
+cat-da6c09429ddca1,LRF,principal
+cat-da8f0335d5e0cc,Seletivos,principal
+cat-daa6440f5d46ed,Antecedentes,curadoria
 cat-db6f28b4812597,General Search,original
-cat-db7b5c6fea7547,"Dados estratégicos, metas, indicadores e notícias institucionais",principal
-cat-dbd05380e6f712,Dados Abertos / Múltiplos,principal
+cat-db8924b87b0d6e,Dados orbitais,curadoria
+cat-dc3feb0091147f,Opinião pública,principal
+cat-dc5a2027eba3f6,Catálogo de Dados,principal
+cat-dc88bf8e49e7bd,Justiça,principal
 cat-dc995a753793d7,Visual Search and Clustering Search Engines,original
-cat-dce767cf7e5bb1,seguranca_publica_e_direitos,principal
-cat-dd3d7c208a7902,"Transparência, Despesas e Receitas",principal
-cat-dd5ed6abbc03d2,Transparência / Contratos / Licitações,principal
+cat-dce45704099feb,Estrutura,principal
 cat-dd96981aefd02e,Gestão Financeira da União,principal
-cat-dda55cb7a62a00,Geociências / Patrimônio Arqueológico,principal
-cat-de6be946e87773,Tribunais judiciais e de contas,curadoria
 cat-deaf420cdbb245,Sistemas Internos,principal
-cat-deb14e4da5f826,Triagem de sanções e compliance,principal
-cat-dffcb558b5856a,Estatística / Dados Judiciais,principal
+cat-dfddf6a8b0348f,Coleta,curadoria
+cat-dffdc0b1390f0b,TV Digital,principal
 cat-e00bb910270f70,Normativos,principal
-cat-e069c31a0721b0,Educação e Pesquisa,principal
-cat-e06a474c1eb669,"Transparência, Políticas Públicas",principal
-cat-e1a74e425c18de,Gestão de Salas e Demandas (Administração/Saúde),principal
+cat-e18719b44eed02,Cidades,principal
+cat-e1a1df7c0c2beb,Internet,principal
 cat-e1b65d4be46811,Ouvidoria e Acesso à Informação,principal
-cat-e1b7084af0caca,Suporte / TI,principal
+cat-e1c13127ea899d,Investigação,principal
 cat-e1d528cba67353,Cultura,principal
 cat-e1db8490083df6,Dados Abertos,principal
-cat-e277aa1fd860a2,Empreendedorismo e Crédito,principal
+cat-e2408190a71dd2,Mapas,principal
+cat-e2cd460ceda900,Documentos enviados por usuários,principal
+cat-e33698f89f5c0f,Inclusão,principal
 cat-e371563e4ffd08,Educação,principal
 cat-e3d4b629da2fda,Não especificada,original
-cat-e4b397e603d188,Processo Judicial Eletrônico / Acervo Digital,principal
-cat-e4c096aa7cf653,"Sismologia, clima espacial e indicadores oceânico-atmosféricos",curadoria
+cat-e3efa8ea869c22,Geologia Marinha,principal
+cat-e461a45f69575b,Taxa Selic,curadoria
+cat-e4c8cf4d8511bb,Receitas,principal
 cat-e52355c80701de,Gaming Platforms,original
-cat-e55c905c9c3b79,"Integração em Saúde, RNDS, Vacinação, Exames",principal
+cat-e56a671a23b774,Folha de Pagamento,principal
 cat-e5a49695e04036,Identidade Civil,principal
-cat-e5af30adb93724,Logística e Coleta,principal
-cat-e606c36576ba35,"Transparência (Licitações, Contratos, Servidores, Receitas, Despesas)",principal
+cat-e6a62853b27ed3,Controle Social,principal
 cat-e75ceb47eee6f9,Fazenda/Tributação,principal
-cat-e80a8ec766f92c,Trabalho e Previdência,principal
 cat-e824e5cd6ea1a9,Previdência Social,principal
-cat-e826f62e334dee,"Transparência, Finanças, Licitações, Legislação, Obras",principal
-cat-e888891e5cf3ee,"Dados Judiciais, Estrutura Institucional",principal
-cat-e90f4f6ea8ac64,Jurisprudência e Atos Normativos,principal
+cat-e85acb2d53f89c,Processos Administrativos,principal
+cat-e874303e1b9706,Correlação OSINT,curadoria
+cat-e8acd46579bf30,Tratados,principal
 cat-e92f0426963ccb,Atendimento ao Cidadão,principal
-cat-e938eb1972283d,Busca de Informações via CPF/CNPJ/CRM/CNA,original
-cat-e972f0dd65aeb8,meio_ambiente_e_amazonia,principal
-cat-e9d257c8087ed2,"Transparência (Emendas Parlamentares, Atos Normativos, Licitações, Contratos, Convênios, Obras Públicas)",principal
-cat-ea064dd5c2b656,"Imagens, vídeo e autenticidade",curadoria
 cat-ea2bcc031cf8d8,Urbanismo,principal
-cat-eb37589f7d8142,Transparência e atuação institucional,principal
+cat-ea7c6f88aed4e5,Documentos,curadoria
+cat-ea8692cc0ce450,Atos Legislativos,principal
+cat-eb58607c40a304,Mídia,principal
 cat-eb5e9439e607be,Precatórios,principal
-cat-eb7f67e1909326,Dados Judiciais e Transparência,principal
-cat-eb9ea4fc4d22af,Infraestrutura e Obras Públicas,principal
-cat-eba4914934bc4b,Crawler e análise de exposição,principal
+cat-eb680f1da3ca0b,Estatísticas,principal
 cat-ebbe03c4c230f7,People Investigations,original
 cat-ebe394e30f1a13,Jornalismo local,principal
 cat-ebe443aff41d93,Portal Institucional,principal
 cat-ebeeebc72a3c25,Dark Web Search Engines,original
-cat-ec36cba55178aa,Padronização e Taxonomia,principal
-cat-ecef1fcbb3e0aa,Orçamento e Contas Públicas,principal
+cat-ece896ff1df96b,Proteção de Dados Pessoais,curadoria
 cat-ecf0777180a988,Offline Browsing,original
 cat-ecff3cc98ad426,Patrimônio Cultural e Histórico,principal
-cat-ed58158740cda9,"Transparência, Receitas, Despesas, Servidores, Licitações",principal
-cat-ee9404fe4858c2,"Contratos, Licitações",principal
 cat-eee6923ef633a4,Fundos Garantidores,principal
-cat-efc45564817462,Transparência e Licitações,principal
+cat-ef4af4def975cb,Nota Fiscal,principal
+cat-ef89e0d6cf35d0,Geografia,principal
+cat-efb947f627bdc3,Gestão Orçamentária,principal
 cat-f0cf2bdcf2ad13,Gestão Documental,principal
-cat-f0f17934b98aa3,Meio Ambiente e Sustentabilidade,principal
-cat-f185118b479320,Comércio Exterior e Aduana,principal
+cat-f19c3843ecb30f,Inteligência situacional,curadoria
+cat-f1c51e88e2226e,Tarifas,principal
 cat-f1f9e04a7c743f,Governança Fundiária,principal
-cat-f23589a4e4c3f0,"Licitações, Transparência",principal
 cat-f23ad75594b71c,Previdência,principal
-cat-f255d4c184fefe,Investigação e correlação OSINT,curadoria
+cat-f27133cd0db802,Descoberta de proxies,principal
+cat-f272f5261f7f40,Recursos Humanos,principal
+cat-f298cb592a64b3,Política monetária,principal
+cat-f361b69867f1cc,Feminicídio,principal
+cat-f36ac070429673,Comunidades,principal
 cat-f3f09c2489b2be,Web History and Website Capture,original
-cat-f3fb18ea8555f3,Processo Eletrônico / Interoperabilidade,principal
+cat-f422f7376e7c5e,Doutrina,principal
 cat-f483f287fe8bb0,Meio Ambiente,principal
-cat-f4ae863c6c78aa,Geoinformação e Recursos Hídricos,principal
-cat-f4b4ba5589d212,"Transparência, Execução Orçamentária, Contratos, Gestão de Pessoas",principal
-cat-f50a90e3bcd0c2,Cartografia e Dados Abertos,principal
-cat-f5b6be4febc715,Pessoal / Trabalhista,principal
+cat-f4c465c7f834f5,Geodésia,principal
+cat-f50d9bdd046697,Geointeligência,curadoria
+cat-f567dfe02d3e6e,Extração de dados,principal
+cat-f6601f8da5c5a2,Pesquisa e Desenvolvimento,principal
+cat-f6df1fc37696c0,Monitoramento ambiental,curadoria
 cat-f6e95ba73a0c26,Geoespacial,principal
+cat-f700a3b6961aaf,Metas,principal
 cat-f74a4b141a80c1,Music Streaming Services,original
 cat-f7af5f6ec115fe,"Biodiversidade, Espécies Ameaçadas, Ocorrências",principal
+cat-f83fb9778411ef,Empresas,principal
 cat-f88a823f2e0cca,Gestão de Espaços Públicos,principal
-cat-f8b895528e83a3,Finanças e Crédito,principal
-cat-f8c0a62fc5ec8f,Dados Criminais / Feminicídio,principal
-cat-f93f8e141fe22c,Energia e Geoinformação,principal
-cat-f990205595e7de,Certidões de regularidade fiscal estadual,curadoria
-cat-fa5a2fb7bf3526,Certidões e serviços municipais de Rondônia,curadoria
+cat-f96ba1349501d1,Contratações,principal
+cat-fa145d42f5b3fb,Autenticidade,curadoria
+cat-fa16e7359da94b,Registros públicos,curadoria
+cat-fa4fcdbd3d4c80,Pesquisa,curadoria
+cat-fa8f2a1c8216bf,Telecomunicações,principal
+cat-fa8ffc76697031,SACE (Sistema de Alerta Hidrológico),principal
+cat-fa9bf142ad962c,Parlamentares,principal
+cat-fae2d3352877eb,Interoperabilidade,principal
+cat-fb0339f61e1a83,Atos Normativos,principal
+cat-fb1f93ffe5c451,Busca,principal
 cat-fb29d09409ff14,Multitemático,principal
-cat-fb46f030b983a2,"Transparência, Despesas e Diárias",principal
+cat-fb3e99dc358028,Email Check,original
 cat-fbb7b47a88904e,Geoinformação,principal
-cat-fbea146eec84eb,Seleção de fontes e ferramentas,curadoria
-cat-fc4609a80e1aee,Transparência / Institucional,principal
-cat-fd17393601055b,Pessoal / Transparência,principal
-cat-fd27493682dc05,"Transparência, dados abertos gerais",principal
-cat-fd29b5b1c80d49,"Dados legislativos, transparência, orçamento, contratos",principal
-cat-fd7b4a2d38d030,"Dados Abertos, Ensino, Pesquisa",principal
-cat-fe4df295e0724e,Geosserviços e Monitoramento Ambiental,principal
+cat-fc1b8fafcddeec,Unidades,principal
+cat-fc4ced20cd9fe1,Geodados,principal
+cat-fc7f835af29ce0,Decisões,principal
+cat-fc851ee65f9799,Preços Agrícolas,principal
+cat-fc975fdae96b2e,Coleta,principal
+cat-fd44632b1fa277,Taxonomia,principal
+cat-fe18c0eaab0719,Cálculos Financeiros,principal
+cat-feafccee3b0ee8,Agendas Públicas,principal
+cat-fedd29c0340821,Vídeo,curadoria
 cat-feece940b7ff20,economia,principal
-cat-ff484fe1066760,"Dados Abertos Governamentais, Administração Pública",principal
-cat-ff4b7c651b5e31,Tributário / Fiscal,principal
-cat-ff7a24c19bc337,Logística e Rastreamento,principal

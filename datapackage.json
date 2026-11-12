@@ -263,7 +263,7 @@
           {
             "name": "nome",
             "type": "string",
-            "description": "Rótulo literal, sem equivalência presumida",
+            "description": "Rótulo temático ou expressão de sentido próprio",
             "constraints": {
               "required": true
             }
@@ -335,6 +335,109 @@
             ],
             "reference": {
               "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "categoria_id"
+            ],
+            "reference": {
+              "resource": "categoria",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "lista",
+      "type": "table",
+      "path": "data/lista.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "Identificador persistente da lista histórica",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Nome da lista",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "lista_categoria",
+      "type": "table",
+      "path": "data/lista_categoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "lista_id",
+            "type": "string",
+            "description": "Lista de fontes",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "categoria_id",
+            "type": "string",
+            "description": "Tema associado à lista",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "lista_id",
+          "categoria_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "lista_id"
+            ],
+            "reference": {
+              "resource": "lista",
               "fields": [
                 "id"
               ]

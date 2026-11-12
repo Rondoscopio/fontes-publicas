@@ -10,7 +10,9 @@ Os [CSV históricos](https://github.com/Rondoscopio/osint-rondonia/tree/89b07610
 
 ## Filtrar fontes por categoria no SQLite
 
-Cada uma das 19 listas históricas que continham fontes pode ser consultada por uma categoria de curadoria. Isso inclui 14 listas temáticas e cinco listas de importação, referências ou seleção editorial. A relação `fonte_categoria` guarda o vínculo com cada ficha identificada nessas listas, incluindo as 391 fichas incorporadas na migração. Uma ficha pode aparecer em várias categorias. O inventário de tarefas está no README. A ordem, as repetições e os detalhes documentais das listas continuam nos CSV históricos.
+As 19 listas históricas ficam em `lista` e apontam para seus temas em `lista_categoria`. O ID e o nome de cada lista foram preservados. O mesmo ID agora identifica uma lista, então uma consulta a `fonte_categoria` com esse ID deixa de retornar a composição histórica. A composição exata continua nos [CSV do commit `90301f6`](https://github.com/Rondoscopio/osint-rondonia/tree/90301f6674552fec666fd76da173a12d5e9498ce/data). Uma futura consulta por lista exigirá todos os seus temas.
+
+Em `categoria`, cada rótulo representa um tema. Por exemplo, fichas classificadas como “Contratos e Licitações” passam a ter os dois temas separados. Expressões de sentido próprio, como “Dados Abertos” e “Processo Eletrônico (PJe 1º e 2º Grau)”, ficam juntas. Os temas das listas foram atribuídos às fichas quando havia evidência no nome, na descrição, no tipo ou nas classificações já declaradas.
 
 Na tabela `categoria`, localize o `id` pelo campo `nome` e confira o `tipo_classificacao`. Vincule esse ID ao parâmetro `:categoria_id` no cliente SQLite.
 
@@ -62,6 +64,8 @@ erDiagram
     FONTE ||--o{ FONTE_URL : possui
     FONTE ||--o{ FONTE_CATEGORIA : classificada
     CATEGORIA ||--o{ FONTE_CATEGORIA : associa
+    LISTA ||--o{ LISTA_CATEGORIA : possui
+    CATEGORIA ||--o{ LISTA_CATEGORIA : associa
     TIPO ||--o{ FONTE : classifica
     STATUS_VALIDACAO ||--o{ FONTE : descreve
     FONTE ||--o{ FONTE_ABRANGENCIA : possui
@@ -84,6 +88,8 @@ erDiagram
 | `tipo`, `status_validacao` | Vocabulários exatos encontrados nas fichas | `id` |
 | `categoria` | Rótulos de todas as classificações; `tipo_classificacao` distingue `principal`, `original` e `curadoria` | `id` |
 | `fonte_categoria` | Relação N:N única entre fontes e categorias, preservando o tipo da categoria associada | chave composta (`fonte_id`, `categoria_id`) |
+| `lista` | ID e nome das listas históricas de fontes | `id` |
+| `lista_categoria` | Relação N:N entre listas e temas do catálogo | (`lista_id`, `categoria_id`) |
 | `fonte_url` | URL principal e links relacionados; compartilhamento não implica identidade | `id` |
 | `uf` | Código IBGE, sigla e nome de cada UF | `codigo_ibge` |
 | `municipio` | Código IBGE, nome e FK para a UF de cada unidade municipal | `codigo_ibge` |
@@ -135,7 +141,7 @@ just check
 
 `just sqlite` valida primeiro o descritor com Frictionless e as regras relacionais do projeto. O exportador lê as linhas tipadas pelos recursos Frictionless, cria as tabelas com chaves primárias e estrangeiras e grava em staging; só substitui o SQLite versionado depois de passar `integrity_check`, `foreign_key_check` e contagens por tabela. A execução é determinística e uma falha preserva a versão publicada anterior.
 
-O SQLite contém os 14 recursos do pacote. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
+O SQLite contém os 16 recursos do pacote. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
 
 ## Contribuições
 
