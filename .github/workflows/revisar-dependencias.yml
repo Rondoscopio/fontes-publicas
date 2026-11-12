@@ -1,0 +1,20 @@
+name: Revisar dependências
+
+on:
+  pull_request:
+    paths:
+      - .config/container/requirements.txt
+      - .github/workflows/revisar-dependencias.yml
+
+permissions:
+  contents: read
+
+jobs:
+  revisar:
+    name: Revisão de dependências
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/dependency-review-action@05fe4576374b728f0c523d6a13d64c25081e0803  # v4.8.3
+        with:
+          fail-on-severity: high
