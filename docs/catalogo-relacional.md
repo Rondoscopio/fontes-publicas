@@ -120,7 +120,7 @@ Para cadastrar uma cobertura, reúna as flags e os códigos confirmados e procur
 
 ## Execução
 
-Requer Docker com Compose e Just no host. Python, Frictionless e SQLAlchemy ficam na imagem definida em `.config/container/Dockerfile`; os comandos de dados e testes executam dentro do contêiner. `.config` guarda a configuração, `.cache` recebe caches descartáveis e `.local/share/osint-rondonia` é staging ignorado pelo Git. O SQLite publicado é versionado em `data/exports/catalog.sqlite`.
+Requer Docker com Compose e Just no host. Python, Frictionless e SQLAlchemy ficam na imagem definida em `.config/container/Dockerfile`. Os contêineres de validação usam o checkout em modo somente leitura e espaço temporário em `/tmp`. A exportação grava em `data/exports`, e a importação territorial tem acesso de escrita a `data`. `.cache` recebe caches descartáveis e `.local/audit` guarda relatórios locais. O SQLite publicado é versionado em `data/exports/catalog.sqlite`.
 
 ```bash
 # Construir a imagem com dependências fixadas
@@ -159,7 +159,7 @@ Use o formulário de correção para indicar a ficha, o problema e a evidência 
 
 A AGPL se aplica ao código do projeto. Dados, imagens e outros materiais de terceiros conservam suas condições de uso. A base territorial é do IBGE, edição DTB 2025, conforme a referência na seção de geografia. Registre a atribuição e a licença somente quando confirmadas. Material com direito de redistribuição incerto fica em revisão e pode ser referenciado por um endereço público adequado.
 
-Para incluir ou alterar uma ficha, edite os CSV e suas relações, mantendo os IDs e respeitando as FKs. Uma ficha precisa ter uma linha em `fonte`; adicione suas categorias, URLs, abrangência, localidade e proveniência nas respectivas tabelas. Para remover uma ficha, remova primeiro as relações que a referenciam. Não reutilize IDs removidos. Rode `just check` antes do pull request.
+Para incluir ou alterar uma ficha, edite os CSV e suas relações, mantendo os IDs e respeitando as FKs. Uma ficha precisa ter uma linha em `fonte`. Adicione suas categorias, URLs, abrangência, localidade e proveniência nas respectivas tabelas. Para remover uma ficha, remova primeiro as relações que a referenciam. Rode `just check` antes do pull request.
 
 O workflow `.github/workflows/validar-catalogo.yml` constrói a imagem e executa validação Data Package v2, integridade CSV/FK, testes e comparação do SQLite em Docker. Contexto, objetivo e atividades do antigo backlog estão no README. As sete referências estão em `fonte.csv` e seus links em `fonte_url.csv`; mantenha a triagem como pendente até revisão editorial. A licença AGPL-3.0-or-later cobre o código do repositório; licenças de dados externos não são herdadas automaticamente e não foram declaradas como uma licença única do pacote.
 

@@ -36,7 +36,7 @@ lint: quality-image
     {{compose}} run --rm quality actionlint
     {{compose}} run --rm quality zizmor --offline .github/workflows
     {{compose}} run --rm quality hadolint .config/container/Dockerfile
-    {{compose}} run --rm quality yamllint -c .config/yamllint.yml .github/workflows .config/compose.yaml
+    {{compose}} run --rm quality yamllint -c .config/yamllint.yml .github/workflows .github/ISSUE_TEMPLATE .config/compose.yaml
     {{compose}} run --rm quality ruff check --config .config/ruff.toml scripts tests
     {{compose}} run --rm quality ruff format --check --config .config/ruff.toml scripts tests
     {{compose}} run --rm quality shellcheck .config/check-sqlite.sh .config/audit-provenance.sh
