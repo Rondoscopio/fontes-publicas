@@ -1,4 +1,4 @@
-name: Validar catálogo CSV e Data Package
+name: CI
 
 on:
   pull_request:

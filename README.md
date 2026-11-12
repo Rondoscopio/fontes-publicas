@@ -7,7 +7,7 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 [![CSV, SQLite e Data Package](https://img.shields.io/badge/Dados-CSV%20%7C%20SQLite%20%7C%20Data%20Package%20v2-2563eb?style=for-the-badge&labelColor=0b1120)](datapackage.json)
 [![Licença](https://img.shields.io/badge/Licen%C3%A7a-AGPL--3.0--or--later-2563eb?style=for-the-badge&labelColor=0b1120&logo=gnu&logoColor=white)](LICENSE)
 
-[![Gate do catálogo](https://github.com/Rondoscopio/osint-rondonia/actions/workflows/validar-catalogo.yml/badge.svg?event=pull_request)](https://github.com/Rondoscopio/osint-rondonia/actions/workflows/validar-catalogo.yml)
+[![Gate do catálogo](https://github.com/Rondoscopio/osint-rondonia/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/Rondoscopio/osint-rondonia/actions/workflows/ci.yaml)
 
 ## Catálogo de dados
 
