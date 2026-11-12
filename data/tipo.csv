@@ -1,33 +1,64 @@
 id,nome
+typ-0a14d242519add,atas
+typ-0df6085afe5fe5,Filiação partidária
+typ-0f03d399bc61a8,Autenticidade e verificação
 typ-129f0878a7199e,plataforma_de_documentacao
+typ-1616acb1078bae,"Quitação, crimes eleitorais, filiação e alistamento"
+typ-1bba54fdc2acd8,"Antecedentes criminais federais, não abrange necessariamente todos os registros"
 typ-23a29637d97f22,referencia_tecnica
 typ-3678349abf1055,consulta_publica
 typ-3e68f976d9d08c,documento_de_licenca
+typ-3fb30f3b1fe444,Cível e criminal
 typ-423f97dcb5dfd9,referencia_de_proveniencia
 typ-43662b95f62f5f,portal_editorial_e_jornalistico
+typ-4587e4b685f6da,Quitação eleitoral
+typ-48de880e1b267e,Registros da Justiça Militar da União
+typ-49390b895aeb50,Alistamento eleitoral
 typ-4b4252773e9e3d,repositorio_cientifico
+typ-4c6d896d99d7f5,Certidões de dois sistemas processuais
 typ-4efba1a7e785e4,acervo_historico
+typ-5638c75083a11e,cadastro_institucional_legislativo
 typ-5c5d00db69e515,documentacao_e_download
 typ-65a5326aec29cc,portal_de_noticias_e_radio
 typ-66999af14f6fe0,painel_de_monitoramento
 typ-6a0f2091f50e79,agregador_de_documentos
 typ-6b2f6a7b11aedc,servico_comercial_de_consulta_cadastral
+typ-74c66755354939,"Débitos trabalhistas, emissão e validação"
+typ-7b13df7e1aa765,Tributos federais e dívida ativa da União
 typ-843a01735d77e3,referencia_de_condicoes_de_uso
+typ-85e65d71f0c261,atividade_parlamentar
 typ-8786e553b5e16d,referencia_institucional
+typ-8908da426bc5ed,Crimes eleitorais
+typ-8ae2028dc7bfc1,sapl
 typ-9e6d84c5c305e5,documentacao_tecnica
 typ-a67fe7c30aab27,painel_transparencia
+typ-a9c84f711efc10,certidao_municipal
 typ-ac77c6df2b451d,noticias_institucionais
+typ-ac8a87be560bd3,relatorios
+typ-b5b804be5d3b45,arquivo
+typ-b6578abaa65aa2,sessoes
 typ-b9135e9225973d,referencia_de_origem
+typ-b9b248c89d219d,"CEIS, CNEP e outros cadastros, não equivalem a condenações criminais"
 typ-badc6877705cb9,ferramenta_ou_servico
+typ-bb3928f928cfb3,"Cível, criminal e outras classes conforme sistema"
 typ-bc95e929519c1d,plataforma_de_consulta_eleitoral
+typ-bd8d705497d28e,orientacoes
+typ-c3abe934058be6,atas_pautas
+typ-c8bfc86a3c9255,Pesquisa por número de processo na base do CNJ
 typ-c8c544dc8a78d7,consulta_predefinida
 typ-c9b9af56ccc2e3,agregador_terceiros
+typ-d5e523ede4aecf,"Irregularidade de contas, inabilitação, licitante inidôneo, processos e situação de pessoa jurídica"
 typ-d670ef1fb0ff86,fonte_de_dados_ou_referencia_setorial
+typ-dee584943a70ce,Regularidade do empregador perante FGTS
 typ-e22b736be24679,referencia_editorial
+typ-e4207203cf7273,video
 typ-e4c883f78223ef,portal_de_noticias
+typ-e5735493874759,"Cível, criminal e eleitoral"
+typ-ede903b4dca8cc,Consulta de condenações cíveis e decisões relacionadas à inelegibilidade
 typ-ef96585dbf2f48,download_dados
 typ-f20631b12d67ea,painel_publico
 typ-f41cb7ece3797d,fonte_oficial
 typ-f54e6fd4fe66d1,diario_oficial
+typ-f9b6108af12987,portal
 typ-fbdf45217f5162,fonte_de_dados_comercial
 typ-fe51456a451e1b,acervo_digital

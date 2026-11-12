@@ -25,3 +25,14 @@ condition = "AND"
 targetRules = ["generic-api-key"]
 paths = ["^data/cutover_audit[.]csv$"]
 regexes = ["^21a09587985ecb73c17430166966b7d4f41$", "^ea4f43f21f4860361766ac888c1132c038b568e2d1387e38f305255dd$"]
+
+[[allowlists]]
+description = "Trechos verificados da coluna sha256 dos documentos originais"
+condition = "AND"
+targetRules = ["generic-api-key"]
+paths = ["^data/registro_original[.]csv$"]
+regexes = [
+    "^7e286a227c22edbea7ce9d354960d63a025d4f7c97$",
+    "^16be8f5b8aa334571911cb9a0f8b2f4bcf60e8b1036c6$",
+    "^14ecdd576a99320b4731$",
+]

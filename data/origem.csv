@@ -1,19 +1,49 @@
 id,valor_original,fonte_referenciada_id
+org-0b377290a85420,https://doe.jaru.ro.gov.br/portal/edicoes/download/981,\N
 org-1369f37d246ca6,lista indicada pelo usuário,\N
+org-190150ca98cd7a,inventarios/certidoes-federais-e-nacionais.json,\N
 org-1eca5a3374a1c4,pendências históricas do catálogo,\N
+org-205006d2faf609,inventarios/certidoes-municipais-rondonia-52-municipios.json,\N
+org-209884739b18a7,https://www.sefin.ro.gov.br/certidaonegativa/,\N
 org-276c62c2831c9d,Repositório open source de terceiros no GitHub,\N
+org-298f207cbd8cad,inventarios/sismologia-clima-espacial-e-indices-oceanico-atmosfericos.json,\N
+org-2b9254c0cb4729,inventarios/tribunais-brasileiros-diretorio-nacional.json,\N
+org-34b92bbb786299,https://www.gov.br/pt-br/servicos/emitir-certidao-de-regularidade-fiscal?id=24045&origem=servico,\N
+org-3617257c091b7e,inventarios/fontes-astronomicas-catalogos-celestes-e-dados-orbitais.json,\N
+org-37047ed605801a,inventarios/certidoes-judiciais-estaduais-27-ufs.json,\N
+org-3af79e88d989e2,https://www.crissiumal.rs.gov.br/pagina/37/emitir-negativas,src-287edb3b12b30a
+org-3e7e98c8539713,https://ji-parana.ro.gov.br/faq/,\N
 org-3f4972b75ba1d3,https://www.chelfoapi.com/,src-a30914fbfd6bb9
+org-41df976da34bfd,https://www.fgts.gov.br/Paginas/empregador/perguntas-frequentes-empregador.aspx,\N
+org-42949a98ad158a,inventarios/chelfoapi-familias-documentadas.json,\N
+org-4378c499e19ff0,https://saopaulodopotengi.rn.gov.br/index.php/certidoes,src-9ad04348c612b1
+org-45479f9cdf741f,https://www.gov.br/pf/pt-br/assuntos/imigracao/declaracoes-e-formularios/certidoes-criminais,\N
+org-487d6c144926df,menu_principal_ou_mapa_do_site_oficial,\N
+org-4c2d69fc9319b3,captura_de_tela_enviada_pelo_usuario,\N
+org-4cc34ac8021a87,inventarios/certidoes-fiscais-estaduais-27-ufs.json,\N
 org-53b504a18498a3,https://atlasdaimprensa.com.br/rondonia-jornais/,src-d236ec12b4f6b6
 org-5525283a90635f,"Fonte indicada por endereço de exemplo; cadastrada somente a página inicial do serviço, sem perfis, páginas de empresas, reportagens específicas ou rastreadores.",\N
+org-56e3e437004664,inventarios/sensoriamento-remoto-clima-e-monitoramento-ambiental.json,\N
+org-57b9eff6e4792d,https://portal.tcu.gov.br/carta-de-servicos/certidoes,\N
+org-67958eebb83967,https://www.gov.br/pf/pt-br/assuntos/armas/normativos/certidoes-criminais-negativas,\N
 org-6c41ffd217c6b0,Portal oficial da Transparência da Assembleia Legislativa de Rondônia,\N
+org-6e440de8c34d50,https://www.cnj.jus.br/programas-e-acoes/combate-a-corrupcao-enccla/cadastro-nacional-de-condenados-por-crimes-de-improbidade-administrativa/,\N
+org-782278c3a5456b,solicitacao_do_usuario,\N
 org-82e54585f79140,curadoria de fontes de agricultura e queimadas,\N
 org-83894bfed08ef7,Repositório independente de terceiros,\N
 org-8884b8cf2d1945,Interfaces de catálogos e padrões de dados,\N
 org-8c3a3d2cfb50a0,https://github.com/jivoi/awesome-osint,src-c86ceceb85a04a
+org-8cf109b7fa8d9a,https://www.tcm.go.gov.br/site/links-para-os-tribunais-de-contas/,\N
+org-9e5d42d098a727,https://www.cnj.jus.br/corregedoriacnj/sistemas-consulta-publica/,\N
 org-b4c0132521218f,curadoria original de ferramentas do README,\N
+org-c027bd4353cdd0,https://www.cjf.jus.br/cjf/certidao-negativa/,\N
 org-c2c4393116eff5,diretorios OSINT utilizados no catalogo,\N
 org-cc95ccd77936d4,https://github.com/osintbrazuca/osint-brazuca,src-89c539f2cfe1f8
+org-d16f172547f991,https://www.cnj.jus.br/poder-judiciario/tribunais/,\N
+org-d40e2faadd430b,inventarios/fontes-legislativas-rondonia.json,\N
 org-d950d731456be5,Diretórios OSINT e curadoria investigativa,\N
 org-dc8c58f010bb81,Painel público do Cloudflare Radar com recorte geográfico para Rondônia,\N
+org-ec20613578765c,inventarios/samet-era5-e-anomalias-de-temperatura.json,\N
+org-f03404d40074dd,https://www.tse.jus.br/institucional/justica-eleitoral/tres,\N
 org-f12fb2f829f13e,documentos de cobertura e importação OSINT,\N
 org-ffc11927931444,Geradores e frameworks reutilizáveis,\N

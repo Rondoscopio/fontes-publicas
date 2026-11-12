@@ -23,23 +23,17 @@ class CatalogPackageTests(unittest.TestCase):
             result["resources"],
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
-        self.assertEqual(result["rows_fonte"], 4579)
-        self.assertEqual(result["rows"], 30864)
-        self.assertEqual(result["resources"], 17)
-        self.assertEqual(result["rows_inventario"], 20)
-        self.assertEqual(result["rows_inventario_item"], 7749)
-        self.assertEqual(result["rows_registro_original"], 4591)
+        self.assertEqual(result["rows_fonte"], 4970)
+        self.assertEqual(result["rows"], 24711)
+        self.assertEqual(result["resources"], 13)
+        self.assertEqual(result["rows_registro_original"], 4571)
         self.assertEqual(result["rows_categoria"], 659)
         self.assertEqual(result["rows_fonte_categoria"], 2330)
-        self.assertEqual(result["rows_fonte_url"], 4601)
-        self.assertEqual(result["rows_origem"], 18)
-        self.assertEqual(result["rows_fonte_origem"], 2390)
+        self.assertEqual(result["rows_fonte_url"], 4964)
+        self.assertEqual(result["rows_origem"], 48)
+        self.assertEqual(result["rows_fonte_origem"], 3031)
         self.assertNotIn("rows_item_todo", result)
         self.assertNotIn("rows_todo_url", result)
-        self.assertEqual(
-            sum(row["fonte_id"] != NULL for row in self.read_table("inventario_item")),
-            5551,
-        )
 
     @staticmethod
     def read_table(name: str) -> list[dict[str, str]]:
@@ -48,7 +42,7 @@ class CatalogPackageTests(unittest.TestCase):
         ) as stream:
             return list(csv.DictReader(stream))
 
-    def test_todo_sources_links_and_inventory_reference_are_in_catalog(self):
+    def test_todo_sources_and_links_are_in_catalog(self):
         todo_source_rows = [
             row for row in self.read_table("fonte") if row["id"].startswith("todo-")
         ]
@@ -86,12 +80,6 @@ class CatalogPackageTests(unittest.TestCase):
         )
         self.assertEqual(
             [row["nome"] for row in by_order], ["Site", "Dataset", "Gerador HTML"]
-        )
-        self.assertTrue(
-            any(
-                row["caminho_origem"] == "inventarios/pendencias-historicas.json"
-                for row in self.read_table("inventario")
-            )
         )
         resources = {
             item["name"]
@@ -145,20 +133,40 @@ class CatalogPackageTests(unittest.TestCase):
             {"principal": 1039, "original": 1201, "curadoria": 90},
         )
 
-    def test_inventory_item_table_unifies_shapes_without_losing_values(self):
+    def test_inventory_tables_are_removed_and_source_provenance_is_preserved(self):
         descriptor = json.loads((ROOT / "datapackage.json").read_text())
-        names = {resource["name"] for resource in descriptor["resources"]}
-        self.assertIn("inventario_item", names)
-        self.assertFalse(any(name.startswith("inventario_itens_") for name in names))
-        self.assertFalse(any((ROOT / "data").glob("inventario_itens_*.csv")))
-        resource = next(
-            r for r in descriptor["resources"] if r["name"] == "inventario_item"
+        self.assertFalse(
+            any(r["name"].startswith("inventario") for r in descriptor["resources"])
         )
-        self.assertEqual(len(resource["schema"]["fields"]), 68)
-        foreign_keys = resource["schema"]["foreignKeys"]
+        self.assertFalse(any((ROOT / "data").glob("inventario*.csv")))
+        records = self.read_table("registro_original")
+        self.assertNotIn("inventario_id", records[0])
+        self.assertNotIn("tipo_documento", records[0])
+        self.assertTrue(all(row["fonte_id"] != NULL for row in records))
+
+        origins = {
+            row["id"]
+            for row in self.read_table("origem")
+            if row["valor_original"].startswith("inventarios/")
+        }
+        migrated = {
+            row["fonte_id"]
+            for row in self.read_table("fonte_origem")
+            if row["tipo_origem"] == "origem_cadastro" and row["origem_id"] in origins
+        }
+        self.assertEqual(len(migrated), 391)
+        self.assertTrue(migrated.isdisjoint(row["fonte_id"] for row in records))
         self.assertEqual(
-            {(tuple(fk["fields"]), fk["reference"]["resource"]) for fk in foreign_keys},
-            {(("inventario_id",), "inventario"), (("fonte_id",), "fonte")},
+            {
+                row["status_triagem"]
+                for row in self.read_table("fonte")
+                if row["id"] in migrated
+            },
+            {"pendente"},
+        )
+        self.assertEqual(
+            len(migrated - {row["fonte_id"] for row in self.read_table("fonte_url")}),
+            28,
         )
 
     def test_sqlite_export_preserves_tables_relations_and_is_reproducible(self):
@@ -172,12 +180,37 @@ class CatalogPackageTests(unittest.TestCase):
             self.assertEqual(first.read_bytes(), second.read_bytes())
             with sqlite3.connect(first) as connection:
                 self.assertEqual(
-                    connection.execute("SELECT COUNT(*) FROM fonte").fetchone()[0], 4579
+                    connection.execute("SELECT COUNT(*) FROM fonte").fetchone()[0], 4970
                 )
                 self.assertEqual(
-                    connection.execute("SELECT COUNT(*) FROM inventario").fetchone()[0],
-                    20,
+                    connection.execute(
+                        "SELECT name FROM sqlite_master WHERE type = 'table' "
+                        "AND name GLOB 'inventario*'"
+                    ).fetchall(),
+                    [],
                 )
+                columns = {
+                    row[1]
+                    for row in connection.execute(
+                        "PRAGMA table_info(registro_original)"
+                    )
+                }
+                self.assertTrue({"inventario_id", "tipo_documento"}.isdisjoint(columns))
+
+                category_id = self.read_table("fonte_categoria")[0]["categoria_id"]
+                matches = connection.execute(
+                    "SELECT f.id FROM fonte AS f "
+                    "JOIN fonte_categoria AS fc ON fc.fonte_id = f.id "
+                    "WHERE fc.categoria_id = :categoria_id",
+                    {"categoria_id": category_id},
+                ).fetchall()
+                expected = [
+                    (row["fonte_id"],)
+                    for row in self.read_table("fonte_categoria")
+                    if row["categoria_id"] == category_id
+                ]
+                self.assertCountEqual(matches, expected)
+                self.assertEqual(len(matches), len(set(matches)))
                 source = connection.execute(
                     "SELECT f.nome, f.status_triagem, COUNT(u.id) "
                     "FROM fonte f JOIN fonte_url u ON u.fonte_id = f.id "
@@ -200,9 +233,13 @@ class CatalogPackageTests(unittest.TestCase):
                 )
                 self.assertEqual(
                     connection.execute(
-                        "SELECT COUNT(fonte_referenciada_id) FROM origem"
+                        "SELECT COUNT(*) FROM origem AS o "
+                        "WHERE o.fonte_referenciada_id IS NOT NULL "
+                        "AND EXISTS (SELECT 1 FROM fonte_url AS u "
+                        "WHERE u.fonte_id = o.fonte_referenciada_id "
+                        "AND u.url = o.valor_original)"
                     ).fetchone()[0],
-                    4,
+                    6,
                 )
                 with self.assertRaises(sqlite3.IntegrityError):
                     connection.execute(
