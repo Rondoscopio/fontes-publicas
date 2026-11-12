@@ -109,3 +109,5 @@ published by the Free Software Foundation, either version 3 of the License, or
 Third-party sources and materials remain subject to their respective licenses and terms of use.
 
 ---
+
+<!-- Verificação temporária do gate em alteração apenas documental. -->
