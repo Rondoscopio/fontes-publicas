@@ -48,7 +48,7 @@ lint: quality-image
 sqlite-check: quality-image
     {{compose}} run --rm quality sh .config/check-sqlite.sh
 
-audit: build
+audit: build quality-image
     #!/usr/bin/env bash
     set -euo pipefail
     {{compose}} build audit
@@ -74,7 +74,8 @@ audit: build
         if [[ "$code" != 0 ]]; then status=1; fi
     }
     run_report provenance.txt - {{compose}} run --rm -T quality sh .config/audit-provenance.sh "$image_id" "$image_digest" "$archive"
-    run_report trivy.json 10 {{compose}} run --rm -T audit trivy --cache-dir /trivy-cache image --input "$archive" --scanners vuln --exit-code 10 --format json
+    run_report trivy.json - {{compose}} run --rm -T audit trivy --cache-dir /trivy-cache image --input "$archive" --scanners vuln --format json
+    run_report trivy-policy.txt 10 {{compose}} run --rm -T quality python scripts/check_trivy.py "$report_dir/trivy.json"
     run_report image.cdx.json - {{compose}} run --rm -T audit trivy --cache-dir /trivy-cache image --input "$archive" --format cyclonedx
     run_report sbom-schema.txt - {{compose}} run --rm -T sbom validate --input-file "/reports/${report_dir##*/}/image.cdx.json" --input-format json --fail-on-errors
     run_report sbom-image.txt - {{compose}} run --rm -T quality python scripts/check_sbom.py "$report_dir/image.cdx.json" "$archive"
