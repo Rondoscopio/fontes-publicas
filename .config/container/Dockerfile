@@ -8,7 +8,7 @@ FROM mvdan/shfmt:v3.12.0@sha256:307d265ffd25ce832899ae17c93ed5062fc3375c514bba8f
 FROM node:22-bookworm-slim@sha256:e9f565d32859f0cbfb52125eafe8be39390f24dac302dc3cdf566e8ba3ab21ee AS markdown
 RUN npm install --global --ignore-scripts markdownlint-cli@0.45.0
 
-FROM python:3.12-slim-trixie@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b AS catalog
+FROM python:3.12-slim-trixie@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b AS catalog-build
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
@@ -29,7 +29,11 @@ RUN apt-get update \
 
 CMD ["frictionless", "--help"]
 
-FROM catalog AS quality
+FROM catalog-build AS catalog
+# The runtime uses the resolved packages and does not need pip or its vendored code.
+RUN python -m pip uninstall --yes pip
+
+FROM catalog-build AS quality
 
 # Git and ShellCheck receive Debian updates in the tooling image only.
 # hadolint ignore=DL3008
