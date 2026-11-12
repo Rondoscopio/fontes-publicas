@@ -172,16 +172,21 @@ verificações em Docker e compara o SQLite regenerado com o arquivo do
 inclua os CSV e o SQLite na mesma revisão. O gate usa a revisão Git como
 referência e deixa o SQLite da árvore de trabalho intacto.
 
-`just lint` executa actionlint, zizmor, Hadolint, yamllint, Ruff, ShellCheck e
-Gitleaks. A varredura de segredos cobre os arquivos de trabalho, incluindo
-os CSV. `just audit` roda Trivy, OSV-Scanner e Semgrep e salva JSON, SBOM
-CycloneDX e proveniência em `.local/audit/`. O workflow de auditoria roda
-semanalmente na branch padrão e aceita disparo manual. Ele publica os
-relatórios mesmo se houver achados ou falha de scanner.
+`just lint` executa actionlint, zizmor, Hadolint, yamllint, Ruff, ShellCheck,
+shfmt, Markdownlint, Lychee em modo offline e Gitleaks. A varredura de
+segredos cobre os arquivos de trabalho, incluindo os CSV.
+
+`just audit` roda Trivy, OSV-Scanner e Semgrep e salva o SBOM CycloneDX
+validado e a proveniência em `.local/audit/`. O arquivo `results.tsv`
+distingue achados de falhas de execução. A verificação de links externos da
+documentação é informativa. Na branch padrão, a auditoria roda semanalmente
+e aceita disparo manual. Os relatórios ficam no GitHub Actions por 30 dias,
+inclusive quando há achados ou falhas. O Scorecard tem execução semanal e
+manual própria.
 
 O Dockerfile instala as versões do lockfile em
 `.config/container/requirements.txt`. A configuração do Renovate propõe
 atualizações por PR quando a integração estiver habilitada no repositório.
-Antes de exigir o check na proteção de branch, registre um PR somente com
-documentação, um PR com falha intencional e uma auditoria manual com o
-artefato associado à revisão.
+O Dependency Review avalia alterações no lockfile. O ruleset da branch
+principal exige o **Gate do catálogo**. A manutenção revisa trimestralmente
+os acessos, as exceções e os resultados da auditoria.
