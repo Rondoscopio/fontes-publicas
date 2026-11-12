@@ -1,6 +1,0 @@
-{
-  "nome": "WorldPop — API de População Geoespacial",
-  "descricao": "API de estimativas populacionais por geometrias GeoJSON e pontos, faixas etárias, tendências e exposição a eventos; o serviço informa condições de uso e limites de acesso.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://api.worldpop.org/v3/"
-}

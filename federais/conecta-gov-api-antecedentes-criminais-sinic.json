@@ -1,6 +1,0 @@
-{
-  "nome": "Conecta gov.br — API de Certidão de Antecedentes Criminais (SINIC)",
-  "descricao": "Documentação de API governamental que permite consultar emissão de certidão de antecedentes criminais, com autenticação e acesso restrito a órgãos habilitados. Não é API pública irrestrita para rastrear indivíduos.",
-  "abrangencia": "Federal / Brasil, acesso condicionado",
-  "url": "https://www.gov.br/conecta/catalogo/apis/antecedentes-criminais"
-}

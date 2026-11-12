@@ -1,0 +1,27 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Metadados do Git e saídas descartáveis das ferramentas"
+paths = ['''(^|/)(\.git|\.cache|\.local|__pycache__)(/|$)''', '''(^|/)data/exports/catalog\.sqlite$''']
+
+[[allowlists]]
+description = "IDs determinísticos do manifesto"
+condition = "AND"
+targetRules = ["generic-api-key"]
+paths = ['''^data/id_manifest\.json$''']
+regexes = ['''^(cat|doc|elem|inv|item|loc|meta|scp|src|todo|turl|typ|url|val)-[a-f0-9]{14}$''']
+
+[[allowlists]]
+description = "Referência de visualização Power BI, payload público k/t"
+condition = "AND"
+targetRules = ["grafana-api-key"]
+paths = ['''^data/(fonte_url|inventario_itens_b67279f82d)\.csv$''']
+regexes = ['''^eyJrIjoi[A-Za-z0-9_-]{108}$''']
+
+[[allowlists]]
+description = "Dois trechos de SHA-256 verificados na auditoria histórica"
+condition = "AND"
+targetRules = ["generic-api-key"]
+paths = ["^data/cutover_audit[.]csv$"]
+regexes = ["^21a09587985ecb73c17430166966b7d4f41$", "^ea4f43f21f4860361766ac888c1132c038b568e2d1387e38f305255dd$"]

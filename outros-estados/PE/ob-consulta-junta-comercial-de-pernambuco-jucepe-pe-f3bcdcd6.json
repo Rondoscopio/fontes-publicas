@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta Junta Comercial de Pernambuco (JUCEPE) — PE",
-  "descricao": "Consulta de empresas sem login. Para consulta é necessário apenas o nome da empresa, CNPJ ou NIRE. Retorna nome empresarial, NIRE, natureza jurídica, situação, município, CNPJ, porte e objeto social. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Estadual / PE, fora de Rondônia",
-  "url": "https://portal.jucepe.pe.gov.br/consulta-empresas"
-}

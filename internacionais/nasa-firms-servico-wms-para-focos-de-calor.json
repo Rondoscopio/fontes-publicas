@@ -1,6 +1,0 @@
-{
-  "nome": "NASA FIRMS — Serviço WMS para Focos de Calor",
-  "descricao": "Camadas WMS e WMS-Time de focos térmicos com atualização regular e suporte a ferramentas GIS; requer MAP_KEY.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://firms.modaps.eosdis.nasa.gov/mapserver/wms-info/"
-}

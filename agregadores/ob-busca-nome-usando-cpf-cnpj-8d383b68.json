@@ -1,6 +1,0 @@
-{
-  "nome": "Busca Nome Usando CPF/CNPJ",
-  "descricao": "A intenção deste serviço é ajudar você descobrir e confirmar qual a situação cadastral do documento de CPF (Cadastro de Pessoa Física) e/ou CNPJ (Cadastro Nacional da Pessoa Jurídica). Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
-  "url": "https://www.situacao-cadastral.com/"
-}

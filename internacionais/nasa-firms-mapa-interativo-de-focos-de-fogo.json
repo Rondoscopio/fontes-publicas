@@ -1,6 +1,0 @@
-{
-  "nome": "NASA FIRMS — Mapa Interativo de Focos de Fogo",
-  "descricao": "Mapa interativo mundial de anomalias térmicas e focos detectados por VIIRS e MODIS, com filtros temporais e camadas geográficas; observações quase em tempo real.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://firms.modaps.eosdis.nasa.gov/map/"
-}

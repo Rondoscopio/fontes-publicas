@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta Junta Comercial do Rio de Janeiro (JUCERJA) — Situação Cadastral — RJ",
-  "descricao": "Consulta da situação cadastral de empresas por nome, CNPJ ou NIRE, e busca de empresas inativas (artigo 60). Retorna CNPJ, nome da empresa, porte empresarial, situação e status. Possui reCAPTCHA. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Estadual / RJ, fora de Rondônia",
-  "url": "https://www.jucerja.rj.gov.br/Servicos/SituacaoCadastralEmpresas"
-}

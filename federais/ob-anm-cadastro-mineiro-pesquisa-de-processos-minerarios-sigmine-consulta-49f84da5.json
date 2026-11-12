@@ -1,6 +1,0 @@
-{
-  "nome": "ANM - Cadastro Mineiro (Pesquisa de Processos Minerários) — SIGMINE: Consulta por Coordenada",
-  "descricao": "Pesquisa de processos minerários por nome do titular, CPF/CNPJ do titular, NUP, município, substância, fase do processo, situação e tipo de título, entre outros filtros, com opção de exportação. Retorna processo, tipo de requerimento, fase  Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://geo.anm.gov.br/arcgis/rest/services/SIGMINE/dados_anm/MapServer/0/query?geometry={LONGITUDE}%2C{LATITUDE}&geometryType=esriGeometryPoint&inSR=4674&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json"
-}

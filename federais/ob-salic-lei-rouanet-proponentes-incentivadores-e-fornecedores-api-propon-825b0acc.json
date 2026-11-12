@@ -1,6 +1,0 @@
-{
-  "nome": "SALIC - Lei Rouanet (Proponentes, Incentivadores e Fornecedores) — API: Proponentes",
-  "descricao": "Sistema de Apoio às Leis de Incentivo à Cultura. A API pública, sem chave, pesquisa por nome ou CPF/CNPJ e retorna proponentes (nome, CPF/CNPJ, responsável, UF, município e total captado), incentivadores (total doado), fornecedores (CPF/CNP Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://api.salic.cultura.gov.br/api/v1/proponentes?nome={VALOR}"
-}

@@ -1,6 +1,0 @@
-{
-  "nome": "CVM — Dados Abertos de Processos Administrativos Sancionadores",
-  "descricao": "Conjunto de dados de processos sancionadores com informações básicas a partir da fase de citação e envio de defesas, em arquivo para download e atualização diária. Processos listados podem não ter sido julgados.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://dados.cvm.gov.br/dataset/processo-sancionador"
-}

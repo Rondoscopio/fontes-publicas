@@ -1,8 +1,0 @@
-{
-  "nome": "OFAC — Sanctions List Search",
-  "descricao": "Consulta oficial de pessoas e organizações incluídas em listas de sanções administradas pelo Office of Foreign Assets Control dos Estados Unidos.",
-  "abrangencia": "Estados Unidos / Sanções oficiais",
-  "url": "https://sanctionssearch.ofac.treas.gov/",
-  "status_validacao": "referencia_catalogada_sem_auditoria_independente",
-  "nota": "Verificar atualização, cobertura, critérios de acesso e licenças. Eventuais correspondências ou vínculos não constituem prova de irregularidade."
-}

@@ -1,6 +1,0 @@
-{
-  "nome": "PGFN - Dívida Aberta",
-  "descricao": "Consulta pública de devedores inscritos em dívida ativa da União e do FGTS em situação irregular. Pesquisa por CPF, CNPJ, nome ou razão social, com filtros por natureza e valor da dívida e exportação dos resultados. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://www.dividaaberta.pgfn.gov.br/consultar-devedores"
-}

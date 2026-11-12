@@ -1,6 +1,0 @@
-{
-  "nome": "MAPA - Consulta de Estabelecimentos com SIF (SIGSIF)",
-  "descricao": "Consulta de estabelecimentos nacionais registrados no Serviço de Inspeção Federal. Pesquisa por número do SIF, razão social ou CNPJ. Retorna CNPJ/CPF, nome empresarial, número do SIF e situação de cada unidade. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://sigsif.agricultura.gov.br/sigsif_cons/!ap_estabelec_nacional_cons"
-}

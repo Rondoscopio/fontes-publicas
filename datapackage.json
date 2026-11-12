@@ -1,0 +1,4629 @@
+{
+  "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+  "name": "osint-rondonia-catalogo-relacional",
+  "title": "Catálogo OSINT Rondônia — tabelas relacionais",
+  "description": "Catálogo de fichas OSINT e inventários compostos de Rondônia em CSV relacionais. Dados de terceiros mantêm as condições e licenças declaradas em suas fontes; a licença AGPL do repositório aplica-se ao código. O token \\N representa valor nulo. Strings vazias permanecem distintas. Os JSON legados são verificados antes da remoção; os hashes e a auditoria de corte permanecem nos recursos CSV.",
+  "homepage": "https://github.com/Rondoscopio/osint-rondonia",
+  "version": "1.0.0",
+  "profile": "data-package",
+  "resources": [
+    {
+      "name": "fonte",
+      "type": "table",
+      "path": "data/fonte.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente da ficha",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "id_externo",
+            "type": "string",
+            "description": "Identificador externo legado, quando existente"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Nome literal da ficha",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "description": "Descrição literal da ficha"
+          },
+          {
+            "name": "nota",
+            "type": "string",
+            "description": "nota"
+          },
+          {
+            "name": "observacao",
+            "type": "string",
+            "description": "observacao"
+          },
+          {
+            "name": "observacoes",
+            "type": "string",
+            "description": "observacoes"
+          },
+          {
+            "name": "orgao_responsavel",
+            "type": "string",
+            "description": "orgao_responsavel"
+          },
+          {
+            "name": "entidade_responsavel",
+            "type": "string",
+            "description": "entidade_responsavel"
+          },
+          {
+            "name": "esfera",
+            "type": "string",
+            "description": "esfera"
+          },
+          {
+            "name": "tecnologia",
+            "type": "string",
+            "description": "tecnologia"
+          },
+          {
+            "name": "acesso_declarado",
+            "type": "string",
+            "description": "acesso_declarado"
+          },
+          {
+            "name": "data_referencia",
+            "type": "string",
+            "description": "data_referencia"
+          },
+          {
+            "name": "referencia_institucional",
+            "type": "string",
+            "description": "referencia_institucional"
+          },
+          {
+            "name": "repositorio_oficial",
+            "type": "string",
+            "description": "repositorio_oficial"
+          },
+          {
+            "name": "licenca_spdx",
+            "type": "string",
+            "description": "licenca_spdx"
+          },
+          {
+            "name": "situacao_url",
+            "type": "string",
+            "description": "situacao_url"
+          },
+          {
+            "name": "tipo_id",
+            "type": "string",
+            "description": "tipo_id"
+          },
+          {
+            "name": "status_triagem",
+            "type": "string",
+            "description": "Triagem editorial; null significa não informado"
+          },
+          {
+            "name": "status_validacao_id",
+            "type": "string",
+            "description": "Status legado de validação, sem interpretação adicional"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "tipo_id"
+            ],
+            "reference": {
+              "resource": "tipo",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "status_validacao_id"
+            ],
+            "reference": {
+              "resource": "status_validacao",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "tipo",
+      "type": "table",
+      "path": "data/tipo.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Rótulo original de tipo",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "status_validacao",
+      "type": "table",
+      "path": "data/status_validacao.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Texto original do status",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "categoria",
+      "type": "table",
+      "path": "data/categoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Termo literal; sem equivalência presumida",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "fonte_categoria",
+      "type": "table",
+      "path": "data/fonte_categoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha relacionada",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "categoria_id",
+            "type": "string",
+            "description": "Termo da taxonomia original correspondente",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "categoria_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "categoria_id"
+            ],
+            "reference": {
+              "resource": "categoria",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "categoria_original",
+      "type": "table",
+      "path": "data/categoria_original.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Termo literal; sem equivalência presumida",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "fonte_categoria_original",
+      "type": "table",
+      "path": "data/fonte_categoria_original.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha relacionada",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "categoria_id",
+            "type": "string",
+            "description": "Termo da taxonomia original correspondente",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "categoria_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "categoria_id"
+            ],
+            "reference": {
+              "resource": "categoria_original",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "categoria_curadoria",
+      "type": "table",
+      "path": "data/categoria_curadoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Termo literal; sem equivalência presumida",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "fonte_categoria_curadoria",
+      "type": "table",
+      "path": "data/fonte_categoria_curadoria.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha relacionada",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "categoria_id",
+            "type": "string",
+            "description": "Termo da taxonomia original correspondente",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "categoria_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "categoria_id"
+            ],
+            "reference": {
+              "resource": "categoria_curadoria",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "abrangencia",
+      "type": "table",
+      "path": "data/abrangencia.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Abrangência original, sem parsing heurístico",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "fonte_abrangencia",
+      "type": "table",
+      "path": "data/fonte_abrangencia.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "fonte id",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "abrangencia_id",
+            "type": "string",
+            "description": "abrangencia id",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "abrangencia_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "abrangencia_id"
+            ],
+            "reference": {
+              "resource": "abrangencia",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "localidade",
+      "type": "table",
+      "path": "data/localidade.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do conjunto literal de valores",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "nivel",
+            "type": "string",
+            "description": "Campo geográfico explícito mais específico presente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "municipio",
+            "type": "string",
+            "description": "Valor legado, sem correção ortográfica"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "description": "Valor legado, inclusive string vazia"
+          },
+          {
+            "name": "pais",
+            "type": "string",
+            "description": "Valor legado, sem inferência"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "fonte_localidade",
+      "type": "table",
+      "path": "data/fonte_localidade.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "fonte id",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "localidade_id",
+            "type": "string",
+            "description": "localidade id",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "localidade_id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "localidade_id"
+            ],
+            "reference": {
+              "resource": "localidade",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fonte_origem",
+      "type": "table",
+      "path": "data/fonte_origem.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha de origem",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_origem",
+            "type": "string",
+            "description": "Campo de origem (origem ou origem_cadastro)",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "origem",
+              "origem_cadastro"
+            ]
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Conteúdo exato do campo"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "fonte_id",
+          "tipo_origem"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "fonte_url",
+      "type": "table",
+      "path": "data/fonte_url.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente da declaração de URL",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha que declarou o endereço",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "papel",
+            "type": "string",
+            "description": "URL principal ou relacionada",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "principal",
+              "relacionada"
+            ]
+          },
+          {
+            "name": "ordem",
+            "type": "integer",
+            "description": "Posição no documento original"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Rótulo original do link relacionado"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "URL literal, sem normalização",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario",
+      "type": "table",
+      "path": "data/inventario.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do documento de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_origem",
+            "type": "string",
+            "description": "Caminho relativo do JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "titulo",
+            "type": "string",
+            "description": "Título declarado ou nome do arquivo",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "atualizado_em",
+            "type": "string",
+            "description": "Valor declarado no documento"
+          },
+          {
+            "name": "sha256",
+            "type": "string",
+            "description": "Hash dos bytes originais",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "inventario_metadado",
+      "type": "table",
+      "path": "data/inventario_metadado.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do metadado",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o valor no JSON",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "campo",
+            "type": "string",
+            "description": "Nome original do atributo",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_valor",
+            "type": "string",
+            "description": "Tipo JSON original"
+          },
+          {
+            "name": "valor_json",
+            "type": "string",
+            "description": "Valor serializado como JSON canônico",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_elemento",
+      "type": "table",
+      "path": "data/inventario_elemento.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do elemento",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "json_pointer_pai",
+            "type": "string",
+            "description": "Caminho da lista no JSON"
+          },
+          {
+            "name": "ordem",
+            "type": "integer",
+            "description": "Índice na lista original"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o elemento",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_valor",
+            "type": "string",
+            "description": "Tipo JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_json",
+            "type": "string",
+            "description": "Valor em JSON canônico",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "item_todo",
+      "type": "table",
+      "path": "data/item_todo.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de backlog",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_item",
+            "type": "string",
+            "description": "Objetivo, referência de implementação ou atividade",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "contexto",
+              "objetivo",
+              "referencia",
+              "atividade"
+            ]
+          },
+          {
+            "name": "secao",
+            "type": "string",
+            "description": "Seção de origem no TODO.md",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "titulo",
+            "type": "string",
+            "description": "Título ou texto original do item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "description": "Descrição literal das abordagens e avaliações"
+          },
+          {
+            "name": "status_triagem",
+            "type": "string",
+            "description": "Triagem editorial do item",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "pendente"
+            ]
+          },
+          {
+            "name": "concluido",
+            "type": "boolean",
+            "description": "Estado da caixa de seleção de atividade; nulo para objetivo e referência"
+          },
+          {
+            "name": "nota_triagem",
+            "type": "string",
+            "description": "Nota que limita o uso das referências"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "todo_url",
+      "type": "table",
+      "path": "data/todo_url.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do link no backlog",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "todo_item_id",
+            "type": "string",
+            "description": "Item TODO que cita o endereço",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "rotulo",
+            "type": "string",
+            "description": "Texto do rótulo original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "endereco",
+            "type": "string",
+            "description": "URL absoluta ou caminho relativo citado no TODO.md",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_endereco",
+            "type": "string",
+            "description": "Identifica URL externa ou arquivo relativo do repositório",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "url",
+              "arquivo"
+            ]
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "todo_item_id"
+            ],
+            "reference": {
+              "resource": "item_todo",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_dcde1cefed",
+      "type": "table",
+      "path": "data/inventario_itens_dcde1cefed.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "abrangencia",
+            "type": "string",
+            "description": "Valor original do campo abrangencia; objetos/listas são JSON canônico",
+            "sourceField": "abrangencia"
+          },
+          {
+            "name": "acesso",
+            "type": "string",
+            "description": "Valor original do campo acesso; objetos/listas são JSON canônico",
+            "sourceField": "acesso"
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "description": "Valor original do campo area; objetos/listas são JSON canônico",
+            "sourceField": "area"
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "description": "Valor original do campo descricao; objetos/listas são JSON canônico",
+            "sourceField": "descricao"
+          },
+          {
+            "name": "licenciamento",
+            "type": "string",
+            "description": "Valor original do campo licenciamento; objetos/listas são JSON canônico",
+            "sourceField": "licenciamento"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "observacoes",
+            "type": "string",
+            "description": "Valor original do campo observacoes; objetos/listas são JSON canônico",
+            "sourceField": "observacoes"
+          },
+          {
+            "name": "status_verificacao",
+            "type": "string",
+            "description": "Valor original do campo status_verificacao; objetos/listas são JSON canônico",
+            "sourceField": "status_verificacao"
+          },
+          {
+            "name": "subcategoria",
+            "type": "string",
+            "description": "Valor original do campo subcategoria; objetos/listas são JSON canônico",
+            "sourceField": "subcategoria"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_8630a2b7a3",
+      "type": "table",
+      "path": "data/inventario_itens_8630a2b7a3.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "abrangencia",
+            "type": "string",
+            "description": "Valor original do campo abrangencia; objetos/listas são JSON canônico",
+            "sourceField": "abrangencia"
+          },
+          {
+            "name": "acesso",
+            "type": "string",
+            "description": "Valor original do campo acesso; objetos/listas são JSON canônico",
+            "sourceField": "acesso"
+          },
+          {
+            "name": "categoria",
+            "type": "string",
+            "description": "Valor original do campo categoria; objetos/listas são JSON canônico",
+            "sourceField": "categoria"
+          },
+          {
+            "name": "condicoes_uso",
+            "type": "string",
+            "description": "Valor original do campo condicoes_uso; objetos/listas são JSON canônico",
+            "sourceField": "condicoes_uso"
+          },
+          {
+            "name": "documentacao",
+            "type": "string",
+            "description": "Valor original do campo documentacao; objetos/listas são JSON canônico",
+            "sourceField": "documentacao"
+          },
+          {
+            "name": "fonte_secundaria",
+            "type": "string",
+            "description": "Valor original do campo fonte_secundaria; objetos/listas são JSON canônico",
+            "sourceField": "fonte_secundaria"
+          },
+          {
+            "name": "licenca_situacao",
+            "type": "string",
+            "description": "Valor original do campo licenca_situacao; objetos/listas são JSON canônico",
+            "sourceField": "licenca_situacao"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "referencia_termos",
+            "type": "string",
+            "description": "Valor original do campo referencia_termos; objetos/listas são JSON canônico",
+            "sourceField": "referencia_termos"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          },
+          {
+            "name": "verificacao",
+            "type": "string",
+            "description": "Valor original do campo verificacao; objetos/listas são JSON canônico",
+            "sourceField": "verificacao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_7ecd8b626c",
+      "type": "table",
+      "path": "data/inventario_itens_7ecd8b626c.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "abrangencia",
+            "type": "string",
+            "description": "Valor original do campo abrangencia; objetos/listas são JSON canônico",
+            "sourceField": "abrangencia"
+          },
+          {
+            "name": "acesso",
+            "type": "string",
+            "description": "Valor original do campo acesso; objetos/listas são JSON canônico",
+            "sourceField": "acesso"
+          },
+          {
+            "name": "categoria",
+            "type": "string",
+            "description": "Valor original do campo categoria; objetos/listas são JSON canônico",
+            "sourceField": "categoria"
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "description": "Valor original do campo descricao; objetos/listas são JSON canônico",
+            "sourceField": "descricao"
+          },
+          {
+            "name": "licenca",
+            "type": "string",
+            "description": "Valor original do campo licenca; objetos/listas são JSON canônico",
+            "sourceField": "licenca"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "provedor",
+            "type": "string",
+            "description": "Valor original do campo provedor; objetos/listas são JSON canônico",
+            "sourceField": "provedor"
+          },
+          {
+            "name": "status_verificacao",
+            "type": "string",
+            "description": "Valor original do campo status_verificacao; objetos/listas são JSON canônico",
+            "sourceField": "status_verificacao"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_f82eb97db9",
+      "type": "table",
+      "path": "data/inventario_itens_f82eb97db9.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "abrangencia",
+            "type": "string",
+            "description": "Valor original do campo abrangencia; objetos/listas são JSON canônico",
+            "sourceField": "abrangencia"
+          },
+          {
+            "name": "categoria",
+            "type": "string",
+            "description": "Valor original do campo categoria; objetos/listas são JSON canônico",
+            "sourceField": "categoria"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "observacao",
+            "type": "string",
+            "description": "Valor original do campo observacao; objetos/listas são JSON canônico",
+            "sourceField": "observacao"
+          },
+          {
+            "name": "status_verificacao",
+            "type": "string",
+            "description": "Valor original do campo status_verificacao; objetos/listas são JSON canônico",
+            "sourceField": "status_verificacao"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_03a5801dc9",
+      "type": "table",
+      "path": "data/inventario_itens_03a5801dc9.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "abrangencia",
+            "type": "string",
+            "description": "Valor original do campo abrangencia; objetos/listas são JSON canônico",
+            "sourceField": "abrangencia"
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "description": "Valor original do campo descricao; objetos/listas são JSON canônico",
+            "sourceField": "descricao"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "origem",
+            "type": "string",
+            "description": "Valor original do campo origem; objetos/listas são JSON canônico",
+            "sourceField": "origem"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Valor original do campo tipo; objetos/listas são JSON canônico",
+            "sourceField": "tipo"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          },
+          {
+            "name": "verificacao",
+            "type": "string",
+            "description": "Valor original do campo verificacao; objetos/listas são JSON canônico",
+            "sourceField": "verificacao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_bf690fb85e",
+      "type": "table",
+      "path": "data/inventario_itens_bf690fb85e.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "abrangencia",
+            "type": "string",
+            "description": "Valor original do campo abrangencia; objetos/listas são JSON canônico",
+            "sourceField": "abrangencia"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "description": "Valor original do campo fonte; objetos/listas são JSON canônico",
+            "sourceField": "fonte"
+          },
+          {
+            "name": "grupo",
+            "type": "string",
+            "description": "Valor original do campo grupo; objetos/listas são JSON canônico",
+            "sourceField": "grupo"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "sigla",
+            "type": "string",
+            "description": "Valor original do campo sigla; objetos/listas são JSON canônico",
+            "sourceField": "sigla"
+          },
+          {
+            "name": "site_institucional",
+            "type": "string",
+            "description": "Valor original do campo site_institucional; objetos/listas são JSON canônico",
+            "sourceField": "site_institucional"
+          },
+          {
+            "name": "status_url",
+            "type": "string",
+            "description": "Valor original do campo status_url; objetos/listas são JSON canônico",
+            "sourceField": "status_url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_460ec3d70b",
+      "type": "table",
+      "path": "data/inventario_itens_460ec3d70b.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "acesso_declarado",
+            "type": "string",
+            "description": "Valor original do campo acesso_declarado; objetos/listas são JSON canônico",
+            "sourceField": "acesso_declarado"
+          },
+          {
+            "name": "esfera",
+            "type": "string",
+            "description": "Valor original do campo esfera; objetos/listas são JSON canônico",
+            "sourceField": "esfera"
+          },
+          {
+            "name": "estado_validacao",
+            "type": "string",
+            "description": "Valor original do campo estado_validacao; objetos/listas são JSON canônico",
+            "sourceField": "estado_validacao"
+          },
+          {
+            "name": "mantenedor",
+            "type": "string",
+            "description": "Valor original do campo mantenedor; objetos/listas são JSON canônico",
+            "sourceField": "mantenedor"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "url_documentacao",
+            "type": "string",
+            "description": "Valor original do campo url_documentacao; objetos/listas são JSON canônico",
+            "sourceField": "url_documentacao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_c6ca17dbd7",
+      "type": "table",
+      "path": "data/inventario_itens_c6ca17dbd7.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "area",
+            "type": "string",
+            "description": "Valor original do campo area; objetos/listas são JSON canônico",
+            "sourceField": "area"
+          },
+          {
+            "name": "concluido_no_registro_historico",
+            "type": "boolean",
+            "description": "Valor original do campo concluido_no_registro_historico; objetos/listas são JSON canônico",
+            "sourceField": "concluido_no_registro_historico"
+          },
+          {
+            "name": "texto_original",
+            "type": "string",
+            "description": "Valor original do campo texto_original; objetos/listas são JSON canônico",
+            "sourceField": "texto_original"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_b67279f82d",
+      "type": "table",
+      "path": "data/inventario_itens_b67279f82d.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "classificacao",
+            "type": "string",
+            "description": "Valor original do campo classificacao; objetos/listas são JSON canônico",
+            "sourceField": "classificacao"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "description": "Valor original do campo fonte; objetos/listas são JSON canônico",
+            "sourceField": "fonte"
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": "Valor original do campo status; objetos/listas são JSON canônico",
+            "sourceField": "status"
+          },
+          {
+            "name": "tema",
+            "type": "string",
+            "description": "Valor original do campo tema; objetos/listas são JSON canônico",
+            "sourceField": "tema"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Valor original do campo tipo; objetos/listas são JSON canônico",
+            "sourceField": "tipo"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "description": "Valor original do campo uf; objetos/listas são JSON canônico",
+            "sourceField": "uf"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_ea1f1e6e6a",
+      "type": "table",
+      "path": "data/inventario_itens_ea1f1e6e6a.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "classificacao",
+            "type": "string",
+            "description": "Valor original do campo classificacao; objetos/listas são JSON canônico",
+            "sourceField": "classificacao"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "seccao",
+            "type": "string",
+            "description": "Valor original do campo seccao; objetos/listas são JSON canônico",
+            "sourceField": "seccao"
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "description": "Valor original do campo status; objetos/listas são JSON canônico",
+            "sourceField": "status"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_e4910ca1db",
+      "type": "table",
+      "path": "data/inventario_itens_e4910ca1db.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "descricao",
+            "type": "string",
+            "description": "Valor original do campo descricao; objetos/listas são JSON canônico",
+            "sourceField": "descricao"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "posicao",
+            "type": "integer",
+            "description": "Valor original do campo posicao; objetos/listas são JSON canônico",
+            "sourceField": "posicao"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_f0d31175d2",
+      "type": "table",
+      "path": "data/inventario_itens_f0d31175d2.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "legado_id",
+            "type": "string",
+            "description": "Valor original do campo id; objetos/listas são JSON canônico",
+            "sourceField": "id"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_5f19e03fa5",
+      "type": "table",
+      "path": "data/inventario_itens_5f19e03fa5.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "municipio",
+            "type": "string",
+            "description": "Valor original do campo municipio; objetos/listas são JSON canônico",
+            "sourceField": "municipio"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Valor original do campo tipo; objetos/listas são JSON canônico",
+            "sourceField": "tipo"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "description": "Valor original do campo uf; objetos/listas são JSON canônico",
+            "sourceField": "uf"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_9d3b409bbb",
+      "type": "table",
+      "path": "data/inventario_itens_9d3b409bbb.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_c87e8d7c9c",
+      "type": "table",
+      "path": "data/inventario_itens_c87e8d7c9c.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "posicao",
+            "type": "integer",
+            "description": "Valor original do campo posicao; objetos/listas são JSON canônico",
+            "sourceField": "posicao"
+          },
+          {
+            "name": "situacao_historica",
+            "type": "string",
+            "description": "Valor original do campo situacao_historica; objetos/listas são JSON canônico",
+            "sourceField": "situacao_historica"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_f425728b4b",
+      "type": "table",
+      "path": "data/inventario_itens_f425728b4b.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "arquivo",
+            "type": "string",
+            "description": "Valor original do campo arquivo; objetos/listas são JSON canônico",
+            "sourceField": "arquivo"
+          },
+          {
+            "name": "origens",
+            "type": "string",
+            "description": "Valor original do campo origens; objetos/listas são JSON canônico",
+            "sourceField": "origens",
+            "sourceEncoding": "json"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_84245eef34",
+      "type": "table",
+      "path": "data/inventario_itens_84245eef34.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "canal_youtube",
+            "type": "string",
+            "description": "Valor original do campo canal_youtube; objetos/listas são JSON canônico",
+            "sourceField": "canal_youtube"
+          },
+          {
+            "name": "municipio",
+            "type": "string",
+            "description": "Valor original do campo municipio; objetos/listas são JSON canônico",
+            "sourceField": "municipio"
+          },
+          {
+            "name": "origem",
+            "type": "string",
+            "description": "Valor original do campo origem; objetos/listas são JSON canônico",
+            "sourceField": "origem"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Valor original do campo tipo; objetos/listas são JSON canônico",
+            "sourceField": "tipo"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "description": "Valor original do campo uf; objetos/listas são JSON canônico",
+            "sourceField": "uf"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          },
+          {
+            "name": "verificacao",
+            "type": "string",
+            "description": "Valor original do campo verificacao; objetos/listas são JSON canônico",
+            "sourceField": "verificacao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_35022c836e",
+      "type": "table",
+      "path": "data/inventario_itens_35022c836e.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "categoria",
+            "type": "string",
+            "description": "Valor original do campo categoria; objetos/listas são JSON canônico",
+            "sourceField": "categoria"
+          },
+          {
+            "name": "fontes",
+            "type": "string",
+            "description": "Valor original do campo fontes; objetos/listas são JSON canônico",
+            "sourceField": "fontes",
+            "sourceEncoding": "json"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_181462c01c",
+      "type": "table",
+      "path": "data/inventario_itens_181462c01c.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "documento",
+            "type": "string",
+            "description": "Valor original do campo documento; objetos/listas são JSON canônico",
+            "sourceField": "documento"
+          },
+          {
+            "name": "rotulo",
+            "type": "string",
+            "description": "Valor original do campo rotulo; objetos/listas são JSON canônico",
+            "sourceField": "rotulo"
+          },
+          {
+            "name": "secao",
+            "type": "string",
+            "description": "Valor original do campo secao; objetos/listas são JSON canônico",
+            "sourceField": "secao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_cb7072876a",
+      "type": "table",
+      "path": "data/inventario_itens_cb7072876a.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "estado",
+            "type": "string",
+            "description": "Valor original do campo estado; objetos/listas são JSON canônico",
+            "sourceField": "estado"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "description": "Valor original do campo fonte; objetos/listas são JSON canônico",
+            "sourceField": "fonte"
+          },
+          {
+            "name": "situacao",
+            "type": "string",
+            "description": "Valor original do campo situacao; objetos/listas são JSON canônico",
+            "sourceField": "situacao"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "description": "Valor original do campo uf; objetos/listas são JSON canônico",
+            "sourceField": "uf"
+          },
+          {
+            "name": "url_emissao",
+            "type": "string",
+            "description": "Valor original do campo url_emissao; objetos/listas são JSON canônico",
+            "sourceField": "url_emissao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_5b899cbc08",
+      "type": "table",
+      "path": "data/inventario_itens_5b899cbc08.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "description": "Valor original do campo fonte; objetos/listas são JSON canônico",
+            "sourceField": "fonte"
+          },
+          {
+            "name": "fonte_atualizada_2026",
+            "type": "string",
+            "description": "Valor original do campo fonte_atualizada_2026; objetos/listas são JSON canônico",
+            "sourceField": "fonte_atualizada_2026"
+          },
+          {
+            "name": "origem_url",
+            "type": "string",
+            "description": "Valor original do campo origem_url; objetos/listas são JSON canônico",
+            "sourceField": "origem_url"
+          },
+          {
+            "name": "situacao_url",
+            "type": "string",
+            "description": "Valor original do campo situacao_url; objetos/listas são JSON canônico",
+            "sourceField": "situacao_url"
+          },
+          {
+            "name": "tribunal",
+            "type": "string",
+            "description": "Valor original do campo tribunal; objetos/listas são JSON canônico",
+            "sourceField": "tribunal"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "description": "Valor original do campo uf; objetos/listas são JSON canônico",
+            "sourceField": "uf"
+          },
+          {
+            "name": "url_certidao",
+            "type": "string",
+            "description": "Valor original do campo url_certidao; objetos/listas são JSON canônico",
+            "sourceField": "url_certidao"
+          },
+          {
+            "name": "url_indice_oficial",
+            "type": "string",
+            "description": "Valor original do campo url_indice_oficial; objetos/listas são JSON canônico",
+            "sourceField": "url_indice_oficial"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_cf1df993cb",
+      "type": "table",
+      "path": "data/inventario_itens_cf1df993cb.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "description": "Valor original do campo fonte; objetos/listas são JSON canônico",
+            "sourceField": "fonte"
+          },
+          {
+            "name": "municipio",
+            "type": "string",
+            "description": "Valor original do campo municipio; objetos/listas são JSON canônico",
+            "sourceField": "municipio"
+          },
+          {
+            "name": "situacao",
+            "type": "string",
+            "description": "Valor original do campo situacao; objetos/listas são JSON canônico",
+            "sourceField": "situacao"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Valor original do campo tipo; objetos/listas são JSON canônico",
+            "sourceField": "tipo"
+          },
+          {
+            "name": "uf",
+            "type": "string",
+            "description": "Valor original do campo uf; objetos/listas são JSON canônico",
+            "sourceField": "uf"
+          },
+          {
+            "name": "url_referencia",
+            "type": "string",
+            "description": "Valor original do campo url_referencia; objetos/listas são JSON canônico",
+            "sourceField": "url_referencia"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_6e392aea9f",
+      "type": "table",
+      "path": "data/inventario_itens_6e392aea9f.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "fonte",
+            "type": "string",
+            "description": "Valor original do campo fonte; objetos/listas são JSON canônico",
+            "sourceField": "fonte"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "orgao",
+            "type": "string",
+            "description": "Valor original do campo orgao; objetos/listas são JSON canônico",
+            "sourceField": "orgao"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Valor original do campo tipo; objetos/listas são JSON canônico",
+            "sourceField": "tipo"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          },
+          {
+            "name": "verificacao",
+            "type": "string",
+            "description": "Valor original do campo verificacao; objetos/listas são JSON canônico",
+            "sourceField": "verificacao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_a5aa5c03c7",
+      "type": "table",
+      "path": "data/inventario_itens_a5aa5c03c7.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "links",
+            "type": "string",
+            "description": "Valor original do campo links; objetos/listas são JSON canônico",
+            "sourceField": "links",
+            "sourceEncoding": "json"
+          },
+          {
+            "name": "secao",
+            "type": "string",
+            "description": "Valor original do campo secao; objetos/listas são JSON canônico",
+            "sourceField": "secao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_19294fbd9a",
+      "type": "table",
+      "path": "data/inventario_itens_19294fbd9a.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "origem",
+            "type": "string",
+            "description": "Valor original do campo origem; objetos/listas são JSON canônico",
+            "sourceField": "origem"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          },
+          {
+            "name": "verificacao",
+            "type": "string",
+            "description": "Valor original do campo verificacao; objetos/listas são JSON canônico",
+            "sourceField": "verificacao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "inventario_itens_278670a299",
+      "type": "table",
+      "path": "data/inventario_itens_278670a299.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do item de inventário",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Documento de inventário que contém o item",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_colecao",
+            "type": "string",
+            "description": "Caminho da coleção declarada no JSON"
+          },
+          {
+            "name": "json_pointer",
+            "type": "string",
+            "description": "Ponteiro para o item no JSON original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "arquivo_referenciado",
+            "type": "string",
+            "description": "Referência literal ao arquivo declarada pelo inventário"
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela"
+          },
+          {
+            "name": "nome",
+            "type": "string",
+            "description": "Valor original do campo nome; objetos/listas são JSON canônico",
+            "sourceField": "nome"
+          },
+          {
+            "name": "tipo",
+            "type": "string",
+            "description": "Valor original do campo tipo; objetos/listas são JSON canônico",
+            "sourceField": "tipo"
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "Valor original do campo url; objetos/listas são JSON canônico",
+            "sourceField": "url"
+          },
+          {
+            "name": "verificacao",
+            "type": "string",
+            "description": "Valor original do campo verificacao; objetos/listas são JSON canônico",
+            "sourceField": "verificacao"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "registro_original",
+      "type": "table",
+      "path": "data/registro_original.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente do documento original",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "caminho_origem",
+            "type": "string",
+            "description": "Caminho relativo para recuperação dos bytes originais",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "sha256",
+            "type": "string",
+            "description": "SHA-256 dos bytes originais",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "tipo_documento",
+            "type": "string",
+            "description": "Ficha individual ou inventário composto",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "fonte_id",
+            "type": "string",
+            "description": "Ficha importada, quando aplicável"
+          },
+          {
+            "name": "inventario_id",
+            "type": "string",
+            "description": "Inventário importado, quando aplicável"
+          },
+          {
+            "name": "tipo_json_raiz",
+            "type": "string",
+            "description": "Tipo JSON da raiz"
+          },
+          {
+            "name": "quantidade_atributos_raiz",
+            "type": "integer",
+            "description": "Número de campos na raiz objeto"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "inventario_id"
+            ],
+            "reference": {
+              "resource": "inventario",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "cutover_audit",
+      "type": "table",
+      "path": "data/cutover_audit.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "source_path",
+            "type": "string",
+            "description": "Caminho relativo do arquivo verificado e removido",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "sha256",
+            "type": "string",
+            "description": "Hash dos bytes antes da remoção",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source_type",
+            "type": "string",
+            "description": "Tipo do documento de origem",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "source_record_count",
+            "type": "integer",
+            "description": "Fichas fonte representadas",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "inventory_item_count",
+            "type": "integer",
+            "description": "Objetos de inventário representados",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "array_element_count",
+            "type": "integer",
+            "description": "Elementos de listas representados",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "metadata_count",
+            "type": "integer",
+            "description": "Metadados de inventário representados",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "url_count",
+            "type": "integer",
+            "description": "Relações de URL associadas",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "category_relation_count",
+            "type": "integer",
+            "description": "Relações de categoria associadas",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "provenance_count",
+            "type": "integer",
+            "description": "Relações de proveniência associadas",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "locality_count",
+            "type": "integer",
+            "description": "Relações de localidade associadas",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "triage_pending_count",
+            "type": "integer",
+            "description": "Itens de backlog em triagem pendente",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "verification",
+            "type": "string",
+            "description": "Resultado da comparação valor a valor antes da remoção",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "deleted",
+            "type": "boolean",
+            "description": "Arquivo de origem removido após cobertura confirmada",
+            "constraints": {
+              "required": true
+            }
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "source_path"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+name: osint-rondonia
+
+services:
+  catalog:
+    build:
+      context: ..
+      dockerfile: .config/container/Dockerfile
+      target: catalog
+    image: osint-rondonia-catalog:local
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace
+    environment:
+      XDG_CONFIG_HOME: /workspace/.config
+      XDG_CACHE_HOME: /workspace/.cache
+      XDG_DATA_HOME: /workspace/.local/share
+
+  quality:
+    extends: catalog
+    image: osint-rondonia-quality:local
+    build:
+      target: quality
+
+  audit:
+    extends: catalog
+    image: osint-rondonia-audit:local
+    build:
+      target: audit
+
+  semgrep:
+    image: semgrep/semgrep:1.183.0@sha256:2e45517a85e13a9cca14a2a00df6bb48affd66b8ebfae1b0991cd57578362fb0
+    working_dir: /workspace
+    volumes:
+      - ..:/workspace:ro
+    entrypoint: [semgrep]

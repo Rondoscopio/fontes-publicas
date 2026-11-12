@@ -1,6 +1,0 @@
-{
-  "nome": "CNJ - API Pública DataJud",
-  "descricao": "API pública do Conselho Nacional de Justiça para consulta de metadados e movimentações de processos de todos os tribunais, com documentação, exemplos e modelo de dados na wiki. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://datajud-wiki.cnj.jus.br/api-publica/"
-}

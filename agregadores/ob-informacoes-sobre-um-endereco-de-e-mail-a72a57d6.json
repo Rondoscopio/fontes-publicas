@@ -1,6 +1,0 @@
-{
-  "nome": "Informações sobre um endereço de e-mail",
-  "descricao": "Permite recuperar, sem notificar o usuário, vários elementos relacionados a um endereço de e-mail, Nome, GoogleID, se há Mapas criados ou Agendas Públicas do Google Calendar, Validar se o e-mail está sendo utilizado em contas em outros site Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
-  "url": "https://tools.epieos.com/email.php"
-}

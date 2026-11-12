@@ -1,6 +1,0 @@
-{
-  "nome": "ONR - Mapa do Registro de Imóveis do Brasil",
-  "descricao": "Mapa do Operador Nacional do Registro Eletrônico de Imóveis. Permite buscar por endereço, latitude e longitude, Código Nacional de Matrícula, cartório e matrícula, nome do imóvel, CCIR/SNCR, certificação SIGEF, SNCI, Cadastro Ambiental Rura Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
-  "url": "https://mapa.onr.org.br/"
-}

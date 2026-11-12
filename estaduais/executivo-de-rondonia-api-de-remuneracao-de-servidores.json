@@ -1,6 +1,0 @@
-{
-  "nome": "Executivo de Rondônia — API de Remuneração de Servidores",
-  "descricao": "Conjunto de dados JSON da CGE-RO sobre remuneração de servidores por ano, mês, nome, unidade e cargo, com paginação; requer informar ano e mês.",
-  "abrangencia": "Estadual / Rondônia",
-  "url": "https://dados.ro.gov.br/dataset/servidores"
-}

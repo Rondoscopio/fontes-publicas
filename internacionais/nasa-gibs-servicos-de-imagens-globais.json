@@ -1,6 +1,0 @@
-{
-  "nome": "NASA — GIBS Serviços de Imagens Globais",
-  "descricao": "Documentação de serviços interoperáveis WMS e WMTS de camadas de observação terrestre, com suporte a datas e integração em sistemas cartográficos.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://nasa-gibs.github.io/gibs-api-docs/access-basics/"
-}

@@ -1,0 +1,6 @@
+.git
+.cache
+.local
+**/__pycache__
+**/*.py[cod]
+data/exports/catalog.sqlite

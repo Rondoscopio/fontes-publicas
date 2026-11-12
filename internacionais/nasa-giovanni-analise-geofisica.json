@@ -1,6 +1,0 @@
-{
-  "nome": "NASA — Giovanni Análise Geofísica",
-  "descricao": "Ferramenta para criar séries temporais, mapas e análises de precipitação, temperatura, umidade do solo e outras variáveis de satélite; exige conta Earthdata para análises.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://giovanni.earthdata.nasa.gov/"
-}

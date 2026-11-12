@@ -1,6 +1,0 @@
-{
-  "nome": "CNJ - Justiça Aberta (Serventias Extrajudiciais)",
-  "descricao": "Consulta de cartórios por UF, município, CNS e atribuição. Retorna CNS, denominação, tipo de cartório, telefone, site, e-mail, endereço, situação jurídica, nome do responsável com data de ingresso e substitutos. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://justicaaberta.cnj.jus.br/produtividade-e-localizacao-de-serventias-extrajudiciais"
-}

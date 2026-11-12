@@ -1,6 +1,0 @@
-{
-  "nome": "Validação de Documento da Justiça Eleitoral",
-  "descricao": "Verifica a autenticidade de certidões e documentos emitidos pela Justiça Eleitoral a partir do código de validação. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/certidoes-eleitor/validacao"
-}

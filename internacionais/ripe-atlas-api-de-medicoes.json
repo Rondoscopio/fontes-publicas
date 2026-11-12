@@ -1,6 +1,0 @@
-{
-  "nome": "RIPE Atlas — API de Medições",
-  "descricao": "API REST para localizar sondas, consultar metadados de medições públicas e obter resultados; novas medições podem exigir autenticação ou créditos.",
-  "abrangencia": "Internacional / Global, com recorte para Rondônia",
-  "url": "https://atlas.ripe.net/docs/apis/rest-api-manual/introduction/"
-}

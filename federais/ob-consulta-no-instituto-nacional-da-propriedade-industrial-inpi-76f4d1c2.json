@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta no Instituto Nacional da Propriedade Industrial (INPI)",
-  "descricao": "No link abaixo é possível consultar informações referentes a: Marcas, Patentes, Desenhos Industriais, Patentes Tecnológicas, dentre outras áreas. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://busca.inpi.gov.br/pePI/servlet/LoginController?action=login"
-}

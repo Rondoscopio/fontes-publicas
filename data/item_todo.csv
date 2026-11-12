@@ -1,0 +1,48 @@
+id,tipo_item,secao,titulo,descricao,status_triagem,concluido,nota_triagem
+todo-2c43d7fb7ed2f3,atividade,Atividades,"Separar claramente fontes públicas de investigação, ferramentas OSINT e referências técnicas de implementação.",,pendente,false,\N
+todo-2d7ff8bf1e184c,atividade,Atividades,"Migrar os registros JSON existentes sem descartar campos, preservando origem, histórico, status de validação e identificadores.",,pendente,false,\N
+todo-2e0d786b313e3f,atividade,Atividades,"Comparar os sete projetos quanto a licenças, manutenção, arquitetura, acessibilidade, desempenho e experiência de navegação.",,pendente,false,\N
+todo-3a0e2f586a126d,referencia,Interfaces de catálogos e padrões de dados,Awesome Self-Hosted,"Site
+Dataset
+Gerador HTML
+Abordagem: dados estruturados versionados no GitHub, separados do HTML gerado.
+Estudar: publicação do mesmo catálogo em formatos legíveis por máquina e em interface estática, validação, taxonomias e manutenção de registros.",pendente,\N,"Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas."
+todo-4d64c62250358d,contexto,TODO,Contexto do TODO.md,"Este arquivo acompanha a proposta de construir uma interface pública para consultar os dados do OSINT Rondônia. As pendências antigas, que podem estar desatualizadas, continuam documentadas em pendências históricas.",pendente,\N,\N
+todo-575ada3ade5b17,referencia,Interfaces de catálogos e padrões de dados,Awesome Tools,"Site
+Repositório consultado
+Tecnologias e abordagem: Markdown como origem do conteúdo, GitHub Pages e interface web estática.
+Estudar: busca instantânea, filtros, ordenação, favoritos e geração do diretório a partir de listas Markdown.
+Pendente: confirmar a correspondência entre a demonstração e o repositório indicado, além da manutenção e licença.",pendente,\N,"Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas."
+todo-60ecb18526656f,referencia,Geradores e frameworks reutilizáveis,Awesome Website,"Demonstração
+Código-fonte
+Template
+Tecnologias e abordagem: registros em YAML, geração por GitHub Actions e publicação no GitHub Pages.
+Estudar: transformação de arquivos estruturados em catálogo navegável, tags, grupos, filtros e fluxo de atualização.
+Pendente: conferir a disponibilidade atual da demonstração e a compatibilidade do modelo de dados.",pendente,\N,"Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas."
+todo-61c4a821f7f6ec,referencia,Diretórios OSINT e curadoria investigativa,Bellingcat Investigation Toolkit,"Site
+Repositório
+Tecnologias e abordagem: conteúdo em Markdown, GitBook, automações com GitHub Actions e exportações CSV.
+Estudar: curadoria investigativa, organização temática, descrições, guias, qualidade de metadados, revisão e geração de formatos reutilizáveis.",pendente,\N,"Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas."
+todo-62cbaa9cc96b59,atividade,Atividades,"Adicionar validação automática de esquema, URLs, duplicidades e integridade referencial no CI.",,pendente,false,\N
+todo-6cb69be62084cb,atividade,Atividades,"Implementar busca textual, filtros combináveis, ordenação, tabelas, gráficos e páginas de detalhe, com indicadores de cobertura e atualização.",,pendente,false,\N
+todo-7e4c61637cbdb3,objetivo,Catálogo web pesquisável,Catálogo web pesquisável,"Criar uma interface SPA/SSG, preferencialmente com SvelteKit e geração estática, a partir dos dados versionados neste repositório. O catálogo deverá permitir navegação por categorias e abrangência, busca, filtros, tabelas, gráficos e consulta de fontes individuais. A interface não deve ser a fonte de verdade dos registros.
+Os sete projetos abaixo são referências de produto, arquitetura, organização de dados e curadoria. Estudar antes de adotar ou reutilizar código. As imagens ilustrativas e os parâmetros de rastreamento das URLs não fazem parte desta lista.",pendente,\N,\N
+todo-9da2344cc984b5,atividade,Atividades,"Gerar exportações CSV, JSON e SQLite reproduzíveis a partir da fonte de dados versionada.",,pendente,false,\N
+todo-ab98698bfd9446,atividade,Atividades,Configurar geração e publicação automática do site após alterações aprovadas.,,pendente,false,\N
+todo-b6b9769b1e37a1,atividade,Atividades,"Projetar um esquema normalizado, preferencialmente até a terceira forma normal, para fontes, categorias, organizações, localidades, abrangências, tags, links e relacionamentos.",,pendente,false,\N
+todo-c2d97bdab9d66e,atividade,Atividades,Avaliar licenças e condições de uso de cada projeto antes de reutilizar código ou dados de terceiros.,,pendente,false,\N
+todo-c5cf9881646378,referencia,Interfaces de catálogos e padrões de dados,Open App Scout,"Site
+Código-fonte e dataset
+Tecnologias e abordagem: Astro, registros em Markdown/YAML, geração estática e hospedagem na Cloudflare.
+Estudar: busca, categorias, filtros, páginas individuais, coleções, metadados do GitHub, atualização automatizada e revisão de contribuições.",pendente,\N,"Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas."
+todo-c76e8fbbc02943,atividade,Atividades,Definir a arquitetura SSG/SPA e avaliar SvelteKit com adapter-static e hospedagem por GitHub Pages ou Cloudflare Pages.,,pendente,false,\N
+todo-cc03543a949044,atividade,Atividades,Documentar as funcionalidades interessantes de cada referência e selecionar quais serão implementadas no catálogo.,,pendente,false,\N
+todo-dd6ab15b268940,atividade,Atividades,"Avaliar navegação por árvore, coleções e favoritos, com parâmetros de busca e filtros compartilháveis por URL.",,pendente,false,\N
+todo-ddf26e044461e8,referencia,Geradores e frameworks reutilizáveis,Grove,"Site
+Código-fonte
+Tecnologias e abordagem: Astro, conteúdo Markdown/YAML, geração estática e framework reutilizável orientado a Git.
+Estudar: schemas, taxonomias, busca, filtros, páginas individuais, coleções, metadados do GitHub, validação de registros e geração de README.",pendente,\N,"Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas."
+todo-ead0d4b02c7cbe,referencia,Diretórios OSINT e curadoria investigativa,OSINT Framework,"Site
+Código-fonte e dados
+Tecnologias e abordagem: catálogo JSON publicado como site estático e navegação hierárquica.
+Estudar: árvore de categorias, subcategorias e navegação por grupos de fontes e ferramentas OSINT.",pendente,\N,"Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas."

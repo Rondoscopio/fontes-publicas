@@ -1,8 +1,0 @@
-{
-  "nome": "TJTO — Certidões Judiciais",
-  "descricao": "Página de consulta, emissão ou orientação de certidões judiciais da unidade federativa TO. página antiga, revalidar A existência de ação ou certidão positiva não equivale a condenação.",
-  "abrangencia": "Estadual / TO",
-  "url": "https://eproc1.tjto.jus.br/eprocV2_prod_1grau/externo_controlador.php?acao=cj_online&acao_origem=&acao_retorno=cj_online",
-  "referencia_institucional": "https://www.gov.br/pf/pt-br/assuntos/imigracao/declaracoes-e-formularios/certidoes-criminais",
-  "situacao_url": "página antiga, revalidar"
-}

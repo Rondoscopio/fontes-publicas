@@ -1,6 +1,0 @@
-{
-  "nome": "TCU — API de Contas Julgadas Irregulares (CADIRREG)",
-  "descricao": "Documentação de webservice REST para consulta de responsáveis com contas julgadas irregulares por decisão transitada em julgado, com filtros de nome, CPF/CNPJ, UF e município. A API documenta método POST e requer atenção à proteção de dados.",
-  "abrangencia": "Federal / Brasil, com recorte para Rondônia",
-  "url": "https://sites.tcu.gov.br/dados-abertos/webservices-tcu/"
-}

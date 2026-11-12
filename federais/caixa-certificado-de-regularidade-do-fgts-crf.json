@@ -1,6 +1,0 @@
-{
-  "nome": "Caixa — Certificado de Regularidade do FGTS (CRF)",
-  "descricao": "Consulta da regularidade do empregador perante o FGTS com emissão de certificado, quando disponível. O CRF não equivale a certidão fiscal federal.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://consulta-crf.caixa.gov.br/consultacrf/pages/consultaEmpregador.jsf"
-}

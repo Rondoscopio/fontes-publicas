@@ -1,6 +1,0 @@
-{
-  "nome": "BCB — SGS Selic Série 11 JSON e CSV",
-  "descricao": "Série oficial da taxa Selic com recursos JSON, CSV e SOAP; consultas longas exigem filtros de datas conforme limites documentados.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://dadosabertos.bcb.gov.br/dataset/11-taxa-de-juros---selic"
-}

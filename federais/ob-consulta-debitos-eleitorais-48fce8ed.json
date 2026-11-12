@@ -1,6 +1,0 @@
-{
-  "nome": "Consulta Débitos Eleitorais",
-  "descricao": "Verifica se o eleitor possui débitos eleitorais pendentes, como multas por ausência nas eleições sem justificativa. Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://www.tse.jus.br/servicos-eleitorais/autoatendimento-eleitoral#/debitos/listar"
-}

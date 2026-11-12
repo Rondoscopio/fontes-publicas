@@ -1,6 +1,0 @@
-{
-  "nome": "Domínios gov.br - Lista oficial de domínios governamentais — Arquivo CSV",
-  "descricao": "Lista oficial dos domínios sob `.gov.br`, publicada como dados abertos pela Secretaria de Governo Digital (MGI). Cada registro traz o domínio, o CNPJ do órgão responsável, o nome do órgão, o contato responsável e as datas de cadastro e de a Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Federal / Brasil",
-  "url": "https://dominiosgovbr.sisp.gov.br/dados/dominios_gov_br.csv"
-}

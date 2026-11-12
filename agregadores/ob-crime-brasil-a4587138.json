@@ -1,6 +1,0 @@
-{
-  "nome": "Crime Brasil",
-  "descricao": "Plataforma de jornalismo de dados que consolida estatísticas oficiais de segurança pública (SINESP, SSP-SP, SSP-RS, DATASUS, PRF) e publica análises de criminalidade por estado, cidade e bairro. Tem API REST (mediante chave), feed RSS de an Catálogo de referência: OSINT Brazuca. Disponibilidade, acesso e dados não foram verificados individualmente.",
-  "abrangencia": "Agregador ou portal de consulta / Brasil e exterior",
-  "url": "https://crimebrasil.com.br/fontes"
-}

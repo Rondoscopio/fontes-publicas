@@ -1,0 +1,769 @@
+{
+  "json_files_discovered": 4591,
+  "json_files_processed": 4591,
+  "parse_errors": [],
+  "individual_source_records": 4571,
+  "inventory_documents": 20,
+  "source_attribute_names": 29,
+  "source_attribute_occurrences": {
+    "abrangencia": {
+      "occurrences": 2321,
+      "types": {
+        "string": 2321
+      }
+    },
+    "acesso_declarado": {
+      "occurrences": 959,
+      "types": {
+        "string": 959
+      }
+    },
+    "categoria": {
+      "occurrences": 1039,
+      "types": {
+        "string": 1039
+      }
+    },
+    "categoria_curadoria": {
+      "occurrences": 90,
+      "types": {
+        "string": 90
+      }
+    },
+    "categoria_original": {
+      "occurrences": 1201,
+      "types": {
+        "string": 1201
+      }
+    },
+    "data_referencia": {
+      "occurrences": 112,
+      "types": {
+        "string": 112
+      }
+    },
+    "descricao": {
+      "occurrences": 3612,
+      "types": {
+        "string": 3612
+      }
+    },
+    "entidade_responsavel": {
+      "occurrences": 1,
+      "types": {
+        "string": 1
+      }
+    },
+    "esfera": {
+      "occurrences": 959,
+      "types": {
+        "string": 959
+      }
+    },
+    "id": {
+      "occurrences": 959,
+      "types": {
+        "string": 959
+      }
+    },
+    "licenca_spdx": {
+      "occurrences": 11,
+      "types": {
+        "string": 11
+      }
+    },
+    "links_relacionados": {
+      "occurrences": 13,
+      "types": {
+        "array": 13
+      }
+    },
+    "municipio": {
+      "occurrences": 103,
+      "types": {
+        "string": 103
+      }
+    },
+    "nome": {
+      "occurrences": 4571,
+      "types": {
+        "string": 4571
+      }
+    },
+    "nota": {
+      "occurrences": 1457,
+      "types": {
+        "string": 1457
+      }
+    },
+    "observacao": {
+      "occurrences": 1,
+      "types": {
+        "string": 1
+      }
+    },
+    "observacoes": {
+      "occurrences": 11,
+      "types": {
+        "string": 11
+      }
+    },
+    "orgao_responsavel": {
+      "occurrences": 963,
+      "types": {
+        "string": 963
+      }
+    },
+    "origem": {
+      "occurrences": 2276,
+      "types": {
+        "string": 2276
+      }
+    },
+    "origem_cadastro": {
+      "occurrences": 107,
+      "types": {
+        "string": 107
+      }
+    },
+    "pais": {
+      "occurrences": 103,
+      "types": {
+        "string": 103
+      }
+    },
+    "referencia_institucional": {
+      "occurrences": 26,
+      "types": {
+        "string": 26
+      }
+    },
+    "repositorio_oficial": {
+      "occurrences": 6,
+      "types": {
+        "string": 6
+      }
+    },
+    "situacao_url": {
+      "occurrences": 26,
+      "types": {
+        "string": 26
+      }
+    },
+    "status_validacao": {
+      "occurrences": 2425,
+      "types": {
+        "string": 2425
+      }
+    },
+    "tecnologia": {
+      "occurrences": 959,
+      "types": {
+        "string": 959
+      }
+    },
+    "tipo": {
+      "occurrences": 1449,
+      "types": {
+        "string": 1449
+      }
+    },
+    "uf": {
+      "occurrences": 1062,
+      "types": {
+        "string": 1062
+      }
+    },
+    "url": {
+      "occurrences": 4571,
+      "types": {
+        "string": 4571
+      }
+    }
+  },
+  "source_record_structures": 32,
+  "inventory_collection_schema_families": 26,
+  "inventory_object_records": 7749,
+  "inventory_array_elements": 127,
+  "inventory_array_items_total": 7876,
+  "todo_items": 21,
+  "todo_urls": 17,
+  "generated_csv_row_counts": {
+    "abrangencia": 211,
+    "categoria": 587,
+    "categoria_curadoria": 16,
+    "categoria_original": 56,
+    "fonte": 4571,
+    "fonte_abrangencia": 2321,
+    "fonte_categoria": 1039,
+    "fonte_categoria_curadoria": 90,
+    "fonte_categoria_original": 1201,
+    "fonte_localidade": 1062,
+    "fonte_origem": 2383,
+    "fonte_url": 4584,
+    "inventario": 20,
+    "inventario_elemento": 127,
+    "inventario_itens_03a5801dc9": 17,
+    "inventario_itens_181462c01c": 1679,
+    "inventario_itens_19294fbd9a": 51,
+    "inventario_itens_278670a299": 12,
+    "inventario_itens_35022c836e": 7,
+    "inventario_itens_460ec3d70b": 15,
+    "inventario_itens_5b899cbc08": 27,
+    "inventario_itens_5f19e03fa5": 7,
+    "inventario_itens_6e392aea9f": 22,
+    "inventario_itens_7ecd8b626c": 16,
+    "inventario_itens_84245eef34": 41,
+    "inventario_itens_8630a2b7a3": 25,
+    "inventario_itens_9d3b409bbb": 89,
+    "inventario_itens_a5aa5c03c7": 11,
+    "inventario_itens_b67279f82d": 1275,
+    "inventario_itens_bf690fb85e": 125,
+    "inventario_itens_c6ca17dbd7": 22,
+    "inventario_itens_c87e8d7c9c": 100,
+    "inventario_itens_cb7072876a": 27,
+    "inventario_itens_cf1df993cb": 52,
+    "inventario_itens_dcde1cefed": 15,
+    "inventario_itens_e4910ca1db": 100,
+    "inventario_itens_ea1f1e6e6a": 1394,
+    "inventario_itens_f0d31175d2": 959,
+    "inventario_itens_f425728b4b": 1630,
+    "inventario_itens_f82eb97db9": 31,
+    "inventario_metadado": 83,
+    "item_todo": 21,
+    "localidade": 55,
+    "registro_original": 4591,
+    "status_validacao": 36,
+    "tipo": 32,
+    "todo_url": 17
+  },
+  "distinct_categories": {
+    "categoria": 587,
+    "categoria_curadoria": 16,
+    "categoria_original": 56
+  },
+  "distinct_types": 32,
+  "distinct_validation_status_texts": 36,
+  "distinct_scope_strings": 211,
+  "url_relationships": 4584,
+  "distinct_source_urls": 4368,
+  "potential_exact_duplicate_groups": 0,
+  "identical_source_name_groups": 129,
+  "duplicate_source_url_groups": 126,
+  "duplicate_source_url_excess_records": 203,
+  "inventory_collection_resources": [
+    {
+      "resource": "inventario_itens_dcde1cefed",
+      "fields": [
+        "abrangencia",
+        "acesso",
+        "area",
+        "descricao",
+        "licenciamento",
+        "nome",
+        "observacoes",
+        "status_verificacao",
+        "subcategoria",
+        "url"
+      ],
+      "records": 15,
+      "collections": [
+        [
+          "inventarios/sismologia-clima-espacial-e-indices-oceanico-atmosfericos.json",
+          "/fontes"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_8630a2b7a3",
+      "fields": [
+        "abrangencia",
+        "acesso",
+        "categoria",
+        "condicoes_uso",
+        "documentacao",
+        "fonte_secundaria",
+        "licenca_situacao",
+        "nome",
+        "referencia_termos",
+        "url",
+        "verificacao"
+      ],
+      "records": 25,
+      "collections": [
+        [
+          "inventarios/fontes-astronomicas-catalogos-celestes-e-dados-orbitais.json",
+          "/fontes"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_7ecd8b626c",
+      "fields": [
+        "abrangencia",
+        "acesso",
+        "categoria",
+        "descricao",
+        "licenca",
+        "nome",
+        "provedor",
+        "status_verificacao",
+        "url"
+      ],
+      "records": 16,
+      "collections": [
+        [
+          "inventarios/samet-era5-e-anomalias-de-temperatura.json",
+          "/fontes"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_f82eb97db9",
+      "fields": [
+        "abrangencia",
+        "categoria",
+        "nome",
+        "observacao",
+        "status_verificacao",
+        "url"
+      ],
+      "records": 31,
+      "collections": [
+        [
+          "inventarios/sensoriamento-remoto-clima-e-monitoramento-ambiental.json",
+          "/fontes"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_03a5801dc9",
+      "fields": [
+        "abrangencia",
+        "descricao",
+        "nome",
+        "origem",
+        "tipo",
+        "url",
+        "verificacao"
+      ],
+      "records": 17,
+      "collections": [
+        [
+          "inventarios/fontes-legislativas-rondonia.json",
+          "/fontes_complementares"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_bf690fb85e",
+      "fields": [
+        "abrangencia",
+        "fonte",
+        "grupo",
+        "nome",
+        "sigla",
+        "site_institucional",
+        "status_url"
+      ],
+      "records": 125,
+      "collections": [
+        [
+          "inventarios/tribunais-brasileiros-diretorio-nacional.json",
+          "/tribunais_de_contas"
+        ],
+        [
+          "inventarios/tribunais-brasileiros-diretorio-nacional.json",
+          "/tribunais_judiciais"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_460ec3d70b",
+      "fields": [
+        "acesso_declarado",
+        "esfera",
+        "estado_validacao",
+        "mantenedor",
+        "nome",
+        "url_documentacao"
+      ],
+      "records": 15,
+      "collections": [
+        [
+          "inventarios/chelfoapi-familias-documentadas.json",
+          "/familias_documentadas"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_c6ca17dbd7",
+      "fields": [
+        "area",
+        "concluido_no_registro_historico",
+        "texto_original"
+      ],
+      "records": 22,
+      "collections": [
+        [
+          "inventarios/pendencias-historicas.json",
+          "/itens"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_b67279f82d",
+      "fields": [
+        "arquivo",
+        "classificacao",
+        "fonte",
+        "status",
+        "tema",
+        "tipo",
+        "uf",
+        "url"
+      ],
+      "records": 1275,
+      "collections": [
+        [
+          "inventarios/osint-brazuca-links.json",
+          "/links"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_ea1f1e6e6a",
+      "fields": [
+        "arquivo",
+        "classificacao",
+        "nome",
+        "seccao",
+        "status",
+        "url"
+      ],
+      "records": 1394,
+      "collections": [
+        [
+          "inventarios/awesome-osint-links.json",
+          "/links"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_e4910ca1db",
+      "fields": [
+        "arquivo",
+        "descricao",
+        "nome",
+        "posicao",
+        "url"
+      ],
+      "records": 100,
+      "collections": [
+        [
+          "inventarios/selecao-100-fontes-e-ferramentas.json",
+          "/ferramentas"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_f0d31175d2",
+      "fields": [
+        "arquivo",
+        "id",
+        "url"
+      ],
+      "records": 959,
+      "collections": [
+        [
+          "inventarios/chelfoapi-apis.json",
+          "/registros"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_5f19e03fa5",
+      "fields": [
+        "arquivo",
+        "municipio",
+        "tipo",
+        "uf"
+      ],
+      "records": 7,
+      "collections": [
+        [
+          "inventarios/certidoes-municipais-brasil-cobertura.json",
+          "/municipios_catalogados"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_9d3b409bbb",
+      "fields": [
+        "arquivo",
+        "nome"
+      ],
+      "records": 89,
+      "collections": [
+        [
+          "inventarios/fontes-judiciais-e-sancoes-pessoas-empresas.json",
+          "/grupos/fontes"
+        ],
+        [
+          "inventarios/institutos-e-fontes-de-pesquisa.json",
+          "/bases_e_fontes_ja_cadastradas"
+        ],
+        [
+          "inventarios/institutos-e-fontes-de-pesquisa.json",
+          "/grupos/fontes"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_c87e8d7c9c",
+      "fields": [
+        "arquivo",
+        "nome",
+        "posicao",
+        "situacao_historica"
+      ],
+      "records": 100,
+      "collections": [
+        [
+          "inventarios/selecao-100-fontes-e-ferramentas.json",
+          "/fontes"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_f425728b4b",
+      "fields": [
+        "arquivo",
+        "origens",
+        "url"
+      ],
+      "records": 1630,
+      "collections": [
+        [
+          "inventarios/migracao-links-markdown.json",
+          "/links"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_84245eef34",
+      "fields": [
+        "canal_youtube",
+        "municipio",
+        "origem",
+        "tipo",
+        "uf",
+        "url",
+        "verificacao"
+      ],
+      "records": 41,
+      "collections": [
+        [
+          "inventarios/fontes-legislativas-rondonia.json",
+          "/camaras_sapl_captura"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_35022c836e",
+      "fields": [
+        "categoria",
+        "fontes"
+      ],
+      "records": 7,
+      "collections": [
+        [
+          "inventarios/fontes-judiciais-e-sancoes-pessoas-empresas.json",
+          "/grupos"
+        ],
+        [
+          "inventarios/institutos-e-fontes-de-pesquisa.json",
+          "/grupos"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_181462c01c",
+      "fields": [
+        "documento",
+        "rotulo",
+        "secao"
+      ],
+      "records": 1679,
+      "collections": [
+        [
+          "inventarios/migracao-links-markdown.json",
+          "/links/origens"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_cb7072876a",
+      "fields": [
+        "estado",
+        "fonte",
+        "situacao",
+        "uf",
+        "url_emissao"
+      ],
+      "records": 27,
+      "collections": [
+        [
+          "inventarios/certidoes-fiscais-estaduais-27-ufs.json",
+          "/por_uf"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_5b899cbc08",
+      "fields": [
+        "fonte",
+        "fonte_atualizada_2026",
+        "origem_url",
+        "situacao_url",
+        "tribunal",
+        "uf",
+        "url_certidao",
+        "url_indice_oficial"
+      ],
+      "records": 27,
+      "collections": [
+        [
+          "inventarios/certidoes-judiciais-estaduais-27-ufs.json",
+          "/por_uf"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_cf1df993cb",
+      "fields": [
+        "fonte",
+        "municipio",
+        "situacao",
+        "tipo",
+        "uf",
+        "url_referencia"
+      ],
+      "records": 52,
+      "collections": [
+        [
+          "inventarios/certidoes-municipais-rondonia-52-municipios.json",
+          "/municipios"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_6e392aea9f",
+      "fields": [
+        "fonte",
+        "nome",
+        "orgao",
+        "tipo",
+        "url",
+        "verificacao"
+      ],
+      "records": 22,
+      "collections": [
+        [
+          "inventarios/certidoes-federais-e-nacionais.json",
+          "/servicos"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_a5aa5c03c7",
+      "fields": [
+        "links",
+        "secao"
+      ],
+      "records": 11,
+      "collections": [
+        [
+          "inventarios/fontes-legislativas-rondonia.json",
+          "/alero/menu_completo_portal"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_19294fbd9a",
+      "fields": [
+        "nome",
+        "origem",
+        "url",
+        "verificacao"
+      ],
+      "records": 51,
+      "collections": [
+        [
+          "inventarios/fontes-legislativas-rondonia.json",
+          "/alero/menu_completo_portal/links"
+        ]
+      ]
+    },
+    {
+      "resource": "inventario_itens_278670a299",
+      "fields": [
+        "nome",
+        "tipo",
+        "url",
+        "verificacao"
+      ],
+      "records": 12,
+      "collections": [
+        [
+          "inventarios/fontes-legislativas-rondonia.json",
+          "/alero/menu_atividade_parlamentar"
+        ]
+      ]
+    }
+  ],
+  "source_root_field_occurrences": {
+    "abrangencia": 2321,
+    "acesso_declarado": 959,
+    "categoria": 1039,
+    "categoria_curadoria": 90,
+    "categoria_original": 1201,
+    "data_referencia": 112,
+    "descricao": 3612,
+    "entidade_responsavel": 1,
+    "esfera": 959,
+    "id": 959,
+    "licenca_spdx": 11,
+    "links_relacionados": 13,
+    "municipio": 103,
+    "nome": 4571,
+    "nota": 1457,
+    "observacao": 1,
+    "observacoes": 11,
+    "orgao_responsavel": 963,
+    "origem": 2276,
+    "origem_cadastro": 107,
+    "pais": 103,
+    "referencia_institucional": 26,
+    "repositorio_oficial": 6,
+    "situacao_url": 26,
+    "status_validacao": 2425,
+    "tecnologia": 959,
+    "tipo": 1449,
+    "uf": 1062,
+    "url": 4571
+  },
+  "migration_notes": [
+    "Nenhuma ficha foi deduplicada. URLs compartilhadas são mantidas como relações distintas.",
+    "Os 20 inventários permanecem documentos compostos; itens aninhados são recursos de inventário, não novas fontes.",
+    "Os documentos JSON originais foram verificados, depois removidos individualmente; caminhos e hashes estão em registro_original.csv e cutover_audit.csv.",
+    "status_triagem permanece nulo quando não foi declarado na origem."
+  ],
+  "cutover": {
+    "legacy_json_deleted": 4591,
+    "todo_markdown_deleted": true,
+    "audit_csv": "data/cutover_audit.csv",
+    "csv_package_rows_before_audit": 30852,
+    "status": "concluído"
+  }
+}

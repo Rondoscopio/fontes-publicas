@@ -1,0 +1,21 @@
+id,caminho_origem,titulo,atualizado_em,sha256
+inv-1829c927bbe06a,inventarios/certidoes-federais-e-nacionais.json,"Páginas nacionais e federais de emissão, validação e consulta de certidões e registros",2026-11-10,94b56e2aace6c4c246b8b9320040d19800c821101e6394865f1fde0059243e46
+inv-1dd141f17d9f6e,inventarios/migracao-links-markdown.json,migracao-links-markdown,\N,5b7b8a63fa39207955254300f40fad9cabae776e2fe628d08e941feee61c0163
+inv-23d7398fc53b6a,inventarios/samet-era5-e-anomalias-de-temperatura.json,"SAMeT, ERA5 e fontes para anomalias de temperatura",2026-11-11,0d9a03bfef13a277b463570e4ace619cfded7cb4e38baa7fdfc615f781c01fbf
+inv-2f84c6a9fd47e1,inventarios/pendencias-historicas.json,pendencias-historicas,\N,d78c54cfe9e96455dd547c9b2add722f9ff7bf4f7b3fdd2adbc4625a81b35476
+inv-36d0bac1c4ef9c,inventarios/institutos-e-fontes-de-pesquisa.json,"Institutos, centros e fontes de pesquisa para OSINT Rondônia",2026-11-10,b84cfce8e13c30e7a436fc3e53ea015f78fa7f349cbd12999e7a21a782a6298d
+inv-3e4d99c34601c7,inventarios/sismologia-clima-espacial-e-indices-oceanico-atmosfericos.json,"Sismologia, clima espacial e indicadores oceânico-atmosféricos",2026-11-11,da30397c489a7943d4ddec7b92f4e0e317a3b027aa3659b28ea5f3a16fd64f02
+inv-447277c9e9cd5c,inventarios/tribunais-brasileiros-diretorio-nacional.json,Diretório nacional de tribunais judiciais e tribunais de contas,2026-11-10,01b0da2d3d321c27fd2c093dcbb05ee0279372fa015bec0a5a7d9e01db81f743
+inv-479c10929c6879,inventarios/fontes-astronomicas-catalogos-celestes-e-dados-orbitais.json,"Fontes astronômicas, catálogos celestes, imagens do céu e dados orbitais",2026-11-11,c64149e2cbfbe1d266e69420c7bb32055b73ed3c992ae46cc8e2f5279b0718c8
+inv-4f788a0a557978,inventarios/awesome-osint-links.json,awesome-osint-links,\N,b28836b5460f7ad2fda921ba980b1c37b761e406d6bdad323eff1ce24aa203e9
+inv-6172c8b8b51660,inventarios/fontes-judiciais-e-sancoes-pessoas-empresas.json,"Fontes judiciais, responsabilização civil, antecedentes e sanções aplicáveis a pessoas físicas e jurídicas",2026-11-10,ad01005016408c6262d4107c7896ba909e984cd87c7299541dabaa63f8af0a66
+inv-76bebb72da57b9,inventarios/certidoes-judiciais-estaduais-27-ufs.json,Portais de emissão e consulta de certidões judiciais estaduais por unidade federativa,2026-11-10,81ab340ac50a66a98ef1a9e007e73f3a142e5b5592aec3c7a7bde7b4e3ac8a53
+inv-8b3ebf35305744,inventarios/certidoes-fiscais-estaduais-27-ufs.json,Certidões de regularidade fiscal estadual por unidade federativa,2026-11-10,185c5edf426a49e1dd9e505c79ca7f4395303a0b2accdf4b08de12ef31463daf
+inv-9b97c2194198c2,inventarios/certidoes-municipais-brasil-cobertura.json,Cobertura nacional de emissão e consulta de certidões municipais,2026-11-10,e4ba67a82674c13ff4c0d2aa380fb1998cb670cd557329b80274acf6a0533ddc
+inv-aa1e744428cb6e,inventarios/selecao-100-fontes-e-ferramentas.json,selecao-100-fontes-e-ferramentas,\N,e9b31f591b4ee277fb660a41a41a5c90e3c61f345af90b9651b95716f268ac8d
+inv-ad93c816627e8a,inventarios/chelfoapi-apis.json,chelfoapi-apis,\N,0e2da2801e9860f2049e07734b2c28b6e50449173e2ad5c3622a6de099f8494a
+inv-af6ea60e9783ed,inventarios/fontes-legislativas-rondonia.json,"Fontes legislativas de Rondônia: SAPL, atas, pautas, votações e gravações",2026-11-09,cf4fbb99ff661a8bb1358eb4ae381c28aae49f83943f4f0e5988e8b97b524828
+inv-cd44ccf4a5c1ba,inventarios/sensoriamento-remoto-clima-e-monitoramento-ambiental.json,"Fontes de imagens de satélite, sensoriamento remoto, clima e monitoramento ambiental",2026-11-10,b59d0ee6744ad46386bec42db473ad6f45d8f85f8ff52d7a31460dd25fc725ea
+inv-e62d460309babe,inventarios/osint-brazuca-links.json,osint-brazuca-links,\N,46b41c3ff89ae685aa703e5e77cd227e2c96bf00dfb8c996dd26d0b06a4776cb
+inv-ece3e50f79da3e,inventarios/chelfoapi-familias-documentadas.json,chelfoapi-familias-documentadas,\N,20901f3b8124502f1765b8dba0f2ff2097a8492e134cfdb149da92aa3f2e7a1c
+inv-ee395956e0a6cb,inventarios/certidoes-municipais-rondonia-52-municipios.json,"Certidões e serviços municipais de Rondônia, diretório de cobertura das 52 prefeituras",2026-11-10,09c5ee18bd93c24cf0582e87d86aa485bfd4d07726f3099ad30e51275f7c9ec9
