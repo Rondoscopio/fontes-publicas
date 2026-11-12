@@ -51,29 +51,7 @@ class CatalogPackageTests(unittest.TestCase):
         ) as stream:
             return list(csv.DictReader(stream))
 
-    def test_geography_history_preserves_resolved_and_pending_links(self):
-        with (ROOT / "historico" / "geografia.csv").open(
-            encoding="utf-8", newline=""
-        ) as stream:
-            history = list(csv.DictReader(stream))
-        self.assertEqual(len(history), 3670)
-        self.assertEqual(
-            len({(row["fonte_id"], row["papel"], row["id_legado"]) for row in history}),
-            3670,
-        )
-        for row in history:
-            self.assertEqual(
-                row["resultado"] == "pendente", row["abrangencia_id"] == NULL
-            )
-        self.assertEqual(sum(row["resultado"] == "parcial" for row in history), 30)
-        self.assertTrue(
-            any(
-                row["abrangencia_original"] == "Municipal / SP, fora de Rondônia"
-                and row["resultado"] == "pendente"
-                for row in history
-            )
-        )
-
+    def test_geography_preserves_ibge_codes_and_active_roles(self):
         municipalities = {
             row["codigo_ibge"]: (row["nome"], row["uf_codigo_ibge"])
             for row in self.read_table("municipio")
@@ -81,6 +59,14 @@ class CatalogPackageTests(unittest.TestCase):
         self.assertEqual(municipalities["5300108"], ("Brasília", "53"))
         self.assertEqual(municipalities["2605459"], ("Fernando de Noronha", "26"))
         self.assertEqual(municipalities["5101837"], ("Boa Esperança do Norte", "51"))
+        links = self.read_table("fonte_abrangencia")
+        self.assertEqual(
+            {
+                role: sum(row["papel"] == role for row in links)
+                for role in ("cobertura", "localidade_declarada")
+            },
+            {"cobertura": 2450, "localidade_declarada": 555},
+        )
 
     def test_todo_sources_and_links_are_in_catalog(self):
         todo_source_rows = [

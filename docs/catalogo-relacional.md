@@ -55,7 +55,7 @@ ORDER BY f.nome, f.id;
 
 As 27 UFs e as 5.571 unidades de nível municipal seguem a edição de 2025, com data-base de 31/12/2025. Brasília e Fernando de Noronha constam conforme o recorte do IBGE. O comando `just import-ibge` baixa o ZIP oficial em Docker, confere seu SHA-256 e extrai `RELATORIO_DTB_BRASIL_2025_MUNICIPIOS.ods`. SHA-256 do ZIP: `d077a0e48c36cf18bcc96268b4a436200c014c6b8522c1a62d894acaf39dad27`. [Arquivo oficial DTB 2025](https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2025/DTB_2025.zip)
 
-Os 3.670 vínculos anteriores estão em [historico/geografia.csv](../historico/geografia.csv), com os valores literais e o resultado da conversão. Foram 2.975 mapeados, 30 parciais e 665 pendentes. Dos pendentes, 582 tinham UF vazia e 83 tinham texto de cobertura sem território confirmado. O arquivo histórico fica fora do Data Package e do SQLite. Nos casos parciais, o filtro usa apenas os recortes confirmados.
+Os 3.670 vínculos anteriores e seus valores literais podem ser recuperados no [CSV da revisão `21f2156`](https://github.com/Rondoscopio/osint-rondonia/blob/21f215692f683b21a9d63adb01017b0fbd0f4883/historico/geografia.csv). A migração mapeou 2.975 vínculos integralmente e 30 em parte. Dos 665 pendentes, 582 tinham UF vazia e 83 tinham texto de cobertura sem território confirmado. Nos casos parciais, o filtro usa apenas os recortes confirmados.
 
 ## Diagrama
 
