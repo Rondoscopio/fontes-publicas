@@ -2,12 +2,10 @@
 set -eu
 
 artifact=data/exports/catalog.sqlite
-staging=.local/share/osint-rondonia
-mkdir -p "$staging"
-scratch=$(mktemp -d "$staging/sqlite-check.XXXXXXXX")
+scratch=$(mktemp -d)
 trap 'rm -rf "$scratch"' EXIT
 
-if ! git show "HEAD:$artifact" > "$scratch/revision.sqlite"; then
+if ! git show "HEAD:$artifact" >"$scratch/revision.sqlite"; then
     echo "SQLite ausente na revisão. Execute just sqlite e inclua $artifact no commit." >&2
     exit 1
 fi

@@ -8,12 +8,31 @@ services:
       target: catalog
     image: osint-rondonia-catalog:local
     working_dir: /workspace
+    user: "${CATALOG_UID:-65534}:${CATALOG_GID:-65534}"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    network_mode: none
+    tmpfs: [/tmp]
     volumes:
-      - ..:/workspace
+      - ..:/workspace:ro
     environment:
+      HOME: /tmp
+      RUFF_CACHE_DIR: /tmp/ruff
       XDG_CONFIG_HOME: /workspace/.config
       XDG_CACHE_HOME: /workspace/.cache
       XDG_DATA_HOME: /workspace/.local/share
+
+  sqlite:
+    extends: catalog
+    volumes:
+      - ../data/exports:/workspace/data/exports
+
+  import-ibge:
+    extends: catalog
+    network_mode: bridge
+    volumes:
+      - ../data:/workspace/data
 
   quality:
     extends: catalog
@@ -23,13 +42,57 @@ services:
 
   audit:
     extends: catalog
+    network_mode: bridge
+    volumes:
+      - ../.cache/trivy:/trivy-cache
     image: osint-rondonia-audit:local
     build:
       target: audit
 
+  markdown:
+    extends: catalog
+    image: osint-rondonia-markdown:local
+    build:
+      target: markdown
+    entrypoint: [markdownlint]
+
+  sbom:
+    image: cyclonedx/cyclonedx-cli@sha256:252c2e26f468c25fea1e63ecde1bc3198ad6e9dbb57f5ed3236bddcb2281b3a7
+    platform: linux/amd64
+    network_mode: none
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    user: "${CATALOG_UID:-65534}:${CATALOG_GID:-65534}"
+    tmpfs: [/tmp]
+    volumes:
+      - ../.local/audit:/reports:ro
+
+  links:
+    image: lycheeverse/lychee@sha256:eaff3e0a13603c9a701accfcc84f44158bb77bf36ecfa4622b626056c3463892
+    working_dir: /workspace
+    user: "${CATALOG_UID:-65534}:${CATALOG_GID:-65534}"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp]
+    volumes:
+      - ..:/workspace:ro
+
+  links-offline:
+    extends: links
+    network_mode: none
+
   semgrep:
     image: semgrep/semgrep:1.183.0@sha256:2e45517a85e13a9cca14a2a00df6bb48affd66b8ebfae1b0991cd57578362fb0
     working_dir: /workspace
+    user: "${CATALOG_UID:-65534}:${CATALOG_GID:-65534}"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: [/tmp]
+    environment:
+      HOME: /tmp
     volumes:
       - ..:/workspace:ro
     entrypoint: [semgrep]

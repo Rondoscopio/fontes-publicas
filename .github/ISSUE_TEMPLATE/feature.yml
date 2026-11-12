@@ -1,0 +1,35 @@
+name: Propor melhoria
+description: Sugira uma funcionalidade ou aperfeiçoamento do projeto.
+title: "[Proposta]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Descreva o problema que precisa ser resolvido e os resultados desejados.
+        Para propostas ainda exploratórias, considere Discussions quando disponível.
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema ou necessidade
+      description: Que dificuldade ou oportunidade motivou a proposta?
+    validations:
+      required: true
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Mudança proposta
+      description: Como a melhoria ajudaria a resolver o problema?
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+    validations:
+      required: false
+  - type: textarea
+    id: referencias
+    attributes:
+      label: Referências e contexto
+    validations:
+      required: false

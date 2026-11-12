@@ -1,0 +1,51 @@
+name: Relatar erro de software
+description: Descreva um comportamento incorreto que possa ser reproduzido.
+title: "[Erro]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não envie dados sensíveis, credenciais ou informações sobre vulnerabilidades exploráveis.
+        Para falhas de segurança, siga a política SECURITY.md.
+  - type: checkboxes
+    id: verificacoes
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: Procurei problemas semelhantes e não encontrei uma issue equivalente.
+          required: true
+        - label: Este relato não expõe uma vulnerabilidade de segurança.
+          required: true
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Problema
+      description: O que aconteceu e qual o impacto observado?
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir
+      description: Indique os passos necessários para verificar o problema.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente e versões
+    validations:
+      required: false
+  - type: textarea
+    id: complementos
+    attributes:
+      label: Informações adicionais
+      description: Inclua registros ou capturas somente após retirar informações sensíveis.
+    validations:
+      required: false

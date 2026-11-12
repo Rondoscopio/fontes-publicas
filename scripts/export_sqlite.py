@@ -30,7 +30,6 @@ from sqlalchemy import (
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_PACKAGE = ROOT
 DEFAULT_OUTPUT = ROOT / "data" / "exports" / "catalog.sqlite"
-STAGING = ROOT / ".local" / "share" / "osint-rondonia"
 SQL_TYPES = {"string": Text, "integer": Integer, "number": Float, "boolean": Boolean}
 
 
@@ -211,12 +210,11 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
     try:
-        STAGING.mkdir(parents=True, exist_ok=True)
         output = args.output.resolve()
-        with TemporaryDirectory(dir=STAGING) as staging:
+        output.parent.mkdir(parents=True, exist_ok=True)
+        with TemporaryDirectory(dir=output.parent) as staging:
             staged = Path(staging) / "catalog.sqlite"
             counts = export_to_path(args.package_dir, staged)
-            output.parent.mkdir(parents=True, exist_ok=True)
             os.replace(staged, output)
         print(
             json.dumps(

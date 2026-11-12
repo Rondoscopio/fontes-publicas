@@ -1,29 +1,25 @@
-![Rondoscópio: OSINT Rondônia](assets/banner.svg)
-
 # OSINT Rondônia
+
+![Rondoscópio: OSINT Rondônia](assets/banner.svg)
 
 Catálogo público de fontes de dados, ferramentas e referências para pesquisa, jornalismo, investigação e fiscalização cidadã em Rondônia, com fontes brasileiras e internacionais. Parte do [Rondoscópio](https://github.com/Rondoscopio).
 
 [![CSV, SQLite e Data Package](https://img.shields.io/badge/Dados-CSV%20%7C%20SQLite%20%7C%20Data%20Package%20v2-2563eb?style=for-the-badge&labelColor=0b1120)](datapackage.json)
 [![Licença](https://img.shields.io/badge/Licen%C3%A7a-AGPL--3.0--or--later-2563eb?style=for-the-badge&labelColor=0b1120&logo=gnu&logoColor=white)](LICENSE)
 
-[![Último Commit](https://img.shields.io/github/last-commit/Rondoscopio/osint-rondonia/main?label=%C3%9Altimo%20Commit&style=flat-square&labelColor=0b1120&color=b45309&logo=git&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/commits/main)
-[![Commits por Mês](https://img.shields.io/github/commit-activity/m/Rondoscopio/osint-rondonia?label=Commits%20por%20M%C3%AAs&style=flat-square&labelColor=0b1120&color=b45309&logo=git&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/graphs/commit-activity)
-[![PRs Abertas](https://img.shields.io/github/issues-pr/Rondoscopio/osint-rondonia?label=PRs%20Abertas&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/pulls)
-[![Issues Abertas](https://img.shields.io/github/issues/Rondoscopio/osint-rondonia?label=Issues%20Abertas&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/issues)
-[![Forks](https://img.shields.io/github/forks/Rondoscopio/osint-rondonia?label=Forks&style=flat-square&labelColor=0b1120&color=b45309&logo=github&logoColor=white)](https://github.com/Rondoscopio/osint-rondonia/forks)
-[![Feito no 🇧🇷 Brasil](https://img.shields.io/badge/Feito%20no-%F0%9F%87%A7%F0%9F%87%B7%20Brasil-009440?style=flat-square&labelColor=0b1120)](https://pt.wikipedia.org/wiki/Brasil)
+[![Gate do catálogo](https://github.com/Rondoscopio/osint-rondonia/actions/workflows/validar-catalogo.yml/badge.svg?event=pull_request)](https://github.com/Rondoscopio/osint-rondonia/actions/workflows/validar-catalogo.yml)
 
 ## Catálogo de dados
 
-O catálogo de fontes OSINT, ferramentas, APIs e inventários está disponível nestas distribuições:
+O catálogo atende pesquisadores, jornalistas, desenvolvedores e pessoas que acompanham a gestão pública. A distribuição atual inclui fontes, ferramentas, APIs, categorias, listas e cobertura territorial. A interface web está planejada. Os endereços podem mudar e parte das fichas ainda aguarda triagem.
 
-- [SQLite relacional](data/exports/catalog.sqlite), com tabelas e chaves estrangeiras.
-- [CSV e Data Package v2](datapackage.json); os CSV em [data/](data/) são a fonte canônica.
+- **SQLite:** baixe [catalog.sqlite](data/exports/catalog.sqlite), abra em um cliente SQLite e comece pelas tabelas `fonte` e `categoria`.
+- **CSV:** use os [arquivos em data/](data/) e o [Data Package v2](datapackage.json), que descreve campos e chaves.
+- **Desenvolvimento:** com Docker Compose e Just instalados, use `just check` para validar o catálogo. O [guia](docs/catalogo-relacional.md) tem consultas, critérios de revisão e comandos.
 
-A consulta por ID de categoria, a arquitetura e os comandos estão em [docs/catalogo-relacional.md](docs/catalogo-relacional.md).
+As [issues abertas](https://github.com/Rondoscopio/osint-rondonia/issues) são o roadmap ativo e o canal para dúvidas, propostas e correções públicas. Para uma vulnerabilidade ou um pedido que inclua informação sensível, siga a [política de segurança da organização](https://github.com/Rondoscopio/.github/blob/main/SECURITY.md).
 
-### Objetivo e pendências de desenvolvimento
+### Objetivo e pendências históricas
 
 Este repositório acompanha a proposta de construir uma interface pública para consultar os dados do OSINT Rondônia. As pendências antigas podem estar desatualizadas; as tarefas foram mantidas aqui para orientar decisões futuras.
 
@@ -98,9 +94,9 @@ just test
 just sqlite
 ```
 
-## License
+## Licença
 
-**SPDX-License-Identifier:** `AGPL-3.0-or-later`
+O código está sob [AGPL-3.0-or-later](LICENSE). Consulte o [guia](docs/catalogo-relacional.md#licenças-e-atribuição) para dados e materiais de terceiros.
 
 [![GNU AGPLv3 Image](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.html)
 

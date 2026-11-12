@@ -145,6 +145,20 @@ O SQLite contém os 16 recursos do pacote. As chaves estrangeiras estão declara
 
 ## Contribuições
 
+### Seleção e revisão de fontes
+
+Inclua fontes pertinentes a pesquisa, fiscalização ou jornalismo, com nome, finalidade, endereço oficial quando conhecido e proveniência verificável. Registre a evidência e a data de qualquer afirmação sobre acesso, disponibilidade ou licença. Uma consulta bem-sucedida confirma somente o que foi observado naquela data. `status_triagem` indica revisão editorial. `status_validacao` conserva o relato técnico e `situacao_url` documenta a observação sobre o endereço.
+
+Ao corrigir uma ficha sobre o mesmo recurso, mantenha seu ID e explique no PR o que mudou, com a evidência. Para retirar uma ficha, explique o motivo e remova seus vínculos. A curadoria confere também alterações feitas com assistência de IA e avalia pessoalmente qualquer afirmação sensível antes de publicar.
+
+### Correção, privacidade e segurança
+
+Use o formulário de correção para indicar a ficha, o problema e a evidência pública. Pedidos de correção ou de direito de resposta que incluam dados pessoais, informações restritas ou detalhes exploráveis devem começar pelo canal privado indicado na [política de segurança](https://github.com/Rondoscopio/.github/blob/main/SECURITY.md). Publique apenas os metadados necessários ao catálogo. Evite copiar dados pessoais, credenciais, arquivos restritos ou parâmetros sensíveis de URLs. Em caso de exposição, a manutenção restringe o acesso, avalia o histórico e os artefatos, revoga ou rotaciona as credenciais afetadas, corrige os dados e coordena a comunicação.
+
+### Licenças e atribuição
+
+A AGPL se aplica ao código do projeto. Dados, imagens e outros materiais de terceiros conservam suas condições de uso. A base territorial é do IBGE, edição DTB 2025, conforme a referência na seção de geografia. Registre a atribuição e a licença somente quando confirmadas. Material com direito de redistribuição incerto fica em revisão e pode ser referenciado por um endereço público adequado.
+
 Para incluir ou alterar uma ficha, edite os CSV e suas relações, mantendo os IDs e respeitando as FKs. Uma ficha precisa ter uma linha em `fonte`; adicione suas categorias, URLs, abrangência, localidade e proveniência nas respectivas tabelas. Para remover uma ficha, remova primeiro as relações que a referenciam. Não reutilize IDs removidos. Rode `just check` antes do pull request.
 
 O workflow `.github/workflows/validar-catalogo.yml` constrói a imagem e executa validação Data Package v2, integridade CSV/FK, testes e comparação do SQLite em Docker. Contexto, objetivo e atividades do antigo backlog estão no README. As sete referências estão em `fonte.csv` e seus links em `fonte_url.csv`; mantenha a triagem como pendente até revisão editorial. A licença AGPL-3.0-or-later cobre o código do repositório; licenças de dados externos não são herdadas automaticamente e não foram declaradas como uma licença única do pacote.
