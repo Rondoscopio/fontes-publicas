@@ -8,6 +8,9 @@ default:
 build:
     {{compose}} build catalog
 
+import-ibge: build
+    {{compose}} run --rm catalog python scripts/import_ibge.py
+
 validate: build
     {{compose}} run --rm catalog frictionless validate datapackage.json
     {{compose}} run --rm catalog python scripts/validate_package.py
