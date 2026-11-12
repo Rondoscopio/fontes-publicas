@@ -42,8 +42,8 @@ erDiagram
 | --- | --- | --- |
 | `fonte` | Ficha, atributos escalares comuns, ID externo e status legado | `id` |
 | `tipo`, `status_validacao` | Vocabulários exatos encontrados nas fichas | `id` |
-| `categoria`, `categoria_original`, `categoria_curadoria` | Termos mantidos em dimensões separadas, sem equivalências inferidas | `id` |
-| `fonte_categoria`, `fonte_categoria_original`, `fonte_categoria_curadoria` | Relações N:N das três classificações | chave composta (`fonte_id`, `categoria_id`) |
+| `categoria` | Rótulos de todas as classificações; `tipo_classificacao` distingue `principal`, `original` e `curadoria` | `id` |
+| `fonte_categoria` | Relação N:N única entre fontes e categorias, preservando o tipo da categoria associada | chave composta (`fonte_id`, `categoria_id`) |
 | `fonte_url` | URL principal e links relacionados; compartilhamento não implica identidade | `id` |
 | `abrangencia`, `fonte_abrangencia` | Valores literais de abrangência | `id`; relação composta |
 | `localidade`, `fonte_localidade` | Município, UF e país explicitamente declarados, sem completar lacunas | `id`; relação composta |
@@ -58,7 +58,7 @@ Cada relação declara as chaves estrangeiras no descritor. `fonte.status_triage
 
 ### Campos e preservação
 
-Os campos escalares observados nas fichas estão em `fonte`; os atributos que representam várias URLs, classificações, abrangências, localidades e proveniência usam tabelas relacionadas. Os campos de `inventario_item` mantêm os tipos originais compatíveis entre os itens: textos, booleano e inteiro. Objetos e listas em um campo são JSON canônico. Os itens e elementos têm JSON Pointer e identificador do documento de origem. Os arquivos originais foram removidos após verificação; caminho e hash permitem rastrear cada linha, mas não recuperar os bytes originais.
+Os campos escalares observados nas fichas estão em `fonte`; os atributos que representam várias URLs, classificações, abrangências, localidades e proveniência usam tabelas relacionadas. A dimensão `categoria` reúne os rótulos dos campos principal, original e de curadoria, sem fundir termos; `tipo_classificacao` preserva de qual campo cada rótulo veio. `fonte_categoria` é a única relação entre fichas e categorias. Os campos de `inventario_item` mantêm os tipos originais compatíveis entre os itens: textos, booleano e inteiro. Objetos e listas em um campo são JSON canônico. Os itens e elementos têm JSON Pointer e identificador do documento de origem. Os arquivos originais foram removidos após verificação; caminho e hash permitem rastrear cada linha, mas não recuperar os bytes originais.
 
 O token `\N` representa valor nulo e está declarado como `missingValues`; ele é reservado e uma colisão literal interrompe a importação explicitamente. Strings vazias continuam vazias. A distinção original entre campo ausente e nulo foi verificada antes do corte e permanece documentada nos dados tipados e no hash registrado; o documento byte a byte deixa de ser recuperável depois da remoção. A exportação não normaliza pontuação, capitalização, idioma, URLs ou rótulos.
 

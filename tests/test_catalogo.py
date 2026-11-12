@@ -23,9 +23,13 @@ class CatalogPackageTests(unittest.TestCase):
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
         self.assertEqual(result["rows_fonte"], 4578)
+        self.assertEqual(result["rows"], 30844)
+        self.assertEqual(result["resources"], 16)
         self.assertEqual(result["rows_inventario"], 20)
         self.assertEqual(result["rows_inventario_item"], 7749)
         self.assertEqual(result["rows_registro_original"], 4591)
+        self.assertEqual(result["rows_categoria"], 659)
+        self.assertEqual(result["rows_fonte_categoria"], 2330)
         self.assertEqual(result["rows_fonte_url"], 4600)
         self.assertEqual(result["rows_fonte_origem"], 2390)
         self.assertNotIn("rows_item_todo", result)
@@ -93,6 +97,51 @@ class CatalogPackageTests(unittest.TestCase):
         }
         self.assertNotIn("item_todo", resources)
         self.assertNotIn("todo_url", resources)
+
+    def test_category_classifications_share_one_dimension_and_relation(self):
+        descriptor = json.loads((ROOT / "datapackage.json").read_text())
+        resources = {item["name"]: item for item in descriptor["resources"]}
+        for name in (
+            "categoria_original",
+            "categoria_curadoria",
+            "fonte_categoria_original",
+            "fonte_categoria_curadoria",
+        ):
+            self.assertNotIn(name, resources)
+            self.assertFalse((ROOT / "data" / f"{name}.csv").exists())
+
+        category_resource = resources["categoria"]
+        category_fields = {
+            field["name"]: field for field in category_resource["schema"]["fields"]
+        }
+        self.assertEqual(
+            category_fields["tipo_classificacao"]["categories"],
+            ["principal", "original", "curadoria"],
+        )
+        categories = self.read_table("categoria")
+        self.assertEqual(
+            {
+                kind: sum(row["tipo_classificacao"] == kind for row in categories)
+                for kind in ("principal", "original", "curadoria")
+            },
+            {"principal": 587, "original": 56, "curadoria": 16},
+        )
+        associations = self.read_table("fonte_categoria")
+        self.assertEqual(len(associations), 2330)
+        self.assertEqual(
+            len({(row["fonte_id"], row["categoria_id"]) for row in associations}),
+            2330,
+        )
+        category_role = {row["id"]: row["tipo_classificacao"] for row in categories}
+        self.assertEqual(
+            {
+                role: sum(
+                    category_role[row["categoria_id"]] == role for row in associations
+                )
+                for role in ("principal", "original", "curadoria")
+            },
+            {"principal": 1039, "original": 1201, "curadoria": 90},
+        )
 
     def test_inventory_item_table_unifies_shapes_without_losing_values(self):
         descriptor = json.loads((ROOT / "datapackage.json").read_text())

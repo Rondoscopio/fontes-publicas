@@ -255,7 +255,7 @@
           {
             "name": "id",
             "type": "string",
-            "description": "ID persistente",
+            "description": "ID persistente da categoria",
             "constraints": {
               "required": true
             }
@@ -263,10 +263,23 @@
           {
             "name": "nome",
             "type": "string",
-            "description": "Termo literal; sem equivalência presumida",
+            "description": "Rótulo literal, sem equivalência presumida",
             "constraints": {
               "required": true
             }
+          },
+          {
+            "name": "tipo_classificacao",
+            "type": "string",
+            "description": "Campo de classificação de origem: principal, original ou curadoria",
+            "constraints": {
+              "required": true
+            },
+            "categories": [
+              "principal",
+              "original",
+              "curadoria"
+            ]
           }
         ],
         "missingValues": [
@@ -302,7 +315,7 @@
           {
             "name": "categoria_id",
             "type": "string",
-            "description": "Termo da taxonomia original correspondente",
+            "description": "Categoria associada à ficha, com papel declarado no recurso categoria",
             "constraints": {
               "required": true
             }
@@ -333,212 +346,6 @@
             ],
             "reference": {
               "resource": "categoria",
-              "fields": [
-                "id"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "categoria_original",
-      "type": "table",
-      "path": "data/categoria_original.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "dialect": {
-        "delimiter": ",",
-        "header": true,
-        "lineTerminator": "\r\n"
-      },
-      "schema": {
-        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
-        "fields": [
-          {
-            "name": "id",
-            "type": "string",
-            "description": "ID persistente",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "valor_original",
-            "type": "string",
-            "description": "Termo literal; sem equivalência presumida",
-            "constraints": {
-              "required": true
-            }
-          }
-        ],
-        "missingValues": [
-          "\\N"
-        ],
-        "primaryKey": [
-          "id"
-        ]
-      }
-    },
-    {
-      "name": "fonte_categoria_original",
-      "type": "table",
-      "path": "data/fonte_categoria_original.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "dialect": {
-        "delimiter": ",",
-        "header": true,
-        "lineTerminator": "\r\n"
-      },
-      "schema": {
-        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
-        "fields": [
-          {
-            "name": "fonte_id",
-            "type": "string",
-            "description": "Ficha relacionada",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "categoria_id",
-            "type": "string",
-            "description": "Termo da taxonomia original correspondente",
-            "constraints": {
-              "required": true
-            }
-          }
-        ],
-        "missingValues": [
-          "\\N"
-        ],
-        "primaryKey": [
-          "fonte_id",
-          "categoria_id"
-        ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "fonte_id"
-            ],
-            "reference": {
-              "resource": "fonte",
-              "fields": [
-                "id"
-              ]
-            }
-          },
-          {
-            "fields": [
-              "categoria_id"
-            ],
-            "reference": {
-              "resource": "categoria_original",
-              "fields": [
-                "id"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "categoria_curadoria",
-      "type": "table",
-      "path": "data/categoria_curadoria.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "dialect": {
-        "delimiter": ",",
-        "header": true,
-        "lineTerminator": "\r\n"
-      },
-      "schema": {
-        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
-        "fields": [
-          {
-            "name": "id",
-            "type": "string",
-            "description": "ID persistente",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "valor_original",
-            "type": "string",
-            "description": "Termo literal; sem equivalência presumida",
-            "constraints": {
-              "required": true
-            }
-          }
-        ],
-        "missingValues": [
-          "\\N"
-        ],
-        "primaryKey": [
-          "id"
-        ]
-      }
-    },
-    {
-      "name": "fonte_categoria_curadoria",
-      "type": "table",
-      "path": "data/fonte_categoria_curadoria.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "dialect": {
-        "delimiter": ",",
-        "header": true,
-        "lineTerminator": "\r\n"
-      },
-      "schema": {
-        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
-        "fields": [
-          {
-            "name": "fonte_id",
-            "type": "string",
-            "description": "Ficha relacionada",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "categoria_id",
-            "type": "string",
-            "description": "Termo da taxonomia original correspondente",
-            "constraints": {
-              "required": true
-            }
-          }
-        ],
-        "missingValues": [
-          "\\N"
-        ],
-        "primaryKey": [
-          "fonte_id",
-          "categoria_id"
-        ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "fonte_id"
-            ],
-            "reference": {
-              "resource": "fonte",
-              "fields": [
-                "id"
-              ]
-            }
-          },
-          {
-            "fields": [
-              "categoria_id"
-            ],
-            "reference": {
-              "resource": "categoria_curadoria",
               "fields": [
                 "id"
               ]
