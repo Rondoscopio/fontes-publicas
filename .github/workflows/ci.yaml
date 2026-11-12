@@ -13,15 +13,56 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  validar:
-    name: Gate do catálogo
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    steps:
+    env:
+      JUST_RECIPE: lint
+    steps: &just_steps
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           persist-credentials: false
       - uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39  # v2
         with:
           tool: just@1.57.0
-      - run: just check
+      - run: just "$JUST_RECIPE"
+
+  testes:
+    name: Testes
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      JUST_RECIPE: test
+    steps: *just_steps
+
+  validar:
+    name: Validação dos dados
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      JUST_RECIPE: validate
+    steps: *just_steps
+
+  sqlite:
+    name: SQLite
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      JUST_RECIPE: sqlite-check
+    steps: *just_steps
+
+  gate:
+    name: Gate do catálogo
+    needs: [lint, testes, validar, sqlite]
+    if: ${{ always() }}
+    permissions: {}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Consolidar resultados
+        env:
+          RESULTS: ${{ toJSON(needs) }}
+        run: |
+          jq -r 'to_entries[] | "\(.key): \(.value.result)"' <<< "$RESULTS"
+          jq -e 'length == 4 and all(.[]; .result == "success")' <<< "$RESULTS"

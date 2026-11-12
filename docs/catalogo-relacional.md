@@ -165,10 +165,11 @@ O workflow `.github/workflows/ci.yaml` constrói a imagem e executa validação 
 
 ## Gate e auditoria
 
-O check **Gate do catálogo** roda em todos os PRs, inclusive os que alteram
-somente documentação, e nos pushes para `main`. `just check` executa as
-verificações em Docker e compara o SQLite regenerado com o arquivo do
-`HEAD`. Para testar mudanças nos dados, gere o banco com `just sqlite` e
+O workflow **CI** roda em todos os PRs e nos pushes para `main`. Os jobs
+de lint, testes, validação dos dados e SQLite executam as receitas
+correspondentes de Just em Docker. O **Gate do catálogo** consolida os
+quatro resultados e só passa quando todos passam. Localmente, `just check`
+executa as mesmas verificações. Para testar mudanças nos dados, gere o banco com `just sqlite` e
 inclua os CSV e o SQLite na mesma revisão. O gate usa a revisão Git como
 referência e deixa o SQLite da árvore de trabalho intacto.
 
