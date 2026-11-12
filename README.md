@@ -23,6 +23,29 @@ O catálogo de fontes OSINT, ferramentas, APIs e inventários está disponível 
 
 A arquitetura, as regras de manutenção e os comandos estão em [docs/catalogo-relacional.md](docs/catalogo-relacional.md).
 
+### Objetivo e pendências de desenvolvimento
+
+Este repositório acompanha a proposta de construir uma interface pública para consultar os dados do OSINT Rondônia. As pendências antigas podem estar desatualizadas; o conteúdo que não é fonte, inventário ou link foi mantido aqui para orientar decisões futuras.
+
+O objetivo registrado é criar uma interface SPA/SSG, preferencialmente com SvelteKit e geração estática, a partir dos dados versionados neste repositório. O catálogo deverá permitir navegação por categorias e abrangência, busca, filtros, tabelas, gráficos e consulta de fontes individuais. A interface não deve ser a fonte de verdade dos registros. Os sete projetos que serviram de referência de produto, arquitetura, organização de dados e curadoria estão cadastrados como fontes pendentes nos CSV. Devem ser estudados antes de adotar ou reutilizar código. As imagens ilustrativas e os parâmetros de rastreamento das URLs não fazem parte desta lista.
+
+O link de rótulo “pendências históricas” apontava para `inventarios/pendencias-historicas.json`; esse caminho continua registrado como origem do inventário em [`data/inventario.csv`](data/inventario.csv).
+
+As atividades abaixo continuam abertas (`status_triagem=pendente`; nenhuma está concluída):
+
+- [ ] Separar claramente fontes públicas de investigação, ferramentas OSINT e referências técnicas de implementação.
+- [ ] Migrar os registros JSON existentes sem descartar campos, preservando origem, histórico, status de validação e identificadores.
+- [ ] Comparar os sete projetos quanto a licenças, manutenção, arquitetura, acessibilidade, desempenho e experiência de navegação.
+- [ ] Adicionar validação automática de esquema, URLs, duplicidades e integridade referencial no CI.
+- [ ] Implementar busca textual, filtros combináveis, ordenação, tabelas, gráficos e páginas de detalhe, com indicadores de cobertura e atualização.
+- [ ] Gerar exportações CSV, JSON e SQLite reproduzíveis a partir da fonte de dados versionada.
+- [ ] Configurar geração e publicação automática do site após alterações aprovadas.
+- [ ] Projetar um esquema normalizado, preferencialmente até a terceira forma normal, para fontes, categorias, organizações, localidades, abrangências, tags, links e relacionamentos.
+- [ ] Avaliar licenças e condições de uso de cada projeto antes de reutilizar código ou dados de terceiros.
+- [ ] Definir a arquitetura SSG/SPA e avaliar SvelteKit com adapter-static e hospedagem por GitHub Pages ou Cloudflare Pages.
+- [ ] Documentar as funcionalidades interessantes de cada referência e selecionar quais serão implementadas no catálogo.
+- [ ] Avaliar navegação por árvore, coleções e favoritos, com parâmetros de busca e filtros compartilháveis por URL.
+
 ### Desenvolvimento e exportação
 
 Requer Docker com Compose e [Just](https://just.systems/). Python e Frictionless rodam exclusivamente no contêiner.

@@ -2,11 +2,11 @@
 
 ## Arquitetura
 
-O Data Package v2 publica os CSV sob `data/`. A tabela `fonte` representa as 4.571 fichas individuais. Inventários compostos continuam sendo documentos de natureza diferente e têm uma linha por documento em `inventario`; os 7.749 itens encontrados nas coleções são reunidos em `inventario_item.csv`, com uma coluna por campo observado. Campos não presentes em determinado item ficam nulos; objetos e listas são serializados como JSON canônico em sua coluna. `inventario_item.fonte_id` é opcional e só aponta para uma ficha quando a referência de origem permite associação exata. Nenhum item é deduplicado.
+O Data Package v2 publica os CSV sob `data/`. A tabela `fonte` reúne as 4.571 fichas JSON individuais e sete referências incluídas explicitamente no TODO, totalizando 4.578 fontes. Estas sete referências permanecem com `status_triagem=pendente`, sem tipo ou status de validação inferidos. Inventários compostos continuam sendo documentos de natureza diferente e têm uma linha por documento em `inventario`; os 7.749 itens encontrados nas coleções são reunidos em `inventario_item.csv`, com uma coluna por campo observado. Campos não presentes em determinado item ficam nulos; objetos e listas são serializados como JSON canônico em sua coluna. `inventario_item.fonte_id` é opcional e só aponta para uma ficha quando a referência de origem permite associação exata. Nenhum item é deduplicado.
 
-Após a verificação inicial de cobertura, os JSON legados e `TODO.md` são removidos individualmente. `registro_original.csv` retém caminho relativo, tipo do documento e SHA-256 para rastreabilidade. Relatórios de migração e corte ficam em `.local/share/osint-rondonia/`, que é ignorado pelo Git e não faz parte do Data Package ou do SQLite. `data/id_manifest.json` mantém os IDs persistentes; a validação cotidiana usa somente os CSV. Os hashes identificam os originais, mas não recuperam seu conteúdo.
+`registro_original.csv` retém caminho relativo, tipo do documento e SHA-256 para rastreabilidade. A validação cotidiana usa somente os CSV. Os hashes identificam os originais, mas não recuperam seu conteúdo. Os CSV são a fonte principal do catálogo e não são regenerados automaticamente dos documentos legados.
 
-O backlog de `TODO.md` também é exportado em `item_todo.csv` e `todo_url.csv`: contexto, objetivo, sete referências de implementação e doze atividades. Todos recebem `status_triagem=pendente`. As referências ficam separadas de `fonte`, pois o próprio TODO diz que não são fontes OSINT auditadas nem dependências aprovadas. As URLs externas e o link local para o inventário histórico ficam na relação `todo_url`.
+As sete referências que constavam em `TODO.md` tornaram-se linhas pendentes de `fonte`, com seus 16 endereços em `fonte_url`; suas seções originais estão em `fonte_origem` com `tipo_origem=secao_todo`. O link local de rótulo “pendências históricas” está preservado pelo próprio caminho de origem na tabela `inventario`. Contexto, objetivo e atividades foram transferidos para o README, fora do catálogo tabular. A nota original acompanha as sete fontes para deixar claro que são referências para avaliação, não fontes OSINT auditadas ou dependências aprovadas.
 
 ## Diagrama
 
@@ -47,14 +47,12 @@ erDiagram
 | `fonte_url` | URL principal e links relacionados; compartilhamento não implica identidade | `id` |
 | `abrangencia`, `fonte_abrangencia` | Valores literais de abrangência | `id`; relação composta |
 | `localidade`, `fonte_localidade` | Município, UF e país explicitamente declarados, sem completar lacunas | `id`; relação composta |
-| `fonte_origem` | Proveniência dos campos `origem` e `origem_cadastro` | (`fonte_id`, `tipo_origem`) |
+| `fonte_origem` | Proveniência dos campos `origem`, `origem_cadastro` e seção de referência do TODO | (`fonte_id`, `tipo_origem`) |
 | `inventario` | Documento composto, caminho, título e hash | `id` |
 | `inventario_item` | Itens tabulares de todas as coleções aninhadas, sem deduplicação | `id` |
 | `inventario_elemento` | Elementos de listas primitivas/mistas por JSON Pointer | `id` |
 | `inventario_metadado` | Valores escalares de metadados irregulares de inventário | `id` |
 | `registro_original` | Referência e hash de cada JSON de origem | `id` |
-| `item_todo` | Contexto, objetivo, referências e atividades do backlog | `id` |
-| `todo_url` | URLs e caminhos citados por um item do backlog | `id` |
 
 Cada relação declara as chaves estrangeiras no descritor. `fonte.status_triagem` permanece nulo porque os JSON não fornecem esse status editorial. `status_validacao` preserva o texto legado, sem traduzi-lo para um estado de aprovação. Disponibilidade de URL não é inferida a partir desses textos.
 
@@ -66,7 +64,7 @@ O token `\N` representa valor nulo e está declarado como `missingValues`; ele �
 
 ## Identificadores
 
-O manifesto contém uma chave de identidade de origem para cada ID. Fichas usam `fonte:<caminho relativo>`; itens usam `item:<caminho relativo>#<JSON Pointer>`; dimensões usam o valor literal da dimensão. O ID é derivado da chave e gravado no manifesto. Uma nova execução reaproveita a atribuição existente; nomes, descrições, URLs e ordem das linhas não participam da identidade. Ao renomear um JSON, mantenha o ID anterior no manifesto e mova sua chave de origem para o novo caminho antes de importar.
+Os IDs atuais são valores persistentes gravados diretamente nas tabelas CSV. Edições devem manter os IDs; uma alteração de nome, descrição ou URL não cria outra identidade. Ao incluir um registro, atribua um novo ID que não exista no respectivo CSV e nunca reutilize IDs removidos. Os IDs `src-*`, `todo-*`, `inv-*` e `url-*` existentes foram preservados da importação inicial.
 
 IDs externos (por exemplo, `BRAPI-00001`) ficam em `fonte.id_externo`; nunca substituem a chave interna. Itens de inventário só recebem `fonte_id` quando o campo de referência aponta exatamente para um caminho de ficha existente. Semelhança de nome ou URL não cria vínculo.
 
@@ -93,15 +91,15 @@ just check
 
 `just sqlite` valida primeiro o descritor com Frictionless e as regras relacionais do projeto. O exportador lê as linhas tipadas pelos recursos Frictionless, cria as tabelas com chaves primárias e estrangeiras e grava em staging; só substitui o SQLite versionado depois de passar `integrity_check`, `foreign_key_check` e contagens por tabela. A execução é determinística e uma falha preserva a versão publicada anterior.
 
-O SQLite contém os 22 recursos do pacote, inclusive inventários e backlog. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
+O SQLite contém os 20 recursos do pacote, inclusive inventários. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
 
 ## Contribuições
 
 Para incluir ou alterar uma ficha, edite os CSV e suas relações, mantendo os IDs e respeitando as FKs. Uma ficha precisa ter uma linha em `fonte`; adicione suas categorias, URLs, abrangência, localidade e proveniência nas respectivas tabelas. Para remover uma ficha, remova primeiro as relações que a referenciam. Não reutilize IDs removidos.
 
-Para adicionar novos itens de inventário, atualize `inventario_item.csv`, preenchendo o `inventario_id`, JSON Pointer e os campos existentes que se aplicam. Campos novos exigem atualização do descritor e do importador. Não trate documentos agregadores como fichas independentes nem regenere o catálogo usando o importador legado após o corte. Rode `just check` antes do pull request.
+Para adicionar novos itens de inventário, atualize `inventario_item.csv`, preenchendo o `inventario_id`, JSON Pointer e os campos existentes que se aplicam. Campos novos exigem atualização do descritor, do validador e do exportador SQLite quando aplicável. Não trate documentos agregadores como fichas independentes. Rode `just check` antes do pull request.
 
-O workflow `.github/workflows/validar-catalogo.yml` constrói a imagem e executa validação Data Package v2, integridade CSV/FK, testes e comparação do SQLite em Docker. O backlog está incluído em `item_todo.csv` e `todo_url.csv`; edite esses CSV diretamente, mantendo a triagem explícita. A licença AGPL-3.0-or-later cobre o código do repositório; licenças de dados externos não são herdadas automaticamente e não foram declaradas como uma licença única do pacote.
+O workflow `.github/workflows/validar-catalogo.yml` constrói a imagem e executa validação Data Package v2, integridade CSV/FK, testes e comparação do SQLite em Docker. Contexto, objetivo e atividades do antigo backlog estão no README. As sete referências estão em `fonte.csv` e seus links em `fonte_url.csv`; mantenha a triagem como pendente até revisão editorial. A licença AGPL-3.0-or-later cobre o código do repositório; licenças de dados externos não são herdadas automaticamente e não foram declaradas como uma licença única do pacote.
 
 ## Gate e auditoria
 
@@ -125,24 +123,3 @@ atualizações por PR quando a integração estiver habilitada no repositório.
 Antes de exigir o check na proteção de branch, registre um PR somente com
 documentação, um PR com falha intencional e uma auditoria manual com o
 artefato associado à revisão.
-
-### Evidência local da implantação
-
-Em 12 de novembro de 2026, o catálogo consolidado validou 22 recursos e
-30.852 linhas, incluindo 7.749 itens de inventário e 5.551 vínculos com
-fontes. Os 14 testes passaram em Docker. O SQLite regenerado para esta
-versão tem SHA-256
-`bbd23eb93c50c4d6ddafd577ca09dc14b93aaad03da09a1700021b2a0012ae7a`.
-Verificações separadas também rejeitaram workflow inválido, credencial
-sintética, SQLite ausente do commit e SQLite divergente.
-
-A auditoria manual local da árvore de trabalho gerou um SBOM CycloneDX
-com 147 componentes. O Trivy reportou 355 ocorrências, incluindo duas
-críticas e 96 altas. OSV-Scanner e Semgrep terminaram sem achados. As
-exceções do Gitleaks ficam em `.config/gitleaks.toml` e distinguem IDs
-gerados, trechos de checksums e a referência pública de visualização
-Power BI dos demais dados.
-
-O check **Gate do catálogo** já passou no PR inicial; esta atualização
-acionará o mesmo gate novamente. A auditoria de vulnerabilidades é um
-workflow separado e seus achados não alteram os dados do catálogo.

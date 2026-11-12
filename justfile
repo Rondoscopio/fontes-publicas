@@ -18,9 +18,6 @@ test: build
 sqlite: validate
     {{compose}} run --rm catalog python scripts/export_sqlite.py
 
-consolidate-inventory: build
-    {{compose}} run --rm catalog python scripts/consolidate_inventory_items.py
-
 check: lint test validate sqlite-check
 
 clean-cache:

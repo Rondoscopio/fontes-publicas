@@ -11,63 +11,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from catalogo import NULL, write_csv  # noqa: E402
-from migrate_legacy import migration  # noqa: E402
-from cutover_csv_only import cutover  # noqa: E402
 from export_sqlite import export_to_path  # noqa: E402
-from validate_package import decode, validate  # noqa: E402
-
-
-def create_legacy_fixture(root: Path) -> None:
-    (root / "records").mkdir(parents=True)
-    (root / "inventarios").mkdir()
-    (root / "records" / "source.json").write_text(
-        json.dumps(
-            {
-                "nome": "Fonte de teste",
-                "url": "https://example.org/?a=1&b=2",
-                "descricao": 'vírgula, aspas " e\nlinha',
-                "tipo": "referencia_tecnica",
-                "categoria": "Dados abertos",
-                "categoria_original": "Original",
-                "categoria_curadoria": "Pesquisa",
-                "abrangencia": "Brasil",
-                "origem": "catálogo de teste",
-                "status_validacao": "nao_verificado",
-                "links_relacionados": [
-                    {"nome": "Doc", "url": "https://example.org/docs"}
-                ],
-                "uf": "",
-                "status_triagem": "pendente",
-            },
-            ensure_ascii=False,
-        ),
-        encoding="utf-8",
-    )
-    (root / "inventarios" / "completo.json").write_text(
-        json.dumps(
-            {
-                "titulo": "Inventário de teste",
-                "fontes": [
-                    {
-                        "nome": "item",
-                        "arquivo": "records/source.json",
-                        "url": "https://example.org",
-                    }
-                ],
-                "criterios": ["um", "dois"],
-            },
-            ensure_ascii=False,
-        ),
-        encoding="utf-8",
-    )
-    (root / "TODO.md").write_text(
-        "# TODO\n\nContexto do catálogo.\n\n## Catálogo web pesquisável\n\nCriar interface pública.\n\n"
-        "### Projetos de referência para estudar\n\nDois links de exemplo.\n\n#### Referências\n\n"
-        "- **Projeto de teste**\n  - Site: https://example.org\n  - Estudar: busca.\n\n### Atividades\n\n- [ ] Conferir referência.\n\n"
-        "Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.\n",
-        encoding="utf-8",
-    )
+from validate_package import NULL, validate  # noqa: E402
 
 
 class CatalogPackageTests(unittest.TestCase):
@@ -77,13 +22,14 @@ class CatalogPackageTests(unittest.TestCase):
             result["resources"],
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
-        self.assertEqual(result["rows_fonte"], 4571)
+        self.assertEqual(result["rows_fonte"], 4578)
         self.assertEqual(result["rows_inventario"], 20)
         self.assertEqual(result["rows_inventario_item"], 7749)
         self.assertEqual(result["rows_registro_original"], 4591)
-        self.assertEqual(result["rows_item_todo"], 21)
-        self.assertEqual(result["rows_todo_url"], 17)
-        self.assertNotIn("cutover_audit", result)
+        self.assertEqual(result["rows_fonte_url"], 4600)
+        self.assertEqual(result["rows_fonte_origem"], 2390)
+        self.assertNotIn("rows_item_todo", result)
+        self.assertNotIn("rows_todo_url", result)
         self.assertEqual(
             sum(row["fonte_id"] != NULL for row in self.read_table("inventario_item")),
             5551,
@@ -96,106 +42,57 @@ class CatalogPackageTests(unittest.TestCase):
         ) as stream:
             return list(csv.DictReader(stream))
 
-    def test_todo_entries_and_links_are_exported_pending(self):
-        with (ROOT / "data" / "item_todo.csv").open(
-            encoding="utf-8", newline=""
-        ) as stream:
-            actual_items = list(csv.DictReader(stream))
-        with (ROOT / "data" / "todo_url.csv").open(
-            encoding="utf-8", newline=""
-        ) as stream:
-            actual_urls = list(csv.DictReader(stream))
-        self.assertEqual(len(actual_items), 21)
-        self.assertEqual(len(actual_urls), 17)
+    def test_todo_sources_links_and_inventory_reference_are_in_catalog(self):
+        todo_source_rows = [
+            row for row in self.read_table("fonte") if row["id"].startswith("todo-")
+        ]
+        self.assertEqual(len(todo_source_rows), 7)
         self.assertTrue(
-            all(row["status_triagem"] == "pendente" for row in actual_items)
+            all(row["status_triagem"] == "pendente" for row in todo_source_rows)
+        )
+        self.assertTrue(all(row["tipo_id"] == NULL for row in todo_source_rows))
+        self.assertTrue(
+            all(row["status_validacao_id"] == NULL for row in todo_source_rows)
+        )
+        todo_source_ids = {row["id"] for row in todo_source_rows}
+        todo_source_urls = [
+            row
+            for row in self.read_table("fonte_url")
+            if row["fonte_id"] in todo_source_ids
+        ]
+        self.assertEqual(len(todo_source_urls), 16)
+        self.assertEqual(
+            sum(row["papel"] == "principal" for row in todo_source_urls), 7
+        )
+        todo_sections = [
+            row
+            for row in self.read_table("fonte_origem")
+            if row["tipo_origem"] == "secao_todo"
+        ]
+        self.assertEqual(len(todo_sections), 7)
+        by_order = sorted(
+            (
+                row
+                for row in todo_source_urls
+                if row["fonte_id"] == "todo-3a0e2f586a126d"
+            ),
+            key=lambda row: int(row["ordem"]),
         )
         self.assertEqual(
-            sum(row["tipo_item"] == "referencia" for row in actual_items), 7
+            [row["nome"] for row in by_order], ["Site", "Dataset", "Gerador HTML"]
         )
-        self.assertEqual(
-            sum(row["tipo_item"] == "atividade" for row in actual_items), 12
-        )
-        self.assertEqual(
-            sum(row["tipo_endereco"] == "arquivo" for row in actual_urls), 1
-        )
-
-    def test_import_is_reproducible_and_ids_are_stable(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            legacy = Path(tmp) / "legacy"
-            legacy.mkdir()
-            create_legacy_fixture(legacy)
-            first = Path(tmp) / "first"
-            second = Path(tmp) / "second"
-            migration(legacy, first)
-            self.assertTrue(
-                (
-                    first
-                    / ".local"
-                    / "share"
-                    / "osint-rondonia"
-                    / "migration_report.json"
-                ).is_file()
+        self.assertTrue(
+            any(
+                row["caminho_origem"] == "inventarios/pendencias-historicas.json"
+                for row in self.read_table("inventario")
             )
-            self.assertFalse((first / "data" / "migration_report.json").exists())
-            first_files = {
-                p.relative_to(first).as_posix(): p.read_bytes()
-                for p in first.rglob("*")
-                if p.is_file()
-            }
-            migration(
-                legacy, first
-            )  # Existing manifest must preserve IDs and stable output.
-            first_replay = {
-                p.relative_to(first).as_posix(): p.read_bytes()
-                for p in first.rglob("*")
-                if p.is_file()
-            }
-            migration(legacy, second)
-            second_files = {
-                p.relative_to(second).as_posix(): p.read_bytes()
-                for p in second.rglob("*")
-                if p.is_file()
-            }
-            self.assertEqual(first_files, first_replay)
-            self.assertEqual(first_files.keys(), second_files.keys())
-            for name in first_files:
-                self.assertEqual(first_files[name], second_files[name], name)
-            validate(first, verify_originals=True, root=legacy)
-
-    def test_migration_refuses_to_regenerate_without_legacy_inputs(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp) / "empty"
-            root.mkdir()
-            with self.assertRaisesRegex(ValueError, "Nenhum JSON legado encontrado"):
-                migration(root, Path(tmp) / "package")
-
-    def test_cutover_audits_then_removes_legacy_inputs(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp) / "legacy"
-            package = Path(tmp) / "package"
-            root.mkdir()
-            create_legacy_fixture(root)
-            migration(root, package)
-            result = cutover(root, package)
-            self.assertEqual(result["json_deleted"], 2)
-            self.assertEqual(result["todo_deleted"], 1)
-            self.assertFalse(list(root.rglob("*.json")))
-            self.assertFalse((root / "TODO.md").exists())
-            self.assertTrue((package / "datapackage.json").exists())
-            with (
-                package / ".local" / "share" / "osint-rondonia" / "cutover_audit.csv"
-            ).open(encoding="utf-8", newline="") as stream:
-                audit = list(csv.DictReader(stream))
-            self.assertEqual(len(audit), 3)
-            self.assertTrue(all(row["deleted"] == "true" for row in audit))
-            descriptor = json.loads((package / "datapackage.json").read_text())
-            self.assertNotIn(
-                "cutover_audit",
-                {resource["name"] for resource in descriptor["resources"]},
-            )
-            self.assertFalse((package / "data" / "cutover_audit.csv").exists())
-            validate(package)
+        )
+        resources = {
+            item["name"]
+            for item in json.loads((ROOT / "datapackage.json").read_text())["resources"]
+        }
+        self.assertNotIn("item_todo", resources)
+        self.assertNotIn("todo_url", resources)
 
     def test_inventory_item_table_unifies_shapes_without_losing_values(self):
         descriptor = json.loads((ROOT / "datapackage.json").read_text())
@@ -212,16 +109,10 @@ class CatalogPackageTests(unittest.TestCase):
             {(tuple(fk["fields"]), fk["reference"]["resource"]) for fk in foreign_keys},
             {(("inventario_id",), "inventario"), (("fonte_id",), "fonte")},
         )
-        self.assertFalse((ROOT / "data" / "migration_report.json").exists())
-        self.assertFalse((ROOT / "data" / "cutover_audit.csv").exists())
 
     def test_sqlite_export_preserves_tables_relations_and_is_reproducible(self):
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp) / "legacy"
-            package = Path(tmp) / "package"
-            root.mkdir()
-            create_legacy_fixture(root)
-            migration(root, package)
+            package = ROOT
             first = Path(tmp) / "first.sqlite"
             second = Path(tmp) / "second.sqlite"
             first_counts = export_to_path(package, first)
@@ -232,18 +123,19 @@ class CatalogPackageTests(unittest.TestCase):
 
             with sqlite3.connect(first) as connection:
                 self.assertEqual(
-                    connection.execute("SELECT COUNT(*) FROM fonte").fetchone()[0], 1
+                    connection.execute("SELECT COUNT(*) FROM fonte").fetchone()[0], 4578
                 )
                 self.assertEqual(
                     connection.execute("SELECT COUNT(*) FROM inventario").fetchone()[0],
-                    1,
+                    20,
                 )
                 source = connection.execute(
-                    "SELECT l.uf, f.descricao, f.status_triagem "
-                    "FROM fonte f JOIN fonte_localidade fl ON fl.fonte_id = f.id "
-                    "JOIN localidade l ON l.id = fl.localidade_id"
+                    "SELECT f.nome, f.status_triagem, COUNT(u.id) "
+                    "FROM fonte f JOIN fonte_url u ON u.fonte_id = f.id "
+                    "WHERE f.id = 'todo-3a0e2f586a126d' "
+                    "GROUP BY f.id"
                 ).fetchone()
-                self.assertEqual(source, ("", 'vírgula, aspas " e\nlinha', "pendente"))
+                self.assertEqual(source, ("Awesome Self-Hosted", "pendente", 3))
                 self.assertEqual(
                     connection.execute("PRAGMA foreign_key_check").fetchall(), []
                 )
@@ -265,11 +157,10 @@ class CatalogPackageTests(unittest.TestCase):
 
     def test_failed_sqlite_export_keeps_previous_file(self):
         with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp) / "legacy"
             package = Path(tmp) / "package"
-            root.mkdir()
-            create_legacy_fixture(root)
-            migration(root, package)
+            package.mkdir()
+            shutil.copy2(ROOT / "datapackage.json", package / "datapackage.json")
+            shutil.copytree(ROOT / "data", package / "data")
             output = Path(tmp) / "published.sqlite"
             output.write_bytes(b"previous-good-artifact")
             source_csv = package / "data" / "fonte.csv"
@@ -326,56 +217,6 @@ class CatalogPackageTests(unittest.TestCase):
                 writer.writerows(rows)
             with self.assertRaisesRegex(ValueError, "FK órfã"):
                 validate(package)
-
-    def test_rfc4180_and_missing_value_round_trip(self):
-        values = [
-            'vírgula, aspas " duplas\ne Unicode: Rondônia',
-            "",
-            None,
-            r"\\N literal",
-        ]
-        with tempfile.TemporaryDirectory() as tmp:
-            path = Path(tmp) / "roundtrip.csv"
-            write_csv(path, ["valor"], [{"valor": value} for value in values])
-            raw_csv = path.read_bytes()
-            with path.open(encoding="utf-8", newline="") as stream:
-                rows = list(csv.DictReader(stream))
-        self.assertEqual([decode(row["valor"], "string") for row in rows], values)
-        self.assertIn(b'"v\xc3\xadrgula, aspas "" duplas\n', raw_csv)
-
-    def test_reserved_null_token_collision_fails_explicitly(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            with self.assertRaisesRegex(ValueError, "reservado para nulo"):
-                write_csv(Path(tmp) / "collision.csv", ["valor"], [{"valor": NULL}])
-
-    def test_invalid_legacy_json_fails_explicitly(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp) / "legacy"
-            package = Path(tmp) / "package"
-            root.mkdir()
-            (root / "quebrado.json").write_text('{"nome":', encoding="utf-8")
-            with self.assertRaisesRegex(ValueError, "JSON inválidos"):
-                migration(root, package)
-
-    def test_unmapped_source_field_fails_explicitly(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            root = Path(tmp) / "legacy"
-            package = Path(tmp) / "package"
-            root.mkdir()
-            (root / "fonte.json").write_text(
-                json.dumps(
-                    {
-                        "nome": "Fonte",
-                        "url": "https://example.org",
-                        "campo_novo": "valor",
-                    }
-                ),
-                encoding="utf-8",
-            )
-            with self.assertRaisesRegex(
-                ValueError, "Campos de ficha sem destino relacional"
-            ):
-                migration(root, package)
 
 
 if __name__ == "__main__":

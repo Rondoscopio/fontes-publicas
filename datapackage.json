@@ -793,13 +793,14 @@
           {
             "name": "tipo_origem",
             "type": "string",
-            "description": "Campo de origem (origem ou origem_cadastro)",
+            "description": "Campo de proveniência da ficha",
             "constraints": {
               "required": true
             },
             "categories": [
               "origem",
-              "origem_cadastro"
+              "origem_cadastro",
+              "secao_todo"
             ]
           },
           {
@@ -1131,173 +1132,6 @@
             ],
             "reference": {
               "resource": "inventario",
-              "fields": [
-                "id"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "item_todo",
-      "type": "table",
-      "path": "data/item_todo.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "dialect": {
-        "delimiter": ",",
-        "header": true,
-        "lineTerminator": "\r\n"
-      },
-      "schema": {
-        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
-        "fields": [
-          {
-            "name": "id",
-            "type": "string",
-            "description": "ID persistente do item de backlog",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "tipo_item",
-            "type": "string",
-            "description": "Objetivo, referência de implementação ou atividade",
-            "constraints": {
-              "required": true
-            },
-            "categories": [
-              "contexto",
-              "objetivo",
-              "referencia",
-              "atividade"
-            ]
-          },
-          {
-            "name": "secao",
-            "type": "string",
-            "description": "Seção de origem no TODO.md",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "titulo",
-            "type": "string",
-            "description": "Título ou texto original do item",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "descricao",
-            "type": "string",
-            "description": "Descrição literal das abordagens e avaliações"
-          },
-          {
-            "name": "status_triagem",
-            "type": "string",
-            "description": "Triagem editorial do item",
-            "constraints": {
-              "required": true
-            },
-            "categories": [
-              "pendente"
-            ]
-          },
-          {
-            "name": "concluido",
-            "type": "boolean",
-            "description": "Estado da caixa de seleção de atividade; nulo para objetivo e referência"
-          },
-          {
-            "name": "nota_triagem",
-            "type": "string",
-            "description": "Nota que limita o uso das referências"
-          }
-        ],
-        "missingValues": [
-          "\\N"
-        ],
-        "primaryKey": [
-          "id"
-        ]
-      }
-    },
-    {
-      "name": "todo_url",
-      "type": "table",
-      "path": "data/todo_url.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "dialect": {
-        "delimiter": ",",
-        "header": true,
-        "lineTerminator": "\r\n"
-      },
-      "schema": {
-        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
-        "fields": [
-          {
-            "name": "id",
-            "type": "string",
-            "description": "ID persistente do link no backlog",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "todo_item_id",
-            "type": "string",
-            "description": "Item TODO que cita o endereço",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "rotulo",
-            "type": "string",
-            "description": "Texto do rótulo original",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "endereco",
-            "type": "string",
-            "description": "URL absoluta ou caminho relativo citado no TODO.md",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "tipo_endereco",
-            "type": "string",
-            "description": "Identifica URL externa ou arquivo relativo do repositório",
-            "constraints": {
-              "required": true
-            },
-            "categories": [
-              "url",
-              "arquivo"
-            ]
-          }
-        ],
-        "missingValues": [
-          "\\N"
-        ],
-        "primaryKey": [
-          "id"
-        ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "todo_item_id"
-            ],
-            "reference": {
-              "resource": "item_todo",
               "fields": [
                 "id"
               ]

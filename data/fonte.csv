@@ -4570,3 +4570,35 @@ src-ffddfdbc933572,BRAPI-00653,Webservice de Dados Abertos do TRT2,\N,\N,\N,\N,T
 src-ffe415b294b423,\N,Censipam — Mapa de Radares S.O.S. Amazônia,"Visualizador meteorológico com camadas e imagens de radar das cidades amazônicas, incluindo Porto Velho; estimativas de chuva por radar estão sujeitas a erros.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N
 src-ffec50ec95b4bb,\N,HIS Piers,"Serviço ou base listada na seção Data and Statistics. Catálogo de referência: Awesome OSINT. Disponibilidade, acesso e dados não foram verificados individualmente.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N
 src-ffed6326adb347,\N,Snopes,"Serviço ou base listada na seção Fact Checking. Catálogo de referência: Awesome OSINT. Disponibilidade, acesso e dados não foram verificados individualmente.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N
+todo-3a0e2f586a126d,\N,Awesome Self-Hosted,"Site
+Dataset
+Gerador HTML
+Abordagem: dados estruturados versionados no GitHub, separados do HTML gerado.
+Estudar: publicação do mesmo catálogo em formatos legíveis por máquina e em interface estática, validação, taxonomias e manutenção de registros.","Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,pendente,\N
+todo-575ada3ade5b17,\N,Awesome Tools,"Site
+Repositório consultado
+Tecnologias e abordagem: Markdown como origem do conteúdo, GitHub Pages e interface web estática.
+Estudar: busca instantânea, filtros, ordenação, favoritos e geração do diretório a partir de listas Markdown.
+Pendente: confirmar a correspondência entre a demonstração e o repositório indicado, além da manutenção e licença.","Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,pendente,\N
+todo-60ecb18526656f,\N,Awesome Website,"Demonstração
+Código-fonte
+Template
+Tecnologias e abordagem: registros em YAML, geração por GitHub Actions e publicação no GitHub Pages.
+Estudar: transformação de arquivos estruturados em catálogo navegável, tags, grupos, filtros e fluxo de atualização.
+Pendente: conferir a disponibilidade atual da demonstração e a compatibilidade do modelo de dados.","Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,pendente,\N
+todo-61c4a821f7f6ec,\N,Bellingcat Investigation Toolkit,"Site
+Repositório
+Tecnologias e abordagem: conteúdo em Markdown, GitBook, automações com GitHub Actions e exportações CSV.
+Estudar: curadoria investigativa, organização temática, descrições, guias, qualidade de metadados, revisão e geração de formatos reutilizáveis.","Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,pendente,\N
+todo-c5cf9881646378,\N,Open App Scout,"Site
+Código-fonte e dataset
+Tecnologias e abordagem: Astro, registros em Markdown/YAML, geração estática e hospedagem na Cloudflare.
+Estudar: busca, categorias, filtros, páginas individuais, coleções, metadados do GitHub, atualização automatizada e revisão de contribuições.","Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,pendente,\N
+todo-ddf26e044461e8,\N,Grove,"Site
+Código-fonte
+Tecnologias e abordagem: Astro, conteúdo Markdown/YAML, geração estática e framework reutilizável orientado a Git.
+Estudar: schemas, taxonomias, busca, filtros, páginas individuais, coleções, metadados do GitHub, validação de registros e geração de README.","Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,pendente,\N
+todo-ead0d4b02c7cbe,\N,OSINT Framework,"Site
+Código-fonte e dados
+Tecnologias e abordagem: catálogo JSON publicado como site estático e navegação hierárquica.
+Estudar: árvore de categorias, subcategorias e navegação por grupos de fontes e ferramentas OSINT.","Os links acima são referências para avaliação, não dependências aprovadas nem fontes de investigação já auditadas.",\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,\N,pendente,\N
