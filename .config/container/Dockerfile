@@ -8,7 +8,7 @@ FROM mvdan/shfmt:v3.12.0@sha256:307d265ffd25ce832899ae17c93ed5062fc3375c514bba8f
 FROM node:22-bookworm-slim@sha256:e9f565d32859f0cbfb52125eafe8be39390f24dac302dc3cdf566e8ba3ab21ee AS markdown
 RUN npm install --global --ignore-scripts markdownlint-cli@0.45.0
 
-FROM python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df AS catalog
+FROM python:3.12-slim-trixie@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b AS catalog
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
@@ -20,7 +20,11 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 WORKDIR /workspace
 
 COPY .config/container/requirements.txt /opt/catalog/requirements.txt
-RUN python -m pip install --no-cache-dir -r /opt/catalog/requirements.txt \
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends 'zlib1g=1:1.3.dfsg+really1.3.1-1+deb13u1' \
+    && rm -rf /var/lib/apt/lists/* \
+    && python -m pip install --no-cache-dir pip==26.3 setuptools==84.2.1 \
+    && python -m pip install --no-cache-dir -r /opt/catalog/requirements.txt \
     && python -m pip check
 
 CMD ["frictionless", "--help"]

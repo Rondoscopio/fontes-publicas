@@ -184,6 +184,11 @@ e aceita disparo manual. Os relatórios ficam no GitHub Actions por 30 dias,
 inclusive quando há achados ou falhas. O Scorecard tem execução semanal e
 manual própria.
 
+O relatório do Trivy mantém todos os achados. A auditoria reprova quando
+há uma vulnerabilidade crítica, uma vulnerabilidade com versão corrigida
+indicada ou uma falha da ferramenta. Achados sem correção indicada abaixo
+de crítico permanecem visíveis no relatório para triagem e reavaliação.
+
 O Dockerfile instala as versões do lockfile em
 `.config/container/requirements.txt`. A configuração do Renovate propõe
 atualizações por PR quando a integração estiver habilitada no repositório.
