@@ -2,11 +2,11 @@
 
 ## Arquitetura
 
-O Data Package v2 publica os CSV sob `data/`. A tabela `fonte` reúne as 4.571 fichas JSON individuais e sete referências incluídas explicitamente no TODO, totalizando 4.578 fontes. Estas sete referências permanecem com `status_triagem=pendente`, sem tipo ou status de validação inferidos. Inventários compostos continuam sendo documentos de natureza diferente e têm uma linha por documento em `inventario`; os 7.749 itens encontrados nas coleções são reunidos em `inventario_item.csv`, com uma coluna por campo observado. Campos não presentes em determinado item ficam nulos; objetos e listas são serializados como JSON canônico em sua coluna. `inventario_item.fonte_id` é opcional e só aponta para uma ficha quando a referência de origem permite associação exata. Nenhum item é deduplicado.
+O Data Package v2 publica os CSV sob `data/`. A tabela `fonte` reúne 4.579 fontes: 4.571 fichas JSON individuais, sete referências do antigo TODO e uma ficha do Atlas da Imprensa. As referências do TODO e o Atlas têm `status_triagem=pendente`. Inventários compostos continuam sendo documentos de natureza diferente e têm uma linha por documento em `inventario`; os 7.749 itens encontrados nas coleções são reunidos em `inventario_item.csv`, com uma coluna por campo observado. Campos não presentes em determinado item ficam nulos; objetos e listas são serializados como JSON canônico em sua coluna. `inventario_item.fonte_id` é opcional e só aponta para uma ficha quando a referência de origem permite associação exata. Nenhum item é deduplicado.
 
 `registro_original.csv` retém caminho relativo, tipo do documento e SHA-256 para rastreabilidade. A validação cotidiana usa somente os CSV. Os hashes identificam os originais, mas não recuperam seu conteúdo. Os CSV são a fonte principal do catálogo e não são regenerados automaticamente dos documentos legados.
 
-As sete referências que constavam em `TODO.md` tornaram-se linhas pendentes de `fonte`, com seus 16 endereços em `fonte_url`; suas seções originais estão em `fonte_origem` com `tipo_origem=secao_todo`. O link local de rótulo “pendências históricas” está preservado pelo próprio caminho de origem na tabela `inventario`. Contexto, objetivo e atividades foram transferidos para o README, fora do catálogo tabular. A nota original acompanha as sete fontes para deixar claro que são referências para avaliação, não fontes OSINT auditadas ou dependências aprovadas.
+As sete referências que constavam em `TODO.md` tornaram-se linhas pendentes de `fonte`, com seus 16 endereços em `fonte_url`; suas seções originais são recuperadas em `origem` pelas associações `fonte_origem` com `tipo_origem=secao_todo`. O link local de rótulo “pendências históricas” está preservado pelo próprio caminho de origem na tabela `inventario`. Contexto, objetivo e atividades foram transferidos para o README, fora do catálogo tabular. A nota original acompanha as sete fontes para deixar claro que são referências para avaliação, não fontes OSINT auditadas ou dependências aprovadas.
 
 ## Diagrama
 
@@ -47,7 +47,8 @@ erDiagram
 | `fonte_url` | URL principal e links relacionados; compartilhamento não implica identidade | `id` |
 | `abrangencia`, `fonte_abrangencia` | Valores literais de abrangência | `id`; relação composta |
 | `localidade`, `fonte_localidade` | Município, UF e país explicitamente declarados, sem completar lacunas | `id`; relação composta |
-| `fonte_origem` | Proveniência dos campos `origem`, `origem_cadastro` e seção de referência do TODO | (`fonte_id`, `tipo_origem`) |
+| `origem` | Valor literal único em `valor_original` e referência opcional a `fonte.id` em `fonte_referenciada_id` | `id` |
+| `fonte_origem` | Liga a ficha descrita (`fonte_id`) à origem (`origem_id`) e preserva o campo da ficha (`tipo_origem`) | (`fonte_id`, `tipo_origem`) |
 | `inventario` | Documento composto, caminho, título e hash | `id` |
 | `inventario_item` | Itens tabulares de todas as coleções aninhadas, sem deduplicação | `id` |
 | `inventario_elemento` | Elementos de listas primitivas/mistas por JSON Pointer | `id` |
@@ -61,6 +62,8 @@ Cada relação declara as chaves estrangeiras no descritor. `fonte.status_triage
 Os campos escalares observados nas fichas estão em `fonte`; os atributos que representam várias URLs, classificações, abrangências, localidades e proveniência usam tabelas relacionadas. A dimensão `categoria` reúne os rótulos dos campos principal, original e de curadoria, sem fundir termos; `tipo_classificacao` preserva de qual campo cada rótulo veio. `fonte_categoria` é a única relação entre fichas e categorias. Os campos de `inventario_item` mantêm os tipos originais compatíveis entre os itens: textos, booleano e inteiro. Objetos e listas em um campo são JSON canônico. Os itens e elementos têm JSON Pointer e identificador do documento de origem. Os arquivos originais foram removidos após verificação; caminho e hash permitem rastrear cada linha, mas não recuperar os bytes originais.
 
 O token `\N` representa valor nulo e está declarado como `missingValues`; ele é reservado e uma colisão literal interrompe a importação explicitamente. Strings vazias continuam vazias. A distinção original entre campo ausente e nulo foi verificada antes do corte e permanece documentada nos dados tipados e no hash registrado; o documento byte a byte deixa de ser recuperável depois da remoção. A exportação não normaliza pontuação, capitalização, idioma, URLs ou rótulos.
+
+As origens documentais de Awesome OSINT, Chelfo API, OSINT Brazuca e Atlas da Imprensa apontam para suas fichas. A URL literal em `origem.valor_original` conserva o endereço registrado no cadastro mesmo se o endereço atual em `fonte_url` mudar. As 14 origens textuais têm referência nula, incluindo as seções do antigo TODO. Para recuperar a proveniência de uma ficha, junte `fonte_origem.origem_id` a `origem.id`.
 
 ## Identificadores
 
@@ -91,7 +94,7 @@ just check
 
 `just sqlite` valida primeiro o descritor com Frictionless e as regras relacionais do projeto. O exportador lê as linhas tipadas pelos recursos Frictionless, cria as tabelas com chaves primárias e estrangeiras e grava em staging; só substitui o SQLite versionado depois de passar `integrity_check`, `foreign_key_check` e contagens por tabela. A execução é determinística e uma falha preserva a versão publicada anterior.
 
-O SQLite contém os 20 recursos do pacote, inclusive inventários. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
+O SQLite contém os 17 recursos do pacote, inclusive inventários. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
 
 ## Contribuições
 

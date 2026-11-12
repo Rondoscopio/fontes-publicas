@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import shutil
+import sqlite3
 import sys
 import tempfile
 import unittest
@@ -22,15 +23,16 @@ class CatalogPackageTests(unittest.TestCase):
             result["resources"],
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
-        self.assertEqual(result["rows_fonte"], 4578)
-        self.assertEqual(result["rows"], 30844)
-        self.assertEqual(result["resources"], 16)
+        self.assertEqual(result["rows_fonte"], 4579)
+        self.assertEqual(result["rows"], 30864)
+        self.assertEqual(result["resources"], 17)
         self.assertEqual(result["rows_inventario"], 20)
         self.assertEqual(result["rows_inventario_item"], 7749)
         self.assertEqual(result["rows_registro_original"], 4591)
         self.assertEqual(result["rows_categoria"], 659)
         self.assertEqual(result["rows_fonte_categoria"], 2330)
-        self.assertEqual(result["rows_fonte_url"], 4600)
+        self.assertEqual(result["rows_fonte_url"], 4601)
+        self.assertEqual(result["rows_origem"], 18)
         self.assertEqual(result["rows_fonte_origem"], 2390)
         self.assertNotIn("rows_item_todo", result)
         self.assertNotIn("rows_todo_url", result)
@@ -168,11 +170,9 @@ class CatalogPackageTests(unittest.TestCase):
             second_counts = export_to_path(package, second)
             self.assertEqual(first_counts, second_counts)
             self.assertEqual(first.read_bytes(), second.read_bytes())
-            import sqlite3
-
             with sqlite3.connect(first) as connection:
                 self.assertEqual(
-                    connection.execute("SELECT COUNT(*) FROM fonte").fetchone()[0], 4578
+                    connection.execute("SELECT COUNT(*) FROM fonte").fetchone()[0], 4579
                 )
                 self.assertEqual(
                     connection.execute("SELECT COUNT(*) FROM inventario").fetchone()[0],
@@ -185,6 +185,30 @@ class CatalogPackageTests(unittest.TestCase):
                     "GROUP BY f.id"
                 ).fetchone()
                 self.assertEqual(source, ("Awesome Self-Hosted", "pendente", 3))
+                atlas = connection.execute(
+                    "SELECT f.nome, f.status_triagem, COUNT(*) "
+                    "FROM fonte_origem AS fo "
+                    "JOIN origem AS o ON o.id = fo.origem_id "
+                    "JOIN fonte AS f ON f.id = o.fonte_referenciada_id "
+                    "JOIN fonte_url AS u ON u.fonte_id = f.id "
+                    "WHERE o.valor_original = ? AND u.url = o.valor_original "
+                    "AND u.papel = 'principal' GROUP BY f.id",
+                    ("https://atlasdaimprensa.com.br/rondonia-jornais/",),
+                ).fetchone()
+                self.assertEqual(
+                    atlas, ("Atlas da Imprensa — Rondônia", "pendente", 102)
+                )
+                self.assertEqual(
+                    connection.execute(
+                        "SELECT COUNT(fonte_referenciada_id) FROM origem"
+                    ).fetchone()[0],
+                    4,
+                )
+                with self.assertRaises(sqlite3.IntegrityError):
+                    connection.execute(
+                        "INSERT INTO origem (id, valor_original) "
+                        "SELECT 'org-duplicada', valor_original FROM origem LIMIT 1"
+                    )
                 self.assertEqual(
                     connection.execute("PRAGMA foreign_key_check").fetchall(), []
                 )

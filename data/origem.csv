@@ -1,0 +1,19 @@
+id,valor_original,fonte_referenciada_id
+org-1369f37d246ca6,lista indicada pelo usuário,\N
+org-1eca5a3374a1c4,pendências históricas do catálogo,\N
+org-276c62c2831c9d,Repositório open source de terceiros no GitHub,\N
+org-3f4972b75ba1d3,https://www.chelfoapi.com/,src-a30914fbfd6bb9
+org-53b504a18498a3,https://atlasdaimprensa.com.br/rondonia-jornais/,src-d236ec12b4f6b6
+org-5525283a90635f,"Fonte indicada por endereço de exemplo; cadastrada somente a página inicial do serviço, sem perfis, páginas de empresas, reportagens específicas ou rastreadores.",\N
+org-6c41ffd217c6b0,Portal oficial da Transparência da Assembleia Legislativa de Rondônia,\N
+org-82e54585f79140,curadoria de fontes de agricultura e queimadas,\N
+org-83894bfed08ef7,Repositório independente de terceiros,\N
+org-8884b8cf2d1945,Interfaces de catálogos e padrões de dados,\N
+org-8c3a3d2cfb50a0,https://github.com/jivoi/awesome-osint,src-c86ceceb85a04a
+org-b4c0132521218f,curadoria original de ferramentas do README,\N
+org-c2c4393116eff5,diretorios OSINT utilizados no catalogo,\N
+org-cc95ccd77936d4,https://github.com/osintbrazuca/osint-brazuca,src-89c539f2cfe1f8
+org-d950d731456be5,Diretórios OSINT e curadoria investigativa,\N
+org-dc8c58f010bb81,Painel público do Cloudflare Radar com recorte geográfico para Rondônia,\N
+org-f12fb2f829f13e,documentos de cobertura e importação OSINT,\N
+org-ffc11927931444,Geradores e frameworks reutilizáveis,\N

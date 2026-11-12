@@ -576,6 +576,64 @@
       }
     },
     {
+      "name": "origem",
+      "type": "table",
+      "path": "data/origem.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "dialect": {
+        "delimiter": ",",
+        "header": true,
+        "lineTerminator": "\r\n"
+      },
+      "schema": {
+        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string",
+            "description": "ID persistente da origem",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "valor_original",
+            "type": "string",
+            "description": "Texto ou URL literal do registro de proveniência",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "fonte_referenciada_id",
+            "type": "string",
+            "description": "Ficha da origem documental, quando identificada"
+          }
+        ],
+        "missingValues": [
+          "\\N"
+        ],
+        "primaryKey": [
+          "id"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "fonte_referenciada_id"
+            ],
+            "reference": {
+              "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
       "name": "fonte_origem",
       "type": "table",
       "path": "data/fonte_origem.csv",
@@ -592,7 +650,7 @@
           {
             "name": "fonte_id",
             "type": "string",
-            "description": "Ficha de origem",
+            "description": "Ficha cuja proveniência é registrada",
             "constraints": {
               "required": true
             }
@@ -611,9 +669,12 @@
             ]
           },
           {
-            "name": "valor_original",
+            "name": "origem_id",
             "type": "string",
-            "description": "Conteúdo exato do campo"
+            "description": "Origem registrada para esse campo da ficha",
+            "constraints": {
+              "required": true
+            }
           }
         ],
         "missingValues": [
@@ -630,6 +691,17 @@
             ],
             "reference": {
               "resource": "fonte",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "origem_id"
+            ],
+            "reference": {
+              "resource": "origem",
               "fields": [
                 "id"
               ]

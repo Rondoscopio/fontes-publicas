@@ -76,6 +76,7 @@ def build_metadata(descriptor: dict[str, Any]) -> tuple[MetaData, dict[str, Tabl
                     SQL_TYPES[kind](),
                     nullable=not constraints.get("required", False)
                     and name not in primary_key,
+                    unique=constraints.get("unique", False),
                 )
             )
         foreign_keys = []
