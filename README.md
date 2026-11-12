@@ -31,6 +31,8 @@ O objetivo registrado é criar uma interface SPA/SSG, preferencialmente com Svel
 
 O link de rótulo “pendências históricas” apontava para `inventarios/pendencias-historicas.json`; esse caminho continua registrado como origem do inventário em [`data/inventario.csv`](data/inventario.csv).
 
+No TODO original, o contexto, o objetivo e as 12 atividades tinham `status_triagem=pendente`; todas as atividades estavam desmarcadas.
+
 As atividades abaixo continuam abertas (`status_triagem=pendente`; nenhuma está concluída):
 
 - [ ] Separar claramente fontes públicas de investigação, ferramentas OSINT e referências técnicas de implementação.
