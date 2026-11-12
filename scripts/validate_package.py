@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from geografia import validar_geografia
+
 NULL = r"\N"
 PROFILE_V2 = "https://datapackage.org/profiles/2.0/datapackage.json"
 
@@ -134,6 +136,7 @@ def validate(package_dir: Path) -> dict[str, int]:
                 if any(value == NULL for value in key) or key not in target_keys:
                     fail(f"FK órfã em {name}:{index} -> {target}: {key}")
 
+    validar_geografia(tables)
     counts = {name: len(rows) for name, rows in tables.items()}
     return {
         "resources": len(resources),

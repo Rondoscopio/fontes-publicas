@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from export_sqlite import export_to_path  # noqa: E402
+from geografia import abrangencia_id  # noqa: E402
 from validate_package import NULL, validate  # noqa: E402
 
 
@@ -24,8 +25,14 @@ class CatalogPackageTests(unittest.TestCase):
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
         self.assertEqual(result["rows_fonte"], 4970)
-        self.assertEqual(result["rows"], 26028)
-        self.assertEqual(result["resources"], 12)
+        self.assertEqual(result["rows"], 30823)
+        self.assertEqual(result["resources"], 14)
+        self.assertEqual(result["rows_uf"], 27)
+        self.assertEqual(result["rows_municipio"], 5571)
+        self.assertEqual(result["rows_abrangencia"], 94)
+        self.assertEqual(result["rows_fonte_abrangencia"], 3005)
+        self.assertNotIn("rows_localidade", result)
+        self.assertNotIn("rows_fonte_localidade", result)
         self.assertNotIn("rows_registro_original", result)
         self.assertEqual(result["rows_categoria"], 678)
         self.assertEqual(result["rows_fonte_categoria"], 8199)
@@ -41,6 +48,37 @@ class CatalogPackageTests(unittest.TestCase):
             encoding="utf-8", newline=""
         ) as stream:
             return list(csv.DictReader(stream))
+
+    def test_geography_history_preserves_resolved_and_pending_links(self):
+        with (ROOT / "historico" / "geografia.csv").open(
+            encoding="utf-8", newline=""
+        ) as stream:
+            history = list(csv.DictReader(stream))
+        self.assertEqual(len(history), 3670)
+        self.assertEqual(
+            len({(row["fonte_id"], row["papel"], row["id_legado"]) for row in history}),
+            3670,
+        )
+        for row in history:
+            self.assertEqual(
+                row["resultado"] == "pendente", row["abrangencia_id"] == NULL
+            )
+        self.assertEqual(sum(row["resultado"] == "parcial" for row in history), 30)
+        self.assertTrue(
+            any(
+                row["abrangencia_original"] == "Municipal / SP, fora de Rondônia"
+                and row["resultado"] == "pendente"
+                for row in history
+            )
+        )
+
+        municipalities = {
+            row["codigo_ibge"]: (row["nome"], row["uf_codigo_ibge"])
+            for row in self.read_table("municipio")
+        }
+        self.assertEqual(municipalities["5300108"], ("Brasília", "53"))
+        self.assertEqual(municipalities["2605459"], ("Fernando de Noronha", "26"))
+        self.assertEqual(municipalities["5101837"], ("Boa Esperança do Norte", "51"))
 
     def test_todo_sources_and_links_are_in_catalog(self):
         todo_source_rows = [
@@ -265,6 +303,74 @@ class CatalogPackageTests(unittest.TestCase):
                     connection.execute("SELECT COUNT(*) FROM fonte_url").fetchone()[0],
                     0,
                 )
+                self.assert_geography_query(connection)
+
+    def assert_geography_query(self, connection):
+        first, second, national_source, city_source = (
+            row[0]
+            for row in connection.execute("SELECT id FROM fonte ORDER BY id LIMIT 4")
+        )
+        connection.executemany(
+            "DELETE FROM fonte_abrangencia WHERE fonte_id = ?",
+            ((id_,) for id_ in (first, second, national_source, city_source)),
+        )
+        states = ["11", "12"]
+        cities = ["1100205", "1100122"]
+        combined = abrangencia_id(False, True, states, cities)
+        self.assertEqual(
+            combined,
+            abrangencia_id(False, True, ["12", "11", "11"], list(reversed(cities))),
+        )
+        national = abrangencia_id(True, False, [], [])
+        municipal = abrangencia_id(False, False, [], cities[:1])
+        connection.executemany(
+            "INSERT OR IGNORE INTO abrangencia VALUES (?, ?, ?)",
+            [
+                (combined, False, True),
+                (national, True, False),
+                (municipal, False, False),
+            ],
+        )
+        connection.executemany(
+            "INSERT INTO abrangencia_uf VALUES (?, ?)",
+            ((combined, code) for code in states),
+        )
+        connection.executemany(
+            "INSERT OR IGNORE INTO abrangencia_municipio VALUES (?, ?)",
+            [(combined, code) for code in cities] + [(municipal, cities[0])],
+        )
+        connection.executemany(
+            "INSERT INTO fonte_abrangencia (fonte_id, abrangencia_id, papel) VALUES (?, ?, ?)",
+            [
+                (first, combined, "cobertura"),
+                (second, combined, "cobertura"),
+                (national_source, national, "cobertura"),
+                (national_source, municipal, "localidade_declarada"),
+                (city_source, municipal, "cobertura"),
+            ],
+        )
+        docs = (ROOT / "docs" / "catalogo-relacional.md").read_text(encoding="utf-8")
+        sql = (
+            docs.split("## Filtrar fontes por UF no SQLite", 1)[1]
+            .split("```sql\n", 1)[1]
+            .split("```", 1)[0]
+        )
+        without_national = [
+            row[0]
+            for row in connection.execute(
+                sql, {"codigo_uf": "11", "incluir_nacional": 0}
+            )
+        ]
+        self.assertEqual(len(without_national), len(set(without_national)))
+        self.assertTrue({first, second, city_source}.issubset(without_national))
+        self.assertNotIn(national_source, without_national)
+        with_national = {
+            row[0]
+            for row in connection.execute(
+                sql, {"codigo_uf": "11", "incluir_nacional": 1}
+            )
+        }
+        self.assertIn(national_source, with_national)
 
     def test_failed_sqlite_export_keeps_previous_file(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -24,6 +24,37 @@ ORDER BY f.nome, f.id;
 
 A consulta retorna uma linha por ficha associada à categoria escolhida. Fichas sem categoria continuam disponíveis em `fonte`.
 
+## Filtrar fontes por UF no SQLite
+
+Use o código IBGE da UF em `:codigo_uf`. A consulta inclui a própria UF e seus municípios. Use `:incluir_nacional = 1` para incluir também as fichas com abrangência nacional. A localização declarada da ficha pode ser consultada separadamente pelo papel `localidade_declarada`.
+
+```sql
+SELECT f.id, f.nome
+FROM fonte AS f
+JOIN fonte_abrangencia AS fa ON fa.fonte_id = f.id
+JOIN abrangencia AS a ON a.id = fa.abrangencia_id
+WHERE fa.papel = 'cobertura'
+  AND (
+    EXISTS (
+      SELECT 1 FROM abrangencia_uf AS au
+      WHERE au.abrangencia_id = a.id AND au.uf_codigo_ibge = :codigo_uf
+    )
+    OR EXISTS (
+      SELECT 1 FROM abrangencia_municipio AS am
+      JOIN municipio AS m ON m.codigo_ibge = am.municipio_codigo_ibge
+      WHERE am.abrangencia_id = a.id AND m.uf_codigo_ibge = :codigo_uf
+    )
+    OR (:incluir_nacional = 1 AND a.nacional = 1)
+  )
+ORDER BY f.nome, f.id;
+```
+
+### Base territorial e migração
+
+As 27 UFs e as 5.571 unidades de nível municipal seguem a edição de 2025, com data-base de 31/12/2025. Brasília e Fernando de Noronha constam conforme o recorte do IBGE. O comando `just import-ibge` baixa o ZIP oficial em Docker, confere seu SHA-256 e extrai `RELATORIO_DTB_BRASIL_2025_MUNICIPIOS.ods`. SHA-256 do ZIP: `d077a0e48c36cf18bcc96268b4a436200c014c6b8522c1a62d894acaf39dad27`. [Arquivo oficial DTB 2025](https://geoftp.ibge.gov.br/organizacao_do_territorio/estrutura_territorial/divisao_territorial/2025/DTB_2025.zip)
+
+Os 3.670 vínculos anteriores estão em [historico/geografia.csv](../historico/geografia.csv), com os valores literais e o resultado da conversão. Foram 2.975 mapeados, 30 parciais e 665 pendentes. Dos pendentes, 582 tinham UF vazia e 83 tinham texto de cobertura sem território confirmado. O arquivo histórico fica fora do Data Package e do SQLite. Nos casos parciais, o filtro usa apenas os recortes confirmados.
+
 ## Diagrama
 
 ```mermaid
@@ -35,8 +66,11 @@ erDiagram
     STATUS_VALIDACAO ||--o{ FONTE : descreve
     FONTE ||--o{ FONTE_ABRANGENCIA : possui
     ABRANGENCIA ||--o{ FONTE_ABRANGENCIA : associa
-    FONTE ||--o{ FONTE_LOCALIDADE : possui
-    LOCALIDADE ||--o{ FONTE_LOCALIDADE : associa
+    ABRANGENCIA ||--o{ ABRANGENCIA_UF : inclui
+    UF ||--o{ ABRANGENCIA_UF : identifica
+    ABRANGENCIA ||--o{ ABRANGENCIA_MUNICIPIO : inclui
+    MUNICIPIO ||--o{ ABRANGENCIA_MUNICIPIO : identifica
+    UF ||--o{ MUNICIPIO : contem
     FONTE ||--o{ FONTE_ORIGEM : documenta
     ORIGEM ||--o{ FONTE_ORIGEM : identifica
     FONTE o|--o{ ORIGEM : referenciada
@@ -51,8 +85,12 @@ erDiagram
 | `categoria` | Rótulos de todas as classificações; `tipo_classificacao` distingue `principal`, `original` e `curadoria` | `id` |
 | `fonte_categoria` | Relação N:N única entre fontes e categorias, preservando o tipo da categoria associada | chave composta (`fonte_id`, `categoria_id`) |
 | `fonte_url` | URL principal e links relacionados; compartilhamento não implica identidade | `id` |
-| `abrangencia`, `fonte_abrangencia` | Valores literais de abrangência | `id`; relação composta |
-| `localidade`, `fonte_localidade` | Município, UF e país explicitamente declarados, sem completar lacunas | `id`; relação composta |
+| `uf` | Código IBGE, sigla e nome de cada UF | `codigo_ibge` |
+| `municipio` | Código IBGE, nome e FK para a UF de cada unidade municipal | `codigo_ibge` |
+| `abrangencia` | Conjunto compartilhável, com flags booleanas `nacional` e `internacional` | `id` |
+| `abrangencia_uf` | UFs incluídas no conjunto | (`abrangencia_id`, `uf_codigo_ibge`) |
+| `abrangencia_municipio` | Municípios incluídos no conjunto | (`abrangencia_id`, `municipio_codigo_ibge`) |
+| `fonte_abrangencia` | Associa a ficha a um conjunto por papel, `cobertura` ou `localidade_declarada` | (`fonte_id`, `papel`) |
 | `origem` | Valor literal único em `valor_original` e referência opcional a `fonte.id` em `fonte_referenciada_id` | `id` |
 | `fonte_origem` | Liga a ficha descrita (`fonte_id`) à origem (`origem_id`) e preserva o campo da ficha (`tipo_origem`) | (`fonte_id`, `tipo_origem`) |
 
@@ -71,6 +109,8 @@ As origens documentais de Awesome OSINT, Chelfo API, OSINT Brazuca e Atlas da Im
 Os IDs atuais são valores persistentes gravados diretamente nas tabelas CSV. Edições devem manter os IDs; uma alteração de nome, descrição ou URL não cria outra identidade. Ao incluir um registro, atribua um novo ID que não exista no respectivo CSV e nunca reutilize IDs removidos. Os IDs `src-*`, `todo-*` e `url-*` existentes foram preservados da importação inicial.
 
 IDs externos (por exemplo, `BRAPI-00001`) ficam em `fonte.id_externo`; nunca substituem a chave interna.
+
+Para cadastrar uma cobertura, reúna as flags e os códigos confirmados e procure um conjunto igual. O ID segue `abr-` mais o SHA-256 de um array JSON compacto `[nacional,internacional,ufs,municipios]`. Os dois últimos elementos são listas de códigos textuais ordenadas e sem repetições. A função `abrangencia_id` em `scripts/geografia.py` calcula esse valor. Ao alterar a cobertura de uma ficha, troque seu vínculo para o conjunto correspondente. As flags nacional e internacional são independentes, podem coexistir com territórios explícitos e dispensam expandir uma cobertura nacional em 27 vínculos. Uma cobertura internacional indica alcance estrangeiro declarado e só entra no filtro por UF se também houver vínculo territorial ou cobertura nacional incluída na consulta.
 
 ## Execução
 
@@ -95,7 +135,7 @@ just check
 
 `just sqlite` valida primeiro o descritor com Frictionless e as regras relacionais do projeto. O exportador lê as linhas tipadas pelos recursos Frictionless, cria as tabelas com chaves primárias e estrangeiras e grava em staging; só substitui o SQLite versionado depois de passar `integrity_check`, `foreign_key_check` e contagens por tabela. A execução é determinística e uma falha preserva a versão publicada anterior.
 
-O SQLite contém os 12 recursos do pacote. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
+O SQLite contém os 14 recursos do pacote. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
 
 ## Contribuições
 
