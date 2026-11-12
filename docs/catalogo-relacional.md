@@ -2,9 +2,9 @@
 
 ## Arquitetura
 
-O Data Package v2 publica os CSV sob `data/`. A tabela `fonte` representa as 4.571 fichas individuais. Inventários compostos continuam sendo documentos de natureza diferente e têm uma linha por documento em `inventario`; seus itens são exportados em recursos `inventario_itens_<hash>` organizados pela forma dos campos de cada coleção. O hash no nome do recurso depende do conjunto ordenado de campos, não da posição dos registros.
+O Data Package v2 publica os CSV sob `data/`. A tabela `fonte` representa as 4.571 fichas individuais. Inventários compostos continuam sendo documentos de natureza diferente e têm uma linha por documento em `inventario`; os 7.749 itens encontrados nas coleções são reunidos em `inventario_item.csv`, com uma coluna por campo observado. Campos não presentes em determinado item ficam nulos; objetos e listas são serializados como JSON canônico em sua coluna. `inventario_item.fonte_id` é opcional e só aponta para uma ficha quando a referência de origem permite associação exata. Nenhum item é deduplicado.
 
-Após a verificação inicial de cobertura, os JSON legados e `TODO.md` são removidos individualmente. `registro_original.csv` retém caminho relativo, tipo do documento e SHA-256; `cutover_audit.csv` registra hash, contagens associadas e confirmação de cobertura de cada arquivo removido. Permanecem o descritor v2, `data/id_manifest.json` e `data/migration_report.json`. O manifesto mantém IDs para referência e auditoria; a validação cotidiana usa somente CSV. Os hashes permitem verificar os arquivos se reaparecerem, mas não recuperá-los do pacote.
+Após a verificação inicial de cobertura, os JSON legados e `TODO.md` são removidos individualmente. `registro_original.csv` retém caminho relativo, tipo do documento e SHA-256 para rastreabilidade. Relatórios de migração e corte ficam em `.local/share/osint-rondonia/`, que é ignorado pelo Git e não faz parte do Data Package ou do SQLite. `data/id_manifest.json` mantém os IDs persistentes; a validação cotidiana usa somente os CSV. Os hashes identificam os originais, mas não recuperam seu conteúdo.
 
 O backlog de `TODO.md` também é exportado em `item_todo.csv` e `todo_url.csv`: contexto, objetivo, sete referências de implementação e doze atividades. Todos recebem `status_triagem=pendente`. As referências ficam separadas de `fonte`, pois o próprio TODO diz que não são fontes OSINT auditadas nem dependências aprovadas. As URLs externas e o link local para o inventário histórico ficam na relação `todo_url`.
 
@@ -30,11 +30,11 @@ erDiagram
     INVENTARIO ||--o{ REGISTRO_ORIGINAL : rastreia
     INVENTARIO ||--o{ INVENTARIO_METADADO : descreve
     INVENTARIO ||--o{ INVENTARIO_ELEMENTO : contém
-    INVENTARIO ||--o{ INVENTARIO_ITENS : contém
-    FONTE o|--o{ INVENTARIO_ITENS : vincula_por_arquivo
+    INVENTARIO ||--o{ INVENTARIO_ITEM : contém
+    FONTE o|--o{ INVENTARIO_ITEM : vincula_por_arquivo
 ```
 
-`INVENTARIO_ITENS` no diagrama representa a família de recursos `inventario_itens_<hash>` gerada para cada formato de coleção encontrado.
+`inventario_item` reúne os formatos que antes geravam 26 tabelas separadas. Seus 68 campos incluem seis campos estruturais e a união dos atributos observados.
 
 ## Tabelas e chaves
 
@@ -49,7 +49,7 @@ erDiagram
 | `localidade`, `fonte_localidade` | Município, UF e país explicitamente declarados, sem completar lacunas | `id`; relação composta |
 | `fonte_origem` | Proveniência dos campos `origem` e `origem_cadastro` | (`fonte_id`, `tipo_origem`) |
 | `inventario` | Documento composto, caminho, título e hash | `id` |
-| `inventario_itens_<hash>` | Itens tabulares de coleções aninhadas por formato encontrado | `id` |
+| `inventario_item` | Itens tabulares de todas as coleções aninhadas, sem deduplicação | `id` |
 | `inventario_elemento` | Elementos de listas primitivas/mistas por JSON Pointer | `id` |
 | `inventario_metadado` | Valores escalares de metadados irregulares de inventário | `id` |
 | `registro_original` | Referência e hash de cada JSON de origem | `id` |
@@ -60,7 +60,7 @@ Cada relação declara as chaves estrangeiras no descritor. `fonte.status_triage
 
 ### Campos e preservação
 
-Os campos escalares observados nas fichas estão em `fonte`; os atributos que representam várias URLs, classificações, abrangências, localidades e proveniência usam tabelas relacionadas. Campos excepcionais nos itens de inventário são escritos como valores tipados; objetos e listas em uma coluna usam JSON canônico, além de seus elementos internos em tabelas com JSON Pointer. Os arquivos originais foram removidos após verificação; caminho e hash permitem rastrear cada linha, mas não recuperar os bytes originais.
+Os campos escalares observados nas fichas estão em `fonte`; os atributos que representam várias URLs, classificações, abrangências, localidades e proveniência usam tabelas relacionadas. Os campos de `inventario_item` mantêm os tipos originais compatíveis entre os itens: textos, booleano e inteiro. Objetos e listas em um campo são JSON canônico. Os itens e elementos têm JSON Pointer e identificador do documento de origem. Os arquivos originais foram removidos após verificação; caminho e hash permitem rastrear cada linha, mas não recuperar os bytes originais.
 
 O token `\N` representa valor nulo e está declarado como `missingValues`; ele é reservado e uma colisão literal interrompe a importação explicitamente. Strings vazias continuam vazias. A distinção original entre campo ausente e nulo foi verificada antes do corte e permanece documentada nos dados tipados e no hash registrado; o documento byte a byte deixa de ser recuperável depois da remoção. A exportação não normaliza pontuação, capitalização, idioma, URLs ou rótulos.
 
@@ -93,13 +93,13 @@ just check
 
 `just sqlite` valida primeiro o descritor com Frictionless e as regras relacionais do projeto. O exportador lê as linhas tipadas pelos recursos Frictionless, cria as tabelas com chaves primárias e estrangeiras e grava em staging; só substitui o SQLite versionado depois de passar `integrity_check`, `foreign_key_check` e contagens por tabela. A execução é determinística e uma falha preserva a versão publicada anterior.
 
-O SQLite contém os 48 recursos do pacote, inclusive inventários e backlog. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
+O SQLite contém os 22 recursos do pacote, inclusive inventários e backlog. As chaves estrangeiras estão declaradas no arquivo; aplicações que alterarem os dados devem habilitar sua verificação por conexão com `PRAGMA foreign_keys = ON`.
 
 ## Contribuições
 
 Para incluir ou alterar uma ficha, edite os CSV e suas relações, mantendo os IDs e respeitando as FKs. Uma ficha precisa ter uma linha em `fonte`; adicione suas categorias, URLs, abrangência, localidade e proveniência nas respectivas tabelas. Para remover uma ficha, remova primeiro as relações que a referenciam. Não reutilize IDs removidos.
 
-Para adicionar novos itens de inventário, atualize o recurso tabular correspondente e `inventario_id`/JSON Pointer; se o formato exigir nova família de colunas, ajuste o descritor e os CSV. Não trate inventários como fichas independentes nem regenere o catálogo usando o importador legado após o corte. Rode `just check` antes do pull request.
+Para adicionar novos itens de inventário, atualize `inventario_item.csv`, preenchendo o `inventario_id`, JSON Pointer e os campos existentes que se aplicam. Campos novos exigem atualização do descritor e do importador. Não trate documentos agregadores como fichas independentes nem regenere o catálogo usando o importador legado após o corte. Rode `just check` antes do pull request.
 
 O workflow `.github/workflows/validar-catalogo.yml` constrói a imagem e executa validação Data Package v2, integridade CSV/FK, testes e comparação do SQLite em Docker. O backlog está incluído em `item_todo.csv` e `todo_url.csv`; edite esses CSV diretamente, mantendo a triagem explícita. A licença AGPL-3.0-or-later cobre o código do repositório; licenças de dados externos não são herdadas automaticamente e não foram declaradas como uma licença única do pacote.
 
@@ -128,12 +128,13 @@ artefato associado à revisão.
 
 ### Evidência local da implantação
 
-Em 12 de novembro de 2026, `just check` passou em um checkout temporário
-com o catálogo completo e 13 testes. Verificações separadas rejeitaram um
-workflow inválido, uma credencial sintética, um SQLite ausente do commit e
-um SQLite divergente. O banco publicado no checkout e o regenerado em
-contêiner Linux amd64 tiveram o mesmo SHA-256
-`45ea8d2ab770523bccbd72dd91c3e6365de7a76512073a93635056b597e99446`.
+Em 12 de novembro de 2026, o catálogo consolidado validou 22 recursos e
+30.852 linhas, incluindo 7.749 itens de inventário e 5.551 vínculos com
+fontes. Os 14 testes passaram em Docker. O SQLite regenerado para esta
+versão tem SHA-256
+`bbd23eb93c50c4d6ddafd577ca09dc14b93aaad03da09a1700021b2a0012ae7a`.
+Verificações separadas também rejeitaram workflow inválido, credencial
+sintética, SQLite ausente do commit e SQLite divergente.
 
 A auditoria manual local da árvore de trabalho gerou um SBOM CycloneDX
 com 147 componentes. O Trivy reportou 355 ocorrências, incluindo duas
@@ -142,6 +143,6 @@ exceções do Gitleaks ficam em `.config/gitleaks.toml` e distinguem IDs
 gerados, trechos de checksums e a referência pública de visualização
 Power BI dos demais dados.
 
-A validação no GitHub Actions ainda precisa de um PR somente de
-documentação e um disparo manual da auditoria com os arquivos desta
-entrega commitados.
+O check **Gate do catálogo** já passou no PR inicial; esta atualização
+acionará o mesmo gate novamente. A auditoria de vulnerabilidades é um
+workflow separado e seus achados não alteram os dados do catálogo.

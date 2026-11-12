@@ -79,9 +79,22 @@ class CatalogPackageTests(unittest.TestCase):
         )
         self.assertEqual(result["rows_fonte"], 4571)
         self.assertEqual(result["rows_inventario"], 20)
+        self.assertEqual(result["rows_inventario_item"], 7749)
         self.assertEqual(result["rows_registro_original"], 4591)
         self.assertEqual(result["rows_item_todo"], 21)
         self.assertEqual(result["rows_todo_url"], 17)
+        self.assertNotIn("cutover_audit", result)
+        self.assertEqual(
+            sum(row["fonte_id"] != NULL for row in self.read_table("inventario_item")),
+            5551,
+        )
+
+    @staticmethod
+    def read_table(name: str) -> list[dict[str, str]]:
+        with (ROOT / "data" / f"{name}.csv").open(
+            encoding="utf-8", newline=""
+        ) as stream:
+            return list(csv.DictReader(stream))
 
     def test_todo_entries_and_links_are_exported_pending(self):
         with (ROOT / "data" / "item_todo.csv").open(
@@ -115,6 +128,16 @@ class CatalogPackageTests(unittest.TestCase):
             first = Path(tmp) / "first"
             second = Path(tmp) / "second"
             migration(legacy, first)
+            self.assertTrue(
+                (
+                    first
+                    / ".local"
+                    / "share"
+                    / "osint-rondonia"
+                    / "migration_report.json"
+                ).is_file()
+            )
+            self.assertFalse((first / "data" / "migration_report.json").exists())
             first_files = {
                 p.relative_to(first).as_posix(): p.read_bytes()
                 for p in first.rglob("*")
@@ -160,13 +183,37 @@ class CatalogPackageTests(unittest.TestCase):
             self.assertFalse(list(root.rglob("*.json")))
             self.assertFalse((root / "TODO.md").exists())
             self.assertTrue((package / "datapackage.json").exists())
-            with (package / "data" / "cutover_audit.csv").open(
-                encoding="utf-8", newline=""
-            ) as stream:
+            with (
+                package / ".local" / "share" / "osint-rondonia" / "cutover_audit.csv"
+            ).open(encoding="utf-8", newline="") as stream:
                 audit = list(csv.DictReader(stream))
             self.assertEqual(len(audit), 3)
             self.assertTrue(all(row["deleted"] == "true" for row in audit))
+            descriptor = json.loads((package / "datapackage.json").read_text())
+            self.assertNotIn(
+                "cutover_audit",
+                {resource["name"] for resource in descriptor["resources"]},
+            )
+            self.assertFalse((package / "data" / "cutover_audit.csv").exists())
             validate(package)
+
+    def test_inventory_item_table_unifies_shapes_without_losing_values(self):
+        descriptor = json.loads((ROOT / "datapackage.json").read_text())
+        names = {resource["name"] for resource in descriptor["resources"]}
+        self.assertIn("inventario_item", names)
+        self.assertFalse(any(name.startswith("inventario_itens_") for name in names))
+        self.assertFalse(any((ROOT / "data").glob("inventario_itens_*.csv")))
+        resource = next(
+            r for r in descriptor["resources"] if r["name"] == "inventario_item"
+        )
+        self.assertEqual(len(resource["schema"]["fields"]), 68)
+        foreign_keys = resource["schema"]["foreignKeys"]
+        self.assertEqual(
+            {(tuple(fk["fields"]), fk["reference"]["resource"]) for fk in foreign_keys},
+            {(("inventario_id",), "inventario"), (("fonte_id",), "fonte")},
+        )
+        self.assertFalse((ROOT / "data" / "migration_report.json").exists())
+        self.assertFalse((ROOT / "data" / "cutover_audit.csv").exists())
 
     def test_sqlite_export_preserves_tables_relations_and_is_reproducible(self):
         with tempfile.TemporaryDirectory() as tmp:

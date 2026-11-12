@@ -182,6 +182,12 @@ def validate(
 def verify_originals_data(
     root: Path, tables: dict[str, list[dict[str, str]]], package_dir: Path
 ) -> None:
+    descriptor = json.loads(
+        (package_dir / "datapackage.json").read_text(encoding="utf-8")
+    )
+    resource_schemas = {
+        item["name"]: item["schema"] for item in descriptor["resources"]
+    }
     originals = {row["caminho_origem"]: row for row in tables["registro_original"]}
     discovered = {path.relative_to(root).as_posix() for path in discover_json(root)}
     if discovered != set(originals):
@@ -403,60 +409,53 @@ def verify_originals_data(
                 f"Elemento de lista divergente: {inventory_path}#{row['json_pointer']}"
             )
     inventory_item_count = 0
-    for resource_name, rows in tables.items():
-        if not resource_name.startswith("inventario_itens_"):
-            continue
-        schema = next(
-            item["schema"]
-            for item in json.loads(
-                (package_dir / "datapackage.json").read_text(encoding="utf-8")
-            )["resources"]
-            if item["name"] == resource_name
-        )
-        reserved = {
-            "id",
-            "inventario_id",
-            "caminho_colecao",
-            "json_pointer",
-            "arquivo_referenciado",
-            "fonte_id",
-        }
-        payload_fields = [
-            field for field in schema["fields"] if field["name"] not in reserved
-        ]
-        for row in rows:
-            inventory_path = inventories_by_id[row["inventario_id"]]
-            item = get_pointer(parsed[inventory_path], row["json_pointer"])
-            if not isinstance(item, dict):
-                fail(
-                    f"Ponteiro de item não aponta para objeto: {inventory_path}#{row['json_pointer']}"
-                )
-            for field_descriptor in payload_fields:
-                field = field_descriptor["name"]
-                source_field = field_descriptor.get("sourceField", field)
-                expected = item.get(source_field)
-                raw_value = row[field]
-                kind = field_descriptor["type"]
-                actual = (
-                    json.loads(raw_value)
-                    if field_descriptor.get("sourceEncoding") == "json"
-                    or isinstance(expected, (dict, list))
-                    else decode(raw_value, kind)
-                )
-                if expected != actual:
-                    fail(
-                        f"Item de inventário divergente: {inventory_path}#{row['json_pointer']} campo {field}"
-                    )
-            referenced = item.get("arquivo")
-            if referenced != (
-                None
-                if row["arquivo_referenciado"] == NULL
-                else row["arquivo_referenciado"]
+    item_schema = resource_schemas.get("inventario_item")
+    if item_schema is None:
+        fail("Recurso inventario_item ausente do Data Package")
+    reserved = {
+        "id",
+        "inventario_id",
+        "caminho_colecao",
+        "json_pointer",
+        "arquivo_referenciado",
+        "fonte_id",
+    }
+    payload_fields = [
+        field for field in item_schema["fields"] if field["name"] not in reserved
+    ]
+    for row in tables["inventario_item"]:
+        inventory_path = inventories_by_id[row["inventario_id"]]
+        item = get_pointer(parsed[inventory_path], row["json_pointer"])
+        if not isinstance(item, dict):
+            fail(
+                f"Ponteiro de item não aponta para objeto: {inventory_path}#{row['json_pointer']}"
+            )
+        for field_descriptor in payload_fields:
+            field = field_descriptor["name"]
+            source_field = field_descriptor.get("sourceField", field)
+            expected = item.get(source_field)
+            raw_value = row[field]
+            kind = field_descriptor["type"]
+            if raw_value == NULL:
+                actual = None
+            elif field_descriptor.get("sourceEncoding") == "json" or isinstance(
+                expected, (dict, list)
             ):
+                actual = json.loads(raw_value)
+            else:
+                actual = decode(raw_value, kind)
+            if expected != actual:
                 fail(
-                    f"Referência de arquivo divergente em {inventory_path}#{row['json_pointer']}"
+                    f"Item de inventário divergente: {inventory_path}#{row['json_pointer']} campo {field}"
                 )
-            inventory_item_count += 1
+        referenced = item.get("arquivo")
+        if referenced != (
+            None if row["arquivo_referenciado"] == NULL else row["arquivo_referenciado"]
+        ):
+            fail(
+                f"Referência de arquivo divergente em {inventory_path}#{row['json_pointer']}"
+            )
+        inventory_item_count += 1
     if inventory_item_count == 0:
         fail("Nenhum item de inventário foi migrado")
 
@@ -486,9 +485,7 @@ def verify_originals_data(
         }
         represented_items = {
             row["json_pointer"]
-            for table_name, rows in tables.items()
-            if table_name.startswith("inventario_itens_")
-            for row in rows
+            for row in tables["inventario_item"]
             if row["inventario_id"] == inventory_id
         }
 

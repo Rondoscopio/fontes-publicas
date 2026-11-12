@@ -20,7 +20,6 @@ O catálogo de fontes OSINT, ferramentas, APIs e inventários está disponível 
 
 - [SQLite relacional](data/exports/catalog.sqlite), com tabelas e chaves estrangeiras.
 - [CSV e Data Package v2](datapackage.json); os CSV em [data/](data/) são a fonte canônica.
-- [Auditoria do corte dos documentos legados](data/cutover_audit.csv).
 
 A arquitetura, as regras de manutenção e os comandos estão em [docs/catalogo-relacional.md](docs/catalogo-relacional.md).
 

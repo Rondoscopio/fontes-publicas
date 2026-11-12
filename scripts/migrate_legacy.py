@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import re
 import sys
@@ -343,11 +342,19 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
 
     if parse_errors:
         report = {"json_files": len(paths), "parse_errors": parse_errors}
-        (data_dir / "migration_report.json").write_text(
+        report_path = (
+            package_dir
+            / ".local"
+            / "share"
+            / "osint-rondonia"
+            / "migration_report.json"
+        )
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
         raise ValueError(
-            f"Encontrados {len(parse_errors)} JSON inválidos; relatório em data/migration_report.json"
+            f"Encontrados {len(parse_errors)} JSON inválidos; relatório em .local/share/osint-rondonia/migration_report.json"
         )
 
     source_docs = [doc for doc in docs if doc["kind"] == "fonte"]
@@ -546,7 +553,6 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
     inventory_metadata: list[dict[str, Any]] = []
     inventory_rows: list[dict[str, Any]] = []
     inventory_record_counts: Counter[str] = Counter()
-    collection_family_counts: Counter[str] = Counter()
     array_element_count = 0
 
     for doc in inventory_docs:
@@ -1067,66 +1073,49 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
         categories={"tipo_endereco": ["url", "arquivo"]},
     )
 
-    family_stats: list[dict[str, Any]] = []
-    for family, rows in sorted(families.items(), key=lambda pair: pair[0]):
-        family_token = hashlib.sha256(
-            canonical_json(family).encode("utf-8")
-        ).hexdigest()[:10]
-        name = f"inventario_itens_{family_token}"
-        payload_fields = list(family)
-        base_columns = {
-            "id",
-            "inventario_id",
-            "caminho_colecao",
-            "json_pointer",
-            "arquivo_referenciado",
-            "fonte_id",
-        }
-        output_names = {
-            field: (f"legado_{field}" if field in base_columns else field)
-            for field in payload_fields
-        }
-        columns = [
-            "id",
-            "inventario_id",
-            "caminho_colecao",
-            "json_pointer",
-            "arquivo_referenciado",
-            "fonte_id",
-        ] + [output_names[field] for field in payload_fields]
-        payload_types: dict[str, str] = {}
-        json_encoded_fields: set[str] = set()
-        for field in payload_fields:
-            all_values = [row.get(field) for row in rows]
-            if nested_value(all_values):
-                payload_types[output_names[field]] = "string"
-                json_encoded_fields.add(output_names[field])
-            else:
-                payload_types[output_names[field]] = field_type(all_values)
-        csv_rows = []
-        for row in rows:
-            csv_row = {
-                key: row.get(key)
-                for key in (
-                    "id",
-                    "inventario_id",
-                    "caminho_colecao",
-                    "json_pointer",
-                    "arquivo_referenciado",
-                    "fonte_id",
-                )
+    inventory_item_rows = [row for rows in families.values() for row in rows]
+    payload_fields = sorted({field for family in families for field in family})
+    base_columns = [
+        "id",
+        "inventario_id",
+        "caminho_colecao",
+        "json_pointer",
+        "arquivo_referenciado",
+        "fonte_id",
+    ]
+    output_names = {
+        field: (f"legado_{field}" if field in base_columns else field)
+        for field in payload_fields
+    }
+    columns = base_columns + [output_names[field] for field in payload_fields]
+    payload_types: dict[str, str] = {}
+    json_encoded_fields: set[str] = set()
+    for field in payload_fields:
+        all_values = [row.get(field) for row in inventory_item_rows]
+        if nested_value(all_values):
+            payload_types[output_names[field]] = "string"
+            json_encoded_fields.add(output_names[field])
+        else:
+            payload_types[output_names[field]] = field_type(all_values)
+    item_csv_rows = []
+    for row in inventory_item_rows:
+        csv_row = {key: row.get(key) for key in base_columns}
+        csv_row.update(
+            {
+                output_names[field]: canonical_json(row.get(field))
+                if output_names[field] in json_encoded_fields
+                and row.get(field) is not None
+                else row.get(field)
+                for field in payload_fields
             }
-            csv_row.update(
-                {
-                    output_names[field]: canonical_json(row.get(field))
-                    if output_names[field] in json_encoded_fields
-                    and row.get(field) is not None
-                    else row.get(field)
-                    for field in payload_fields
-                }
-            )
-            csv_rows.append(csv_row)
-        types = {
+        )
+        item_csv_rows.append(csv_row)
+    emit(
+        "inventario_item",
+        columns,
+        item_csv_rows,
+        ["id"],
+        {
             "id": "string",
             "inventario_id": "string",
             "caminho_colecao": "string",
@@ -1134,60 +1123,32 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
             "arquivo_referenciado": "string",
             "fonte_id": "string",
             **payload_types,
-        }
-        foreign_keys = [
-            fk("inventario_id", "inventario", "id"),
-            fk("fonte_id", "fonte", "id"),
-        ]
-        descriptions = {
+        },
+        {
             "id": "ID persistente do item de inventário",
             "inventario_id": "Documento de inventário que contém o item",
-            "caminho_colecao": "Caminho da coleção declarada no JSON",
-            "json_pointer": "Ponteiro para o item no JSON original",
-            "arquivo_referenciado": "Referência literal ao arquivo declarada pelo inventário",
-            "fonte_id": "Ficha vinculada somente quando arquivo_referenciado aponta exatamente para ela",
-        }
-        descriptions.update(
-            {
+            "caminho_colecao": "Caminho da coleção declarada no documento",
+            "json_pointer": "Ponteiro do item no documento original",
+            "arquivo_referenciado": "Referência literal a arquivo, quando declarada",
+            "fonte_id": "Ficha vinculada somente quando há referência exata verificável",
+            **{
                 output_names[
                     field
                 ]: f"Valor original do campo {field}; objetos/listas são JSON canônico"
                 for field in payload_fields
-            }
-        )
-        emit(
-            name,
-            columns,
-            csv_rows,
-            ["id"],
-            types,
-            descriptions,
-            foreign_keys,
-            ["id", "inventario_id", "json_pointer"],
-            {output_names[field]: field for field in payload_fields},
-            json_fields=json_encoded_fields,
-        )
-        collection_family_counts[name] = len(rows)
-        family_stats.append(
-            {
-                "resource": name,
-                "fields": list(family),
-                "records": len(rows),
-                "collections": sorted(
-                    {
-                        (
-                            next(
-                                path
-                                for path, inv_id in inventory_ids.items()
-                                if inv_id == row["inventario_id"]
-                            ),
-                            row["caminho_colecao"],
-                        )
-                        for row in rows
-                    }
-                ),
-            }
-        )
+            },
+        },
+        [fk("inventario_id", "inventario", "id"), fk("fonte_id", "fonte", "id")],
+        ["id", "inventario_id", "json_pointer"],
+        {output_names[field]: field for field in payload_fields},
+        json_fields=json_encoded_fields,
+    )
+    family_stats = {
+        "schema_families": len(families),
+        "resources": 1,
+        "records": len(inventory_item_rows),
+        "fields": payload_fields,
+    }
 
     # Original-document provenance index covers every scanned JSON exactly once.
     provenance_rows = []
@@ -1289,6 +1250,7 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
         "source_attribute_occurrences": attribute_report,
         "source_record_structures": len(source_structures),
         "inventory_collection_schema_families": len(families),
+        "inventory_item_resources": 1,
         "inventory_object_records": sum(len(rows) for rows in families.values()),
         "inventory_array_elements": array_element_count,
         "inventory_array_items_total": total_array_items,
@@ -1316,7 +1278,8 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
         "migration_notes": [
             "Nenhuma ficha foi deduplicada. URLs compartilhadas são mantidas como relações distintas.",
             "Os 20 inventários permanecem documentos compostos; itens aninhados são recursos de inventário, não novas fontes.",
-            "Os documentos JSON originais não foram reescritos; caminhos e hashes estão em registro_original.csv.",
+            "Os itens de inventário são consolidados em inventario_item.csv sem deduplicação.",
+            "Os JSON legados são removidos após o corte; caminhos e hashes permanecem em registro_original.csv.",
             "status_triagem permanece nulo quando não foi declarado na origem.",
         ],
     }
@@ -1328,7 +1291,7 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
         "description": (
             "Catálogo de fichas OSINT e inventários compostos de Rondônia em CSV relacionais. "
             "Dados de terceiros mantêm as condições e licenças declaradas em suas fontes; a licença AGPL do repositório aplica-se ao código. "
-            "O token \\N representa valor nulo. Strings vazias permanecem distintas. Os JSON legados são preservados nos caminhos originais."
+            "O token \\N representa valor nulo. Strings vazias permanecem distintas. Caminhos e hashes legados estão em registro_original.csv."
         ),
         "homepage": "https://github.com/Rondoscopio/osint-rondonia",
         "version": "1.0.0",
@@ -1352,7 +1315,10 @@ def migration(root: Path, package_dir: Path) -> dict[str, Any]:
         + "\n",
         encoding="utf-8",
     )
-    report_path = data_dir / "migration_report.json"
+    report_path = (
+        package_dir / ".local" / "share" / "osint-rondonia" / "migration_report.json"
+    )
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

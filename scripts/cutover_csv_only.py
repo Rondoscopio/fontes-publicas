@@ -12,7 +12,7 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-from catalogo import DATA_DIR, discover_json, resource, sha256_bytes
+from catalogo import DATA_DIR, discover_json, sha256_bytes
 from migrate_legacy import parse_todo
 from validate_package import decode, validate
 
@@ -102,64 +102,12 @@ def write_audit(path: Path, rows: list[dict[str, Any]]) -> None:
         writer.writerows(rows)
 
 
-def append_audit_resource(descriptor_path: Path, audit_path: Path) -> None:
-    descriptor = json.loads(descriptor_path.read_text(encoding="utf-8"))
-    if any(
-        resource_item.get("name") == "cutover_audit"
-        for resource_item in descriptor["resources"]
-    ):
-        raise ValueError(
-            "O descritor já contém cutover_audit; o corte já foi executado"
-        )
-    audit_resource = resource(
-        "cutover_audit",
-        f"{DATA_DIR}/cutover_audit.csv",
-        AUDIT_FIELDS,
-        {
-            "source_path": "string",
-            "sha256": "string",
-            "source_type": "string",
-            "source_record_count": "integer",
-            "inventory_item_count": "integer",
-            "array_element_count": "integer",
-            "metadata_count": "integer",
-            "url_count": "integer",
-            "category_relation_count": "integer",
-            "provenance_count": "integer",
-            "locality_count": "integer",
-            "triage_pending_count": "integer",
-            "verification": "string",
-            "deleted": "boolean",
-        },
-        {
-            "source_path": "Caminho relativo do arquivo verificado e removido",
-            "sha256": "Hash dos bytes antes da remoção",
-            "source_type": "Tipo do documento de origem",
-            "source_record_count": "Fichas fonte representadas",
-            "inventory_item_count": "Objetos de inventário representados",
-            "array_element_count": "Elementos de listas representados",
-            "metadata_count": "Metadados de inventário representados",
-            "url_count": "Relações de URL associadas",
-            "category_relation_count": "Relações de categoria associadas",
-            "provenance_count": "Relações de proveniência associadas",
-            "locality_count": "Relações de localidade associadas",
-            "triage_pending_count": "Itens de backlog em triagem pendente",
-            "verification": "Resultado da comparação valor a valor antes da remoção",
-            "deleted": "Arquivo de origem removido após cobertura confirmada",
-        },
-        ["source_path"],
-        required=set(AUDIT_FIELDS),
-    )
-    descriptor["resources"].append(audit_resource)
-    descriptor_path.write_text(
-        json.dumps(descriptor, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-
-
 def cutover(root: Path, package_dir: Path) -> dict[str, int]:
     root = root.resolve()
     package_dir = package_dir.resolve()
-    audit_path = package_dir / DATA_DIR / "cutover_audit.csv"
+    audit_path = (
+        package_dir / ".local" / "share" / "osint-rondonia" / "cutover_audit.csv"
+    )
     if audit_path.exists():
         raise ValueError(f"Registro de corte já existe: {audit_path}")
 
@@ -199,9 +147,8 @@ def cutover(root: Path, package_dir: Path) -> dict[str, int]:
         for row in read_rows(package_dir / DATA_DIR / "fonte_localidade.csv")
     )
     inventory_items: Counter[str] = Counter()
-    for path in sorted((package_dir / DATA_DIR).glob("inventario_itens_*.csv")):
-        for row in read_rows(path):
-            inventory_items[row["inventario_id"]] += 1
+    for row in read_rows(package_dir / DATA_DIR / "inventario_item.csv"):
+        inventory_items[row["inventario_id"]] += 1
     inventory_elements = Counter(
         row["inventario_id"]
         for row in read_rows(package_dir / DATA_DIR / "inventario_elemento.csv")
@@ -283,21 +230,21 @@ def cutover(root: Path, package_dir: Path) -> dict[str, int]:
             }
         )
 
-    # Persist the audit before deletion so interrupted runs retain a record. A rerun
-    # is refused if any legacy JSON remains, making partial deletion explicit.
+    # Keep the detailed audit outside the published and versioned catalog.
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
     write_audit(audit_path, audit_rows)
-    descriptor_path = package_dir / "datapackage.json"
-    append_audit_resource(descriptor_path, audit_path)
-    report_path = package_dir / DATA_DIR / "migration_report.json"
+    report_path = (
+        package_dir / ".local" / "share" / "osint-rondonia" / "migration_report.json"
+    )
     report_backup = report_path.read_bytes() if report_path.exists() else None
     if report_backup is not None:
         report = json.loads(report_backup)
         report["cutover"] = {
             "legacy_json_deleted": 0,
             "todo_markdown_deleted": False,
-            "audit_csv": "data/cutover_audit.csv",
+            "audit_csv": ".local/share/osint-rondonia/cutover_audit.csv",
             "csv_package_rows_before_audit": package_counts["rows"],
-            "status": "em andamento; ver cutover_audit.csv",
+            "status": "em andamento; ver o relatório de corte local",
         }
         report_path.write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -325,7 +272,7 @@ def cutover(root: Path, package_dir: Path) -> dict[str, int]:
         "todo_markdown_deleted": any(
             row["source_path"] == "TODO.md" for row in audit_rows
         ),
-        "audit_csv": "data/cutover_audit.csv",
+        "audit_csv": ".local/share/osint-rondonia/cutover_audit.csv",
         "csv_package_rows_before_audit": package_counts["rows"],
         "status": "concluído",
     }
