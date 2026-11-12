@@ -8,12 +8,14 @@ cat-021bff2bca9910,Related Awesome Lists,original
 cat-021feba15d063c,"Previdência, Transparência e Servidores",principal
 cat-0238e0427fdde0,Arrecadação,principal
 cat-024eca459ac61c,Educação / Microdados,principal
+cat-0290f7079e9443,"Fontes judiciais, antecedentes e sanções",curadoria
 cat-02aa1b7f9783fb,Transparência e Contas Públicas,principal
 cat-02d60e2ccb7dd1,Extração e processamento de dados,curadoria
 cat-032c01a43acda9,"Geoprocessamento, Cadastro Multifinalitário, Transporte e Hidrantes",principal
 cat-034e4c554a4293,Defesa e Segurança Pública,principal
 cat-036cf434669202,"Transparência, Despesas, Receitas, Convênios, Licitações, Remuneração",principal
 cat-03f74fd3220579,Finanças e Contratos,principal
+cat-04039c959c2c25,Certidões judiciais estaduais,curadoria
 cat-040acd8a2f0f94,"Estatística, Geografia e Demografia",principal
 cat-046d6e9d2f2a65,Registro Profissional e Financeiro,principal
 cat-04bb2730de47dc,"Transparência, Contratos, Convênios, Orçamento",principal
@@ -140,6 +142,7 @@ cat-340907318eef1c,Meta Search,original
 cat-342212df7d5f8a,Tributário e Fiscal,principal
 cat-34609194160ed8,Pesquisa e Desenvolvimento / Currículos,principal
 cat-34e15c55401844,Logística e Postagem,principal
+cat-352373a87c1d24,APIs e documentação de dados públicos,curadoria
 cat-35bcc48509a06d,Registro de Operações de Seguros,principal
 cat-365f77b03ec269,Meio Ambiente / Geoinformação,principal
 cat-3692714294b9e1,"Geociências, Hidrologia, Geologia Marinha, Geoquímica, Gestão Territorial",principal
@@ -160,6 +163,7 @@ cat-3b5481f9b40d31,Comunicações Processuais,principal
 cat-3b6e495597b96c,Legislação e Atos Oficiais,principal
 cat-3b780b449ae76e,Processo Eletrônico e Dados Judiciais,principal
 cat-3b92b6909d8171,Cálculos judiciais e financeiros,principal
+cat-3c4f58baa45f43,"Astronomia, catálogos celestes e dados orbitais",curadoria
 cat-3c8c6dac5e29cf,Institucional,principal
 cat-3de9e15f36b2a3,Saúde e Vigilância Sanitária,principal
 cat-3ea32f47239655,Major Social Networks,original
@@ -199,6 +203,7 @@ cat-48bd9f5059e58f,"Transparência, Processo Legislativo",principal
 cat-48e39877e4e7b0,"Trânsito, Veículos",principal
 cat-494da0777a47aa,"Ferramentas digitais, privacidade, software e mídia",principal
 cat-4972dec797753b,"Real-Time Search, Social Media Search, and General Social Media Tools",original
+cat-49e03781a54efd,"Sensoriamento remoto, clima e monitoramento ambiental",curadoria
 cat-4acfe6a1432d53,Transparência e Administração Pública,principal
 cat-4ae6786d145319,"Transparência, Pessoal, Orçamento, Contratos e Gestão Parlamentar",principal
 cat-4b52883dc294f9,"Processos, Certidões",principal
@@ -218,6 +223,7 @@ cat-4dfc5ca668d51b,Mobilidade / Transporte / GTFS,principal
 cat-4e5a9a34237800,Transparência e Institucional,principal
 cat-4e6753c6861b5d,Credenciamento e Catálogo,principal
 cat-4e9ecc188dd6e2,Jurídico,principal
+cat-4ea3c17a9d317d,Institutos e fontes de pesquisa,curadoria
 cat-4ee24a78575d90,Estatísticas e Pesquisas,principal
 cat-4fe7f30337c101,Jornalismo amazônico,principal
 cat-518b1af660dfb4,registro_oficial_de_pesquisa,principal
@@ -290,6 +296,7 @@ cat-6ec2a11f4fd4b7,"Transparência, Finanças e Despesas",principal
 cat-6ee40aeb123299,economia_agroambiental,principal
 cat-6f56fa97419170,Mercado de Capitais / Sistemas,principal
 cat-6f61897c96a93c,Pessoal/Transparência,principal
+cat-6f639e732e7ba9,Certidões municipais no Brasil,curadoria
 cat-6fab72eff70edc,"Economia, inflação e política monetária",principal
 cat-6fbe9ebf83582a,VPN Services,original
 cat-703422458e9777,OSINT RSS Feeds,original
@@ -397,6 +404,7 @@ cat-937243000284fd,Dados Abertos / Catálogo,principal
 cat-937e412959f11a,"Geologia, Geociências, Ocorrências Minerais, Geocronologia, Litoestratigrafia, Geoquímica",principal
 cat-9417a7fc33c1e2,Licitações e Obras Públicas,principal
 cat-9469996b08b927,Domínios e infraestrutura,curadoria
+cat-947fc1b602402e,Certidões e registros federais e nacionais,curadoria
 cat-94a0d0cd1535d8,Dados judiciais e Transparência,principal
 cat-94a22a1273afa5,Controle,principal
 cat-953362bdc28a3b,Defesa Agropecuária / Análises Laboratoriais,principal
@@ -428,6 +436,7 @@ cat-9fe076c981a0d9,"Dados abertos geocientíficos, SACE (Sistemas de Alerta Hidr
 cat-a00a9329da8c39,Processo Eletrônico,principal
 cat-a054fa3c0c57f1,licitações,principal
 cat-a059c3305a3eec,Administração Pública,principal
+cat-a0a49967e8da6b,Climatologia e anomalias de temperatura,curadoria
 cat-a0b1dc40f21c6b,Geospatial/Setor Elétrico,principal
 cat-a1259d2f29ee21,Jurisprudência,principal
 cat-a169aead7578e7,Geoinformação/IDE,principal
@@ -481,6 +490,7 @@ cat-b71e3ea597a0c0,Transporte e Logística,principal
 cat-b7811dec745d17,cidades_e_desigualdade,principal
 cat-b7dfb2fa25b2b2,Autenticação/SSO,principal
 cat-b7f5a8fc61c80a,Geoespacial / Petróleo e Gás,principal
+cat-b848e5b264f5cd,Fontes legislativas de Rondônia,curadoria
 cat-b863b00ac8baff,ciencia_tecnologia,principal
 cat-b8d489c0b18b19,Cadastro / Empresas,principal
 cat-b8fc996bfb4965,Mobilidade,principal
@@ -575,6 +585,7 @@ cat-dd3d7c208a7902,"Transparência, Despesas e Receitas",principal
 cat-dd5ed6abbc03d2,Transparência / Contratos / Licitações,principal
 cat-dd96981aefd02e,Gestão Financeira da União,principal
 cat-dda55cb7a62a00,Geociências / Patrimônio Arqueológico,principal
+cat-de6be946e87773,Tribunais judiciais e de contas,curadoria
 cat-deaf420cdbb245,Sistemas Internos,principal
 cat-deb14e4da5f826,Triagem de sanções e compliance,principal
 cat-dffcb558b5856a,Estatística / Dados Judiciais,principal
@@ -590,6 +601,7 @@ cat-e277aa1fd860a2,Empreendedorismo e Crédito,principal
 cat-e371563e4ffd08,Educação,principal
 cat-e3d4b629da2fda,Não especificada,original
 cat-e4b397e603d188,Processo Judicial Eletrônico / Acervo Digital,principal
+cat-e4c096aa7cf653,"Sismologia, clima espacial e indicadores oceânico-atmosféricos",curadoria
 cat-e52355c80701de,Gaming Platforms,original
 cat-e55c905c9c3b79,"Integração em Saúde, RNDS, Vacinação, Exames",principal
 cat-e5a49695e04036,Identidade Civil,principal
@@ -645,6 +657,8 @@ cat-f88a823f2e0cca,Gestão de Espaços Públicos,principal
 cat-f8b895528e83a3,Finanças e Crédito,principal
 cat-f8c0a62fc5ec8f,Dados Criminais / Feminicídio,principal
 cat-f93f8e141fe22c,Energia e Geoinformação,principal
+cat-f990205595e7de,Certidões de regularidade fiscal estadual,curadoria
+cat-fa5a2fb7bf3526,Certidões e serviços municipais de Rondônia,curadoria
 cat-fb29d09409ff14,Multitemático,principal
 cat-fb46f030b983a2,"Transparência, Despesas e Diárias",principal
 cat-fbb7b47a88904e,Geoinformação,principal

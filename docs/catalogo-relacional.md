@@ -10,6 +10,8 @@ Os [CSV históricos](https://github.com/Rondoscopio/osint-rondonia/tree/89b07610
 
 ## Filtrar fontes por categoria no SQLite
 
+Os temas de 14 inventários históricos foram incorporados como categorias de curadoria. As associações usam as fichas que tinham vínculo confirmado com esses temas, incluindo as 391 fichas incorporadas na migração. Listas de importação, seleção editorial sem tema específico e tarefas continuam documentadas no histórico e no README.
+
 Na tabela `categoria`, localize o `id` pelo campo `nome` e confira o `tipo_classificacao`. Vincule esse ID ao parâmetro `:categoria_id` no cliente SQLite.
 
 ```sql
