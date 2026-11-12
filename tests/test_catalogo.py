@@ -24,9 +24,9 @@ class CatalogPackageTests(unittest.TestCase):
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
         self.assertEqual(result["rows_fonte"], 4970)
-        self.assertEqual(result["rows"], 30599)
-        self.assertEqual(result["resources"], 13)
-        self.assertEqual(result["rows_registro_original"], 4571)
+        self.assertEqual(result["rows"], 26028)
+        self.assertEqual(result["resources"], 12)
+        self.assertNotIn("rows_registro_original", result)
         self.assertEqual(result["rows_categoria"], 678)
         self.assertEqual(result["rows_fonte_categoria"], 8199)
         self.assertEqual(result["rows_fonte_url"], 4964)
@@ -139,10 +139,7 @@ class CatalogPackageTests(unittest.TestCase):
             any(r["name"].startswith("inventario") for r in descriptor["resources"])
         )
         self.assertFalse(any((ROOT / "data").glob("inventario*.csv")))
-        records = self.read_table("registro_original")
-        self.assertNotIn("inventario_id", records[0])
-        self.assertNotIn("tipo_documento", records[0])
-        self.assertTrue(all(row["fonte_id"] != NULL for row in records))
+        self.assertFalse((ROOT / "data" / "registro_original.csv").exists())
 
         origins = {
             row["id"]
@@ -166,7 +163,6 @@ class CatalogPackageTests(unittest.TestCase):
             if row["categoria_id"] in curated
         }
         self.assertTrue(migrated.issubset(classified))
-        self.assertTrue(migrated.isdisjoint(row["fonte_id"] for row in records))
         self.assertEqual(
             {
                 row["status_triagem"]
@@ -196,17 +192,10 @@ class CatalogPackageTests(unittest.TestCase):
                 self.assertEqual(
                     connection.execute(
                         "SELECT name FROM sqlite_master WHERE type = 'table' "
-                        "AND name GLOB 'inventario*'"
+                        "AND (name GLOB 'inventario*' OR name = 'registro_original')"
                     ).fetchall(),
                     [],
                 )
-                columns = {
-                    row[1]
-                    for row in connection.execute(
-                        "PRAGMA table_info(registro_original)"
-                    )
-                }
-                self.assertTrue({"inventario_id", "tipo_documento"}.isdisjoint(columns))
 
                 category_id = "cat-fbea146eec84eb"
                 matches = connection.execute(

@@ -2,7 +2,7 @@
   "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
   "name": "osint-rondonia-catalogo-relacional",
   "title": "Catálogo OSINT Rondônia — tabelas relacionais",
-  "description": "Catálogo de fichas OSINT de Rondônia em CSV relacionais. Dados de terceiros mantêm as condições e licenças declaradas em suas fontes; a licença AGPL do repositório aplica-se ao código. O token \\N representa valor nulo; strings vazias permanecem distintas. Os documentos JSON legados foram removidos após conferência de cobertura; caminho e hash permanecem em registro_original.csv.",
+  "description": "Catálogo de fichas OSINT de Rondônia em CSV relacionais. Dados de terceiros mantêm as condições e licenças declaradas em suas fontes; a licença AGPL do repositório aplica-se ao código. O token \\N representa valor nulo; strings vazias permanecem distintas.",
   "homepage": "https://github.com/Rondoscopio/osint-rondonia",
   "version": "1.0.0",
   "profile": "data-package",
@@ -769,84 +769,6 @@
             "constraints": {
               "required": true
             }
-          }
-        ],
-        "missingValues": [
-          "\\N"
-        ],
-        "primaryKey": [
-          "id"
-        ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "fonte_id"
-            ],
-            "reference": {
-              "resource": "fonte",
-              "fields": [
-                "id"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "registro_original",
-      "type": "table",
-      "path": "data/registro_original.csv",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "dialect": {
-        "delimiter": ",",
-        "header": true,
-        "lineTerminator": "\r\n"
-      },
-      "schema": {
-        "$schema": "https://datapackage.org/profiles/2.0/tableschema.json",
-        "fields": [
-          {
-            "name": "id",
-            "type": "string",
-            "description": "ID persistente do documento original",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "caminho_origem",
-            "type": "string",
-            "description": "Caminho relativo do documento original",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "sha256",
-            "type": "string",
-            "description": "SHA-256 dos bytes originais",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "fonte_id",
-            "type": "string",
-            "description": "Ficha individual importada",
-            "constraints": {
-              "required": true
-            }
-          },
-          {
-            "name": "tipo_json_raiz",
-            "type": "string",
-            "description": "Tipo JSON da raiz"
-          },
-          {
-            "name": "quantidade_atributos_raiz",
-            "type": "integer",
-            "description": "Número de campos na raiz objeto"
           }
         ],
         "missingValues": [
