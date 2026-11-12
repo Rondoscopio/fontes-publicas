@@ -24,11 +24,11 @@ class CatalogPackageTests(unittest.TestCase):
             len(json.loads((ROOT / "datapackage.json").read_text())["resources"]),
         )
         self.assertEqual(result["rows_fonte"], 4970)
-        self.assertEqual(result["rows"], 25211)
+        self.assertEqual(result["rows"], 30599)
         self.assertEqual(result["resources"], 13)
         self.assertEqual(result["rows_registro_original"], 4571)
-        self.assertEqual(result["rows_categoria"], 673)
-        self.assertEqual(result["rows_fonte_categoria"], 2816)
+        self.assertEqual(result["rows_categoria"], 678)
+        self.assertEqual(result["rows_fonte_categoria"], 8199)
         self.assertEqual(result["rows_fonte_url"], 4964)
         self.assertEqual(result["rows_origem"], 48)
         self.assertEqual(result["rows_fonte_origem"], 3031)
@@ -114,13 +114,13 @@ class CatalogPackageTests(unittest.TestCase):
                 kind: sum(row["tipo_classificacao"] == kind for row in categories)
                 for kind in ("principal", "original", "curadoria")
             },
-            {"principal": 587, "original": 56, "curadoria": 30},
+            {"principal": 587, "original": 56, "curadoria": 35},
         )
         associations = self.read_table("fonte_categoria")
-        self.assertEqual(len(associations), 2816)
+        self.assertEqual(len(associations), 8199)
         self.assertEqual(
             len({(row["fonte_id"], row["categoria_id"]) for row in associations}),
-            2816,
+            8199,
         )
         category_role = {row["id"]: row["tipo_classificacao"] for row in categories}
         self.assertEqual(
@@ -130,7 +130,7 @@ class CatalogPackageTests(unittest.TestCase):
                 )
                 for role in ("principal", "original", "curadoria")
             },
-            {"principal": 1039, "original": 1201, "curadoria": 576},
+            {"principal": 1039, "original": 1201, "curadoria": 5959},
         )
 
     def test_inventory_tables_are_removed_and_source_provenance_is_preserved(self):
@@ -208,7 +208,7 @@ class CatalogPackageTests(unittest.TestCase):
                 }
                 self.assertTrue({"inventario_id", "tipo_documento"}.isdisjoint(columns))
 
-                category_id = self.read_table("fonte_categoria")[0]["categoria_id"]
+                category_id = "cat-fbea146eec84eb"
                 matches = connection.execute(
                     "SELECT f.id FROM fonte AS f "
                     "JOIN fonte_categoria AS fc ON fc.fonte_id = f.id "
@@ -221,6 +221,7 @@ class CatalogPackageTests(unittest.TestCase):
                     if row["categoria_id"] == category_id
                 ]
                 self.assertCountEqual(matches, expected)
+                self.assertEqual(len(matches), 200)
                 self.assertEqual(len(matches), len(set(matches)))
                 source = connection.execute(
                     "SELECT f.nome, f.status_triagem, COUNT(u.id) "
