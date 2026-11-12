@@ -451,6 +451,20 @@ class CatalogPackageTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "FK órfã"):
                 validate(package)
 
+    def test_empty_geographic_scope_fails(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            package = Path(tmp)
+            shutil.copy2(ROOT / "datapackage.json", package / "datapackage.json")
+            shutil.copytree(ROOT / "data", package / "data")
+            with (package / "data" / "abrangencia.csv").open(
+                "a", encoding="utf-8", newline=""
+            ) as stream:
+                csv.writer(stream).writerow(
+                    (abrangencia_id(False, False, [], []), "false", "false")
+                )
+            with self.assertRaisesRegex(ValueError, "Abrangência vazia"):
+                validate(package)
+
 
 if __name__ == "__main__":
     unittest.main()
