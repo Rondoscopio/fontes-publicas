@@ -406,7 +406,9 @@
           minZoom: 0.8,
           maxZoom: 10,
           attributionControl: false,
+          pixelRatio: Math.min(window.devicePixelRatio || 1, 2),
           renderWorldCopies: true,
+          maxTileCacheZoomLevels: 3,
           cooperativeGestures: true,
         });
         map.on('load', () => {
