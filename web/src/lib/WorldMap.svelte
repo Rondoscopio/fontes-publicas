@@ -6,6 +6,7 @@
   import LoadState from '$lib/LoadState.svelte';
   import { createMapViewModel } from '$lib/features/map/map.viewmodel.svelte';
   import { registerPmtiles } from '$lib/features/map/adapters/pmtiles-runtime';
+  import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
   import type { Map as MapLibreMap, MapLayerMouseEvent } from 'maplibre-gl';
   import type { Basemap, Projection } from '$lib/features/map/domain/types';
   import 'maplibre-gl/dist/maplibre-gl.css';
@@ -20,6 +21,7 @@
 
   let mapElement = $state<HTMLDivElement>();
   let mapLoaded = $state(false);
+  let worldReady = $state(false);
   let mapFailed = $state(false);
   let basemap = $state<Basemap>('borders');
   let projection = $state<Projection>('mercator');
@@ -64,6 +66,10 @@
   const number = new Intl.NumberFormat('pt-BR');
   const naturalEarthUrl =
     'https://www.naturalearthdata.com/about/terms-of-use/';
+  const worldBounds: [[number, number], [number, number]] = [
+    [-179.999, -85.05112878],
+    [179.999, 85.05112878],
+  ];
 
   function applyCoverage() {
     if (!map || !mapLoaded || !coverage) return;
@@ -261,10 +267,10 @@
         type: 'image',
         url: vm.assets.reliefImageUrl,
         coordinates: [
-          [-180, 85],
-          [180, 85],
-          [180, -85],
-          [-180, -85],
+          [-180, 85.05112878],
+          [180, 85.05112878],
+          [180, -85.05112878],
+          [-180, -85.05112878],
         ],
       });
       map.addLayer(
@@ -384,6 +390,7 @@
       try {
         const maplibre = await import('maplibre-gl');
         if (cancelled || !mapElement) return;
+        maplibre.setWorkerUrl(maplibreWorkerUrl);
         [worldArchiveUrl, municipalityArchiveUrl] = registerPmtiles(maplibre, [
           vm.assets.worldTilesUrl,
           vm.assets.brazilMunicipalityTilesUrl,
@@ -401,15 +408,26 @@
               },
             ],
           },
-          center: [0, 18],
-          zoom: 1.25,
-          minZoom: 0.8,
+          center: [0, 0],
+          zoom: 0,
+          minZoom: -1,
           maxZoom: 10,
           attributionControl: false,
           pixelRatio: Math.min(window.devicePixelRatio || 1, 2),
           renderWorldCopies: true,
           maxTileCacheZoomLevels: 3,
           cooperativeGestures: true,
+        });
+        map.on('error', (event) => {
+          const message = event.error.message.toLowerCase();
+          if (
+            message.includes('world-') ||
+            message.includes('worker failed to load') ||
+            message.includes('failed to fetch worker script') ||
+            message.includes('webgl')
+          ) {
+            mapFailed = true;
+          }
         });
         map.on('load', () => {
           if (!map) return;
@@ -511,6 +529,9 @@
             });
           }
           map.on('sourcedata', (event) => {
+            if (event.sourceId === 'world-countries' && event.isSourceLoaded) {
+              worldReady = true;
+            }
             if (event.sourceId === 'world-regions' && event.isSourceLoaded) {
               applyCoverage();
             }
@@ -522,15 +543,16 @@
               applyCoverage();
             }
           });
-          map.on('error', (event) => {
-            if (event.error.message.includes('world-')) mapFailed = true;
+          map.on('idle', () => {
+            if (map?.isSourceLoaded('world-countries')) worldReady = true;
           });
           mapLoaded = true;
           useBasemap(basemap);
+          const initialCamera = map.cameraForBounds(worldBounds, {
+            padding: map.getCanvas().clientWidth < 520 ? 16 : 24,
+          });
+          if (initialCamera) map.jumpTo(initialCamera);
           if (vm.coverage.isError) mapFailed = true;
-        });
-        map.on('error', (event) => {
-          if (event.error.message.includes('WebGL')) mapFailed = true;
         });
       } catch {
         mapFailed = true;
@@ -616,7 +638,7 @@
     bind:this={mapElement}
     class="world-map"
     aria-label="Mapa interativo mundial de países e regiões administrativas"
-    aria-busy={!mapLoaded}
+    aria-busy={!mapLoaded || !worldReady}
   ></div>
 
   {#if mapFailed}
@@ -858,6 +880,9 @@
     color: var(--text);
     font-size: 1.2rem;
     cursor: pointer;
+  }
+  .map-card {
+    padding: clamp(0.9rem, 2vw, 1.5rem);
   }
   .world-map {
     width: 100%;
