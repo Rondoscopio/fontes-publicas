@@ -155,29 +155,24 @@
           items={options.tipos}
           bind:value={draft.tipo}
         />
-        <div class="field">
-          <label for="triagem">Triagem</label><select
-            id="triagem"
-            bind:value={draft.triagem}
-          >
-            <option value="">Qualquer</option><option value="sem-registro"
-              >Sem registro</option
-            >
-            {#each options.triagens as item (item.id)}<option value={item.id}
-                >{item.nome}</option
-              >{/each}
-          </select>
-        </div>
-        <div class="field">
-          <label for="ordem">Ordem</label><select
-            id="ordem"
-            bind:value={draft.ordem}
-          >
-            <option value="asc">Nome (A–Z)</option><option value="desc"
-              >Nome (Z–A)</option
-            >
-          </select>
-        </div>
+        <Choice
+          id="triagem"
+          label="Triagem"
+          items={[
+            { id: 'sem-registro', nome: 'Sem registro' },
+            ...options.triagens,
+          ]}
+          bind:value={draft.triagem}
+        />
+        <Choice
+          id="ordem"
+          label="Ordem"
+          items={[
+            { id: 'asc', nome: 'Nome (A–Z)' },
+            { id: 'desc', nome: 'Nome (Z–A)' },
+          ]}
+          bind:value={draft.ordem}
+        />
         <Choice
           id="uf"
           label="UF de cobertura"

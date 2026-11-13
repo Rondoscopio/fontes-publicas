@@ -10,6 +10,7 @@
     value = $bindable(),
   }: { id: string; label: string; items: Item[]; value: string } = $props();
   let search = $state('');
+  let open = $state(false);
   const choices = $derived(
     items.filter((item) => fold(item.nome).includes(fold(search))).slice(0, 80),
   );
@@ -21,6 +22,7 @@
   <Combobox.Root
     type="single"
     bind:value
+    bind:open
     inputValue={search || selected?.nome || ''}
     onOpenChangeComplete={(open) => {
       if (!open) search = '';
@@ -30,6 +32,7 @@
       <Combobox.Input
         {id}
         placeholder="Qualquer"
+        onclick={() => (open = true)}
         oninput={(event) => {
           search = event.currentTarget.value;
         }}
@@ -45,9 +48,23 @@
           }}>×</button
         >
       {/if}
-      <Combobox.Trigger aria-label={'Mostrar opções de ' + label}
-        >⌄</Combobox.Trigger
+      <Combobox.Trigger
+        class="combo-trigger"
+        aria-label={'Mostrar opções de ' + label}
       >
+        <svg
+          class:expanded={open}
+          aria-hidden="true"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m5.5 7.5 4.5 4.5 4.5-4.5" />
+        </svg>
+      </Combobox.Trigger>
     </div>
     <Combobox.Portal>
       <Combobox.Content class="options" sideOffset={4}>

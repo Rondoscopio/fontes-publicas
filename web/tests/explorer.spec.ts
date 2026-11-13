@@ -36,6 +36,40 @@ test('HTML inicial, gráficos, e SQLite idêntico ao catálogo', async ({
   );
 });
 
+test('filtros abrem no clique e o chevron acompanha o estado', async ({
+  page,
+}) => {
+  await page.goto('./fontes/');
+
+  const type = page.getByRole('combobox', { name: 'Tipo de fonte' });
+  const typeChevron = page.locator('.combo-trigger svg').nth(1);
+  await expect(type).toHaveAttribute('aria-expanded', 'false');
+  await type.click();
+  await expect(type).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.getByRole('listbox')).toBeVisible();
+  await expect(typeChevron).toHaveClass(/expanded/);
+  await type.fill('ferramenta');
+  await expect(page.getByRole('option').first()).toBeVisible();
+  await page
+    .getByRole('button', { name: 'Mostrar opções de Tipo de fonte' })
+    .click();
+  await expect(page.getByRole('listbox')).toBeHidden();
+  await expect(typeChevron).not.toHaveClass(/expanded/);
+
+  const triage = page.getByRole('combobox', { name: 'Triagem' });
+  await triage.click();
+  await expect(
+    page.getByRole('option', { name: 'Sem registro' }),
+  ).toBeVisible();
+  await page.getByRole('option', { name: 'Sem registro' }).click();
+  await expect(triage).toHaveValue('Sem registro');
+
+  const order = page.getByRole('combobox', { name: 'Ordem' });
+  await order.click();
+  await page.getByRole('option', { name: 'Nome (Z–A)' }).click();
+  await expect(order).toHaveValue('Nome (Z–A)');
+});
+
 test('busca compartilhável, histórico, ficha e grafo navegável', async ({
   page,
 }) => {
