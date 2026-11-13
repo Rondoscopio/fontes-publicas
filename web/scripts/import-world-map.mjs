@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { createReadStream, createWriteStream } from 'node:fs';
-import { mkdir, readFile, stat, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, stat, unlink, writeFile } from 'node:fs/promises';
 import { Readable } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
 import AdmZip from 'adm-zip';
@@ -232,17 +233,52 @@ const rasterEntry = reliefArchive
 if (!rasterEntry) {
   throw new Error('O pacote de relevo Natural Earth não contém imagem raster.');
 }
+const sourceRasterPath = `${cacheDirectory}/relief-source.tif`;
+const projectedRasterPath = `${buildDirectory}/world-relief-3857.tif`;
+await writeFile(sourceRasterPath, rasterEntry.getData());
+const webMercatorLimit = 20037508.342789244;
+execFileSync(
+  'gdalwarp',
+  [
+    '-overwrite',
+    '-t_srs',
+    'EPSG:3857',
+    '-te',
+    String(-webMercatorLimit),
+    String(-webMercatorLimit),
+    String(webMercatorLimit),
+    String(webMercatorLimit),
+    '-ts',
+    '4096',
+    '4096',
+    '-r',
+    'bilinear',
+    '-wm',
+    '128',
+    '-wo',
+    'NUM_THREADS=2',
+    '-co',
+    'COMPRESS=DEFLATE',
+    '-co',
+    'PREDICTOR=2',
+    '-co',
+    'TILED=YES',
+    sourceRasterPath,
+    projectedRasterPath,
+  ],
+  { stdio: 'inherit' },
+);
+const projectedRelief = sharp(projectedRasterPath);
+const projectedMetadata = await projectedRelief.metadata();
+if (projectedMetadata.width !== 4096 || projectedMetadata.height !== 4096) {
+  throw new Error(
+    `O relevo reprojetado deveria medir 4096×4096; recebeu ${projectedMetadata.width}×${projectedMetadata.height}.`,
+  );
+}
 const reliefPath = `${outputDirectory}/${reliefSource.source.output}`;
-await sharp(rasterEntry.getData())
-  .resize({
-    width: 4096,
-    height: 2048,
-    fit: 'inside',
-    withoutEnlargement: true,
-  })
-  .webp({ quality: 82, effort: 5 })
-  .toFile(reliefPath);
+await projectedRelief.webp({ quality: 82, effort: 5 }).toFile(reliefPath);
+await Promise.all([unlink(sourceRasterPath), unlink(projectedRasterPath)]);
 
 console.log(
-  `Gerados ${countries.length} países, ${regions.length} regiões Admin-1 e relevo Natural Earth (${manifest.edition}).`,
+  `Gerados ${countries.length} países, ${regions.length} regiões Admin-1 e relevo Natural Earth reprojetado para EPSG:3857 (${manifest.edition}).`,
 );

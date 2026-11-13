@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
+import sharp from 'sharp';
 
 test('início, marca, mapa global, gráficos e SQLite idêntico ao catálogo', async ({
   page,
@@ -67,6 +68,34 @@ test('início, marca, mapa global, gráficos e SQLite idêntico ao catálogo', a
 test('mapa alterna projeção e camadas e mantém cobertura municipal acessível', async ({
   page,
 }) => {
+  const workerResponses: Array<{
+    url: string;
+    status: number;
+    contentType: string;
+  }> = [];
+  const mapResponses: Array<{ url: string; status: number }> = [];
+  const mapErrors: string[] = [];
+  page.on('response', (response) => {
+    if (response.url().includes('maplibre-gl-worker')) {
+      workerResponses.push({
+        url: response.url(),
+        status: response.status(),
+        contentType: response.headers()['content-type'] ?? '',
+      });
+    }
+    if (response.url().includes('/maps/world.pmtiles')) {
+      mapResponses.push({ url: response.url(), status: response.status() });
+    }
+  });
+  page.on('pageerror', (error) => mapErrors.push(error.message));
+  page.on('console', (message) => {
+    if (message.type() === 'error') mapErrors.push(message.text());
+  });
+  page.on('requestfailed', (request) => {
+    if (request.url().includes('maplibre-gl-worker')) {
+      mapErrors.push(`${request.url()}: ${request.failure()?.errorText}`);
+    }
+  });
   await page.goto('./');
   await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
   await expect(
@@ -76,12 +105,68 @@ test('mapa alterna projeção e camadas e mantém cobertura municipal acessível
   await expect(page.locator('.world-map canvas')).toBeVisible({
     timeout: 30000,
   });
+  await expect.poll(() => workerResponses.length).toBeGreaterThan(0);
+  expect(workerResponses[0].status).toBe(200);
+  expect(workerResponses[0].contentType).toMatch(/javascript/u);
+  expect(workerResponses[0].url).toContain(
+    '/osint-rondonia/_app/immutable/workers/maplibre-gl-worker-',
+  );
+  try {
+    await expect(page.locator('.world-map')).toHaveAttribute(
+      'aria-busy',
+      'false',
+      { timeout: 8000 },
+    );
+  } catch {
+    throw new Error(
+      `Mapa ainda carregando: ${JSON.stringify({ workerResponses, mapResponses, mapErrors })}`,
+    );
+  }
+  const mapInsets = await page.locator('.map-card').evaluate((card) => {
+    const map = card.querySelector('.world-map');
+    if (!map) throw new Error('Área cartográfica ausente.');
+    const cardBounds = card.getBoundingClientRect();
+    const mapBounds = map.getBoundingClientRect();
+    return {
+      left: mapBounds.left - cardBounds.left,
+      right: cardBounds.right - mapBounds.right,
+    };
+  });
+  expect(mapInsets.left).toBeGreaterThanOrEqual(14);
+  expect(mapInsets.right).toBeGreaterThanOrEqual(14);
+  const mapImage = await sharp(
+    await page.locator('.world-map canvas').screenshot(),
+  )
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+  let darkBorderPixels = 0;
+  for (
+    let offset = 0;
+    offset < mapImage.data.length;
+    offset += mapImage.info.channels
+  ) {
+    if (
+      mapImage.data[offset] < 150 &&
+      mapImage.data[offset + 1] < 165 &&
+      mapImage.data[offset + 2] < 155
+    ) {
+      darkBorderPixels += 1;
+    }
+  }
+  expect(darkBorderPixels).toBeGreaterThan(100);
   await page.getByRole('button', { name: 'Ver globo' }).click();
   await expect(page.getByRole('button', { name: 'Ver mapa 2D' })).toBeVisible();
 
-  const localReliefRequest = page.waitForRequest('**/world-relief.webp');
+  const localReliefRequest = page.waitForResponse((response) =>
+    response.url().includes('world-relief.webp'),
+  );
   await page.getByRole('button', { name: 'Relevo' }).click();
-  await localReliefRequest;
+  const reliefResponse = await localReliefRequest;
+  expect(reliefResponse.ok()).toBe(true);
+  const reliefDimensions = await sharp(await reliefResponse.body()).metadata();
+  expect([reliefDimensions.width, reliefDimensions.height]).toEqual([
+    4096, 4096,
+  ]);
 
   const satelliteRequests: string[] = [];
   await page.route('https://gibs.earthdata.nasa.gov/**', async (route) => {
@@ -127,6 +212,19 @@ test('mapa alterna projeção e camadas e mantém cobertura municipal acessível
   await row.getByRole('link').click();
   await expect(page).toHaveURL(/municipio=1100205/);
   await expect(page).toHaveURL(/nacional=1/);
+});
+
+test('falha do worker do mapa informa que a visualização não carregou', async ({
+  page,
+}) => {
+  await page.route(/maplibre-gl-worker.*\.js/u, (route) => route.abort());
+  await page.goto('./');
+  await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
+  await page.getByRole('button', { name: 'Carregar mapa interativo' }).click();
+  await expect(page.getByRole('alert')).toContainText(
+    'Não foi possível carregar a visualização interativa.',
+    { timeout: 30000 },
+  );
 });
 
 test('home adia SQLite e mapa; municípios só carregam ao entrar no Brasil', async ({
