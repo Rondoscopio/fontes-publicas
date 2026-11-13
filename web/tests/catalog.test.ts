@@ -26,6 +26,8 @@ test('rótulos técnicos são apresentados em português sem alterar os valores 
   assert.equal(displayLabel('ferramenta_ou_servico'), 'Ferramenta ou Serviço');
   assert.equal(displayLabel('portal_de_noticias'), 'Portal de Notícias');
   assert.equal(displayLabel('ciencias_sociais'), 'Ciências Sociais');
+  assert.equal(displayText('sessoes'), 'Sessões');
+  assert.equal(displayText('pendente'), 'Pendente');
   assert.equal(
     displayText('Tipo ferramenta_ou_servico'),
     'Tipo Ferramenta ou Serviço',

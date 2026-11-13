@@ -67,9 +67,12 @@ const exactLabels: Record<string, string> = {
   download_dados: 'Download de Dados',
   economia_agroambiental: 'Economia Agroambiental',
   ferramenta_ou_servico: 'Ferramenta ou Serviço',
+  arquivo: 'Arquivo',
   atas: 'Atas',
   relatorios: 'Relatórios',
   sessoes: 'Sessões',
+  portal: 'Portal',
+  video: 'Vídeo',
   original: 'Original',
   painel_transparencia: 'Painel de Transparência',
   pendente: 'Pendente',
@@ -99,6 +102,7 @@ export function displayLabel(value: string): string {
 }
 
 export function displayText(value: string): string {
+  if (exactLabels[value]) return exactLabels[value];
   return value.replace(
     /https?:\/\/[^\s<>()]+|[a-z0-9]+(?:_[a-z0-9]+)+/gi,
     (token) => (/^https?:\/\//i.test(token) ? token : displayLabel(token)),
