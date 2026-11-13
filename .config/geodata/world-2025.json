@@ -1,0 +1,32 @@
+{
+  "edition": "Natural Earth 1:10m Cultural 5.1.1 and 1:50m raster",
+  "license": "Public domain",
+  "attribution": "Made with Natural Earth.",
+  "sources": [
+    {
+      "name": "countries",
+      "source_url": "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_0_countries.zip",
+      "sha256": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6",
+      "shapefile": "ne_10m_admin_0_countries.shp",
+      "minimum_features": 250,
+      "output": "world-countries.geojson",
+      "simplify": "3%"
+    },
+    {
+      "name": "regions",
+      "source_url": "https://naturalearth.s3.amazonaws.com/10m_cultural/ne_10m_admin_1_states_provinces.zip",
+      "sha256": "efc59726337323058f9446210adc96673179cd344e053666ee3d28cb58ba2b05",
+      "shapefile": "ne_10m_admin_1_states_provinces.shp",
+      "minimum_features": 4500,
+      "output": "world-regions.geojson",
+      "simplify": "2%"
+    },
+    {
+      "name": "relief",
+      "source_url": "https://naturalearth.s3.amazonaws.com/50m_raster/NE1_50M_LC_SR.zip",
+      "sha256": "991bade88d0b14a2a0ba080ce40e03ba7e2dbe96454ec319f77a7c25b17c8c3d",
+      "raster": true,
+      "output": "world-relief.webp"
+    }
+  ]
+}

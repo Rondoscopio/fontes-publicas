@@ -128,6 +128,10 @@ test('mapa expande UFs, não duplica a ficha e inclui nacionais só quando solic
   const baselineNational = baseline.coverageMap(true);
   const countFor = (map: ReturnType<typeof baseline.coverageMap>, id: string) =>
     map.municipalities.find((item) => item.id === id)?.total ?? 0;
+  const stateCountFor = (
+    map: ReturnType<typeof baseline.coverageMap>,
+    sigla: string,
+  ) => map.states.find((item) => item.sigla === sigla)?.total ?? 0;
   const db = new sqlite.Database(bytes);
   db.run(`
     INSERT INTO fonte (id, nome) VALUES
@@ -158,6 +162,15 @@ test('mapa expande UFs, não duplica a ficha e inclui nacionais só quando solic
   assert.equal(portoVelho.total, countFor(baselineRegional, '1100205') + 2);
   assert.equal(altaFloresta.total, countFor(baselineRegional, '1100015') + 1);
   assert.equal(regional.national, false);
+  assert.equal(regional.states.length, 27);
+  assert.equal(
+    stateCountFor(regional, 'RO'),
+    stateCountFor(baselineRegional, 'RO') + 2,
+  );
+  assert.equal(
+    stateCountFor(regional, 'AC'),
+    stateCountFor(baselineRegional, 'AC'),
+  );
 
   const all = fixture.coverageMap(true);
   assert.equal(all.municipalities.length, 5571);
@@ -168,6 +181,14 @@ test('mapa expande UFs, não duplica a ficha e inclui nacionais só quando solic
   assert.equal(
     all.municipalities.find(({ id }) => id === '1100015')?.total,
     countFor(baselineNational, '1100015') + 2,
+  );
+  assert.equal(
+    stateCountFor(all, 'RO'),
+    stateCountFor(baselineNational, 'RO') + 3,
+  );
+  assert.equal(
+    stateCountFor(all, 'AC'),
+    stateCountFor(baselineNational, 'AC') + 1,
   );
 
   const municipality = {

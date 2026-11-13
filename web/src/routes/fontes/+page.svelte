@@ -2,9 +2,9 @@
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
-  import { catalogOptions, query } from '$lib/client';
+  import { createSourcesViewModel } from '$lib/features/sources/sources.viewmodel.svelte';
   import { PAGE_SIZE } from '$lib/catalog';
-  import type { Detail, Filters, Options, SearchResult } from '$lib/catalog';
+  import type { Filters } from '$lib/catalog';
   import { sources } from '$lib/links';
   import Choice from '$lib/Choice.svelte';
   import LoadState from '$lib/LoadState.svelte';
@@ -27,6 +27,16 @@
     ordem: params.get('ordem') === 'desc' ? 'desc' : 'asc',
     pagina: Math.max(1, Number.parseInt(params.get('pagina') ?? '1', 10) || 1),
   });
+  const vm = createSourcesViewModel(
+    () => filters,
+    () => detailId,
+  );
+  const result = $derived(vm.search.data);
+  const options = $derived(vm.options.data);
+  const detail = $derived(vm.detail.data);
+  const failed = $derived(
+    detailId ? vm.detail.isError : vm.search.isError || vm.options.isError,
+  );
   let draft = $state<Filters>({
     q: '',
     categoria: '',
@@ -45,40 +55,8 @@
     pagina: currentPage > 1 ? currentPage : undefined,
     ordem: value.ordem === 'desc' ? 'desc' : '',
   });
-  let result = $state<SearchResult>();
-  let options = $state<Options>();
-  let detail = $state<Detail | null>();
-  let failed = $state(false);
-  let attempt = $state(0);
   $effect(() => {
     draft = { ...filters };
-  });
-  $effect(() => {
-    void attempt;
-    failed = false;
-    result = undefined;
-    detail = undefined;
-    let current = true;
-    const id = detailId;
-    const active = filters;
-    const load = id
-      ? query('detail', id).then((value) => {
-          if (current) detail = value;
-        })
-      : Promise.all([catalogOptions(), query('search', active)]).then(
-          ([items, found]) => {
-            if (current) {
-              options = items;
-              result = found;
-            }
-          },
-        );
-    load.catch(() => {
-      if (current) failed = true;
-    });
-    return () => {
-      current = false;
-    };
   });
   const totalPages = $derived(Math.ceil((result?.total ?? 0) / PAGE_SIZE));
   const list = $derived(options?.listas.find(({ id }) => id === draft.lista));
@@ -109,7 +87,10 @@
   {:else if detail}
     <SourceDetail {detail} />
   {:else}
-    <LoadState {failed} retry={() => attempt++} />
+    <LoadState
+      failed={vm.detail.isError}
+      retry={() => void vm.detail.refetch()}
+    />
   {/if}
 {:else}
   <div class="page-heading">
@@ -272,6 +253,12 @@
       {/if}
     </section>
   {:else}
-    <LoadState {failed} retry={() => attempt++} />
+    <LoadState
+      {failed}
+      retry={() => {
+        void vm.search.refetch();
+        void vm.options.refetch();
+      }}
+    />
   {/if}
 {/if}

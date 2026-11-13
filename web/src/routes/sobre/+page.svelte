@@ -1,21 +1,19 @@
 <script lang="ts">
   import { resolve } from '$app/paths';
+  import { createInstitutionalViewModel } from '$lib/features/institutional/institutional.viewmodel';
+  const vm = createInstitutionalViewModel('sobre');
 </script>
 
 <svelte:head>
-  <title>Sobre o catálogo · Rondoscópio</title>
-  <meta
-    name="description"
-    content="Conheça o propósito, o escopo e os limites do catálogo OSINT Rondônia."
-  />
+  <title>{vm.title}</title>
+  <meta name="description" content={vm.description} />
 </svelte:head>
 
 <div class="page-heading">
-  <p class="eyebrow">O projeto</p>
-  <h1>Sobre o catálogo</h1>
+  <p class="eyebrow">{vm.eyebrow}</p>
+  <h1>{vm.heading}</h1>
   <p>
-    O OSINT Rondônia reúne fontes públicas, ferramentas e referências para
-    pesquisa, jornalismo, investigação e fiscalização cidadã.
+    {vm.lead}
   </p>
 </div>
 

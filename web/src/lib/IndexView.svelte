@@ -1,14 +1,12 @@
 <script lang="ts">
-  import { catalogOptions } from './client';
-  import { fold, PAGE_SIZE } from './catalog';
-  import type { Options } from './catalog';
-  import type { Category, Item } from './catalog';
+  import { createIndexViewModel } from '$lib/features/index/index.viewmodel.svelte';
   import { graphLink, sources } from './links';
   import { displayLabel, displayText } from './labels';
   import Choice from './Choice.svelte';
   import LoadState from './LoadState.svelte';
 
   let { kind }: { kind: 'categorias' | 'listas' | 'abrangencia' } = $props();
+  const vm = createIndexViewModel(() => kind);
   const copy = {
     categorias: [
       'Categorias',
@@ -23,58 +21,7 @@
       'Explore fontes por cobertura territorial declarada.',
     ],
   };
-  let options = $state<Options>();
-  let failed = $state(false);
-  let attempt = $state(0);
-  let search = $state('');
-  let uf = $state('');
-  let municipality = $state('');
-  let nationwide = $state(false);
-  let limit = $state(PAGE_SIZE);
-  $effect(() => {
-    void attempt;
-    failed = false;
-    let current = true;
-    catalogOptions()
-      .then((value) => {
-        if (current) options = value;
-      })
-      .catch(() => {
-        if (current) failed = true;
-      });
-    return () => {
-      current = false;
-    };
-  });
-  type Entry = Item & {
-    tipo_classificacao?: string;
-    categorias?: Category[];
-  };
-  const entries = $derived.by((): Entry[] => {
-    if (!options) return [];
-    if (kind === 'categorias') return options.categorias;
-    if (kind === 'listas') return options.listas;
-    return options.ufs;
-  });
-  const rows = $derived(
-    entries.filter(
-      (item) =>
-        fold(displayText(item.nome)).includes(fold(search.trim())) ||
-        fold(item.nome).includes(fold(search.trim())),
-    ),
-  );
-  const municipalities = $derived(
-    options?.municipios
-      .filter((item) => !uf || item.uf === uf)
-      .map((item) => ({
-        ...item,
-        nome: uf
-          ? item.nome
-          : item.nome +
-            ' / ' +
-            options?.ufs.find(({ id }) => id === item.uf)?.nome,
-      })) ?? [],
-  );
+  const options = $derived(vm.options.data);
 </script>
 
 <svelte:head><title>{copy[kind][0]} · OSINT Rondônia</title></svelte:head>
@@ -91,30 +38,25 @@
           id="estado"
           label="UF"
           items={options.ufs}
-          bind:value={
-            () => uf,
-            (value) => {
-              uf = value;
-              municipality = '';
-            }
-          }
+          bind:value={() => vm.uf, (value) => (vm.uf = value)}
         />
         <Choice
           id="cidade"
           label="Município"
-          items={municipalities}
-          bind:value={municipality}
+          items={vm.municipalities}
+          bind:value={vm.municipality}
         />
         <label class="check"
-          ><input type="checkbox" bind:checked={nationwide} /> Incluir cobertura nacional</label
+          ><input type="checkbox" bind:checked={vm.nationwide} /> Incluir cobertura
+          nacional</label
         >
       </div>
       <a
         class="button primary"
         href={sources({
-          uf,
-          municipio: municipality,
-          nacional: nationwide ? '1' : '',
+          uf: vm.uf,
+          municipio: vm.municipality,
+          nacional: vm.nationwide ? '1' : '',
         })}>Ver fontes →</a
       >
     </div>
@@ -123,21 +65,14 @@
     <label for="indice"
       >{kind === 'abrangencia' ? 'Buscar UF' : 'Buscar pelo nome'}</label
     >
-    <input
-      id="indice"
-      type="search"
-      bind:value={search}
-      oninput={() => {
-        limit = PAGE_SIZE;
-      }}
-    />
+    <input id="indice" type="search" bind:value={vm.search} />
   </div>
   <p class="muted" aria-live="polite">
-    {rows.length}
-    {rows.length === 1 ? 'resultado' : 'resultados'}
+    {vm.resultCount}
+    {vm.resultCount === 1 ? 'resultado' : 'resultados'}
   </p>
   <ul class="index-list">
-    {#each rows.slice(0, limit) as item (item.id)}
+    {#each vm.visibleRows as item (item.id)}
       <li class="card">
         <div>
           <h2>
@@ -176,12 +111,12 @@
       </li>
     {/each}
   </ul>
-  {#if rows.length > limit}<button
-      class="button"
-      onclick={() => {
-        limit += PAGE_SIZE;
-      }}>Mostrar mais</button
+  {#if vm.hasMore}<button class="button" onclick={vm.loadMore}
+      >Mostrar mais</button
     >{/if}
 {:else}
-  <LoadState {failed} retry={() => attempt++} />
+  <LoadState
+    failed={vm.options.isError}
+    retry={() => void vm.options.refetch()}
+  />
 {/if}

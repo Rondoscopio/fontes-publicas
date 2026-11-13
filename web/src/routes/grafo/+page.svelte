@@ -2,9 +2,9 @@
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
   import { page } from '$app/state';
-  import { query } from '$lib/client';
+  import { createGraphViewModel } from '$lib/features/graph/graph.viewmodel.svelte';
   import { GRAPH_LIMIT } from '$lib/catalog';
-  import type { Graph, GraphNode, NodeKind } from '$lib/catalog';
+  import type { GraphNode, NodeKind } from '$lib/catalog';
   import { graphLink, sources } from '$lib/links';
   import { displayText } from '$lib/labels';
   import LoadState from '$lib/LoadState.svelte';
@@ -14,43 +14,26 @@
   );
   const kind = $derived(params.get('tipo'));
   const id = $derived(params.get('id') ?? '');
+  const nodeKind = $derived(
+    kind === 'fonte' || kind === 'categoria' || kind === 'origem' ? kind : '',
+  );
   const currentPage = $derived(
     Math.max(
       1,
       Math.min(10000, Number.parseInt(params.get('pagina') ?? '1', 10) || 1),
     ),
   );
-  let graph = $state<Graph | null>();
-  let failed = $state(false);
-  let attempt = $state(0);
+  const vm = createGraphViewModel(
+    () => nodeKind,
+    () => id,
+    () => (currentPage - 1) * GRAPH_LIMIT,
+  );
+  const graph = $derived(nodeKind && id ? vm.graph.data : null);
+  const failed = $derived(vm.graph.isError);
   let canvas = $state<HTMLDivElement>();
   let visualFailed = $state(false);
   const key = (node: GraphNode) => node.kind + ':' + node.id;
   const names = { fonte: 'Fonte', categoria: 'Categoria', origem: 'Origem' };
-
-  $effect(() => {
-    void attempt;
-    graph = undefined;
-    failed = false;
-    if (
-      !id ||
-      (kind !== 'fonte' && kind !== 'categoria' && kind !== 'origem')
-    ) {
-      graph = null;
-      return;
-    }
-    let current = true;
-    query('graph', kind, id, (currentPage - 1) * GRAPH_LIMIT)
-      .then((value) => {
-        if (current) graph = value;
-      })
-      .catch(() => {
-        if (current) failed = true;
-      });
-    return () => {
-      current = false;
-    };
-  });
 
   $effect(() => {
     const container = canvas;
@@ -231,5 +214,5 @@
     Selecione uma fonte ou categoria para abrir suas relações.
   </p>
 {:else}
-  <LoadState {failed} retry={() => attempt++} />
+  <LoadState {failed} retry={() => void vm.graph.refetch()} />
 {/if}

@@ -43,9 +43,15 @@ web-add-dev *ARGS:
     {{compose}} run --rm web-deps pnpm install --store-dir /pnpm/store
     {{compose}} run --rm web-deps pnpm add --store-dir /pnpm/store --save-dev --save-exact {{ARGS}}
 
-import-map: web-image
+web-map-image:
+    {{compose}} build web-map-import
+
+import-map: web-map-image
     mkdir -p .cache/geodata web/static/maps
     {{compose}} run --rm web-map-import
+
+web-map-hashes: web-map-image
+    {{compose}} run --rm --entrypoint sh web-map-import -euc 'sha256sum /output/maps/municipios-brasil.pmtiles /output/maps/world-relief.webp /output/maps/world.pmtiles'
 
 web-dev: web-image
     mkdir -p .local/web-dev-kit .local/web-vite-temp .local/web-vite-cache

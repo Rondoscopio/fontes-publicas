@@ -4,5 +4,5 @@
   "sha256": "840bbe6f73726ef9d1460ce49fdfe01a278935c41180d3c893e25ca21db083bd",
   "id_field": "CD_MUN",
   "expected_features": 5571,
-  "output": "web/static/maps/municipios-brasil.topojson"
+  "vector_tiles": "web/static/maps/municipios-brasil.pmtiles"
 }
