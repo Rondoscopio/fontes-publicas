@@ -30,6 +30,7 @@ test('início, marca, mapa, gráficos e SQLite idêntico ao catálogo', async ({
   await expect(
     page.getByRole('navigation', { name: 'Navegação do catálogo' }),
   ).toBeVisible();
+  await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
   await expect(
     page.getByRole('heading', { name: 'Fontes por município' }),
   ).toBeVisible();
@@ -66,6 +67,10 @@ test('mapa tem alternativa tabular, seleção municipal e camada nacional opcion
   page,
 }) => {
   await page.goto('./');
+  await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
+  await expect(
+    page.getByRole('heading', { name: 'Fontes por município' }),
+  ).toBeVisible();
   await expect(page.locator('.municipality-shape')).toHaveCount(5571, {
     timeout: 30000,
   });
@@ -85,6 +90,44 @@ test('mapa tem alternativa tabular, seleção municipal e camada nacional opcion
     .click({ force: true });
   await expect(page).toHaveURL(/municipio=1100205/);
   await expect(page).toHaveURL(/nacional=1/);
+});
+
+test('home adia SQLite, WASM e TopoJSON até as seções entrarem na tela', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1280, height: 280 });
+  const requests = new Set<string>();
+  page.on('request', (request) => {
+    const url = request.url();
+    if (
+      url.includes('.sqlite') ||
+      url.includes('sql-wasm') ||
+      url.includes('municipios-brasil.topojson')
+    ) {
+      requests.add(url);
+    }
+  });
+
+  await page.goto('./');
+  await expect(
+    page.getByRole('heading', {
+      name: 'Fontes abertas para explorar Rondônia.',
+    }),
+  ).toBeVisible();
+  await page.waitForTimeout(300);
+  expect(requests.size).toBe(0);
+
+  await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
+  await expect(
+    page.getByRole('heading', { name: 'Fontes por município' }),
+  ).toBeVisible();
+  await expect(page.locator('.municipality-shape')).toHaveCount(5571, {
+    timeout: 30000,
+  });
+  expect(
+    [...requests].some((url) => url.includes('municipios-brasil.topojson')),
+  ).toBe(true);
+  expect([...requests].some((url) => url.includes('.sqlite'))).toBe(true);
 });
 
 test('filtros abrem no clique e o chevron acompanha o estado', async ({
