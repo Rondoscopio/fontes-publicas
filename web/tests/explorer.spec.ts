@@ -13,6 +13,20 @@ test('início, marca, mapa, gráficos e SQLite idêntico ao catálogo', async ({
   await expect(
     page.getByRole('link', { name: 'Rondoscópio — OSINT Rondônia, início' }),
   ).toBeVisible();
+  const commitLink = page.getByRole('link', { name: 'Commit 0123456' });
+  await expect(commitLink).toHaveAttribute(
+    'href',
+    'https://github.com/Rondoscopio/osint-rondonia/commit/0123456789abcdef0123456789abcdef01234567',
+  );
+  await expect(commitLink).toHaveAttribute('target', '_blank');
+  await expect(commitLink).toHaveAttribute('rel', 'noopener noreferrer');
+  const buildLink = page.getByRole('link', { name: 'Build #42' });
+  await expect(buildLink).toHaveAttribute(
+    'href',
+    'https://github.com/Rondoscopio/osint-rondonia/actions/runs/4242',
+  );
+  await expect(buildLink).toHaveAttribute('target', '_blank');
+  await expect(buildLink).toHaveAttribute('rel', 'noopener noreferrer');
   await expect(
     page.getByRole('navigation', { name: 'Navegação do catálogo' }),
   ).toBeVisible();
