@@ -8,9 +8,21 @@ const database = readFileSync(
 );
 const filename =
   'catalog.' + createHash('sha256').update(database).digest('hex') + '.sqlite';
+const commitSha = process.env.CATALOG_BUILD_COMMIT_SHA ?? '';
+const runNumber = process.env.CATALOG_BUILD_RUN_NUMBER ?? '';
+const runUrl = process.env.CATALOG_BUILD_RUN_URL ?? '';
+const repositoryUrl = 'https://github.com/Rondoscopio/osint-rondonia';
 
 export default defineConfig({
-  define: { __CATALOG_FILE__: JSON.stringify(filename) },
+  define: {
+    __CATALOG_FILE__: JSON.stringify(filename),
+    __BUILD_INFO__: JSON.stringify({
+      commit: commitSha.slice(0, 7),
+      commitUrl: commitSha ? `${repositoryUrl}/commit/${commitSha}` : '',
+      runNumber,
+      runUrl,
+    }),
+  },
   plugins: [
     {
       name: 'catalog-database',

@@ -89,6 +89,10 @@ jobs:
         with:
           tool: just@1.57.0
       - name: Build SSG
+        env:
+          CATALOG_BUILD_COMMIT_SHA: ${{ github.sha }}
+          CATALOG_BUILD_RUN_NUMBER: ${{ github.run_number }}
+          CATALOG_BUILD_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: just web-build
       - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b  # v4
         with:

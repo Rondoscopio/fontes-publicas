@@ -131,6 +131,9 @@ services:
       target: web-check
     environment:
       SITE_BASE_PATH: /osint-rondonia
+      CATALOG_BUILD_COMMIT_SHA: 0123456789abcdef0123456789abcdef01234567
+      CATALOG_BUILD_RUN_NUMBER: "42"
+      CATALOG_BUILD_RUN_URL: https://github.com/Rondoscopio/osint-rondonia/actions/runs/4242
     network_mode: none
     shm_size: 256mb
     tmpfs:
@@ -170,6 +173,9 @@ services:
     user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
     environment:
       SITE_BASE_PATH: ${SITE_BASE_PATH:-}
+      CATALOG_BUILD_COMMIT_SHA: ${CATALOG_BUILD_COMMIT_SHA:-}
+      CATALOG_BUILD_RUN_NUMBER: ${CATALOG_BUILD_RUN_NUMBER:-}
+      CATALOG_BUILD_RUN_URL: ${CATALOG_BUILD_RUN_URL:-}
       HOME: /tmp
     volumes:
       - ../.local:/output

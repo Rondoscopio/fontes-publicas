@@ -11,6 +11,7 @@
   import SidebarNav from '$lib/SidebarNav.svelte';
 
   let { children } = $props();
+  const buildInfo = __BUILD_INFO__;
   let theme = $state<'light' | 'dark'>(
     typeof document !== 'undefined' &&
       document.documentElement.dataset.theme === 'dark'
@@ -186,6 +187,22 @@
       </main>
       <footer class="site-footer">
         <span>Rondoscópio · OSINT Rondônia</span>
+        <div class="build-meta" aria-label="Identificação da compilação">
+          {#if buildInfo.commit && buildInfo.commitUrl}
+            <a
+              href={buildInfo.commitUrl}
+              target="_blank"
+              rel="noopener noreferrer">Commit {buildInfo.commit}</a
+            >
+          {/if}
+          {#if buildInfo.runNumber && buildInfo.runUrl}
+            <a href={buildInfo.runUrl} target="_blank" rel="noopener noreferrer"
+              >Build #{buildInfo.runNumber}</a
+            >
+          {:else}
+            <span>Build local</span>
+          {/if}
+        </div>
         <nav aria-label="Informações do projeto">
           <a href={resolve('/sobre/')}>Sobre</a>
           <a href={resolve('/legal/')}>Legal</a>
