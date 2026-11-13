@@ -3,4 +3,8 @@
 .local
 **/__pycache__
 **/*.py[cod]
-data/exports/catalog.sqlite
+web/node_modules
+web/.svelte-kit
+web/build
+web/playwright-report
+web/test-results

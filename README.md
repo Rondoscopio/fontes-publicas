@@ -11,19 +11,20 @@ Catálogo público de fontes de dados, ferramentas e referências para pesquisa,
 
 ## Catálogo de dados
 
-O catálogo atende pesquisadores, jornalistas, desenvolvedores e pessoas que acompanham a gestão pública. A distribuição atual inclui fontes, ferramentas, APIs, categorias, listas e cobertura territorial. A interface web está planejada. Os endereços podem mudar e parte das fichas ainda aguarda triagem.
+O catálogo atende pesquisadores, jornalistas, desenvolvedores e pessoas que acompanham a gestão pública. A distribuição atual inclui fontes, ferramentas, APIs, categorias, listas e cobertura territorial. A interface web consulta o SQLite no navegador; os endereços podem mudar e parte das fichas ainda aguarda triagem.
 
 - **SQLite:** baixe [catalog.sqlite](data/exports/catalog.sqlite), abra em um cliente SQLite e comece pelas tabelas `fonte` e `categoria`.
 - **CSV:** use os [arquivos em data/](data/) e o [Data Package v2](datapackage.json), que descreve campos e chaves.
-- **Desenvolvimento:** com Docker Compose e Just instalados, use `just check` para validar o catálogo. O [guia](docs/catalogo-relacional.md) tem consultas, critérios de revisão e comandos.
+- **Interface:** com Docker Compose e Just instalados, use `just web-dev` e abra <http://localhost:5173> para explorar localmente. O site pode ser publicado em GitHub Pages após a ativação dessa opção no repositório.
+- **Desenvolvimento:** use `just check` para validar dados e interface em Docker. Use `just web-build` para gerar os arquivos estáticos em `.local/site`. O [guia](docs/catalogo-relacional.md) tem consultas, critérios de revisão e comandos.
 
 As [issues abertas](https://github.com/Rondoscopio/osint-rondonia/issues) são o roadmap ativo e o canal para dúvidas, propostas e correções públicas. Para uma vulnerabilidade ou um pedido que inclua informação sensível, siga a [política de segurança da organização](https://github.com/Rondoscopio/.github/blob/main/SECURITY.md).
 
 ### Objetivo e pendências históricas
 
-Este repositório acompanha a proposta de construir uma interface pública para consultar os dados do OSINT Rondônia. As pendências antigas podem estar desatualizadas; as tarefas foram mantidas aqui para orientar decisões futuras.
+Este repositório mantém uma interface pública para consultar os dados do OSINT Rondônia. As pendências antigas podem estar desatualizadas; as tarefas foram mantidas como registros históricos.
 
-O objetivo registrado é criar uma interface SPA/SSG, preferencialmente com SvelteKit e geração estática, a partir dos dados versionados neste repositório. O catálogo deverá permitir navegação por categorias e abrangência, busca, filtros, tabelas, gráficos e consulta de fontes individuais. A interface não deve ser a fonte de verdade dos registros. Os sete projetos que serviram de referência de produto, arquitetura, organização de dados e curadoria estão cadastrados como fontes pendentes nos CSV. Devem ser estudados antes de adotar ou reutilizar código. As imagens ilustrativas e os parâmetros de rastreamento das URLs não fazem parte desta lista.
+O objetivo histórico era criar uma interface SPA/SSG com SvelteKit, navegação por categorias e abrangência, busca, filtros, tabelas, gráficos e consulta das fontes. O site atual atende a essas funções e consulta o SQLite construído a partir dos CSV versionados. Os sete projetos que serviram de referência de produto, arquitetura, organização de dados e curadoria estão cadastrados como fontes pendentes nos CSV. Devem ser estudados antes de adotar ou reutilizar código. As imagens ilustrativas e os parâmetros de rastreamento das URLs não fazem parte desta lista.
 
 No TODO original, o contexto, o objetivo e as 12 atividades tinham `status_triagem=pendente`; todas as atividades estavam desmarcadas.
 
