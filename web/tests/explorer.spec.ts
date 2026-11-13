@@ -34,6 +34,7 @@ test('início, marca, mapa global, gráficos e SQLite idêntico ao catálogo', a
   await expect(
     page.getByRole('heading', { name: 'Explore países e regiões' }),
   ).toBeVisible();
+  await page.getByRole('button', { name: 'Carregar mapa interativo' }).click();
   await expect(page.locator('.world-map canvas')).toBeVisible({
     timeout: 30000,
   });
@@ -71,6 +72,7 @@ test('mapa alterna projeção e camadas e mantém cobertura municipal acessível
   await expect(
     page.getByRole('heading', { name: 'Explore países e regiões' }),
   ).toBeVisible();
+  await page.getByRole('button', { name: 'Carregar mapa interativo' }).click();
   await expect(page.locator('.world-map canvas')).toBeVisible({
     timeout: 30000,
   });
@@ -127,7 +129,7 @@ test('mapa alterna projeção e camadas e mantém cobertura municipal acessível
   await expect(page).toHaveURL(/nacional=1/);
 });
 
-test('home adia SQLite, mapa global e municípios até as seções e o Brasil entrarem na tela', async ({
+test('home adia SQLite e mapa; municípios só carregam ao entrar no Brasil', async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1280, height: 280 });
@@ -159,6 +161,13 @@ test('home adia SQLite, mapa global e municípios até as seções e o Brasil en
   await expect(
     page.getByRole('heading', { name: 'Explore países e regiões' }),
   ).toBeVisible();
+  await expect(
+    page.getByRole('button', { name: 'Carregar mapa interativo' }),
+  ).toBeVisible();
+  expect([...requests].some((url) => url.includes('.pmtiles'))).toBe(false);
+  await expect(page.locator('.world-map canvas')).toHaveCount(0);
+
+  await page.getByRole('button', { name: 'Carregar mapa interativo' }).click();
   await expect(page.locator('.world-map canvas')).toBeVisible({
     timeout: 30000,
   });
@@ -178,6 +187,72 @@ test('home adia SQLite, mapa global e municípios até as seções e o Brasil en
   );
   await page.getByRole('button', { name: 'Ir ao Brasil' }).click();
   expect((await municipalitiesRequest).ok()).toBe(true);
+});
+
+test('home em viewport desktop não inicia o mapa sem ação explícita', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 960 });
+  const mapRequests: string[] = [];
+  page.on('request', (request) => {
+    if (
+      /\.pmtiles(?:$|\?)/.test(request.url()) ||
+      request.url().includes('world-relief.webp') ||
+      request.url().includes('gibs.earthdata.nasa.gov')
+    ) {
+      mapRequests.push(request.url());
+    }
+  });
+
+  await page.goto('./');
+  await expect(
+    page.getByRole('button', { name: 'Carregar mapa interativo' }),
+  ).toBeVisible();
+  await page.waitForTimeout(500);
+  expect(mapRequests).toEqual([]);
+  await expect(page.locator('.world-map canvas')).toHaveCount(0);
+  const largeScripts = await page.evaluate(() =>
+    performance
+      .getEntriesByType('resource')
+      .filter(
+        (entry) =>
+          entry.name.endsWith('.js') &&
+          (entry as PerformanceResourceTiming).transferSize > 500_000,
+      )
+      .map((entry) => entry.name),
+  );
+  expect(largeScripts).toEqual([]);
+});
+
+test('mapa limita o pixel ratio em telas de alta densidade', async ({
+  browser,
+}) => {
+  const context = await browser.newContext({
+    baseURL: 'http://127.0.0.1:4173/osint-rondonia/',
+    viewport: { width: 1440, height: 960 },
+    deviceScaleFactor: 3,
+  });
+  const page = await context.newPage();
+  try {
+    await page.goto('./');
+    await page
+      .getByRole('button', { name: 'Carregar mapa interativo' })
+      .click();
+    const canvas = page.locator('.world-map canvas');
+    await expect(canvas).toBeVisible({ timeout: 30000 });
+    const ratios = await canvas.evaluate((element) => {
+      const rect = element.getBoundingClientRect();
+      const mapCanvas = element as HTMLCanvasElement;
+      return {
+        devicePixelRatio: window.devicePixelRatio,
+        backingStoreRatio: mapCanvas.width / rect.width,
+      };
+    });
+    expect(ratios.devicePixelRatio).toBe(3);
+    expect(ratios.backingStoreRatio).toBeLessThanOrEqual(2);
+  } finally {
+    await context.close();
+  }
 });
 
 test('filtros abrem no clique e o chevron acompanha o estado', async ({

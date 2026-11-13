@@ -10,10 +10,9 @@
   const vm = createHomeViewModel(() => dashboardReady);
   const report = $derived(vm.dashboard.data);
   let dashboardSection = $state<HTMLElement>();
-  let mapSection = $state<HTMLElement>();
   let MapView = $state<Component>();
   let mapLoadFailed = $state(false);
-  let mapLoading = false;
+  let mapLoading = $state(false);
   const number = new Intl.NumberFormat('pt-BR');
 
   async function loadMap() {
@@ -50,26 +49,6 @@
     return () => {
       dashboardObserver.disconnect();
     };
-  });
-
-  $effect(() => {
-    const section = mapSection;
-    if (!section || MapView) return;
-    if (typeof IntersectionObserver === 'undefined') {
-      void loadMap();
-      return;
-    }
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry?.isIntersecting) {
-          observer.disconnect();
-          void loadMap();
-        }
-      },
-      { rootMargin: '160px 0px' },
-    );
-    observer.observe(section);
-    return () => observer.disconnect();
   });
 
   const charts = $derived(
@@ -144,7 +123,6 @@
     </section>
     <section
       class="section map-lazy-section"
-      bind:this={mapSection}
       aria-labelledby="map-lazy-heading"
     >
       {#if MapView}
@@ -158,17 +136,25 @@
           >
         </div>
       {:else}
-        <div
-          class="map-card card map-placeholder"
-          role="status"
-          aria-live="polite"
-          aria-busy="true"
-        >
+        <div class="map-card card map-placeholder" aria-busy={mapLoading}>
           <p class="eyebrow">Cobertura territorial</p>
           <h2 id="map-lazy-heading">Explore países e regiões</h2>
           <p class="muted">
-            O mapa interativo será carregado quando esta área estiver próxima.
+            Carregue o mapa interativo quando quiser explorar países e regiões.
+            Também é possível consultar a cobertura por território na página de
+            abrangência.
           </p>
+          <div class="map-placeholder-actions">
+            <button
+              class="button primary"
+              type="button"
+              disabled={mapLoading}
+              onclick={loadMap}
+            >
+              {mapLoading ? 'Preparando mapa…' : 'Carregar mapa interativo'}
+            </button>
+            <a href={resolve('/abrangencia/')}>Consultar cobertura em lista</a>
+          </div>
         </div>
       {/if}
     </section>
@@ -258,5 +244,11 @@
   .map-placeholder h2,
   .map-placeholder p {
     margin-bottom: 0;
+  }
+  .map-placeholder-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.9rem;
   }
 </style>
