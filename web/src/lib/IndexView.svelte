@@ -4,6 +4,7 @@
   import type { Options } from './catalog';
   import type { Category, Item } from './catalog';
   import { graphLink, sources } from './links';
+  import { displayLabel, displayText } from './labels';
   import Choice from './Choice.svelte';
   import LoadState from './LoadState.svelte';
 
@@ -56,7 +57,11 @@
     return options.ufs;
   });
   const rows = $derived(
-    entries.filter((item) => fold(item.nome).includes(fold(search.trim()))),
+    entries.filter(
+      (item) =>
+        fold(displayText(item.nome)).includes(fold(search.trim())) ||
+        fold(item.nome).includes(fold(search.trim())),
+    ),
   );
   const municipalities = $derived(
     options?.municipios
@@ -143,18 +148,18 @@
                   : kind === 'listas'
                     ? 'lista'
                     : 'uf']: item.id,
-              })}>{item.nome}</a
+              })}>{displayText(item.nome)}</a
             >
           </h2>
           {#if 'tipo_classificacao' in item}<p class="muted">
-              {item.tipo_classificacao}
+              {displayLabel(item.tipo_classificacao ?? '')}
             </p>{/if}
           {#if 'categorias' in item}
             <ul class="chips">
               {#each item.categorias as category (category.id)}
                 <li>
                   <a class="pill" href={sources({ categoria: category.id })}
-                    >{category.nome}</a
+                    >{displayText(category.nome)}</a
                   >
                 </li>
               {/each}
@@ -164,7 +169,9 @@
         {#if kind === 'categorias'}<a
             class="button"
             href={graphLink('categoria', item.id)}
-            >Ver relações <span class="sr-only">de {item.nome}</span>↗</a
+            >Ver relações <span class="sr-only"
+              >de {displayText(item.nome)}</span
+            >↗</a
           >{/if}
       </li>
     {/each}

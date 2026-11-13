@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import initSqlJs from 'sql.js';
 import { openCatalog, PAGE_SIZE } from '../src/lib/catalog.ts';
+import { displayLabel, displayText } from '../src/lib/labels.ts';
 import type { Filters } from '../src/lib/catalog.ts';
 
 const sqlite = await initSqlJs();
@@ -20,6 +21,33 @@ const filters: Filters = {
   ordem: 'asc',
   pagina: 1,
 };
+
+test('rótulos técnicos são apresentados em português sem alterar os valores do catálogo', () => {
+  assert.equal(displayLabel('ferramenta_ou_servico'), 'Ferramenta ou Serviço');
+  assert.equal(displayLabel('portal_de_noticias'), 'Portal de Notícias');
+  assert.equal(displayLabel('ciencias_sociais'), 'Ciências Sociais');
+  assert.equal(
+    displayText('Tipo ferramenta_ou_servico'),
+    'Tipo Ferramenta ou Serviço',
+  );
+  assert.equal(
+    displayText('https://exemplo.org/portal_de_noticias'),
+    'https://exemplo.org/portal_de_noticias',
+  );
+  assert.equal(
+    displayText('Tipo ferramenta_ou_servico'),
+    'Tipo Ferramenta ou Serviço',
+  );
+  assert.equal(
+    displayText('https://exemplo.org/portal_de_noticias'),
+    'https://exemplo.org/portal_de_noticias',
+  );
+  assert.equal(displayLabel('portal editorial'), 'portal editorial');
+  assert.equal(
+    catalog.options().tipos.find(({ id }) => id === 'typ-badc6877705cb9')?.nome,
+    'ferramenta_ou_servico',
+  );
+});
 
 test('a distribuição real abre, conta fichas e pagina sem repetição', () => {
   const first = catalog.search(filters);

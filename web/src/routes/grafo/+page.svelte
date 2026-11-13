@@ -6,6 +6,7 @@
   import { GRAPH_LIMIT } from '$lib/catalog';
   import type { Graph, GraphNode, NodeKind } from '$lib/catalog';
   import { graphLink, sources } from '$lib/links';
+  import { displayText } from '$lib/labels';
   import LoadState from '$lib/LoadState.svelte';
 
   const params = $derived(
@@ -71,7 +72,7 @@
             ...[...nodes.values()].map((node) => ({
               data: {
                 id: key(node),
-                label: node.nome,
+                label: displayText(node.nome),
                 kind: node.kind,
                 href: graphLink(node.kind, node.id),
               },
@@ -158,7 +159,7 @@
 <p class="breadcrumb"><a href={sources()}>← Voltar às fontes</a></p>
 <div class="page-heading">
   <p class="eyebrow">Rede do catálogo</p>
-  <h1>{graph?.center.nome ?? 'Grafo de relações'}</h1>
+  <h1>{graph ? displayText(graph.center.nome) : 'Grafo de relações'}</h1>
   {#if graph?.center.kind === 'fonte'}<a href={sources({ id: graph.center.id })}
       >Abrir ficha da fonte ↗</a
     >{/if}
@@ -192,8 +193,11 @@
       {#each graph.neighbors as node (key(node) + node.direction + node.relacao)}
         <li class="card">
           <div>
-            <span class="muted">{names[node.kind]} · {node.relacao}</span><br
-            /><a href={graphLink(node.kind, node.id)}>{node.nome}</a>
+            <span class="muted"
+              >{names[node.kind]} · {displayText(node.relacao)}</span
+            ><br /><a href={graphLink(node.kind, node.id)}
+              >{displayText(node.nome)}</a
+            >
           </div>
         </li>
       {:else}

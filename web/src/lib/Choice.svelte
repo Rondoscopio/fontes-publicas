@@ -1,6 +1,7 @@
 <script lang="ts">
   import { Combobox } from 'bits-ui';
   import { fold } from './catalog';
+  import { displayText } from './labels';
   import type { Item } from './catalog';
 
   let {
@@ -12,9 +13,16 @@
   let search = $state('');
   let open = $state(false);
   const choices = $derived(
-    items.filter((item) => fold(item.nome).includes(fold(search))).slice(0, 80),
+    items
+      .filter(
+        (item) =>
+          fold(displayText(item.nome)).includes(fold(search)) ||
+          fold(item.nome).includes(fold(search)),
+      )
+      .slice(0, 80),
   );
   const selected = $derived(items.find((item) => item.id === value));
+  const selectedLabel = $derived(selected ? displayText(selected.nome) : '');
 </script>
 
 <div class="field combo">
@@ -23,7 +31,7 @@
     type="single"
     bind:value
     bind:open
-    inputValue={search || selected?.nome || ''}
+    inputValue={search || selectedLabel}
     onOpenChangeComplete={(open) => {
       if (!open) search = '';
     }}
@@ -69,8 +77,8 @@
     <Combobox.Portal>
       <Combobox.Content class="options" sideOffset={4}>
         {#each choices as item (item.id)}
-          <Combobox.Item value={item.id} label={item.nome}
-            >{item.nome}</Combobox.Item
+          <Combobox.Item value={item.id} label={displayText(item.nome)}
+            >{displayText(item.nome)}</Combobox.Item
           >
         {:else}
           <p>Nenhuma opção encontrada.</p>

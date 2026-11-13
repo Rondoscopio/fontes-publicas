@@ -49,7 +49,16 @@ test('filtros abrem no clique e o chevron acompanha o estado', async ({
   await expect(page.getByRole('listbox')).toBeVisible();
   await expect(typeChevron).toHaveClass(/expanded/);
   await type.fill('ferramenta');
-  await expect(page.getByRole('option').first()).toBeVisible();
+  await expect(
+    page.getByRole('option', { name: 'Ferramenta ou Serviço' }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('option', { name: /ferramenta_ou_servico/ }),
+  ).toHaveCount(0);
+  await type.fill('portal');
+  await expect(
+    page.getByRole('option', { name: 'Portal de Notícias', exact: true }),
+  ).toBeVisible();
   await page
     .getByRole('button', { name: 'Mostrar opções de Tipo de fonte' })
     .click();

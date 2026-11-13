@@ -3,6 +3,7 @@
   import { query } from '$lib/client';
   import type { Dashboard } from '$lib/catalog';
   import { sources } from '$lib/links';
+  import { displayText } from '$lib/labels';
   import LoadState from '$lib/LoadState.svelte';
 
   let report = $state<Dashboard>();
@@ -106,7 +107,7 @@
             {#each chart.rows as row (row.id)}
               <li>
                 <a href={sources({ [chart.filter]: row.id })}>
-                  <span>{row.nome}</span><strong
+                  <span>{displayText(row.nome)}</span><strong
                     >{number.format(row.total)}</strong
                   >
                   <span aria-hidden="true" class="track"
@@ -128,7 +129,7 @@
               >
               <tbody
                 >{#each chart.rows as row (row.id)}<tr
-                    ><th scope="row">{row.nome}</th><td
+                    ><th scope="row">{displayText(row.nome)}</th><td
                       >{number.format(row.total)}</td
                     ></tr
                   >{/each}</tbody
