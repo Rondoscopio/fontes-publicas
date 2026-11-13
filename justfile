@@ -23,7 +23,26 @@ test: build
 sqlite: validate
     {{compose}} run --rm sqlite python scripts/export_sqlite.py
 
-check: lint test validate sqlite-check
+check: lint test validate sqlite-check web-check
+
+web-image:
+    {{compose}} build web
+
+web-dev: web-image
+    mkdir -p .local/web-dev-kit .local/web-vite-temp .local/web-vite-cache
+    SITE_BASE_PATH= {{compose}} run --rm --service-ports web-dev
+
+web-check:
+    {{compose}} build web-check
+    {{compose}} run --rm web-check sh -euc 'pnpm check && pnpm test && pnpm build && pnpm test:browser'
+
+web-format:
+    {{compose}} build web-check
+    {{compose}} run --rm web-format
+
+web-build: web-image
+    mkdir -p .local/site .local/web-kit .local/web-vite-temp .local/web-vite-cache
+    SITE_BASE_PATH=/osint-rondonia {{compose}} run --rm -e WEB_OUTPUT_DIR=/output/site web-build
 
 clean-cache:
     rm -rf .cache .local/share/osint-rondonia
@@ -80,6 +99,7 @@ audit: build quality-image
     run_report sbom-schema.txt - {{compose}} run --rm -T sbom validate --input-file "/reports/${report_dir##*/}/image.cdx.json" --input-format json --fail-on-errors
     run_report sbom-image.txt - {{compose}} run --rm -T quality python scripts/check_sbom.py "$report_dir/image.cdx.json" "$archive"
     run_report osv.json 1 {{compose}} run --rm -T audit osv-scanner scan source --lockfile .config/container/requirements.txt --format json
+    run_report osv-web.json 1 {{compose}} run --rm -T audit osv-scanner scan source --lockfile web/pnpm-lock.yaml --format json
     run_report semgrep.json 1 {{compose}} run --rm -T semgrep scan --config p/python --metrics=off --error --json scripts
     links_code=0
     {{compose}} run --rm -T links --no-progress --cache=false --max-concurrency 4 --max-retries 0 --timeout 8 --exclude-all-private --scheme https --scheme http --format json README.md 'docs/**/*.md' > "$report_dir/links.json" || links_code=$?

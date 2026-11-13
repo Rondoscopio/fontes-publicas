@@ -1,5 +1,35 @@
 # Catálogo relacional OSINT Rondônia
 
+## Interface de exploração
+
+O site em `web/` é gerado pelo SvelteKit em arquivos estáticos. SvelteKit prerenderiza as rotas de navegação, e a interface executa as buscas no navegador com uma cópia do SQLite. O Web Worker abre o banco uma vez, ativa `query_only` e executa operações com valores parametrizados. A URL do banco contém seu SHA-256, então uma atualização do SQLite gera um caminho de asset novo.
+
+A busca permite texto no nome ou descrição, categoria, tipo, estado de triagem, UF, município e lista. A lista exige todas as categorias que lhe foram atribuídas. A triagem sem registro é um filtro próprio. A ordenação usa nome com desempate pelo ID, em páginas de 25 fichas; a URL preserva os filtros e a página. Numa lista vazia de categorias não há fontes correspondentes.
+
+O filtro de UF procura UFs vinculadas à cobertura e municípios localizados nela, contando cada ficha uma vez. A cobertura nacional entra só quando o usuário marca essa opção. A localidade declarada aparece na ficha da fonte, sem se somar à cobertura. As contagens de categorias e UFs podem sobrepor fichas e as tabelas acessíveis mostram os mesmos grupos dos gráficos.
+
+O grafo mostra vínculos diretos de fonte com categoria e proveniência. Cada página mostra até 40 vizinhos, com paginação para os restantes. Os links textuais reproduzem as mesmas relações e permitem percorrê-las por teclado. A interface apresenta triagem, validação e situação declarada das URLs em campos separados. Só endereços HTTP e HTTPS viram links externos.
+
+## Desenvolvimento da interface
+
+Os comandos abaixo instalam, verificam, testam e compilam dependências e código em contêineres. Node.js e pnpm têm versão fixa no Dockerfile. O lockfile mantém as dependências resolvidas; não instale dependências diretamente na máquina host.
+
+```bash
+# Abrir o ambiente de desenvolvimento em http://localhost:5173
+just web-dev
+
+# Verificar formatação, tipos e consultas ao SQLite
+just web-check
+
+# Rodar o gate completo do catálogo e do site
+just check
+
+# Gerar os arquivos estáticos para GitHub Pages
+just web-build
+```
+
+`just web-build` coloca o artefato em `.local/site`, configurado sob o caminho `/osint-rondonia/`. O workflow de publicação baixa a revisão aprovada pelo gate, executa a mesma receita e publica o artefato com GitHub Pages. A primeira implantação depende de habilitar GitHub Pages com origem GitHub Actions nas configurações do repositório.
+
 ## Arquitetura
 
 O Data Package v2 publica os CSV sob `data/`. A tabela `fonte` reúne 4.970 fichas, incluindo 391 fontes identificadas nos inventários históricos. Essas novas fichas têm triagem pendente. As sete referências do antigo TODO e a ficha do Atlas da Imprensa também têm triagem pendente.

@@ -52,9 +52,17 @@ jobs:
       JUST_RECIPE: sqlite-check
     steps: *just_steps
 
+  web:
+    name: Interface web
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      JUST_RECIPE: web-check
+    steps: *just_steps
+
   gate:
     name: Gate do catálogo
-    needs: [lint, testes, validar, sqlite]
+    needs: [lint, testes, validar, sqlite, web]
     if: ${{ always() }}
     permissions: {}
     runs-on: ubuntu-latest
@@ -65,4 +73,40 @@ jobs:
           RESULTS: ${{ toJSON(needs) }}
         run: |
           jq -r 'to_entries[] | "\(.key): \(.value.result)"' <<< "$RESULTS"
-          jq -e 'length == 4 and all(.[]; .result == "success")' <<< "$RESULTS"
+          jq -e 'length == 5 and all(.[]; .result == "success")' <<< "$RESULTS"
+
+  pages_build:
+    name: Gerar site estático
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    needs: [gate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39  # v2
+        with:
+          tool: just@1.57.0
+      - name: Build SSG
+        run: just web-build
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b  # v4
+        with:
+          path: .local/site
+
+  pages_deploy:
+    name: Publicar no GitHub Pages
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && needs.pages_build.result == 'success' }}
+    needs: [pages_build]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e  # v4

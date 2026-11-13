@@ -96,3 +96,71 @@ services:
     volumes:
       - ..:/workspace:ro
     entrypoint: [semgrep]
+
+  web:
+    image: osint-rondonia-web:local
+    build:
+      context: ..
+      dockerfile: .config/container/Web.Dockerfile
+      target: web
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment:
+      SITE_BASE_PATH: ${SITE_BASE_PATH:-}
+
+  web-dev:
+    extends: web
+    user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
+    environment:
+      SITE_BASE_PATH: ""
+      HOME: /tmp
+    ports:
+      - "127.0.0.1:5173:5173"
+    volumes:
+      - ../.local/web-dev-kit:/workspace/web/.svelte-kit
+      - ../.local/web-vite-temp:/workspace/web/node_modules/.vite-temp
+      - ../.local/web-vite-cache:/workspace/web/node_modules/.vite
+      - ../web/src:/workspace/web/src:ro
+      - ../data/exports:/workspace/data/exports:ro
+    command: [pnpm, dev]
+
+  web-check:
+    extends: web
+    image: osint-rondonia-web-check:local
+    build:
+      target: web-check
+    environment:
+      SITE_BASE_PATH: /osint-rondonia
+    network_mode: none
+    shm_size: 256mb
+    tmpfs:
+      - /tmp:mode=1777,uid=1000,gid=1000
+      - /workspace/web/.svelte-kit:uid=1000,gid=1000
+      - /workspace/web/test-results:uid=1000,gid=1000
+      - /workspace/web/playwright-report:uid=1000,gid=1000
+      - /workspace/web/node_modules/.vite-temp:uid=1000,gid=1000
+      - /workspace/web/node_modules/.vite:uid=1000,gid=1000
+
+  web-build:
+    extends: web
+    user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
+    environment:
+      SITE_BASE_PATH: ${SITE_BASE_PATH:-}
+      HOME: /tmp
+    volumes:
+      - ../.local:/output
+      - ../.local/web-kit:/workspace/web/.svelte-kit
+      - ../.local/web-vite-temp:/workspace/web/node_modules/.vite-temp
+      - ../.local/web-vite-cache:/workspace/web/node_modules/.vite
+    command: [pnpm, build]
+
+  web-format:
+    extends: web-check
+    user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
+    environment:
+      HOME: /tmp
+    read_only: false
+    volumes:
+      - ../web:/workspace/web
+      - /workspace/web/node_modules
+    command: [pnpm, exec, prettier, --write, .]
