@@ -84,6 +84,10 @@ test('busca compartilhável, histórico, ficha e grafo navegável', async ({
 }) => {
   await page.goto('./fontes/');
   await expect(page.getByRole('table')).toBeVisible();
+  await expect(
+    page.getByRole('cell', { name: 'Sessões' }).first(),
+  ).toBeVisible();
+  await expect(page.getByText('pendente', { exact: true })).toHaveCount(0);
   await page
     .getByRole('searchbox', { name: 'Nome ou descrição' })
     .fill('atlas da imprensa');
