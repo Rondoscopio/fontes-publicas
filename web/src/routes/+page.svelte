@@ -4,6 +4,7 @@
   import type { Dashboard } from '$lib/catalog';
   import { sources } from '$lib/links';
   import { displayText } from '$lib/labels';
+  import BrazilMap from '$lib/BrazilMap.svelte';
   import LoadState from '$lib/LoadState.svelte';
 
   let report = $state<Dashboard>();
@@ -61,8 +62,8 @@
 
 <section class="hero">
   <div class="hero-content">
-    <p class="eyebrow">Catálogo de fontes abertas</p>
-    <h1>Explore o acervo<br /> do OSINT Rondônia.</h1>
+    <p class="eyebrow">Rondoscópio · OSINT Rondônia</p>
+    <h1>Fontes abertas<br />para explorar Rondônia.</h1>
     <p>
       Encontre fontes públicas, ferramentas e referências. Navegue por tema,
       cobertura territorial e relações entre fichas.
@@ -92,6 +93,9 @@
         >Listas temáticas</span
       ><i aria-hidden="true">↗</i></a
     >
+  </section>
+  <section class="section">
+    <BrazilMap />
   </section>
   <section class="section">
     <h2>Como o catálogo se distribui</h2>

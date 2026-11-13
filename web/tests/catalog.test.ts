@@ -120,3 +120,70 @@ test('cobertura municipal implica UF, localidade declarada fica separada e nacio
     ['teste-m', 'teste-n'],
   );
 });
+
+test('mapa expande UFs, não duplica a ficha e inclui nacionais só quando solicitado', () => {
+  const bytes = readFileSync(file);
+  const baseline = openCatalog(new sqlite.Database(bytes));
+  const baselineRegional = baseline.coverageMap();
+  const baselineNational = baseline.coverageMap(true);
+  const countFor = (map: ReturnType<typeof baseline.coverageMap>, id: string) =>
+    map.municipalities.find((item) => item.id === id)?.total ?? 0;
+  const db = new sqlite.Database(bytes);
+  db.run(`
+    INSERT INTO fonte (id, nome) VALUES
+      ('mapa-estadual', 'MAPA TESTE estadual'),
+      ('mapa-municipal', 'MAPA TESTE municipal'),
+      ('mapa-nacional', 'MAPA TESTE nacional');
+    INSERT INTO abrangencia VALUES
+      ('mapa-uf-municipio', 0, 0),
+      ('mapa-so-municipio', 0, 0),
+      ('mapa-brasil', 1, 0);
+    INSERT INTO abrangencia_uf VALUES ('mapa-uf-municipio', 11);
+    INSERT INTO abrangencia_municipio VALUES
+      ('mapa-uf-municipio', 1100205),
+      ('mapa-so-municipio', 1100205);
+    INSERT INTO fonte_abrangencia (fonte_id, abrangencia_id, papel) VALUES
+      ('mapa-estadual', 'mapa-uf-municipio', 'cobertura'),
+      ('mapa-municipal', 'mapa-so-municipio', 'cobertura'),
+      ('mapa-nacional', 'mapa-brasil', 'cobertura');
+  `);
+  const fixture = openCatalog(db);
+
+  const regional = fixture.coverageMap();
+  const portoVelho = regional.municipalities.find(({ id }) => id === '1100205');
+  const altaFloresta = regional.municipalities.find(
+    ({ id }) => id === '1100015',
+  );
+  assert.ok(portoVelho && altaFloresta);
+  assert.equal(portoVelho.total, countFor(baselineRegional, '1100205') + 2);
+  assert.equal(altaFloresta.total, countFor(baselineRegional, '1100015') + 1);
+  assert.equal(regional.national, false);
+
+  const all = fixture.coverageMap(true);
+  assert.equal(all.municipalities.length, 5571);
+  assert.equal(
+    all.municipalities.find(({ id }) => id === '1100205')?.total,
+    countFor(baselineNational, '1100205') + 3,
+  );
+  assert.equal(
+    all.municipalities.find(({ id }) => id === '1100015')?.total,
+    countFor(baselineNational, '1100015') + 2,
+  );
+
+  const municipality = {
+    ...filters,
+    q: 'MAPA TESTE',
+    uf: '11',
+    municipio: '1100205',
+  };
+  assert.deepEqual(
+    fixture.search(municipality).items.map(({ id }) => id),
+    ['mapa-estadual', 'mapa-municipal'],
+  );
+  assert.deepEqual(
+    fixture
+      .search({ ...municipality, nacional: true })
+      .items.map(({ id }) => id),
+    ['mapa-estadual', 'mapa-municipal', 'mapa-nacional'],
+  );
+});

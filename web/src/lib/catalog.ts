@@ -4,6 +4,10 @@ export type Item = { id: string; nome: string };
 export type Count = Item & { total: number };
 export type Category = Item & { tipo_classificacao: string };
 export type Municipality = Item & { uf: string };
+export type MunicipalityCoverage = Municipality & {
+  total: number;
+  uf_sigla: string;
+};
 export type Source = Item & {
   descricao: string | null;
   tipo: string | null;
@@ -36,6 +40,10 @@ export type Dashboard = {
   porCategoria: Count[];
   porTipo: Count[];
   porUf: Count[];
+};
+export type CoverageMap = {
+  municipalities: MunicipalityCoverage[];
+  national: boolean;
 };
 export type Detail = {
   fonte: Source & Record<string, SqlValue>;
@@ -149,6 +157,40 @@ export function openCatalog(db: Database) {
       `),
     };
   };
+  const coverageMap = (includeNational = false): CoverageMap => {
+    const national = includeNational
+      ? `nacional AS (
+          SELECT DISTINCT fa.fonte_id
+          FROM fonte_abrangencia fa JOIN abrangencia a ON a.id = fa.abrangencia_id
+          WHERE fa.papel = 'cobertura' AND a.nacional = 1
+        )`
+      : 'nacional AS (SELECT NULL fonte_id WHERE 0)';
+    return {
+      national: includeNational,
+      municipalities: rows<MunicipalityCoverage>(`
+        WITH cobertura AS (
+          SELECT fa.fonte_id, am.municipio_codigo_ibge
+          FROM fonte_abrangencia fa JOIN abrangencia a ON a.id = fa.abrangencia_id
+          JOIN abrangencia_municipio am ON am.abrangencia_id = a.id
+          WHERE fa.papel = 'cobertura'
+          UNION
+          SELECT fa.fonte_id, m.codigo_ibge
+          FROM fonte_abrangencia fa JOIN abrangencia a ON a.id = fa.abrangencia_id
+          JOIN abrangencia_uf au ON au.abrangencia_id = a.id
+          JOIN municipio m ON m.uf_codigo_ibge = au.uf_codigo_ibge
+          WHERE fa.papel = 'cobertura'
+        ), ${national}
+        SELECT CAST(m.codigo_ibge AS TEXT) id, m.nome,
+               CAST(m.uf_codigo_ibge AS TEXT) uf, u.sigla uf_sigla,
+               COUNT(DISTINCT c.fonte_id) + (SELECT COUNT(*) FROM nacional)
+                 - COUNT(DISTINCT n.fonte_id) total
+        FROM municipio m JOIN uf u ON u.codigo_ibge = m.uf_codigo_ibge
+        LEFT JOIN cobertura c ON c.municipio_codigo_ibge = m.codigo_ibge
+        LEFT JOIN nacional n ON n.fonte_id = c.fonte_id
+        GROUP BY m.codigo_ibge ORDER BY fold(m.nome), m.codigo_ibge
+      `),
+    };
+  };
   const search = (filters: Filters) => {
     const clauses: string[] = [];
     const params: SqlValue[] = [];
@@ -188,11 +230,17 @@ export function openCatalog(db: Database) {
       const territories: string[] = [];
       const ids: SqlValue[] = [];
       if (filters.municipio) {
-        territories.push(`EXISTS (SELECT 1 FROM abrangencia_municipio am JOIN municipio m
-          ON m.codigo_ibge = am.municipio_codigo_ibge WHERE am.abrangencia_id = a.id
-          AND m.codigo_ibge = ? ${filters.uf ? 'AND m.uf_codigo_ibge = ?' : ''})`);
+        territories.push(`(
+          EXISTS (SELECT 1 FROM abrangencia_municipio am JOIN municipio m
+            ON m.codigo_ibge = am.municipio_codigo_ibge WHERE am.abrangencia_id = a.id
+            AND m.codigo_ibge = ? ${filters.uf ? 'AND m.uf_codigo_ibge = ?' : ''})
+          OR EXISTS (SELECT 1 FROM abrangencia_uf au
+            WHERE au.abrangencia_id = a.id AND au.uf_codigo_ibge =
+              (SELECT m.uf_codigo_ibge FROM municipio m WHERE m.codigo_ibge = ?))
+        )`);
         ids.push(filters.municipio);
         if (filters.uf) ids.push(filters.uf);
+        ids.push(filters.municipio);
       } else if (filters.uf) {
         territories.push(`EXISTS (SELECT 1 FROM abrangencia_uf au WHERE au.abrangencia_id = a.id AND au.uf_codigo_ibge = ?)
           OR EXISTS (SELECT 1 FROM abrangencia_municipio am JOIN municipio m ON m.codigo_ibge = am.municipio_codigo_ibge
@@ -321,7 +369,7 @@ export function openCatalog(db: Database) {
       ),
     };
   };
-  return { options, dashboard, search, detail, graph };
+  return { options, dashboard, coverageMap, search, detail, graph };
 }
 
 export type Catalog = ReturnType<typeof openCatalog>;
