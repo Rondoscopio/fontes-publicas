@@ -2,14 +2,26 @@ import { expect, test } from '@playwright/test';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 
-test('HTML inicial, gráficos, e SQLite idêntico ao catálogo', async ({
+test('início, marca, mapa, gráficos e SQLite idêntico ao catálogo', async ({
   page,
   request,
 }) => {
   const html = await request.get('./');
   expect(html.ok()).toBe(true);
-  expect(await html.text()).toContain('Explore o acervo');
+  expect(await html.text()).toContain('Fontes abertas');
   await page.goto('./');
+  await expect(
+    page.getByRole('link', { name: 'Rondoscópio — OSINT Rondônia, início' }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('navigation', { name: 'Navegação do catálogo' }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Fontes por município' }),
+  ).toBeVisible();
+  await expect(page.locator('.municipality-shape')).toHaveCount(5571, {
+    timeout: 30000,
+  });
   const icon = page.locator('link[rel="icon"]');
   const iconResponse = await request.get(
     new URL((await icon.getAttribute('href'))!, page.url()).href,
@@ -20,7 +32,7 @@ test('HTML inicial, gráficos, e SQLite idêntico ao catálogo', async ({
   ).toBeVisible();
   await page.getByText('Ver tabela').first().click();
   await expect(page.getByRole('table', { name: 'Categorias' })).toBeVisible();
-  const link = page.getByRole('link', { name: 'Baixar SQLite' });
+  const link = page.getByRole('link', { name: 'SQLite' });
   const response = await request.get(
     new URL((await link.getAttribute('href'))!, page.url()).href,
   );
@@ -34,6 +46,31 @@ test('HTML inicial, gráficos, e SQLite idêntico ao catálogo', async ({
       ),
     ),
   );
+});
+
+test('mapa tem alternativa tabular, seleção municipal e camada nacional opcional', async ({
+  page,
+}) => {
+  await page.goto('./');
+  await expect(page.locator('.municipality-shape')).toHaveCount(5571, {
+    timeout: 30000,
+  });
+  await page.getByText('Consultar a cobertura em tabela').click();
+  const tableSearch = page.getByRole('searchbox', {
+    name: 'Filtrar municípios',
+  });
+  await tableSearch.fill('Porto Velho');
+  const row = page.getByRole('row', { name: /Porto Velho RO/ });
+  await expect(row).toBeVisible();
+  await page.getByLabel('Incluir fontes nacionais').check();
+  await expect(
+    page.getByRole('row', { name: /Porto Velho RO/ }).getByRole('link'),
+  ).toHaveAttribute('href', /nacional=1/);
+  await page
+    .locator('.municipality-shape[data-codigo-ibge="1100205"]')
+    .click({ force: true });
+  await expect(page).toHaveURL(/municipio=1100205/);
+  await expect(page).toHaveURL(/nacional=1/);
 });
 
 test('filtros abrem no clique e o chevron acompanha o estado', async ({
@@ -143,4 +180,64 @@ test('mobile, filtros por teclado e recuperação da falha de download', async (
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
     375,
   );
+});
+
+test('busca global, alternância persistente de tema e navegação móvel', async ({
+  page,
+}) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.goto('./');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await page
+    .getByRole('searchbox', { name: 'Buscar no catálogo' })
+    .fill('Atlas da Imprensa');
+  await page.getByRole('button', { name: 'Buscar', exact: true }).click();
+  await expect(page).toHaveURL(/fontes\/\?q=Atlas\+da\+Imprensa/);
+  await expect(
+    page.getByRole('searchbox', { name: 'Nome ou descrição' }),
+  ).toHaveValue('Atlas da Imprensa');
+
+  const theme = page.getByRole('button', { name: 'Ativar tema claro' });
+  await theme.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await expect
+    .poll(() =>
+      page.evaluate(() => localStorage.getItem('osint-rondonia-theme')),
+    )
+    .toBe('light');
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+
+  await page.setViewportSize({ width: 375, height: 780 });
+  const menu = page.getByRole('button', { name: 'Abrir navegação' });
+  await menu.focus();
+  await menu.press('Enter');
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await expect(
+    page.getByRole('dialog').getByRole('link', { name: 'Créditos' }),
+  ).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('dialog')).toBeHidden();
+});
+
+test('páginas Sobre, Legal e Créditos são navegáveis', async ({ page }) => {
+  const pages = [
+    { path: 'sobre/', title: 'Sobre o catálogo', nav: 'Sobre' },
+    { path: 'legal/', title: 'Informações legais', nav: 'Legal' },
+    { path: 'creditos/', title: 'Créditos', nav: 'Créditos' },
+  ];
+  for (const item of pages) {
+    await page.goto(`./${item.path}`);
+    await expect(
+      page.getByRole('heading', { level: 1, name: item.title }),
+    ).toBeVisible();
+    await expect(
+      page
+        .getByRole('navigation', { name: 'Navegação do catálogo' })
+        .getByRole('link', { name: item.nav }),
+    ).toHaveAttribute('aria-current', 'page');
+    await expect(
+      page.getByRole('link', { name: 'Rondoscópio — OSINT Rondônia, início' }),
+    ).toBeVisible();
+  }
 });

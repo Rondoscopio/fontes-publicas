@@ -28,6 +28,25 @@ check: lint test validate sqlite-check web-check
 web-image:
     {{compose}} build web
 
+web-add *ARGS:
+    mkdir -p .cache/pnpm web/node_modules
+    {{compose}} build web
+    {{compose}} run --rm web-deps pnpm install --store-dir /pnpm/store
+    {{compose}} run --rm web-deps pnpm add --store-dir /pnpm/store --save-exact {{ARGS}}
+
+web-clean-deps: web-image
+    {{compose}} run --rm --entrypoint sh web-deps -euc 'find node_modules -mindepth 1 -maxdepth 1 -exec rm -rf {} +'
+
+web-add-dev *ARGS:
+    mkdir -p .cache/pnpm web/node_modules
+    {{compose}} build web
+    {{compose}} run --rm web-deps pnpm install --store-dir /pnpm/store
+    {{compose}} run --rm web-deps pnpm add --store-dir /pnpm/store --save-dev --save-exact {{ARGS}}
+
+import-map: web-image
+    mkdir -p .cache/geodata web/static/maps
+    {{compose}} run --rm web-map-import
+
 web-dev: web-image
     mkdir -p .local/web-dev-kit .local/web-vite-temp .local/web-vite-cache
     SITE_BASE_PATH= {{compose}} run --rm --service-ports web-dev

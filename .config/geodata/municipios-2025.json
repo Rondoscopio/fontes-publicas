@@ -1,0 +1,8 @@
+{
+  "edition": "Malha Municipal Digital 2025",
+  "source_url": "https://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2025/Brasil/BR_Municipios_2025.zip",
+  "sha256": "840bbe6f73726ef9d1460ce49fdfe01a278935c41180d3c893e25ca21db083bd",
+  "id_field": "CD_MUN",
+  "expected_features": 5571,
+  "output": "web/static/maps/municipios-brasil.topojson"
+}

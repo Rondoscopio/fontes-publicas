@@ -141,6 +141,30 @@ services:
       - /workspace/web/node_modules/.vite-temp:uid=1000,gid=1000
       - /workspace/web/node_modules/.vite:uid=1000,gid=1000
 
+  web-deps:
+    extends: web
+    user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
+    network_mode: bridge
+    environment:
+      HOME: /tmp
+    volumes:
+      - ../web:/workspace/web
+      - ../web/node_modules:/workspace/web/node_modules
+      - ../.cache/pnpm:/pnpm/store
+
+  web-map-import:
+    extends: web
+    user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
+    network_mode: bridge
+    read_only: true
+    tmpfs: [/tmp]
+    volumes:
+      - ../.cache/geodata:/cache
+      - ../web/static/maps:/output/maps
+      - ../.config/geodata:/workspace/.config/geodata:ro
+      - ../data/municipio.csv:/input/municipio.csv:ro
+    command: [node, scripts/import-map.mjs]
+
   web-build:
     extends: web
     user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
