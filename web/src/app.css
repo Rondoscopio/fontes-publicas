@@ -23,8 +23,7 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 button,
-input,
-select {
+input {
   font: inherit;
 }
 button {
@@ -418,8 +417,7 @@ tbody tr:last-child > * {
   font-weight: 700;
   font-size: 0.87rem;
 }
-input:not([type='checkbox']),
-select {
+input:not([type='checkbox']) {
   width: 100%;
   min-width: 0;
   border: 1px solid #ccc5dc;
@@ -455,8 +453,26 @@ select {
   height: 100%;
   min-width: 1.7rem;
 }
+.combo-input .combo-trigger {
+  display: grid;
+  place-items: center;
+  padding: 0 0.35rem;
+}
+.combo-input .combo-trigger svg {
+  width: 1rem;
+  height: 1rem;
+  transition: transform 150ms ease;
+}
+.combo-input .combo-trigger svg.expanded {
+  transform: rotate(180deg);
+}
 .combo-input .combo-clear {
   right: 1.65rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .combo-input .combo-trigger svg {
+    transition: none;
+  }
 }
 .options {
   z-index: 5;

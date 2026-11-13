@@ -9,6 +9,7 @@
   import Choice from '$lib/Choice.svelte';
   import LoadState from '$lib/LoadState.svelte';
   import SourceDetail from '$lib/SourceDetail.svelte';
+  import { displayLabel, displayText } from '$lib/labels';
 
   const params = $derived(
     browser ? page.url.searchParams : new URLSearchParams(),
@@ -96,7 +97,8 @@
 </script>
 
 <svelte:head
-  ><title>{detail?.fonte.nome ?? 'Explorar fontes'} · OSINT Rondônia</title
+  ><title
+    >{detail ? displayText(detail.fonte.nome) : 'Explorar fontes'} · OSINT Rondônia</title
   ></svelte:head
 >
 {#if detailId}
@@ -145,7 +147,7 @@
           label="Categoria"
           items={options.categorias.map((item) => ({
             ...item,
-            nome: item.nome + ' · ' + item.tipo_classificacao,
+            nome: `${displayText(item.nome)} · ${displayLabel(item.tipo_classificacao)}`,
           }))}
           bind:value={draft.categoria}
         />
@@ -155,29 +157,24 @@
           items={options.tipos}
           bind:value={draft.tipo}
         />
-        <div class="field">
-          <label for="triagem">Triagem</label><select
-            id="triagem"
-            bind:value={draft.triagem}
-          >
-            <option value="">Qualquer</option><option value="sem-registro"
-              >Sem registro</option
-            >
-            {#each options.triagens as item (item.id)}<option value={item.id}
-                >{item.nome}</option
-              >{/each}
-          </select>
-        </div>
-        <div class="field">
-          <label for="ordem">Ordem</label><select
-            id="ordem"
-            bind:value={draft.ordem}
-          >
-            <option value="asc">Nome (A–Z)</option><option value="desc"
-              >Nome (Z–A)</option
-            >
-          </select>
-        </div>
+        <Choice
+          id="triagem"
+          label="Triagem"
+          items={[
+            { id: 'sem-registro', nome: 'Sem registro' },
+            ...options.triagens,
+          ]}
+          bind:value={draft.triagem}
+        />
+        <Choice
+          id="ordem"
+          label="Ordem"
+          items={[
+            { id: 'asc', nome: 'Nome (A–Z)' },
+            { id: 'desc', nome: 'Nome (Z–A)' },
+          ]}
+          bind:value={draft.ordem}
+        />
         <Choice
           id="uf"
           label="UF de cobertura"
@@ -208,7 +205,7 @@
         >
       </div>
       {#if list}<p class="muted">
-          A lista {list.nome} exige todos os seus temas.
+          A lista {displayText(list.nome)} exige todos os seus temas.
         </p>{/if}
     {/if}
     <a href={sources()}>Limpar filtros</a>
@@ -234,14 +231,18 @@
               {#each result.items as item (item.id)}
                 <tr
                   ><th scope="row"
-                    ><a href={sources({ id: item.id })}>{item.nome}</a>
+                    ><a href={sources({ id: item.id })}
+                      >{displayText(item.nome)}</a
+                    >
                     {#if item.descricao}<p class="excerpt">
-                        {item.descricao}
+                        {displayText(item.descricao)}
                       </p>{/if}</th
                   >
-                  <td>{item.tipo ?? '—'}</td><td
+                  <td>{item.tipo ? displayText(item.tipo) : '—'}</td><td
                     ><span class="pill"
-                      >{item.status_triagem ?? 'Sem registro'}</span
+                      >{item.status_triagem
+                        ? displayText(item.status_triagem)
+                        : 'Sem registro'}</span
                     ></td
                   >
                 </tr>

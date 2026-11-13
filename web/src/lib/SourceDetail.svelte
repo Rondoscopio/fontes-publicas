@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Detail } from './catalog';
   import { graphLink, httpLink, sources } from './links';
+  import { displayLabel, displayText } from './labels';
 
   let { detail }: { detail: Detail } = $props();
   const { fonte, categorias, urls, origens, abrangencias } = $derived(detail);
@@ -22,9 +23,13 @@
 </script>
 
 <div class="page-heading">
-  <p class="eyebrow">{fonte.tipo ?? 'Fonte do catálogo'}</p>
-  <h1>{fonte.nome}</h1>
-  {#if fonte.descricao}<p class="preserve">{fonte.descricao}</p>{/if}
+  <p class="eyebrow">
+    {fonte.tipo ? displayText(fonte.tipo) : 'Fonte do catálogo'}
+  </p>
+  <h1>{displayText(fonte.nome)}</h1>
+  {#if fonte.descricao}<p class="preserve">
+      {displayText(fonte.descricao)}
+    </p>{/if}
   <a class="button primary" href={graphLink('fonte', fonte.id)}
     >Explorar relações →</a
   >
@@ -36,15 +41,33 @@
       <dt>ID da fonte</dt>
       <dd>{fonte.id}</dd>
       <dt>Triagem editorial</dt>
-      <dd>{fonte.status_triagem ?? 'Sem registro'}</dd>
+      <dd>
+        {fonte.status_triagem
+          ? displayText(fonte.status_triagem)
+          : 'Sem registro'}
+      </dd>
       <dt>Validação</dt>
-      <dd>{fonte.validacao ?? 'Sem registro'}</dd>
+      <dd>
+        {typeof fonte.validacao === 'string'
+          ? displayText(fonte.validacao)
+          : (fonte.validacao ?? 'Sem registro')}
+      </dd>
       <dt>Situação do link</dt>
-      <dd>{fonte.situacao_url ?? 'Sem registro'}</dd>
+      <dd>
+        {typeof fonte.situacao_url === 'string'
+          ? displayText(fonte.situacao_url)
+          : (fonte.situacao_url ?? 'Sem registro')}
+      </dd>
       {#each Object.entries(labels) as [field, label] (field)}
         {#if fonte[field] !== null && fonte[field] !== undefined && fonte[field] !== ''}
           <dt>{label}</dt>
-          <dd class="preserve">{fonte[field]}</dd>
+          <dd class="preserve">
+            {#if typeof fonte[field] === 'string'}
+              {displayText(fonte[field])}
+            {:else}
+              {fonte[field]}
+            {/if}
+          </dd>
         {/if}
       {/each}
     </dl>
@@ -56,9 +79,11 @@
         {#each urls as entry (entry.id)}
           {@const href = httpLink(entry.url)}
           <li>
-            <span class="muted">{entry.papel}</span><br />
-            {#if href}<a {href} rel="noreferrer">{entry.nome || entry.url} ↗</a>
-            {:else}{entry.nome || entry.url}{/if}
+            <span class="muted">{displayText(entry.papel)}</span><br />
+            {#if href}<a {href} rel="noreferrer"
+                >{entry.nome ? displayText(entry.nome) : entry.url} ↗</a
+              >
+            {:else}{entry.nome ? displayText(entry.nome) : entry.url}{/if}
             {#if entry.nome && entry.nome !== entry.url}<small
                 >{entry.url}</small
               >{/if}
@@ -74,7 +99,9 @@
         {#each categorias as item (item.id)}
           <li>
             <a class="pill" href={sources({ categoria: item.id })}
-              >{item.nome} · {item.tipo_classificacao}</a
+              >{displayText(item.nome)} · {displayLabel(
+                item.tipo_classificacao,
+              )}</a
             >
           </li>
         {/each}
@@ -87,12 +114,11 @@
       <ul class="records">
         {#each origens as item (item.tipo_origem)}
           <li>
-            <span class="muted">{item.tipo_origem.replaceAll('_', ' ')}</span
-            ><br />
+            <span class="muted">{displayLabel(item.tipo_origem)}</span><br />
             {#if item.fonte_id}<a href={sources({ id: item.fonte_id })}
-                >{item.nome ?? item.valor_original}</a
-              ><small>{item.valor_original}</small>
-            {:else}{item.valor_original}{/if}
+                >{displayText(item.nome ?? item.valor_original)}</a
+              ><small>{displayText(item.valor_original)}</small>
+            {:else}{displayText(item.valor_original)}{/if}
           </li>
         {/each}
       </ul>
