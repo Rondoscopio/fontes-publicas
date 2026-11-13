@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 
-test('início, marca, mapa, gráficos e SQLite idêntico ao catálogo', async ({
+test('início, marca, mapa global, gráficos e SQLite idêntico ao catálogo', async ({
   page,
   request,
 }) => {
@@ -32,9 +32,9 @@ test('início, marca, mapa, gráficos e SQLite idêntico ao catálogo', async ({
   ).toBeVisible();
   await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
   await expect(
-    page.getByRole('heading', { name: 'Fontes por município' }),
+    page.getByRole('heading', { name: 'Explore países e regiões' }),
   ).toBeVisible();
-  await expect(page.locator('.municipality-shape')).toHaveCount(5571, {
+  await expect(page.locator('.world-map canvas')).toBeVisible({
     timeout: 30000,
   });
   const icon = page.locator('link[rel="icon"]');
@@ -63,36 +63,71 @@ test('início, marca, mapa, gráficos e SQLite idêntico ao catálogo', async ({
   );
 });
 
-test('mapa tem alternativa tabular, seleção municipal e camada nacional opcional', async ({
+test('mapa alterna projeção e camadas e mantém cobertura municipal acessível', async ({
   page,
 }) => {
   await page.goto('./');
   await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
   await expect(
-    page.getByRole('heading', { name: 'Fontes por município' }),
+    page.getByRole('heading', { name: 'Explore países e regiões' }),
   ).toBeVisible();
-  await expect(page.locator('.municipality-shape')).toHaveCount(5571, {
+  await expect(page.locator('.world-map canvas')).toBeVisible({
     timeout: 30000,
   });
-  await page.getByText('Consultar a cobertura em tabela').click();
+  await page.getByRole('button', { name: 'Ver globo' }).click();
+  await expect(page.getByRole('button', { name: 'Ver mapa 2D' })).toBeVisible();
+
+  const localReliefRequest = page.waitForRequest('**/world-relief.webp');
+  await page.getByRole('button', { name: 'Relevo' }).click();
+  await localReliefRequest;
+
+  const satelliteRequests: string[] = [];
+  await page.route('https://gibs.earthdata.nasa.gov/**', async (route) => {
+    satelliteRequests.push(route.request().url());
+    await route.abort();
+  });
+  await page.getByRole('button', { name: 'Satélite' }).click();
+  await expect(page.getByText(/NASA GIBS/)).toBeVisible();
+  await expect(page.locator('.map-attribution')).toContainText(
+    "We acknowledge the use of imagery provided by services from NASA's Global Imagery Browse Services",
+  );
+  await expect.poll(() => satelliteRequests.length).toBeGreaterThan(0);
+  expect(satelliteRequests[0]).toContain(
+    'MODIS_Terra_CorrectedReflectance_TrueColor',
+  );
+
+  const municipalitiesRequest = page.waitForResponse((response) =>
+    response.url().includes('municipios-brasil.pmtiles'),
+  );
+  await page.getByRole('button', { name: 'Ir ao Brasil' }).click();
+  expect((await municipalitiesRequest).ok()).toBe(true);
+  await page.getByText('Consultar a cobertura brasileira em tabela').click();
+  await expect(
+    page
+      .getByRole('table', { name: 'Fontes por unidade da federação' })
+      .getByRole('row'),
+  ).toHaveCount(28);
   const tableSearch = page.getByRole('searchbox', {
     name: 'Filtrar municípios',
   });
   await tableSearch.fill('Porto Velho');
   const row = page.getByRole('row', { name: /Porto Velho RO/ });
   await expect(row).toBeVisible();
-  await page.getByLabel('Incluir fontes nacionais').check();
+  await page
+    .getByLabel('Incluir fontes nacionais na cobertura do Brasil')
+    .check();
+  await expect(
+    page.getByRole('table', { name: 'Fontes por município brasileiro' }),
+  ).toBeVisible();
   await expect(
     page.getByRole('row', { name: /Porto Velho RO/ }).getByRole('link'),
   ).toHaveAttribute('href', /nacional=1/);
-  await page
-    .locator('.municipality-shape[data-codigo-ibge="1100205"]')
-    .click({ force: true });
+  await row.getByRole('link').click();
   await expect(page).toHaveURL(/municipio=1100205/);
   await expect(page).toHaveURL(/nacional=1/);
 });
 
-test('home adia SQLite, WASM e TopoJSON até as seções entrarem na tela', async ({
+test('home adia SQLite, mapa global e municípios até as seções e o Brasil entrarem na tela', async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1280, height: 280 });
@@ -102,7 +137,10 @@ test('home adia SQLite, WASM e TopoJSON até as seções entrarem na tela', asyn
     if (
       url.includes('.sqlite') ||
       url.includes('sql-wasm') ||
-      url.includes('municipios-brasil.topojson')
+      url.includes('world.pmtiles') ||
+      url.includes('municipios-brasil.pmtiles') ||
+      url.includes('world-relief.webp') ||
+      url.includes('gibs.earthdata.nasa.gov')
     ) {
       requests.add(url);
     }
@@ -119,15 +157,27 @@ test('home adia SQLite, WASM e TopoJSON até as seções entrarem na tela', asyn
 
   await page.locator('.home-dashboard').scrollIntoViewIfNeeded();
   await expect(
-    page.getByRole('heading', { name: 'Fontes por município' }),
+    page.getByRole('heading', { name: 'Explore países e regiões' }),
   ).toBeVisible();
-  await expect(page.locator('.municipality-shape')).toHaveCount(5571, {
+  await expect(page.locator('.world-map canvas')).toBeVisible({
     timeout: 30000,
   });
+  await expect
+    .poll(() => [...requests].some((url) => url.includes('world.pmtiles')))
+    .toBe(true);
   expect(
-    [...requests].some((url) => url.includes('municipios-brasil.topojson')),
-  ).toBe(true);
+    [...requests].some((url) => url.includes('municipios-brasil.pmtiles')),
+  ).toBe(false);
+  expect([...requests].some((url) => url.includes('world-relief.webp'))).toBe(
+    false,
+  );
   expect([...requests].some((url) => url.includes('.sqlite'))).toBe(true);
+
+  const municipalitiesRequest = page.waitForResponse((response) =>
+    response.url().includes('municipios-brasil.pmtiles'),
+  );
+  await page.getByRole('button', { name: 'Ir ao Brasil' }).click();
+  expect((await municipalitiesRequest).ok()).toBe(true);
 });
 
 test('filtros abrem no clique e o chevron acompanha o estado', async ({

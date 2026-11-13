@@ -1,16 +1,14 @@
 <script lang="ts">
   import { onMount, type Component } from 'svelte';
   import { resolve } from '$app/paths';
-  import { query } from '$lib/client';
-  import type { Dashboard } from '$lib/catalog';
+  import { createHomeViewModel } from '$lib/features/home/home.viewmodel.svelte';
   import { sources } from '$lib/links';
   import { displayText } from '$lib/labels';
   import LoadState from '$lib/LoadState.svelte';
 
-  let report = $state<Dashboard>();
-  let failed = $state(false);
-  let attempt = $state(0);
   let dashboardReady = $state(false);
+  const vm = createHomeViewModel(() => dashboardReady);
+  const report = $derived(vm.dashboard.data);
   let dashboardSection = $state<HTMLElement>();
   let mapSection = $state<HTMLElement>();
   let MapView = $state<Component>();
@@ -23,7 +21,7 @@
     mapLoading = true;
     mapLoadFailed = false;
     try {
-      MapView = (await import('$lib/BrazilMap.svelte')).default;
+      MapView = (await import('$lib/WorldMap.svelte')).default;
     } catch {
       mapLoadFailed = true;
     } finally {
@@ -74,22 +72,6 @@
     return () => observer.disconnect();
   });
 
-  $effect(() => {
-    void attempt;
-    if (!dashboardReady) return;
-    failed = false;
-    let current = true;
-    query('dashboard')
-      .then((result) => {
-        if (current) report = result;
-      })
-      .catch(() => {
-        if (current) failed = true;
-      });
-    return () => {
-      current = false;
-    };
-  });
   const charts = $derived(
     report
       ? [
@@ -169,7 +151,7 @@
         <MapView />
       {:else if mapLoadFailed}
         <div class="map-card card map-placeholder" role="alert">
-          <h2 id="map-lazy-heading">Fontes por município</h2>
+          <h2 id="map-lazy-heading">Explore países e regiões</h2>
           <p>Não foi possível carregar o mapa interativo.</p>
           <button class="button" type="button" onclick={loadMap}
             >Tentar novamente</button
@@ -183,7 +165,7 @@
           aria-busy="true"
         >
           <p class="eyebrow">Cobertura territorial</p>
-          <h2 id="map-lazy-heading">Fontes por município</h2>
+          <h2 id="map-lazy-heading">Explore países e regiões</h2>
           <p class="muted">
             O mapa interativo será carregado quando esta área estiver próxima.
           </p>
@@ -237,8 +219,11 @@
         {/each}
       </div>
     </section>
-  {:else if failed}
-    <LoadState {failed} retry={() => attempt++} />
+  {:else if vm.dashboard.isError}
+    <LoadState
+      failed={vm.dashboard.isError}
+      retry={() => void vm.dashboard.refetch()}
+    />
   {:else}
     <div class="dashboard-loading" role="status" aria-live="polite">
       <span class="status-dot" aria-hidden="true"></span>

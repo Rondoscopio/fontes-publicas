@@ -1,5 +1,6 @@
+import { createReadStream } from 'node:fs';
 import { createServer } from 'node:http';
-import { readFile, stat } from 'node:fs/promises';
+import { stat } from 'node:fs/promises';
 import { extname, resolve, sep } from 'node:path';
 
 const base = process.env.SITE_BASE_PATH ?? '/osint-rondonia';
@@ -10,6 +11,7 @@ const types = {
   '.css': 'text/css',
   '.wasm': 'application/wasm',
   '.sqlite': 'application/vnd.sqlite3',
+  '.pmtiles': 'application/vnd.pmtiles',
   '.woff2': 'font/woff2',
 };
 
@@ -26,11 +28,34 @@ createServer(async (request, response) => {
     const target = (await stat(file)).isDirectory()
       ? resolve(file, 'index.html')
       : file;
-    const data = await readFile(target);
-    response.writeHead(200, {
+    const { size } = await stat(target);
+    const headers = {
+      'Accept-Ranges': 'bytes',
       'Content-Type': types[extname(target)] ?? 'application/octet-stream',
-    });
-    response.end(data);
+    };
+    const range = request.headers.range;
+    if (range) {
+      const match = /^bytes=(\d+)-(\d*)$/u.exec(range);
+      if (!match) {
+        response.writeHead(416, { 'Content-Range': `bytes */${size}` }).end();
+        return;
+      }
+      const start = Number(match[1]);
+      const end = Math.min(match[2] ? Number(match[2]) : size - 1, size - 1);
+      if (start >= size || start > end) {
+        response.writeHead(416, { 'Content-Range': `bytes */${size}` }).end();
+        return;
+      }
+      response.writeHead(206, {
+        ...headers,
+        'Content-Length': end - start + 1,
+        'Content-Range': `bytes ${start}-${end}/${size}`,
+      });
+      createReadStream(target, { start, end }).pipe(response);
+      return;
+    }
+    response.writeHead(200, { ...headers, 'Content-Length': size });
+    createReadStream(target).pipe(response);
   } catch {
     response.writeHead(404).end();
   }

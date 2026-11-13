@@ -5,6 +5,7 @@ import { Readable, Transform } from 'node:stream';
 import { pipeline } from 'node:stream/promises';
 import AdmZip from 'adm-zip';
 import mapshaper from 'mapshaper';
+import { feature } from 'topojson-client';
 
 const manifest = JSON.parse(
   await readFile('/workspace/.config/geodata/municipios-2025.json', 'utf8'),
@@ -76,13 +77,14 @@ for (const extension of ['shp', 'shx', 'dbf', 'prj', 'cpg']) {
   await writeFile(`${shapefileDirectory}/${name}`, entry.getData());
 }
 
-const outputPath = '/output/maps/municipios-brasil.topojson';
-await mkdir('/output/maps', { recursive: true });
+const topologyPath = '/cache/build/municipios-brasil.topojson';
+const outputPath = '/cache/build/municipios-brasil.geojson';
+await mkdir('/cache/build', { recursive: true });
 await mapshaper.runCommands(
-  `-i "${shapefileDirectory}/BR_Municipios_2025.shp" -simplify dp 5% keep-shapes -filter-fields CD_MUN -o format=topojson "${outputPath}"`,
+  `-i "${shapefileDirectory}/BR_Municipios_2025.shp" -simplify dp 5% keep-shapes -filter-fields CD_MUN -o format=topojson "${topologyPath}"`,
 );
 
-const generated = JSON.parse(await readFile(outputPath, 'utf8'));
+const generated = JSON.parse(await readFile(topologyPath, 'utf8'));
 const [objectName, object] = Object.entries(generated.objects)[0] ?? [];
 if (!object || object.type !== 'GeometryCollection') {
   throw new Error('A saída do IBGE não contém uma coleção municipal TopoJSON.');
@@ -111,7 +113,25 @@ for (const geometry of object.geometries) {
   geometry.properties = { codigo_ibge: geometry.id };
 }
 generated.objects = { municipios: object };
-await writeFile(outputPath, JSON.stringify(generated) + '\n');
+const collection = feature(generated, object);
+if (collection.type !== 'FeatureCollection') {
+  throw new Error('A conversão da malha IBGE não produziu uma coleção.');
+}
+await writeFile(
+  outputPath,
+  JSON.stringify({
+    type: collection.type,
+    features: collection.features.map((municipality) => ({
+      ...municipality,
+      id: String(municipality.properties.codigo_ibge ?? municipality.id),
+      properties: {
+        codigo_ibge: String(
+          municipality.properties.codigo_ibge ?? municipality.id,
+        ),
+      },
+    })),
+  }) + '\n',
+);
 console.log(
   `Geradas ${ids.length} geometrias simplificadas (${objectName}) a partir da malha IBGE 2025; SHA-256 ${actualSha256}.`,
 );

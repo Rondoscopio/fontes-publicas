@@ -157,6 +157,9 @@ services:
 
   web-map-import:
     extends: web
+    image: osint-rondonia-web-map-import:local
+    build:
+      target: web-map-builder
     user: "${CATALOG_UID:-1000}:${CATALOG_GID:-1000}"
     network_mode: bridge
     read_only: true
@@ -166,7 +169,10 @@ services:
       - ../web/static/maps:/output/maps
       - ../.config/geodata:/workspace/.config/geodata:ro
       - ../data/municipio.csv:/input/municipio.csv:ro
-    command: [node, scripts/import-map.mjs]
+    command:
+      - sh
+      - -euc
+      - node scripts/import-map.mjs && node scripts/import-world-map.mjs && node scripts/build-map-tiles.mjs
 
   web-build:
     extends: web

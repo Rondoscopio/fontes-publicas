@@ -1,15 +1,17 @@
+<script lang="ts">
+  import { createInstitutionalViewModel } from '$lib/features/institutional/institutional.viewmodel';
+  const vm = createInstitutionalViewModel('legal');
+</script>
+
 <svelte:head>
-  <title>Informações legais e privacidade · Rondoscópio</title>
-  <meta
-    name="description"
-    content="Licenças, condições de uso, limitações e informações de privacidade do catálogo OSINT Rondônia."
-  />
+  <title>{vm.title}</title>
+  <meta name="description" content={vm.description} />
 </svelte:head>
 
 <div class="page-heading">
-  <p class="eyebrow">Transparência</p>
-  <h1>Informações legais</h1>
-  <p>Licenças, limites do catálogo e funcionamento da interface.</p>
+  <p class="eyebrow">{vm.eyebrow}</p>
+  <h1>{vm.heading}</h1>
+  <p>{vm.lead}</p>
 </div>
 
 <div class="info-grid legal-grid">
